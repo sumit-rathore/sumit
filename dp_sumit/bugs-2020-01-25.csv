@@ -1,0 +1,29 @@
+bug_id,"priority","op_sys","short_desc","cf_eng_category","cf_eng_comment"
+5978,"P1","Windows 10 Enterprise","BBSW_v00_00_72; Gatekeeper; System Hangs on BIOS Page Until Maverick is Connected to Host (GlaDOS)","USB","The failure only occurs when there is a mass storage device attached to REX. If the flash drive is removed, the failure doesn't occur."
+5979,"P1","Windows 7","BBSW_v00_00_72; Lisa; System Hangs on BIOS Page During a Restart Cycle","USB","The failure only occurs when there is a mass storage device attached to REX. If the flash drive is removed, the failure doesn't occur."
+5981,"P3","Fedora","BBSW_v00_00_72; Kramer; Fedora; Mouse Freezes After a LEX USB Cycle","USB",
+6015,"P3","Windows 10 Enterprise","BBSW_v00_00_72; Maggie; Vaddio ConferenceShot AV freezes during overnight test","USB",
+6017,"P3","Windows 10 Enterprise","BBSW_v00_00_72; Luigi; HuddleCam freezes during overnight test","USB",
+6023,"P3","Other","BBSW_v00_00_72; Mario; 3.0 devices stop working during burn-in test","USB",
+6029,"P3","Chrome OS","BBSW_v00_00_72; Paul McCartney; ADATA HV620 does not show content after a LEX USB Cycle","USB",
+6030,"P3","Chrome OS","BBSW_v00_00_72; Paul McCartney; ADATA HV620 does not show content after a Link Cycle","USB",
+6031,"P3","Chrome OS","BBSW_v00_00_72; Paul McCartney; 3.0 devices show errors after sleep/wakeup cycles","USB",
+6033,"P3","Chrome OS","BBSW_v00_00_72; Spock; HuddleCam freezes after LEX DP Cycle","USB",
+6041,"P3","Chrome OS","BBSW_v00_00_72; Paul McCartney; camera keeps loading and shows no video feed after a restart cycle","USB",
+6040,"P3","Windows 10 Pro","SW 72; Win 10; Lisa Z170; Crystal Diskmark tests have a lower Read throughput than SW 68","Throughput","The mcup parameters for MCA_Channel[1] and MCA_Channel[2] were adjusted to better deal with the DP blinking issue. That could have caused this issue"
+5570,"P3","Other","Maggie - Maverick 15; Win 10; Switching DP from direct connect to Mavericks dropped lane count to 1","SW","REX fails to get successful link training at Max monitor capability."
+6008,"P3","Other","SW 72; Maverick 2; Luigi; Win 10; REX Power state causes REX to go into error state","SW","Monitor issued HPD_IRQ and the system didn't respond to it properly. We failed to read valid data on AUX after this particular IRQ by the monitor. Invalid data on AUX eventually put REX into error state."
+6014,"P3","Other","SW 72; Excom displays golden firmware version as well as Maverick firmware version","SW",
+6016,"P3","Other","SW 72; Maverick Excom displays Toggle ISO button","SW",
+6036,"P3","Windows 10 Enterprise","BBSW_v00_00_72; Luigi; No DP video when switching DP connection from host to Maverick","Request_Retry","During the time of failure, no host was connected to the lex. The first time a host was connected was at 9.19 and no failure was observed since. Also, both LEX and REX were power cycled together to attempt recovery (doesn't match the recovery description)"
+6037,"P3","Windows 10 Enterprise","BBSW_v00_00_72; Spock; 2.0 devices fail enumeration after a REX Power Cycle","Request_Retry","Does it fail the same way through GE/build 68?"
+6038,"P3","Windows 10 Enterprise","BBSW_v00_00_72; Spock; 2.0 devices fail enumeration after a Link Cycle","Request_Retry","Does it fail the same way through GE/build 68?"
+6039,"P3","Windows 10 Enterprise","BBSW_v00_00_72; Spock; camera operates at lower framerate when connected through Maverick","Request_Retry","Seems like a USB-2 Camera. Did it fail the same way with GE/Build68?"
+6005,"P3","All","SW 72; Maverick 15; Spock; Win 10; Video distortion after switching resolution from 3840 x 2160 to 800x600","Last_TU<4","Last TU on REX is less than 4. It's a known RTL issue."
+6009,"P1","Windows 10 Pro","SW 72; Maverick 2; Luigi; Win 10; Host restart causes video to not come up","DP_freq_out_of_range","LEX is unable to reply to some AUX transaction in time leading to the host eventually terminating video. A re-link train request seems to resolve the issue."
+6011,"P3","Chrome OS","BBSW_v00_00_72; Paul McCartney; no display after a Shutdown cycle","DP_freq_out_of_range","Failure caused due to errors in the frequency detection logic"
+6022,"P3","Windows 10 Enterprise","BBSW_v00_00_72; Luigi; no DP Video on Maverick 11 after Shutdown Cycles","DP_freq_out_of_range","Failure caused due to errors in the frequency detection logic"
+6032,"P3","Chrome OS","BBSW_v00_00_72; Spock; no DP Video on ENG Viper 1 after a LEX DP Cycle","DP_freq_out_of_range","Failure caused due to errors in the frequency detection logic"
+6007,"P3","Other","SW 72; Maverick 8; Paul McCartney; No DP audio","DP_Audio","LC/BW mismatch caused the issue. Failure is observed on multiple setups. For all failures, manually matching the LC/BW resolves the issue."
+6004,"P3","Windows 10 Enterprise","BBSW_v00_00_72; Luigi; Win 10; no video output when switching from direct connection to Mavericks","---",
+6035,"P3","Windows 10 Enterprise","BBSW_v00_00_72; Luigi; Resolution drops when DP is switched from direct to through Maverick","---",

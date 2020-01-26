@@ -1,0 +1,870 @@
+//#################################################################################################
+// Icron Technology Corporation - Copyright 2015
+//
+// This source file and the information contained in it are confidential and proprietary to Icron
+// Technology Corporation. The reproduction or disclosure, in whole or in part, to anyone outside
+// of Icron without the written approval of a Icron officer under a Non-Disclosure Agreement, or to
+// any employee of Icron who has not previously obtained written authorization for access from the
+// individual responsible for the source code, will have a significant detrimental effect on Icron
+// and is expressly prohibited.
+//#################################################################################################
+
+//#################################################################################################
+// Module Description
+//#################################################################################################
+// Implementations of functions common to the Lex and Rex DP subsystems.
+//#################################################################################################
+
+//#################################################################################################
+// Design Notes
+//#################################################################################################
+// TODO
+//#################################################################################################
+
+#ifdef PLATFORM_K7
+
+// Includes #######################################################################################
+#include <bb_core.h>
+#include <ibase.h>
+#include <bb_top_regs.h> // for GTP/X registers. TODO remove this include and access all GTP/X
+                         // functionality through bb_top.h's API
+#include <bb_top.h>
+#include <bb_top_dp.h>
+#include <bb_top_dp_k7.h>
+#include <leon_timers.h>
+#include "bb_top_log.h"
+
+// Constants and Macros ###########################################################################
+
+// TODO eventually these defines should be grouped into struct arrays for greater clarity.
+// GTX DRP addresses, offsets, values, and masks (see Xilinx doc UG476 7 Series GTX/GTH Transceivers
+// table 6-8)
+#define GTX_DRP_ADDR_RX_INT_DATAWIDTH 0x11
+#define GTX_DRP_OFFSET_RX_INT_DATAWIDTH 14
+#define GTX_DRP_VAL_RX_INT_DATAWIDTH_2_BYTE_INTERNAL_DATAPATH (0 << GTX_DRP_OFFSET_RX_INT_DATAWIDTH)
+#define GTX_DRP_VAL_RX_INT_DATAWIDTH_4_BYTE_INTERNAL_DATAPATH (1 << GTX_DRP_OFFSET_RX_INT_DATAWIDTH)
+#define GTX_DRP_MASK_RX_INT_DATAWIDTH (0x1 << GTX_DRP_OFFSET_RX_INT_DATAWIDTH)
+
+#define GTX_DRP_ADDR_RX_DATA_WIDTH 0x11
+#define GTX_DRP_OFFSET_RX_DATA_WIDTH 11
+#define GTX_DRP_VAL_RX_DATA_WIDTH_20_BIT_PORT (0x3 << GTX_DRP_OFFSET_RX_DATA_WIDTH)
+#define GTX_DRP_VAL_RX_DATA_WIDTH_40_BIT_PORT (0x5 << GTX_DRP_OFFSET_RX_DATA_WIDTH)
+#define GTX_DRP_MASK_RX_DATA_WIDTH (0x7 << GTX_DRP_OFFSET_RX_DATA_WIDTH)
+
+#define GTX_DRP_ADDR_TX_INT_DATAWIDTH 0x6B
+#define GTX_DRP_OFFSET_TX_INT_DATAWIDTH 4
+#define GTX_DRP_VAL_TX_INT_DATAWIDTH_2_BYTE_INTERNAL_DATAPATH (0 << GTX_DRP_OFFSET_TX_INT_DATAWIDTH)
+#define GTX_DRP_VAL_TX_INT_DATAWIDTH_4_BYTE_INTERNAL_DATAPATH (1 << GTX_DRP_OFFSET_TX_INT_DATAWIDTH)
+#define GTX_DRP_MASK_TX_INT_DATAWIDTH (0x1 << GTX_DRP_OFFSET_TX_INT_DATAWIDTH)
+
+#define GTX_DRP_ADDR_TX_DATA_WIDTH 0x6B
+#define GTX_DRP_OFFSET_TX_DATA_WIDTH 0
+#define GTX_DRP_VAL_TX_DATA_WIDTH_20_BIT_PORT (0x3 << GTX_DRP_OFFSET_TX_DATA_WIDTH)
+#define GTX_DRP_VAL_TX_DATA_WIDTH_40_BIT_PORT (0x5 << GTX_DRP_OFFSET_TX_DATA_WIDTH)
+#define GTX_DRP_MASK_TX_DATA_WIDTH (0x7 << GTX_DRP_OFFSET_TX_DATA_WIDTH)
+
+#define GTX_DRP_ADDR_CPLL_REFCLK_DIV 0x5E
+#define GTX_DRP_OFFSET_CPLL_REFCLK_DIV 8
+// TODO define values
+#define GTX_DRP_MASK_CPLL_REFCLK_DIV (0x1F << GTX_DRP_OFFSET_CPLL_REFCLK_DIV)
+
+#define GTX_DRP_ADDR_CPLL_FBDIV_45 0x5E
+#define GTX_DRP_OFFSET_CPLL_FBDIV_45 7
+// TODO define values
+#define GTX_DRP_MASK_CPLL_FBDIV_45 (0x01 << GTX_DRP_OFFSET_CPLL_FBDIV_45)
+
+#define GTX_DRP_ADDR_CPLL_FBDIV 0x5E
+#define GTX_DRP_OFFSET_CPLL_FBDIV 0
+// TODO define values
+#define GTX_DRP_MASK_CPLL_FBDIV (0x7F << GTX_DRP_OFFSET_CPLL_FBDIV)
+
+#define GTX_DRP_ADDR_TXOUT_DIV 0x88
+#define GTX_DRP_OFFSET_TXOUT_DIV 4
+// TODO define values
+#define GTX_DRP_MASK_TXOUT_DIV (0x7 << GTX_DRP_OFFSET_TXOUT_DIV)
+
+#define GTX_DRP_ADDR_RXOUT_DIV 0x88
+#define GTX_DRP_OFFSET_RXOUT_DIV 0
+// TODO define values
+#define GTX_DRP_MASK_RXOUT_DIV (0x7 << GTX_DRP_OFFSET_RXOUT_DIV)
+
+
+// GTX CPLL reference clock select (see Xilinx doc UG476 7 Series GTX/GTH Transceivers
+// table 2-9)
+#define GTX_GTREFCLK0 0x1
+#define GTX_GTREFCLK1 0x2
+
+// GTX RX power-down port values
+#define GTX_RXPD_P0 0x0    // Normal operation
+#define GTX_RXPD_P2 0x3    // Lowest power state
+
+// GTX TX power-down port values
+#define GTX_TXPD_P0 0x0    // Normal operation
+#define GTX_TXPD_P2 0x3    // Lowest power state
+
+// Note: values for the RXCDR_CFGx registers are generated by Xilinx's CDR wizard, and currently
+// just defined in the code.
+#define GTX_DRP_ADDR_RXCDR_CFG0 0xA8
+#define GTX_DRP_OFFSET_RXCDR_CFG0 0
+#define GTX_DRP_MASK_RXCDR_CFG0 0xFFFF
+
+#define GTX_DRP_ADDR_RXCDR_CFG1 0xA9
+#define GTX_DRP_OFFSET_RXCDR_CFG1 0
+#define GTX_DRP_MASK_RXCDR_CFG1 0xFFFF
+
+#define GTX_DRP_ADDR_RXCDR_CFG2 0xAA
+#define GTX_DRP_OFFSET_RXCDR_CFG2 0
+#define GTX_DRP_MASK_RXCDR_CFG2 0xFFFF
+
+#define GTX_DRP_ADDR_RXCDR_CFG3 0xAB
+#define GTX_DRP_OFFSET_RXCDR_CFG3 0
+#define GTX_DRP_MASK_RXCDR_CFG3 0xFFFF
+
+#define GTX_DRP_ADDR_RXCDR_CFG4 0xAC
+#define GTX_DRP_OFFSET_RXCDR_CFG4 0
+#define GTX_DRP_MASK_RXCDR_CFG4 0x00FF
+
+// Data Types #####################################################################################
+union GtxBaseAddress
+{
+    volatile bb_top_dp_gtx_rx *rx;
+    volatile bb_top_dp_gtx_tx *tx;
+};
+
+// Global Variables ###############################################################################
+
+// Static Variables ###############################################################################
+static union GtxBaseAddress gtx;
+static volatile bb_top_drp *drp;
+
+static const struct txOutClkMmcm mmcmGtx[] = {
+//            ______Frequency (MHz)______
+// Address     135   67.5,   40.5,     135     81,
+    { 0x08, 0x10C4, 0x11C8, 0x130D, 0x10C4, 0x1186 },
+    { 0x09, 0x0080, 0x0080, 0x0080, 0x0080, 0x0000 },
+    { 0x14, 0x10C4, 0x11C8, 0x11C8, 0x10C4, 0x1492 },
+    { 0x15, 0x0080, 0x0080, 0x0080, 0x0080, 0x0000 },
+    { 0x16, 0x1041, 0x0041, 0x0041, 0x1041, 0x2083 },
+    { 0x18, 0x03E8, 0x028A, 0x028A, 0x03E8, 0x0113 },
+    { 0x19, 0x4C01, 0x7C01, 0x7C01, 0x4C01, 0x7C01 },
+    { 0x1A, 0xCFE9, 0xFFE9, 0xFFE9, 0xCFE9, 0xFFE9 },
+    { 0x4E, 0x9808, 0x9908, 0x9908, 0x9808, 0x0908 },
+    { 0x4F, 0x9100, 0x8100, 0x8100, 0x9100, 0x1000 }
+};
+
+static const uint8_t numMmcmWritesGtx = ARRAYSIZE(mmcmGtx);
+
+// Static Function Declarations ###################################################################
+
+static void configureDpTransceiverCommonK7(bb_top_drp_en_mask laneMask);
+static void configureCpll(enum MainLinkBandwidth bw, bb_top_drp_en_mask laneMask);
+static void configureCommonTxOutDiv(enum MainLinkBandwidth bw, bb_top_drp_en_mask laneMask);
+static void configureSinkRxDataWidth(bb_top_drp_en_mask laneMask);
+static void configureGtTxOutClkMmcmGtx(enum MmcmTxClkOutEncoding encoding);
+static void configureSourceTxDataWidth(bb_top_drp_en_mask laneMask);
+
+// Exported Function Definitions ##################################################################
+
+// Component Scope Function Definitions ###########################################################
+
+//#################################################################################################
+// Initialize the pointers.
+//
+// Parameters:
+// Return:
+// Assumptions:
+//      * This function is expected to be called exactly once during system initialization.
+//#################################################################################################
+void bb_top_dpInitK7(volatile void* gtCommonBaseAddr,
+                   volatile void* drpBaseAddr)
+{
+    if (bb_top_IsDeviceLex())
+    {
+        gtx.rx = gtCommonBaseAddr;
+    }
+    else
+    {
+        gtx.tx = gtCommonBaseAddr;
+    }
+    drp = drpBaseAddr;
+}
+
+
+//#################################################################################################
+// Initializes and configures the Displayport transceiver hardware (in this case the GTX) on
+// the Lex.
+//
+// Parameters:
+//      bw                  - The bandwidth setting for the transceiver to use.
+//      lc                  - The lane count for the transceiver to use.
+// Return:
+// Assumptions:
+//      There should be main link traffic (probably TPS1) flowing from the device upstream of the
+//      Lex at the time this function is called.
+//#################################################################################################
+void bb_top_dpConfigureDpTransceiverLexK7(enum MainLinkBandwidth bw, enum LaneCount lc)
+{
+    iassert_TOP_COMPONENT_2(bw == BW_1_62_GBPS || bw == BW_2_70_GBPS || bw == BW_5_40_GBPS,
+                           BB_TOP_DP_TRANSCEIVER_CONFIG_VALUE_ERROR,
+                           bw,
+                           __LINE__);
+    iassert_TOP_COMPONENT_2(
+            lc != LANE_COUNT_INVALID, BB_TOP_DP_TRANSCEIVER_CONFIG_VALUE_ERROR, lc, __LINE__);
+
+    /* LEX LANE MAP
+     * LANE 0 - GT 3
+     * LANE 1 - GT 0
+     * LANE 2 - GT 2
+     * LANE 3 - GT 1
+     */
+    const bb_top_drp_en_mask laneMask = { .bf = {
+        .dp_gt0 = lc == LANE_COUNT_1 || lc == LANE_COUNT_2 || lc == LANE_COUNT_4,
+        .dp_gt1 = lc == LANE_COUNT_2 || lc == LANE_COUNT_4,
+        .dp_gt2 = lc == LANE_COUNT_4,
+        .dp_gt3 = lc == LANE_COUNT_4,
+    }};
+
+    // Put all GTX transceivers in soft reset while they are being configured
+    bb_top_applyDpRxSoftReset(true);
+    configureDpTransceiverCommonK7(laneMask);
+
+    const enum MmcmTxClkOutEncoding enc = computeMmcmTxClkOutEncoding(bw);
+
+    configureCpll(bw, laneMask);
+    configureCommonTxOutDiv(bw, laneMask);
+    configureSinkRxDataWidth(laneMask);
+    configureGtTxOutClkMmcmGtx(enc);
+
+
+    // Configure CDR
+    {
+        // Magic values generated by Xilinx's CDR wizard. Obtained from
+        // http://lexington/wiki/index.php/BB_A7_Core#DisplayPort_Sink_Transceiver_Setup
+        // Settings differ between HBR2 and HBR/RBR.
+        // TODO: need additional parameters for SSC; see the Wiki.
+        const uint16_t rxcdrCfg[5] = {
+            bw == BW_5_40_GBPS ? 0x0010 : 0x0008,
+            bw == BW_5_40_GBPS ? 0x2020 : 0x4020,
+            0x8Bff,
+            bw == BW_5_40_GBPS ? 0x8C00 : 0x8000,
+            0x0003
+        };
+        bb_top_dpDrpReadModWriteK7(GTX_DRP_ADDR_RXCDR_CFG0, rxcdrCfg[0], GTX_DRP_MASK_RXCDR_CFG0, laneMask);
+        bb_top_dpDrpReadModWriteK7(GTX_DRP_ADDR_RXCDR_CFG1, rxcdrCfg[1], GTX_DRP_MASK_RXCDR_CFG1, laneMask);
+        bb_top_dpDrpReadModWriteK7(GTX_DRP_ADDR_RXCDR_CFG2, rxcdrCfg[2], GTX_DRP_MASK_RXCDR_CFG2, laneMask);
+        bb_top_dpDrpReadModWriteK7(GTX_DRP_ADDR_RXCDR_CFG3, rxcdrCfg[3], GTX_DRP_MASK_RXCDR_CFG3, laneMask);
+        bb_top_dpDrpReadModWriteK7(GTX_DRP_ADDR_RXCDR_CFG4, rxcdrCfg[4], GTX_DRP_MASK_RXCDR_CFG4, laneMask);
+    }
+
+
+    // Take all active receivers out of power-down mode and set LPM equalization mode.
+    // We are setting LPM for two reasons: better compatibility with our DP retimer,
+    // and the fact that the GTX transceivers on the Artix FPGA support only LPM.
+    {
+        bb_top_setDpGtxRxMiscCtrlPd(
+        DP_GTX_GT0_SYS_LANE_SEL, laneMask.bf.dp_gt0 ? GTX_RXPD_P0 : GTX_RXPD_P2);
+        bb_top_setDpGtxRxMiscCtrlPd(
+        DP_GTX_GT1_SYS_LANE_SEL, laneMask.bf.dp_gt1 ? GTX_RXPD_P0 : GTX_RXPD_P2);
+        bb_top_setDpGtxRxMiscCtrlPd(
+        DP_GTX_GT2_SYS_LANE_SEL, laneMask.bf.dp_gt2 ? GTX_RXPD_P0 : GTX_RXPD_P2);
+        bb_top_setDpGtxRxMiscCtrlPd(
+        DP_GTX_GT3_SYS_LANE_SEL, laneMask.bf.dp_gt3 ? GTX_RXPD_P0 : GTX_RXPD_P2);
+
+        bb_top_setDpGtxRxMiscCtrlLpm(DP_GTX_GT0_SYS_LANE_SEL, true);
+        bb_top_setDpGtxRxMiscCtrlLpm(DP_GTX_GT1_SYS_LANE_SEL, true);
+        bb_top_setDpGtxRxMiscCtrlLpm(DP_GTX_GT2_SYS_LANE_SEL, true);
+        bb_top_setDpGtxRxMiscCtrlLpm(DP_GTX_GT3_SYS_LANE_SEL, true);
+    }
+
+    // Take all GTX transceivers out of soft reset now that they are configured
+    bb_top_applyDpRxSoftReset(false);
+
+    // NOTE: the gtx is not yet out of reset. Any client that wishes to take
+    // the DP sink out of reset must first wait for the gtx.
+    // TODO handle this in a cleaner, more explicit way
+}
+
+
+void bb_top_dpResetDpTransceiverLexK7(void)
+{
+    // Power down transceivers
+    bb_top_setDpGtxRxMiscCtrlPd(DP_GTX_GT0_SYS_LANE_SEL, GTX_TXPD_P2);
+    bb_top_setDpGtxRxMiscCtrlPd(DP_GTX_GT1_SYS_LANE_SEL, GTX_TXPD_P2);
+    bb_top_setDpGtxRxMiscCtrlPd(DP_GTX_GT2_SYS_LANE_SEL, GTX_TXPD_P2);
+    bb_top_setDpGtxRxMiscCtrlPd(DP_GTX_GT3_SYS_LANE_SEL, GTX_TXPD_P2);
+    // Power down GTX CPLLs
+    bb_top_applyGtxCpllPowerDown(DP_GTX_GT0_SYS_LANE_SEL, 1);
+    bb_top_applyGtxCpllPowerDown(DP_GTX_GT1_SYS_LANE_SEL, 1);
+    bb_top_applyGtxCpllPowerDown(DP_GTX_GT2_SYS_LANE_SEL, 1);
+    bb_top_applyGtxCpllPowerDown(DP_GTX_GT3_SYS_LANE_SEL, 1);
+}
+
+
+//#################################################################################################
+// Initializes and configures the Displayport transceiver hardware (in this case the GTX) on
+// the Rex.
+//
+// Parameters:
+//      bw                  - The bandwidth setting for the transceiver to use.
+//      lc                  - The lane count for the transceiver to use.
+// Return:
+// Assumptions:
+//#################################################################################################
+void bb_top_dpConfigureDpTransceiverRexK7(enum MainLinkBandwidth bw, enum LaneCount lc)
+{
+    iassert_TOP_COMPONENT_2(bw == BW_1_62_GBPS || bw == BW_2_70_GBPS || bw == BW_5_40_GBPS,
+                            BB_TOP_DP_TRANSCEIVER_CONFIG_VALUE_ERROR,
+                            bw,
+                            __LINE__);
+    iassert_TOP_COMPONENT_2(lc != LANE_COUNT_INVALID,
+                            BB_TOP_DP_TRANSCEIVER_CONFIG_VALUE_ERROR,
+                            lc,
+                            __LINE__);
+    ilog_TOP_COMPONENT_2(ILOG_MAJOR_EVENT, BB_TOP_DP_INITIALIZING_DP_TRANSCEIVERS, bw, lc);
+
+    /* REX LANE MAP
+     * LANE 0 - GT 2
+     * LANE 1 - GT 3
+     * LANE 2 - GT 0
+     * LANE 3 - GT 1
+     */
+    const bb_top_drp_en_mask laneMask = { .bf = {
+        .dp_gt0 = lc == LANE_COUNT_1 || lc == LANE_COUNT_2 || lc == LANE_COUNT_4,
+        .dp_gt1 = lc == LANE_COUNT_2 || lc == LANE_COUNT_4,
+        .dp_gt2 = lc == LANE_COUNT_4,
+        .dp_gt3 = lc == LANE_COUNT_4,
+    }};
+
+    // Put all GTX transceivers in soft reset while they are being configured
+    bb_top_applyDpTxSoftReset(true);
+    configureDpTransceiverCommonK7(laneMask);
+    const enum MmcmTxClkOutEncoding enc = computeMmcmTxClkOutEncoding(bw);
+
+    configureCpll(bw, laneMask);
+    configureCommonTxOutDiv(bw, laneMask);
+    configureGtTxOutClkMmcmGtx(enc);
+    configureSourceTxDataWidth(laneMask);
+    // Take all active transceivers out of power-down mode
+    {
+        bb_top_setDpGtxTxMiscCtrlPd(
+            DP_GTX_GT0_SYS_LANE_SEL, laneMask.bf.dp_gt0 ? GTX_TXPD_P0 : GTX_TXPD_P2);
+        bb_top_setDpGtxTxMiscCtrlPd(
+            DP_GTX_GT1_SYS_LANE_SEL, laneMask.bf.dp_gt1 ? GTX_TXPD_P0 : GTX_TXPD_P2);
+        bb_top_setDpGtxTxMiscCtrlPd(
+            DP_GTX_GT2_SYS_LANE_SEL, laneMask.bf.dp_gt2 ? GTX_TXPD_P0 : GTX_TXPD_P2);
+        bb_top_setDpGtxTxMiscCtrlPd(
+            DP_GTX_GT3_SYS_LANE_SEL, laneMask.bf.dp_gt3 ? GTX_TXPD_P0 : GTX_TXPD_P2);
+    }
+
+    //    configureSourceTxPrbsSel(activeLanes);
+
+    // Take all GTX transceivers out of soft reset now that they are configured
+    bb_top_applyDpTxSoftReset(false);
+
+    // NOTE: the gtx is not yet out of reset. Any client that wishes to take
+    // the DP source out of reset must first wait for the gtx.
+    // TODO handle this in a cleaner, more explicit way
+}
+
+
+void bb_top_dpResetDpTransceiverRexK7(void)
+{
+    // Power down transceivers
+    bb_top_setDpGtxTxMiscCtrlPd(DP_GTX_GT0_SYS_LANE_SEL, GTX_TXPD_P2);
+    bb_top_setDpGtxTxMiscCtrlPd(DP_GTX_GT1_SYS_LANE_SEL, GTX_TXPD_P2);
+    bb_top_setDpGtxTxMiscCtrlPd(DP_GTX_GT2_SYS_LANE_SEL, GTX_TXPD_P2);
+    bb_top_setDpGtxTxMiscCtrlPd(DP_GTX_GT3_SYS_LANE_SEL, GTX_TXPD_P2);
+    // Power down GTX CPLLs
+    bb_top_applyGtxCpllPowerDown(DP_GTX_GT0_SYS_LANE_SEL, 1);
+    bb_top_applyGtxCpllPowerDown(DP_GTX_GT1_SYS_LANE_SEL, 1);
+    bb_top_applyGtxCpllPowerDown(DP_GTX_GT2_SYS_LANE_SEL, 1);
+    bb_top_applyGtxCpllPowerDown(DP_GTX_GT3_SYS_LANE_SEL, 1);
+}
+
+
+//#################################################################################################
+// Check we have Sink (RX) clock lock, if so, remove sink_rst
+//
+// Parameters:
+// Return:
+// Assumptions:
+//#################################################################################################
+void bb_top_dpEnableDpSinkK7(void)
+{
+    const LEON_TimerValueT startTime = LEON_TimerRead();
+    // Wait for the reset to complete
+    while (!gtx.rx->rx_status.bf.gt0_rx_fsm_reset_done)
+    {
+        iassert_TOP_COMPONENT_1(
+                LEON_TimerCalcUsecDiff(startTime, LEON_TimerRead()) < GT_RESET_TIMEOUT_USEC,
+                BB_TOP_DP_GTX_RESET_TOO_SLOW,
+                GT_RESET_TIMEOUT_USEC);
+    }
+
+    // Now that the sink has a clock, take it out of reset
+    bb_top_ApplyResetDpSink(false);
+}
+
+
+//#################################################################################################
+// Check we have Source (TX) clock lock, if so, remove source_rst
+//
+// Parameters:
+// Return:
+// Assumptions:
+//#################################################################################################
+void bb_top_dpEnableDpSourceK7(void)
+{
+    const LEON_TimerValueT startTime = LEON_TimerRead();
+    // Ensure the GTX FSM is out of reset. NOTE: this can take up to 9 ms.
+    while (!gtx.tx->tx_status.bf.gt0_tx_fsm_reset_done)
+    {
+        iassert_TOP_COMPONENT_1(
+                LEON_TimerCalcUsecDiff(startTime, LEON_TimerRead()) < GT_RESET_TIMEOUT_USEC,
+                BB_TOP_DP_GTX_RESET_TOO_SLOW,
+                GT_RESET_TIMEOUT_USEC);
+    }
+    // Now that the source has a clock, take it out of reset
+    bb_top_ApplyResetDpSource(false);
+}
+
+
+//#################################################################################################
+// Local function to perform PLL configuration
+//
+// Parameters:
+// Return:
+// Assumptions:
+//#################################################################################################
+static void configureDpTransceiverCommonK7(bb_top_drp_en_mask laneMask)
+{
+    // Configure active lane CPLLs and select reference clocks.
+    // Note: the 'pd' stands for 'power down,' hence the negations.
+    // Only the LEX with HpcId == 1 is the DP159, CLK1, otherwise (Rex) Clk0
+    const uint8_t refClkSel = (bb_top_GetHpcId() == 1) && (bb_top_IsDeviceLex()) ?
+        GTX_GTREFCLK1 : GTX_GTREFCLK0;
+
+    bb_top_applyGtxCpllPowerDown(DP_GTX_GT0_SYS_LANE_SEL, !laneMask.bf.dp_gt0);
+    bb_top_applyGtxCpllPowerDown(DP_GTX_GT1_SYS_LANE_SEL, !laneMask.bf.dp_gt1);
+    bb_top_applyGtxCpllPowerDown(DP_GTX_GT2_SYS_LANE_SEL, !laneMask.bf.dp_gt2);
+    bb_top_applyGtxCpllPowerDown(DP_GTX_GT3_SYS_LANE_SEL, !laneMask.bf.dp_gt3);
+
+    bb_top_setDpGtxCpllRefClkSel(DP_GTX_GT0_SYS_LANE_SEL, refClkSel);
+    bb_top_setDpGtxCpllRefClkSel(DP_GTX_GT1_SYS_LANE_SEL, refClkSel);
+    bb_top_setDpGtxCpllRefClkSel(DP_GTX_GT2_SYS_LANE_SEL, refClkSel);
+    bb_top_setDpGtxCpllRefClkSel(DP_GTX_GT3_SYS_LANE_SEL, refClkSel);
+}
+
+
+//#################################################################################################
+// Local function to perform CPLL configuration
+//
+// Parameters:
+//              bw - main link bandwidth
+//              laneMask - which lanes are set
+// Return:
+// Assumptions:
+//#################################################################################################
+static void configureCpll(enum MainLinkBandwidth bw, bb_top_drp_en_mask laneMask)
+{
+    // NOTE: the three values written below live at the same address
+    const uint16_t refClkDiv = 16 << GTX_DRP_OFFSET_CPLL_REFCLK_DIV ;
+    const uint16_t fbDiv45 = (bw == BW_1_62_GBPS ? 0 :
+                              bw == BW_2_70_GBPS ? 1 : 0xff) << GTX_DRP_OFFSET_CPLL_FBDIV_45;
+    const uint16_t fbDiv = (bw == BW_1_62_GBPS ? 1 :
+                            bw == BW_2_70_GBPS ? 2 : 0xff) << GTX_DRP_OFFSET_CPLL_FBDIV;
+    iassert_TOP_COMPONENT_2(fbDiv45 != (0xff << GTX_DRP_OFFSET_CPLL_FBDIV_45) && fbDiv != 0xff,
+                           BB_TOP_DP_INVALID_BANDWIDTH,
+                           bw,
+                           __LINE__);
+    bb_top_dpDrpReadModWriteK7(GTX_DRP_ADDR_CPLL_REFCLK_DIV,
+                    refClkDiv | fbDiv45 | fbDiv,
+                    GTX_DRP_MASK_CPLL_REFCLK_DIV
+                    | GTX_DRP_MASK_CPLL_FBDIV_45
+                    | GTX_DRP_MASK_CPLL_FBDIV,
+                    laneMask);
+}
+
+
+//#################################################################################################
+// Perform DRP writes to configure tx and rx out clock divider
+//
+// Parameters:
+//              bw - bandwidth of each lane
+//              laneMask - which lanes are set
+// Return:
+// Assumptions:
+//#################################################################################################
+static void configureCommonTxOutDiv(enum MainLinkBandwidth bw, bb_top_drp_en_mask laneMask)
+{
+    // NOTE: the two values written below live at the same address
+    const uint16_t txOutDiv = (bw == BW_5_40_GBPS ? 0 : 1) << GTX_DRP_OFFSET_TXOUT_DIV;
+    const uint16_t rxOutDiv = (bw == BW_5_40_GBPS ? 0 : 1) << GTX_DRP_OFFSET_RXOUT_DIV;
+    bb_top_dpDrpReadModWriteK7(GTX_DRP_ADDR_TXOUT_DIV,
+                    txOutDiv | rxOutDiv,
+                    GTX_DRP_MASK_TXOUT_DIV | GTX_DRP_MASK_RXOUT_DIV,
+                    laneMask);
+}
+
+
+//#################################################################################################
+// Perform DRP writes to configure TX data width and internal data width
+//
+// Parameters:
+//              laneMask - which lanes are set
+// Return:
+// Assumptions:
+//#################################################################################################
+static void configureSourceTxDataWidth(bb_top_drp_en_mask laneMask)
+{
+    // TODO: note that the two data widths set below are at the same address and can be batched
+    // together.
+    // Configure lane internal TX data width
+    {
+        const uint16_t txIntDatawidth = GTX_DRP_VAL_TX_INT_DATAWIDTH_4_BYTE_INTERNAL_DATAPATH;
+        bb_top_dpDrpReadModWriteK7(GTX_DRP_ADDR_TX_INT_DATAWIDTH,
+                        txIntDatawidth,
+                        GTX_DRP_MASK_TX_INT_DATAWIDTH,
+                        laneMask);
+    }
+    // Configure lane port TX data width
+    {
+        const uint16_t txDataWidth = GTX_DRP_VAL_TX_DATA_WIDTH_40_BIT_PORT;
+
+        bb_top_dpDrpReadModWriteK7(GTX_DRP_ADDR_TX_DATA_WIDTH,
+                        txDataWidth,
+                        GTX_DRP_MASK_TX_DATA_WIDTH,
+                        laneMask);
+    }
+}
+
+
+//#################################################################################################
+// Perform DRP writes to configure RX data width and internal data width
+//
+// Parameters:
+//              laneMask - which lanes are set
+// Return:
+// Assumptions:
+//#################################################################################################
+static void configureSinkRxDataWidth(bb_top_drp_en_mask laneMask)
+{
+    // TODO: note that the two data widths set below are at the same address and can be batched
+    // together.
+    // Configure lane internal RX data width
+    {
+        const uint16_t rxIntDatawidth = GTX_DRP_VAL_RX_INT_DATAWIDTH_4_BYTE_INTERNAL_DATAPATH;
+        bb_top_dpDrpReadModWriteK7(GTX_DRP_ADDR_RX_INT_DATAWIDTH,
+                        rxIntDatawidth,
+                        GTX_DRP_MASK_RX_INT_DATAWIDTH,
+                        laneMask);
+    }
+    // Configure lane port RX data width
+    {
+        const uint16_t rxDataWidth = GTX_DRP_VAL_RX_DATA_WIDTH_40_BIT_PORT;
+        bb_top_dpDrpReadModWriteK7(GTX_DRP_ADDR_RX_DATA_WIDTH,
+                        rxDataWidth,
+                        GTX_DRP_MASK_RX_DATA_WIDTH,
+                        laneMask);
+    }
+}
+
+
+//#################################################################################################
+// Local function to set the RX Clk MMCM
+//
+// Parameters:
+//              enc - frequency to use for given lane width
+// Return:
+// Assumptions:
+//#################################################################################################
+static void configureGtTxOutClkMmcmGtx(enum MmcmTxClkOutEncoding encoding)
+{
+    const bb_top_drp_en_mask mask = { .bf.dp_gt0_txoutclk_mmcm = 1};
+    uint16_t mmcmValue = 0;
+    uint8_t mmcmWrites = 0;
+    for (mmcmWrites = 0; mmcmWrites < numMmcmWritesGtx; mmcmWrites++)
+    {
+        switch (encoding)
+        {
+            case MMCM_TX_CLK_OUT_ENCODING_RBR_40B:
+                mmcmValue = mmcmGtx[mmcmWrites].rbr_40b;
+                break;
+            case MMCM_TX_CLK_OUT_ENCODING_HBR_40B:
+                mmcmValue = mmcmGtx[mmcmWrites].hbr_40b;
+                break;
+            case MMCM_TX_CLK_OUT_ENCODING_HBR2_40B:
+                mmcmValue = mmcmGtx[mmcmWrites].hbr2_40b;
+                break;
+            default:
+                break;
+        }
+        // Write Data Mask is same as Read Data Mask
+        bb_top_dpDrpReadModWriteK7(mmcmGtx[mmcmWrites].addr,
+            mmcmValue,
+            BB_TOP_DRP_DRP_READ_DATA_DRP_DO_MASK,
+            mask);
+    }
+}
+
+
+//#################################################################################################
+// Check if we have clock recovery
+//
+// Parameters:
+// Return:
+//          true or false
+// Assumptions:
+//#################################################################################################
+bool bb_top_dpGotClockRecoveryK7(void)
+{
+    return gtx.rx->rx_status.bf.gt0_rxoutclk_lock;
+}
+
+
+//#################################################################################################
+// Check if we have symbol lock for the specified lane counts
+//
+// Parameters:
+// Return:
+//          true or false
+// Assumptions:
+//#################################################################################################
+bool bb_top_dpGotSymbolLockK7(enum LaneCount lc)
+{
+    // TODO should we make the output of this function more granular (i.e., per-lane)?
+    const bb_top_rx_byte_align_status alignStatus = { .dw = gtx.rx->rx_byte_align_status.dw };
+
+    // TODO we should probably assert if lc == 0
+    return (lc > 0 ? alignStatus.bf.gt0_rxbyteisaligned : false)&&
+           (lc > 1 ? alignStatus.bf.gt1_rxbyteisaligned : true) &&
+           (lc > 2 ? alignStatus.bf.gt2_rxbyteisaligned : true) &&
+           (lc > 3 ? alignStatus.bf.gt3_rxbyteisaligned : true);
+}
+
+
+//#################################################################################################
+// Do an RMW of the existing voltage swing values based on laneMask
+//
+// Parameters:
+// Return:
+//          true or false
+// Assumptions:
+// Rex only
+// Note: (laneMask & (1 << i)) => we wish to modify the value for lane i
+//#################################################################################################
+void bb_top_dpSetVoltageSwingK7(enum VoltageSwing vs[4], uint8_t laneMask)
+{
+    // Mapping from DP voltage swing values to their closest matching GTX
+    // voltage swing values. For more information see
+    // http://lexington/wiki/index.php/BB_KC705#DisplayPort_Transceiver_Setup
+    static const uint8_t dpToGtx[] = { 0x2, 0x5, 0x8, 0xF };
+
+    // Read
+    bb_top_tx_diff_ctrl txDiffCtrl = { .dw = gtx.tx->tx_diff_ctrl.dw };
+    // Mod
+    if (laneMask & (1 << 0))
+    {
+        txDiffCtrl.bf.gt0_txdiffctrl = dpToGtx[vs[0]];
+    }
+    if (laneMask & (1 << 1))
+    {
+        txDiffCtrl.bf.gt1_txdiffctrl = dpToGtx[vs[1]];
+    }
+    if (laneMask & (1 << 2))
+    {
+        txDiffCtrl.bf.gt2_txdiffctrl = dpToGtx[vs[2]];
+    }
+    if (laneMask & (1 << 3))
+    {
+        txDiffCtrl.bf.gt3_txdiffctrl = dpToGtx[vs[3]];
+    }
+    // Write
+    gtx.tx->tx_diff_ctrl.dw = txDiffCtrl.dw;
+    ilog_TOP_COMPONENT_2(ILOG_DEBUG, BB_TOP_DP_SET_VOLTAGE_SWING,
+            (vs[0] << 0) | (vs[1] << 8) | (vs[2] << 16) | (vs[3] << 24),
+            txDiffCtrl.dw);
+}
+
+
+
+//#################################################################################################
+// Do an RMW of the existing pre-emphasis values based on laneMask
+//
+// Parameters:
+// Return:
+//          true or false
+// Assumptions:
+// Rex only
+// Note: (laneMask & (1 << i)) => we wish to modify the value for lane i
+//#################################################################################################
+void bb_top_dpSetPreEmphasisK7(enum PreEmphasis pe[4], uint8_t laneMask)
+{
+    // Mapping from DP pre-emphasis values to their closest matching GTX
+    // pre-emphasis values. For more information see
+    // http://lexington/wiki/index.php/BB_KC705#DisplayPort_Transceiver_Setup
+    static const uint8_t dpToGtx[] = { 0x00, 0x0D, 0x14, 0x1B };
+
+    // Read
+    bb_top_tx_post_cursor txPostCursor = { .dw = gtx.tx->tx_post_cursor.dw };
+    // Mod
+    if (laneMask & (1 << 0))
+    {
+        txPostCursor.bf.gt0_txpostcursor = dpToGtx[pe[0]];
+    }
+    if (laneMask & (1 << 1))
+    {
+        txPostCursor.bf.gt1_txpostcursor = dpToGtx[pe[1]];
+    }
+    if (laneMask & (1 << 2))
+    {
+        txPostCursor.bf.gt2_txpostcursor = dpToGtx[pe[2]];
+    }
+    if (laneMask & (1 << 3))
+    {
+        txPostCursor.bf.gt3_txpostcursor = dpToGtx[pe[3]];
+    }
+    // Write
+    gtx.tx->tx_post_cursor.dw = txPostCursor.dw;
+    ilog_TOP_COMPONENT_2(ILOG_DEBUG, BB_TOP_DP_SET_PREEMPHASIS,
+            (pe[0] << 0) | (pe[1] << 8) | (pe[2] << 16) | (pe[3] << 24),
+            txPostCursor.dw);
+}
+
+
+//#################################################################################################
+// Do an RMW of the existing pre-charge values based on laneMask
+//
+// Parameters:
+// Return:
+//          true or false
+// Assumptions:
+// Rex only
+// Note: (laneMask & (1 << i)) => we wish to modify the value for lane i
+//#################################################################################################
+void bb_top_dpPreChargeMainLinkK7(bool charge, enum LaneCount lc)
+{
+    ilog_TOP_COMPONENT_2(ILOG_MAJOR_EVENT, BB_TOP_DP_PRECHARGE, charge, lc);
+    // Read
+    bb_top_tx_misc_ctrl miscCtrl = { .dw = gtx.tx->tx_misc_ctrl.dw };
+
+    // Mod
+    if (lc > 0)
+    {
+        miscCtrl.bf.gt0_txinhibit = charge;
+    }
+    if (lc > 1)
+    {
+        miscCtrl.bf.gt1_txinhibit = charge;
+    }
+    if (lc > 2)
+    {
+        miscCtrl.bf.gt2_txinhibit = charge;
+    }
+    if (lc > 3)
+    {
+        miscCtrl.bf.gt3_txinhibit = charge;
+    }
+    // Write
+    gtx.tx->tx_misc_ctrl.dw = miscCtrl.dw;
+}
+
+
+//#################################################################################################
+// Funcion to perform DRP Read
+//
+// Parameters:
+//              drpAddr - address to read from
+//              drpEnMask - mask to prevent reading incorrect bit(s)
+// Return:
+// Assumptions:
+//#################################################################################################
+uint16_t bb_top_dpDrpReadK7(uint16_t drpAddr, bb_top_drp_en_mask drpEnMask)
+{
+    // It's only valid to read from one DRP bus at a time
+    iassert_TOP_COMPONENT_1(drpEnMask.dw == BB_TOP_DRP_DRP_EN_MASK_DP_GT0 ||
+                           drpEnMask.dw == BB_TOP_DRP_DRP_EN_MASK_DP_GT1 ||
+                           drpEnMask.dw == BB_TOP_DRP_DRP_EN_MASK_DP_GT2 ||
+                           drpEnMask.dw == BB_TOP_DRP_DRP_EN_MASK_DP_GT3 ||
+                           drpEnMask.dw == BB_TOP_DRP_DRP_EN_MASK_DP_GT0_TXOUTCLK_MMCM,
+                           BB_TOP_DP_INVALID_DRP_READ,
+                           drpEnMask.dw);
+
+    // Configure the DRP hardware for read access
+    const bb_top_drp_ctrl drpCtrl = { .bf = {
+        .drp_addr = drpAddr,
+        .drp_we = 0
+    }};
+    drp->drp_ctrl.dw = drpCtrl.dw;
+
+    // Wait for all DRP buses to be idle
+    while ((drp->drp_en_mask.dw & bb_top_drp_en_mask_READMASK) != 0);
+
+    // Enable the bus we wish to read from and initiate the read
+    drp->drp_en_mask.dw = drpEnMask.dw;
+
+    // Wait for the read to complete
+    while ((drp->drp_en_mask.dw & bb_top_drp_en_mask_READMASK) != 0);
+
+    // Return the read data
+    return drp->drp_read_data.bf.drp_do;
+}
+
+
+//#################################################################################################
+// Function to perform DRP Read Modify Write
+//
+// Parameters:
+//              drpAddr - address to read from
+//              writeData - data to write
+//              writeMask - for writing
+//              drpEnMask - mask to prevent reading incorrect bit(s)
+// Return:
+// Assumptions:
+//#################################################################################################
+void bb_top_dpDrpReadModWriteK7(uint16_t drpAddr,
+                     uint16_t writeData,
+                     uint16_t writeMask,
+                     bb_top_drp_en_mask drpEnMask)
+{
+    // TODO for now we do individual RMWs for each bit in drpEnMask. DRP addresses
+    // that do not require RMWs for which we wish to write the same value could be
+    // batched together in one write, but for now we take the slower and simpler route.
+
+    // NOTE: if the drp_en_mask register definition changes, the loop condition below
+    // will need to be updated. This static assert attempts to enforce this.
+    COMPILE_TIME_ASSERT(
+        bb_top_drp_en_mask_WRITEMASK  == 0xFF &&
+                        BB_TOP_DRP_DRP_EN_MASK_DP_GT0 == 0x01 &&
+                        BB_TOP_DRP_DRP_EN_MASK_DP_GT0_TXOUTCLK_MMCM == 0x10
+                        );
+    for (uint32_t i = BB_TOP_DRP_DRP_EN_MASK_DP_GT0; // 0x1 - bit 0
+         i <= BB_TOP_DRP_DRP_EN_MASK_DP_GT0_TXOUTCLK_MMCM;
+         i <<= 1)
+    {
+        if (drpEnMask.dw & i)
+        {
+            // Perform the read
+            const bb_top_drp_en_mask readMask = { .dw = i };
+            const uint16_t readVal = bb_top_dpDrpReadK7(drpAddr, readMask);
+
+            // Configure the DRP hardware for write access
+            const bb_top_drp_ctrl drpCtrl = { .bf = {
+                .drp_addr = drpAddr,
+                .drp_we = 1,
+                .drp_di = (readVal & ~writeMask) | writeData
+            }};
+
+            drp->drp_ctrl.dw = drpCtrl.dw;
+
+            // Wait for all DRP buses to be idle
+            while ((drp->drp_en_mask.dw & bb_top_drp_en_mask_READMASK) != 0);
+
+            // Enable the bus(es) we wish to write to and initiate the write
+            drp->drp_en_mask.dw = drpEnMask.dw;
+        }
+    }
+}
+
+
+#endif // PLATFORM_K7
