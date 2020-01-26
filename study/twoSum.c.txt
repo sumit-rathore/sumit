@@ -1,0 +1,198 @@
+// Given any array of integers, return indices of the two numbers such that they add up to a
+// specific target
+
+// Example:
+// Given Numbers = [2, 7, 11, 15], target = 9
+// return [0,1]
+
+
+// Hash Table
+// Hash Table is a data structure which stores data in an associative manner.
+// In hash table, the data is stored in an array format where each data value
+// has its own unique index value.
+// Access of data becomes very fast, if we know the index of the desired data
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+#define SIZE 20
+
+struct DataItem {
+   int data;
+   int key;
+};
+
+struct DataItem* hashArray[SIZE];
+struct DataItem* dummyItem;
+struct DataItem* item;
+
+int hashCode(int key) {
+   return key % SIZE;
+}
+
+struct DataItem *search(int key) {
+   //get the hash 
+   int hashIndex = hashCode(key);  
+	
+   //move in array until an empty 
+   while(hashArray[hashIndex] != NULL) {
+	
+      if(hashArray[hashIndex]->key == key)
+         return hashArray[hashIndex]; 
+			
+      //go to next cell
+      ++hashIndex;
+		
+      //wrap around the table
+      hashIndex %= SIZE;
+   }        
+	
+   return NULL;        
+}
+
+void insert(int key,int data) {
+
+   struct DataItem *item = (struct DataItem*) malloc(sizeof(struct DataItem));
+   item->data = data;  
+   item->key = key;
+
+   //get the hash 
+   int hashIndex = hashCode(key);
+
+   //move in array until an empty or deleted cell
+   while(hashArray[hashIndex] != NULL && hashArray[hashIndex]->key != -1) {
+      //go to next cell
+      ++hashIndex;
+		
+      //wrap around the table
+      hashIndex %= SIZE;
+   }
+	
+   hashArray[hashIndex] = item;
+}
+
+struct DataItem* delete(struct DataItem* item) {
+   int key = item->key;
+
+   //get the hash 
+   int hashIndex = hashCode(key);
+
+   //move in array until an empty
+   while(hashArray[hashIndex] != NULL) {
+	
+      if(hashArray[hashIndex]->key == key) {
+         struct DataItem* temp = hashArray[hashIndex]; 
+			
+         //assign a dummy item at deleted position
+         hashArray[hashIndex] = dummyItem; 
+         return temp;
+      }
+		
+      //go to next cell
+      ++hashIndex;
+		
+      //wrap around the table
+      hashIndex %= SIZE;
+   }      
+	
+   return NULL;        
+}
+
+void display() {
+   int i = 0;
+	
+   for(i = 0; i<SIZE; i++) {
+	
+      if(hashArray[i] != NULL)
+         printf(" (%d,%d)",hashArray[i]->key,hashArray[i]->data);
+      else
+         printf(" ~~ ");
+   }
+	
+   printf("\n");
+}
+
+int main() {
+   dummyItem = (struct DataItem*) malloc(sizeof(struct DataItem));
+   dummyItem->data = -1;  
+   dummyItem->key = -1; 
+
+   insert(1, 20);
+   insert(2, 70);
+   insert(42, 80);
+   insert(4, 25);
+   insert(12, 44);
+   insert(14, 32);
+   insert(17, 11);
+   insert(13, 78);
+   insert(37, 97);
+
+   display();
+   item = search(37);
+
+   if(item != NULL) {
+      printf("Element found: %d\n", item->data);
+   } else {
+      printf("Element not found\n");
+   }
+
+   delete(item);
+   item = search(37);
+
+   if(item != NULL) {
+      printf("Element found: %d\n", item->data);
+   } else {
+      printf("Element not found\n");
+   }
+}
+
+
+
+/**
+ * C solution in O(n) time, using open addressing hash table.
+ */
+#define SIZE 50000
+
+int hash(int key) {
+    int r = key % SIZE;
+    return r < 0 ? r + SIZE : r;
+}
+
+void insert(int *keys, int *values, int key, int value) {
+    int index = hash(key);
+    while (values[index]) {
+        index = (index + 1) % SIZE;
+    }
+    keys[index] = key;
+    values[index] = value;
+}
+
+int search(int *keys, int *values, int key) {
+    int index = hash(key);
+    while (values[index]) {
+        if (keys[index] == key) {
+            return values[index];
+        }
+        index = (index + 1) % SIZE;
+    }
+    return 0;
+}
+
+int* twoSum(int* nums, int numsSize, int target) {
+    int keys[SIZE];
+    int values[SIZE] = {0};
+    for (int i = 0; i < numsSize; i++) {
+        int complements = target - nums[i];
+        int value = search(keys, values, complements);
+        if (value) {
+            int *indices = (int *) malloc(sizeof(int) * 2);
+            indices[0] = value - 1;
+            indices[1] = i;
+            return indices;
+        }
+        insert(keys, values, nums[i], i + 1);
+    }
+    return NULL;
+}
