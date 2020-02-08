@@ -1,0 +1,12 @@
+###### TEST 1. HBR2 LC=4 SSC ON
+* Test passed 
+*
+###### TEST 2. HBR2 LC=2 SSC ON
+* Test passed 
+*Host went to sleep -- test failed for them. Worked for us
+###### TEST 3. HBR2 LC=1 SSC ON
+* Test passed 
+*
+###### TEST 9. RBR LC=1 SSC ON
+* Test passed 
+*It is super painful. Everytime we change the BW or LC, their system crashes and takes forever to reset. They definitely have a bug. Cutting the test short becuase of that

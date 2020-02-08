@@ -1,0 +1,15 @@
+-fix save aliases bug
+(Bug? Never crashed on my computer. Only ShowDialog() was called, so this might
+be just .NET being slow and buggy. Migrating to GTK+ may help.)
+
+-apply ilog fonts to current buffer
+(Should be much easier with GTK+: see
+http://developer.gnome.org/gtk3/3.0/TextWidget.html for more)
+
+-save/load ilog preferences
+(A JSON file would probably work best, with a format similar to that of
+Settings\PreviousSession.hbs.)
+
+-log rtf
+(This may help, although you can see this project's been dormant for years:
+http://pyrtf.sourceforge.net/)

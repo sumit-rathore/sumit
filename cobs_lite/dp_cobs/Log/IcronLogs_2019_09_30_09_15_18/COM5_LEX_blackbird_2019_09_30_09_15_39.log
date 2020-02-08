@@ -1,0 +1,849 @@
+COM5: BB: LEX: 30 09:15:54: 0011748261: iUsrLog: DP_COMPONENT          : AUX EDID type = 0
+COM5: BB: LEX: 30 09:15:54: 0011750865: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 1 | 0=disable, 1=enable, 2=pass Monitor's value
+COM5: BB: LEX: 30 09:15:54: 0011757709: iUsrLog: DP_COMPONENT          : AUX Isolated = 0
+COM5: BB: LEX: 30 09:15:54: 0011758562: iMjrEvt: DP_COMPONENT          : DP YCBCR Disable = 0      * (1 = disable, 0 = Pass through)
+COM5: BB: LEX: 30 09:15:54: 0011766918: iUsrLog: DP_COMPONENT          : No Read MCCS = 1
+COM5: BB: LEX: 30 09:15:54: 0011767596: iUsrLog: DP_COMPONENT          : AUX BPC Mode = 0
+COM5: BB: LEX: 30 09:15:54: 0011770902: iUsrLog: DP_COMPONENT          : BW = 0x0; LC = 0x0
+COM5: BB: LEX: 30 09:15:54: 0011771918: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 09:15:54: 0011773238: iUsrLog: DP_COMPONENT          : Lex Audio status chnaged = 0
+COM5: BB: LEX: 30 09:15:59: 0016184386: iMjrEvt: DP_COMPONENT          : DP ISOLATE       = 0      * (0 = disable, 1 = enable)
+COM5: BB: LEX: 30 09:15:59: 0016184405: iMjrEvt: DP_COMPONENT          : DP New ALU cal   = 1      * (0: Legacy,   1:New)
+COM5: BB: LEX: 30 09:15:59: 0016184424: iMjrEvt: DP_COMPONENT          : DP LEX SSC       = 0      * (0 = disable, 1 = advertise, 2 = pass monitor's value)
+COM5: BB: LEX: 30 09:15:59: 0016184433: iMjrEvt: DP_COMPONENT          : DP REX SSC       = 1      * (0 = disable, 1 = advertise, 2 = pass monitor's value)
+COM5: BB: LEX: 30 09:15:59: 0016184444: iMjrEvt: DP_COMPONENT          : DP No Read MCCS  = 1      * (0 = Don't read MCCS 1 = Read MCCS
+COM5: BB: LEX: 30 09:15:59: 0016184454: iMjrEvt: DP_COMPONENT          : DP AUDIO Send    = 0      * (0 = Enable, 1 = Disable)
+COM5: BB: LEX: 30 09:15:59: 0016184465: iMjrEvt: DP_COMPONENT          : DP PE            = 255      * (255 = default, anything else = forced)
+COM5: BB: LEX: 30 09:15:59: 0016184475: iMjrEvt: DP_COMPONENT          : DP VS            = 255      * (255 = default, anything else = forced)
+COM5: BB: LEX: 30 09:15:59: 0016184485: iMjrEvt: DP_COMPONENT          : DP BANDWIDTH     = 0x0    * (0 = default, anything else = forced)
+COM5: BB: LEX: 30 09:15:59: 0016184496: iMjrEvt: DP_COMPONENT          : DP LANE COUNT    = 0x0    * (0 = default, anything else = forced)
+COM5: BB: LEX: 30 09:15:59: 0016184506: iMjrEvt: DP_COMPONENT          : DP EDID TYPE     = 0      * (0 = monitor's edid, 1 = 4k, 2 = 1080p)
+COM5: BB: LEX: 30 09:15:59: 0016184516: iMjrEvt: DP_COMPONENT          : DP BPC MODE      = 0      * (6 = 6bpc, 8 = 8bpc, 10 = 10bpc)
+COM5: BB: LEX: 30 09:15:59: 0016184527: iMjrEvt: DP_COMPONENT          : DP YCBCR Disable = 0      * (1 = disable, 0 = Pass through)
+COM5: BB: LEX: 30 09:15:59: 0016184536: iMjrEvt: DP_COMPONENT          : DP Rex PD Timeout= 0      * (Value in sec, Max 10 sec)
+COM5: BB: LEX: 30 09:15:59: 0016184546: iMjrEvt: DP_COMPONENT          : DP En AUX        = 0      * (1 = enable, 0 = disable)
+COM5: BB: LEX: 30 09:16:06: 0006850346: ISTATUS ICRON Technologies Software Version v0.0.70
+COM5: BB: LEX: 30 09:16:06: 0006850373: ISTATUS SW build was done on 2019/09/19
+COM5: BB: LEX: 30 09:16:06: 0006850391: ISTATUS SW build was done at 15:19:41
+COM5: BB: LEX: 30 09:16:06: 0006850406: ISTATUS This device is a Lex
+COM5: BB: LEX: 30 09:16:06: 0006850420: ISTATUS Chip ID is Major 0x17, Minor 0x1, Debug 0x1
+COM5: BB: LEX: 30 09:16:06: 0006850436: ISTATUS Chip build date 2019/09/09
+COM5: BB: LEX: 30 09:16:06: 0006850451: ISTATUS Chip build time 12:13:16
+COM5: BB: LEX: 30 09:29:02: 0011143223: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:1, dpEnable:1, Monitor:1
+COM5: BB: LEX: 30 09:29:02: 0011143255: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 3 on event = 6
+COM5: BB: LEX: 30 09:29:02: 0011143273: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 3, new state = 3 on event = 0
+COM5: BB: LEX: 30 09:29:02: 0011157315: iMjrEvt: DP_COMPONENT          : Lex get sink parameters, 2(New Link Params) 1(New) 0(Same): 1
+COM5: BB: LEX: 30 09:29:03: 0011157380: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 0 | 0=disable, 1=enable, 2=pass Monitor's value
+COM5: BB: LEX: 30 09:29:03: 0011157451: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 3, new state = 5 on event = 10
+COM5: BB: LEX: 30 09:29:03: 0011157472: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 09:29:03: 0011157495: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 3
+COM5: BB: LEX: 30 09:29:03: 0011157507: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 5 on event = 2
+COM5: BB: LEX: 30 09:29:03: 0011157516: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD up event
+COM5: BB: LEX: 30 09:29:03: 0011157523: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 09:29:40: 0015454202: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:1, dpEnable:1, Monitor:0
+COM5: BB: LEX: 30 09:29:40: 0015454234: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 7 in state 5
+COM5: BB: LEX: 30 09:29:40: 0015454246: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 7
+COM5: BB: LEX: 30 09:29:41: 0015955813: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:1, dpEnable:1, Monitor:1
+COM5: BB: LEX: 30 09:29:41: 0015955845: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 6 in state 5
+COM5: BB: LEX: 30 09:29:41: 0015955857: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 6
+COM5: BB: LEX: 30 09:29:41: 0015968670: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 11 in state 5
+COM5: BB: LEX: 30 09:29:41: 0015968689: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 11
+COM5: BB: LEX: 30 09:29:46: 0004697775: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:1, dpEnable:1, Monitor:0
+COM5: BB: LEX: 30 09:29:46: 0004697807: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 7 in state 5
+COM5: BB: LEX: 30 09:29:46: 0004697819: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 7
+COM5: BB: LEX: 30 09:29:47: 0005199607: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:1, dpEnable:1, Monitor:1
+COM5: BB: LEX: 30 09:29:47: 0005199639: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 6 in state 5
+COM5: BB: LEX: 30 09:29:47: 0005199651: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 6
+COM5: BB: LEX: 30 09:29:47: 0005212465: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 11 in state 5
+COM5: BB: LEX: 30 09:29:47: 0005212484: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 11
+COM5: BB: LEX: 30 09:30:01: 0003136019: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:1, dpEnable:1, Monitor:0
+COM5: BB: LEX: 30 09:30:01: 0003136051: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 7 in state 5
+COM5: BB: LEX: 30 09:30:01: 0003136063: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 7
+COM5: BB: LEX: 30 09:30:02: 0003637437: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:1, dpEnable:1, Monitor:1
+COM5: BB: LEX: 30 09:30:02: 0003637468: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 6 in state 5
+COM5: BB: LEX: 30 09:30:02: 0003637480: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 6
+COM5: BB: LEX: 30 09:30:02: 0003651281: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 11 in state 5
+COM5: BB: LEX: 30 09:30:02: 0003651300: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 11
+COM5: BB: LEX: 30 09:30:19: 0004066780: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:1, dpEnable:1, Monitor:0
+COM5: BB: LEX: 30 09:30:19: 0004066812: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 7 in state 5
+COM5: BB: LEX: 30 09:30:19: 0004066824: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 7
+COM5: BB: LEX: 30 09:30:40: 0008189332: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:1, dpEnable:1, Monitor:1
+COM5: BB: LEX: 30 09:30:40: 0008189363: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 6 in state 5
+COM5: BB: LEX: 30 09:30:40: 0008189375: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 6
+COM5: BB: LEX: 30 09:30:40: 0008202920: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 11 in state 5
+COM5: BB: LEX: 30 09:30:40: 0008202940: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 11
+COM5: BB: LEX: 30 09:30:48: 0016187043: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:1, dpEnable:1, Monitor:0
+COM5: BB: LEX: 30 09:30:48: 0016187075: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 7 in state 5
+COM5: BB: LEX: 30 09:30:48: 0016187087: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 7
+COM5: BB: LEX: 30 09:30:48: 0016688180: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:1, dpEnable:1, Monitor:1
+COM5: BB: LEX: 30 09:30:48: 0016688212: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 6 in state 5
+COM5: BB: LEX: 30 09:30:48: 0016688224: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 6
+COM5: BB: LEX: 30 09:30:48: 0016701934: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 11 in state 5
+COM5: BB: LEX: 30 09:30:48: 0016701953: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 11
+COM5: BB: LEX: 30 09:30:52: 0003002810: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:1, dpEnable:1, Monitor:0
+COM5: BB: LEX: 30 09:30:52: 0003002842: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 7 in state 5
+COM5: BB: LEX: 30 09:30:52: 0003002854: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 7
+COM5: BB: LEX: 30 09:30:52: 0003557579: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:1, dpEnable:1, Monitor:1
+COM5: BB: LEX: 30 09:30:52: 0003557610: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 6 in state 5
+COM5: BB: LEX: 30 09:30:52: 0003557622: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 6
+COM5: BB: LEX: 30 09:30:52: 0003570724: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 11 in state 5
+COM5: BB: LEX: 30 09:30:52: 0003570743: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 11
+COM5: BB: LEX: 30 09:31:02: 0012983260: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:1, dpEnable:1, Monitor:0
+COM5: BB: LEX: 30 09:31:02: 0012983292: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 7 in state 5
+COM5: BB: LEX: 30 09:31:02: 0012983304: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 7
+COM5: BB: LEX: 30 09:36:38: 0013479497: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:1, dpEnable:1, Monitor:1
+COM5: BB: LEX: 30 09:36:38: 0013479528: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 6 in state 5
+COM5: BB: LEX: 30 09:36:38: 0013479540: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 6
+COM5: BB: LEX: 30 09:36:38: 0013494216: iMjrEvt: DP_COMPONENT          : Lex get sink parameters, 2(New Link Params) 1(New) 0(Same): 1
+COM5: BB: LEX: 30 09:36:38: 0013494279: iMjrEvt: DP_COMPONENT          : Edid compared:1, 1(New) 0(Same)
+COM5: BB: LEX: 30 09:36:38: 0013494299: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 0 | 0=disable, 1=enable, 2=pass Monitor's value
+COM5: BB: LEX: 30 09:36:38: 0013494363: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 10
+COM5: BB: LEX: 30 09:36:38: 0013494397: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 09:36:38: 0013494410: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 0 on event = 3
+COM5: BB: LEX: 30 09:36:38: 0013494438: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD down event
+COM5: BB: LEX: 30 09:36:38: 0013494445: iMjrEvt: DP_STREAM_COMPONENT   : Reset DP Sink = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 09:36:38: 0013494453: iMjrEvt: DP_STREAM_COMPONENT   : Reset TICO Encoder = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 09:36:38: 0013494472: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 0
+COM5: BB: LEX: 30 09:36:38: 0013494484: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 2
+COM5: BB: LEX: 30 09:36:38: 0013495506: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 4
+COM5: BB: LEX: 30 09:36:39: 0014573706: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:1, dpEnable:1, Monitor:0
+COM5: BB: LEX: 30 09:36:39: 0014573738: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 7 in state 5
+COM5: BB: LEX: 30 09:36:39: 0014573750: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 7
+COM5: BB: LEX: 30 09:36:40: 0015559102: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 1 on event = 21
+COM5: BB: LEX: 30 09:36:40: 0015559124: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 5 on event = 0
+COM5: BB: LEX: 30 09:36:40: 0015559137: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD up event
+COM5: BB: LEX: 30 09:36:40: 0015559143: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 09:36:40: 0015659073: ISTATUS ** Host DP connected **
+COM5: BB: LEX: 30 09:36:40: 0015659087: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 1
+COM5: BB: LEX: 30 09:36:40: 0015659118: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 09:36:40: 0015659130: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 8 in state 5
+COM5: BB: LEX: 30 09:36:40: 0015659138: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 8
+COM5: BB: LEX: 30 09:36:40: 0016373606: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:1, dpEnable:1, Monitor:1
+COM5: BB: LEX: 30 09:36:41: 0016373638: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 6 in state 5
+COM5: BB: LEX: 30 09:36:41: 0016373650: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 6
+COM5: BB: LEX: 30 09:36:41: 0016434858: iMjrEvt: DP_COMPONENT          : Lex get sink parameters, 2(New Link Params) 1(New) 0(Same): 2
+COM5: BB: LEX: 30 09:36:41: 0016434888: iMjrEvt: DP_COMPONENT          : Edid compared:0, 1(New) 0(Same)
+COM5: BB: LEX: 30 09:36:41: 0016434907: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 0 | 0=disable, 1=enable, 2=pass Monitor's value
+COM5: BB: LEX: 30 09:36:41: 0016434919: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 10
+COM5: BB: LEX: 30 09:36:41: 0016434940: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 09:36:41: 0016434952: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 0 on event = 3
+COM5: BB: LEX: 30 09:36:41: 0016434980: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD down event
+COM5: BB: LEX: 30 09:36:41: 0016434987: iMjrEvt: DP_STREAM_COMPONENT   : Reset DP Sink = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 09:36:41: 0016434995: iMjrEvt: DP_STREAM_COMPONENT   : Reset TICO Encoder = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 09:36:41: 0016435014: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 0
+COM5: BB: LEX: 30 09:36:41: 0016435026: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 2
+COM5: BB: LEX: 30 09:36:41: 0016436037: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 4
+COM5: BB: LEX: 30 09:36:42: 0016694599: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:1, dpEnable:1, Monitor:0
+COM5: BB: LEX: 30 09:36:42: 0016694630: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 7 in state 5
+COM5: BB: LEX: 30 09:36:42: 0016694643: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 7
+COM5: BB: LEX: 30 09:36:42: 0000017430: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:1, dpEnable:1, Monitor:1
+COM5: BB: LEX: 30 09:36:42: 0000017462: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 6 in state 5
+COM5: BB: LEX: 30 09:36:42: 0000017474: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 6
+COM5: BB: LEX: 30 09:36:42: 0000077643: iMjrEvt: DP_COMPONENT          : Lex get sink parameters, 2(New Link Params) 1(New) 0(Same): 2
+COM5: BB: LEX: 30 09:36:42: 0000077673: iMjrEvt: DP_COMPONENT          : Edid compared:0, 1(New) 0(Same)
+COM5: BB: LEX: 30 09:36:42: 0000077693: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 0 | 0=disable, 1=enable, 2=pass Monitor's value
+COM5: BB: LEX: 30 09:36:42: 0000077704: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 10
+COM5: BB: LEX: 30 09:36:42: 0000077725: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 09:36:42: 0000077737: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 3
+COM5: BB: LEX: 30 09:36:42: 0000077750: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 2
+COM5: BB: LEX: 30 09:36:42: 0000336384: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:1, dpEnable:1, Monitor:0
+COM5: BB: LEX: 30 09:36:42: 0000336416: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 7 in state 5
+COM5: BB: LEX: 30 09:36:42: 0000336428: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 7
+COM5: BB: LEX: 30 09:36:42: 0000436432: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:1, dpEnable:1, Monitor:1
+COM5: BB: LEX: 30 09:36:42: 0000436463: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 6 in state 5
+COM5: BB: LEX: 30 09:36:42: 0000436476: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 6
+COM5: BB: LEX: 30 09:36:42: 0000496644: iMjrEvt: DP_COMPONENT          : Lex get sink parameters, 2(New Link Params) 1(New) 0(Same): 2
+COM5: BB: LEX: 30 09:36:42: 0000496675: iMjrEvt: DP_COMPONENT          : Edid compared:0, 1(New) 0(Same)
+COM5: BB: LEX: 30 09:36:42: 0000496694: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 0 | 0=disable, 1=enable, 2=pass Monitor's value
+COM5: BB: LEX: 30 09:36:42: 0000496706: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 10
+COM5: BB: LEX: 30 09:36:42: 0000496726: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 09:36:42: 0000496739: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 3
+COM5: BB: LEX: 30 09:36:42: 0000496751: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 2
+COM5: BB: LEX: 30 09:36:42: 0000755385: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:1, dpEnable:1, Monitor:0
+COM5: BB: LEX: 30 09:36:42: 0000755416: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 7 in state 5
+COM5: BB: LEX: 30 09:36:42: 0000755428: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 7
+COM5: BB: LEX: 30 09:36:42: 0000855434: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:1, dpEnable:1, Monitor:1
+COM5: BB: LEX: 30 09:36:42: 0000855466: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 6 in state 5
+COM5: BB: LEX: 30 09:36:42: 0000855478: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 6
+COM5: BB: LEX: 30 09:36:42: 0000917645: iMjrEvt: DP_COMPONENT          : Lex get sink parameters, 2(New Link Params) 1(New) 0(Same): 2
+COM5: BB: LEX: 30 09:36:42: 0000917675: iMjrEvt: DP_COMPONENT          : Edid compared:0, 1(New) 0(Same)
+COM5: BB: LEX: 30 09:36:42: 0000917695: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 0 | 0=disable, 1=enable, 2=pass Monitor's value
+COM5: BB: LEX: 30 09:36:42: 0000917706: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 10
+COM5: BB: LEX: 30 09:36:42: 0000917727: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 09:36:42: 0000917739: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 3
+COM5: BB: LEX: 30 09:36:42: 0000917751: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 2
+COM5: BB: LEX: 30 09:36:49: 0001175385: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:1, dpEnable:1, Monitor:0
+COM5: BB: LEX: 30 09:36:49: 0001175417: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 7 in state 5
+COM5: BB: LEX: 30 09:36:49: 0001175429: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 7
+COM5: BB: LEX: 30 09:36:49: 0001275432: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:1, dpEnable:1, Monitor:1
+COM5: BB: LEX: 30 09:36:49: 0001275464: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 6 in state 5
+COM5: BB: LEX: 30 09:36:49: 0001275476: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 6
+COM5: BB: LEX: 30 09:36:49: 0001336646: iMjrEvt: DP_COMPONENT          : Lex get sink parameters, 2(New Link Params) 1(New) 0(Same): 2
+COM5: BB: LEX: 30 09:36:49: 0001336677: iMjrEvt: DP_COMPONENT          : Edid compared:0, 1(New) 0(Same)
+COM5: BB: LEX: 30 09:36:49: 0001336696: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 0 | 0=disable, 1=enable, 2=pass Monitor's value
+COM5: BB: LEX: 30 09:36:49: 0001336708: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 10
+COM5: BB: LEX: 30 09:36:49: 0001336728: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 09:36:49: 0001336741: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 3
+COM5: BB: LEX: 30 09:36:49: 0001336753: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 2
+COM5: BB: LEX: 30 09:36:49: 0001595385: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:1, dpEnable:1, Monitor:0
+COM5: BB: LEX: 30 09:36:49: 0001595417: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 7 in state 5
+COM5: BB: LEX: 30 09:36:49: 0001595429: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 7
+COM5: BB: LEX: 30 09:36:49: 0001695433: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:1, dpEnable:1, Monitor:1
+COM5: BB: LEX: 30 09:36:49: 0001695465: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 6 in state 5
+COM5: BB: LEX: 30 09:36:49: 0001695477: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 6
+COM5: BB: LEX: 30 09:36:49: 0001721885: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 1 on event = 21
+COM5: BB: LEX: 30 09:36:49: 0001721908: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 5 on event = 0
+COM5: BB: LEX: 30 09:36:49: 0001721920: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD up event
+COM5: BB: LEX: 30 09:36:49: 0001721927: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 09:36:49: 0001755640: iMjrEvt: DP_COMPONENT          : Lex get sink parameters, 2(New Link Params) 1(New) 0(Same): 2
+COM5: BB: LEX: 30 09:36:49: 0001755671: iMjrEvt: DP_COMPONENT          : Edid compared:0, 1(New) 0(Same)
+COM5: BB: LEX: 30 09:36:49: 0001755690: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 0 | 0=disable, 1=enable, 2=pass Monitor's value
+COM5: BB: LEX: 30 09:36:49: 0001755701: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 10
+COM5: BB: LEX: 30 09:36:49: 0001755722: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 09:36:49: 0001755735: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 0 on event = 3
+COM5: BB: LEX: 30 09:36:49: 0001755762: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD down event
+COM5: BB: LEX: 30 09:36:49: 0001755770: iMjrEvt: DP_STREAM_COMPONENT   : Reset DP Sink = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 09:36:49: 0001755778: iMjrEvt: DP_STREAM_COMPONENT   : Reset TICO Encoder = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 09:36:49: 0001755797: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 0
+COM5: BB: LEX: 30 09:36:49: 0001755824: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 2
+COM5: BB: LEX: 30 09:36:49: 0001755843: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 11 in state 5
+COM5: BB: LEX: 30 09:36:49: 0001755852: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 11
+COM5: BB: LEX: 30 09:36:49: 0001756851: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 4
+COM5: BB: LEX: 30 09:36:49: 0003819886: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 1 on event = 21
+COM5: BB: LEX: 30 09:36:49: 0003819908: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 5 on event = 0
+COM5: BB: LEX: 30 09:36:49: 0003819921: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD up event
+COM5: BB: LEX: 30 09:36:49: 0003819928: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 09:36:49: 0003919858: ISTATUS ** Host DP connected **
+COM5: BB: LEX: 30 09:36:49: 0003919872: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 1
+COM5: BB: LEX: 30 09:36:49: 0003919903: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 09:36:49: 0003919915: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 8 in state 5
+COM5: BB: LEX: 30 09:36:49: 0003919923: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 8
+COM5: BB: LEX: 30 09:48:51: 0009165224: ISTATUS ICRON Technologies Software Version v0.0.70
+COM5: BB: LEX: 30 09:48:51: 0009165251: ISTATUS SW build was done on 2019/09/19
+COM5: BB: LEX: 30 09:48:51: 0009165269: ISTATUS SW build was done at 15:19:41
+COM5: BB: LEX: 30 09:48:51: 0009165285: ISTATUS This device is a Lex
+COM5: BB: LEX: 30 09:48:51: 0009165298: ISTATUS Chip ID is Major 0x17, Minor 0x1, Debug 0x1
+COM5: BB: LEX: 30 09:48:51: 0009165314: ISTATUS Chip build date 2019/09/09
+COM5: BB: LEX: 30 09:48:51: 0009165329: ISTATUS Chip build time 12:13:16
+COM5: BB: LEX: 30 09:50:11: 0004978598: iUsrLog: DP_COMPONENT          : AUX Isolated = 1
+COM5: BB: LEX: 30 09:50:12: 0006069606: iMjrErr: DP_COMPONENT          : ****** Restarting DP PM State Machine ******
+COM5: BB: LEX: 30 09:50:12: 0006069635: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 1 on event = 9
+COM5: BB: LEX: 30 09:50:12: 0006069677: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 09:50:12: 0006069690: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 09:50:12: 0006069706: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 0 on event = 3
+COM5: BB: LEX: 30 09:50:12: 0006069733: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD down event
+COM5: BB: LEX: 30 09:50:12: 0006069741: iMjrEvt: DP_STREAM_COMPONENT   : Reset DP Sink = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 09:50:12: 0006069749: iMjrEvt: DP_STREAM_COMPONENT   : Reset TICO Encoder = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 09:50:12: 0006069768: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 0 | 0=disable, 1=enable, 2=pass Monitor's value
+COM5: BB: LEX: 30 09:50:12: 0006069776: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 0
+COM5: BB: LEX: 30 09:50:12: 0006071401: iUsrLog: DP_COMPONENT          : AUX Isolated = 0
+COM5: BB: LEX: 30 09:50:12: 0006071892: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 4
+COM5: BB: LEX: 30 09:50:12: 0006111912: ISTATUS Data Link Disconnected
+COM5: BB: LEX: 30 09:50:12: 0006111930: iMjrEvt: DP_COMPONENT          : Aux Generate Rex Active/Offline Phy:0, dpEnable:0, Monitor:0
+COM5: BB: LEX: 30 09:50:12: 0006111954: iMinErr: DP_COMPONENT          : Policy maker: got invalid event 7 in state 1
+COM5: BB: LEX: 30 09:50:12: 0006111962: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 7
+COM5: BB: LEX: 30 09:50:12: 0006332517: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 2 on event = 17
+COM5: BB: LEX: 30 09:50:12: 0006332540: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 0
+COM5: BB: LEX: 30 09:50:13: 0006332558: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 0
+COM5: BB: LEX: 30 09:50:13: 0006332571: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 9
+COM5: BB: LEX: 30 09:50:14: 0008125518: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 1 on event = 21
+COM5: BB: LEX: 30 09:50:14: 0008125540: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 09:50:14: 0008225490: ISTATUS ** Host DP connected **
+COM5: BB: LEX: 30 09:50:14: 0008225504: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 1
+COM5: BB: LEX: 30 09:50:14: 0008225530: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 09:50:14: 0008225543: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 8
+COM5: BB: LEX: 30 09:50:19: 0012419409: ISTATUS Data Link Operational, CATx at 10Gbps
+COM5: BB: LEX: 30 09:50:31: 0008135355: iUsrLog: DP_COMPONENT          : AUX Isolated = 1
+COM5: BB: LEX: 30 09:50:32: 0009358676: iMjrErr: DP_COMPONENT          : ****** Restarting DP PM State Machine ******
+COM5: BB: LEX: 30 09:50:32: 0009358705: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 9
+COM5: BB: LEX: 30 09:53:18: 0007400606: iUsrLog: DP_COMPONENT          : AUX EDID type = 0
+COM5: BB: LEX: 30 09:53:18: 0007404917: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 1 | 0=disable, 1=enable, 2=pass Monitor's value
+COM5: BB: LEX: 30 09:53:18: 0007419304: iUsrLog: DP_COMPONENT          : AUX Isolated = 0
+COM5: BB: LEX: 30 09:53:18: 0007421794: iMjrEvt: DP_COMPONENT          : DP YCBCR Disable = 0      * (1 = disable, 0 = Pass through)
+COM5: BB: LEX: 30 09:53:18: 0007426776: iUsrLog: DP_COMPONENT          : No Read MCCS = 1
+COM5: BB: LEX: 30 09:53:18: 0007430694: iUsrLog: DP_COMPONENT          : AUX BPC Mode = 0
+COM5: BB: LEX: 30 09:53:18: 0007433869: iUsrLog: DP_COMPONENT          : BW = 0x0; LC = 0x0
+COM5: BB: LEX: 30 09:53:18: 0007437249: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 09:53:18: 0007451482: iUsrLog: DP_COMPONENT          : Lex Audio status chnaged = 0
+COM5: BB: LEX: 30 09:53:20: 0008894517: iMjrErr: DP_COMPONENT          : ****** Restarting DP PM State Machine ******
+COM5: BB: LEX: 30 09:53:20: 0008894545: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 9
+COM5: BB: LEX: 30 09:53:20: 0008897829: iUsrLog: DP_COMPONENT          : AUX Isolated = 0
+COM5: BB: LEX:  09:54:10.915: Software Info message: FPGA Chip ID Major 17 Minor 1 Debug 1 HW build was done on 2019/09/09 at 12:13:16 FallbackStatus 0x0
+Bootrom ID Major 0 Minor 12 Software revision Major 0 Minor 0 Debug 70 SW build was done on 2019/09/19 at 15:19:44 this is LEX
+COM5: BB: LEX: 30 09:54:10: 0000002640: iMinEvt: FLASH_DATA_COMPONENT  : Block number 0 address 0xc0b00000 status 1
+COM5: BB: LEX: 30 09:54:10: 0000014461: iMinEvt: FLASH_DATA_COMPONENT  : Block number 1 address 0xc0b10000 status 0
+COM5: BB: LEX: 30 09:54:11: 0000026198: iMinEvt: FLASH_DATA_COMPONENT  : *** Flash Vars erased header data found, from address c0b0035c, 64664 bytes
+COM5: BB: LEX: 30 09:54:11: 0000026217: iMinEvt: FLASH_DATA_COMPONENT  : Flash storage initialization - status 0 active block 0 used space = 0x35c
+COM5: BB: LEX: 30 09:54:11: 0000026319: iMinEvt: FLASH_DATA_COMPONENT  : Variable has wrong size: expected: 15 actual 14 key:26
+COM5: BB: LEX: 30 09:54:11: 0000040440: iMjrErr: TOPLEVEL_COMPONENT    :   *** This is a PlugTest Image ***
+COM5: BB: LEX: 30 09:54:11: 0000258809: iMjrErr: DP_COMPONENT          : ****** DP ISOLATED LEX DISABLED *******
+COM5: BB: LEX: 30 09:54:11: 0000258830: iDbgGrn: DP_AUX_COMPONENT      : Clearing the AUX trans buffer
+COM5: BB: LEX: 30 09:54:11: 0000263368: ISTATUS DP not in over current state
+COM5: BB: LEX: 30 09:54:11: 0000263386: ISTATUS DP not in over current state
+COM5: BB: LEX: 30 09:54:11: 0000263421: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD down event
+COM5: BB: LEX: 30 09:54:11: 0000263432: iMjrEvt: DP_STREAM_COMPONENT   : Reset DP Sink = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 09:54:11: 0000263439: iMjrEvt: DP_STREAM_COMPONENT   : Reset TICO Encoder = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 09:54:11: 0000263458: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 0
+COM5: BB: LEX: 30 09:54:11: 0000263480: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 0, new state = 0 on event = 0
+COM5: BB: LEX: 30 09:54:11: 0000263496: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 0, new state = 1 on event = 2
+COM5: BB: LEX: 30 09:54:11: 0000263524: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 09:54:11: 0000263536: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 09:54:11: 0000263566: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 3
+COM5: BB: LEX: 30 09:54:11: 0000263579: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 3
+COM5: BB: LEX: 30 09:54:11: 0000264677: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 4
+COM5: BB: LEX:  09:54:11.461: GE DBG:
+COM5: BB: LEX:  09:54:11.478: Goldenears SW 0.1.4
+COM5: BB: LEX:  09:54:11.488: GE DBG:
+COM5: BB: LEX:  09:54:11.498: ASIC rev. B detected
+COM5: BB: LEX: 30 09:54:11: 0000519014: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 2 on event = 17
+COM5: BB: LEX: 30 09:54:11: 0000519036: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 0
+COM5: BB: LEX: 30 09:54:11: 0000519054: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 0
+COM5: BB: LEX: 30 09:54:11: 0000519065: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 9
+COM5: BB: LEX: 30 09:54:13: 0002312015: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 1 on event = 21
+COM5: BB: LEX: 30 09:54:13: 0002312036: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 09:54:13: 0002411987: ISTATUS ** Host DP connected **
+COM5: BB: LEX: 30 09:54:13: 0002412001: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 1
+COM5: BB: LEX: 30 09:54:13: 0002412028: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 09:54:13: 0002412039: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 8
+COM5: BB: LEX: 30 09:54:17: 0006828906: ISTATUS Data Link Operational, CATx at 10Gbps
+COM5: BB: LEX: 30 09:54:43: 0008264012: iUsrLog: DP_COMPONENT          : AUX Isolated = 1
+COM5: BB: LEX: 30 09:54:48: 0013450145: iMjrErr: DP_COMPONENT          : ****** Restarting DP PM State Machine ******
+COM5: BB: LEX: 30 09:54:48: 0013450173: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 9
+COM5: BB: LEX: 30 09:55:24: 0015616198: iMjrEvt: DP_COMPONENT          : DP ISOLATE       = 1      * (0 = disable, 1 = enable)
+COM5: BB: LEX: 30 09:55:24: 0015616217: iMjrEvt: DP_COMPONENT          : DP New ALU cal   = 1      * (0: Legacy,   1:New)
+COM5: BB: LEX: 30 09:55:24: 0015616235: iMjrEvt: DP_COMPONENT          : DP LEX SSC       = 0      * (0 = disable, 1 = advertise, 2 = pass monitor's value)
+COM5: BB: LEX: 30 09:55:24: 0015616244: iMjrEvt: DP_COMPONENT          : DP REX SSC       = 1      * (0 = disable, 1 = advertise, 2 = pass monitor's value)
+COM5: BB: LEX: 30 09:55:24: 0015616255: iMjrEvt: DP_COMPONENT          : DP No Read MCCS  = 1      * (0 = Don't read MCCS 1 = Read MCCS
+COM5: BB: LEX: 30 09:55:24: 0015616264: iMjrEvt: DP_COMPONENT          : DP AUDIO Send    = 0      * (0 = Enable, 1 = Disable)
+COM5: BB: LEX: 30 09:55:24: 0015616276: iMjrEvt: DP_COMPONENT          : DP PE            = 255      * (255 = default, anything else = forced)
+COM5: BB: LEX: 30 09:55:24: 0015616285: iMjrEvt: DP_COMPONENT          : DP VS            = 255      * (255 = default, anything else = forced)
+COM5: BB: LEX: 30 09:55:24: 0015616295: iMjrEvt: DP_COMPONENT          : DP BANDWIDTH     = 0x0    * (0 = default, anything else = forced)
+COM5: BB: LEX: 30 09:55:24: 0015616305: iMjrEvt: DP_COMPONENT          : DP LANE COUNT    = 0x0    * (0 = default, anything else = forced)
+COM5: BB: LEX: 30 09:55:24: 0015616315: iMjrEvt: DP_COMPONENT          : DP EDID TYPE     = 0      * (0 = monitor's edid, 1 = 4k, 2 = 1080p)
+COM5: BB: LEX: 30 09:55:24: 0015616324: iMjrEvt: DP_COMPONENT          : DP BPC MODE      = 0      * (6 = 6bpc, 8 = 8bpc, 10 = 10bpc)
+COM5: BB: LEX: 30 09:55:24: 0015616335: iMjrEvt: DP_COMPONENT          : DP YCBCR Disable = 0      * (1 = disable, 0 = Pass through)
+COM5: BB: LEX: 30 09:55:24: 0015616344: iMjrEvt: DP_COMPONENT          : DP Rex PD Timeout= 0      * (Value in sec, Max 10 sec)
+COM5: BB: LEX: 30 09:55:24: 0015616354: iMjrEvt: DP_COMPONENT          : DP En AUX        = 0      * (1 = enable, 0 = disable)
+COM5: BB: LEX:  09:55:32.315: Software Info message: FPGA Chip ID Major 17 Minor 1 Debug 1 HW build was done on 2019/09/09 at 12:13:16 FallbackStatus 0x0
+Bootrom ID Major 0 Minor 12 Software revision Major 0 Minor 0 Debug 70 SW build was done on 2019/09/19 at 15:19:44 this is LEX
+COM5: BB: LEX: 30 09:55:32: 0000002640: iMinEvt: FLASH_DATA_COMPONENT  : Block number 0 address 0xc0b00000 status 1
+COM5: BB: LEX: 30 09:55:32: 0000014461: iMinEvt: FLASH_DATA_COMPONENT  : Block number 1 address 0xc0b10000 status 0
+COM5: BB: LEX: 30 09:55:32: 0000026195: iMinEvt: FLASH_DATA_COMPONENT  : *** Flash Vars erased header data found, from address c0b00374, 64640 bytes
+COM5: BB: LEX: 30 09:55:32: 0000026215: iMinEvt: FLASH_DATA_COMPONENT  : Flash storage initialization - status 0 active block 0 used space = 0x374
+COM5: BB: LEX: 30 09:55:32: 0000026318: iMinEvt: FLASH_DATA_COMPONENT  : Variable has wrong size: expected: 15 actual 14 key:26
+COM5: BB: LEX: 30 09:55:32: 0000040460: iMjrErr: TOPLEVEL_COMPONENT    :   *** This is a PlugTest Image ***
+COM5: BB: LEX: 30 09:55:32: 0000258809: iMjrErr: DP_COMPONENT          : ****** DP ISOLATED LEX ENABLED *******
+COM5: BB: LEX: 30 09:55:32: 0000258829: iDbgGrn: DP_AUX_COMPONENT      : Clearing the AUX trans buffer
+COM5: BB: LEX: 30 09:55:32: 0000263370: ISTATUS DP not in over current state
+COM5: BB: LEX: 30 09:55:32: 0000263388: ISTATUS DP not in over current state
+COM5: BB: LEX: 30 09:55:32: 0000263423: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD down event
+COM5: BB: LEX: 30 09:55:32: 0000263434: iMjrEvt: DP_STREAM_COMPONENT   : Reset DP Sink = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 09:55:32: 0000263441: iMjrEvt: DP_STREAM_COMPONENT   : Reset TICO Encoder = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 09:55:32: 0000263461: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 0 | 0=disable, 1=enable, 2=pass Monitor's value
+COM5: BB: LEX: 30 09:55:32: 0000263469: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 0
+COM5: BB: LEX: 30 09:55:32: 0000263490: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 0, new state = 0 on event = 0
+COM5: BB: LEX: 30 09:55:32: 0000263507: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 0, new state = 1 on event = 2
+COM5: BB: LEX: 30 09:55:32: 0000263533: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 09:55:32: 0000263546: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 09:55:32: 0000263577: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 3
+COM5: BB: LEX: 30 09:55:32: 0000263589: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 3
+COM5: BB: LEX: 30 09:55:32: 0000264685: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 4
+COM5: BB: LEX:  09:55:32.731: GE DBG:
+COM5: BB: LEX:  09:55:32.739: Goldenears SW 0.1.4
+COM5: BB: LEX:  09:55:32.760: GE DBG:
+COM5: BB: LEX:  09:55:32.769: ASIC rev. B detected
+COM5: BB: LEX: 30 09:55:32: 0000519015: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 2 on event = 17
+COM5: BB: LEX: 30 09:55:32: 0000519037: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 0
+COM5: BB: LEX: 30 09:55:32: 0000519055: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 0
+COM5: BB: LEX: 30 09:55:32: 0000519067: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 9
+COM5: BB: LEX: 30 09:55:34: 0002312014: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 1 on event = 21
+COM5: BB: LEX: 30 09:55:34: 0002312037: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 09:55:34: 0002411987: ISTATUS ** Host DP connected **
+COM5: BB: LEX: 30 09:55:34: 0002412001: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 1
+COM5: BB: LEX: 30 09:55:34: 0002412027: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 09:55:34: 0002412039: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 5 on event = 8
+COM5: BB: LEX: 30 09:55:34: 0002412056: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 09:55:34: 0002412079: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 3
+COM5: BB: LEX: 30 09:55:34: 0002412090: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 5 on event = 2
+COM5: BB: LEX: 30 09:55:34: 0002412099: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD up event
+COM5: BB: LEX: 30 09:55:34: 0002412106: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 09:55:38: 0006570906: ISTATUS Data Link Operational, CATx at 10Gbps
+COM5: BB: LEX:  09:56:58.150: Software Info message: FPGA Chip ID Major 17 Minor 1 Debug 1 HW build was done on 2019/09/09 at 12:13:16 FallbackStatus 0x0
+Bootrom ID Major 0 Minor 12 Software revision Major 0 Minor 0 Debug 70 SW build was done on 2019/09/19 at 15:19:44 this is LEX
+COM5: BB: LEX: 30 09:56:58: 0000002640: iMinEvt: FLASH_DATA_COMPONENT  : Block number 0 address 0xc0b00000 status 1
+COM5: BB: LEX: 30 09:56:58: 0000014461: iMinEvt: FLASH_DATA_COMPONENT  : Block number 1 address 0xc0b10000 status 0
+COM5: BB: LEX: 30 09:56:58: 0000026195: iMinEvt: FLASH_DATA_COMPONENT  : *** Flash Vars erased header data found, from address c0b00374, 64640 bytes
+COM5: BB: LEX: 30 09:56:58: 0000026215: iMinEvt: FLASH_DATA_COMPONENT  : Flash storage initialization - status 0 active block 0 used space = 0x374
+COM5: BB: LEX: 30 09:56:58: 0000026318: iMinEvt: FLASH_DATA_COMPONENT  : Variable has wrong size: expected: 15 actual 14 key:26
+COM5: BB: LEX: 30 09:56:58: 0000040460: iMjrErr: TOPLEVEL_COMPONENT    :   *** This is a PlugTest Image ***
+COM5: BB: LEX: 30 09:56:58: 0000258809: iMjrErr: DP_COMPONENT          : ****** DP ISOLATED LEX ENABLED *******
+COM5: BB: LEX: 30 09:56:58: 0000258830: iDbgGrn: DP_AUX_COMPONENT      : Clearing the AUX trans buffer
+COM5: BB: LEX: 30 09:56:58: 0000263367: ISTATUS DP not in over current state
+COM5: BB: LEX: 30 09:56:58: 0000263385: ISTATUS DP not in over current state
+COM5: BB: LEX: 30 09:56:58: 0000263420: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD down event
+COM5: BB: LEX: 30 09:56:58: 0000263431: iMjrEvt: DP_STREAM_COMPONENT   : Reset DP Sink = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 09:56:58: 0000263439: iMjrEvt: DP_STREAM_COMPONENT   : Reset TICO Encoder = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 09:56:58: 0000263458: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 0 | 0=disable, 1=enable, 2=pass Monitor's value
+COM5: BB: LEX: 30 09:56:58: 0000263466: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 0
+COM5: BB: LEX: 30 09:56:58: 0000263487: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 0, new state = 0 on event = 0
+COM5: BB: LEX: 30 09:56:58: 0000263504: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 0, new state = 1 on event = 2
+COM5: BB: LEX: 30 09:56:58: 0000263531: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 09:56:58: 0000263544: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 09:56:58: 0000263574: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 3
+COM5: BB: LEX: 30 09:56:58: 0000263586: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 3
+COM5: BB: LEX: 30 09:56:58: 0000264682: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 4
+COM5: BB: LEX:  09:56:58.565: GE DBG:
+COM5: BB: LEX:  09:56:58.572: Goldenears SW 0.1.4
+COM5: BB: LEX:  09:56:58.581: GE DBG:
+COM5: BB: LEX:  09:56:58.595: ASIC rev. B detected
+COM5: BB: LEX: 30 09:56:58: 0000519015: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 2 on event = 17
+COM5: BB: LEX: 30 09:56:58: 0000519037: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 0
+COM5: BB: LEX: 30 09:56:58: 0000519055: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 0
+COM5: BB: LEX: 30 09:56:58: 0000519067: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 9
+COM5: BB: LEX: 30 09:57:00: 0002312015: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 1 on event = 21
+COM5: BB: LEX: 30 09:57:00: 0002312037: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 09:57:00: 0002411987: ISTATUS ** Host DP connected **
+COM5: BB: LEX: 30 09:57:00: 0002412001: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 1
+COM5: BB: LEX: 30 09:57:00: 0002412027: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 09:57:00: 0002412039: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 5 on event = 8
+COM5: BB: LEX: 30 09:57:00: 0002412056: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 09:57:00: 0002412079: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 3
+COM5: BB: LEX: 30 09:57:00: 0002412090: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 5 on event = 2
+COM5: BB: LEX: 30 09:57:00: 0002412099: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD up event
+COM5: BB: LEX: 30 09:57:00: 0002412106: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 09:57:04: 0006828906: ISTATUS Data Link Operational, CATx at 10Gbps
+COM5: BB: LEX: 30 09:58:01: 0005291571: iMjrErr: DP_COMPONENT          : ****** Restarting DP PM State Machine ******
+COM5: BB: LEX: 30 09:58:01: 0005291600: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 1 on event = 9
+COM5: BB: LEX: 30 09:58:01: 0005291640: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 09:58:01: 0005291653: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 09:58:01: 0005291679: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 0 on event = 3
+COM5: BB: LEX: 30 09:58:01: 0005291707: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD down event
+COM5: BB: LEX: 30 09:58:01: 0005291714: iMjrEvt: DP_STREAM_COMPONENT   : Reset DP Sink = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 09:58:01: 0005291722: iMjrEvt: DP_STREAM_COMPONENT   : Reset TICO Encoder = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 09:58:01: 0005291740: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 0 | 0=disable, 1=enable, 2=pass Monitor's value
+COM5: BB: LEX: 30 09:58:01: 0005291748: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 0
+COM5: BB: LEX: 30 09:58:01: 0005293630: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 4
+COM5: BB: LEX: 30 09:58:01: 0005549906: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 2 on event = 17
+COM5: BB: LEX: 30 09:58:01: 0005549928: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 0
+COM5: BB: LEX: 30 09:58:01: 0005549951: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 0
+COM5: BB: LEX: 30 09:58:01: 0005549962: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 9
+COM5: BB: LEX: 30 09:58:03: 0007356907: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 1 on event = 21
+COM5: BB: LEX: 30 09:58:03: 0007356928: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 09:58:03: 0007456879: ISTATUS ** Host DP connected **
+COM5: BB: LEX: 30 09:58:03: 0007456893: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 1
+COM5: BB: LEX: 30 09:58:03: 0007456924: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 09:58:03: 0007456935: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 5 on event = 8
+COM5: BB: LEX: 30 09:58:03: 0007456954: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 09:58:03: 0007456986: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 3
+COM5: BB: LEX: 30 09:58:03: 0007456999: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 5 on event = 2
+COM5: BB: LEX: 30 09:58:03: 0007457006: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD up event
+COM5: BB: LEX: 30 09:58:03: 0007457013: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 09:59:36: 0000199574: iMjrErr: DP_COMPONENT          : ****** Restarting DP PM State Machine ******
+COM5: BB: LEX: 30 09:59:36: 0000199614: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 1 on event = 9
+COM5: BB: LEX: 30 09:59:36: 0000199654: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 09:59:36: 0000199667: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 09:59:36: 0000199693: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 0 on event = 3
+COM5: BB: LEX: 30 09:59:36: 0000199721: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD down event
+COM5: BB: LEX: 30 09:59:36: 0000199728: iMjrEvt: DP_STREAM_COMPONENT   : Reset DP Sink = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 09:59:36: 0000199736: iMjrEvt: DP_STREAM_COMPONENT   : Reset TICO Encoder = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 09:59:36: 0000199755: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 0 | 0=disable, 1=enable, 2=pass Monitor's value
+COM5: BB: LEX: 30 09:59:36: 0000199763: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 0
+COM5: BB: LEX: 30 09:59:36: 0000200773: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 4
+COM5: BB: LEX: 30 09:59:36: 0000457610: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 2 on event = 17
+COM5: BB: LEX: 30 09:59:36: 0000457632: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 0
+COM5: BB: LEX: 30 09:59:36: 0000457654: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 0
+COM5: BB: LEX: 30 09:59:36: 0000457666: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 9
+COM5: BB: LEX: 30 09:59:38: 0002265610: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 1 on event = 21
+COM5: BB: LEX: 30 09:59:38: 0002265631: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 09:59:38: 0002365582: ISTATUS ** Host DP connected **
+COM5: BB: LEX: 30 09:59:38: 0002365596: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 1
+COM5: BB: LEX: 30 09:59:38: 0002365627: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 09:59:38: 0002365639: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 5 on event = 8
+COM5: BB: LEX: 30 09:59:38: 0002365657: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 09:59:38: 0002365690: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 3
+COM5: BB: LEX: 30 09:59:38: 0002365702: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 5 on event = 2
+COM5: BB: LEX: 30 09:59:38: 0002365710: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD up event
+COM5: BB: LEX: 30 09:59:38: 0002365717: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 10:00:53: 0010169223: iMjrErr: DP_COMPONENT          : ****** Restarting DP PM State Machine ******
+COM5: BB: LEX: 30 10:00:53: 0010169252: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 1 on event = 9
+COM5: BB: LEX: 30 10:00:53: 0010169292: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 10:00:53: 0010169306: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 10:00:53: 0010169331: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 0 on event = 3
+COM5: BB: LEX: 30 10:00:53: 0010169360: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD down event
+COM5: BB: LEX: 30 10:00:53: 0010169367: iMjrEvt: DP_STREAM_COMPONENT   : Reset DP Sink = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 10:00:53: 0010169374: iMjrEvt: DP_STREAM_COMPONENT   : Reset TICO Encoder = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 10:00:53: 0010169393: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 0 | 0=disable, 1=enable, 2=pass Monitor's value
+COM5: BB: LEX: 30 10:00:53: 0010169401: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 0
+COM5: BB: LEX: 30 10:00:53: 0010171284: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 4
+COM5: BB: LEX: 30 10:00:54: 0010428746: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 2 on event = 17
+COM5: BB: LEX: 30 10:00:54: 0010428768: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 0
+COM5: BB: LEX: 30 10:00:54: 0010428790: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 0
+COM5: BB: LEX: 30 10:00:54: 0010428802: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 9
+COM5: BB: LEX: 30 10:00:55: 0012234746: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 1 on event = 21
+COM5: BB: LEX: 30 10:00:55: 0012234768: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 10:00:55: 0012334718: ISTATUS ** Host DP connected **
+COM5: BB: LEX: 30 10:00:55: 0012334732: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 1
+COM5: BB: LEX: 30 10:00:55: 0012334763: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 10:00:55: 0012334775: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 5 on event = 8
+COM5: BB: LEX: 30 10:00:55: 0012334793: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 10:00:55: 0012334826: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 3
+COM5: BB: LEX: 30 10:00:56: 0012334838: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 5 on event = 2
+COM5: BB: LEX: 30 10:00:56: 0012334846: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD up event
+COM5: BB: LEX: 30 10:00:56: 0012334853: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 10:01:33: 0000061532: iMjrErr: DP_COMPONENT          : ****** Restarting DP PM State Machine ******
+COM5: BB: LEX: 30 10:01:34: 0000061561: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 1 on event = 9
+COM5: BB: LEX: 30 10:01:34: 0000061601: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 10:01:34: 0000061615: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 10:01:34: 0000061641: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 0 on event = 3
+COM5: BB: LEX: 30 10:01:34: 0000061669: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD down event
+COM5: BB: LEX: 30 10:01:34: 0000061676: iMjrEvt: DP_STREAM_COMPONENT   : Reset DP Sink = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 10:01:34: 0000061683: iMjrEvt: DP_STREAM_COMPONENT   : Reset TICO Encoder = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 10:01:34: 0000061702: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 0 | 0=disable, 1=enable, 2=pass Monitor's value
+COM5: BB: LEX: 30 10:01:34: 0000061710: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 0
+COM5: BB: LEX: 30 10:01:34: 0000062721: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 4
+COM5: BB: LEX: 30 10:01:34: 0000319099: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 2 on event = 17
+COM5: BB: LEX: 30 10:01:34: 0000319120: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 0
+COM5: BB: LEX: 30 10:01:34: 0000319143: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 0
+COM5: BB: LEX: 30 10:01:34: 0000319154: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 9
+COM5: BB: LEX: 30 10:01:36: 0002127098: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 1 on event = 21
+COM5: BB: LEX: 30 10:01:36: 0002127119: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 10:01:36: 0002227070: ISTATUS ** Host DP connected **
+COM5: BB: LEX: 30 10:01:36: 0002227084: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 1
+COM5: BB: LEX: 30 10:01:36: 0002227115: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 10:01:36: 0002227126: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 5 on event = 8
+COM5: BB: LEX: 30 10:01:36: 0002227145: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 10:01:36: 0002227177: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 3
+COM5: BB: LEX: 30 10:01:36: 0002227190: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 5 on event = 2
+COM5: BB: LEX: 30 10:01:36: 0002227197: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD up event
+COM5: BB: LEX: 30 10:01:36: 0002227204: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 10:02:38: 0013782303: iMjrErr: DP_COMPONENT          : ****** Restarting DP PM State Machine ******
+COM5: BB: LEX: 30 10:02:38: 0013782332: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 1 on event = 9
+COM5: BB: LEX: 30 10:02:38: 0013782373: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 10:02:38: 0013782386: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 10:02:38: 0013782412: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 0 on event = 3
+COM5: BB: LEX: 30 10:02:38: 0013782440: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD down event
+COM5: BB: LEX: 30 10:02:38: 0013782447: iMjrEvt: DP_STREAM_COMPONENT   : Reset DP Sink = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 10:02:38: 0013782455: iMjrEvt: DP_STREAM_COMPONENT   : Reset TICO Encoder = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 10:02:38: 0013782473: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 0 | 0=disable, 1=enable, 2=pass Monitor's value
+COM5: BB: LEX: 30 10:02:38: 0013782481: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 0
+COM5: BB: LEX: 30 10:02:38: 0013783501: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 4
+COM5: BB: LEX: 30 10:02:38: 0014041450: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 2 on event = 17
+COM5: BB: LEX: 30 10:02:38: 0014041471: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 0
+COM5: BB: LEX: 30 10:02:38: 0014041494: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 0
+COM5: BB: LEX: 30 10:02:38: 0014041506: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 9
+COM5: BB: LEX: 30 10:02:40: 0015847450: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 1 on event = 21
+COM5: BB: LEX: 30 10:02:40: 0015847471: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 10:02:40: 0015947422: ISTATUS ** Host DP connected **
+COM5: BB: LEX: 30 10:02:40: 0015947436: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 1
+COM5: BB: LEX: 30 10:02:40: 0015947467: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 10:02:40: 0015947478: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 5 on event = 8
+COM5: BB: LEX: 30 10:02:40: 0015947497: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 10:02:40: 0015947530: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 3
+COM5: BB: LEX: 30 10:02:40: 0015947542: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 5 on event = 2
+COM5: BB: LEX: 30 10:02:40: 0015947549: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD up event
+COM5: BB: LEX: 30 10:02:40: 0015947557: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 10:02:52: 0011820712: ISTATUS ICRON Technologies Software Version v0.0.70
+COM5: BB: LEX: 30 10:02:52: 0011820740: ISTATUS SW build was done on 2019/09/19
+COM5: BB: LEX: 30 10:02:52: 0011820756: ISTATUS SW build was done at 15:19:41
+COM5: BB: LEX: 30 10:02:52: 0011820772: ISTATUS This device is a Lex
+COM5: BB: LEX: 30 10:02:52: 0011820785: ISTATUS Chip ID is Major 0x17, Minor 0x1, Debug 0x1
+COM5: BB: LEX: 30 10:02:52: 0011820801: ISTATUS Chip build date 2019/09/09
+COM5: BB: LEX: 30 10:02:52: 0011820814: ISTATUS Chip build time 12:13:16
+COM5: BB: LEX: 30 10:02:57: 0016443365: iMjrErr: DP_COMPONENT          : ****** Restarting DP PM State Machine ******
+COM5: BB: LEX: 30 10:02:57: 0016443393: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 1 on event = 9
+COM5: BB: LEX: 30 10:02:57: 0016443435: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 10:02:57: 0016443448: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 10:02:57: 0016443475: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 0 on event = 3
+COM5: BB: LEX: 30 10:02:57: 0016443501: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD down event
+COM5: BB: LEX: 30 10:02:57: 0016443509: iMjrEvt: DP_STREAM_COMPONENT   : Reset DP Sink = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 10:02:57: 0016443516: iMjrEvt: DP_STREAM_COMPONENT   : Reset TICO Encoder = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 10:02:57: 0016443536: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 0 | 0=disable, 1=enable, 2=pass Monitor's value
+COM5: BB: LEX: 30 10:02:57: 0016443542: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 0
+COM5: BB: LEX: 30 10:02:57: 0016444563: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 4
+COM5: BB: LEX: 30 10:02:57: 0016702234: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 2 on event = 17
+COM5: BB: LEX: 30 10:02:57: 0016702257: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 0
+COM5: BB: LEX: 30 10:02:57: 0016702279: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 0
+COM5: BB: LEX: 30 10:02:57: 0016702292: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 9
+COM5: BB: LEX: 30 10:02:59: 0001732018: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 1 on event = 21
+COM5: BB: LEX: 30 10:02:59: 0001732041: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 10:02:59: 0001831991: ISTATUS ** Host DP connected **
+COM5: BB: LEX: 30 10:02:59: 0001832005: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 1
+COM5: BB: LEX: 30 10:02:59: 0001832035: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 10:02:59: 0001832048: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 5 on event = 8
+COM5: BB: LEX: 30 10:02:59: 0001832065: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 10:02:59: 0001832099: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 3
+COM5: BB: LEX: 30 10:02:59: 0001832109: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 5 on event = 2
+COM5: BB: LEX: 30 10:02:59: 0001832119: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD up event
+COM5: BB: LEX: 30 10:02:59: 0001832125: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 10:03:58: 0010017433: iUsrLog: ICMD_COMPONENT        : Read address 0x80004720: value 0x0
+COM5: BB: LEX: 30 10:04:01: 0013034823: iUsrLog: ICMD_COMPONENT        : Modify bitfield for address 0x80004720 starting at position 0 for width 1 bits
+COM5: BB: LEX: 30 10:04:01: 0013034844: iUsrLog: ICMD_COMPONENT        : Write value: 0x1, Read value: 0x0, New value 0x1
+COM5: BB: LEX: 30 10:04:01: 0013036346: iUsrLog: ICMD_COMPONENT        : Read address 0x80004720: value 0x1
+COM5: BB: LEX: 30 10:04:04: 0016698924: iUsrLog: ICMD_COMPONENT        : Read address 0x80004720: value 0x0
+COM5: BB: LEX: 30 10:04:05: 0000933382: iUsrLog: ICMD_COMPONENT        : Modify bitfield for address 0x80004720 starting at position 0 for width 1 bits
+COM5: BB: LEX: 30 10:04:05: 0000933403: iUsrLog: ICMD_COMPONENT        : Write value: 0x1, Read value: 0x0, New value 0x1
+COM5: BB: LEX: 30 10:04:05: 0000934828: iUsrLog: ICMD_COMPONENT        : Read address 0x80004720: value 0x1
+COM5: BB: LEX: 30 10:04:06: 0001720846: iUsrLog: ICMD_COMPONENT        : Read address 0x80004720: value 0x0
+COM5: BB: LEX: 30 10:04:10: 0005330809: iUsrLog: ICMD_COMPONENT        : Modify bitfield for address 0x80004720 starting at position 1 for width 1 bits
+COM5: BB: LEX: 30 10:04:10: 0005330831: iUsrLog: ICMD_COMPONENT        : Write value: 0x1, Read value: 0x0, New value 0x2
+COM5: BB: LEX: 30 10:04:10: 0005335763: iUsrLog: ICMD_COMPONENT        : Read address 0x80004720: value 0x2
+COM5: BB: LEX: 30 10:04:11: 0006742341: iUsrLog: ICMD_COMPONENT        : Read address 0x80004720: value 0x0
+COM5: BB: LEX: 30 10:05:06: 0011207052: iMjrErr: DP_COMPONENT          : ****** Restarting DP PM State Machine ******
+COM5: BB: LEX: 30 10:05:06: 0011207080: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 1 on event = 9
+COM5: BB: LEX: 30 10:05:06: 0011207122: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 10:05:06: 0011207134: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 10:05:06: 0011207161: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 0 on event = 3
+COM5: BB: LEX: 30 10:05:06: 0011207188: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD down event
+COM5: BB: LEX: 30 10:05:06: 0011207196: iMjrEvt: DP_STREAM_COMPONENT   : Reset DP Sink = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 10:05:06: 0011207202: iMjrEvt: DP_STREAM_COMPONENT   : Reset TICO Encoder = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 10:05:06: 0011207222: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 0 | 0=disable, 1=enable, 2=pass Monitor's value
+COM5: BB: LEX: 30 10:05:06: 0011207229: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 0
+COM5: BB: LEX: 30 10:05:06: 0011208240: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 4
+COM5: BB: LEX: 30 10:05:06: 0011464506: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 2 on event = 17
+COM5: BB: LEX: 30 10:05:06: 0011464529: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 0
+COM5: BB: LEX: 30 10:05:06: 0011464551: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 0
+COM5: BB: LEX: 30 10:05:06: 0011464564: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 9
+COM5: BB: LEX: 30 10:05:08: 0013272506: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 1 on event = 21
+COM5: BB: LEX: 30 10:05:08: 0013272529: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 10:05:08: 0013372478: ISTATUS ** Host DP connected **
+COM5: BB: LEX: 30 10:05:08: 0013372493: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 1
+COM5: BB: LEX: 30 10:05:08: 0013372523: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 10:05:08: 0013372535: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 5 on event = 8
+COM5: BB: LEX: 30 10:05:08: 0013372552: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 10:05:08: 0013372586: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 3
+COM5: BB: LEX: 30 10:05:08: 0013372597: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 5 on event = 2
+COM5: BB: LEX: 30 10:05:08: 0013372606: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD up event
+COM5: BB: LEX: 30 10:05:08: 0013372613: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 10:13:03: 0001658010: iDbgLog: FLASH_DATA_COMPONENT  : Flash sector c0b0 erased
+COM5: BB: LEX: 30 10:13:03: 0001662622: iDbgLog: FLASH_DATA_COMPONENT  : Flash sector c0b0 erased
+COM5: BB: LEX: 30 10:13:03: 0001662643: iMinEvt: FLASH_DATA_COMPONENT  : Flash Vars successfully erased
+COM5: BB: LEX: 30 10:13:03: 0002192091: iDbgLog: FLASH_DATA_COMPONENT  : Flash sector c0b0 erased
+COM5: BB: LEX: 30 10:13:03: 0002196672: iDbgLog: FLASH_DATA_COMPONENT  : Flash sector c0b0 erased
+COM5: BB: LEX: 30 10:13:03: 0002196692: iMinEvt: FLASH_DATA_COMPONENT  : Flash Vars successfully erased
+COM5: BB: LEX:  10:13:51.292: Software Info message: FPGA Chip ID Major 17 Minor 1 Debug 1 HW build was done on 2019/09/09 at 12:13:16 FallbackStatus 0x0
+Bootrom ID Major 0 Minor 12 Software revision Major 0 Minor 0 Debug 70 SW build was done on 2019/09/19 at 15:19:44 this is LEX
+COM5: BB: LEX: 30 10:13:51: 0000014436: iMinEvt: FLASH_DATA_COMPONENT  : Block number 0 address 0xc0b00000 status 0
+COM5: BB: LEX: 30 10:13:51: 0000026257: iMinEvt: FLASH_DATA_COMPONENT  : Block number 1 address 0xc0b10000 status 0
+COM5: BB: LEX: 30 10:13:51: 0000030837: iDbgLog: FLASH_DATA_COMPONENT  : Flash sector c0b0 erased
+COM5: BB: LEX: 30 10:13:51: 0000042753: iMinEvt: FLASH_DATA_COMPONENT  : *** Flash Vars erased header data found, from address c0b0000c, 65512 bytes
+COM5: BB: LEX: 30 10:13:51: 0000042773: iMinEvt: FLASH_DATA_COMPONENT  : Flash storage initialization - status 1 active block 0 used space = 0xc
+COM5: BB: LEX: 30 10:13:51: 0000057273: iMjrErr: TOPLEVEL_COMPONENT    :   *** This is a PlugTest Image ***
+COM5: BB: LEX: 30 10:13:51: 0000275817: iMjrErr: DP_COMPONENT          : ****** DP ISOLATED LEX DISABLED *******
+COM5: BB: LEX: 30 10:13:51: 0000275837: iDbgGrn: DP_AUX_COMPONENT      : Clearing the AUX trans buffer
+COM5: BB: LEX: 30 10:13:51: 0000280375: ISTATUS DP not in over current state
+COM5: BB: LEX: 30 10:13:51: 0000280393: ISTATUS DP not in over current state
+COM5: BB: LEX: 30 10:13:51: 0000280428: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD down event
+COM5: BB: LEX: 30 10:13:51: 0000280439: iMjrEvt: DP_STREAM_COMPONENT   : Reset DP Sink = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 10:13:51: 0000280446: iMjrEvt: DP_STREAM_COMPONENT   : Reset TICO Encoder = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 10:13:51: 0000280465: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 0
+COM5: BB: LEX: 30 10:13:51: 0000280487: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 0, new state = 0 on event = 0
+COM5: BB: LEX: 30 10:13:51: 0000280504: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 0, new state = 1 on event = 2
+COM5: BB: LEX: 30 10:13:51: 0000280531: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 10:13:51: 0000280543: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 10:13:51: 0000280573: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 3
+COM5: BB: LEX: 30 10:13:51: 0000280586: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 3
+COM5: BB: LEX: 30 10:13:51: 0000281684: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 4
+COM5: BB: LEX:  10:13:51.706: GE DBG:
+COM5: BB: LEX:  10:13:51.710: Goldenears SW 0.1.4
+COM5: BB: LEX:  10:13:51.714: GE DBG:
+COM5: BB: LEX:  10:13:51.718: ASIC rev. B detected
+COM5: BB: LEX: 30 10:13:51: 0000536015: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 2 on event = 17
+COM5: BB: LEX: 30 10:13:51: 0000536036: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 0
+COM5: BB: LEX: 30 10:13:51: 0000536055: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 0
+COM5: BB: LEX: 30 10:13:51: 0000536066: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 9
+COM5: BB: LEX: 30 10:13:53: 0002329015: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 1 on event = 21
+COM5: BB: LEX: 30 10:13:53: 0002329036: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 10:13:53: 0002428987: ISTATUS ** Host DP connected **
+COM5: BB: LEX: 30 10:13:53: 0002429001: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 1
+COM5: BB: LEX: 30 10:13:53: 0002429027: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 10:13:53: 0002429038: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 8
+COM5: BB: LEX: 30 10:13:57: 0006587906: ISTATUS Data Link Operational, CATx at 10Gbps
+COM5: BB: LEX: 30 10:17:59: 0005996134: iMjrErr: DP_COMPONENT          : ****** Restarting DP PM State Machine ******
+COM5: BB: LEX: 30 10:17:59: 0005996163: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 9
+COM5: BB: LEX: 30 10:18:07: 0013433688: iMjrErr: DP_COMPONENT          : ****** Restarting DP PM State Machine ******
+COM5: BB: LEX: 30 10:18:07: 0013433717: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 9
+COM5: BB: LEX: 30 10:18:12: 0002234488: iMjrEvt: DP_COMPONENT          : DP ISOLATE       = 0      * (0 = disable, 1 = enable)
+COM5: BB: LEX: 30 10:18:12: 0002234508: iMjrEvt: DP_COMPONENT          : DP New ALU cal   = 1      * (0: Legacy,   1:New)
+COM5: BB: LEX: 30 10:18:12: 0002234525: iMjrEvt: DP_COMPONENT          : DP LEX SSC       = 2      * (0 = disable, 1 = advertise, 2 = pass monitor's value)
+COM5: BB: LEX: 30 10:18:12: 0002234535: iMjrEvt: DP_COMPONENT          : DP REX SSC       = 2      * (0 = disable, 1 = advertise, 2 = pass monitor's value)
+COM5: BB: LEX: 30 10:18:12: 0002234545: iMjrEvt: DP_COMPONENT          : DP No Read MCCS  = 1      * (0 = Don't read MCCS 1 = Read MCCS
+COM5: BB: LEX: 30 10:18:12: 0002234555: iMjrEvt: DP_COMPONENT          : DP AUDIO Send    = 0      * (0 = Enable, 1 = Disable)
+COM5: BB: LEX: 30 10:18:12: 0002234566: iMjrEvt: DP_COMPONENT          : DP PE            = 255      * (255 = default, anything else = forced)
+COM5: BB: LEX: 30 10:18:12: 0002234575: iMjrEvt: DP_COMPONENT          : DP VS            = 255      * (255 = default, anything else = forced)
+COM5: BB: LEX: 30 10:18:12: 0002234584: iMjrEvt: DP_COMPONENT          : DP BANDWIDTH     = 0x0    * (0 = default, anything else = forced)
+COM5: BB: LEX: 30 10:18:12: 0002234596: iMjrEvt: DP_COMPONENT          : DP LANE COUNT    = 0x0    * (0 = default, anything else = forced)
+COM5: BB: LEX: 30 10:18:12: 0002234605: iMjrEvt: DP_COMPONENT          : DP EDID TYPE     = 0      * (0 = monitor's edid, 1 = 4k, 2 = 1080p)
+COM5: BB: LEX: 30 10:18:12: 0002234615: iMjrEvt: DP_COMPONENT          : DP BPC MODE      = 0      * (6 = 6bpc, 8 = 8bpc, 10 = 10bpc)
+COM5: BB: LEX: 30 10:18:12: 0002234625: iMjrEvt: DP_COMPONENT          : DP YCBCR Disable = 0      * (1 = disable, 0 = Pass through)
+COM5: BB: LEX: 30 10:18:12: 0002234634: iMjrEvt: DP_COMPONENT          : DP Rex PD Timeout= 0      * (Value in sec, Max 10 sec)
+COM5: BB: LEX: 30 10:18:12: 0002234644: iMjrEvt: DP_COMPONENT          : DP En AUX        = 0      * (1 = enable, 0 = disable)
+COM5: BB: LEX: 30 10:18:20: 0010360027: iMjrErr: DP_COMPONENT          : ****** Restarting DP PM State Machine ******
+COM5: BB: LEX: 30 10:18:20: 0010360055: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 9
+COM5: BB: LEX: 30 10:18:23: 0012616978: iUsrLog: DP_COMPONENT          : AUX Isolated = 0
+COM5: BB: LEX: 30 10:18:23: 0013167338: iUsrLog: DP_COMPONENT          : AUX Isolated = 1
+COM5: BB: LEX: 30 10:18:24: 0014558706: iMjrErr: DP_COMPONENT          : ****** Restarting DP PM State Machine ******
+COM5: BB: LEX: 30 10:18:24: 0014558734: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 9
+COM5: BB: LEX: 30 10:18:43: 0016108609: ISTATUS Data Link Disconnected
+COM5: BB: LEX:  10:18:48.006: Software Info message: FPGA Chip ID Major 17 Minor 1 Debug 1 HW build was done on 2019/09/09 at 12:13:16 FallbackStatus 0x0
+Bootrom ID Major 0 Minor 12 Software revision Major 0 Minor 0 Debug 70 SW build was done on 2019/09/19 at 15:19:44 this is LEX
+COM5: BB: LEX: 30 10:18:48: 0000002640: iMinEvt: FLASH_DATA_COMPONENT  : Block number 0 address 0xc0b00000 status 1
+COM5: BB: LEX: 30 10:18:48: 0000014461: iMinEvt: FLASH_DATA_COMPONENT  : Block number 1 address 0xc0b10000 status 0
+COM5: BB: LEX: 30 10:18:48: 0000026261: iMinEvt: FLASH_DATA_COMPONENT  : *** Flash Vars erased header data found, from address c0b000ec, 65288 bytes
+COM5: BB: LEX: 30 10:18:48: 0000026280: iMinEvt: FLASH_DATA_COMPONENT  : Flash storage initialization - status 0 active block 0 used space = 0xec
+COM5: BB: LEX: 30 10:18:48: 0000039004: iMjrErr: TOPLEVEL_COMPONENT    :   *** This is a PlugTest Image ***
+COM5: BB: LEX: 30 10:18:48: 0000257812: iMjrErr: DP_COMPONENT          : ****** DP ISOLATED LEX ENABLED *******
+COM5: BB: LEX: 30 10:18:48: 0000257832: iDbgGrn: DP_AUX_COMPONENT      : Clearing the AUX trans buffer
+COM5: BB: LEX: 30 10:18:48: 0000262368: ISTATUS DP not in over current state
+COM5: BB: LEX: 30 10:18:48: 0000262386: ISTATUS DP not in over current state
+COM5: BB: LEX: 30 10:18:48: 0000262421: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD down event
+COM5: BB: LEX: 30 10:18:48: 0000262432: iMjrEvt: DP_STREAM_COMPONENT   : Reset DP Sink = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 10:18:48: 0000262439: iMjrEvt: DP_STREAM_COMPONENT   : Reset TICO Encoder = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 10:18:48: 0000262459: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 2 | 0=disable, 1=enable, 2=pass Monitor's value
+COM5: BB: LEX: 30 10:18:48: 0000262467: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 0
+COM5: BB: LEX: 30 10:18:48: 0000262488: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 0, new state = 0 on event = 0
+COM5: BB: LEX: 30 10:18:48: 0000262505: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 0, new state = 1 on event = 2
+COM5: BB: LEX: 30 10:18:48: 0000262532: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 10:18:48: 0000262544: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 10:18:48: 0000262575: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 3
+COM5: BB: LEX: 30 10:18:48: 0000262587: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 3
+COM5: BB: LEX: 30 10:18:48: 0000263685: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 4
+COM5: BB: LEX:  10:18:48.400: GE DBG:
+COM5: BB: LEX:  10:18:48.406: Goldenears SW 0.1.4
+COM5: BB: LEX:  10:18:48.410: GE DBG:
+COM5: BB: LEX:  10:18:48.414: ASIC rev. B detected
+COM5: BB: LEX: 30 10:18:48: 0000518015: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 2 on event = 17
+COM5: BB: LEX: 30 10:18:48: 0000518036: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 0
+COM5: BB: LEX: 30 10:18:48: 0000518054: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 0
+COM5: BB: LEX: 30 10:18:48: 0000518065: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 9
+COM5: BB: LEX: 30 10:18:50: 0002311014: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 1 on event = 21
+COM5: BB: LEX: 30 10:18:50: 0002311035: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 10:18:50: 0002410986: ISTATUS ** Host DP connected **
+COM5: BB: LEX: 30 10:18:50: 0002411000: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 1
+COM5: BB: LEX: 30 10:18:50: 0002411027: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 10:18:50: 0002411038: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 5 on event = 8
+COM5: BB: LEX: 30 10:18:50: 0002411057: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 10:18:50: 0002411078: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 3
+COM5: BB: LEX: 30 10:18:50: 0002411090: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 5 on event = 2
+COM5: BB: LEX: 30 10:18:50: 0002411098: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD up event
+COM5: BB: LEX: 30 10:18:50: 0002411105: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 10:18:54: 0006569906: ISTATUS Data Link Operational, CATx at 10Gbps
+COM5: BB: LEX: 30 10:19:09: 0014411734: ISTATUS Data Link Disconnected
+COM5: BB: LEX: 30 10:19:18: 0006519588: ISTATUS Data Link Operational, CATx at 10Gbps
+COM5: BB: LEX: 30 10:20:05: 0012910255: ISTATUS Data Link Disconnected
+COM5: BB: LEX: 30 10:20:14: 0005033155: ISTATUS Data Link Operational, CATx at 10Gbps
+COM5: BB: LEX: 30 10:20:18: 0003712097: iMjrErr: DP_COMPONENT          : ****** Restarting DP PM State Machine ******
+COM5: BB: LEX: 30 10:20:18: 0003712126: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 1 on event = 9
+COM5: BB: LEX: 30 10:20:18: 0003712168: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 10:20:18: 0003712180: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 10:20:18: 0003712207: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 0 on event = 3
+COM5: BB: LEX: 30 10:20:18: 0003712234: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD down event
+COM5: BB: LEX: 30 10:20:18: 0003712242: iMjrEvt: DP_STREAM_COMPONENT   : Reset DP Sink = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 10:20:18: 0003712248: iMjrEvt: DP_STREAM_COMPONENT   : Reset TICO Encoder = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 10:20:18: 0003712268: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 2 | 0=disable, 1=enable, 2=pass Monitor's value
+COM5: BB: LEX: 30 10:20:18: 0003712275: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 0
+COM5: BB: LEX: 30 10:20:18: 0003713286: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 4
+COM5: BB: LEX: 30 10:20:18: 0003970913: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 2 on event = 17
+COM5: BB: LEX: 30 10:20:18: 0003970936: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 0
+COM5: BB: LEX: 30 10:20:18: 0003970958: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 0
+COM5: BB: LEX: 30 10:20:18: 0003970970: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 9
+COM5: BB: LEX: 30 10:20:20: 0005777913: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 1 on event = 21
+COM5: BB: LEX: 30 10:20:20: 0005777935: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 10:21:28: 0005877885: ISTATUS ** Host DP connected **
+COM5: BB: LEX: 30 10:21:28: 0005877899: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 1
+COM5: BB: LEX: 30 10:21:28: 0005877929: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 10:21:28: 0005877942: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 5 on event = 8
+COM5: BB: LEX: 30 10:21:28: 0005877959: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 10:21:28: 0005877993: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 3
+COM5: BB: LEX: 30 10:21:28: 0005878003: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 5 on event = 2
+COM5: BB: LEX: 30 10:21:28: 0005878013: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD up event
+COM5: BB: LEX: 30 10:21:28: 0005878019: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 5 on event = 0
+COM5: BB: LEX: 30 10:21:28: 0007032026: iMjrEvt: DP_AUX_COMPONENT      : Source connect count = 0 source disconnect count = 1 Aux status = 0
+COM5: BB: LEX: 30 10:21:29: 0007131965: ISTATUS ** Host DP removed **
+COM5: BB: LEX: 30 10:21:29: 0007131979: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 0
+COM5: BB: LEX: 30 10:21:29: 0007132009: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 1 on event = 9
+COM5: BB: LEX: 30 10:21:29: 0007132039: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 10:21:29: 0007132051: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 10:21:29: 0007132088: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 5, new state = 0 on event = 3
+COM5: BB: LEX: 30 10:21:29: 0007132114: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD down event
+COM5: BB: LEX: 30 10:21:29: 0007132122: iMjrEvt: DP_STREAM_COMPONENT   : Reset DP Sink = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 10:21:29: 0007132129: iMjrEvt: DP_STREAM_COMPONENT   : Reset TICO Encoder = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 10:21:29: 0007132148: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 2 | 0=disable, 1=enable, 2=pass Monitor's value
+COM5: BB: LEX: 30 10:21:29: 0007132155: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 0
+COM5: BB: LEX: 30 10:21:29: 0007134059: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 4
+COM5: BB: LEX: 30 10:21:29: 0007390048: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 2 on event = 17
+COM5: BB: LEX: 30 10:21:29: 0007390071: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 0
+COM5: BB: LEX: 30 10:21:29: 0007390093: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 0
+COM5: BB: LEX: 30 10:21:29: 0007390106: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 9
+COM5: BB: LEX: 30 10:21:31: 0009198049: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 1 on event = 21
+COM5: BB: LEX: 30 10:21:31: 0009198071: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 10:21:31: 0009198086: iMjrEvt: DP_AUX_COMPONENT      : Source connect count = 0 source disconnect count = 1 Aux status = 0
+COM5: BB: LEX: 30 10:21:44: 0005660268: iUsrLog: DP_COMPONENT          : AUX EDID type = 0
+COM5: BB: LEX: 30 10:21:44: 0005664882: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 1 | 0=disable, 1=enable, 2=pass Monitor's value
+COM5: BB: LEX: 30 10:21:44: 0005667634: iUsrLog: DP_COMPONENT          : AUX Isolated = 0
+COM5: BB: LEX: 30 10:21:44: 0005668609: iMjrEvt: DP_COMPONENT          : DP YCBCR Disable = 0      * (1 = disable, 0 = Pass through)
+COM5: BB: LEX: 30 10:21:44: 0005674223: iUsrLog: DP_COMPONENT          : No Read MCCS = 1
+COM5: BB: LEX: 30 10:21:44: 0005674738: iUsrLog: DP_COMPONENT          : AUX BPC Mode = 0
+COM5: BB: LEX: 30 10:21:44: 0005679030: iUsrLog: DP_COMPONENT          : BW = 0x0; LC = 0x0
+COM5: BB: LEX: 30 10:21:44: 0005688826: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 10:21:44: 0005690576: iUsrLog: DP_COMPONENT          : Lex Audio status chnaged = 0
+COM5: BB: LEX: 30 10:21:44: 0006064692: iUsrLog: DP_COMPONENT          : AUX EDID type = 0
+COM5: BB: LEX: 30 10:21:44: 0006067984: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 1 | 0=disable, 1=enable, 2=pass Monitor's value
+COM5: BB: LEX: 30 10:21:44: 0006069160: iUsrLog: DP_COMPONENT          : AUX Isolated = 0
+COM5: BB: LEX: 30 10:21:44: 0006069835: iMjrEvt: DP_COMPONENT          : DP YCBCR Disable = 0      * (1 = disable, 0 = Pass through)
+COM5: BB: LEX: 30 10:21:44: 0006071262: iUsrLog: DP_COMPONENT          : No Read MCCS = 1
+COM5: BB: LEX: 30 10:21:44: 0006071753: iUsrLog: DP_COMPONENT          : AUX BPC Mode = 0
+COM5: BB: LEX: 30 10:21:44: 0006074748: iUsrLog: DP_COMPONENT          : BW = 0x0; LC = 0x0
+COM5: BB: LEX: 30 10:21:44: 0006075975: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 10:21:44: 0006079040: iUsrLog: DP_COMPONENT          : Lex Audio status chnaged = 0
+COM5: BB: LEX: 30 10:21:44: 0006264553: iUsrLog: DP_COMPONENT          : AUX EDID type = 0
+COM5: BB: LEX: 30 10:21:44: 0006268077: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 1 | 0=disable, 1=enable, 2=pass Monitor's value
+COM5: BB: LEX: 30 10:21:44: 0006271348: iUsrLog: DP_COMPONENT          : AUX Isolated = 0
+COM5: BB: LEX: 30 10:21:44: 0006273448: iMjrEvt: DP_COMPONENT          : DP YCBCR Disable = 0      * (1 = disable, 0 = Pass through)
+COM5: BB: LEX: 30 10:21:44: 0006277800: iUsrLog: DP_COMPONENT          : No Read MCCS = 1
+COM5: BB: LEX: 30 10:21:44: 0006279554: iUsrLog: DP_COMPONENT          : AUX BPC Mode = 0
+COM5: BB: LEX: 30 10:21:44: 0006280849: iUsrLog: DP_COMPONENT          : BW = 0x0; LC = 0x0
+COM5: BB: LEX: 30 10:21:45: 0006283023: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 10:21:45: 0006287132: iUsrLog: DP_COMPONENT          : Lex Audio status chnaged = 0
+COM5: BB: LEX: 30 10:21:45: 0006421346: iUsrLog: DP_COMPONENT          : AUX EDID type = 0
+COM5: BB: LEX: 30 10:21:45: 0006423555: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 1 | 0=disable, 1=enable, 2=pass Monitor's value
+COM5: BB: LEX: 30 10:21:45: 0006424138: iUsrLog: DP_COMPONENT          : AUX Isolated = 0
+COM5: BB: LEX: 30 10:21:45: 0006426599: iMjrEvt: DP_COMPONENT          : DP YCBCR Disable = 0      * (1 = disable, 0 = Pass through)
+COM5: BB: LEX: 30 10:21:45: 0006428141: iUsrLog: DP_COMPONENT          : No Read MCCS = 1
+COM5: BB: LEX: 30 10:21:45: 0006430570: iUsrLog: DP_COMPONENT          : AUX BPC Mode = 0
+COM5: BB: LEX: 30 10:21:45: 0006431653: iUsrLog: DP_COMPONENT          : BW = 0x0; LC = 0x0
+COM5: BB: LEX: 30 10:21:45: 0006433109: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 10:21:45: 0006434399: iUsrLog: DP_COMPONENT          : Lex Audio status chnaged = 0
+COM5: BB: LEX:  10:21:54.416: Software Info message: FPGA Chip ID Major 17 Minor 1 Debug 1 HW build was done on 2019/09/09 at 12:13:16 FallbackStatus 0x0
+Bootrom ID Major 0 Minor 12 Software revision Major 0 Minor 0 Debug 70 SW build was done on 2019/09/19 at 15:19:44 this is LEX
+COM5: BB: LEX: 30 10:21:54: 0000002640: iMinEvt: FLASH_DATA_COMPONENT  : Block number 0 address 0xc0b00000 status 1
+COM5: BB: LEX: 30 10:21:54: 0000014461: iMinEvt: FLASH_DATA_COMPONENT  : Block number 1 address 0xc0b10000 status 0
+COM5: BB: LEX: 30 10:21:54: 0000026256: iMinEvt: FLASH_DATA_COMPONENT  : *** Flash Vars erased header data found, from address c0b0011c, 65240 bytes
+COM5: BB: LEX: 30 10:21:54: 0000026276: iMinEvt: FLASH_DATA_COMPONENT  : Flash storage initialization - status 0 active block 0 used space = 0x11c
+COM5: BB: LEX: 30 10:21:54: 0000039923: iMjrErr: TOPLEVEL_COMPONENT    :   *** This is a PlugTest Image ***
+COM5: BB: LEX: 30 10:21:54: 0000258815: iMjrErr: DP_COMPONENT          : ****** DP ISOLATED LEX DISABLED *******
+COM5: BB: LEX: 30 10:21:54: 0000258835: iDbgGrn: DP_AUX_COMPONENT      : Clearing the AUX trans buffer
+COM5: BB: LEX: 30 10:21:54: 0000263377: ISTATUS DP not in over current state
+COM5: BB: LEX: 30 10:21:54: 0000263395: ISTATUS DP not in over current state
+COM5: BB: LEX: 30 10:21:54: 0000263430: iMjrEvt: DP_AUX_COMPONENT      : Generating HPD down event
+COM5: BB: LEX: 30 10:21:54: 0000263441: iMjrEvt: DP_STREAM_COMPONENT   : Reset DP Sink = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 10:21:54: 0000263448: iMjrEvt: DP_STREAM_COMPONENT   : Reset TICO Encoder = 1 | (1:reset, 0:take out of reset)
+COM5: BB: LEX: 30 10:21:54: 0000263467: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 0
+COM5: BB: LEX: 30 10:21:54: 0000263489: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 0, new state = 0 on event = 0
+COM5: BB: LEX: 30 10:21:54: 0000263506: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 0, new state = 1 on event = 2
+COM5: BB: LEX: 30 10:21:54: 0000263532: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM5: BB: LEX: 30 10:21:54: 0000263545: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 10:21:54: 0000263575: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 3
+COM5: BB: LEX: 30 10:21:54: 0000263588: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 3
+COM5: BB: LEX: 30 10:21:54: 0000264685: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 4
+COM5: BB: LEX:  10:21:54.812: GE DBG:
+COM5: BB: LEX:  10:21:54.822: Goldenears SW 0.1.4
+COM5: BB: LEX:  10:21:54.832: GE DBG:
+COM5: BB: LEX:  10:21:54.841: ASIC rev. B detected
+COM5: BB: LEX: 30 10:21:54: 0000519015: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 2 on event = 17
+COM5: BB: LEX: 30 10:21:54: 0000519037: iMjrEvt: DP_COMPONENT          : AUX Got Host Connection Msg = 0
+COM5: BB: LEX: 30 10:21:54: 0000519055: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 0
+COM5: BB: LEX: 30 10:21:54: 0000519067: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 9
+COM5: BB: LEX: 30 10:21:56: 0002312015: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 1 on event = 21
+COM5: BB: LEX: 30 10:21:56: 0002312037: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 0
+COM5: BB: LEX: 30 10:21:56: 0002312052: iMjrEvt: DP_AUX_COMPONENT      : Source connect count = 0 source disconnect count = 1 Aux status = 0
+COM5: BB: LEX: 30 10:22:01: 0006828906: ISTATUS Data Link Operational, CATx at 10Gbps

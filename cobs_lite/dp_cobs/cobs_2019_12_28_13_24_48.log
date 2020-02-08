@@ -1,0 +1,32 @@
+2019-12-28 13:24:49,127 INFO: Cobs 1.1.3 release - June 25, 2019 on IronPython 2.7.5.0 on .NET 4.0.30319.42000
+2019-12-28 13:24:49,182 INFO: Executing startup script
+2019-12-28 13:24:52,631 INFO: Open Icron file button is clicked
+2019-12-28 13:24:54,745 INFO: C:\Users\Sumit.Rathore\Desktop\dp_cobs\icron_file
+2019-12-28 13:24:55,271 INFO: Icron file path is changed C:\Users\Sumit.Rathore\Desktop\dp_cobs\icron_file\cobs_plug_test_debug.icron
+2019-12-28 13:24:58,487 INFO: Icron file is loaded C:\Users\Sumit.Rathore\Desktop\dp_cobs\icron_file\cobs_plug_test_debug.icron
+2019-12-28 13:24:59,189 INFO: Add Device button is clicked
+2019-12-28 13:24:59,286 INFO: COM5: blackbird: Icron model is loaded C:\Users\Sumit.Rathore\Desktop\70\rex_imcd_to_force_last_tu_4\cobs_plug_test_debug.icron
+2019-12-28 13:24:59,608 INFO: FPGA image : False
+2019-12-28 13:24:59,631 INFO: COM5: blackbird: Device is created
+2019-12-28 13:24:59,636 INFO: COM5: goldenears: Icron model is loaded C:\Users\Sumit.Rathore\Desktop\70\rex_imcd_to_force_last_tu_4\cobs_plug_test_debug.icron
+2019-12-28 13:24:59,669 INFO: FPGA image : True
+2019-12-28 13:24:59,740 INFO: COM5: goldenears: Device is created
+2019-12-28 13:24:59,788 INFO: COM5: blackbird: REX: Received software info
+2019-12-28 13:24:59,917 INFO: COM5: blackbird: Device is connected
+2019-12-28 13:25:01,101 INFO: Device client goldenears connected to COM5 is removed
+2019-12-28 13:25:03,506 INFO: COM5: blackbird: SWversion Button is clicked
+2019-12-28 13:25:03,520 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 2, 0, 4]
+2019-12-28 13:25:06,745 INFO: COM5: Serial port disposed event occurred
+2019-12-28 13:25:06,749 INFO: Device client blackbird connected to COM5 is removed
+2019-12-28 13:25:06,752 INFO: COM5 serial port manager is removed
+2019-12-28 13:26:22,679 INFO: Add Device button is clicked
+2019-12-28 13:26:22,688 INFO: COM5: blackbird: Icron model is loaded C:\Users\Sumit.Rathore\Desktop\70\rex_imcd_to_force_last_tu_4\cobs_plug_test_debug.icron
+2019-12-28 13:26:22,738 INFO: FPGA image : False
+2019-12-28 13:26:22,751 INFO: COM5: blackbird: Device is created
+2019-12-28 13:26:22,786 INFO: COM5: goldenears: Icron model is loaded C:\Users\Sumit.Rathore\Desktop\70\rex_imcd_to_force_last_tu_4\cobs_plug_test_debug.icron
+2019-12-28 13:26:22,825 INFO: FPGA image : True
+2019-12-28 13:26:22,837 INFO: COM5: goldenears: Device is created
+2019-12-28 13:26:22,850 INFO: COM5: blackbird: REX: Received software info
+2019-12-28 13:26:22,951 INFO: COM5: blackbird: Device is connected
+2019-12-28 13:26:24,907 INFO: Device client goldenears connected to COM5 is removed
+2019-12-28 13:26:36,920 INFO: COM5: blackbird: Dark Mode Button is clicked

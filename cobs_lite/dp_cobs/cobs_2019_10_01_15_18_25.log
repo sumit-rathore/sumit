@@ -1,0 +1,325 @@
+2019-10-01 15:18:26,749 INFO: Cobs 1.1.3 release - June 25, 2019 on IronPython 2.7.5.0 on .NET 4.0.30319.42000
+2019-10-01 15:18:26,797 INFO: Executing startup script
+2019-10-01 15:18:29,808 INFO: Open Icron file button is clicked
+2019-10-01 15:18:36,874 INFO: C:\Users\Sumit.Rathore\Desktop\dp_cobs\icron_file
+2019-10-01 15:18:37,381 INFO: Icron file path is changed C:\Users\Sumit.Rathore\Desktop\dp_cobs\icron_file\cobs_plug_test_debug.icron
+2019-10-01 15:18:40,909 INFO: Icron file is loaded C:\Users\Sumit.Rathore\Desktop\dp_cobs\icron_file\cobs_plug_test_debug.icron
+2019-10-01 15:18:41,557 INFO: Add Device button is clicked
+2019-10-01 15:18:41,613 INFO: COM5: blackbird: Icron model is loaded C:\Users\Sumit.Rathore\Desktop\70\rex_imcd_to_force_last_tu_4\cobs_plug_test_debug.icron
+2019-10-01 15:18:41,993 INFO: FPGA image : False
+2019-10-01 15:18:42,018 INFO: COM5: blackbird: Device is created
+2019-10-01 15:18:42,025 INFO: COM5: goldenears: Icron model is loaded C:\Users\Sumit.Rathore\Desktop\70\rex_imcd_to_force_last_tu_4\cobs_plug_test_debug.icron
+2019-10-01 15:18:42,056 INFO: FPGA image : True
+2019-10-01 15:18:42,112 INFO: COM5: goldenears: Device is created
+2019-10-01 15:18:42,215 INFO: COM5: blackbird: LEX: Received software info
+2019-10-01 15:18:42,297 INFO: COM5: blackbird: Device is connected
+2019-10-01 15:18:43,155 INFO: Device client goldenears connected to COM5 is removed
+2019-10-01 15:18:48,139 INFO: Add Device button is clicked
+2019-10-01 15:18:48,144 INFO: COM6: blackbird: Icron model is loaded C:\Users\Sumit.Rathore\Desktop\70\rex_imcd_to_force_last_tu_4\cobs_plug_test_debug.icron
+2019-10-01 15:18:48,195 INFO: FPGA image : False
+2019-10-01 15:18:48,202 INFO: COM6: blackbird: Device is created
+2019-10-01 15:18:48,221 INFO: COM6: goldenears: Icron model is loaded C:\Users\Sumit.Rathore\Desktop\70\rex_imcd_to_force_last_tu_4\cobs_plug_test_debug.icron
+2019-10-01 15:18:48,249 INFO: FPGA image : True
+2019-10-01 15:18:48,262 INFO: COM6: goldenears: Device is created
+2019-10-01 15:18:48,308 INFO: COM6: blackbird: REX: Received software info
+2019-10-01 15:18:48,413 INFO: COM6: blackbird: Device is connected
+2019-10-01 15:18:49,603 INFO: Device client goldenears connected to COM6 is removed
+2019-10-01 15:18:57,740 INFO: COM6: blackbird: ProgramFw Button is clicked
+2019-10-01 15:18:57,750 INFO: COM6: blackbird: REX: Starting to program device
+2019-10-01 15:18:57,751 INFO: COM6: blackbird: REX: Sending runProgramBB comamnd
+2019-10-01 15:18:57,756 INFO: COM6: blackbird: REX: Got a response=[1] for runProgramBB
+2019-10-01 15:18:57,757 INFO: COM6: blackbird: REX: Baud rate is 460800
+2019-10-01 15:18:58,204 INFO: COM6: blackbird: REX: Received software info
+2019-10-01 15:18:58,207 INFO: COM6: blackbird: REX: Got device info for programming in FlashMode chip build time 20190909121316
+2019-10-01 15:18:58,230 INFO: REX = True
+2019-10-01 15:18:58,607 INFO: COM6: blackbird: REX: Computed main_firmware_image crc=0xb2dc4a2bL
+2019-10-01 15:18:58,609 INFO: COM6: blackbird: REX: Start to program main_firmware_image in FlashMode to PROGRAM_REGION_FW_CURRENT
+2019-10-01 15:18:58,618 INFO: COM6: blackbird: REX: Got a response=[1, 0, 0, 6] for start to program device in FlashMode mode
+2019-10-01 15:18:59,939 INFO: COM6: blackbird: REX: Erased total 6 blocks of device flash in FlashMode
+2019-10-01 15:18:59,946 INFO: COM6: blackbird: REX: Starting to download main_firmware_image
+2019-10-01 15:19:01,603 INFO: COM6: blackbird: Clear Output Button is clicked
+2019-10-01 15:19:04,267 INFO: COM5: blackbird: Clear Output Button is clicked
+2019-10-01 15:19:07,889 INFO: COM6: blackbird: REX: Downloaded main_firmware_image in total of 1369 chunks in FlashMode
+2019-10-01 15:19:07,897 INFO: COM6: blackbird: REX: Device programming is done
+2019-10-01 15:19:07,902 INFO: COM6: blackbird: Reset device
+2019-10-01 15:19:07,906 INFO: COM6: blackbird: Got a response=[1] for reset device
+2019-10-01 15:19:07,908 INFO: COM6: blackbird: REX: Baud rate is 460800
+2019-10-01 15:19:07,909 INFO: REX unsuspended
+2019-10-01 15:19:11,962 INFO: COM6: blackbird: REX: Received software info
+2019-10-01 15:19:13,381 INFO: COM6: blackbird: REX: Received software info
+2019-10-01 15:19:16,557 INFO: COM6: blackbird: Clear Output Button is clicked
+2019-10-01 15:19:27,259 INFO: COM6: blackbird: REX: Received software info
+2019-10-01 15:19:32,156 INFO: COM6: blackbird: Clear Output Button is clicked
+2019-10-01 15:19:39,557 INFO: COM6: blackbird: Rex tu Button is clicked
+2019-10-01 15:19:39,562 INFO: COM6: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 7, 18, 4]
+2019-10-01 15:19:46,661 INFO: COM6: blackbird: Reset Device Button is clicked
+2019-10-01 15:19:46,663 INFO: COM6: blackbird: Reset device
+2019-10-01 15:19:46,668 INFO: COM6: blackbird: Got a response=[1] for reset device
+2019-10-01 15:19:47,756 INFO: COM5: blackbird: Reset Device Button is clicked
+2019-10-01 15:19:47,758 INFO: COM5: blackbird: Reset device
+2019-10-01 15:19:47,762 INFO: COM5: blackbird: Got a response=[1] for reset device
+2019-10-01 15:19:48,269 INFO: COM5: blackbird: Clear Output Button is clicked
+2019-10-01 15:19:49,053 INFO: COM6: blackbird: Clear Output Button is clicked
+2019-10-01 15:19:50,723 INFO: COM6: blackbird: REX: Received software info
+2019-10-01 15:19:51,823 INFO: COM5: blackbird: LEX: Received software info
+2019-10-01 15:26:36,341 INFO: Open Icron file button is clicked
+2019-10-01 15:26:42,979 INFO: C:\Users\Sumit.Rathore\Desktop\dp_cobs\icron_file
+2019-10-01 15:26:44,866 INFO: Icron file path is changed C:\Users\Sumit.Rathore\Desktop\dp_cobs\icron_file\cobs_plug_test_debug.icron
+2019-10-01 15:26:52,576 INFO: Icron file is loaded C:\Users\Sumit.Rathore\Desktop\dp_cobs\icron_file\cobs_plug_test_debug.icron
+2019-10-01 15:26:52,616 INFO: COM5: blackbird: Icron model is loaded C:\Users\Sumit.Rathore\Desktop\70\rex_imcd_to_force_last_tu_4\cobs_plug_test_debug.icron
+2019-10-01 15:26:52,617 INFO: COM6: blackbird: Icron model is loaded C:\Users\Sumit.Rathore\Desktop\70\rex_imcd_to_force_last_tu_4\cobs_plug_test_debug.icron
+2019-10-01 15:26:52,620 INFO: COM5: blackbird: loading icron file result=True projects=['blackbird', 'goldenears']
+2019-10-01 15:26:52,621 INFO: COM6: blackbird: loading icron file result=True projects=['blackbird', 'goldenears']
+2019-10-01 15:26:54,436 INFO: COM5: blackbird: ProgramFw Button is clicked
+2019-10-01 15:26:54,438 INFO: COM5: blackbird: LEX: Starting to program device
+2019-10-01 15:26:54,442 INFO: COM5: blackbird: LEX: Sending runProgramBB comamnd
+2019-10-01 15:26:54,445 INFO: COM5: blackbird: LEX: Got a response=[1] for runProgramBB
+2019-10-01 15:26:54,446 INFO: COM5: blackbird: LEX: Baud rate is 460800
+2019-10-01 15:26:54,980 INFO: COM5: blackbird: LEX: Received software info
+2019-10-01 15:26:54,981 INFO: COM5: blackbird: LEX: Got device info for programming in FlashMode chip build time 20190909121316
+2019-10-01 15:26:55,013 INFO: LEX = True
+2019-10-01 15:26:55,499 INFO: COM5: blackbird: LEX: Computed main_firmware_image crc=0x56485f4fL
+2019-10-01 15:26:55,500 INFO: COM5: blackbird: LEX: Start to program main_firmware_image in FlashMode to PROGRAM_REGION_FW_CURRENT
+2019-10-01 15:26:55,506 INFO: COM5: blackbird: LEX: Got a response=[1, 0, 0, 6] for start to program device in FlashMode mode
+2019-10-01 15:26:55,644 INFO: COM6: blackbird: ProgramFw Button is clicked
+2019-10-01 15:26:55,647 INFO: COM6: blackbird: REX: Starting to program device
+2019-10-01 15:26:55,652 INFO: COM6: blackbird: REX: Sending runProgramBB comamnd
+2019-10-01 15:26:55,656 INFO: COM6: blackbird: REX: Got a response=[1] for runProgramBB
+2019-10-01 15:26:55,656 INFO: COM6: blackbird: REX: Baud rate is 460800
+2019-10-01 15:26:56,120 INFO: COM6: blackbird: REX: Received software info
+2019-10-01 15:26:56,133 INFO: COM6: blackbird: REX: Got device info for programming in FlashMode chip build time 20190909121316
+2019-10-01 15:26:56,168 INFO: REX = True
+2019-10-01 15:26:56,677 INFO: COM6: blackbird: Clear Output Button is clicked
+2019-10-01 15:26:56,825 INFO: COM5: blackbird: LEX: Erased total 6 blocks of device flash in FlashMode
+2019-10-01 15:26:56,826 INFO: COM5: blackbird: LEX: Starting to download main_firmware_image
+2019-10-01 15:26:56,891 INFO: COM6: blackbird: REX: Computed main_firmware_image crc=0x56485f4fL
+2019-10-01 15:26:56,892 INFO: COM6: blackbird: REX: Start to program main_firmware_image in FlashMode to PROGRAM_REGION_FW_CURRENT
+2019-10-01 15:26:56,897 INFO: COM6: blackbird: REX: Got a response=[1, 0, 0, 6] for start to program device in FlashMode mode
+2019-10-01 15:26:57,573 INFO: COM5: blackbird: Clear Output Button is clicked
+2019-10-01 15:26:58,220 INFO: COM6: blackbird: REX: Erased total 6 blocks of device flash in FlashMode
+2019-10-01 15:26:58,221 INFO: COM6: blackbird: REX: Starting to download main_firmware_image
+2019-10-01 15:27:05,734 INFO: COM5: blackbird: LEX: Downloaded main_firmware_image in total of 1369 chunks in FlashMode
+2019-10-01 15:27:05,743 INFO: COM5: blackbird: LEX: Device programming is done
+2019-10-01 15:27:05,748 INFO: COM5: blackbird: Reset device
+2019-10-01 15:27:05,755 INFO: COM5: blackbird: Got a response=[1] for reset device
+2019-10-01 15:27:05,756 INFO: COM5: blackbird: LEX: Baud rate is 460800
+2019-10-01 15:27:05,758 INFO: LEX unsuspended
+2019-10-01 15:27:07,386 INFO: COM6: blackbird: REX: Downloaded main_firmware_image in total of 1369 chunks in FlashMode
+2019-10-01 15:27:07,387 INFO: COM6: blackbird: REX: Device programming is done
+2019-10-01 15:27:07,393 INFO: COM6: blackbird: Reset device
+2019-10-01 15:27:07,399 INFO: COM6: blackbird: Got a response=[1] for reset device
+2019-10-01 15:27:07,399 INFO: COM6: blackbird: REX: Baud rate is 460800
+2019-10-01 15:27:07,400 INFO: REX unsuspended
+2019-10-01 15:27:09,818 INFO: COM5: blackbird: LEX: Received software info
+2019-10-01 15:27:11,236 INFO: COM5: blackbird: LEX: Received software info
+2019-10-01 15:27:11,452 INFO: COM6: blackbird: REX: Received software info
+2019-10-01 15:27:25,119 INFO: COM5: blackbird: LEX: Received software info
+2019-10-01 15:32:30,438 INFO: COM5: blackbird: Rex tu Button is clicked
+2019-10-01 15:32:30,440 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 7, 18, 4]
+2019-10-01 15:32:34,140 INFO: COM5: blackbird: Reset Device Button is clicked
+2019-10-01 15:32:34,142 INFO: COM5: blackbird: Reset device
+2019-10-01 15:32:34,146 INFO: COM5: blackbird: Got a response=[1] for reset device
+2019-10-01 15:32:35,102 INFO: COM6: blackbird: Reset Device Button is clicked
+2019-10-01 15:32:35,103 INFO: COM6: blackbird: Reset device
+2019-10-01 15:32:35,108 INFO: COM6: blackbird: Got a response=[1] for reset device
+2019-10-01 15:32:38,213 INFO: COM5: blackbird: LEX: Received software info
+2019-10-01 15:32:39,142 INFO: COM6: blackbird: Clear Output Button is clicked
+2019-10-01 15:32:39,163 INFO: COM6: blackbird: REX: Received software info
+2019-10-01 15:32:40,149 INFO: COM5: blackbird: Clear Output Button is clicked
+2019-10-01 15:32:40,317 INFO: COM5: blackbird: Clear Output Button is clicked
+2019-10-01 15:32:41,285 INFO: COM6: blackbird: Clear Output Button is clicked
+2019-10-01 15:32:41,469 INFO: COM6: blackbird: Clear Output Button is clicked
+2019-10-01 15:33:09,190 INFO: COM5: Serial port pin changed event occurred
+2019-10-01 15:33:10,384 INFO: COM6: Serial port pin changed event occurred
+2019-10-01 15:33:50,941 INFO: COM6: blackbird: REX: Received software info
+2019-10-01 15:33:53,350 INFO: COM5: blackbird: LEX: Received software info
+2019-10-01 15:33:56,978 INFO: COM5: blackbird: SWversion Button is clicked
+2019-10-01 15:33:56,980 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 2, 0, 4]
+2019-10-01 15:33:58,626 INFO: COM6: blackbird: SWversion Button is clicked
+2019-10-01 15:33:58,627 INFO: COM6: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 2, 0, 4]
+2019-10-01 15:34:01,642 INFO: COM5: blackbird: ProgramFw Button is clicked
+2019-10-01 15:34:01,644 INFO: COM5: blackbird: LEX: Starting to program device
+2019-10-01 15:34:01,651 INFO: COM5: blackbird: LEX: Sending runProgramBB comamnd
+2019-10-01 15:34:01,654 INFO: COM5: blackbird: LEX: Got a response=[1] for runProgramBB
+2019-10-01 15:34:01,654 INFO: COM5: blackbird: LEX: Baud rate is 460800
+2019-10-01 15:34:02,092 INFO: COM5: blackbird: LEX: Received software info
+2019-10-01 15:34:02,093 INFO: COM5: blackbird: LEX: Got device info for programming in FlashMode chip build time 20190909121316
+2019-10-01 15:34:02,122 INFO: LEX = True
+2019-10-01 15:34:02,521 INFO: COM5: blackbird: LEX: Computed main_firmware_image crc=0x56485f4fL
+2019-10-01 15:34:02,521 INFO: COM5: blackbird: LEX: Start to program main_firmware_image in FlashMode to PROGRAM_REGION_FW_CURRENT
+2019-10-01 15:34:02,526 INFO: COM5: blackbird: LEX: Got a response=[1, 0, 0, 6] for start to program device in FlashMode mode
+2019-10-01 15:34:02,857 INFO: COM6: blackbird: ProgramFw Button is clicked
+2019-10-01 15:34:02,861 INFO: COM6: blackbird: REX: Starting to program device
+2019-10-01 15:34:02,863 INFO: COM6: blackbird: REX: Sending runProgramBB comamnd
+2019-10-01 15:34:02,866 INFO: COM6: blackbird: REX: Got a response=[1] for runProgramBB
+2019-10-01 15:34:02,868 INFO: COM6: blackbird: REX: Baud rate is 460800
+2019-10-01 15:34:03,370 INFO: COM6: blackbird: REX: Received software info
+2019-10-01 15:34:03,370 INFO: COM6: blackbird: REX: Got device info for programming in FlashMode chip build time 20190909121316
+2019-10-01 15:34:03,403 INFO: REX = True
+2019-10-01 15:34:03,840 INFO: COM5: blackbird: LEX: Erased total 6 blocks of device flash in FlashMode
+2019-10-01 15:34:03,840 INFO: COM5: blackbird: LEX: Starting to download main_firmware_image
+2019-10-01 15:34:03,843 INFO: COM6: blackbird: REX: Computed main_firmware_image crc=0x56485f4fL
+2019-10-01 15:34:03,845 INFO: COM6: blackbird: REX: Start to program main_firmware_image in FlashMode to PROGRAM_REGION_FW_CURRENT
+2019-10-01 15:34:03,851 INFO: COM6: blackbird: REX: Got a response=[1, 0, 0, 6] for start to program device in FlashMode mode
+2019-10-01 15:34:03,930 INFO: COM6: blackbird: Clear Output Button is clicked
+2019-10-01 15:34:04,953 INFO: COM5: blackbird: Clear Output Button is clicked
+2019-10-01 15:34:05,162 INFO: COM6: blackbird: REX: Erased total 6 blocks of device flash in FlashMode
+2019-10-01 15:34:05,163 INFO: COM6: blackbird: REX: Starting to download main_firmware_image
+2019-10-01 15:34:12,211 INFO: COM5: blackbird: LEX: Downloaded main_firmware_image in total of 1369 chunks in FlashMode
+2019-10-01 15:34:12,212 INFO: COM5: blackbird: LEX: Device programming is done
+2019-10-01 15:34:12,217 INFO: COM5: blackbird: Reset device
+2019-10-01 15:34:12,220 INFO: COM5: blackbird: Got a response=[1] for reset device
+2019-10-01 15:34:12,221 INFO: COM5: blackbird: LEX: Baud rate is 460800
+2019-10-01 15:34:12,222 INFO: LEX unsuspended
+2019-10-01 15:34:13,563 INFO: COM6: blackbird: REX: Downloaded main_firmware_image in total of 1369 chunks in FlashMode
+2019-10-01 15:34:13,563 INFO: COM6: blackbird: REX: Device programming is done
+2019-10-01 15:34:13,569 INFO: COM6: blackbird: Reset device
+2019-10-01 15:34:13,572 INFO: COM6: blackbird: Got a response=[1] for reset device
+2019-10-01 15:34:13,572 INFO: COM6: blackbird: REX: Baud rate is 460800
+2019-10-01 15:34:13,574 INFO: REX unsuspended
+2019-10-01 15:34:16,283 INFO: COM5: blackbird: LEX: Received software info
+2019-10-01 15:34:17,636 INFO: COM6: blackbird: REX: Received software info
+2019-10-01 15:34:17,727 INFO: COM5: blackbird: LEX: Received software info
+2019-10-01 15:34:19,053 INFO: COM6: blackbird: REX: Received software info
+2019-10-01 15:34:22,034 INFO: COM5: blackbird: Clear Output Button is clicked
+2019-10-01 15:34:24,578 INFO: COM6: blackbird: Clear Output Button is clicked
+2019-10-01 15:34:31,587 INFO: COM5: blackbird: LEX: Received software info
+2019-10-01 15:34:32,933 INFO: COM6: blackbird: REX: Received software info
+2019-10-01 15:34:41,346 INFO: COM5: blackbird: Rex tu Button is clicked
+2019-10-01 15:34:41,348 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 7, 18, 4]
+2019-10-01 15:34:43,538 INFO: COM5: blackbird: Reset Device Button is clicked
+2019-10-01 15:34:43,539 INFO: COM5: blackbird: Reset device
+2019-10-01 15:34:43,542 INFO: COM5: blackbird: Got a response=[1] for reset device
+2019-10-01 15:34:44,530 INFO: COM6: blackbird: Reset Device Button is clicked
+2019-10-01 15:34:44,531 INFO: COM6: blackbird: Reset device
+2019-10-01 15:34:44,536 INFO: COM6: blackbird: Got a response=[1] for reset device
+2019-10-01 15:34:45,090 INFO: COM6: blackbird: Clear Output Button is clicked
+2019-10-01 15:34:45,905 INFO: COM5: blackbird: Clear Output Button is clicked
+2019-10-01 15:34:47,606 INFO: COM5: blackbird: LEX: Received software info
+2019-10-01 15:34:48,598 INFO: COM6: blackbird: REX: Received software info
+2019-10-01 15:38:03,086 INFO: COM6: blackbird: REX: Received software info
+2019-10-01 15:38:05,596 INFO: COM5: blackbird: LEX: Received software info
+2019-10-01 15:43:54,636 INFO: COM5: blackbird: DP Debug Button is clicked
+2019-10-01 15:43:54,638 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 9, 0, 4]
+2019-10-01 15:43:59,628 INFO: COM5: blackbird: Suspend Checkbox is clicked
+2019-10-01 15:44:08,724 INFO: COM5: blackbird: Suspend Checkbox is clicked
+2019-10-01 15:44:18,107 INFO: COM5: blackbird: Suspend Checkbox is clicked
+2019-10-01 15:44:25,034 INFO: COM5: blackbird: Suspend Checkbox is clicked
+2019-10-01 15:44:30,612 INFO: COM5: blackbird: Dump DP Flash Variables button is clicked
+2019-10-01 15:44:30,614 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 7, 33, 4]
+2019-10-01 15:44:36,583 INFO: COM5: blackbird: Changing BPC
+2019-10-01 15:44:36,586 INFO: COM5: blackbird: BPC Selected
+2019-10-01 15:44:36,590 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 1, 0, 0, 0, 0, 4]
+2019-10-01 15:44:38,748 INFO: COM5: blackbird: Clear Flash Variables button is clicked
+2019-10-01 15:44:38,752 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 0, 0, 0, 0, 0, 4]
+2019-10-01 15:44:38,752 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 19, 0, 0, 0, 1, 4]
+2019-10-01 15:44:38,756 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 28, 0, 0, 0, 0, 4]
+2019-10-01 15:44:38,760 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 4, 0, 0, 0, 0, 4]
+2019-10-01 15:44:38,760 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 17, 0, 0, 0, 1, 4]
+2019-10-01 15:44:38,764 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 1, 0, 0, 0, 0, 4]
+2019-10-01 15:44:38,766 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 11, 154, 7, 26, 0, 0, 0, 0, 0, 0, 0, 0, 4]
+2019-10-01 15:44:38,769 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 37, 0, 0, 0, 0, 4]
+2019-10-01 15:44:38,776 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 35, 0, 0, 0, 0, 4]
+2019-10-01 15:44:38,781 INFO: COM5: blackbird: Clear Flash Variables button is clicked: True
+2019-10-01 15:44:38,931 INFO: COM5: blackbird: Clear Flash Variables button is clicked
+2019-10-01 15:44:38,932 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 0, 0, 0, 0, 0, 4]
+2019-10-01 15:44:38,933 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 19, 0, 0, 0, 1, 4]
+2019-10-01 15:44:38,937 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 28, 0, 0, 0, 0, 4]
+2019-10-01 15:44:38,938 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 4, 0, 0, 0, 0, 4]
+2019-10-01 15:44:38,940 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 17, 0, 0, 0, 1, 4]
+2019-10-01 15:44:38,942 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 1, 0, 0, 0, 0, 4]
+2019-10-01 15:44:38,947 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 11, 154, 7, 26, 0, 0, 0, 0, 0, 0, 0, 0, 4]
+2019-10-01 15:44:38,950 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 37, 0, 0, 0, 0, 4]
+2019-10-01 15:44:38,954 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 35, 0, 0, 0, 0, 4]
+2019-10-01 15:44:38,961 INFO: COM5: blackbird: Clear Flash Variables button is clicked: True
+2019-10-01 15:44:39,091 INFO: COM5: blackbird: Clear Flash Variables button is clicked
+2019-10-01 15:44:39,092 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 0, 0, 0, 0, 0, 4]
+2019-10-01 15:44:39,098 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 19, 0, 0, 0, 1, 4]
+2019-10-01 15:44:39,099 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 28, 0, 0, 0, 0, 4]
+2019-10-01 15:44:39,101 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 4, 0, 0, 0, 0, 4]
+2019-10-01 15:44:39,104 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 17, 0, 0, 0, 1, 4]
+2019-10-01 15:44:39,107 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 1, 0, 0, 0, 0, 4]
+2019-10-01 15:44:39,112 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 11, 154, 7, 26, 0, 0, 0, 0, 0, 0, 0, 0, 4]
+2019-10-01 15:44:39,128 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 37, 0, 0, 0, 0, 4]
+2019-10-01 15:44:39,140 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 35, 0, 0, 0, 0, 4]
+2019-10-01 15:44:39,144 INFO: COM5: blackbird: Clear Flash Variables button is clicked: True
+2019-10-01 15:44:39,235 INFO: COM5: blackbird: Clear Flash Variables button is clicked
+2019-10-01 15:44:39,241 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 0, 0, 0, 0, 0, 4]
+2019-10-01 15:44:39,241 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 19, 0, 0, 0, 1, 4]
+2019-10-01 15:44:39,243 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 28, 0, 0, 0, 0, 4]
+2019-10-01 15:44:39,244 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 4, 0, 0, 0, 0, 4]
+2019-10-01 15:44:39,248 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 17, 0, 0, 0, 1, 4]
+2019-10-01 15:44:39,251 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 1, 0, 0, 0, 0, 4]
+2019-10-01 15:44:39,252 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 11, 154, 7, 26, 0, 0, 0, 0, 0, 0, 0, 0, 4]
+2019-10-01 15:44:39,254 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 37, 0, 0, 0, 0, 4]
+2019-10-01 15:44:39,259 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 35, 0, 0, 0, 0, 4]
+2019-10-01 15:44:39,262 INFO: COM5: blackbird: Clear Flash Variables button is clicked: True
+2019-10-01 15:44:44,187 INFO: COM5: blackbird: iCommands Button is clicked
+2019-10-01 15:44:51,388 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 13, 1, 4]
+2019-10-01 15:44:51,547 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 13, 1, 4]
+2019-10-01 15:44:51,715 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 13, 1, 4]
+2019-10-01 15:44:51,875 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 13, 1, 4]
+2019-10-01 15:44:53,851 INFO: COM5: blackbird: Reset Device Button is clicked
+2019-10-01 15:44:53,853 INFO: COM5: blackbird: Reset device
+2019-10-01 15:44:53,857 INFO: COM5: blackbird: Got a response=[1] for reset device
+2019-10-01 15:44:57,922 INFO: COM5: blackbird: LEX: Received software info
+2019-10-01 15:44:59,867 INFO: COM5: blackbird: Clear Output Button is clicked
+2019-10-01 15:45:02,644 INFO: COM6: blackbird: Clear Output Button is clicked
+2019-10-01 15:45:14,779 INFO: COM5: blackbird: Suspend Checkbox is clicked
+2019-10-01 15:45:24,227 INFO: COM5: blackbird: Suspend Checkbox is clicked
+2019-10-01 15:45:27,699 INFO: COM5: blackbird: Dump DP Flash Variables button is clicked
+2019-10-01 15:45:27,701 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 7, 33, 4]
+2019-10-01 15:45:35,683 INFO: COM6: blackbird: Dump DP Flash Variables button is clicked
+2019-10-01 15:45:35,685 INFO: COM6: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 7, 33, 4]
+2019-10-01 15:45:53,819 INFO: COM5: blackbird: Suspend Checkbox is clicked
+2019-10-01 15:46:27,011 INFO: COM5: blackbird: Suspend Checkbox is clicked
+2019-10-01 15:46:31,971 INFO: COM5: blackbird: DP Debug Button is clicked
+2019-10-01 15:46:31,973 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 9, 0, 4]
+2019-10-01 15:46:45,818 INFO: COM5: blackbird: DP Debug Button is clicked
+2019-10-01 15:46:45,820 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 9, 0, 4]
+2019-10-01 15:48:52,404 INFO: COM5: blackbird: DP Debug Button is clicked
+2019-10-01 15:48:52,406 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 9, 0, 4]
+2019-10-01 15:53:00,658 INFO: COM5: blackbird: Received an invalid packet=[1, 0, 255]
+2019-10-01 15:53:04,372 INFO: COM5: blackbird: LEX: Received software info
+2019-10-01 15:53:26,836 INFO: COM5: blackbird: LEX: Received software info
+2019-10-01 15:53:50,079 INFO: COM5: blackbird: Open test option window
+2019-10-01 15:53:53,238 INFO: COM5: blackbird: SSC ON, HBR2, LC4  button is clicked
+2019-10-01 15:53:53,240 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 3, 0, 0, 0, 1, 4]
+2019-10-01 15:53:53,241 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 11, 154, 7, 26, 0, 0, 0, 20, 0, 0, 0, 4, 4]
+2019-10-01 15:53:55,358 INFO: COM5: blackbird: Pass Button is clicked
+2019-10-01 15:53:56,262 INFO: COM5: blackbird: Save Button is clicked
+2019-10-01 15:53:57,702 INFO: COM5: blackbird: SSC ON, HBR2, LC2  button is clicked
+2019-10-01 15:53:57,704 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 3, 0, 0, 0, 1, 4]
+2019-10-01 15:53:57,704 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 11, 154, 7, 26, 0, 0, 0, 20, 0, 0, 0, 2, 4]
+2019-10-01 15:54:14,838 INFO: COM5: blackbird: Go Button is clicked
+2019-10-01 15:54:14,840 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 7, 36, 4]
+2019-10-01 15:55:56,286 INFO: COM5: blackbird: Pass Button is clicked
+2019-10-01 15:55:58,062 INFO: COM5: blackbird: Save Button is clicked
+2019-10-01 15:56:13,000 INFO: COM5: blackbird: SSC ON, HBR2, LC1  button is clicked
+2019-10-01 15:56:13,001 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 3, 0, 0, 0, 1, 4]
+2019-10-01 15:56:13,002 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 11, 154, 7, 26, 0, 0, 0, 20, 0, 0, 0, 1, 4]
+2019-10-01 15:56:17,927 INFO: COM5: blackbird: Go Button is clicked
+2019-10-01 15:56:17,928 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 7, 36, 4]
+2019-10-01 15:57:13,920 INFO: COM5: blackbird: Pass Button is clicked
+2019-10-01 15:57:15,165 INFO: COM5: blackbird: Save Button is clicked
+2019-10-01 15:57:16,392 INFO: COM5: blackbird: SSC ON, RBR, LC1  button is clicked
+2019-10-01 15:57:16,394 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 3, 0, 0, 0, 1, 4]
+2019-10-01 15:57:16,394 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 11, 154, 7, 26, 0, 0, 0, 6, 0, 0, 0, 1, 4]
+2019-10-01 15:57:21,937 INFO: COM5: blackbird: Go Button is clicked
+2019-10-01 15:57:21,938 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 7, 36, 4]
+2019-10-01 15:57:51,824 INFO: COM5: blackbird: Pass Button is clicked
+2019-10-01 15:59:45,380 INFO: COM5: blackbird: Save Button is clicked
+2019-10-01 15:59:46,452 INFO: COM5: blackbird: Done Button is clicked
+2019-10-01 16:00:10,721 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 7, 153, 7, 3, 0, 0, 0, 2, 4]
+2019-10-01 16:00:10,721 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 11, 154, 7, 26, 0, 0, 0, 0, 0, 0, 0, 0, 4]
+2019-10-01 16:00:10,727 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 7, 36, 4]
+2019-10-01 16:14:36,105 INFO: Exporting Device Logs
+2019-10-01 16:16:02,271 INFO: COM5: Serial port disposed event occurred
+2019-10-01 16:16:02,278 INFO: Device client blackbird connected to COM5 is removed
+2019-10-01 16:16:02,279 INFO: COM5 serial port manager is removed
+2019-10-01 16:16:02,310 INFO: COM6: Serial port disposed event occurred
+2019-10-01 16:16:02,311 INFO: Device client blackbird connected to COM6 is removed
+2019-10-01 16:16:02,318 INFO: COM6 serial port manager is removed
+2019-10-01 16:16:02,334 WARNING: No device client blackbird found to be removed from port COM5.
+2019-10-01 16:16:02,335 WARNING: No device client blackbird found to be removed from port COM6.
+2019-10-01 16:16:02,354 INFO: Cobs exits

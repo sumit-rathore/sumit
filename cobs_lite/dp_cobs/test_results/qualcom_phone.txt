@@ -1,0 +1,35 @@
+###### TEST 1. HBR2 LC=4 SSC ON
+* Test passed 
+*
+###### TEST 2. HBR2 LC=2 SSC ON
+* Test passed 
+###### TEST 3. HBR2 LC=1 SSC ON
+* Test passed 
+*
+###### TEST 4. HBR LC=4 SSC ON
+* Test passed 
+*
+###### TEST 5. HBR LC=2 SSC ON
+* Test passed 
+*
+###### TEST 6. HBR LC=1 SSC ON
+###### TEST 7. RBR LC=4 SSC ON
+###### TEST 6. HBR LC=1 SSC ON
+* Test passed 
+* Test passed 
+###### TEST 7. RBR LC=4 SSC ON
+*Video is highly distorted.
+* Test Failed 
+*
+###### TEST 8. RBR LC=2 SSC ON
+* Test passed 
+* Test passed 
+*
+###### TEST 9. RBR LC=1 SSC ON
+* Test Failed 
+* Test Failed 
+* Test Failed 
+* Test Failed 
+*Video distorted.
+
+Had to change the BW on REX to 1.6 for it to work. Lane count on REX was still 4

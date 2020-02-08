@@ -1,0 +1,1005 @@
+01 15:45:04: 0010422619: ISTATUS Data Link Operational, CATx at 10Gbps
+01 15:45:06: 0001033887: iMjrEvt: DP_COMPONENT          : AUX Got Phy Link Msg = 1 
+01 15:45:06: 0001033940: iMjrEvt: DP_COMPONENT          : Aux Generate Lex Active/Offline Phy:1, dpEnable:1, Host:1
+01 15:45:06: 0001033992: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 2
+01 15:45:06: 0001033999: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+01 15:45:06: 0001034009: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 6
+01 15:45:06: 0001034032: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+01 15:45:06: 0001034040: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+01 15:45:06: 0001034143: iUsrLog: DP_COMPONENT          : Sent Sink Params (CAP, EDID)
+01 15:45:06: 0001034152: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 14
+01 15:45:06: 0001034458: iMjrEvt: DP_COMPONENT          : Sink Parameters sent to LEX
+01 15:45:07: 0001888842: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+01 15:45:07: 0001888869: iMjrEvt: DP_COMPONENT          : Utilzation is (741)
+01 15:45:07: 0001888895: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 2
+01 15:45:07: 0001888902: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+01 15:45:07: 0001888911: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+01 15:45:07: 0001888940: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+01 15:45:07: 0001889088: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+01 15:45:07: 0001889106: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+01 15:45:07: 0001889120: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+01 15:45:07: 0001889136: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+01 15:45:07: 0001889229: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+01 15:45:07: 0001889266: iMjrEvt: DP_COMPONENT          : Utilzation is (741)
+01 15:45:07: 0001889300: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 4: Fraction 744 /1000
+01 15:45:07: 0001889312: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+01 15:45:07: 0001889320: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+01 15:45:07: 0001889328: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+01 15:45:07: 0001889335: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+01 15:45:07: 0001889342: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 3239
+01 15:45:07: 0001889350: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 32768
+01 15:45:07: 0001889356: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 1088
+01 15:45:07: 0001889364: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 208
+01 15:45:07: 0001889371: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 832
+01 15:45:07: 0001889378: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 1
+01 15:45:07: 0001889385: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 80
+01 15:45:07: 0001889392: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 654
+01 15:45:07: 0001889399: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 27
+01 15:45:07: 0001889406: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 624
+01 15:45:07: 0001889413: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 0
+01 15:45:07: 0001889421: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 4
+01 15:45:07: 0001889427: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+01 15:45:07: 0001889435: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+01 15:45:07: 0001889442: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+01 15:45:07: 0001889449: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 1
+01 15:45:07: 0001889456: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 78
+01 15:45:07: 0001889463: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+01 15:45:07: 0001889472: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+01 15:45:07: 0001889578: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+01 15:45:07: 0001889604: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+01 15:45:07: 0001890465: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+01 15:45:07: 0001890820: iUsrLog: DP_COMPONENT          : Sent VCP Table
+01 15:45:07: 0001890891: iUsrLog: DP_COMPONENT          : Sent Timing Report
+01 15:45:08: 0002921911: ISTATUS Video Operational, 832*624, 74.83  Hz, 8 bits per component, color code 0x20
+ 01 15:45:35: 0013628606: iMjrEvt: DP_COMPONENT          : DP ISOLATE       = 0      * (0 = disable, 1 = enable)
+01 15:45:35: 0013628625: iMjrEvt: DP_COMPONENT          : DP New ALU cal   = 1      * (0: Legacy,   1:New)
+01 15:45:35: 0013628643: iMjrEvt: DP_COMPONENT          : DP LEX SSC       = 2      * (0 = disable, 1 = advertise, 2 = pass monitor's value)
+01 15:45:35: 0013628652: iMjrEvt: DP_COMPONENT          : DP REX SSC       = 2      * (0 = disable, 1 = advertise, 2 = pass monitor's value)
+01 15:45:35: 0013628662: iMjrEvt: DP_COMPONENT          : DP No Read MCCS  = 1      * (0 = Don't read MCCS 1 = Read MCCS
+01 15:45:35: 0013628672: iMjrEvt: DP_COMPONENT          : DP AUDIO Send    = 0      * (0 = Enable, 1 = Disable)
+01 15:45:35: 0013628683: iMjrEvt: DP_COMPONENT          : DP PE            = 255      * (255 = default, anything else = forced)
+01 15:45:35: 0013628692: iMjrEvt: DP_COMPONENT          : DP VS            = 255      * (255 = default, anything else = forced)
+01 15:45:35: 0013628703: iMjrEvt: DP_COMPONENT          : DP BANDWIDTH     = 0x0    * (0 = default, anything else = forced)
+01 15:45:35: 0013628712: iMjrEvt: DP_COMPONENT          : DP LANE COUNT    = 0x0    * (0 = default, anything else = forced)
+01 15:45:35: 0013628722: iMjrEvt: DP_COMPONENT          : DP EDID TYPE     = 0      * (0 = monitor's edid, 1 = 4k, 2 = 1080p)
+01 15:45:35: 0013628732: iMjrEvt: DP_COMPONENT          : DP BPC MODE      = 0      * (6 = 6bpc, 8 = 8bpc, 10 = 10bpc)
+01 15:45:35: 0013628742: iMjrEvt: DP_COMPONENT          : DP YCBCR Disable = 0      * (1 = disable, 0 = Pass through)
+01 15:45:35: 0013628751: iMjrEvt: DP_COMPONENT          : DP Rex PD Timeout= 0      * (Value in sec, Max 10 sec)
+01 15:45:35: 0013628762: iMjrEvt: DP_COMPONENT          : DP En AUX        = 0      * (1 = enable, 0 = disable)
+01 15:46:24: 0012507358: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 20
+01 15:46:24: 0012507381: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+01 15:46:24: 0012507416: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+01 15:46:24: 0012518041: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 0
+01 15:46:24: 0012518057: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+01 15:46:24: 0012518088: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 5 in state 5
+01 15:46:24: 0012518097: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 5
+01 15:46:25: 0012941044: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+01 15:46:25: 0012941071: iMjrEvt: DP_COMPONENT          : Utilzation is (7417)
+01 15:46:25: 0012941097: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 3
+01 15:46:25: 0012941104: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+01 15:46:25: 0012941113: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+01 15:46:25: 0012941142: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+01 15:46:25: 0012941287: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+01 15:46:25: 0012941305: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+01 15:46:25: 0012941319: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+01 15:46:25: 0012941335: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+01 15:46:25: 0012941430: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+01 15:46:25: 0012941467: iMjrEvt: DP_COMPONENT          : Utilzation is (7417)
+01 15:46:25: 0012941501: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 47: Fraction 475 /1000
+01 15:46:25: 0012941513: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+01 15:46:25: 0012941521: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+01 15:46:25: 0012941529: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+01 15:46:25: 0012941537: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+01 15:46:25: 0012941543: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 32409
+01 15:46:25: 0012941551: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 32768
+01 15:46:25: 0012941557: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 4000
+01 15:46:25: 0012941565: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 112
+01 15:46:25: 0012941572: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 3840
+01 15:46:25: 0012941579: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 0
+01 15:46:25: 0012941586: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 32
+01 15:46:25: 0012941594: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 2222
+01 15:46:25: 0012941600: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 59
+01 15:46:25: 0012941607: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 2160
+01 15:46:25: 0012941614: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+01 15:46:25: 0012941622: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 5
+01 15:46:25: 0012941628: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+01 15:46:25: 0012941636: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+01 15:46:25: 0012941643: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+01 15:46:25: 0012941650: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 1
+01 15:46:25: 0012941657: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 360
+01 15:46:25: 0012941664: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+01 15:46:25: 0012941673: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+01 15:46:25: 0012941779: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+01 15:46:25: 0012941805: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+01 15:46:25: 0012942669: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+01 15:46:25: 0012943022: iUsrLog: DP_COMPONENT          : Sent VCP Table
+01 15:46:25: 0012943093: iUsrLog: DP_COMPONENT          : Sent Timing Report
+01 15:46:26: 0013974048: ISTATUS Video Operational, 3840*2160, 59.94  Hz, 8 bits per component, color code 0x20
+ 01 15:51:12: 0014613928: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 20
+01 15:51:12: 0014613949: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+01 15:51:12: 0014613985: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+01 15:51:12: 0014624369: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 0
+01 15:51:12: 0014624386: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+01 15:51:12: 0014624417: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 5 in state 5
+01 15:51:12: 0014624426: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 5
+01 15:51:16: 0001430548: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+01 15:51:16: 0001430576: iMjrEvt: DP_COMPONENT          : Utilzation is (7417)
+01 15:51:16: 0001430602: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 4
+01 15:51:16: 0001430610: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+01 15:51:16: 0001430618: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+01 15:51:16: 0001430649: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+01 15:51:16: 0001430779: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+01 15:51:16: 0001430797: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+01 15:51:16: 0001430810: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+01 15:51:16: 0001430828: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+01 15:51:16: 0001430923: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+01 15:51:16: 0001430962: iMjrEvt: DP_COMPONENT          : Utilzation is (7417)
+01 15:51:16: 0001430995: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 47: Fraction 475 /1000
+01 15:51:16: 0001431008: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+01 15:51:16: 0001431016: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+01 15:51:16: 0001431024: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+01 15:51:16: 0001431030: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+01 15:51:16: 0001431038: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 32409
+01 15:51:16: 0001431045: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 32768
+01 15:51:16: 0001431052: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 4000
+01 15:51:16: 0001431059: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 112
+01 15:51:16: 0001431067: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 3840
+01 15:51:16: 0001431073: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 0
+01 15:51:16: 0001431081: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 32
+01 15:51:16: 0001431087: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 2222
+01 15:51:16: 0001431095: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 59
+01 15:51:16: 0001431102: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 2160
+01 15:51:16: 0001431110: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+01 15:51:16: 0001431116: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 5
+01 15:51:16: 0001431124: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+01 15:51:16: 0001431130: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+01 15:51:16: 0001431138: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+01 15:51:16: 0001431145: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 1
+01 15:51:16: 0001431152: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 360
+01 15:51:16: 0001431159: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+01 15:51:16: 0001431169: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+01 15:51:16: 0001431274: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+01 15:51:16: 0001431312: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+01 15:51:16: 0001432171: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+01 15:51:16: 0001432525: iUsrLog: DP_COMPONENT          : Sent VCP Table
+01 15:51:16: 0001432593: iUsrLog: DP_COMPONENT          : Sent Timing Report
+01 15:51:16: 0002463160: ISTATUS Video Operational, 3840*2160, 59.94  Hz, 8 bits per component, color code 0x20
+ 01 15:51:22: 0007902748: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 20
+01 15:51:22: 0007902771: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+01 15:51:22: 0007902806: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+01 15:51:22: 0007913153: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 0
+01 15:51:22: 0007913169: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+01 15:51:22: 0007913201: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 5 in state 5
+01 15:51:22: 0007913209: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 5
+01 15:51:28: 0014314567: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+01 15:51:28: 0014314594: iMjrEvt: DP_COMPONENT          : Utilzation is (7417)
+01 15:51:28: 0014314620: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 5
+01 15:51:28: 0014314627: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+01 15:51:28: 0014314636: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+01 15:51:28: 0014314665: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+01 15:51:28: 0014314801: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+01 15:51:28: 0014314819: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+01 15:51:28: 0014314833: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+01 15:51:28: 0014314849: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+01 15:51:28: 0014314942: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+01 15:51:28: 0014314979: iMjrEvt: DP_COMPONENT          : Utilzation is (7417)
+01 15:51:28: 0014315013: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 47: Fraction 475 /1000
+01 15:51:28: 0014315025: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+01 15:51:28: 0014315034: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+01 15:51:28: 0014315041: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+01 15:51:28: 0014315048: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+01 15:51:28: 0014315055: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 32409
+01 15:51:28: 0014315063: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 32768
+01 15:51:28: 0014315069: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 4000
+01 15:51:28: 0014315077: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 112
+01 15:51:28: 0014315084: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 3840
+01 15:51:28: 0014315091: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 0
+01 15:51:28: 0014315098: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 32
+01 15:51:28: 0014315105: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 2222
+01 15:51:28: 0014315112: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 59
+01 15:51:28: 0014315120: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 2160
+01 15:51:28: 0014315126: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+01 15:51:28: 0014315134: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 5
+01 15:51:28: 0014315141: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+01 15:51:29: 0014315148: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+01 15:51:29: 0014315155: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+01 15:51:29: 0014315162: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 1
+01 15:51:29: 0014315169: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 360
+01 15:51:29: 0014315176: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+01 15:51:29: 0014315186: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+01 15:51:29: 0014315291: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+01 15:51:29: 0014315328: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+01 15:51:29: 0014316190: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+01 15:51:29: 0014316545: iUsrLog: DP_COMPONENT          : Sent VCP Table
+01 15:51:29: 0014316613: iUsrLog: DP_COMPONENT          : Sent Timing Report
+01 15:51:29: 0015347159: ISTATUS Video Operational, 3840*2160, 59.94  Hz, 8 bits per component, color code 0x20
+ 01 15:51:41: 0010260391: iMjrErr: DP_STREAM_COMPONENT   : DP FIFO SDP Overflow interrupt occurred
+01 15:51:41: 0010260405: iMjrEvt: DP_COMPONENT          : Aux got DP ISR Type = 0x20
+01 15:51:41: 0010260428: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 25
+01 15:51:41: 0010262407: iMjrErr: DP_STREAM_COMPONENT   : DP FIFO PIX 0 Overflow interrupt occurred
+01 15:51:41: 0010263943: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 22
+01 15:51:41: 0010263964: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+01 15:51:41: 0010264000: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+01 15:51:41: 0010264083: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+01 15:51:41: 0010264093: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+01 15:51:41: 0010275937: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 0
+01 15:51:41: 0010275953: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+01 15:51:41: 0010275984: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 5 in state 5
+01 15:51:41: 0010275994: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 5
+01 15:51:45: 0014796378: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+01 15:51:45: 0014796406: iMjrEvt: DP_COMPONENT          : Utilzation is (7417)
+01 15:51:45: 0014796431: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 6
+01 15:51:45: 0014796439: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+01 15:51:46: 0014796448: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+01 15:51:46: 0014796478: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+01 15:51:46: 0014796608: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+01 15:51:46: 0014796627: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+01 15:51:46: 0014796640: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+01 15:51:46: 0014796658: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+01 15:51:46: 0014796752: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+01 15:51:46: 0014796791: iMjrEvt: DP_COMPONENT          : Utilzation is (7417)
+01 15:51:46: 0014796824: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 47: Fraction 475 /1000
+01 15:51:46: 0014796837: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+01 15:51:46: 0014796845: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+01 15:51:46: 0014796853: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+01 15:51:46: 0014796860: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+01 15:51:46: 0014796868: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 32409
+01 15:51:46: 0014796874: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 32768
+01 15:51:46: 0014796882: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 4000
+01 15:51:46: 0014796889: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 112
+01 15:51:46: 0014796896: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 3840
+01 15:51:46: 0014796902: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 0
+01 15:51:46: 0014796910: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 32
+01 15:51:46: 0014796917: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 2222
+01 15:51:46: 0014796924: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 59
+01 15:51:46: 0014796931: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 2160
+01 15:51:46: 0014796939: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+01 15:51:46: 0014796945: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 5
+01 15:51:46: 0014796953: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+01 15:51:46: 0014796959: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+01 15:51:46: 0014796967: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+01 15:51:46: 0014796974: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 1
+01 15:51:46: 0014796981: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 360
+01 15:51:46: 0014796988: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+01 15:51:46: 0014796998: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+01 15:51:46: 0014797103: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+01 15:51:46: 0014797141: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+01 15:51:46: 0014797148: iMjrErr: DP_STREAM_COMPONENT   : DP FIFO PIX 0 Overflow interrupt occurred
+01 15:51:46: 0014798007: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+01 15:51:46: 0014798361: iUsrLog: DP_COMPONENT          : Sent VCP Table
+01 15:51:46: 0014798424: iUsrLog: DP_COMPONENT          : Sent Timing Report
+01 15:51:46: 0015828944: ISTATUS Video Operational, 3840*2160, 59.94  Hz, 8 bits per component, color code 0x20
+ 01 15:51:57: 0009859499: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 20
+01 15:51:57: 0009859520: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+01 15:51:57: 0009859556: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+01 15:51:57: 0009869721: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 0
+01 15:51:57: 0009869738: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+01 15:51:57: 0009869769: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 5 in state 5
+01 15:51:57: 0009869778: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 5
+01 15:52:00: 0012596184: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+01 15:52:00: 0012596212: iMjrEvt: DP_COMPONENT          : Utilzation is (7417)
+01 15:52:00: 0012596237: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 7
+01 15:52:00: 0012596246: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+01 15:52:00: 0012596254: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+01 15:52:00: 0012596285: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+01 15:52:00: 0012596415: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+01 15:52:00: 0012596433: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+01 15:52:00: 0012596446: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+01 15:52:00: 0012596464: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+01 15:52:00: 0012596560: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+01 15:52:00: 0012596599: iMjrEvt: DP_COMPONENT          : Utilzation is (7417)
+01 15:52:00: 0012596631: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 47: Fraction 475 /1000
+01 15:52:00: 0012596644: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+01 15:52:00: 0012596653: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+01 15:52:00: 0012596660: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+01 15:52:00: 0012596667: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+01 15:52:00: 0012596675: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 32409
+01 15:52:00: 0012596681: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 32768
+01 15:52:00: 0012596689: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 4000
+01 15:52:00: 0012596696: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 112
+01 15:52:00: 0012596703: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 3840
+01 15:52:00: 0012596710: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 0
+01 15:52:00: 0012596718: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 32
+01 15:52:00: 0012596724: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 2222
+01 15:52:00: 0012596732: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 59
+01 15:52:00: 0012596739: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 2160
+01 15:52:00: 0012596746: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+01 15:52:00: 0012596752: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 5
+01 15:52:00: 0012596760: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+01 15:52:01: 0012596767: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+01 15:52:01: 0012596774: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+01 15:52:01: 0012596781: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 1
+01 15:52:01: 0012596789: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 360
+01 15:52:01: 0012596795: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+01 15:52:01: 0012596806: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+01 15:52:01: 0012596910: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+01 15:52:01: 0012596948: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+01 15:52:01: 0012597808: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+01 15:52:01: 0012598164: iUsrLog: DP_COMPONENT          : Sent VCP Table
+01 15:52:01: 0012598230: iUsrLog: DP_COMPONENT          : Sent Timing Report
+01 15:52:01: 0013628728: ISTATUS Video Operational, 3840*2160, 59.94  Hz, 8 bits per component, color code 0x20
+ 01 15:52:10: 0005386367: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 20
+01 15:52:10: 0005386390: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+01 15:52:10: 0005386425: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+01 15:52:10: 0005396505: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 0
+01 15:52:10: 0005396521: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+01 15:52:10: 0005396552: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 5 in state 5
+01 15:52:10: 0005396561: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 5
+01 15:52:15: 0010755992: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+01 15:52:15: 0010756019: iMjrEvt: DP_COMPONENT          : Utilzation is (7417)
+01 15:52:15: 0010756045: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 8
+01 15:52:15: 0010756052: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+01 15:52:15: 0010756061: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+01 15:52:15: 0010756090: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+01 15:52:15: 0010756223: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+01 15:52:15: 0010756241: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+01 15:52:15: 0010756255: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+01 15:52:15: 0010756271: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+01 15:52:15: 0010756366: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+01 15:52:15: 0010756404: iMjrEvt: DP_COMPONENT          : Utilzation is (7417)
+01 15:52:15: 0010756438: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 47: Fraction 475 /1000
+01 15:52:15: 0010756449: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+01 15:52:15: 0010756458: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+01 15:52:15: 0010756465: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+01 15:52:15: 0010756473: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+01 15:52:15: 0010756480: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 32409
+01 15:52:15: 0010756487: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 32768
+01 15:52:15: 0010756494: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 4000
+01 15:52:15: 0010756502: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 112
+01 15:52:15: 0010756508: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 3840
+01 15:52:15: 0010756516: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 0
+01 15:52:15: 0010756523: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 32
+01 15:52:15: 0010756530: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 2222
+01 15:52:15: 0010756536: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 59
+01 15:52:15: 0010756544: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 2160
+01 15:52:15: 0010756551: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+01 15:52:15: 0010756558: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 5
+01 15:52:15: 0010756565: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+01 15:52:15: 0010756573: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+01 15:52:15: 0010756579: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+01 15:52:15: 0010756587: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 1
+01 15:52:15: 0010756593: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 360
+01 15:52:15: 0010756601: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+01 15:52:15: 0010756610: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+01 15:52:15: 0010756716: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+01 15:52:15: 0010756752: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+01 15:52:15: 0010757611: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+01 15:52:15: 0010757966: iUsrLog: DP_COMPONENT          : Sent VCP Table
+01 15:52:15: 0010758027: iUsrLog: DP_COMPONENT          : Sent Timing Report
+01 15:52:16: 0011788512: ISTATUS Video Operational, 3840*2160, 59.94  Hz, 8 bits per component, color code 0x20
+ 01 15:52:20: 0015954396: iMjrErr: DP_STREAM_COMPONENT   : DP FIFO SDP Overflow interrupt occurred
+01 15:52:20: 0015954410: iMjrEvt: DP_COMPONENT          : Aux got DP ISR Type = 0x20
+01 15:52:20: 0015954433: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 25
+01 15:52:20: 0015954444: iMjrErr: DP_STREAM_COMPONENT   : DP FIFO SDP Overflow interrupt occurred
+01 15:52:20: 0015954451: iMjrEvt: DP_COMPONENT          : Aux got DP ISR Type = 0x20
+01 15:52:20: 0015954464: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 25
+01 15:52:20: 0015954799: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 20
+01 15:52:20: 0015954815: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+01 15:52:20: 0015954847: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+01 15:52:20: 0015965505: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 0
+01 15:52:20: 0015965522: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+01 15:52:20: 0015965553: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 5 in state 5
+01 15:52:20: 0015965562: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 5
+01 15:52:25: 0003624791: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+01 15:52:25: 0003624819: iMjrEvt: DP_COMPONENT          : Utilzation is (7417)
+01 15:52:25: 0003624844: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 9
+01 15:52:25: 0003624853: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+01 15:52:25: 0003624861: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+01 15:52:25: 0003624892: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+01 15:52:25: 0003625021: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+01 15:52:25: 0003625040: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+01 15:52:25: 0003625053: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+01 15:52:25: 0003625071: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+01 15:52:25: 0003625166: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+01 15:52:25: 0003625206: iMjrEvt: DP_COMPONENT          : Utilzation is (7417)
+01 15:52:25: 0003625238: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 47: Fraction 475 /1000
+01 15:52:25: 0003625251: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+01 15:52:25: 0003625259: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+01 15:52:25: 0003625267: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+01 15:52:25: 0003625274: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+01 15:52:25: 0003625282: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 32409
+01 15:52:25: 0003625288: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 32768
+01 15:52:25: 0003625296: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 4000
+01 15:52:25: 0003625303: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 112
+01 15:52:25: 0003625310: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 3840
+01 15:52:25: 0003625317: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 0
+01 15:52:25: 0003625325: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 32
+01 15:52:25: 0003625331: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 2222
+01 15:52:25: 0003625338: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 59
+01 15:52:25: 0003625345: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 2160
+01 15:52:25: 0003625353: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+01 15:52:25: 0003625359: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 5
+01 15:52:25: 0003625367: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+01 15:52:25: 0003625374: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+01 15:52:25: 0003625381: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+01 15:52:25: 0003625388: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 1
+01 15:52:25: 0003625395: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 360
+01 15:52:25: 0003625402: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+01 15:52:25: 0003625412: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+01 15:52:25: 0003625517: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+01 15:52:25: 0003625555: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+01 15:52:25: 0003626415: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+01 15:52:25: 0003626772: iUsrLog: DP_COMPONENT          : Sent VCP Table
+01 15:52:25: 0003626837: iUsrLog: DP_COMPONENT          : Sent Timing Report
+01 15:52:26: 0004657295: ISTATUS Video Operational, 3840*2160, 59.94  Hz, 8 bits per component, color code 0x20
+ 01 15:52:31: 0009871692: iMjrEvt: DP_COMPONENT          : Aux Generate Lex Active/Offline Phy:1, dpEnable:1, Host:0
+01 15:52:31: 0009871727: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 7
+01 15:52:31: 0009871738: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+01 15:52:31: 0009871768: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+01 15:52:31: 0009871797: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 19 in state 5
+01 15:52:31: 0009871806: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 19
+01 15:52:31: 0009871817: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+01 15:52:31: 0009871825: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+01 15:52:31: 0009871925: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+01 15:52:31: 0009871935: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+01 15:52:31: 0009882289: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 0
+01 15:52:31: 0009882306: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+01 15:52:31: 0009882337: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 5 in state 5
+01 15:52:31: 0009882346: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 5
+01 15:52:31: 0010131878: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+01 15:52:31: 0010131897: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+01 15:52:35: 0013818587: iMjrEvt: DP_COMPONENT          : Aux Generate Lex Active/Offline Phy:1, dpEnable:1, Host:1
+01 15:52:35: 0013818643: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 10
+01 15:52:35: 0013818654: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+01 15:52:35: 0013818665: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 6
+01 15:52:35: 0013818690: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+01 15:52:35: 0013818699: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+01 15:52:35: 0013818786: iUsrLog: DP_COMPONENT          : Sent Sink Params (CAP, EDID)
+01 15:52:35: 0013818795: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 14
+01 15:52:35: 0013819103: iMjrEvt: DP_COMPONENT          : Sink Parameters sent to LEX
+01 15:52:36: 0014581806: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+01 15:52:36: 0014581833: iMjrEvt: DP_COMPONENT          : Utilzation is (7417)
+01 15:52:36: 0014581859: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 10
+01 15:52:36: 0014581867: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+01 15:52:36: 0014581875: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+01 15:52:36: 0014581905: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+01 15:52:36: 0014582034: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+01 15:52:36: 0014582052: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+01 15:52:36: 0014582066: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+01 15:52:36: 0014582082: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+01 15:52:36: 0014582180: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+01 15:52:36: 0014582218: iMjrEvt: DP_COMPONENT          : Utilzation is (7417)
+01 15:52:36: 0014582251: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 47: Fraction 475 /1000
+01 15:52:36: 0014582263: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+01 15:52:36: 0014582272: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+01 15:52:36: 0014582279: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+01 15:52:36: 0014582287: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+01 15:52:36: 0014582294: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 32409
+01 15:52:36: 0014582301: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 32768
+01 15:52:36: 0014582308: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 4000
+01 15:52:36: 0014582315: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 112
+01 15:52:36: 0014582322: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 3840
+01 15:52:36: 0014582329: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 0
+01 15:52:36: 0014582336: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 32
+01 15:52:36: 0014582344: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 2222
+01 15:52:36: 0014582350: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 59
+01 15:52:36: 0014582358: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 2160
+01 15:52:36: 0014582365: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+01 15:52:36: 0014582372: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 5
+01 15:52:36: 0014582379: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+01 15:52:36: 0014582386: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+01 15:52:36: 0014582393: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+01 15:52:36: 0014582401: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 1
+01 15:52:36: 0014582407: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 360
+01 15:52:36: 0014582415: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+01 15:52:36: 0014582424: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+01 15:52:36: 0014582530: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+01 15:52:36: 0014582566: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+01 15:52:36: 0014583427: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+01 15:52:36: 0014583782: iUsrLog: DP_COMPONENT          : Sent VCP Table
+01 15:52:36: 0014583843: iUsrLog: DP_COMPONENT          : Sent Timing Report
+01 15:52:37: 0015614295: ISTATUS Video Operational, 3840*2160, 59.94  Hz, 8 bits per component, color code 0x20
+ 01 15:52:41: 0002926259: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 20
+01 15:52:41: 0002926280: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+01 15:52:41: 0002926316: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+01 15:52:41: 0002937073: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 0
+01 15:52:41: 0002937089: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+01 15:52:41: 0002937120: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 5 in state 5
+01 15:52:41: 0002937130: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 5
+01 15:52:41: 0003069796: iMjrEvt: DP_COMPONENT          : Aux Generate Lex Active/Offline Phy:1, dpEnable:1, Host:0
+01 15:52:41: 0003069831: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 7 in state 5
+01 15:52:41: 0003069842: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 7
+01 15:52:41: 0003069854: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+01 15:52:41: 0003069861: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+01 15:52:41: 0003069890: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+01 15:52:41: 0003069898: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+01 15:52:41: 0003329677: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+01 15:52:41: 0003329695: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+01 15:52:43: 0005235638: iMjrEvt: DP_COMPONENT          : Aux Generate Lex Active/Offline Phy:1, dpEnable:1, Host:1
+01 15:52:43: 0005235692: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 11
+01 15:52:43: 0005235705: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+01 15:52:43: 0005235715: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 6
+01 15:52:43: 0005235742: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+01 15:52:43: 0005235749: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+01 15:52:43: 0005235838: iUsrLog: DP_COMPONENT          : Sent Sink Params (CAP, EDID)
+01 15:52:43: 0005235847: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 14
+01 15:52:43: 0005236151: iMjrEvt: DP_COMPONENT          : Sink Parameters sent to LEX
+01 15:52:44: 0005683604: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+01 15:52:44: 0005683632: iMjrEvt: DP_COMPONENT          : Utilzation is (7417)
+01 15:52:44: 0005683657: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 11
+01 15:52:44: 0005683666: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+01 15:52:44: 0005683674: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+01 15:52:44: 0005683705: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+01 15:52:44: 0005683834: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+01 15:52:44: 0005683853: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+01 15:52:44: 0005683866: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+01 15:52:44: 0005683884: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+01 15:52:44: 0005683979: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+01 15:52:44: 0005684018: iMjrEvt: DP_COMPONENT          : Utilzation is (7417)
+01 15:52:44: 0005684050: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 47: Fraction 475 /1000
+01 15:52:44: 0005684063: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+01 15:52:44: 0005684072: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+01 15:52:44: 0005684079: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+01 15:52:44: 0005684086: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+01 15:52:44: 0005684094: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 32409
+01 15:52:44: 0005684100: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 32768
+01 15:52:44: 0005684108: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 4000
+01 15:52:44: 0005684115: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 112
+01 15:52:44: 0005684122: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 3840
+01 15:52:44: 0005684129: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 0
+01 15:52:44: 0005684137: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 32
+01 15:52:44: 0005684143: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 2222
+01 15:52:44: 0005684150: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 59
+01 15:52:44: 0005684157: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 2160
+01 15:52:44: 0005684165: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+01 15:52:44: 0005684171: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 5
+01 15:52:44: 0005684179: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+01 15:52:44: 0005684186: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+01 15:52:44: 0005684193: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+01 15:52:44: 0005684200: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 1
+01 15:52:44: 0005684207: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 360
+01 15:52:44: 0005684214: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+01 15:52:44: 0005684224: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+01 15:52:44: 0005684330: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+01 15:52:44: 0005684367: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+01 15:52:44: 0005685230: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+01 15:52:44: 0005685584: iUsrLog: DP_COMPONENT          : Sent VCP Table
+01 15:52:44: 0005685650: iUsrLog: DP_COMPONENT          : Sent Timing Report
+01 15:52:44: 0006716080: ISTATUS Video Operational, 3840*2160, 59.94  Hz, 8 bits per component, color code 0x20
+ 01 15:53:00: 0005613241: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 2
+01 15:53:00: 0005613257: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+01 15:53:00: 0005613305: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 5
+01 15:53:00: 0005613316: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+01 15:53:00: 0005613347: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+01 15:53:00: 0005619743: ISTATUS Data Link Disconnected
+01 15:53:00: 0005619760: iMjrEvt: DP_COMPONENT          : AUX Got Phy Link Msg = 0 
+01 15:53:00: 0005619777: iMjrEvt: DP_COMPONENT          : Aux Generate Lex Active/Offline Phy:0, dpEnable:0, Host:0
+01 15:53:00: 0005619791: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 7 in state 5
+01 15:53:00: 0005619800: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 7
+01 15:53:12: 0001098540: ISTATUS Data Link Operational, CATx at 10Gbps
+01 15:53:14: 0000516944: iMjrEvt: DP_COMPONENT          : AUX Got Phy Link Msg = 1 
+01 15:53:14: 0000516990: iMjrEvt: DP_COMPONENT          : Aux Generate Lex Active/Offline Phy:1, dpEnable:1, Host:1
+01 15:53:14: 0000517041: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 12
+01 15:53:14: 0000517049: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+01 15:53:14: 0000517058: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 6
+01 15:53:14: 0000517081: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+01 15:53:14: 0000517090: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+01 15:53:14: 0000517192: iUsrLog: DP_COMPONENT          : Sent Sink Params (CAP, EDID)
+01 15:53:14: 0000517202: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 14
+01 15:53:14: 0000517505: iMjrEvt: DP_COMPONENT          : Sink Parameters sent to LEX
+01 15:53:15: 0001359899: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+01 15:53:15: 0001359925: iMjrEvt: DP_COMPONENT          : Utilzation is (7417)
+01 15:53:15: 0001359952: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 12
+01 15:53:15: 0001359959: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+01 15:53:15: 0001359968: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+01 15:53:15: 0001359997: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+01 15:53:15: 0001360130: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+01 15:53:15: 0001360148: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+01 15:53:15: 0001360162: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+01 15:53:15: 0001360178: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+01 15:53:15: 0001360275: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+01 15:53:15: 0001360313: iMjrEvt: DP_COMPONENT          : Utilzation is (7417)
+01 15:53:15: 0001360346: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 47: Fraction 475 /1000
+01 15:53:15: 0001360358: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+01 15:53:15: 0001360367: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+01 15:53:15: 0001360374: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+01 15:53:15: 0001360382: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+01 15:53:15: 0001360389: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 32409
+01 15:53:15: 0001360396: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 32768
+01 15:53:15: 0001360403: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 4000
+01 15:53:15: 0001360410: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 112
+01 15:53:15: 0001360417: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 3840
+01 15:53:15: 0001360424: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 0
+01 15:53:15: 0001360431: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 32
+01 15:53:15: 0001360439: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 2222
+01 15:53:15: 0001360445: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 59
+01 15:53:15: 0001360453: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 2160
+01 15:53:15: 0001360460: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+01 15:53:15: 0001360467: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 5
+01 15:53:15: 0001360474: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+01 15:53:15: 0001360481: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+01 15:53:15: 0001360488: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+01 15:53:15: 0001360496: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 1
+01 15:53:15: 0001360502: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 360
+01 15:53:15: 0001360510: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+01 15:53:15: 0001360519: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+01 15:53:15: 0001360624: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+01 15:53:15: 0001360650: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+01 15:53:15: 0001361514: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+01 15:53:15: 0001361870: iUsrLog: DP_COMPONENT          : Sent VCP Table
+01 15:53:15: 0001361931: iUsrLog: DP_COMPONENT          : Sent Timing Report
+01 15:53:15: 0002392863: ISTATUS Video Operational, 3840*2160, 59.94  Hz, 8 bits per component, color code 0x20
+ 01 15:53:23: 0010317038: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 2
+01 15:53:23: 0010317053: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+01 15:53:23: 0010317102: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 5
+01 15:53:23: 0010317111: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+01 15:53:23: 0010317143: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+01 15:53:23: 0010323526: ISTATUS Data Link Disconnected
+01 15:53:23: 0010323543: iMjrEvt: DP_COMPONENT          : AUX Got Phy Link Msg = 0 
+01 15:53:23: 0010323560: iMjrEvt: DP_COMPONENT          : Aux Generate Lex Active/Offline Phy:0, dpEnable:0, Host:0
+01 15:53:23: 0010323575: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 7 in state 5
+01 15:53:23: 0010323583: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 7
+01 15:53:33: 0002948539: ISTATUS Data Link Operational, CATx at 10Gbps
+01 15:53:35: 0001033410: iMjrEvt: DP_COMPONENT          : AUX Got Phy Link Msg = 1 
+01 15:53:35: 0001033457: iMjrEvt: DP_COMPONENT          : Aux Generate Lex Active/Offline Phy:1, dpEnable:1, Host:1
+01 15:53:35: 0001033506: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 13
+01 15:53:35: 0001033515: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+01 15:53:35: 0001033524: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 6
+01 15:53:35: 0001033549: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+01 15:53:35: 0001033556: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+01 15:53:35: 0001033660: iUsrLog: DP_COMPONENT          : Sent Sink Params (CAP, EDID)
+01 15:53:35: 0001033669: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 14
+01 15:53:35: 0001033973: iMjrEvt: DP_COMPONENT          : Sink Parameters sent to LEX
+01 15:53:36: 0001796371: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+01 15:53:36: 0001796399: iMjrEvt: DP_COMPONENT          : Utilzation is (7417)
+01 15:53:36: 0001796424: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 13
+01 15:53:36: 0001796432: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+01 15:53:36: 0001796441: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+01 15:53:36: 0001796471: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+01 15:53:36: 0001796601: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+01 15:53:36: 0001796620: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+01 15:53:36: 0001796633: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+01 15:53:36: 0001796651: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+01 15:53:36: 0001796746: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+01 15:53:36: 0001796785: iMjrEvt: DP_COMPONENT          : Utilzation is (7417)
+01 15:53:36: 0001796818: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 47: Fraction 475 /1000
+01 15:53:36: 0001796831: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+01 15:53:36: 0001796839: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+01 15:53:36: 0001796847: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+01 15:53:36: 0001796854: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+01 15:53:36: 0001796862: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 32409
+01 15:53:36: 0001796868: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 32768
+01 15:53:36: 0001796875: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 4000
+01 15:53:36: 0001796882: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 112
+01 15:53:36: 0001796890: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 3840
+01 15:53:36: 0001796896: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 0
+01 15:53:36: 0001796904: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 32
+01 15:53:36: 0001796911: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 2222
+01 15:53:36: 0001796918: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 59
+01 15:53:36: 0001796925: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 2160
+01 15:53:36: 0001796932: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+01 15:53:36: 0001796939: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 5
+01 15:53:36: 0001796947: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+01 15:53:36: 0001796953: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+01 15:53:36: 0001796961: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+01 15:53:36: 0001796968: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 1
+01 15:53:36: 0001796975: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 360
+01 15:53:36: 0001796982: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+01 15:53:36: 0001796992: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+01 15:53:36: 0001797097: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+01 15:53:36: 0001797135: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+01 15:53:36: 0001797994: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+01 15:53:36: 0001798356: iUsrLog: DP_COMPONENT          : Sent VCP Table
+01 15:53:36: 0001798418: iUsrLog: DP_COMPONENT          : Sent Timing Report
+01 15:53:37: 0002828908: ISTATUS Video Operational, 3840*2160, 59.94  Hz, 8 bits per component, color code 0x20
+ 01 15:54:14: 0007117426: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 20
+01 15:54:14: 0007117449: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+01 15:54:14: 0007117484: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+01 15:54:14: 0007117516: iMjrEvt: DP_COMPONENT          : Aux Generate Lex Active/Offline Phy:1, dpEnable:1, Host:0
+01 15:54:14: 0007117546: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 7 in state 5
+01 15:54:14: 0007117554: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 7
+01 15:54:14: 0007117577: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+01 15:54:14: 0007117585: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+01 15:54:14: 0007128471: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 0
+01 15:54:14: 0007128487: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+01 15:54:14: 0007128518: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 5 in state 5
+01 15:54:14: 0007128528: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 5
+01 15:54:15: 0007378074: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+01 15:54:15: 0007378093: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+01 15:54:17: 0009284036: iMjrEvt: DP_COMPONENT          : Aux Generate Lex Active/Offline Phy:1, dpEnable:1, Host:1
+01 15:54:17: 0009284092: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 14
+01 15:54:17: 0009284103: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+01 15:54:17: 0009284114: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 6
+01 15:54:17: 0009284139: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+01 15:54:17: 0009284148: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+01 15:54:17: 0009284235: iUsrLog: DP_COMPONENT          : Sent Sink Params (CAP, EDID)
+01 15:54:17: 0009284245: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 14
+01 15:54:17: 0009284549: iMjrEvt: DP_COMPONENT          : Sink Parameters sent to LEX
+01 15:55:47: 0015258047: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+01 15:55:47: 0015258074: iMjrEvt: DP_COMPONENT          : Utilzation is (3658)
+01 15:55:47: 0015258100: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 14
+01 15:55:47: 0015258107: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+01 15:55:47: 0015258116: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+01 15:55:47: 0015258145: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+01 15:55:47: 0015258278: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+01 15:55:47: 0015258296: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+01 15:55:47: 0015258310: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+01 15:55:47: 0015258326: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+01 15:55:47: 0015258423: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+01 15:55:47: 0015258460: iMjrEvt: DP_COMPONENT          : Utilzation is (3658)
+01 15:55:47: 0015258494: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 23: Fraction 416 /1000
+01 15:55:47: 0015258505: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+01 15:55:47: 0015258514: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+01 15:55:47: 0015258521: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+01 15:55:47: 0015258529: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+01 15:55:47: 0015258536: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 15985
+01 15:55:47: 0015258543: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 32768
+01 15:55:47: 0015258550: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 4000
+01 15:55:47: 0015258558: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 112
+01 15:55:47: 0015258564: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 3840
+01 15:55:47: 0015258572: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 0
+01 15:55:47: 0015258579: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 32
+01 15:55:47: 0015258586: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 2191
+01 15:55:47: 0015258593: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 28
+01 15:55:47: 0015258600: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 2160
+01 15:55:47: 0015258607: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+01 15:55:47: 0015258614: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 5
+01 15:55:47: 0015258621: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+01 15:55:47: 0015258629: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+01 15:55:47: 0015258635: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+01 15:55:47: 0015258643: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 1
+01 15:55:47: 0015258650: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 360
+01 15:55:47: 0015258657: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+01 15:55:47: 0015258666: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+01 15:55:47: 0015258772: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+01 15:55:47: 0015258798: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+01 15:55:47: 0015259662: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+01 15:55:47: 0015260014: iUsrLog: DP_COMPONENT          : Sent VCP Table
+01 15:55:47: 0015260076: iUsrLog: DP_COMPONENT          : Sent Timing Report
+01 15:55:47: 0016291397: ISTATUS Video Operational, 3840*2160, 29.98  Hz, 8 bits per component, color code 0x20
+ 01 15:56:17: 0012764180: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 20
+01 15:56:17: 0012764201: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+01 15:56:17: 0012764236: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+01 15:56:17: 0012764254: iMjrEvt: DP_COMPONENT          : Aux Generate Lex Active/Offline Phy:1, dpEnable:1, Host:0
+01 15:56:17: 0012764277: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 7 in state 5
+01 15:56:18: 0012764284: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 7
+01 15:56:18: 0012764297: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+01 15:56:18: 0012764304: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+01 15:56:18: 0012774958: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 0
+01 15:56:18: 0012774974: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+01 15:56:18: 0012775005: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 5 in state 5
+01 15:56:18: 0012775014: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 5
+01 15:56:18: 0013023739: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+01 15:56:18: 0013023757: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+01 15:56:20: 0014930701: iMjrEvt: DP_COMPONENT          : Aux Generate Lex Active/Offline Phy:1, dpEnable:1, Host:1
+01 15:56:20: 0014930756: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 15
+01 15:56:20: 0014930769: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+01 15:56:20: 0014930779: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 6
+01 15:56:20: 0014930806: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+01 15:56:20: 0014930813: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+01 15:56:20: 0014930902: iUsrLog: DP_COMPONENT          : Sent Sink Params (CAP, EDID)
+01 15:56:20: 0014930911: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 14
+01 15:56:20: 0014931222: iMjrEvt: DP_COMPONENT          : Sink Parameters sent to LEX
+01 15:56:53: 0013657276: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+01 15:56:53: 0013657304: iMjrEvt: DP_COMPONENT          : Utilzation is (2182)
+01 15:56:53: 0013657329: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 15
+01 15:56:53: 0013657338: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+01 15:56:53: 0013657346: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+01 15:56:53: 0013657376: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+01 15:56:53: 0013657509: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+01 15:56:53: 0013657538: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+01 15:56:53: 0013657551: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+01 15:56:53: 0013657569: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+01 15:56:53: 0013657661: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+01 15:56:53: 0013657700: iMjrEvt: DP_COMPONENT          : Utilzation is (2182)
+01 15:56:53: 0013657732: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 13: Fraction 967 /1000
+01 15:56:53: 0013657746: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+01 15:56:53: 0013657754: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+01 15:56:53: 0013657762: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+01 15:56:53: 0013657769: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+01 15:56:53: 0013657776: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 9534
+01 15:56:53: 0013657783: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 32768
+01 15:56:53: 0013657790: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 2208
+01 15:56:53: 0013657797: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 112
+01 15:56:53: 0013657805: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 2048
+01 15:56:53: 0013657811: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 0
+01 15:56:53: 0013657819: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 32
+01 15:56:53: 0013657826: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 1185
+01 15:56:53: 0013657833: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 30
+01 15:56:53: 0013657840: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 1152
+01 15:56:53: 0013657847: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+01 15:56:53: 0013657854: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 5
+01 15:56:53: 0013657861: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+01 15:56:53: 0013657868: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+01 15:56:53: 0013657876: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+01 15:56:53: 0013657882: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 1
+01 15:56:53: 0013657890: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 192
+01 15:56:53: 0013657897: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+01 15:56:53: 0013657907: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+01 15:56:53: 0013658012: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+01 15:56:53: 0013658039: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+01 15:56:53: 0013658905: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+01 15:56:53: 0013659260: iUsrLog: DP_COMPONENT          : Sent VCP Table
+01 15:56:53: 0013659325: iUsrLog: DP_COMPONENT          : Sent Timing Report
+01 15:56:53: 0014691531: ISTATUS Video Operational, 2048*1152, 59.91  Hz, 8 bits per component, color code 0x20
+ 01 15:57:21: 0009664636: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 20
+01 15:57:21: 0009664659: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+01 15:57:21: 0009664694: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+01 15:57:21: 0009664714: iMjrEvt: DP_COMPONENT          : Aux Generate Lex Active/Offline Phy:1, dpEnable:1, Host:0
+01 15:57:21: 0009664735: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 7 in state 5
+01 15:57:21: 0009664743: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 7
+01 15:57:21: 0009664754: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+01 15:57:21: 0009664763: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+01 15:57:22: 0009675094: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 0
+01 15:57:22: 0009675111: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+01 15:57:22: 0009675142: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 5 in state 5
+01 15:57:22: 0009675151: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 5
+01 15:57:22: 0009922966: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+01 15:57:22: 0009922986: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+01 15:57:24: 0011830927: iMjrEvt: DP_COMPONENT          : Aux Generate Lex Active/Offline Phy:1, dpEnable:1, Host:1
+01 15:57:24: 0011830983: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 16
+01 15:57:24: 0011830994: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+01 15:57:24: 0011831005: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 6
+01 15:57:24: 0011831030: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+01 15:57:24: 0011831039: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+01 15:57:24: 0011831126: iUsrLog: DP_COMPONENT          : Sent Sink Params (CAP, EDID)
+01 15:57:24: 0011831136: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 14
+01 15:57:24: 0011831442: iMjrEvt: DP_COMPONENT          : Sink Parameters sent to LEX
+01 15:57:44: 0010435697: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+01 15:57:44: 0010435723: iMjrEvt: DP_COMPONENT          : Utilzation is (741)
+01 15:57:44: 0010435750: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 16
+01 15:57:44: 0010435757: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+01 15:57:44: 0010435766: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+01 15:57:44: 0010435795: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+01 15:57:44: 0010435931: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+01 15:57:44: 0010435948: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+01 15:57:44: 0010435962: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+01 15:57:44: 0010435979: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+01 15:57:44: 0010436072: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+01 15:57:44: 0010436109: iMjrEvt: DP_COMPONENT          : Utilzation is (741)
+01 15:57:44: 0010436143: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 4: Fraction 744 /1000
+01 15:57:44: 0010436154: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+01 15:57:44: 0010436163: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+01 15:57:44: 0010436170: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+01 15:57:44: 0010436178: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+01 15:57:44: 0010436185: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 3239
+01 15:57:44: 0010436192: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 32768
+01 15:57:44: 0010436199: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 1088
+01 15:57:44: 0010436207: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 208
+01 15:57:44: 0010436213: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 832
+01 15:57:44: 0010436221: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 1
+01 15:57:44: 0010436228: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 80
+01 15:57:44: 0010436235: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 654
+01 15:57:44: 0010436241: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 27
+01 15:57:44: 0010436249: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 624
+01 15:57:44: 0010436256: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 0
+01 15:57:44: 0010436263: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 4
+01 15:57:44: 0010436270: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+01 15:57:44: 0010436278: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+01 15:57:44: 0010436284: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+01 15:57:44: 0010436292: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 1
+01 15:57:44: 0010436298: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 78
+01 15:57:44: 0010436306: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+01 15:57:44: 0010436315: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+01 15:57:44: 0010436421: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+01 15:57:44: 0010436447: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+01 15:57:44: 0010437311: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+01 15:57:44: 0010437666: iUsrLog: DP_COMPONENT          : Sent VCP Table
+01 15:57:44: 0010437727: iUsrLog: DP_COMPONENT          : Sent Timing Report
+01 15:57:44: 0010444561: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 20
+01 15:57:44: 0010444574: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+01 15:57:44: 0010444605: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+01 15:57:44: 0010454879: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 0
+01 15:57:44: 0010454894: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+01 15:57:44: 0010454926: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 5 in state 5
+01 15:57:44: 0010454934: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 5
+01 15:57:44: 0012609746: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+01 15:57:44: 0012609764: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+01 15:57:44: 0013325699: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+01 15:57:44: 0013325727: iMjrEvt: DP_COMPONENT          : Utilzation is (376)
+01 15:57:44: 0013325754: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 17
+01 15:57:44: 0013325761: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+01 15:57:44: 0013325769: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+01 15:57:44: 0013325799: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+01 15:57:44: 0013325932: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+01 15:57:44: 0013325950: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+01 15:57:44: 0013325964: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+01 15:57:44: 0013325980: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+01 15:57:44: 0013326077: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+01 15:57:44: 0013326115: iMjrEvt: DP_COMPONENT          : Utilzation is (376)
+01 15:57:44: 0013326144: iMjrErr: DP_STREAM_COMPONENT   : Last Tu is zero, manifulate Last Tu
+01 15:57:44: 0013326156: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 2: Fraction 407 /1000
+01 15:57:44: 0013326169: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+01 15:57:44: 0013326178: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+01 15:57:44: 0013326186: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+01 15:57:44: 0013326193: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+01 15:57:44: 0013326200: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 1643
+01 15:57:44: 0013326207: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 32768
+01 15:57:44: 0013326214: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 858
+01 15:57:44: 0013326221: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 122
+01 15:57:44: 0013326229: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 720
+01 15:57:44: 0013326235: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 1
+01 15:57:44: 0013326243: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 62
+01 15:57:44: 0013326250: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 525
+01 15:57:44: 0013326257: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 36
+01 15:57:44: 0013326264: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 480
+01 15:57:44: 0013326272: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+01 15:57:44: 0013326278: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 6
+01 15:57:44: 0013326285: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+01 15:57:44: 0013326292: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+01 15:57:44: 0013326300: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+01 15:57:44: 0013326306: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 1
+01 15:57:44: 0013326314: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 67
+01 15:57:44: 0013326321: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x14 and BPP = 24
+01 15:57:44: 0013326331: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+01 15:57:44: 0013326436: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+01 15:57:44: 0013326464: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+01 15:57:44: 0013327324: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+01 15:57:44: 0013327677: iUsrLog: DP_COMPONENT          : Sent VCP Table
+01 15:57:44: 0013327749: iUsrLog: DP_COMPONENT          : Sent Timing Report
+01 15:57:44: 0014358886: ISTATUS Video Operational, 720*480, 59.98  Hz, 8 bits per component, color code 0x28
+ 01 16:00:10: 0010679273: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 20
+01 16:00:10: 0010679295: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+01 16:00:10: 0010679330: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+01 16:00:10: 0010679350: iMjrEvt: DP_COMPONENT          : Aux Generate Lex Active/Offline Phy:1, dpEnable:1, Host:0
+01 16:00:10: 0010679371: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 7 in state 5
+01 16:00:10: 0010679379: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 7
+01 16:00:10: 0010679390: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+01 16:00:10: 0010679399: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+01 16:00:10: 0010690935: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 0
+01 16:00:10: 0010690951: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+01 16:00:10: 0010690982: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 5 in state 5
+01 16:00:10: 0010690992: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 5
+01 16:00:10: 0010940027: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+01 16:00:11: 0010940047: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+01 16:00:12: 0012846987: iMjrEvt: DP_COMPONENT          : Aux Generate Lex Active/Offline Phy:1, dpEnable:1, Host:1
+01 16:00:12: 0012847043: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 18
+01 16:00:12: 0012847054: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+01 16:00:12: 0012847065: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 6
+01 16:00:12: 0012847091: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+01 16:00:12: 0012847099: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+01 16:00:12: 0012847187: iUsrLog: DP_COMPONENT          : Sent Sink Params (CAP, EDID)
+01 16:00:12: 0012847196: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 14
+01 16:00:12: 0012847501: iMjrEvt: DP_COMPONENT          : Sink Parameters sent to LEX
+01 16:00:15: 0013761970: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+01 16:00:15: 0013761996: iMjrEvt: DP_COMPONENT          : Utilzation is (7417)
+01 16:00:15: 0013762042: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 18
+01 16:00:15: 0013762050: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+01 16:00:15: 0013762060: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+01 16:00:15: 0013762089: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+01 16:00:15: 0013762180: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+01 16:00:15: 0013762203: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+01 16:00:15: 0013762225: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+01 16:00:15: 0013762242: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+01 16:00:15: 0013762363: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+01 16:00:15: 0013762401: iMjrEvt: DP_COMPONENT          : Utilzation is (7417)
+01 16:00:15: 0013762435: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 47: Fraction 475 /1000
+01 16:00:15: 0013762446: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+01 16:00:15: 0013762455: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+01 16:00:15: 0013762462: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+01 16:00:15: 0013762471: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+01 16:00:15: 0013762478: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 32409
+01 16:00:15: 0013762485: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 32768
+01 16:00:15: 0013762491: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 4000
+01 16:00:15: 0013762499: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 112
+01 16:00:15: 0013762506: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 3840
+01 16:00:15: 0013762513: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 0
+01 16:00:15: 0013762520: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 32
+01 16:00:15: 0013762528: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 2222
+01 16:00:15: 0013762534: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 59
+01 16:00:15: 0013762542: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 2160
+01 16:00:15: 0013762548: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+01 16:00:15: 0013762556: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 5
+01 16:00:15: 0013762563: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+01 16:00:15: 0013762570: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+01 16:00:15: 0013762577: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+01 16:00:15: 0013762584: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 1
+01 16:00:15: 0013762591: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 360
+01 16:00:15: 0013762598: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+01 16:00:15: 0013762608: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+01 16:00:15: 0013762698: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+01 16:00:15: 0013762735: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+01 16:00:15: 0013763628: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+01 16:00:15: 0013763970: iUsrLog: DP_COMPONENT          : Sent VCP Table
+01 16:00:15: 0013764031: iUsrLog: DP_COMPONENT          : Sent Timing Report
+01 16:00:15: 0014794940: ISTATUS Video Operational, 3840*2160, 59.94  Hz, 8 bits per component, color code 0x20
+ 01 16:03:43: 0005311299: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 2
+01 16:03:43: 0005311315: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+01 16:03:43: 0005311363: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 5
+01 16:03:43: 0005311373: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+01 16:03:43: 0005311404: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+01 16:03:43: 0005317781: ISTATUS Data Link Disconnected
+01 16:03:43: 0005317798: iMjrEvt: DP_COMPONENT          : AUX Got Phy Link Msg = 0 
+01 16:03:43: 0005317815: iMjrEvt: DP_COMPONENT          : Aux Generate Lex Active/Offline Phy:0, dpEnable:0, Host:0
+01 16:03:43: 0005317831: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 7 in state 5
+01 16:03:43: 0005317838: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 7

@@ -1,0 +1,252 @@
+COM6: BB: REX: 29 21:17:43: 0001655391: iMjrEvt: COMMAND_COMPONENT     : ### Rx RunPgmBB ### Start Addr: c0a337d8, Size: 48596
+COM6: BB: REX: 29 21:17:43: 0001655410: iDbgCyn: LINKMGR_COMPONENT     : *** PHY Disabled ***
+COM6: BB: REX: 29 21:17:43: 0001655426: iDbgCyn: TOP_COMPONENT         : Placing GE in reset mode
+COM6: BB: REX: 29 21:17:43: 0001655433: iMjrEvt: COMMAND_COMPONENT     : Load and run PROGRAM_BB After 300ms
+COM6: BB: REX: 29 21:17:43: 0001656913: iDbgCyn: TIMING_COMPONENT      : Timer registered,  47 of 56 callback 0xa00131c8
+COM6: BB: REX: 29 21:17:43: 0001656951: iMjrEvt: LINKMGR_COMPONENT     : Link manager: old state = 2, new state = 0 on event = 2
+COM6: BB: REX: 29 21:17:43: 0001656973: iDbgCyn: MAC_COMPONENT         : Link Layer 3 Tx Disabled
+COM6: BB: REX: 29 21:17:43: 0001656980: iDbgCyn: MAC_COMPONENT         : MAC Tx Disabled
+COM6: BB: REX: 29 21:17:43: 0001656987: iDbgLog: AQUANTIA_COMPONENT    : Aquantia PHY disabled
+COM6: BB: REX: 29 21:17:43: 0001657003: iDbgCyn: MAC_COMPONENT         : MAC Rx Disabled
+COM6: BB: REX: 29 21:17:43: 0001657011: iDbgCyn: MAC_COMPONENT         : Link Layer 3 Rx Disabled
+COM6: BB: REX: 29 21:17:43: 0001657017: iMinEvt: MCA_COMPONENT         : MCA Tx Disabled
+COM6: BB: REX: 29 21:17:43: 0001657098: iMinEvt: MCA_COMPONENT         : MCA Rx Disabled
+COM6: BB: REX: 29 21:17:43: 0001657107: iMjrEvt: LINKMGR_COMPONENT     : Link manager: old state = 0, new state = 0 on event = 0
+COM6: BB: REX: 29 21:17:43: 0001657127: iDbgCyn: CPU_COMM_COMPONENT    : Comm channel received a link DOWN status event
+COM6: BB: REX: 29 21:17:43: 0001657144: iMinErr: LINKMGR_COMPONENT     : Comm Link: Invalid Event 0 for state 0
+COM6: BB: REX: 29 21:17:43: 0001657152: iDbgCyn: LINKMGR_COMPONENT     : COMLINK In state 0, received event 0 new state 0
+COM6: BB: REX: 29 21:17:44: 0002060782: ISTATUS ICRON Technologies ProgramBB Software Version v0.0.68
+COM6: BB: REX: 29 21:17:44: 0002060805: ISTATUS SW build was done on 2019/06/27
+COM6: BB: REX: 29 21:17:44: 0002060819: ISTATUS SW build was done at 16:20:09
+COM6: BB: REX: 29 21:17:44: 0002060829: ISTATUS This device is a Rex
+COM6: BB: REX: 29 21:17:44: 0002060837: ISTATUS Chip ID is Major 0x16, Minor 0x1, Debug 0x0
+COM6: BB: REX: 29 21:17:44: 0002060847: ISTATUS Chip build date 2019/06/07
+COM6: BB: REX: 29 21:17:44: 0002060858: ISTATUS Chip build time 09:23:56
+COM6: BB: REX: 29 21:17:44: 0000000003: iDbgCyn: TIMING_COMPONENT      : Timer registered,  4 of 56 callback 0xa0006dd4
+COM6: BB: REX: 29 21:17:44: 0000001624: iDbgCyn: TIMING_COMPONENT      : Timer registered,  5 of 56 callback 0xa0006494
+COM6: BB: REX: 29 21:17:44: iLog decode error: <type 'exceptions.TypeError'>: not enough arguments for format string: ilog: is_big_endian=True, prev_ilog_printed=False, num_args=0, component_index=2, message_index=1, severity_index=1, device_timestamp=1651, arguments=()
+COM6: BB: REX: 29 21:17:44: 0000001680: iDbgCyn: TIMING_COMPONENT      : Timer registered,  6 of 56 callback 0xa0008bf0
+COM6: BB: REX: 29 21:17:44: 0000001689: iDbgCyn: TIMING_COMPONENT      : Timer registered,  7 of 56 callback 0xa0008ed0
+COM6: BB: REX: 29 21:17:44: 0000001699: iMinEvt: LED_COMPONENT         : New LED mode set. Result = 40
+COM6: BB: REX: 29 21:17:44: 0000001710: iMinEvt: LED_COMPONENT         : New LED mode set. Result = c4
+COM6: BB: REX: 29 21:17:44: 0000001717: iMjrEvt: ILOG_COMPONENT        : Changing logging level for component 2 to level 2
+COM6: BB: REX:  21:17:44.309: ProgramBb Info message: FPGA Chip ID Major 16 Minor 1 Debug 0 HW build was done on 2019/06/07 at 09:23:56 FallbackStatus 0x0
+Bootrom ID Major 0 Minor 12 Software revision Major 0 Minor 0 Debug 68 SW build was done on 2019/06/27 at 16:20:09 this is REX
+COM6: BB: REX: 29 21:17:44: 0000001740: iDbgCyn: TIMING_COMPONENT      : Timer registered,  8 of 56 callback 0xa000939c
+COM6: BB: REX: 29 21:17:44: 0000001751: iDbgCyn: TIMING_COMPONENT      : Timer registered,  9 of 56 callback 0xa000a338
+COM6: BB: REX:  21:17:45.155: ProgramBb Info message: FPGA Chip ID Major 16 Minor 1 Debug 0 HW build was done on 2019/06/07 at 09:23:56 FallbackStatus 0x0
+Bootrom ID Major 0 Minor 12 Software revision Major 0 Minor 0 Debug 68 SW build was done on 2019/06/27 at 16:20:09 this is REX
+COM6: BB: REX:  21:17:46.163: ProgramBb Info message: FPGA Chip ID Major 16 Minor 1 Debug 0 HW build was done on 2019/06/07 at 09:23:56 FallbackStatus 0x0
+Bootrom ID Major 0 Minor 12 Software revision Major 0 Minor 0 Debug 68 SW build was done on 2019/06/27 at 16:20:09 this is REX
+COM6: BB: REX:  21:17:47.176: ProgramBb Info message: FPGA Chip ID Major 16 Minor 1 Debug 0 HW build was done on 2019/06/07 at 09:23:56 FallbackStatus 0x0
+Bootrom ID Major 0 Minor 12 Software revision Major 0 Minor 0 Debug 68 SW build was done on 2019/06/27 at 16:20:09 this is REX
+COM6: BB: REX:  21:17:48.181: ProgramBb Info message: FPGA Chip ID Major 16 Minor 1 Debug 0 HW build was done on 2019/06/07 at 09:23:56 FallbackStatus 0x0
+Bootrom ID Major 0 Minor 12 Software revision Major 0 Minor 0 Debug 68 SW build was done on 2019/06/27 at 16:20:09 this is REX
+COM6: BB: REX:  21:17:49.189: ProgramBb Info message: FPGA Chip ID Major 16 Minor 1 Debug 0 HW build was done on 2019/06/07 at 09:23:56 FallbackStatus 0x0
+Bootrom ID Major 0 Minor 12 Software revision Major 0 Minor 0 Debug 68 SW build was done on 2019/06/27 at 16:20:09 this is REX
+COM6: BB: REX:  21:17:50.200: ProgramBb Info message: FPGA Chip ID Major 16 Minor 1 Debug 0 HW build was done on 2019/06/07 at 09:23:56 FallbackStatus 0x0
+Bootrom ID Major 0 Minor 12 Software revision Major 0 Minor 0 Debug 68 SW build was done on 2019/06/27 at 16:20:09 this is REX
+COM6: BB: REX:  21:17:51.208: ProgramBb Info message: FPGA Chip ID Major 16 Minor 1 Debug 0 HW build was done on 2019/06/07 at 09:23:56 FallbackStatus 0x0
+Bootrom ID Major 0 Minor 12 Software revision Major 0 Minor 0 Debug 68 SW build was done on 2019/06/27 at 16:20:09 this is REX
+COM6: BB: REX:  21:17:52.216: ProgramBb Info message: FPGA Chip ID Major 16 Minor 1 Debug 0 HW build was done on 2019/06/07 at 09:23:56 FallbackStatus 0x0
+Bootrom ID Major 0 Minor 12 Software revision Major 0 Minor 0 Debug 68 SW build was done on 2019/06/27 at 16:20:09 this is REX
+COM6: BB: REX: 29 21:17:52: 0008694703: iDbgCyn: TIMING_COMPONENT      : Timer registered,  10 of 56 callback 0xa0008444
+COM6: BB: REX: 29 21:18:23: 0006283339: iMjrEvt: COMMAND_COMPONENT     : Write success!
+COM6: BB: REX: 29 21:21:09: 0003717147: iMjrEvt: COMMAND_COMPONENT     : Write success!
+COM6: BB: REX: 29 21:21:12: 0000000411: ISTATUS ICRON Technologies Software Version v0.0.68
+COM6: BB: REX: 29 21:21:12: 0000000434: ISTATUS SW build was done on 2019/06/27
+COM6: BB: REX: 29 21:21:12: 0000000448: ISTATUS SW build was done at 16:20:29
+COM6: BB: REX: 29 21:21:12: 0000000458: ISTATUS This device is a Rex
+COM6: BB: REX: 29 21:21:12: 0000000467: ISTATUS Chip ID is Major 0x16, Minor 0x1, Debug 0x0
+COM6: BB: REX: 29 21:21:12: 0000000477: ISTATUS Chip build date 2019/06/07
+COM6: BB: REX: 29 21:21:12: 0000000487: ISTATUS Chip build time 09:23:56
+COM6: BB: REX: 29 21:21:12: 0000000496: iMinEvt: TOPLEVEL_COMPONENT    : Current Core Board is A019
+COM6: BB: REX: 29 21:21:12: 0000000504: iDbgCyn: CORE_COMPONENT        : TOP Version: 16.1.0
+COM6: BB: REX: 29 21:21:12: 0000000512: iDbgCyn: CORE_COMPONENT        : CORE Version: 12.5.1
+COM6: BB: REX: 29 21:21:12: 0000000521: iDbgCyn: CORE_COMPONENT        : BB UART Version: 4.0.0
+COM6: BB: REX: 29 21:21:12: 0000000530: iDbgCyn: CORE_COMPONENT        : I2C MASTER Version: 3.0.1
+COM6: BB: REX: 29 21:21:12: 0000000539: iDbgCyn: CORE_COMPONENT        : I2C SLAVE Version: 2.3.1
+COM6: BB: REX: 29 21:21:12: 0000000547: iDbgCyn: CORE_COMPONENT        : MDIO MASTER Version: 3.0.0
+COM6: BB: REX: 29 21:21:12: 0000000557: iDbgCyn: CORE_COMPONENT        : SPI FLASH Version: 2.2.1
+COM6: BB: REX: 29 21:21:12: 0000000565: iDbgCyn: CORE_COMPONENT        : GPIO Version: 3.2.0
+COM6: BB: REX: 29 21:21:12: 0000000574: iDbgCyn: CORE_COMPONENT        : LINK LAYER TX Version: 5.3.0
+COM6: BB: REX: 29 21:21:12: 0000000583: iDbgCyn: CORE_COMPONENT        : LINK LAYER RX Version: 6.3.0
+COM6: BB: REX: 29 21:21:12: 0000000591: iDbgCyn: CORE_COMPONENT        : LAYER3 TX Version: 4.2.0
+COM6: BB: REX: 29 21:21:12: 0000000600: iDbgCyn: CORE_COMPONENT        : LAYER3 RX Version: 3.2.0
+COM6: BB: REX: 29 21:21:12: 0000000609: iDbgCyn: CORE_COMPONENT        : MCA Version: 0.0.0
+COM6: BB: REX: 29 21:21:12: 0000000618: iDbgCyn: CORE_COMPONENT        : ULP CORE Version: 0.0.0
+COM6: BB: REX: 29 21:21:12: 0000000627: iDbgCyn: CORE_COMPONENT        : ULP PHY Version: 0.0.0
+COM6: BB: REX: 29 21:21:12: 0000000635: iDbgCyn: CORE_COMPONENT        : DP SINK MAIN Version: 0.0.0
+COM6: BB: REX: 29 21:21:12: 0000000645: iDbgCyn: CORE_COMPONENT        : DP SINK HPD Version: 0.0.0
+COM6: BB: REX: 29 21:21:12: 0000000653: iDbgCyn: CORE_COMPONENT        : DP SOURCE MAIN Version: 0.0.0
+COM6: BB: REX: 29 21:21:12: 0000000662: iDbgCyn: CORE_COMPONENT        : DP SOURCE HPD Version: 0.0.0
+COM6: BB: REX: 29 21:21:12: 0000000671: iDbgCyn: CORE_COMPONENT        : XMII ADAPTER Version: 0.0.0
+COM6: BB: REX: 29 21:21:12: 0000000680: iDbgCyn: CORE_COMPONENT        : GE ADAPTER Version: 0.0.0
+COM6: BB: REX: 29 21:21:12: 0000000689: iDbgCyn: CORE_COMPONENT        : GE UART Version: 4.0.0
+COM6: BB: REX: 29 21:21:12: 0000000697: iDbgCyn: CORE_COMPONENT        : RS232 EXTENDER Version: 0.0.0
+COM6: BB: REX: 29 21:21:12: 0000017390: iMinEvt: CONFIG_COMPONENT      : Config_ArbitrateSetVar Source = 0, variable = 20, data = 0x3010300
+COM6: BB: REX: 29 21:21:12: 0000017416: iDbgCyn: CONFIG_COMPONENT      : *** USB 2 DISABLED ***
+COM6: BB: REX: 29 21:21:12: 0000017426: iDbgCyn: CONFIG_COMPONENT      : *** USB 3 DISABLED ***
+COM6: BB: REX: 29 21:21:12: 0000017433: iDbgCyn: CONFIG_COMPONENT      : *** Display Port DISABLED ***
+COM6: BB: REX: 29 21:21:12: 0000017440: iDbgCyn: CONFIG_COMPONENT      : *** Lan Port DISABLED ***
+COM6: BB: REX: 29 21:21:12: 0000017447: iDbgCyn: CONFIG_COMPONENT      : *** RS232 DISABLED ***
+COM6: BB: REX: 29 21:21:12: 0000017459: iDbgCyn: CONFIG_COMPONENT      : *** USB 2 DISABLED ***
+COM6: BB: REX: 29 21:21:12: 0000017466: iDbgCyn: CONFIG_COMPONENT      : *** USB 3 DISABLED ***
+COM6: BB: REX: 29 21:21:12: 0000017472: iDbgCyn: CONFIG_COMPONENT      : *** Display Port DISABLED ***
+COM6: BB: REX: 29 21:21:12: 0000017479: iDbgCyn: CONFIG_COMPONENT      : *** Lan Port DISABLED ***
+COM6: BB: REX: 29 21:21:12: 0000017486: iDbgCyn: CONFIG_COMPONENT      : *** RS232 DISABLED ***
+COM6: BB: REX: 29 21:21:12: 0000017498: iMinEvt: CONFIG_COMPONENT      : Config_ArbitrateSetVar Source = 0, variable = 25, data = 0x54657374
+COM6: BB: REX: 29 21:21:12: 0000017513: iMinEvt: CONFIG_COMPONENT      : Configuration Event [25] Generated.
+COM6: BB: REX: 29 21:21:12: 0000017525: iMinEvt: CONFIG_COMPONENT      : Config_ArbitrateSetVar Source = 0, variable = 24, data = 0xdeadbeef
+COM6: BB: REX: 29 21:21:12: 0000017533: iMinEvt: CONFIG_COMPONENT      : Configuration Event [24] Generated.
+COM6: BB: REX: 29 21:21:12: 0000017546: iMinEvt: CONFIG_COMPONENT      : Config_ArbitrateSetVar Source = 0, variable = 26, data = 0x101
+COM6: BB: REX: 29 21:21:12: 0000017557: iMinEvt: CONFIG_COMPONENT      : Configuration Event [26] Generated.
+COM6: BB: REX: 29 21:21:12: 0000017569: iMinEvt: CONFIG_COMPONENT      : Config_ArbitrateSetVar Source = 0, variable = 27, data = 0x1010000
+COM6: BB: REX: 29 21:21:12: 0000017578: iMinEvt: CONFIG_COMPONENT      : Configuration Event [27] Generated.
+COM6: BB: REX: 29 21:21:12: 0000017591: iMinEvt: CONFIG_COMPONENT      : Config_ArbitrateSetVar Source = 0, variable = 28, data = 0x1000000
+COM6: BB: REX: 29 21:21:12: 0000017600: iMinEvt: CONFIG_COMPONENT      : Configuration Event [28] Generated.
+COM6: BB: REX: 29 21:21:12: 0000017613: iMinEvt: CONFIG_COMPONENT      : Config_ArbitrateSetVar Source = 0, variable = 80, data = 0x2b11300
+COM6: BB: REX: 29 21:21:12: 0000017622: iMinEvt: CONFIG_COMPONENT      : Configuration Event [80] Generated.
+COM6: BB: REX: 29 21:21:12: 0000017635: iMinEvt: CONFIG_COMPONENT      : Config_ArbitrateSetVar Source = 0, variable = 82, data = 0x17f90100
+COM6: BB: REX: 29 21:21:12: 0000017644: iMinEvt: CONFIG_COMPONENT      : Configuration Event [82] Generated.
+COM6: BB: REX: 29 21:21:12: 0000017658: iMinEvt: CONFIG_COMPONENT      : Config_ArbitrateSetVar Source = 0, variable = 40, data = 0x0
+COM6: BB: REX: 29 21:21:12: 0000017667: iMinEvt: CONFIG_COMPONENT      : Configuration Event [40] Generated.
+COM6: BB: REX: 29 21:21:12: 0000017682: iMinEvt: CONFIG_COMPONENT      : Config_ArbitrateSetVar Source = 0, variable = 41, data = 0x100089d
+COM6: BB: REX: 29 21:21:12: 0000017691: iMinEvt: CONFIG_COMPONENT      : Configuration Event [41] Generated.
+COM6: BB: REX: 29 21:21:12: 0000017705: iMinEvt: CONFIG_COMPONENT      : Config_ArbitrateSetVar Source = 0, variable = 87, data = 0x1e8480
+COM6: BB: REX: 29 21:21:12: 0000017715: iMinEvt: CONFIG_COMPONENT      : Configuration Event [87] Generated.
+COM6: BB: REX: 29 21:21:12: 0000017729: iMinEvt: CONFIG_COMPONENT      : Config_ArbitrateSetVar Source = 0, variable = 88, data = 0x140207d0
+COM6: BB: REX: 29 21:21:12: 0000017739: iMinEvt: CONFIG_COMPONENT      : Configuration Event [88] Generated.
+COM6: BB: REX: 29 21:21:13: 0000017754: iMinEvt: CONFIG_COMPONENT      : Config_ArbitrateSetVar Source = 0, variable = 89, data = 0x83546573
+COM6: BB: REX: 29 21:21:13: 0000017763: iMinEvt: CONFIG_COMPONENT      : Configuration Event [89] Generated.
+COM6: BB: REX: 29 21:21:13: 0000017778: iMinEvt: CONFIG_COMPONENT      : Config_ArbitrateSetVar Source = 0, variable = 90, data = 0x505f5564
+COM6: BB: REX: 29 21:21:13: 0000017788: iMinEvt: CONFIG_COMPONENT      : Configuration Event [90] Generated.
+COM6: BB: REX: 29 21:21:13: 0000017829: iDbgCyn: TIMING_COMPONENT      : Timer registered,  4 of 56 callback 0xa000b6ac
+COM6: BB: REX:  21:21:13.039: Software Info message: FPGA Chip ID Major 16 Minor 1 Debug 0 HW build was done on 2019/06/07 at 09:23:56 FallbackStatus 0x10
+Bootrom ID Major 0 Minor 12 Software revision Major 0 Minor 0 Debug 68 SW build was done on 2019/06/27 at 16:20:32 this is REX
+COM6: BB: REX: 29 21:21:13: 0000035870: iDbgCyn: TIMING_COMPONENT      : Timer registered,  5 of 56 callback 0xa000dabc
+COM6: BB: REX: 29 21:21:13: 0000035895: iDbgCyn: TIMING_COMPONENT      : Timer registered,  6 of 56 callback 0xa0009178
+COM6: BB: REX: 29 21:21:13: 0000035916: iMinEvt: FLASH_DATA_COMPONENT  : Block number 0 address 0xc0b00000 status 1
+COM6: BB: REX: 29 21:21:13: 0000047724: iMinEvt: FLASH_DATA_COMPONENT  : Block number 1 address 0xc0b10000 status 0
+COM6: BB: REX: 29 21:21:13: 0000059530: iMinEvt: FLASH_DATA_COMPONENT  : *** Flash Vars erased header data found, from address c0b000d4, 65312 bytes
+COM6: BB: REX: 29 21:21:13: 0000059555: iMinEvt: FLASH_DATA_COMPONENT  : Flash storage initialization - status 0 active block 0 used space = 0xd4
+COM6: BB: REX: 29 21:21:13: 0000059565: iMinEvt: FLASH_DATA_COMPONENT  : load variable 20 from FLASH, data end at: 0xc0b000d4
+COM6: BB: REX: 29 21:21:13: 0000059599: iMinEvt: FLASH_DATA_COMPONENT  : Found variable 20 from FLASH, size = 3 data = 0x3010300
+COM6: BB: REX: 29 21:21:13: 0000059608: iMinEvt: FLASH_DATA_COMPONENT  : Variable at address 0xc0b0000c
+COM6: BB: REX: 29 21:21:13: 0000059619: iDbgCyn: CONFIG_COMPONENT      : *** USB 2 DISABLED ***
+COM6: BB: REX: 29 21:21:13: 0000059626: iDbgCyn: CONFIG_COMPONENT      : *** USB 3 DISABLED ***
+COM6: BB: REX: 29 21:21:13: 0000059633: iDbgCyn: CONFIG_COMPONENT      : *** Display Port DISABLED ***
+COM6: BB: REX: 29 21:21:13: 0000059640: iDbgCyn: CONFIG_COMPONENT      : *** Lan Port DISABLED ***
+COM6: BB: REX: 29 21:21:13: 0000059647: iDbgCyn: CONFIG_COMPONENT      : *** RS232 DISABLED ***
+COM6: BB: REX: 29 21:21:13: 0000059655: iMinEvt: FLASH_DATA_COMPONENT  : load variable 26 from FLASH, data end at: 0xc0b000d4
+COM6: BB: REX: 29 21:21:13: 0000059691: iMinEvt: FLASH_DATA_COMPONENT  : Found variable 26 from FLASH, size = 14 data = 0x101
+COM6: BB: REX: 29 21:21:13: 0000059700: iMinEvt: FLASH_DATA_COMPONENT  : Variable at address 0xc0b00018
+COM6: BB: REX: 29 21:21:13: 0000059711: iMinEvt: FLASH_DATA_COMPONENT  : load variable 27 from FLASH, data end at: 0xc0b000d4
+COM6: BB: REX: 29 21:21:13: 0000059744: iMinEvt: FLASH_DATA_COMPONENT  : Found variable 27 from FLASH, size = 1 data = 0x1010083
+COM6: BB: REX: 29 21:21:13: 0000059753: iMinEvt: FLASH_DATA_COMPONENT  : Variable at address 0xc0b00030
+COM6: BB: REX: 29 21:21:13: 0000059764: iMinEvt: FLASH_DATA_COMPONENT  : load variable 28 from FLASH, data end at: 0xc0b000d4
+COM6: BB: REX: 29 21:21:13: 0000059798: iMinEvt: FLASH_DATA_COMPONENT  : Found variable 28 from FLASH, size = 2 data = 0x1008300
+COM6: BB: REX: 29 21:21:13: 0000059807: iMinEvt: FLASH_DATA_COMPONENT  : Variable at address 0xc0b0003c
+COM6: BB: REX: 29 21:21:13: 0000059818: iMinEvt: FLASH_DATA_COMPONENT  : load variable 29 from FLASH, data end at: 0xc0b000d4
+COM6: BB: REX: 29 21:21:13: 0000059852: iMinEvt: FLASH_DATA_COMPONENT  : Found variable 29 from FLASH, size = 8 data = 0x0
+COM6: BB: REX: 29 21:21:13: 0000059860: iMinEvt: FLASH_DATA_COMPONENT  : Variable at address 0xc0b00048
+COM6: BB: REX: 29 21:21:13: 0000059872: iMinEvt: FLASH_DATA_COMPONENT  : load variable 80 from FLASH, data end at: 0xc0b000d4
+COM6: BB: REX: 29 21:21:13: 0000059905: iMinEvt: FLASH_DATA_COMPONENT  : Found variable 80 from FLASH, size = 8 data = 0x2b11300
+COM6: BB: REX: 29 21:21:13: 0000059914: iMinEvt: FLASH_DATA_COMPONENT  : Variable at address 0xc0b00058
+COM6: BB: REX: 29 21:21:13: 0000059927: iMinEvt: FLASH_DATA_COMPONENT  : load variable 40 from FLASH, data end at: 0xc0b000d4
+COM6: BB: REX: 29 21:21:13: 0000059961: iMinEvt: FLASH_DATA_COMPONENT  : Found variable 40 from FLASH, size = 8 data = 0x0
+COM6: BB: REX: 29 21:21:13: 0000059970: iMinEvt: FLASH_DATA_COMPONENT  : Variable at address 0xc0b00068
+COM6: BB: REX: 29 21:21:13: 0000059983: iMinEvt: FLASH_DATA_COMPONENT  : load variable 87 from FLASH, data end at: 0xc0b000d4
+COM6: BB: REX: 29 21:21:13: 0000060018: iMinEvt: FLASH_DATA_COMPONENT  : Found variable 87 from FLASH, size = 16 data = 0x1e8480
+COM6: BB: REX: 29 21:21:13: 0000060027: iMinEvt: FLASH_DATA_COMPONENT  : Variable at address 0xc0b00078
+COM6: BB: REX: 29 21:21:13: 0000060041: iMinEvt: FLASH_DATA_COMPONENT  : load variable 88 from FLASH, data end at: 0xc0b000d4
+COM6: BB: REX: 29 21:21:13: 0000060076: iMinEvt: FLASH_DATA_COMPONENT  : Found variable 88 from FLASH, size = 16 data = 0x140207d0
+COM6: BB: REX: 29 21:21:13: 0000060085: iMinEvt: FLASH_DATA_COMPONENT  : Variable at address 0xc0b00090
+COM6: BB: REX: 29 21:21:13: 0000060099: iMinEvt: FLASH_DATA_COMPONENT  : load variable 89 from FLASH, data end at: 0xc0b000d4
+COM6: BB: REX: 29 21:21:13: 0000060132: iMinEvt: FLASH_DATA_COMPONENT  : Found variable 89 from FLASH, size = 1 data = 0x83000000
+COM6: BB: REX: 29 21:21:13: 0000060141: iMinEvt: FLASH_DATA_COMPONENT  : Variable at address 0xc0b000a8
+COM6: BB: REX: 29 21:21:13: 0000060154: iMinEvt: FLASH_DATA_COMPONENT  : load variable 90 from FLASH, data end at: 0xc0b000d4
+COM6: BB: REX: 29 21:21:13: 0000060188: iMinEvt: FLASH_DATA_COMPONENT  : Found variable 90 from FLASH, size = 8 data = 0x505f5564
+COM6: BB: REX: 29 21:21:13: 0000060197: iMinEvt: FLASH_DATA_COMPONENT  : Variable at address 0xc0b000b4
+COM6: BB: REX: 29 21:21:13: 0000060212: iMinEvt: FLASH_DATA_COMPONENT  : load variable 91 from FLASH, data end at: 0xc0b000d4
+COM6: BB: REX: 29 21:21:13: 0000060246: iMinEvt: FLASH_DATA_COMPONENT  : Found variable 91 from FLASH, size = 6 data = 0x0
+COM6: BB: REX: 29 21:21:13: 0000060255: iMinEvt: FLASH_DATA_COMPONENT  : Variable at address 0xc0b000c4
+COM6: BB: REX: 29 21:21:13: 0000072552: iMjrEvt: IDT_CLK_COMPONENT     : IDT clk configuration done, type=4
+COM6: BB: REX: 29 21:21:13: 0000072576: iDbgCyn: TIMING_COMPONENT      : Timer registered,  7 of 56 callback 0xa0011808
+COM6: BB: REX: 29 21:21:13: 0000072586: iDbgCyn: TIMING_COMPONENT      : Timer registered,  8 of 56 callback 0xa0011ae8
+COM6: BB: REX: 29 21:21:13: 0000072595: iMinEvt: LED_COMPONENT         : New LED mode set. Result = 40
+COM6: BB: REX: 29 21:21:13: 0000072617: iMjrEvt: ILOG_COMPONENT        : Changing logging level for component 2 to level 2
+COM6: BB: REX: 29 21:21:13: 0000072626: iDbgCyn: TOP_COMPONENT         : Wrote DRP address 0x40 with drpEnMask = 0x1000 and write data = 0x9000
+COM6: BB: REX: 29 21:21:13: 0000072636: iDbgCyn: TOP_COMPONENT         : Wrote DRP address 0x41 with drpEnMask = 0x1000 and write data = 0x2ef0
+COM6: BB: REX: 29 21:21:13: 0000072645: iDbgCyn: TOP_COMPONENT         : Wrote DRP address 0x42 with drpEnMask = 0x1000 and write data = 0x400
+COM6: BB: REX: 29 21:21:13: 0000072654: iDbgCyn: TOP_COMPONENT         : Wrote DRP address 0x48 with drpEnMask = 0x1000 and write data = 0x4701
+COM6: BB: REX: 29 21:21:13: 0000072663: iDbgCyn: TOP_COMPONENT         : Wrote DRP address 0x49 with drpEnMask = 0x1000 and write data = 0xf
+COM6: BB: REX: 29 21:21:13: 0000072673: iDbgCyn: TOP_COMPONENT         : Wrote DRP address 0x4a with drpEnMask = 0x1000 and write data = 0x0
+COM6: BB: REX: 29 21:21:13: 0000072682: iDbgCyn: TOP_COMPONENT         : Wrote DRP address 0x4b with drpEnMask = 0x1000 and write data = 0x0
+COM6: BB: REX: 29 21:21:13: 0000072692: iDbgCyn: TOP_COMPONENT         : Wrote DRP address 0x4c with drpEnMask = 0x1000 and write data = 0x0
+COM6: BB: REX: 29 21:21:13: 0000072701: iDbgCyn: TOP_COMPONENT         : Wrote DRP address 0x4d with drpEnMask = 0x1000 and write data = 0x0
+COM6: BB: REX: 29 21:21:13: 0000072710: iDbgCyn: TOP_COMPONENT         : Wrote DRP address 0x4e with drpEnMask = 0x1000 and write data = 0x0
+COM6: BB: REX: 29 21:21:13: 0000072720: iDbgCyn: TOP_COMPONENT         : Wrote DRP address 0x4f with drpEnMask = 0x1000 and write data = 0x0
+COM6: BB: REX: 29 21:21:13: 0000072729: iDbgCyn: TOP_COMPONENT         : Wrote DRP address 0x50 with drpEnMask = 0x1000 and write data = 0xb5ed
+COM6: BB: REX: 29 21:21:13: 0000072739: iDbgCyn: TOP_COMPONENT         : Wrote DRP address 0x51 with drpEnMask = 0x1000 and write data = 0x5999
+COM6: BB: REX: 29 21:21:13: 0000072748: iDbgCyn: TOP_COMPONENT         : Wrote DRP address 0x52 with drpEnMask = 0x1000 and write data = 0xa147
+COM6: BB: REX: 29 21:21:13: 0000072758: iDbgCyn: TOP_COMPONENT         : Wrote DRP address 0x53 with drpEnMask = 0x1000 and write data = 0x0
+COM6: BB: REX: 29 21:21:13: 0000072767: iDbgCyn: TOP_COMPONENT         : Wrote DRP address 0x54 with drpEnMask = 0x1000 and write data = 0xa93a
+COM6: BB: REX: 29 21:21:13: 0000072776: iDbgCyn: TOP_COMPONENT         : Wrote DRP address 0x55 with drpEnMask = 0x1000 and write data = 0x5111
+COM6: BB: REX: 29 21:21:13: 0000072786: iDbgCyn: TOP_COMPONENT         : Wrote DRP address 0x56 with drpEnMask = 0x1000 and write data = 0x91eb
+COM6: BB: REX: 29 21:21:13: 0000072795: iDbgCyn: TOP_COMPONENT         : Wrote DRP address 0x57 with drpEnMask = 0x1000 and write data = 0xae4e
+COM6: BB: REX: 29 21:21:13: 0000072805: iDbgCyn: TOP_COMPONENT         : Wrote DRP address 0x58 with drpEnMask = 0x1000 and write data = 0x5999
+COM6: BB: REX: 29 21:21:13: 0000072819: iMinEvt: XADC_COMPONENT        : FPGA temperature threshold: Warning 95 C, Shutdown 100 C.
+COM6: BB: REX: 29 21:21:13: 0000072827: iDbgCyn: STATS_MON_COMPONENT   : Stat group registered 0 of 33, number of stats 1
+COM6: BB: REX: 29 21:21:13: 0000072844: ISTATUS Verifying current image
+COM6: BB: REX:  21:21:17.080: Software Info message: FPGA Chip ID Major 17 Minor 1 Debug 1 HW build was done on 2019/09/09 at 12:13:16 FallbackStatus 0x0
+Bootrom ID Major 0 Minor 12 Software revision Major 0 Minor 0 Debug 70 SW build was done on 2019/09/19 at 15:19:44 this is REX
+COM6: BB: REX: 29 21:21:17: 0000002640: iMinEvt: FLASH_DATA_COMPONENT  : Block number 0 address 0xc0b00000 status 1
+COM6: BB: REX: 29 21:21:17: 0000014461: iMinEvt: FLASH_DATA_COMPONENT  : Block number 1 address 0xc0b10000 status 0
+COM6: BB: REX: 29 21:21:17: 0000026264: iMinEvt: FLASH_DATA_COMPONENT  : *** Flash Vars erased header data found, from address c0b000d4, 65312 bytes
+COM6: BB: REX: 29 21:21:17: 0000026283: iMinEvt: FLASH_DATA_COMPONENT  : Flash storage initialization - status 0 active block 0 used space = 0xd4
+COM6: BB: REX: 29 21:21:17: 0000026331: iMinEvt: FLASH_DATA_COMPONENT  : Variable has wrong size: expected: 15 actual 14 key:26
+COM6: BB: REX: 29 21:21:17: 0000038991: iMjrErr: TOPLEVEL_COMPONENT    :   *** This is a PlugTest Image ***
+COM6: BB: REX: 29 21:21:17: 0000257753: iMjrErr: DP_COMPONENT          : ****** DP ISOLATED REX DISABLED *******
+COM6: BB: REX: 29 21:21:17: 0000257773: iDbgGrn: DP_AUX_COMPONENT      : Clearing the AUX trans buffer
+COM6: BB: REX: 29 21:21:17: 0000258665: ISTATUS DP not in over current state
+COM6: BB: REX: 29 21:21:17: 0000258683: ISTATUS DP not in over current state
+COM6: BB: REX: 29 21:21:17: 0000258726: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 0, new state = 0 on event = 0
+COM6: BB: REX: 29 21:21:17: 0000258747: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 0, new state = 1 on event = 2
+COM6: BB: REX: 29 21:21:17: 0000258785: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM6: BB: REX: 29 21:21:17: 0000258793: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 0
+COM6: BB: REX: 29 21:21:17: 0000258822: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 3
+COM6: BB: REX: 29 21:21:17: 0000258840: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 3
+COM6: BB: REX:  21:21:17.474: GE DBG:
+COM6: BB: REX:  21:21:17.492: Goldenears SW 0.1.4
+COM6: BB: REX:  21:21:17.498: GE DBG:
+COM6: BB: REX:  21:21:17.503: ASIC rev. B detected
+COM6: BB: REX: 29 21:21:17: 0000668348: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 16
+COM6: BB: REX: 29 21:22:43: 0002215859: ISTATUS ICRON Technologies Software Version v0.0.70
+COM6: BB: REX: 29 21:22:43: 0002215886: ISTATUS SW build was done on 2019/09/19
+COM6: BB: REX: 29 21:22:43: 0002215903: ISTATUS SW build was done at 15:19:41
+COM6: BB: REX: 29 21:22:43: 0002215918: ISTATUS This device is a Rex
+COM6: BB: REX: 29 21:22:43: 0002215931: ISTATUS Chip ID is Major 0x17, Minor 0x1, Debug 0x1
+COM6: BB: REX: 29 21:22:43: 0002215947: ISTATUS Chip build date 2019/09/09
+COM6: BB: REX: 29 21:22:43: 0002215961: ISTATUS Chip build time 12:13:16
+COM6: BB: REX: 29 21:22:47: 0006952685: iUsrLog: DP_COMPONENT          : AUX EDID type = 0
+COM6: BB: REX: 29 21:22:47: 0006953530: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 1 | 0=disable, 1=enable, 2=pass Monitor's value
+COM6: BB: REX: 29 21:22:47: 0006959846: iUsrLog: DP_COMPONENT          : AUX Isolated = 0
+COM6: BB: REX: 29 21:22:47: 0006961036: iMjrEvt: DP_COMPONENT          : DP YCBCR Disable = 0      * (1 = disable, 0 = Pass through)
+COM6: BB: REX: 29 21:22:47: 0006964168: iUsrLog: DP_COMPONENT          : No Read MCCS = 1
+COM6: BB: REX: 29 21:22:47: 0006965384: iUsrLog: DP_COMPONENT          : AUX BPC Mode = 0
+COM6: BB: REX: 29 21:22:48: 0006968276: iUsrLog: DP_COMPONENT          : BW = 0x0; LC = 0x0
+COM6: BB: REX: 29 21:22:48: 0006969602: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM6: BB: REX: 29 21:22:48: 0006970834: iUsrLog: DP_COMPONENT          : Lex Audio status chnaged = 0
+COM6: BB: REX: 29 21:22:48: 0007516760: iUsrLog: DP_COMPONENT          : AUX EDID type = 0
+COM6: BB: REX: 29 21:22:48: 0007517183: iUsrLog: DP_COMPONENT          : SSC Advertise Mode = 1 | 0=disable, 1=enable, 2=pass Monitor's value
+COM6: BB: REX: 29 21:22:48: 0007521174: iUsrLog: DP_COMPONENT          : AUX Isolated = 0
+COM6: BB: REX: 29 21:22:48: 0007523677: iMjrEvt: DP_COMPONENT          : DP YCBCR Disable = 0      * (1 = disable, 0 = Pass through)
+COM6: BB: REX: 29 21:22:48: 0007526908: iUsrLog: DP_COMPONENT          : No Read MCCS = 1
+COM6: BB: REX: 29 21:22:48: 0007537174: iUsrLog: DP_COMPONENT          : AUX BPC Mode = 0
+COM6: BB: REX: 29 21:22:48: 0007541382: iUsrLog: DP_COMPONENT          : BW = 0x0; LC = 0x0
+COM6: BB: REX: 29 21:22:48: 0007548195: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM6: BB: REX: 29 21:22:48: 0007551242: iUsrLog: DP_COMPONENT          : Lex Audio status chnaged = 0
+COM6: BB: REX: 29 21:22:54: 0013682325: iMjrErr: DP_COMPONENT          : ****** Restarting DP PM State Machine ******
+COM6: BB: REX: 29 21:22:54: 0013682354: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 9 in state 1
+COM6: BB: REX: 29 21:22:54: 0013682372: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 9

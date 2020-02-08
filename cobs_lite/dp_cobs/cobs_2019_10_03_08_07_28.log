@@ -1,0 +1,68 @@
+2019-10-03 08:07:29,576 INFO: Cobs 1.1.3 release - June 25, 2019 on IronPython 2.7.5.0 on .NET 4.0.30319.42000
+2019-10-03 08:07:29,619 INFO: Executing startup script
+2019-10-03 08:07:32,467 INFO: Open Icron file button is clicked
+2019-10-03 08:07:34,378 INFO: C:\Users\Sumit.Rathore\Desktop\dp_cobs\icron_file
+2019-10-03 08:07:34,981 INFO: Icron file path is changed C:\Users\Sumit.Rathore\Desktop\dp_cobs\icron_file\cobs_plug_test_debug.icron
+2019-10-03 08:07:40,482 INFO: Icron file is loaded C:\Users\Sumit.Rathore\Desktop\dp_cobs\icron_file\cobs_plug_test_debug.icron
+2019-10-03 08:07:41,149 INFO: Add Device button is clicked
+2019-10-03 08:07:41,208 INFO: COM5: blackbird: Icron model is loaded C:\Users\Sumit.Rathore\Desktop\70\rex_imcd_to_force_last_tu_4\cobs_plug_test_debug.icron
+2019-10-03 08:07:41,516 INFO: FPGA image : False
+2019-10-03 08:07:41,551 INFO: COM5: blackbird: Device is created
+2019-10-03 08:07:41,569 INFO: COM5: goldenears: Icron model is loaded C:\Users\Sumit.Rathore\Desktop\70\rex_imcd_to_force_last_tu_4\cobs_plug_test_debug.icron
+2019-10-03 08:07:41,653 INFO: FPGA image : True
+2019-10-03 08:07:41,706 INFO: COM5: goldenears: Device is created
+2019-10-03 08:07:41,758 INFO: COM5: blackbird: LEX: Received software info
+2019-10-03 08:07:41,857 INFO: COM5: blackbird: Device is connected
+2019-10-03 08:07:42,908 INFO: Device client goldenears connected to COM5 is removed
+2019-10-03 08:07:47,236 INFO: Add Device button is clicked
+2019-10-03 08:07:47,560 INFO: COM6: blackbird: Icron model is loaded C:\Users\Sumit.Rathore\Desktop\70\rex_imcd_to_force_last_tu_4\cobs_plug_test_debug.icron
+2019-10-03 08:07:47,642 INFO: FPGA image : False
+2019-10-03 08:07:47,695 INFO: COM6: blackbird: Device is created
+2019-10-03 08:07:47,710 INFO: COM6: goldenears: Icron model is loaded C:\Users\Sumit.Rathore\Desktop\70\rex_imcd_to_force_last_tu_4\cobs_plug_test_debug.icron
+2019-10-03 08:07:47,740 INFO: COM6: blackbird: REX: Received software info
+2019-10-03 08:07:47,764 INFO: FPGA image : True
+2019-10-03 08:07:47,803 INFO: COM6: goldenears: Device is created
+2019-10-03 08:07:47,838 INFO: COM6: blackbird: Device is connected
+2019-10-03 08:07:48,924 INFO: Device client goldenears connected to COM6 is removed
+2019-10-03 08:07:57,622 INFO: COM6: blackbird: iCommands Button is clicked
+2019-10-03 08:08:13,134 INFO: COM6: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 13, 1, 4]
+2019-10-03 08:08:13,293 INFO: COM6: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 13, 1, 4]
+2019-10-03 08:08:13,461 INFO: COM6: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 13, 1, 4]
+2019-10-03 08:08:15,445 INFO: COM5: blackbird: iCommands Button is clicked
+2019-10-03 08:08:23,829 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 13, 1, 4]
+2019-10-03 08:08:23,996 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 13, 1, 4]
+2019-10-03 08:08:24,164 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 13, 1, 4]
+2019-10-03 08:08:26,237 INFO: COM6: blackbird: Reset Device Button is clicked
+2019-10-03 08:08:26,240 INFO: COM6: blackbird: Reset device
+2019-10-03 08:08:26,245 INFO: COM6: blackbird: Got a response=[1] for reset device
+2019-10-03 08:08:27,300 INFO: COM5: blackbird: Reset Device Button is clicked
+2019-10-03 08:08:27,302 INFO: COM5: blackbird: Reset device
+2019-10-03 08:08:27,308 INFO: COM5: blackbird: Got a response=[1] for reset device
+2019-10-03 08:08:30,320 INFO: COM6: blackbird: REX: Received software info
+2019-10-03 08:08:31,378 INFO: COM5: blackbird: LEX: Received software info
+2019-10-03 08:10:38,445 INFO: COM6: blackbird: Reset Device Button is clicked
+2019-10-03 08:10:38,448 INFO: COM6: blackbird: Reset device
+2019-10-03 08:10:38,453 INFO: COM6: blackbird: Got a response=[1] for reset device
+2019-10-03 08:10:42,520 INFO: COM6: blackbird: REX: Received software info
+2019-10-03 08:11:04,301 INFO: COM6: blackbird: DP Debug Button is clicked
+2019-10-03 08:11:04,306 INFO: COM6: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 9, 0, 4]
+2019-10-03 08:11:05,412 INFO: COM5: blackbird: DP Debug Button is clicked
+2019-10-03 08:11:05,415 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 9, 0, 4]
+2019-10-03 08:15:56,532 INFO: COM5: blackbird: DP Debug Button is clicked
+2019-10-03 08:15:56,537 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 9, 0, 4]
+2019-10-03 08:17:45,715 INFO: COM5: blackbird: DP Debug Button is clicked
+2019-10-03 08:17:45,716 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 9, 0, 4]
+2019-10-03 08:22:01,946 INFO: COM5: blackbird: DP Debug Button is clicked
+2019-10-03 08:22:01,948 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 9, 0, 4]
+2019-10-03 08:30:19,844 INFO: COM5: blackbird: DP Debug Button is clicked
+2019-10-03 08:30:19,846 INFO: COM5: blackbird: Trying to send an icmd with a packet of [1, 0, 129, 255, 3, 152, 9, 0, 4]
+2019-10-03 08:35:19,548 INFO: Exporting Device Logs
+2019-10-03 08:35:48,776 INFO: COM6: Serial port disposed event occurred
+2019-10-03 08:35:48,778 INFO: Device client blackbird connected to COM6 is removed
+2019-10-03 08:35:48,779 INFO: COM6 serial port manager is removed
+2019-10-03 08:35:48,790 INFO: COM5: Serial port disposed event occurred
+2019-10-03 08:35:48,791 INFO: Device client blackbird connected to COM5 is removed
+2019-10-03 08:35:48,791 INFO: COM5 serial port manager is removed
+2019-10-03 08:35:48,810 WARNING: No device client blackbird found to be removed from port COM5.
+2019-10-03 08:35:48,810 WARNING: No device client blackbird found to be removed from port COM6.
+2019-10-03 08:35:48,813 INFO: Cobs exits

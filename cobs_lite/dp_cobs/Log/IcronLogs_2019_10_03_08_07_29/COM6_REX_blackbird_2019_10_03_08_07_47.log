@@ -1,0 +1,1195 @@
+COM6: BB: REX: 03 08:08:13: 0005852720: iDbgLog: FLASH_DATA_COMPONENT  : Flash sector c0b0 erased
+COM6: BB: REX: 03 08:08:13: 0005857167: iDbgLog: FLASH_DATA_COMPONENT  : Flash sector c0b0 erased
+COM6: BB: REX: 03 08:08:13: 0005857187: iMinEvt: FLASH_DATA_COMPONENT  : Flash Vars successfully erased
+COM6: BB: REX: 03 08:08:13: 0005907001: iDbgLog: FLASH_DATA_COMPONENT  : Flash sector c0b0 erased
+COM6: BB: REX: 03 08:08:13: 0005911431: iDbgLog: FLASH_DATA_COMPONENT  : Flash sector c0b0 erased
+COM6: BB: REX: 03 08:08:13: 0005911451: iMinEvt: FLASH_DATA_COMPONENT  : Flash Vars successfully erased
+COM6: BB: REX: 03 08:08:13: 0006076783: iDbgLog: FLASH_DATA_COMPONENT  : Flash sector c0b0 erased
+COM6: BB: REX: 03 08:08:13: 0006081222: iDbgLog: FLASH_DATA_COMPONENT  : Flash sector c0b0 erased
+COM6: BB: REX: 03 08:08:13: 0006081242: iMinEvt: FLASH_DATA_COMPONENT  : Flash Vars successfully erased
+COM6: BB: REX: 03 08:08:30: 0000000540: iMjrErr: TOPLEVEL_COMPONENT    : FPGA / FIRMWARE version doesn't match!
+COM6: BB: REX:  08:08:30.319: Software Info message: FPGA Chip ID Major 17 Minor 1 Debug 1 HW build was done on 2019/09/09 at 12:13:16 FallbackStatus 0x0
+Bootrom ID Major 0 Minor 12 Software revision Major 255 Minor 255 Debug 255 SW build was done on 2019/10/01 at 15:24:40 this is REX
+COM6: BB: REX: 03 08:08:30: 0000014723: iMinEvt: FLASH_DATA_COMPONENT  : Block number 0 address 0xc0b00000 status 0
+COM6: BB: REX: 03 08:08:30: 0000026543: iMinEvt: FLASH_DATA_COMPONENT  : Block number 1 address 0xc0b10000 status 0
+COM6: BB: REX: 03 08:08:30: 0000030969: iDbgLog: FLASH_DATA_COMPONENT  : Flash sector c0b0 erased
+COM6: BB: REX: 03 08:08:30: 0000042885: iMinEvt: FLASH_DATA_COMPONENT  : *** Flash Vars erased header data found, from address c0b0000c, 65512 bytes
+COM6: BB: REX: 03 08:08:30: 0000042904: iMinEvt: FLASH_DATA_COMPONENT  : Flash storage initialization - status 1 active block 0 used space = 0xc
+COM6: BB: REX: 03 08:08:30: 0000056529: iMjrErr: TOPLEVEL_COMPONENT    :   *** This is a PlugTest Image ***
+COM6: BB: REX: 03 08:08:30: 0000274757: iMjrErr: DP_COMPONENT          : ****** DP ISOLATED REX DISABLED *******
+COM6: BB: REX: 03 08:08:30: 0000274777: iDbgGrn: DP_AUX_COMPONENT      : Clearing the AUX trans buffer
+COM6: BB: REX: 03 08:08:30: 0000275669: ISTATUS DP not in over current state
+COM6: BB: REX: 03 08:08:30: 0000275688: ISTATUS DP not in over current state
+COM6: BB: REX: 03 08:08:30: 0000275730: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 0, new state = 0 on event = 0
+COM6: BB: REX: 03 08:08:30: 0000275751: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 0, new state = 1 on event = 2
+COM6: BB: REX: 03 08:08:30: 0000275789: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM6: BB: REX: 03 08:08:30: 0000275798: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 0
+COM6: BB: REX: 03 08:08:30: 0000275826: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 3
+COM6: BB: REX: 03 08:08:30: 0000275844: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 3
+COM6: BB: REX: 03 08:08:30: 0000375811: ISTATUS ** Monitor connected **
+COM6: BB: REX: 03 08:08:30: 0000375825: iMjrEvt: DP_COMPONENT          : Got HPD up event
+COM6: BB: REX: 03 08:08:30: 0000375847: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 8
+COM6: BB: REX:  08:08:30.715: GE DBG:
+COM6: BB: REX:  08:08:30.730: Goldenears SW 255.255.255
+COM6: BB: REX:  08:08:30.735: GE DBG:
+COM6: BB: REX:  08:08:30.776: ASIC rev. B detected
+COM6: BB: REX: 03 08:08:30: 0000685365: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 16
+COM6: BB: REX: 03 08:08:37: 0007613905: ISTATUS Data Link Operational, CATx at 10Gbps
+COM6: BB: REX: 03 08:08:39: 0000516944: iMjrEvt: DP_COMPONENT          : AUX Got Phy Link Msg = 1
+COM6: BB: REX: 03 08:08:39: 0000517001: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 1
+COM6: BB: REX: 03 08:08:39: 0000517016: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 20
+COM6: BB: REX: 03 08:10:26: 0007108908: iMjrEvt: DP_COMPONENT          : Aux Generate Lex Active/Offline Phy:1, dpEnable:1, Host:1
+COM6: BB: REX: 03 08:10:26: 0007108942: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 2 on event = 6
+COM6: BB: REX: 03 08:10:26: 0007108978: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 0
+COM6: BB: REX: 03 08:10:26: 0007109005: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 2
+COM6: BB: REX: 03 08:10:26: 0007109014: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 20
+COM6: BB: REX: 03 08:10:26: 0007109037: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 14 in state 2
+COM6: BB: REX: 03 08:10:26: 0007109045: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 14
+COM6: BB: REX: 03 08:10:26: 0007109318: iMjrEvt: DP_COMPONENT          : Policy maker: DPCD byte Addr 0x200 = 0x41
+COM6: BB: REX: 03 08:10:26: 0007109780: iMjrEvt: DP_COMPONENT          : Policy maker: reading EDID block 0
+COM6: BB: REX: 03 08:10:26: 0007109815: iMjrEvt: DP_AUX_COMPONENT      : AUX I2C Write request with size : 1
+COM6: BB: REX: 03 08:10:26: 0007112655: iMjrEvt: DP_COMPONENT          : Policy maker: reading EDID block 1
+COM6: BB: REX: 03 08:10:26: 0007112684: iMjrEvt: DP_AUX_COMPONENT      : AUX I2C Write request with size : 1
+COM6: BB: REX: 03 08:10:26: 0007115640: iMjrEvt: DP_COMPONENT          : Edid compared:1, 1(New) 0(Same)
+COM6: BB: REX: 03 08:10:26: 0007115657: iMjrEvt: DP_COMPONENT          : Rex read monitor edid 1(New EDID), 0(Old EDIID): 1
+COM6: BB: REX: 03 08:10:26: 0007115673: iMjrEvt: DP_COMPONENT          : Rex read monitor edid 1(New EDID), 0(Old EDIID): 1
+COM6: BB: REX: 03 08:10:26: 0007115679: iMjrEvt: DP_COMPONENT          : Policy maker: finished reading EDID; nextFreeIndex = 256
+COM6: BB: REX: 03 08:10:26: 0007115698: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 3 on event = 12
+COM6: BB: REX: 03 08:10:26: 0007115708: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 3, new state = 4 on event = 0
+COM6: BB: REX: 03 08:10:26: 0007115723: iMjrEvt: DP_COMPONENT          : Monitor suuport SSC (1: support, 0: no-support): 1
+COM6: BB: REX: 03 08:10:26: 0007115754: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 4, new state = 4 on event = 0
+COM6: BB: REX: 03 08:10:26: 0007115788: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 3
+COM6: BB: REX: 03 08:10:26: 0007115798: iUsrLog: DP_COMPONENT          : Link training with parameters bw=0x14, lc=0x4, line=1
+COM6: BB: REX: 03 08:10:26: 0007116145: iMjrEvt: DP_STREAM_COMPONENT   : Rex request to set lane count 3, RTL 3
+COM6: BB: REX: 03 08:10:26: 0007116162: iMjrEvt: DP_STREAM_COMPONENT   : Scrambling enabled = 0
+COM6: BB: REX: 03 08:10:26: 0007116236: iMjrEvt: DP_STREAM_COMPONENT   : Setting training pattern 1
+COM6: BB: REX: 03 08:10:26: 0007116246: iMjrEvt: DP_STREAM_COMPONENT   : Scrambling enabled = 0
+COM6: BB: REX: 03 08:10:26: 0007116264: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 1 on event = 2
+COM6: BB: REX: 03 08:10:26: 0007116272: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 0
+COM6: BB: REX: 03 08:10:26: 0007117321: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 4
+COM6: BB: REX: 03 08:10:26: 0007117524: iUsrLog: DP_COMPONENT          : CR Data 1 = 0x0 and Data 2 = 0x0 at line = 1422
+COM6: BB: REX: 03 08:10:26: 0007117563: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 6
+COM6: BB: REX: 03 08:10:26: 0007119320: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 4
+COM6: BB: REX: 03 08:10:26: 0007119526: iUsrLog: DP_COMPONENT          : CR Data 1 = 0x66 and Data 2 = 0x66 at line = 1422
+COM6: BB: REX: 03 08:10:26: 0007119563: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 6
+COM6: BB: REX: 03 08:10:26: 0007121320: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 4
+COM6: BB: REX: 03 08:10:26: 0007121525: iUsrLog: DP_COMPONENT          : CR Data 1 = 0x77 and Data 2 = 0x77 at line = 1422
+COM6: BB: REX: 03 08:10:26: 0007121551: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 2 on event = 7
+COM6: BB: REX: 03 08:10:26: 0007121560: iMjrEvt: DP_STREAM_COMPONENT   : Setting training pattern 3
+COM6: BB: REX: 03 08:10:26: 0007121570: iMjrEvt: DP_STREAM_COMPONENT   : Scrambling enabled = 0
+COM6: BB: REX: 03 08:10:26: 0007121597: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 2, new state = 2 on event = 0
+COM6: BB: REX: 03 08:10:26: 0007123321: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 2, new state = 2 on event = 4
+COM6: BB: REX: 03 08:10:26: 0007123524: iUsrLog: DP_COMPONENT          : CR Data 1 = 0x77 and Data 2 = 0x77 at line = 1422
+COM6: BB: REX: 03 08:10:26: 0007123550: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 2, new state = 3 on event = 7
+COM6: BB: REX: 03 08:10:26: 0007123571: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 3, new state = 3 on event = 0
+COM6: BB: REX: 03 08:10:26: 0007123596: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 4, new state = 5 on event = 17
+COM6: BB: REX: 03 08:10:26: 0007123616: iMjrEvt: DP_COMPONENT          : Utilzation is (262)
+COM6: BB: REX: 03 08:10:26: 0007123635: iMjrEvt: DP_STREAM_COMPONENT   : Scrambling enabled = 1
+COM6: BB: REX: 03 08:10:26: 0007123642: iMjrEvt: DP_STREAM_COMPONENT   : Setting training pattern 0
+COM6: BB: REX: 03 08:10:26: 0007123665: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 1: Fraction 684 /1000
+COM6: BB: REX: 03 08:10:26: 0007123677: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+COM6: BB: REX: 03 08:10:26: 0007123738: iUsrLog: DP_COMPONENT          : Sent Sink Params (CAP, EDID)
+COM6: BB: REX: 03 08:10:26: 0007123746: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM6: BB: REX: 03 08:10:26: 0007124052: iMjrEvt: DP_COMPONENT          : Sink Parameters sent to LEX
+COM6: BB: REX: 03 08:10:27: 0008202491: ISTATUS ** Monitor removed **
+COM6: BB: REX: 03 08:10:27: 0008202505: iMjrEvt: DP_COMPONENT          : Got HPD down event
+COM6: BB: REX: 03 08:10:27: 0008202531: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 9 on event = 9
+COM6: BB: REX: 03 08:10:27: 0008202546: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 9, new state = 9 on event = 0
+COM6: BB: REX: 03 08:10:27: 0008461310: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 9, new state = 1 on event = 21
+COM6: BB: REX: 03 08:10:27: 0008461365: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM6: BB: REX: 03 08:10:27: 0008461376: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 0
+COM6: BB: REX: 03 08:10:27: 0008461406: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 3, new state = 0 on event = 3
+COM6: BB: REX: 03 08:10:27: 0008461419: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 0
+COM6: BB: REX: 03 08:10:29: 0010002397: ISTATUS ** Monitor connected **
+COM6: BB: REX: 03 08:10:29: 0010002410: iMjrEvt: DP_COMPONENT          : Got HPD up event
+COM6: BB: REX: 03 08:10:29: 0010002437: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 2 on event = 8
+COM6: BB: REX: 03 08:10:29: 0010002471: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 0
+COM6: BB: REX: 03 08:10:29: 0010002524: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+COM6: BB: REX: 03 08:10:29: 0010004587: iFtlErr: DP_STREAM_COMPONENT   : Invalid bandwidth setting 0 at line 112
+COM6: BB: REX: 03 08:10:29: 0010004609: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           TBR = 0xa0000130, PSR = 0xf2400ff7, WIM = 0x1
+COM6: BB: REX: 03 08:10:29: 0010004621: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %g5 = 0x0, %g6 = 0x0, %g7 = 0x80000000
+COM6: BB: REX: 03 08:10:29: 0010004630: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           current window 23
+COM6: BB: REX: 03 08:10:29: 0010004637: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win  0:%l0 = 0x0, %l1 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010004646: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0x0, %l3 = 0x0, %l4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010004653: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x0, %l6 = 0x0, %l7 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010004661: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win  0:%i0 = 0x0, %i1 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010004668: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0x0, %i3 = 0x0, %i4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010004676: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0x0, %i6 = 0x0, %i7 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010009949: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win  1:%l0 = 0x0, %l1 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010009970: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0x0, %l3 = 0x0, %l4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010009981: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x0, %l6 = 0x0, %l7 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010009989: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win  1:%i0 = 0x0, %i1 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010009996: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0x0, %i3 = 0x0, %i4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010010004: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0x0, %i6 = 0x0, %i7 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010013320: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win  2:%l0 = 0x0, %l1 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010013341: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0x0, %l3 = 0x0, %l4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010013352: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x0, %l6 = 0x0, %l7 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010013360: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win  2:%i0 = 0x0, %i1 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010013367: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0x0, %i3 = 0x0, %i4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010013375: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0x0, %i6 = 0x0, %i7 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010016692: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win  3:%l0 = 0x0, %l1 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010016714: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0x0, %l3 = 0x0, %l4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010016724: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x0, %l6 = 0x0, %l7 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010016733: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win  3:%i0 = 0x0, %i1 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010016740: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0x0, %i3 = 0x0, %i4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010016748: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0x0, %i6 = 0x0, %i7 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010020063: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win  4:%l0 = 0x0, %l1 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010020085: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0x0, %l3 = 0x0, %l4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010020095: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x0, %l6 = 0x0, %l7 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010020104: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win  4:%i0 = 0x0, %i1 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010020111: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0x0, %i3 = 0x0, %i4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010020119: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0x0, %i6 = 0x0, %i7 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010023434: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win  5:%l0 = 0x0, %l1 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010023456: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0x0, %l3 = 0x0, %l4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010023467: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x0, %l6 = 0x0, %l7 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010023475: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win  5:%i0 = 0x0, %i1 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010023482: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0x0, %i3 = 0x0, %i4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010023490: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0x0, %i6 = 0x0, %i7 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010026808: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win  6:%l0 = 0x0, %l1 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010026829: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0x0, %l3 = 0x0, %l4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010026840: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x0, %l6 = 0x0, %l7 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010026848: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win  6:%i0 = 0x0, %i1 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010026855: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0x0, %i3 = 0x0, %i4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010026863: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0x0, %i6 = 0x0, %i7 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010030179: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win  7:%l0 = 0x0, %l1 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010030200: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0x0, %l3 = 0x0, %l4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010030211: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x0, %l6 = 0x0, %l7 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010030219: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win  7:%i0 = 0x0, %i1 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010030226: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0x0, %i3 = 0x0, %i4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010030234: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0x0, %i6 = 0x0, %i7 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010033550: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win  8:%l0 = 0x0, %l1 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010033571: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0x0, %l3 = 0x0, %l4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010033582: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x0, %l6 = 0x0, %l7 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010033590: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win  8:%i0 = 0x0, %i1 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010033597: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0x0, %i3 = 0x0, %i4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010033605: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0x0, %i6 = 0x0, %i7 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010036922: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win  9:%l0 = 0x0, %l1 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010036944: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0x0, %l3 = 0x0, %l4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010036954: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x0, %l6 = 0x0, %l7 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010036963: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win  9:%i0 = 0x0, %i1 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010036970: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0x0, %i3 = 0x0, %i4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010036978: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0x0, %i6 = 0x0, %i7 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010040293: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 10:%l0 = 0x0, %l1 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010040315: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0x0, %l3 = 0x0, %l4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010040325: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x0, %l6 = 0x0, %l7 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010040334: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 10:%i0 = 0xc0a00144, %i1 = 0x55728
+COM6: BB: REX: 03 08:10:29: 0010040341: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0x0, %i3 = 0x6c, %i4 = 0x675a1011
+COM6: BB: REX: 03 08:10:29: 0010040349: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0xa1000c00, %i6 = 0xa10007a0, %i7 = 0xb34
+COM6: BB: REX: 03 08:10:29: 0010043664: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 11:%l0 = 0x0, %l1 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010043686: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0x0, %l3 = 0x0, %l4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010043696: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x0, %l6 = 0x0, %l7 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010043705: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 11:%i0 = 0xc0a00100, %i1 = 0xffffffff
+COM6: BB: REX: 03 08:10:29: 0010043712: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0xbb8, %i3 = 0x0, %i4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010043720: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0x0, %i6 = 0xa10007c0, %i7 = 0x1bc
+COM6: BB: REX: 03 08:10:29: 0010047037: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 12:%l0 = 0x0, %l1 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010047059: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0x0, %l3 = 0x0, %l4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010047069: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x0, %l6 = 0x0, %l7 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010047077: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 12:%i0 = 0x1, %i1 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010047085: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0xa1000c00, %i3 = 0xa1000c00, %i4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010047093: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0xc0a00000, %i6 = 0xa10007e0, %i7 = 0xfc
+COM6: BB: REX: 03 08:10:29: 0010050408: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 13:%l0 = 0x0, %l1 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010050430: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0x0, %l3 = 0x0, %l4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010050440: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x0, %l6 = 0x0, %l7 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010050448: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 13:%i0 = 0x0, %i1 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010050456: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0x0, %i3 = 0x0, %i4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010050464: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0x1, %i6 = 0xa1000800, %i7 = 0x90
+COM6: BB: REX: 03 08:10:29: 0010053781: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 14:%l0 = 0x0, %l1 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010053803: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0x0, %l3 = 0x0, %l4 = 0x0
+COM6: BB: REX: 03 08:10:29: 0010053813: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x0, %l6 = 0x0, %l7 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010053821: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 14:%i0 = 0x0, %i1 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010053828: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0x0, %i3 = 0x0, %i4 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010053837: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0x0, %i6 = 0xa1000800, %i7 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010057152: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 15:%l0 = 0x0, %l1 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010057174: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0x0, %l3 = 0x0, %l4 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010057184: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x0, %l6 = 0x0, %l7 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010057192: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 15:%i0 = 0x0, %i1 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010057199: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0x0, %i3 = 0x0, %i4 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010057208: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0x0, %i6 = 0x0, %i7 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010060523: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 16:%l0 = 0x0, %l1 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010060545: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0x0, %l3 = 0x0, %l4 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010060555: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x0, %l6 = 0x0, %l7 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010060563: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 16:%i0 = 0x6b1, %i1 = 0x637
+COM6: BB: REX: 03 08:10:30: 0010060570: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0x1, %i3 = 0x80000500, %i4 = 0x1
+COM6: BB: REX: 03 08:10:30: 0010060579: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0x80000500, %i6 = 0xa100cb58, %i7 = 0xa0000d30
+COM6: BB: REX: 03 08:10:30: 0010063896: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 17:%l0 = 0x80000500, %l1 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010063918: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0x0, %l3 = 0x0, %l4 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010063928: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x0, %l6 = 0x0, %l7 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010063936: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 17:%i0 = 0x1dc, %i1 = 0x1dc
+COM6: BB: REX: 03 08:10:30: 0010063943: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0x0, %i3 = 0xa1006670, %i4 = 0x1
+COM6: BB: REX: 03 08:10:30: 0010063951: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0x80002500, %i6 = 0xa100cb78, %i7 = 0x30
+COM6: BB: REX: 03 08:10:30: 0010067267: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 18:%l0 = 0x80000500, %l1 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010067288: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0x0, %l3 = 0x0, %l4 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010067299: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x0, %l6 = 0x0, %l7 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010067307: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 18:%i0 = 0x7e9, %i1 = 0x7e9
+COM6: BB: REX: 03 08:10:30: 0010067314: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0x1, %i3 = 0x80000500, %i4 = 0x1
+COM6: BB: REX: 03 08:10:30: 0010067322: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0x80000500, %i6 = 0xa100cbb8, %i7 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010070638: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 19:%l0 = 0x80000500, %l1 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010070659: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0x0, %l3 = 0x0, %l4 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010070670: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x0, %l6 = 0x0, %l7 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010070678: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 19:%i0 = 0x1dc, %i1 = 0x1dc
+COM6: BB: REX: 03 08:10:30: 0010070685: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0x0, %i3 = 0xa1006670, %i4 = 0x1
+COM6: BB: REX: 03 08:10:30: 0010070693: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0x80002500, %i6 = 0xa100cbd8, %i7 = 0x30
+COM6: BB: REX: 03 08:10:30: 0010074011: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 20:%l0 = 0x80000500, %l1 = 0xa0012d54
+COM6: BB: REX: 03 08:10:30: 0010074032: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0x0, %l3 = 0x0, %l4 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010074043: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x0, %l6 = 0x0, %l7 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010074051: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 20:%i0 = 0x30, %i1 = 0xa1006658
+COM6: BB: REX: 03 08:10:30: 0010074058: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0x10, %i3 = 0xa10066a0, %i4 = 0x40
+COM6: BB: REX: 03 08:10:30: 0010074066: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0xa100bc00, %i6 = 0xa100cbf8, %i7 = 0xa000376c
+COM6: BB: REX: 03 08:10:30: 0010077382: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 21:%l0 = 0x80000500, %l1 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010077403: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0x0, %l3 = 0x0, %l4 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010077414: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x0, %l6 = 0x0, %l7 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010077422: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 21:%i0 = 0x3ec, %i1 = 0xa100bc00
+COM6: BB: REX: 03 08:10:30: 0010077429: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0xa100cbf8, %i3 = 0xa100bc00, %i4 = 0xa1006658
+COM6: BB: REX: 03 08:10:30: 0010077437: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0x0, %i6 = 0xa100cc18, %i7 = 0xa0004488
+COM6: BB: REX: 03 08:10:30: 0010080755: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 22:%l0 = 0xfb140a0a, %l1 = 0xfb140c0a
+COM6: BB: REX: 03 08:10:30: 0010080776: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0xfb14080a, %l3 = 0x0, %l4 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010080787: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x0, %l6 = 0x0, %l7 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010080795: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 22:%i0 = 0x16, %i1 = 0x17
+COM6: BB: REX: 03 08:10:30: 0010080802: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0xfb14090a, %i3 = 0xa100cc38, %i4 = 0xfb140b0a
+COM6: BB: REX: 03 08:10:30: 0010080810: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0xfb140d0a, %i6 = 0xa100cc78, %i7 = 0xa000baa4
+COM6: BB: REX: 03 08:10:30: 0010084125: iFtlErr: ILOG_COMPONENT        : 
+
+---------- Active windows follow ----------
+COM6: BB: REX: 03 08:10:30: 0010084140: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 23:%l0 = 0x80000500, %l1 = 0xa001298c
+COM6: BB: REX: 03 08:10:30: 0010084156: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0x39574871, %l3 = 0x45799022, %l4 = 0xc6ef79ea
+COM6: BB: REX: 03 08:10:30: 0010084164: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x39574871, %l6 = 0x0, %l7 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010084172: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 23:%i0 = 0x17, %i1 = 0x17
+COM6: BB: REX: 03 08:10:30: 0010084180: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0x70, %i3 = 0xfb140400, %i4 = 0x40
+COM6: BB: REX: 03 08:10:30: 0010084187: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0x20, %i6 = 0xa100cc98, %i7 = 0xa0009528
+COM6: BB: REX: 03 08:10:30: 0010087800: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 24:%l0 = 0x4a, %l1 = 0xa001298c
+COM6: BB: REX: 03 08:10:30: 0010087820: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0xa00025b0, %l3 = 0x13, %l4 = 0x6
+COM6: BB: REX: 03 08:10:30: 0010087832: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x184, %l6 = 0xa1002c00, %l7 = 0x7
+COM6: BB: REX: 03 08:10:30: 0010087839: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 24:%i0 = 0x0, %i1 = 0xa1006670
+COM6: BB: REX: 03 08:10:30: 0010087848: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0xff, %i3 = 0xa100cce4, %i4 = 0x10
+COM6: BB: REX: 03 08:10:30: 0010087854: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0xa100bc00, %i6 = 0xa100ccb8, %i7 = 0xa000995c
+COM6: BB: REX: 03 08:10:30: 0010091171: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 25:%l0 = 0x40000, %l1 = 0xa00179f0
+COM6: BB: REX: 03 08:10:30: 0010091191: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0x0, %l3 = 0x20, %l4 = 0x16cf60
+COM6: BB: REX: 03 08:10:30: 0010091203: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0xa10061f8, %l6 = 0x0, %l7 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010091210: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 25:%i0 = 0x0, %i1 = 0x0
+COM6: BB: REX: 03 08:10:30: 0010091219: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0xa100cce4, %i3 = 0x10, %i4 = 0x14
+COM6: BB: REX: 03 08:10:30: 0010091225: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0xa1006658, %i6 = 0xa100ccd8, %i7 = 0xa00125c8
+COM6: BB: REX: 03 08:10:30: 0010094542: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 26:%l0 = 0xa10028d0, %l1 = 0xa0001860
+COM6: BB: REX: 03 08:10:30: 0010094562: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0x2000, %l3 = 0x90008844, %l4 = 0x90008844
+COM6: BB: REX: 03 08:10:30: 0010094574: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x8844, %l6 = 0x64, %l7 = 0x90002044
+COM6: BB: REX: 03 08:10:30: 0010094581: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 26:%i0 = 0x1, %i1 = 0xfa07c905
+COM6: BB: REX: 03 08:10:30: 0010094590: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0xf907c702, %i3 = 0x2710, %i4 = 0x1d
+COM6: BB: REX: 03 08:10:30: 0010094596: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0xa10028d0, %i6 = 0xa100ccf8, %i7 = 0xa0016478
+COM6: BB: REX: 03 08:10:30: 0010097915: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 27:%l0 = 0x4a, %l1 = 0xa001360c
+COM6: BB: REX: 03 08:10:30: 0010097935: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0xa1003000, %l3 = 0x1, %l4 = 0x1000000
+COM6: BB: REX: 03 08:10:30: 0010097947: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x2000000, %l6 = 0x1000, %l7 = 0x80000000
+COM6: BB: REX: 03 08:10:30: 0010097954: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 27:%i0 = 0xa1002800, %i1 = 0x1
+COM6: BB: REX: 03 08:10:30: 0010097962: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0x1, %i3 = 0x201, %i4 = 0xa1002800
+COM6: BB: REX: 03 08:10:30: 0010097969: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0xa10028d0, %i6 = 0xa100cd28, %i7 = 0xa0006854
+COM6: BB: REX: 03 08:10:30: 0010101286: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 28:%l0 = 0x2, %l1 = 0xa0001860
+COM6: BB: REX: 03 08:10:30: 0010101306: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0xa000559c, %l3 = 0x13, %l4 = 0xf24000fd
+COM6: BB: REX: 03 08:10:30: 0010101318: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0xf2400ffd, %l6 = 0xa1005800, %l7 = 0x39
+COM6: BB: REX: 03 08:10:30: 0010101325: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 28:%i0 = 0x1018, %i1 = 0xa10038a4
+COM6: BB: REX: 03 08:10:30: 0010101333: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0x2, %i3 = 0x2, %i4 = 0x10082105
+COM6: BB: REX: 03 08:10:30: 0010101340: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0xa1003800, %i6 = 0xa100cd90, %i7 = 0xa000aac0
+COM6: BB: REX: 03 08:10:31: 0010104659: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 29:%l0 = 0xf24000dd, %l1 = 0xa0001138
+COM6: BB: REX: 03 08:10:31: 0010104679: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0xa000113c, %l3 = 0x13, %l4 = 0x1002cf
+COM6: BB: REX: 03 08:10:31: 0010104691: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x80000000, %l6 = 0xa1005800, %l7 = 0x39
+COM6: BB: REX: 03 08:10:31: 0010104698: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 29:%i0 = 0x1, %i1 = 0xa100c000
+COM6: BB: REX: 03 08:10:31: 0010104706: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0x101c, %i3 = 0xa1001c00, %i4 = 0x1
+COM6: BB: REX: 03 08:10:31: 0010104713: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0x0, %i6 = 0xa100cdb0, %i7 = 0xa0001194
+COM6: BB: REX: 03 08:10:31: 0010108030: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 30:%l0 = 0xa1005a6c, %l1 = 0x8
+COM6: BB: REX: 03 08:10:31: 0010108050: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0x3, %l3 = 0x8, %l4 = 0xa1001fdc
+COM6: BB: REX: 03 08:10:31: 0010108062: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x1, %l6 = 0xa100bc00, %l7 = 0xa001d000
+COM6: BB: REX: 03 08:10:31: 0010108069: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 30:%i0 = 0xa100c000, %i1 = 0xa100609c
+COM6: BB: REX: 03 08:10:31: 0010108077: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0xa1005a9c, %i3 = 0xa1005a6c, %i4 = 0xa100609c
+COM6: BB: REX: 03 08:10:31: 0010108084: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0xa1001fdc, %i6 = 0xa100cdd0, %i7 = 0xc0a00200
+COM6: BB: REX: 03 08:10:31: 0010111401: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 31:%l0 = 0x0, %l1 = 0x0
+COM6: BB: REX: 03 08:10:31: 0010111421: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l2 = 0x0, %l3 = 0x0, %l4 = 0x0
+COM6: BB: REX: 03 08:10:31: 0010111433: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %l5 = 0x0, %l6 = 0x0, %l7 = 0x0
+COM6: BB: REX: 03 08:10:31: 0010111440: iFtlErr: ILOG_COMPONENT        : Sparc reg dump for win 31:%i0 = 0x88, %i1 = 0x0
+COM6: BB: REX: 03 08:10:31: 0010111449: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i2 = 0x0, %i3 = 0x0, %i4 = 0x0
+COM6: BB: REX: 03 08:10:31: 0010111455: iFtlErr: ILOG_COMPONENT        : Sparc reg dump:           %i5 = 0x0, %i6 = 0xa100cdd0, %i7 = 0x0
+COM6: BB: REX: 03 08:10:42: 0000000540: iMjrErr: TOPLEVEL_COMPONENT    : FPGA / FIRMWARE version doesn't match!
+COM6: BB: REX:  08:10:42.520: Software Info message: FPGA Chip ID Major 17 Minor 1 Debug 1 HW build was done on 2019/09/09 at 12:13:16 FallbackStatus 0x0
+Bootrom ID Major 0 Minor 12 Software revision Major 255 Minor 255 Debug 255 SW build was done on 2019/10/01 at 15:24:40 this is REX
+COM6: BB: REX: 03 08:10:42: 0000002926: iMinEvt: FLASH_DATA_COMPONENT  : Block number 0 address 0xc0b00000 status 1
+COM6: BB: REX: 03 08:10:42: 0000014747: iMinEvt: FLASH_DATA_COMPONENT  : Block number 1 address 0xc0b10000 status 0
+COM6: BB: REX: 03 08:10:42: 0000026550: iMinEvt: FLASH_DATA_COMPONENT  : *** Flash Vars erased header data found, from address c0b000d4, 65312 bytes
+COM6: BB: REX: 03 08:10:42: 0000026569: iMinEvt: FLASH_DATA_COMPONENT  : Flash storage initialization - status 0 active block 0 used space = 0xd4
+COM6: BB: REX: 03 08:10:42: 0000039270: iMjrErr: TOPLEVEL_COMPONENT    :   *** This is a PlugTest Image ***
+COM6: BB: REX: 03 08:10:42: 0000257756: iMjrErr: DP_COMPONENT          : ****** DP ISOLATED REX DISABLED *******
+COM6: BB: REX: 03 08:10:42: 0000257776: iDbgGrn: DP_AUX_COMPONENT      : Clearing the AUX trans buffer
+COM6: BB: REX: 03 08:10:42: 0000258669: ISTATUS DP not in over current state
+COM6: BB: REX: 03 08:10:42: 0000258687: ISTATUS DP not in over current state
+COM6: BB: REX: 03 08:10:42: 0000258729: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 0, new state = 0 on event = 0
+COM6: BB: REX: 03 08:10:42: 0000258750: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 0, new state = 1 on event = 2
+COM6: BB: REX: 03 08:10:42: 0000258788: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM6: BB: REX: 03 08:10:42: 0000258797: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 0
+COM6: BB: REX: 03 08:10:42: 0000258825: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 3
+COM6: BB: REX: 03 08:10:42: 0000258843: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 3
+COM6: BB: REX: 03 08:10:42: 0000358810: ISTATUS ** Monitor connected **
+COM6: BB: REX: 03 08:10:42: 0000358823: iMjrEvt: DP_COMPONENT          : Got HPD up event
+COM6: BB: REX: 03 08:10:42: 0000358846: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 8
+COM6: BB: REX:  08:10:42.908: GE DBG:
+COM6: BB: REX:  08:10:42.917: Goldenears SW 255.255.255
+COM6: BB: REX:  08:10:42.925: GE DBG:
+COM6: BB: REX:  08:10:42.930: ASIC rev. B detected
+COM6: BB: REX: 03 08:10:43: 0000668365: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 16
+COM6: BB: REX: 03 08:10:49: 0006822906: ISTATUS Data Link Operational, CATx at 10Gbps
+COM6: BB: REX: 03 08:10:50: 0000516945: iMjrEvt: DP_COMPONENT          : AUX Got Phy Link Msg = 1
+COM6: BB: REX: 03 08:10:50: 0000516991: iMjrEvt: DP_COMPONENT          : Aux Generate Lex Active/Offline Phy:1, dpEnable:1, Host:1
+COM6: BB: REX: 03 08:10:50: 0000517022: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 2 on event = 6
+COM6: BB: REX: 03 08:10:50: 0000517053: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 0
+COM6: BB: REX: 03 08:10:50: 0000517077: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 2
+COM6: BB: REX: 03 08:10:50: 0000517085: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 20
+COM6: BB: REX: 03 08:10:50: 0000517385: iMjrEvt: DP_COMPONENT          : Policy maker: DPCD byte Addr 0x200 = 0x41
+COM6: BB: REX: 03 08:10:50: 0000517846: iMjrEvt: DP_COMPONENT          : Policy maker: reading EDID block 0
+COM6: BB: REX: 03 08:10:50: 0000517883: iMjrEvt: DP_AUX_COMPONENT      : AUX I2C Write request with size : 1
+COM6: BB: REX: 03 08:10:50: 0000520726: iMjrEvt: DP_COMPONENT          : Policy maker: reading EDID block 1
+COM6: BB: REX: 03 08:10:50: 0000520756: iMjrEvt: DP_AUX_COMPONENT      : AUX I2C Write request with size : 1
+COM6: BB: REX: 03 08:10:50: 0000523714: iMjrEvt: DP_COMPONENT          : Edid compared:1, 1(New) 0(Same)
+COM6: BB: REX: 03 08:10:50: 0000523731: iMjrEvt: DP_COMPONENT          : Rex read monitor edid 1(New EDID), 0(Old EDIID): 1
+COM6: BB: REX: 03 08:10:50: 0000523747: iMjrEvt: DP_COMPONENT          : Rex read monitor edid 1(New EDID), 0(Old EDIID): 1
+COM6: BB: REX: 03 08:10:50: 0000523754: iMjrEvt: DP_COMPONENT          : Policy maker: finished reading EDID; nextFreeIndex = 256
+COM6: BB: REX: 03 08:10:50: 0000523771: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 3 on event = 12
+COM6: BB: REX: 03 08:10:50: 0000523783: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 3, new state = 4 on event = 0
+COM6: BB: REX: 03 08:10:50: 0000523797: iMjrEvt: DP_COMPONENT          : Monitor suuport SSC (1: support, 0: no-support): 1
+COM6: BB: REX: 03 08:10:50: 0000523828: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 4, new state = 4 on event = 0
+COM6: BB: REX: 03 08:10:50: 0000523861: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 3
+COM6: BB: REX: 03 08:10:50: 0000523873: iUsrLog: DP_COMPONENT          : Link training with parameters bw=0x14, lc=0x4, line=1
+COM6: BB: REX: 03 08:10:50: 0000524186: iMjrEvt: DP_STREAM_COMPONENT   : Rex request to set lane count 3, RTL 3
+COM6: BB: REX: 03 08:10:50: 0000524204: iMjrEvt: DP_STREAM_COMPONENT   : Scrambling enabled = 0
+COM6: BB: REX: 03 08:10:50: 0000524277: iMjrEvt: DP_STREAM_COMPONENT   : Setting training pattern 1
+COM6: BB: REX: 03 08:10:50: 0000524289: iMjrEvt: DP_STREAM_COMPONENT   : Scrambling enabled = 0
+COM6: BB: REX: 03 08:10:50: 0000524305: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 1 on event = 2
+COM6: BB: REX: 03 08:10:50: 0000524315: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 0
+COM6: BB: REX: 03 08:10:50: 0000525379: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 4
+COM6: BB: REX: 03 08:10:50: 0000525586: iUsrLog: DP_COMPONENT          : CR Data 1 = 0x0 and Data 2 = 0x0 at line = 1422
+COM6: BB: REX: 03 08:10:50: 0000525623: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 6
+COM6: BB: REX: 03 08:10:50: 0000527379: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 4
+COM6: BB: REX: 03 08:10:50: 0000527584: iUsrLog: DP_COMPONENT          : CR Data 1 = 0x0 and Data 2 = 0x0 at line = 1422
+COM6: BB: REX: 03 08:10:50: 0000527623: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 6
+COM6: BB: REX: 03 08:10:50: 0000530378: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 4
+COM6: BB: REX: 03 08:10:50: 0000530576: iUsrLog: DP_COMPONENT          : CR Data 1 = 0x11 and Data 2 = 0x11 at line = 1422
+COM6: BB: REX: 03 08:10:50: 0000530600: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 2 on event = 5
+COM6: BB: REX: 03 08:10:50: 0000530611: iMjrEvt: DP_STREAM_COMPONENT   : Setting training pattern 3
+COM6: BB: REX: 03 08:10:50: 0000530620: iMjrEvt: DP_STREAM_COMPONENT   : Scrambling enabled = 0
+COM6: BB: REX: 03 08:10:50: 0000530648: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 2, new state = 2 on event = 0
+COM6: BB: REX: 03 08:10:50: 0000532379: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 2, new state = 2 on event = 4
+COM6: BB: REX: 03 08:10:50: 0000532585: iUsrLog: DP_COMPONENT          : CR Data 1 = 0x11 and Data 2 = 0x11 at line = 1422
+COM6: BB: REX: 03 08:10:50: 0000532622: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 2, new state = 2 on event = 5
+COM6: BB: REX: 03 08:10:50: 0000534380: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 2, new state = 2 on event = 4
+COM6: BB: REX: 03 08:10:50: 0000534585: iUsrLog: DP_COMPONENT          : CR Data 1 = 0x11 and Data 2 = 0x11 at line = 1422
+COM6: BB: REX: 03 08:10:50: 0000534624: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 2, new state = 2 on event = 5
+COM6: BB: REX: 03 08:10:50: 0000536379: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 2, new state = 2 on event = 4
+COM6: BB: REX: 03 08:10:50: 0000536586: iUsrLog: DP_COMPONENT          : CR Data 1 = 0x77 and Data 2 = 0x77 at line = 1422
+COM6: BB: REX: 03 08:10:50: 0000536611: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 2, new state = 3 on event = 7
+COM6: BB: REX: 03 08:10:50: 0000536634: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 3, new state = 3 on event = 0
+COM6: BB: REX: 03 08:10:50: 0000536657: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 4, new state = 5 on event = 17
+COM6: BB: REX: 03 08:10:50: 0000536678: iMjrEvt: DP_COMPONENT          : Utilzation is (262)
+COM6: BB: REX: 03 08:10:50: 0000536696: iMjrEvt: DP_STREAM_COMPONENT   : Scrambling enabled = 1
+COM6: BB: REX: 03 08:10:50: 0000536705: iMjrEvt: DP_STREAM_COMPONENT   : Setting training pattern 0
+COM6: BB: REX: 03 08:10:50: 0000536727: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 1: Fraction 684 /1000
+COM6: BB: REX: 03 08:10:50: 0000536740: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+COM6: BB: REX: 03 08:10:50: 0000536800: iUsrLog: DP_COMPONENT          : Sent Sink Params (CAP, EDID)
+COM6: BB: REX: 03 08:10:50: 0000536809: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM6: BB: REX: 03 08:10:50: 0000537117: iMjrEvt: DP_COMPONENT          : Sink Parameters sent to LEX
+COM6: BB: REX: 03 08:10:50: 0000537198: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+COM6: BB: REX: 03 08:10:50: 0000537214: iMjrEvt: DP_COMPONENT          : Utilzation is (7424)
+COM6: BB: REX: 03 08:10:50: 0000537235: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 0, SendCount: 0
+COM6: BB: REX: 03 08:10:50: 0000537244: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+COM6: BB: REX: 03 08:10:50: 0000537275: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+COM6: BB: REX: 03 08:10:50: 0000537409: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+COM6: BB: REX: 03 08:10:50: 0000537427: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+COM6: BB: REX: 03 08:10:50: 0000537440: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+COM6: BB: REX: 03 08:10:50: 0000537458: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+COM6: BB: REX: 03 08:10:51: 0000537551: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+COM6: BB: REX: 03 08:10:51: 0000537590: iMjrEvt: DP_COMPONENT          : Utilzation is (7424)
+COM6: BB: REX: 03 08:10:51: 0000537622: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 47: Fraction 514 /1000
+COM6: BB: REX: 03 08:10:51: 0000537635: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+COM6: BB: REX: 03 08:10:51: 0000537644: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+COM6: BB: REX: 03 08:10:51: 0000537652: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+COM6: BB: REX: 03 08:10:51: 0000537658: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+COM6: BB: REX: 03 08:10:51: 0000537666: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 518983
+COM6: BB: REX: 03 08:10:51: 0000537673: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 524288
+COM6: BB: REX: 03 08:10:51: 0000537680: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 4000
+COM6: BB: REX: 03 08:10:51: 0000537687: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 112
+COM6: BB: REX: 03 08:10:51: 0000537694: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 3840
+COM6: BB: REX: 03 08:10:51: 0000537701: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 0
+COM6: BB: REX: 03 08:10:51: 0000537709: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 32
+COM6: BB: REX: 03 08:10:51: 0000537715: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 2222
+COM6: BB: REX: 03 08:10:51: 0000537723: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 59
+COM6: BB: REX: 03 08:10:51: 0000537730: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 2160
+COM6: BB: REX: 03 08:10:51: 0000537737: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+COM6: BB: REX: 03 08:10:51: 0000537744: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 5
+COM6: BB: REX: 03 08:10:51: 0000537751: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+COM6: BB: REX: 03 08:10:51: 0000537758: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+COM6: BB: REX: 03 08:10:51: 0000537765: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+COM6: BB: REX: 03 08:10:51: 0000537772: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 1
+COM6: BB: REX: 03 08:10:51: 0000537780: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 360
+COM6: BB: REX: 03 08:10:51: 0000537786: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+COM6: BB: REX: 03 08:10:51: 0000537819: iMjrEvt: DP_COMPONENT          : Rex tried reading MCCS 1 times
+COM6: BB: REX: 03 08:10:51: 0000537827: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+COM6: BB: REX: 03 08:10:51: 0000537853: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+COM6: BB: REX: 03 08:10:51: 0001570368: ISTATUS Video Operational, 3840*2160, 59.99  Hz, 8 bits per component, color code 0x20
+COM6: BB: REX: 03 08:10:53: 0003472301: ISTATUS ** Monitor removed **
+COM6: BB: REX: 03 08:10:53: 0003472314: iMjrEvt: DP_COMPONENT          : Got HPD down event
+COM6: BB: REX: 03 08:10:53: 0003472341: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 9 on event = 9
+COM6: BB: REX: 03 08:10:53: 0003472352: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+COM6: BB: REX: 03 08:10:53: 0003472379: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 9, new state = 9 on event = 0
+COM6: BB: REX: 03 08:10:53: 0003472440: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 9
+COM6: BB: REX: 03 08:10:53: 0003472449: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 9, new state = 9 on event = 20
+COM6: BB: REX: 03 08:10:53: 0003482362: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 0
+COM6: BB: REX: 03 08:10:53: 0003482379: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+COM6: BB: REX: 03 08:10:53: 0003482410: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 5 in state 9
+COM6: BB: REX: 03 08:10:53: 0003482419: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 9, new state = 9 on event = 5
+COM6: BB: REX: 03 08:10:53: 0003636364: iMjrEvt: DP_COMPONENT          : Start reading MCCS and VCP table
+COM6: BB: REX: 03 08:10:53: 0003724493: iMjrEvt: DP_AUX_COMPONENT      : AUX reply maximum retrial failed
+COM6: BB: REX: 03 08:10:53: 0003724513: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 9 in state 9
+COM6: BB: REX: 03 08:10:53: 0003724532: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 9, new state = 9 on event = 9
+COM6: BB: REX: 03 08:10:53: 0003732369: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 9, new state = 1 on event = 21
+COM6: BB: REX: 03 08:10:53: 0003732424: iUsrLog: DP_COMPONENT          : Enable AUX over UART = 0
+COM6: BB: REX: 03 08:10:53: 0003732435: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 1 on event = 0
+COM6: BB: REX: 03 08:10:53: 0003732465: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 3, new state = 0 on event = 3
+COM6: BB: REX: 03 08:10:53: 0003732478: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 0
+COM6: BB: REX: 03 08:10:55: 0005272175: ISTATUS ** Monitor connected **
+COM6: BB: REX: 03 08:10:55: 0005272189: iMjrEvt: DP_COMPONENT          : Got HPD up event
+COM6: BB: REX: 03 08:10:55: 0005272215: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 1, new state = 2 on event = 8
+COM6: BB: REX: 03 08:10:55: 0005272250: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 2 on event = 0
+COM6: BB: REX: 03 08:10:55: 0005272564: iMjrEvt: DP_COMPONENT          : Policy maker: DPCD byte Addr 0x200 = 0x41
+COM6: BB: REX: 03 08:10:55: 0005273026: iMjrEvt: DP_COMPONENT          : Policy maker: reading EDID block 0
+COM6: BB: REX: 03 08:10:55: 0005273063: iMjrEvt: DP_AUX_COMPONENT      : AUX I2C Write request with size : 1
+COM6: BB: REX: 03 08:10:55: 0005275905: iMjrEvt: DP_COMPONENT          : Policy maker: reading EDID block 1
+COM6: BB: REX: 03 08:10:55: 0005275940: iMjrEvt: DP_AUX_COMPONENT      : AUX I2C Write request with size : 1
+COM6: BB: REX: 03 08:10:55: 0005278909: iMjrEvt: DP_COMPONENT          : Edid compared:0, 1(New) 0(Same)
+COM6: BB: REX: 03 08:10:55: 0005278927: iMjrEvt: DP_COMPONENT          : Rex read monitor edid 1(New EDID), 0(Old EDIID): 0
+COM6: BB: REX: 03 08:10:55: 0005278942: iMjrEvt: DP_COMPONENT          : Rex read monitor edid 1(New EDID), 0(Old EDIID): 1
+COM6: BB: REX: 03 08:10:55: 0005278949: iMjrEvt: DP_COMPONENT          : Policy maker: finished reading EDID; nextFreeIndex = 256
+COM6: BB: REX: 03 08:10:55: 0005278967: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 2, new state = 3 on event = 12
+COM6: BB: REX: 03 08:10:55: 0005278978: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 3, new state = 4 on event = 0
+COM6: BB: REX: 03 08:10:55: 0005278992: iMjrEvt: DP_COMPONENT          : Monitor suuport SSC (1: support, 0: no-support): 1
+COM6: BB: REX: 03 08:10:55: 0005279024: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 4, new state = 4 on event = 0
+COM6: BB: REX: 03 08:10:55: 0005279056: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 0 on event = 3
+COM6: BB: REX: 03 08:10:55: 0005279068: iUsrLog: DP_COMPONENT          : Link training with parameters bw=0x14, lc=0x4, line=1
+COM6: BB: REX: 03 08:10:55: 0005279429: iMjrEvt: DP_STREAM_COMPONENT   : Rex request to set lane count 3, RTL 3
+COM6: BB: REX: 03 08:10:55: 0005279447: iMjrEvt: DP_STREAM_COMPONENT   : Scrambling enabled = 0
+COM6: BB: REX: 03 08:10:55: 0005279521: iMjrEvt: DP_STREAM_COMPONENT   : Setting training pattern 1
+COM6: BB: REX: 03 08:10:55: 0005279533: iMjrEvt: DP_STREAM_COMPONENT   : Scrambling enabled = 0
+COM6: BB: REX: 03 08:10:55: 0005279549: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 0, new state = 1 on event = 2
+COM6: BB: REX: 03 08:10:55: 0005279559: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 0
+COM6: BB: REX: 03 08:10:55: 0005280379: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 4
+COM6: BB: REX: 03 08:10:55: 0005280745: iUsrLog: DP_COMPONENT          : CR Data 1 = 0x0 and Data 2 = 0x0 at line = 1422
+COM6: BB: REX: 03 08:10:55: 0005280787: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 6
+COM6: BB: REX: 03 08:10:55: 0005282379: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 4
+COM6: BB: REX: 03 08:10:55: 0005282580: iUsrLog: DP_COMPONENT          : CR Data 1 = 0x0 and Data 2 = 0x0 at line = 1422
+COM6: BB: REX: 03 08:10:55: 0005282619: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 6
+COM6: BB: REX: 03 08:10:55: 0005284379: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 1 on event = 4
+COM6: BB: REX: 03 08:10:55: 0005284586: iUsrLog: DP_COMPONENT          : CR Data 1 = 0x11 and Data 2 = 0x11 at line = 1422
+COM6: BB: REX: 03 08:10:55: 0005284610: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 1, new state = 2 on event = 5
+COM6: BB: REX: 03 08:10:55: 0005284621: iMjrEvt: DP_STREAM_COMPONENT   : Setting training pattern 3
+COM6: BB: REX: 03 08:10:55: 0005284631: iMjrEvt: DP_STREAM_COMPONENT   : Scrambling enabled = 0
+COM6: BB: REX: 03 08:10:55: 0005284658: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 2, new state = 2 on event = 0
+COM6: BB: REX: 03 08:10:55: 0005286380: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 2, new state = 2 on event = 4
+COM6: BB: REX: 03 08:10:55: 0005286586: iUsrLog: DP_COMPONENT          : CR Data 1 = 0x11 and Data 2 = 0x11 at line = 1422
+COM6: BB: REX: 03 08:10:55: 0005286623: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 2, new state = 2 on event = 5
+COM6: BB: REX: 03 08:10:55: 0005288379: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 2, new state = 2 on event = 4
+COM6: BB: REX: 03 08:10:55: 0005288584: iUsrLog: DP_COMPONENT          : CR Data 1 = 0x11 and Data 2 = 0x11 at line = 1422
+COM6: BB: REX: 03 08:10:55: 0005288623: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 2, new state = 2 on event = 5
+COM6: BB: REX: 03 08:10:55: 0005291378: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 2, new state = 2 on event = 4
+COM6: BB: REX: 03 08:10:55: 0005291576: iUsrLog: DP_COMPONENT          : CR Data 1 = 0x77 and Data 2 = 0x77 at line = 1422
+COM6: BB: REX: 03 08:10:55: 0005291600: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 2, new state = 3 on event = 7
+COM6: BB: REX: 03 08:10:55: 0005291624: iMjrEvt: DP_COMPONENT          : LinkTR: old state = 3, new state = 3 on event = 0
+COM6: BB: REX: 03 08:10:55: 0005291646: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 4, new state = 5 on event = 17
+COM6: BB: REX: 03 08:10:55: 0005291668: iMjrEvt: DP_COMPONENT          : Utilzation is (262)
+COM6: BB: REX: 03 08:10:55: 0005291686: iMjrEvt: DP_STREAM_COMPONENT   : Scrambling enabled = 1
+COM6: BB: REX: 03 08:10:55: 0005291694: iMjrEvt: DP_STREAM_COMPONENT   : Setting training pattern 0
+COM6: BB: REX: 03 08:10:55: 0005291716: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 1: Fraction 684 /1000
+COM6: BB: REX: 03 08:10:55: 0005291729: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+COM6: BB: REX: 03 08:10:55: 0005291740: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM6: BB: REX: 03 08:10:55: 0005291803: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+COM6: BB: REX: 03 08:10:55: 0005291820: iMjrEvt: DP_COMPONENT          : Utilzation is (7424)
+COM6: BB: REX: 03 08:10:55: 0005291844: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 0, SendCount: 0
+COM6: BB: REX: 03 08:10:55: 0005291853: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+COM6: BB: REX: 03 08:10:55: 0005291883: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+COM6: BB: REX: 03 08:10:55: 0005292013: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+COM6: BB: REX: 03 08:10:55: 0005292032: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+COM6: BB: REX: 03 08:10:55: 0005292045: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+COM6: BB: REX: 03 08:10:55: 0005292062: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+COM6: BB: REX: 03 08:10:55: 0005292156: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+COM6: BB: REX: 03 08:10:55: 0005292195: iMjrEvt: DP_COMPONENT          : Utilzation is (7424)
+COM6: BB: REX: 03 08:10:55: 0005292227: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 47: Fraction 514 /1000
+COM6: BB: REX: 03 08:10:55: 0005292240: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+COM6: BB: REX: 03 08:10:55: 0005292248: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+COM6: BB: REX: 03 08:10:55: 0005292257: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+COM6: BB: REX: 03 08:10:55: 0005292263: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+COM6: BB: REX: 03 08:10:55: 0005292271: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 518983
+COM6: BB: REX: 03 08:10:55: 0005292278: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 524288
+COM6: BB: REX: 03 08:10:55: 0005292285: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 4000
+COM6: BB: REX: 03 08:10:55: 0005292291: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 112
+COM6: BB: REX: 03 08:10:55: 0005292299: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 3840
+COM6: BB: REX: 03 08:10:55: 0005292306: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 0
+COM6: BB: REX: 03 08:10:55: 0005292313: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 32
+COM6: BB: REX: 03 08:10:55: 0005292320: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 2222
+COM6: BB: REX: 03 08:10:55: 0005292328: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 59
+COM6: BB: REX: 03 08:10:55: 0005292334: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 2160
+COM6: BB: REX: 03 08:10:55: 0005292342: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+COM6: BB: REX: 03 08:10:55: 0005292348: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 5
+COM6: BB: REX: 03 08:10:55: 0005292356: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+COM6: BB: REX: 03 08:10:55: 0005292363: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+COM6: BB: REX: 03 08:10:55: 0005292370: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+COM6: BB: REX: 03 08:10:55: 0005292377: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 1
+COM6: BB: REX: 03 08:10:55: 0005292385: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 360
+COM6: BB: REX: 03 08:10:55: 0005292391: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+COM6: BB: REX: 03 08:10:55: 0005292424: iMjrEvt: DP_COMPONENT          : Rex tried reading MCCS 1 times
+COM6: BB: REX: 03 08:10:55: 0005292432: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+COM6: BB: REX: 03 08:10:56: 0005292464: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+COM6: BB: REX: 03 08:10:56: 0006324368: ISTATUS Video Operational, 3840*2160, 59.99  Hz, 8 bits per component, color code 0x20
+COM6: BB: REX: 03 08:10:58: 0008389362: iMjrEvt: DP_COMPONENT          : Start reading MCCS and VCP table
+COM6: BB: REX: 03 08:11:01: 0011164744: iMjrEvt: DP_COMPONENT          : MCCS capabilities string read done. String size : 511, VCP Table size : 39
+COM6: BB: REX: 03 08:11:04: 0014446113: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+COM6: BB: REX: 03 08:11:04: 0014446129: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+COM6: BB: REX: 03 08:11:04: 0014446145: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+COM6: BB: REX: 03 08:11:04: 0014446152: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 518983
+COM6: BB: REX: 03 08:11:04: 0014446159: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 524288
+COM6: BB: REX: 03 08:11:04: 0014446166: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 4000
+COM6: BB: REX: 03 08:11:04: 0014446173: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 112
+COM6: BB: REX: 03 08:11:04: 0014446180: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 3840
+COM6: BB: REX: 03 08:11:04: 0014446188: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 0
+COM6: BB: REX: 03 08:11:04: 0014446194: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 32
+COM6: BB: REX: 03 08:11:04: 0014446202: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 2222
+COM6: BB: REX: 03 08:11:04: 0014446209: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 59
+COM6: BB: REX: 03 08:11:04: 0014446216: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 2160
+COM6: BB: REX: 03 08:11:04: 0014446223: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+COM6: BB: REX: 03 08:11:04: 0014446230: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 5
+COM6: BB: REX: 03 08:11:04: 0014446237: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+COM6: BB: REX: 03 08:11:04: 0014446244: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+COM6: BB: REX: 03 08:11:04: 0014446251: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+COM6: BB: REX: 03 08:11:04: 0014446259: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 1
+COM6: BB: REX: 03 08:11:04: 0014446265: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 360
+COM6: BB: REX: 03 08:11:04: 0014446273: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+COM6: BB: REX: 03 08:11:04: 0014446281: iMjrEvt: DP_STREAM_COMPONENT   : **** DP STATS ****
+COM6: BB: REX: 03 08:11:04: 0014446291: iMjrEvt: DP_STREAM_COMPONENT   : fifo_pix_0_overflow         = 0
+COM6: BB: REX: 03 08:11:04: 0014446301: iMjrEvt: DP_STREAM_COMPONENT   : fifo_pix_0_underflow        = 0
+COM6: BB: REX: 03 08:11:04: 0014446311: iMjrEvt: DP_STREAM_COMPONENT   : pix_0_sr_underflow          = 0
+COM6: BB: REX: 03 08:11:04: 0014446321: iMjrEvt: DP_STREAM_COMPONENT   : pix_1_sr_underflow          = 0
+COM6: BB: REX: 03 08:11:04: 0014446331: iMjrEvt: DP_STREAM_COMPONENT   : pix_2_sr_underflow          = 0
+COM6: BB: REX: 03 08:11:04: 0014446340: iMjrEvt: DP_STREAM_COMPONENT   : pix_3_sr_underflow          = 0
+COM6: BB: REX: 03 08:11:04: 0014446352: iMjrEvt: DP_STREAM_COMPONENT   : fifo_pix_0_level            = 529
+COM6: BB: REX: 03 08:11:04: 0014446363: iMjrEvt: DP_STREAM_COMPONENT   : fifo_pix_0_level_watermark  = 910
+COM6: BB: REX: 03 08:11:04: 0014446373: iMjrEvt: DP_STREAM_COMPONENT   : fifo_cs_overflow            = 0
+COM6: BB: REX: 03 08:11:04: 0014446383: iMjrEvt: DP_STREAM_COMPONENT   : fifo_cs_underflow           = 0
+COM6: BB: REX: 03 08:11:04: 0014446394: iMjrEvt: DP_STREAM_COMPONENT   : fifo_cs_level               = 720
+COM6: BB: REX: 03 08:11:04: 0014446406: iMjrEvt: DP_STREAM_COMPONENT   : fifo_cs_level_watermark     = 739
+COM6: BB: REX: 03 08:11:04: 0014446415: iMjrEvt: DP_STREAM_COMPONENT   : **** DP_ALU_STATS ****
+COM6: BB: REX: 03 08:11:04: 0014446427: iMjrEvt: DP_STREAM_COMPONENT   : dp_width_active            = 3869
+COM6: BB: REX: 03 08:11:04: 0014446439: iMjrEvt: DP_STREAM_COMPONENT   : dp_width_total             = 4040
+COM6: BB: REX: 03 08:11:04: 0014446450: iMjrEvt: DP_STREAM_COMPONENT   : full_tu_size               = 64
+COM6: BB: REX: 03 08:11:04: 0014446461: iMjrEvt: DP_STREAM_COMPONENT   : last_tu_size               = 29
+COM6: BB: REX: 03 08:11:04: 0014446471: iMjrEvt: DP_STREAM_COMPONENT   : full_tu_num                = 60
+COM6: BB: REX: 03 08:11:04: 0014446483: iMjrEvt: DP_STREAM_COMPONENT   : cpu_math_result_rdy        = 0
+COM6: BB: REX: 03 08:11:04: 0014446494: iMjrEvt: DP_STREAM_COMPONENT   : valid_bytes_repeat_num     = 29
+COM6: BB: REX: 03 08:11:04: 0014446505: iMjrEvt: DP_STREAM_COMPONENT   : valid_bytes_per_full_tu    = 47
+COM6: BB: REX: 03 08:11:04: 0014446515: iMjrEvt: DP_STREAM_COMPONENT   : valid_bytes_num_per_lane   = 2880
+COM6: BB: REX: 03 08:11:04: 0014446524: iMjrEvt: DP_STREAM_COMPONENT   : **** DP FSM STATS ****
+COM6: BB: REX: 03 08:11:04: 0014446536: iMjrEvt: DP_STREAM_COMPONENT   : fsm_state_vid  = 1
+COM6: BB: REX: 03 08:11:04: 0014446547: iMjrEvt: DP_STREAM_COMPONENT   : fsm_state_dp   = 2
+COM6: BB: REX: 03 08:11:04: 0014506860: iMjrEvt: DP_COMPONENT          : Rex completed reading MCCS, VCP Table and Timing Report
+COM6: BB: REX: 03 08:11:04: 0014506874: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+COM6: BB: REX: 03 08:11:04: 0014507034: iMjrEvt: DP_COMPONENT          : Rex tried reading MCCS 2 times
+COM6: BB: REX: 03 08:11:04: 0014507881: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+COM6: BB: REX: 03 08:11:04: 0014508226: iUsrLog: DP_COMPONENT          : Sent VCP Table
+COM6: BB: REX: 03 08:11:05: 0014508286: iUsrLog: DP_COMPONENT          : Sent Timing Report
+COM6: BB: REX: 03 08:11:08: 0001537499: iMjrEvt: DP_COMPONENT          : MCCS capabilities string read done. String size : 511, VCP Table size : 39
+COM6: BB: REX: 03 08:11:11: 0004880648: iMjrEvt: DP_COMPONENT          : Rex completed reading MCCS, VCP Table and Timing Report
+COM6: BB: REX: 03 08:11:11: 0004880686: iMjrEvt: DP_COMPONENT          : MCCS read success counter : 1
+COM6: BB: REX: 03 08:11:11: 0004880703: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+COM6: BB: REX: 03 08:11:11: 0004881672: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+COM6: BB: REX: 03 08:11:11: 0004882018: iUsrLog: DP_COMPONENT          : Sent VCP Table
+COM6: BB: REX: 03 08:11:11: 0004882078: iUsrLog: DP_COMPONENT          : Sent Timing Report
+COM6: BB: REX: 03 08:12:48: 0001292285: iMjrErr: DP_STREAM_COMPONENT   : DP FIFO SDP Overflow interrupt occurred
+COM6: BB: REX: 03 08:12:48: 0001292298: iMjrEvt: DP_COMPONENT          : Aux got DP ISR Type = 0x20
+COM6: BB: REX: 03 08:12:48: 0001292322: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 25
+COM6: BB: REX: 03 08:12:48: 0001292348: iMjrErr: DP_STREAM_COMPONENT   : DP FIFO SDP Overflow interrupt occurred
+COM6: BB: REX: 03 08:12:48: 0001292355: iMjrEvt: DP_COMPONENT          : Aux got DP ISR Type = 0x20
+COM6: BB: REX: 03 08:12:48: 0001292369: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 25
+COM6: BB: REX: 03 08:12:48: 0001293329: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 20
+COM6: BB: REX: 03 08:12:48: 0001293344: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+COM6: BB: REX: 03 08:12:48: 0001293376: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM6: BB: REX: 03 08:12:48: 0001303850: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 0
+COM6: BB: REX: 03 08:12:48: 0001303867: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+COM6: BB: REX: 03 08:12:48: 0001303898: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 5 in state 5
+COM6: BB: REX: 03 08:12:48: 0001303907: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 5
+COM6: BB: REX: 03 08:12:48: 0001439958: iMjrEvt: DP_COMPONENT          : Aux Generate Lex Active/Offline Phy:1, dpEnable:1, Host:0
+COM6: BB: REX: 03 08:12:48: 0001439994: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 7 in state 5
+COM6: BB: REX: 03 08:12:48: 0001440004: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 7
+COM6: BB: REX: 03 08:12:48: 0001440017: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+COM6: BB: REX: 03 08:12:48: 0001440023: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+COM6: BB: REX: 03 08:12:48: 0001440053: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+COM6: BB: REX: 03 08:12:48: 0001440060: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+COM6: BB: REX: 03 08:12:48: 0001699656: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+COM6: BB: REX: 03 08:12:48: 0001699674: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+COM6: BB: REX: 03 08:12:59: 0012496128: iMjrEvt: DP_COMPONENT          : Aux Generate Lex Active/Offline Phy:1, dpEnable:1, Host:1
+COM6: BB: REX: 03 08:12:59: 0012496183: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 2
+COM6: BB: REX: 03 08:12:59: 0012496195: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+COM6: BB: REX: 03 08:12:59: 0012496205: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 6
+COM6: BB: REX: 03 08:12:59: 0012496233: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+COM6: BB: REX: 03 08:12:59: 0012496240: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+COM6: BB: REX: 03 08:12:59: 0012496329: iUsrLog: DP_COMPONENT          : Sent Sink Params (CAP, EDID)
+COM6: BB: REX: 03 08:12:59: 0012496338: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 14
+COM6: BB: REX: 03 08:12:59: 0012496641: iMjrEvt: DP_COMPONENT          : Sink Parameters sent to LEX
+COM6: BB: REX: 03 08:13:07: 0002918389: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+COM6: BB: REX: 03 08:13:07: 0002918417: iMjrEvt: DP_COMPONENT          : Utilzation is (7424)
+COM6: BB: REX: 03 08:13:07: 0002918443: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 2
+COM6: BB: REX: 03 08:13:07: 0002918451: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+COM6: BB: REX: 03 08:13:07: 0002918459: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+COM6: BB: REX: 03 08:13:07: 0002918490: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+COM6: BB: REX: 03 08:13:07: 0002918623: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+COM6: BB: REX: 03 08:13:07: 0002918652: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+COM6: BB: REX: 03 08:13:07: 0002918666: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+COM6: BB: REX: 03 08:13:07: 0002918683: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+COM6: BB: REX: 03 08:13:07: 0002918775: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+COM6: BB: REX: 03 08:13:07: 0002918814: iMjrEvt: DP_COMPONENT          : Utilzation is (7424)
+COM6: BB: REX: 03 08:13:07: 0002918847: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 47: Fraction 514 /1000
+COM6: BB: REX: 03 08:13:07: 0002918860: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+COM6: BB: REX: 03 08:13:07: 0002918868: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+COM6: BB: REX: 03 08:13:07: 0002918876: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+COM6: BB: REX: 03 08:13:07: 0002918883: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+COM6: BB: REX: 03 08:13:07: 0002918890: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 518983
+COM6: BB: REX: 03 08:13:07: 0002918897: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 524288
+COM6: BB: REX: 03 08:13:07: 0002918905: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 4000
+COM6: BB: REX: 03 08:13:07: 0002918911: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 112
+COM6: BB: REX: 03 08:13:07: 0002918919: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 3840
+COM6: BB: REX: 03 08:13:07: 0002918926: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 0
+COM6: BB: REX: 03 08:13:07: 0002918933: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 32
+COM6: BB: REX: 03 08:13:07: 0002918940: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 2222
+COM6: BB: REX: 03 08:13:07: 0002918947: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 59
+COM6: BB: REX: 03 08:13:07: 0002918954: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 2160
+COM6: BB: REX: 03 08:13:07: 0002918962: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+COM6: BB: REX: 03 08:13:07: 0002918968: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 5
+COM6: BB: REX: 03 08:13:07: 0002918976: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+COM6: BB: REX: 03 08:13:07: 0002918982: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+COM6: BB: REX: 03 08:13:07: 0002918990: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+COM6: BB: REX: 03 08:13:07: 0002918996: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 1
+COM6: BB: REX: 03 08:13:07: 0002919004: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 360
+COM6: BB: REX: 03 08:13:07: 0002919011: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+COM6: BB: REX: 03 08:13:07: 0002919021: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+COM6: BB: REX: 03 08:13:07: 0002919126: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+COM6: BB: REX: 03 08:13:07: 0002919154: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+COM6: BB: REX: 03 08:13:07: 0002920000: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+COM6: BB: REX: 03 08:13:07: 0002920377: iUsrLog: DP_COMPONENT          : Sent VCP Table
+COM6: BB: REX: 03 08:13:07: 0002920439: iUsrLog: DP_COMPONENT          : Sent Timing Report
+COM6: BB: REX: 03 08:13:07: 0003951640: ISTATUS Video Operational, 3840*2160, 59.99  Hz, 8 bits per component, color code 0x20
+COM6: BB: REX: 03 08:15:09: 0008879494: iMjrErr: DP_STREAM_COMPONENT   : DP FIFO SDP Overflow interrupt occurred
+COM6: BB: REX: 03 08:15:09: 0008879508: iMjrEvt: DP_COMPONENT          : Aux got DP ISR Type = 0x20
+COM6: BB: REX: 03 08:15:09: 0008879531: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 25
+COM6: BB: REX: 03 08:15:09: 0008879543: iMjrErr: DP_STREAM_COMPONENT   : DP FIFO SDP Overflow interrupt occurred
+COM6: BB: REX: 03 08:15:10: 0008879550: iMjrEvt: DP_COMPONENT          : Aux got DP ISR Type = 0x20
+COM6: BB: REX: 03 08:15:10: 0008879569: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 25
+COM6: BB: REX: 03 08:15:10: 0008880284: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 20
+COM6: BB: REX: 03 08:15:10: 0008880294: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+COM6: BB: REX: 03 08:15:10: 0008880325: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM6: BB: REX: 03 08:15:10: 0008892122: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 0
+COM6: BB: REX: 03 08:15:10: 0008892138: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+COM6: BB: REX: 03 08:15:10: 0008892169: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 5 in state 5
+COM6: BB: REX: 03 08:15:10: 0008892178: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 5
+COM6: BB: REX: 03 08:15:42: 0007346718: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+COM6: BB: REX: 03 08:15:42: 0007346745: iMjrEvt: DP_COMPONENT          : Utilzation is (7423)
+COM6: BB: REX: 03 08:15:42: 0007346771: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 3
+COM6: BB: REX: 03 08:15:42: 0007346779: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+COM6: BB: REX: 03 08:15:42: 0007346787: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+COM6: BB: REX: 03 08:15:42: 0007346817: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+COM6: BB: REX: 03 08:15:42: 0007346950: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+COM6: BB: REX: 03 08:15:42: 0007346967: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+COM6: BB: REX: 03 08:15:42: 0007346981: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+COM6: BB: REX: 03 08:15:42: 0007346998: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+COM6: BB: REX: 03 08:15:42: 0007347094: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+COM6: BB: REX: 03 08:15:42: 0007347131: iMjrEvt: DP_COMPONENT          : Utilzation is (7423)
+COM6: BB: REX: 03 08:15:42: 0007347165: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 47: Fraction 513 /1000
+COM6: BB: REX: 03 08:15:42: 0007347177: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+COM6: BB: REX: 03 08:15:42: 0007347186: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+COM6: BB: REX: 03 08:15:42: 0007347192: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+COM6: BB: REX: 03 08:15:42: 0007347200: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+COM6: BB: REX: 03 08:15:42: 0007347207: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 518974
+COM6: BB: REX: 03 08:15:42: 0007347215: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 524288
+COM6: BB: REX: 03 08:15:42: 0007347221: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 4000
+COM6: BB: REX: 03 08:15:42: 0007347229: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 112
+COM6: BB: REX: 03 08:15:42: 0007347236: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 3840
+COM6: BB: REX: 03 08:15:42: 0007347243: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 0
+COM6: BB: REX: 03 08:15:42: 0007347250: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 32
+COM6: BB: REX: 03 08:15:42: 0007347257: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 2222
+COM6: BB: REX: 03 08:15:42: 0007347264: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 59
+COM6: BB: REX: 03 08:15:42: 0007347272: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 2160
+COM6: BB: REX: 03 08:15:42: 0007347278: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+COM6: BB: REX: 03 08:15:42: 0007347286: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 5
+COM6: BB: REX: 03 08:15:42: 0007347293: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+COM6: BB: REX: 03 08:15:42: 0007347300: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+COM6: BB: REX: 03 08:15:42: 0007347306: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+COM6: BB: REX: 03 08:15:42: 0007347314: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 1
+COM6: BB: REX: 03 08:15:42: 0007347321: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 360
+COM6: BB: REX: 03 08:15:42: 0007347328: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+COM6: BB: REX: 03 08:15:42: 0007347338: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+COM6: BB: REX: 03 08:15:42: 0007347443: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+COM6: BB: REX: 03 08:15:42: 0007347469: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+COM6: BB: REX: 03 08:15:42: 0007348330: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+COM6: BB: REX: 03 08:15:42: 0007348685: iUsrLog: DP_COMPONENT          : Sent VCP Table
+COM6: BB: REX: 03 08:15:42: 0007348747: iUsrLog: DP_COMPONENT          : Sent Timing Report
+COM6: BB: REX: 03 08:15:42: 0008379697: ISTATUS Video Operational, 3840*2160, 59.99  Hz, 8 bits per component, color code 0x20
+COM6: BB: REX: 03 08:17:02: 0004017228: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 20
+COM6: BB: REX: 03 08:17:02: 0004017249: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+COM6: BB: REX: 03 08:17:02: 0004017285: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM6: BB: REX: 03 08:17:02: 0004027610: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 0
+COM6: BB: REX: 03 08:17:02: 0004027627: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+COM6: BB: REX: 03 08:17:02: 0004027658: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 5 in state 5
+COM6: BB: REX: 03 08:17:02: 0004027667: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 5
+COM6: BB: REX: 03 08:17:06: 0008254831: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+COM6: BB: REX: 03 08:17:06: 0008254851: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+COM6: BB: REX: 03 08:17:40: 0008659413: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+COM6: BB: REX: 03 08:17:40: 0008659441: iMjrEvt: DP_COMPONENT          : Utilzation is (7423)
+COM6: BB: REX: 03 08:17:40: 0008659467: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 4
+COM6: BB: REX: 03 08:17:40: 0008659475: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+COM6: BB: REX: 03 08:17:40: 0008659483: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+COM6: BB: REX: 03 08:17:40: 0008659514: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+COM6: BB: REX: 03 08:17:40: 0008659644: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+COM6: BB: REX: 03 08:17:40: 0008659662: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+COM6: BB: REX: 03 08:17:40: 0008659675: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+COM6: BB: REX: 03 08:17:40: 0008659693: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+COM6: BB: REX: 03 08:17:41: 0008659789: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+COM6: BB: REX: 03 08:17:41: 0008659828: iMjrEvt: DP_COMPONENT          : Utilzation is (7423)
+COM6: BB: REX: 03 08:17:41: 0008659861: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 26: Fraction 726 /1000
+COM6: BB: REX: 03 08:17:41: 0008659873: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+COM6: BB: REX: 03 08:17:41: 0008659882: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+COM6: BB: REX: 03 08:17:41: 0008659890: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+COM6: BB: REX: 03 08:17:41: 0008659896: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+COM6: BB: REX: 03 08:17:41: 0008659904: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 31675
+COM6: BB: REX: 03 08:17:41: 0008659911: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 32000
+COM6: BB: REX: 03 08:17:41: 0008659918: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 4000
+COM6: BB: REX: 03 08:17:41: 0008659925: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 112
+COM6: BB: REX: 03 08:17:41: 0008659932: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 3840
+COM6: BB: REX: 03 08:17:41: 0008659939: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 0
+COM6: BB: REX: 03 08:17:41: 0008659947: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 32
+COM6: BB: REX: 03 08:17:41: 0008659953: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 2222
+COM6: BB: REX: 03 08:17:41: 0008659961: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 59
+COM6: BB: REX: 03 08:17:41: 0008659968: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 2160
+COM6: BB: REX: 03 08:17:41: 0008659975: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+COM6: BB: REX: 03 08:17:41: 0008659982: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 5
+COM6: BB: REX: 03 08:17:41: 0008659989: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+COM6: BB: REX: 03 08:17:41: 0008659996: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+COM6: BB: REX: 03 08:17:41: 0008660003: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+COM6: BB: REX: 03 08:17:41: 0008660010: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 1
+COM6: BB: REX: 03 08:17:41: 0008660018: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 360
+COM6: BB: REX: 03 08:17:41: 0008660024: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+COM6: BB: REX: 03 08:17:41: 0008660035: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+COM6: BB: REX: 03 08:17:41: 0008660140: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+COM6: BB: REX: 03 08:17:41: 0008660153: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+COM6: BB: REX: 03 08:17:41: 0008661026: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+COM6: BB: REX: 03 08:17:41: 0008661369: iUsrLog: DP_COMPONENT          : Sent VCP Table
+COM6: BB: REX: 03 08:17:41: 0008661429: iUsrLog: DP_COMPONENT          : Sent Timing Report
+COM6: BB: REX: 03 08:17:41: 0009692181: ISTATUS Video Operational, 3840*2160, 59.99  Hz, 8 bits per component, color code 0x20
+COM6: BB: REX: 03 08:21:36: 0009429969: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 20
+COM6: BB: REX: 03 08:21:36: 0009429992: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+COM6: BB: REX: 03 08:21:36: 0009430027: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM6: BB: REX: 03 08:21:36: 0009441155: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 0
+COM6: BB: REX: 03 08:21:36: 0009441170: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+COM6: BB: REX: 03 08:21:36: 0009441202: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 5 in state 5
+COM6: BB: REX: 03 08:21:36: 0009441210: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 5
+COM6: BB: REX: 03 08:21:45: 0001748609: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+COM6: BB: REX: 03 08:21:45: 0001748636: iMjrEvt: DP_COMPONENT          : Utilzation is (9280)
+COM6: BB: REX: 03 08:21:45: 0001748662: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 5
+COM6: BB: REX: 03 08:21:45: 0001748669: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+COM6: BB: REX: 03 08:21:45: 0001748678: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+COM6: BB: REX: 03 08:21:45: 0001748707: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+COM6: BB: REX: 03 08:21:45: 0001748840: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+COM6: BB: REX: 03 08:21:45: 0001748858: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+COM6: BB: REX: 03 08:21:45: 0001748872: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+COM6: BB: REX: 03 08:21:45: 0001748888: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+COM6: BB: REX: 03 08:21:45: 0001748985: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+COM6: BB: REX: 03 08:21:45: 0001749022: iMjrEvt: DP_COMPONENT          : Utilzation is (9280)
+COM6: BB: REX: 03 08:21:45: 0001749056: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 59: Fraction 392 /1000
+COM6: BB: REX: 03 08:21:45: 0001749068: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+COM6: BB: REX: 03 08:21:45: 0001749077: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+COM6: BB: REX: 03 08:21:45: 0001749084: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+COM6: BB: REX: 03 08:21:45: 0001749092: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+COM6: BB: REX: 03 08:21:45: 0001749099: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 32436
+COM6: BB: REX: 03 08:21:45: 0001749106: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 32768
+COM6: BB: REX: 03 08:21:45: 0001749113: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 4000
+COM6: BB: REX: 03 08:21:45: 0001749121: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 112
+COM6: BB: REX: 03 08:21:45: 0001749127: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 3840
+COM6: BB: REX: 03 08:21:45: 0001749135: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 0
+COM6: BB: REX: 03 08:21:45: 0001749142: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 32
+COM6: BB: REX: 03 08:21:45: 0001749149: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 2222
+COM6: BB: REX: 03 08:21:45: 0001749155: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 59
+COM6: BB: REX: 03 08:21:45: 0001749163: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 2160
+COM6: BB: REX: 03 08:21:45: 0001749170: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+COM6: BB: REX: 03 08:21:45: 0001749177: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 5
+COM6: BB: REX: 03 08:21:45: 0001749184: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+COM6: BB: REX: 03 08:21:45: 0001749192: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+COM6: BB: REX: 03 08:21:45: 0001749198: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+COM6: BB: REX: 03 08:21:45: 0001749206: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 0
+COM6: BB: REX: 03 08:21:45: 0001749212: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 450
+COM6: BB: REX: 03 08:21:45: 0001749220: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x20 and BPP = 30
+COM6: BB: REX: 03 08:21:45: 0001749229: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+COM6: BB: REX: 03 08:21:45: 0001749334: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+COM6: BB: REX: 03 08:21:45: 0001749360: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+COM6: BB: REX: 03 08:21:45: 0001750225: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+COM6: BB: REX: 03 08:21:45: 0001750578: iUsrLog: DP_COMPONENT          : Sent VCP Table
+COM6: BB: REX: 03 08:21:45: 0001750639: iUsrLog: DP_COMPONENT          : Sent Timing Report
+COM6: BB: REX: 03 08:21:46: 0002781945: ISTATUS Video Operational, 3840*2160, 59.99  Hz, 10 bits per component, color code 0x40
+COM6: BB: REX: 03 08:21:47: 0003565060: iMjrErr: DP_STREAM_COMPONENT   : DP FIFO PIX 0 Overflow interrupt occurred
+COM6: BB: REX: 03 08:21:47: 0003565171: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 20
+COM6: BB: REX: 03 08:21:47: 0003565193: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+COM6: BB: REX: 03 08:21:47: 0003565224: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM6: BB: REX: 03 08:21:47: 0003575938: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 0
+COM6: BB: REX: 03 08:21:47: 0003575954: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+COM6: BB: REX: 03 08:21:47: 0003575985: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 5 in state 5
+COM6: BB: REX: 03 08:21:47: 0003575993: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 5
+COM6: BB: REX: 03 08:21:49: 0005731665: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+COM6: BB: REX: 03 08:21:49: 0005731683: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+COM6: BB: REX: 03 08:21:51: 0006768622: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+COM6: BB: REX: 03 08:21:51: 0006768649: iMjrEvt: DP_COMPONENT          : Utilzation is (7424)
+COM6: BB: REX: 03 08:21:51: 0006768675: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 6
+COM6: BB: REX: 03 08:21:51: 0006768682: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+COM6: BB: REX: 03 08:21:51: 0006768691: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+COM6: BB: REX: 03 08:21:51: 0006768720: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+COM6: BB: REX: 03 08:21:51: 0006768853: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+COM6: BB: REX: 03 08:21:51: 0006768871: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+COM6: BB: REX: 03 08:21:51: 0006768885: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+COM6: BB: REX: 03 08:21:51: 0006768901: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+COM6: BB: REX: 03 08:21:51: 0006768996: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+COM6: BB: REX: 03 08:21:51: 0006769034: iMjrEvt: DP_COMPONENT          : Utilzation is (7424)
+COM6: BB: REX: 03 08:21:51: 0006769067: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 47: Fraction 514 /1000
+COM6: BB: REX: 03 08:21:51: 0006769079: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+COM6: BB: REX: 03 08:21:51: 0006769088: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+COM6: BB: REX: 03 08:21:51: 0006769095: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+COM6: BB: REX: 03 08:21:51: 0006769103: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+COM6: BB: REX: 03 08:21:51: 0006769110: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 32436
+COM6: BB: REX: 03 08:21:51: 0006769117: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 32768
+COM6: BB: REX: 03 08:21:51: 0006769124: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 4000
+COM6: BB: REX: 03 08:21:51: 0006769131: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 112
+COM6: BB: REX: 03 08:21:51: 0006769138: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 3840
+COM6: BB: REX: 03 08:21:51: 0006769145: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 0
+COM6: BB: REX: 03 08:21:51: 0006769152: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 32
+COM6: BB: REX: 03 08:21:51: 0006769160: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 2222
+COM6: BB: REX: 03 08:21:51: 0006769166: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 59
+COM6: BB: REX: 03 08:21:51: 0006769174: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 2160
+COM6: BB: REX: 03 08:21:51: 0006769180: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+COM6: BB: REX: 03 08:21:51: 0006769188: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 5
+COM6: BB: REX: 03 08:21:51: 0006769195: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+COM6: BB: REX: 03 08:21:51: 0006769202: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+COM6: BB: REX: 03 08:21:51: 0006769209: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+COM6: BB: REX: 03 08:21:51: 0006769217: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 0
+COM6: BB: REX: 03 08:21:51: 0006769223: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 360
+COM6: BB: REX: 03 08:21:51: 0006769230: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+COM6: BB: REX: 03 08:21:51: 0006769240: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+COM6: BB: REX: 03 08:21:51: 0006769345: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+COM6: BB: REX: 03 08:21:51: 0006769371: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+COM6: BB: REX: 03 08:21:51: 0006769379: iMjrErr: DP_STREAM_COMPONENT   : DP FIFO PIX 0 Overflow interrupt occurred
+COM6: BB: REX: 03 08:21:51: 0006770246: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+COM6: BB: REX: 03 08:21:51: 0006770602: iUsrLog: DP_COMPONENT          : Sent VCP Table
+COM6: BB: REX: 03 08:21:51: 0006770668: iUsrLog: DP_COMPONENT          : Sent Timing Report
+COM6: BB: REX: 03 08:21:51: 0007801944: ISTATUS Video Operational, 3840*2160, 59.99  Hz, 8 bits per component, color code 0x20
+COM6: BB: REX: 03 08:26:56: 0010537170: iMjrErr: DP_STREAM_COMPONENT   : DP FIFO SDP Overflow interrupt occurred
+COM6: BB: REX: 03 08:26:56: 0010537185: iMjrEvt: DP_COMPONENT          : Aux got DP ISR Type = 0x20
+COM6: BB: REX: 03 08:26:56: 0010537207: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 25
+COM6: BB: REX: 03 08:26:56: 0010537219: iMjrErr: DP_STREAM_COMPONENT   : DP FIFO SDP Overflow interrupt occurred
+COM6: BB: REX: 03 08:26:56: 0010537226: iMjrEvt: DP_COMPONENT          : Aux got DP ISR Type = 0x20
+COM6: BB: REX: 03 08:26:56: 0010537245: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 25
+COM6: BB: REX: 03 08:26:57: 0011577501: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 20
+COM6: BB: REX: 03 08:26:57: 0011577524: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+COM6: BB: REX: 03 08:26:57: 0011577559: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM6: BB: REX: 03 08:26:57: 0011589050: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 0
+COM6: BB: REX: 03 08:26:57: 0011589066: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+COM6: BB: REX: 03 08:26:57: 0011589097: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 5 in state 5
+COM6: BB: REX: 03 08:26:57: 0011589106: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 5
+COM6: BB: REX: 03 08:27:09: 0006118152: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+COM6: BB: REX: 03 08:27:09: 0006118179: iMjrEvt: DP_COMPONENT          : Utilzation is (7423)
+COM6: BB: REX: 03 08:27:09: 0006118205: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 7
+COM6: BB: REX: 03 08:27:09: 0006118212: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+COM6: BB: REX: 03 08:27:09: 0006118221: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+COM6: BB: REX: 03 08:27:09: 0006118250: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+COM6: BB: REX: 03 08:27:09: 0006118384: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+COM6: BB: REX: 03 08:27:09: 0006118401: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+COM6: BB: REX: 03 08:27:09: 0006118415: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+COM6: BB: REX: 03 08:27:09: 0006118432: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+COM6: BB: REX: 03 08:27:09: 0006118526: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+COM6: BB: REX: 03 08:27:09: 0006118563: iMjrEvt: DP_COMPONENT          : Utilzation is (7423)
+COM6: BB: REX: 03 08:27:09: 0006118597: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 39: Fraction 347 /1000
+COM6: BB: REX: 03 08:27:09: 0006118609: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+COM6: BB: REX: 03 08:27:09: 0006118618: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+COM6: BB: REX: 03 08:27:09: 0006118625: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+COM6: BB: REX: 03 08:27:09: 0006118632: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+COM6: BB: REX: 03 08:27:09: 0006118639: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 32435
+COM6: BB: REX: 03 08:27:09: 0006118647: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 32768
+COM6: BB: REX: 03 08:27:09: 0006118653: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 4000
+COM6: BB: REX: 03 08:27:09: 0006118661: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 112
+COM6: BB: REX: 03 08:27:09: 0006118668: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 3840
+COM6: BB: REX: 03 08:27:09: 0006118675: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 0
+COM6: BB: REX: 03 08:27:09: 0006118682: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 32
+COM6: BB: REX: 03 08:27:09: 0006118689: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 2222
+COM6: BB: REX: 03 08:27:09: 0006118696: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 59
+COM6: BB: REX: 03 08:27:09: 0006118704: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 2160
+COM6: BB: REX: 03 08:27:09: 0006118710: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+COM6: BB: REX: 03 08:27:09: 0006118718: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 5
+COM6: BB: REX: 03 08:27:09: 0006118725: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+COM6: BB: REX: 03 08:27:09: 0006118732: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+COM6: BB: REX: 03 08:27:09: 0006118739: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+COM6: BB: REX: 03 08:27:09: 0006118746: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 0
+COM6: BB: REX: 03 08:27:09: 0006118753: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 360
+COM6: BB: REX: 03 08:27:09: 0006118760: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+COM6: BB: REX: 03 08:27:09: 0006118770: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+COM6: BB: REX: 03 08:27:09: 0006118875: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+COM6: BB: REX: 03 08:27:09: 0006118897: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+COM6: BB: REX: 03 08:27:09: 0006119760: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+COM6: BB: REX: 03 08:27:09: 0006120103: iUsrLog: DP_COMPONENT          : Sent VCP Table
+COM6: BB: REX: 03 08:27:09: 0006120164: iUsrLog: DP_COMPONENT          : Sent Timing Report
+COM6: BB: REX: 03 08:27:09: 0007150841: ISTATUS Video Operational, 3840*2160, 59.99  Hz, 8 bits per component, color code 0x20
+COM6: BB: REX: 03 08:27:57: 0004738016: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 20
+COM6: BB: REX: 03 08:27:57: 0004738037: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+COM6: BB: REX: 03 08:27:57: 0004738073: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM6: BB: REX: 03 08:27:57: 0004749186: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 0
+COM6: BB: REX: 03 08:27:57: 0004749203: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+COM6: BB: REX: 03 08:27:57: 0004749234: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 5 in state 5
+COM6: BB: REX: 03 08:27:57: 0004749243: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 5
+COM6: BB: REX: 03 08:28:33: 0005971241: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+COM6: BB: REX: 03 08:28:33: 0005971269: iMjrEvt: DP_COMPONENT          : Utilzation is (7423)
+COM6: BB: REX: 03 08:28:33: 0005971294: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 8
+COM6: BB: REX: 03 08:28:33: 0005971303: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+COM6: BB: REX: 03 08:28:33: 0005971311: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+COM6: BB: REX: 03 08:28:33: 0005971342: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+COM6: BB: REX: 03 08:28:33: 0005971471: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+COM6: BB: REX: 03 08:28:33: 0005971490: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+COM6: BB: REX: 03 08:28:33: 0005971503: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+COM6: BB: REX: 03 08:28:33: 0005971521: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+COM6: BB: REX: 03 08:28:33: 0005971616: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+COM6: BB: REX: 03 08:28:33: 0005971656: iMjrEvt: DP_COMPONENT          : Utilzation is (7423)
+COM6: BB: REX: 03 08:28:33: 0005971688: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 39: Fraction 347 /1000
+COM6: BB: REX: 03 08:28:33: 0005971701: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+COM6: BB: REX: 03 08:28:33: 0005971710: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+COM6: BB: REX: 03 08:28:33: 0005971717: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+COM6: BB: REX: 03 08:28:33: 0005971724: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+COM6: BB: REX: 03 08:28:33: 0005971732: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 32435
+COM6: BB: REX: 03 08:28:33: 0005971738: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 32768
+COM6: BB: REX: 03 08:28:33: 0005971746: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 4000
+COM6: BB: REX: 03 08:28:33: 0005971753: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 112
+COM6: BB: REX: 03 08:28:33: 0005971760: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 3840
+COM6: BB: REX: 03 08:28:33: 0005971767: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 0
+COM6: BB: REX: 03 08:28:33: 0005971775: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 32
+COM6: BB: REX: 03 08:28:33: 0005971781: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 2222
+COM6: BB: REX: 03 08:28:33: 0005971788: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 59
+COM6: BB: REX: 03 08:28:33: 0005971795: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 2160
+COM6: BB: REX: 03 08:28:33: 0005971803: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+COM6: BB: REX: 03 08:28:33: 0005971809: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 5
+COM6: BB: REX: 03 08:28:33: 0005971817: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+COM6: BB: REX: 03 08:28:33: 0005971824: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+COM6: BB: REX: 03 08:28:33: 0005971831: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+COM6: BB: REX: 03 08:28:33: 0005971838: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 0
+COM6: BB: REX: 03 08:28:33: 0005971845: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 360
+COM6: BB: REX: 03 08:28:33: 0005971852: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+COM6: BB: REX: 03 08:28:33: 0005971863: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+COM6: BB: REX: 03 08:28:33: 0005971967: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+COM6: BB: REX: 03 08:28:33: 0005971988: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+COM6: BB: REX: 03 08:28:33: 0005972852: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+COM6: BB: REX: 03 08:28:33: 0005973195: iUsrLog: DP_COMPONENT          : Sent VCP Table
+COM6: BB: REX: 03 08:28:33: 0005973255: iUsrLog: DP_COMPONENT          : Sent Timing Report
+COM6: BB: REX: 03 08:28:33: 0007005759: ISTATUS Video Operational, 3840*2160, 59.99  Hz, 8 bits per component, color code 0x20
+COM6: BB: REX: 03 08:29:26: 0009669824: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 20
+COM6: BB: REX: 03 08:29:26: 0009669846: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+COM6: BB: REX: 03 08:29:26: 0009669881: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM6: BB: REX: 03 08:29:26: 0009682106: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 0
+COM6: BB: REX: 03 08:29:26: 0009682122: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+COM6: BB: REX: 03 08:29:26: 0009682153: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 5 in state 5
+COM6: BB: REX: 03 08:29:26: 0009682162: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 5
+COM6: BB: REX: 03 08:29:50: 0000111754: iMjrEvt: DP_COMPONENT          : Aux Generate Lex Active/Offline Phy:1, dpEnable:1, Host:0
+COM6: BB: REX: 03 08:29:50: 0000111788: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 7 in state 5
+COM6: BB: REX: 03 08:29:50: 0000111800: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 7
+COM6: BB: REX: 03 08:29:50: 0000111810: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+COM6: BB: REX: 03 08:29:50: 0000111818: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+COM6: BB: REX: 03 08:29:50: 0000111846: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+COM6: BB: REX: 03 08:29:50: 0000111855: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+COM6: BB: REX: 03 08:29:50: 0000369395: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+COM6: BB: REX: 03 08:29:50: 0000369414: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+COM6: BB: REX: 03 08:30:02: 0012491202: iMjrEvt: DP_COMPONENT          : Aux Generate Lex Active/Offline Phy:1, dpEnable:1, Host:1
+COM6: BB: REX: 03 08:30:02: 0012491259: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 9
+COM6: BB: REX: 03 08:30:02: 0012491270: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+COM6: BB: REX: 03 08:30:02: 0012491281: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 6
+COM6: BB: REX: 03 08:30:02: 0012491306: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+COM6: BB: REX: 03 08:30:02: 0012491315: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+COM6: BB: REX: 03 08:30:02: 0012491402: iUsrLog: DP_COMPONENT          : Sent Sink Params (CAP, EDID)
+COM6: BB: REX: 03 08:30:02: 0012491411: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 14
+COM6: BB: REX: 03 08:30:02: 0012491716: iMjrEvt: DP_COMPONENT          : Sink Parameters sent to LEX
+COM6: BB: REX: 03 08:30:08: 0001466133: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+COM6: BB: REX: 03 08:30:08: 0001466160: iMjrEvt: DP_COMPONENT          : Utilzation is (7424)
+COM6: BB: REX: 03 08:30:08: 0001466186: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 9
+COM6: BB: REX: 03 08:30:08: 0001466194: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+COM6: BB: REX: 03 08:30:08: 0001466202: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+COM6: BB: REX: 03 08:30:08: 0001466232: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+COM6: BB: REX: 03 08:30:08: 0001466365: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+COM6: BB: REX: 03 08:30:08: 0001466382: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+COM6: BB: REX: 03 08:30:08: 0001466396: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+COM6: BB: REX: 03 08:30:08: 0001466413: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+COM6: BB: REX: 03 08:30:08: 0001466509: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+COM6: BB: REX: 03 08:30:08: 0001466547: iMjrEvt: DP_COMPONENT          : Utilzation is (7424)
+COM6: BB: REX: 03 08:30:08: 0001466581: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 47: Fraction 514 /1000
+COM6: BB: REX: 03 08:30:08: 0001466592: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+COM6: BB: REX: 03 08:30:08: 0001466601: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+COM6: BB: REX: 03 08:30:08: 0001466608: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+COM6: BB: REX: 03 08:30:08: 0001466616: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+COM6: BB: REX: 03 08:30:08: 0001466623: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 32436
+COM6: BB: REX: 03 08:30:08: 0001466630: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 32768
+COM6: BB: REX: 03 08:30:08: 0001466637: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 4000
+COM6: BB: REX: 03 08:30:08: 0001466645: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 112
+COM6: BB: REX: 03 08:30:08: 0001466651: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 3840
+COM6: BB: REX: 03 08:30:08: 0001466659: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 0
+COM6: BB: REX: 03 08:30:08: 0001466666: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 32
+COM6: BB: REX: 03 08:30:08: 0001466673: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 2222
+COM6: BB: REX: 03 08:30:08: 0001466679: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 59
+COM6: BB: REX: 03 08:30:08: 0001466687: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 2160
+COM6: BB: REX: 03 08:30:08: 0001466694: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+COM6: BB: REX: 03 08:30:08: 0001466701: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 5
+COM6: BB: REX: 03 08:30:08: 0001466708: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+COM6: BB: REX: 03 08:30:08: 0001466716: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+COM6: BB: REX: 03 08:30:08: 0001466722: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+COM6: BB: REX: 03 08:30:08: 0001466730: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 0
+COM6: BB: REX: 03 08:30:08: 0001466736: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 360
+COM6: BB: REX: 03 08:30:08: 0001466744: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+COM6: BB: REX: 03 08:30:08: 0001466753: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+COM6: BB: REX: 03 08:30:08: 0001466858: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+COM6: BB: REX: 03 08:30:08: 0001466874: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+COM6: BB: REX: 03 08:30:08: 0001467741: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+COM6: BB: REX: 03 08:30:08: 0001468082: iUsrLog: DP_COMPONENT          : Sent VCP Table
+COM6: BB: REX: 03 08:30:09: 0001468143: iUsrLog: DP_COMPONENT          : Sent Timing Report
+COM6: BB: REX: 03 08:30:09: 0002499462: ISTATUS Video Operational, 3840*2160, 59.99  Hz, 8 bits per component, color code 0x20
+COM6: BB: REX: 03 08:31:02: 0005036920: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 20
+COM6: BB: REX: 03 08:31:02: 0005036941: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+COM6: BB: REX: 03 08:31:02: 0005036977: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM6: BB: REX: 03 08:31:02: 0005047810: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 0
+COM6: BB: REX: 03 08:31:02: 0005047827: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+COM6: BB: REX: 03 08:31:02: 0005047858: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 5 in state 5
+COM6: BB: REX: 03 08:31:02: 0005047868: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 5
+COM6: BB: REX: 03 08:31:19: 0004805415: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+COM6: BB: REX: 03 08:31:19: 0004805443: iMjrEvt: DP_COMPONENT          : Utilzation is (7414)
+COM6: BB: REX: 03 08:31:19: 0004805468: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 10
+COM6: BB: REX: 03 08:31:19: 0004805477: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+COM6: BB: REX: 03 08:31:19: 0004805485: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+COM6: BB: REX: 03 08:31:19: 0004805516: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+COM6: BB: REX: 03 08:31:19: 0004805646: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+COM6: BB: REX: 03 08:31:19: 0004805665: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+COM6: BB: REX: 03 08:31:19: 0004805678: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+COM6: BB: REX: 03 08:31:19: 0004805696: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+COM6: BB: REX: 03 08:31:19: 0004805790: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+COM6: BB: REX: 03 08:31:19: 0004805829: iMjrEvt: DP_COMPONENT          : Utilzation is (7414)
+COM6: BB: REX: 03 08:31:19: 0004805862: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 47: Fraction 466 /1000
+COM6: BB: REX: 03 08:31:19: 0004805875: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+COM6: BB: REX: 03 08:31:19: 0004805883: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+COM6: BB: REX: 03 08:31:19: 0004805891: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+COM6: BB: REX: 03 08:31:19: 0004805898: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+COM6: BB: REX: 03 08:31:19: 0004805906: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 148286
+COM6: BB: REX: 03 08:31:19: 0004805912: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 150000
+COM6: BB: REX: 03 08:31:19: 0004805919: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 4000
+COM6: BB: REX: 03 08:31:19: 0004805926: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 112
+COM6: BB: REX: 03 08:31:19: 0004805934: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 3840
+COM6: BB: REX: 03 08:31:19: 0004805940: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 0
+COM6: BB: REX: 03 08:31:19: 0004805948: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 32
+COM6: BB: REX: 03 08:31:19: 0004805955: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 2222
+COM6: BB: REX: 03 08:31:19: 0004805962: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 59
+COM6: BB: REX: 03 08:31:19: 0004805969: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 2160
+COM6: BB: REX: 03 08:31:19: 0004805976: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+COM6: BB: REX: 03 08:31:19: 0004805983: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 5
+COM6: BB: REX: 03 08:31:19: 0004805991: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+COM6: BB: REX: 03 08:31:19: 0004805997: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+COM6: BB: REX: 03 08:31:19: 0004806005: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+COM6: BB: REX: 03 08:31:19: 0004806012: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 1
+COM6: BB: REX: 03 08:31:19: 0004806019: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 360
+COM6: BB: REX: 03 08:31:19: 0004806026: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+COM6: BB: REX: 03 08:31:19: 0004806036: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+COM6: BB: REX: 03 08:31:19: 0004806141: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+COM6: BB: REX: 03 08:31:19: 0004806154: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+COM6: BB: REX: 03 08:31:19: 0004807019: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+COM6: BB: REX: 03 08:31:19: 0004807362: iUsrLog: DP_COMPONENT          : Sent VCP Table
+COM6: BB: REX: 03 08:31:19: 0004807422: iUsrLog: DP_COMPONENT          : Sent Timing Report
+COM6: BB: REX: 03 08:31:20: 0005838601: ISTATUS Video Operational, 3840*2160, 59.93  Hz, 8 bits per component, color code 0x20
+COM6: BB: REX: 03 08:31:37: 0006431046: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 20
+COM6: BB: REX: 03 08:31:37: 0006431069: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+COM6: BB: REX: 03 08:31:37: 0006431104: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM6: BB: REX: 03 08:31:37: 0006441379: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 0
+COM6: BB: REX: 03 08:31:37: 0006441394: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+COM6: BB: REX: 03 08:31:37: 0006441426: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 5 in state 5
+COM6: BB: REX: 03 08:31:37: 0006441434: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 5
+COM6: BB: REX: 03 08:33:36: 0007671780: iMjrEvt: DP_COMPONENT          : Aux Generate Lex Active/Offline Phy:1, dpEnable:1, Host:0
+COM6: BB: REX: 03 08:33:36: 0007671814: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 7 in state 5
+COM6: BB: REX: 03 08:33:36: 0007671826: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 7
+COM6: BB: REX: 03 08:33:36: 0007671837: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+COM6: BB: REX: 03 08:33:36: 0007671845: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+COM6: BB: REX: 03 08:33:36: 0007671872: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+COM6: BB: REX: 03 08:33:36: 0007671881: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+COM6: BB: REX: 03 08:33:36: 0007930029: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+COM6: BB: REX: 03 08:33:36: 0007930049: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+COM6: BB: REX: 03 08:33:50: 0005540887: iMjrEvt: DP_COMPONENT          : Aux Generate Lex Active/Offline Phy:1, dpEnable:1, Host:1
+COM6: BB: REX: 03 08:33:50: 0005540943: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 11
+COM6: BB: REX: 03 08:33:50: 0005540954: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+COM6: BB: REX: 03 08:33:50: 0005540965: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 6
+COM6: BB: REX: 03 08:33:50: 0005540990: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+COM6: BB: REX: 03 08:33:50: 0005540999: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+COM6: BB: REX: 03 08:33:50: 0005541086: iUsrLog: DP_COMPONENT          : Sent Sink Params (CAP, EDID)
+COM6: BB: REX: 03 08:33:50: 0005541096: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 14
+COM6: BB: REX: 03 08:33:50: 0005541402: iMjrEvt: DP_COMPONENT          : Sink Parameters sent to LEX
+COM6: BB: REX: 03 08:33:57: 0012708776: iMjrEvt: DP_COMPONENT          : Got new host information: new streamParams = 1, new linkParams = 0
+COM6: BB: REX: 03 08:33:57: 0012708802: iMjrEvt: DP_COMPONENT          : Utilzation is (7416)
+COM6: BB: REX: 03 08:33:57: 0012708829: iMjrEvt: DP_COMPONENT          : MCCS send criteria ReadyToSend : 1, SendCount: 11
+COM6: BB: REX: 03 08:33:57: 0012708836: iMjrEvt: DP_COMPONENT          : MCCS send to LEX is pending
+COM6: BB: REX: 03 08:33:57: 0012708845: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 6 on event = 15
+COM6: BB: REX: 03 08:33:57: 0012708874: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 6 on event = 0
+COM6: BB: REX: 03 08:33:57: 0012709007: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 1
+COM6: BB: REX: 03 08:33:57: 0012709025: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 3
+COM6: BB: REX: 03 08:33:57: 0012709039: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 6, new state = 7 on event = 4
+COM6: BB: REX: 03 08:33:57: 0012709055: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 7 on event = 0
+COM6: BB: REX: 03 08:33:57: 0012709150: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 7, new state = 8 on event = 19
+COM6: BB: REX: 03 08:33:58: 0012709188: iMjrEvt: DP_COMPONENT          : Utilzation is (7416)
+COM6: BB: REX: 03 08:33:58: 0012709222: iMjrEvt: DP_STREAM_COMPONENT   : Average Valid Symbol: Int 47: Fraction 466 /1000
+COM6: BB: REX: 03 08:33:58: 0012709233: iMjrEvt: DP_STREAM_COMPONENT   : Enabling TICO decoder
+COM6: BB: REX: 03 08:33:58: 0012709242: iMjrEvt: DP_STREAM_COMPONENT   : Lane Count                  = 4
+COM6: BB: REX: 03 08:33:58: 0012709249: iMjrEvt: DP_STREAM_COMPONENT   : Bandwidth                   = 5.40 Gbps
+COM6: BB: REX: 03 08:33:58: 0012709257: iMjrEvt: DP_STREAM_COMPONENT   : Enhanced Framing            = 1
+COM6: BB: REX: 03 08:33:58: 0012709264: iMjrEvt: DP_STREAM_COMPONENT   : Mvid                        = 518464
+COM6: BB: REX: 03 08:33:58: 0012709271: iMjrEvt: DP_STREAM_COMPONENT   : Nvid                        = 524288
+COM6: BB: REX: 03 08:33:58: 0012709278: iMjrEvt: DP_STREAM_COMPONENT   : H Total                     = 4000
+COM6: BB: REX: 03 08:33:58: 0012709286: iMjrEvt: DP_STREAM_COMPONENT   : H Start                     = 112
+COM6: BB: REX: 03 08:33:58: 0012709292: iMjrEvt: DP_STREAM_COMPONENT   : H Width                     = 3840
+COM6: BB: REX: 03 08:33:58: 0012709300: iMjrEvt: DP_STREAM_COMPONENT   : H Polarity                  = 0
+COM6: BB: REX: 03 08:33:58: 0012709307: iMjrEvt: DP_STREAM_COMPONENT   : H Sync Width                = 32
+COM6: BB: REX: 03 08:33:58: 0012709314: iMjrEvt: DP_STREAM_COMPONENT   : V Total                     = 2222
+COM6: BB: REX: 03 08:33:58: 0012709320: iMjrEvt: DP_STREAM_COMPONENT   : V Start                     = 59
+COM6: BB: REX: 03 08:33:58: 0012709328: iMjrEvt: DP_STREAM_COMPONENT   : V Height                    = 2160
+COM6: BB: REX: 03 08:33:58: 0012709335: iMjrEvt: DP_STREAM_COMPONENT   : V Polarity                  = 1
+COM6: BB: REX: 03 08:33:58: 0012709342: iMjrEvt: DP_STREAM_COMPONENT   : V Sync Width                = 5
+COM6: BB: REX: 03 08:33:58: 0012709349: iMjrEvt: DP_STREAM_COMPONENT   : Misc Y Only                 = 0
+COM6: BB: REX: 03 08:33:58: 0012709357: iMjrEvt: DP_STREAM_COMPONENT   : Misc Stereo                 = 0
+COM6: BB: REX: 03 08:33:58: 0012709363: iMjrEvt: DP_STREAM_COMPONENT   : Misc Int Total              = 0
+COM6: BB: REX: 03 08:33:58: 0012709371: iMjrEvt: DP_STREAM_COMPONENT   : Misc Clock Sync             = 1
+COM6: BB: REX: 03 08:33:58: 0012709377: iMjrEvt: DP_STREAM_COMPONENT   : CS Packet Length            = 360
+COM6: BB: REX: 03 08:33:58: 0012709385: iMjrEvt: DP_STREAM_COMPONENT   : Color Code                  = 0x10 and BPP = 24
+COM6: BB: REX: 03 08:33:58: 0012709394: iMjrEvt: DP_COMPONENT          : Rex start sending MCCS to LEX
+COM6: BB: REX: 03 08:33:58: 0012709500: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 0
+COM6: BB: REX: 03 08:33:58: 0012709512: iMjrErr: DP_STREAM_COMPONENT   : DP Idle pattern interrupt occurred
+COM6: BB: REX: 03 08:33:58: 0012710384: iUsrLog: DP_COMPONENT          : Sent MCCS Capabilities
+COM6: BB: REX: 03 08:33:58: 0012710725: iUsrLog: DP_COMPONENT          : Sent VCP Table
+COM6: BB: REX: 03 08:33:58: 0012710786: iUsrLog: DP_COMPONENT          : Sent Timing Report
+COM6: BB: REX: 03 08:33:58: 0013741657: ISTATUS Video Operational, 3840*2160, 59.93  Hz, 8 bits per component, color code 0x20
+COM6: BB: REX: 03 08:34:36: 0001332010: iMjrErr: DP_STREAM_COMPONENT   : DP FIFO SDP Overflow interrupt occurred
+COM6: BB: REX: 03 08:34:36: 0001332024: iMjrEvt: DP_COMPONENT          : Aux got DP ISR Type = 0x20
+COM6: BB: REX: 03 08:34:36: 0001332047: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 25
+COM6: BB: REX: 03 08:34:36: 0001332058: iMjrErr: DP_STREAM_COMPONENT   : DP FIFO SDP Overflow interrupt occurred
+COM6: BB: REX: 03 08:34:36: 0001332065: iMjrEvt: DP_COMPONENT          : Aux got DP ISR Type = 0x20
+COM6: BB: REX: 03 08:34:36: 0001332078: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 8 on event = 25
+COM6: BB: REX: 03 08:34:36: 0001332992: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 8, new state = 5 on event = 22
+COM6: BB: REX: 03 08:34:36: 0001333005: iMjrEvt: DP_COMPONENT          : Sending dummy video to the monitor
+COM6: BB: REX: 03 08:34:36: 0001333037: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 0
+COM6: BB: REX: 03 08:34:36: 0001333115: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+COM6: BB: REX: 03 08:34:36: 0001333125: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+COM6: BB: REX: 03 08:34:36: 0001343002: iMjrEvt: DP_COMPONENT          : Aux DP Channel Status: 0
+COM6: BB: REX: 03 08:34:36: 0001343019: iMjrErr: DP_COMPONENT          : Aux detect MCA link down or disabled.
+COM6: BB: REX: 03 08:34:36: 0001343050: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 5 in state 5
+COM6: BB: REX: 03 08:34:36: 0001343059: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 5
+COM6: BB: REX: 03 08:35:05: 0013082596: iMjrEvt: DP_COMPONENT          : Aux Generate Lex Active/Offline Phy:1, dpEnable:1, Host:0
+COM6: BB: REX: 03 08:35:05: 0013082632: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 7 in state 5
+COM6: BB: REX: 03 08:35:05: 0013082642: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 7
+COM6: BB: REX: 03 08:35:05: 0013082655: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+COM6: BB: REX: 03 08:35:05: 0013082661: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+COM6: BB: REX: 03 08:35:05: 0013082690: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+COM6: BB: REX: 03 08:35:05: 0013082698: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20
+COM6: BB: REX: 03 08:35:05: 0013341119: iMjrErr: DP_COMPONENT          : Policy maker: got invalid event 20 in state 5
+COM6: BB: REX: 03 08:35:05: 0013341137: iMjrEvt: DP_COMPONENT          : Policy maker: old state = 5, new state = 5 on event = 20

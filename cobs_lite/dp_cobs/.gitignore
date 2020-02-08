@@ -1,0 +1,11 @@
+ErrorLog.txt
+Hobbes.pyproj
+Hobbes.sln
+Hobbes.suo
+.project
+.pydevproject
+Log
+Settings/PreviousSession.hbs
+*.sw*
+*.old
+*.pyc
