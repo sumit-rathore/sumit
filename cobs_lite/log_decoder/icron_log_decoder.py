@@ -1,5 +1,4 @@
 import sys
-import argparse
 import gzip
 import struct
 import threading
@@ -127,72 +126,70 @@ class IcronLogFileDecoder():
 log_file_decoder = IcronLogFileDecoder()
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter,
-            description = "use: icron_log_decoder.py -f input.gz -i icron.icron > out.txt")
-    parser.add_argument("-f", "--file", help="input .gzip file")
-    parser.add_argument("-i", "--icron", help="icron file")
-    args = parser.parse_args()
+    if len(sys.argv) == 3:
+        try:
+            log_file = sys.argv[1]
+            icron_file = sys.argv[2]
+       
+            log_file_decoder = IcronLogFileDecoder()
 
-    try:
-        log_file = args.file
-        icron_file = args.icron
+            iparsed_file = ifp.IcronParsedFile(icron_file) 
 
-        log_file_decoder = IcronLogFileDecoder()
+            for project in iparsed_file.projects:
+                short_device_name = iparsed_file.get_short_device_name(project)
+                ilog_model = im.IcronILogModel(
+                                            project,
+                                            iparsed_file.get_icomponent_json(project),
+                                            iparsed_file.get_ilog_json(project),
+                                            iparsed_file.get_severity_json(project))
 
-        iparsed_file = ifp.IcronParsedFile(icron_file)
+                ilog_decoder = ilg.ILogDecoder(ilog_model)
 
-        for project in iparsed_file.projects:
-            short_device_name = iparsed_file.get_short_device_name(project)
-            ilog_model = im.IcronILogModel(
-                                        project,
-                                        iparsed_file.get_icomponent_json(project),
-                                        iparsed_file.get_ilog_json(project),
-                                        iparsed_file.get_severity_json(project))
+                ichannel_model = im.IcronChannelIdModel(
+                                            project,
+                                            iparsed_file.get_ichannel_id_json(project))
 
-            ilog_decoder = ilg.ILogDecoder(ilog_model)
+                istatus_model = im.IcronIStatusModel(project, iparsed_file.get_istatus_json(project))
 
-            ichannel_model = im.IcronChannelIdModel(
-                                        project,
-                                        iparsed_file.get_ichannel_id_json(project))
+                istatus_decoder = iis.IStatusDecoder(istatus_model)
 
-            istatus_model = im.IcronIStatusModel(project, iparsed_file.get_istatus_json(project))
+                ilog_channel_id = ichannel_model.ilog_channel_id
 
-            istatus_decoder = iis.IStatusDecoder(istatus_model)
+                istatus_channel_id = ichannel_model.istatus_channel_id
 
-            ilog_channel_id = ichannel_model.ilog_channel_id
+                printf_channel_id = ichannel_model.printf_channel_id
 
-            istatus_channel_id = ichannel_model.istatus_channel_id
+                device_info_channel_id = ichannel_model.program_status_channel_id
 
-            printf_channel_id = ichannel_model.printf_channel_id
+                log_file_decoder.register_channel_packet_attributes(
+                                                        ilog_channel_id,
+                                                        short_device_name,
+                                                        ilg.parse_ilog, 
+                                                        ilog_decoder.decode)
 
-            device_info_channel_id = ichannel_model.program_status_channel_id
+                log_file_decoder.register_channel_packet_attributes(
+                                                        istatus_channel_id,
+                                                        short_device_name,
+                                                        iis.parse_istatus,
+                                                        istatus_decoder.decode)
 
-            log_file_decoder.register_channel_packet_attributes(
-                                                    ilog_channel_id,
-                                                    short_device_name,
-                                                    ilg.parse_ilog, 
-                                                    ilog_decoder.decode)
+                log_file_decoder.register_channel_packet_attributes(
+                                                        printf_channel_id,
+                                                        short_device_name,
+                                                        None,
+                                                        None)
 
-            log_file_decoder.register_channel_packet_attributes(
-                                                    istatus_channel_id,
-                                                    short_device_name,
-                                                    iis.parse_istatus,
-                                                    istatus_decoder.decode)
+                log_file_decoder.register_channel_packet_attributes(
+                                                        device_info_channel_id,
+                                                        short_device_name,
+                                                        None,
+                                                        idi.decode_info_message)
 
-            log_file_decoder.register_channel_packet_attributes(
-                                                    printf_channel_id,
-                                                    short_device_name,
-                                                    None,
-                                                    None)
+            log_file_decoder.register_log_message_handler(sys.stdout.write)
+            log_file_decoder.decode(log_file)
+            log_file_decoder.remove_log_message_handler(sys.stdout.write)
+        except:
+            traceback.print_exc()
 
-            log_file_decoder.register_channel_packet_attributes(
-                                                    device_info_channel_id,
-                                                    short_device_name,
-                                                    None,
-                                                    idi.decode_info_message)
-
-        log_file_decoder.register_log_message_handler(sys.stdout.write)
-        log_file_decoder.decode(log_file)
-        log_file_decoder.remove_log_message_handler(sys.stdout.write)
-    except:
-        traceback.print_exc()
+    else:
+        print("USAGE: icron_log_decoder.py [log.gz] [icron_file] > [output.txt]\n")
