@@ -2,7 +2,7 @@ import argparse
 import serial
 import serial.tools.list_ports
 import script_lib.icron_file_parser as ifp
-import script_lib.load_icron_model as lim
+import script_lib.loaded_icron_file as lif
 import threading as Threading
 
 import time
@@ -51,7 +51,7 @@ if __name__ == "__main__":
     ser.flushOutput()
 
     iparsed_file = ifp.IcronParsedFile(args.icron_file)
-    loaded_icron_file = lim.Loaded_icron_file(iparsed_file, "blackbird")
+    loaded_icron_file = lif.Loaded_icron_file(iparsed_file, "blackbird")
 
     icmd_obj = loaded_icron_file.create_icmd("TOPLEVEL_COMPONENT", "PrintSwVersion", False)
     icmd_thread = Threading.Thread(target = loaded_icron_file.send_icmd, args=(icmd_obj, ser, args.device, args.baud,))
@@ -60,6 +60,15 @@ if __name__ == "__main__":
     icmd_thread.join()
     print(icmd_thread.isAlive())
 
-    bw_lc_testSequence(ser, args.device, args.baud, args.time_delay)
+#    icmd_obj = loaded_icron_file.create_icmd("TOPLEVEL_COMPONENT", "PrintSwVersion", False)
+#    icmd_thread = Threading.Thread(target = loaded_icron_file.send_icmd_wait_for_response, args=(icmd_obj, ser, args.device, args.baud,))
+#    response = loaded_icron_file.send_icmd_wait_for_response(icmd_obj, ser, args.device, args.baud)
+    #icmd_thread.Name = self.Text.replace("Cobs", "PrintSwVersion")
+#    icmd_thread.start()
+#    icmd_thread.join()
+#    print("response =")
+#    print(response)
+
+    #bw_lc_testSequence(ser, args.device, args.baud, args.time_delay)
 
     ser.close()
