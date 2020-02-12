@@ -53,12 +53,24 @@ if __name__ == "__main__":
     iparsed_file = ifp.IcronParsedFile(args.icron_file)
     loaded_icron_file = lif.Loaded_icron_file(iparsed_file, "blackbird")
 
-    icmd_obj = loaded_icron_file.create_icmd("TOPLEVEL_COMPONENT", "PrintSwVersion", False)
+    icmd_obj = loaded_icron_file.create_icmd("DP_COMPONENT", "DP_PmLogState", False)
     icmd_thread = Threading.Thread(target = loaded_icron_file.send_icmd, args=(icmd_obj, ser, args.device, args.baud,))
-    #icmd_thread.Name = self.Text.replace("Cobs", "PrintSwVersion")
     icmd_thread.start()
     icmd_thread.join()
+    num_args, response = loaded_icron_file.get_icmd_resp(ser)
+    print(num_args)
+    print(response)
     print(icmd_thread.isAlive())
+
+    icmd_obj = loaded_icron_file.create_icmd("CORE_COMPONENT", "BBCORE_printHWModuleVersion", False)
+    icmd_thread = Threading.Thread(target = loaded_icron_file.send_icmd, args=(icmd_obj, ser, args.device, args.baud,))
+    icmd_thread.start()
+    icmd_thread.join()
+    num_args, response = loaded_icron_file.get_icmd_resp(ser)
+    print(num_args)
+    print(response)
+    print(icmd_thread.isAlive())
+
 
 #    icmd_obj = loaded_icron_file.create_icmd("TOPLEVEL_COMPONENT", "PrintSwVersion", False)
 #    icmd_thread = Threading.Thread(target = loaded_icron_file.send_icmd_wait_for_response, args=(icmd_obj, ser, args.device, args.baud,))

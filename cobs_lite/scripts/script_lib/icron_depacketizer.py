@@ -1,4 +1,4 @@
-import pyevent
+from script_lib import pyevent
 import traceback
 #from cobs_logger import cbs_logger
 
@@ -118,7 +118,7 @@ class Depacketizer():
             if self.__state == 3:
                 #print "s3: i={} byte_list={}".format(i, byte_list)
                 if i < len(byte_list):
-                    if byte_list[i] in xrange(0, 256):
+                    if byte_list[i] in range(0, 256):
                         self.__response_id = byte_list[i]
                         self.__state = 4
                         i += 1
@@ -131,7 +131,7 @@ class Depacketizer():
             if self.__state == 4:
                 #print "s4: i={} byte_list={}".format(i, byte_list)
                 if i < len(byte_list):
-                    if byte_list[i] in xrange(0, 256):
+                    if byte_list[i] in range(0, 256):
                         self.__payload_length = byte_list[i]
                         self.__state = 5
                         i += 1
@@ -210,7 +210,7 @@ class Depacketizer():
 
             elif self.__state == 3:
                 #cbs_logger.info("In RESPONSE_ID_STATE: {}".format(self.__response_id))
-                if byte in xrange(0, 256):
+                if byte in range(0, 256):
                     self.__response_id = byte
                     self.__state = 4
                 else:
@@ -219,7 +219,7 @@ class Depacketizer():
 
             elif self.__state == 4:
                 #cbs_logger.info("In PAYLOAD_LENGTH_STATE: {}".format(self.__payload_length))
-                if byte in xrange(0, 256):
+                if byte in range(0, 256):
                     self.__payload_length = byte
                     self.__state = 5
                 else:

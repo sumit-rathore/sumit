@@ -5,6 +5,7 @@ import script_lib.icron_ilog as ilg
 import script_lib.icron_istatus as iis
 import script_lib.icron_icmd as icd
 import script_lib.icron_packetizer as ipk
+import script_lib.icron_depacketizer as idp
 
 class Loaded_icron_file:
 
@@ -16,6 +17,9 @@ class Loaded_icron_file:
         self.icmd_response_validator = {}
         self.icmd_response_result = {}
         self.icmd_channel_id = None
+        self.depacketizer = idp.Depacketizer()
+        #TODO: update all?
+        self.depacketizer.update_channel_id([x for x in range(256)])
         self.load_icron_model()
 
     def load_icron_model(self):
@@ -135,6 +139,32 @@ class Loaded_icron_file:
             print("{}: {}: Got an error when sending icmd". \
                                 format(port, self.device_name))
 
+    """
+        The following function gets the icmd response string from the firmware and
+        returns the arguments from the response
+    """
+    def get_icmd_resp(self, ser):
+        wait_interval = 0.25
+        start_time = time.time()
+        icmdResp = []
+        args = []
+        if(ser.is_open):
+            while time.time() - start_time < wait_interval:
+                size = ser.inWaiting()
+                if size:
+                    data = ser.read(size)
+                    for i in data:
+                        icmdResp.append(i)
+        print(icmdResp[5:30])
+        num_args = icmdResp[5] & 0x3
+        if num_args == 1:
+            args = [icmdResp[16]]
+        elif num_args == 2:
+            args = [icmdResp[16], icmdResp[20]]
+        elif num_args == 3:
+            args = [icmdResp[16], icmdResp[20], icmdResp[24]]
+
+        return num_args, args
 
     def send_icmd_wait_for_response(self, icmd_obj, ser, port, rate):
         """
