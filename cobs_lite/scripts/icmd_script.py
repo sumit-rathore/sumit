@@ -28,6 +28,12 @@ def restartLinkTraining(ser):
     ser.write([1, 0, 129, 255, 3, 152, 7, 37, 4])
 
 
+def executeIcmd(icmd_obj, ser):
+    icmd_thread = Threading.Thread(target = loaded_icron_file.send_icmd, args=(icmd_obj, ser,))
+    icmd_thread.start()
+    icmd_thread.join()
+
+
 
 if __name__ == "__main__":
     comPorts = list(serial.tools.list_ports.comports())
@@ -51,35 +57,27 @@ if __name__ == "__main__":
     ser.flushOutput()
 
     iparsed_file = ifp.IcronParsedFile(args.icron_file)
-    loaded_icron_file = lif.Loaded_icron_file(iparsed_file, "blackbird")
+    loaded_icron_file = lif.Loaded_icron_file(iparsed_file, "blackbird", args.device, args.baud)
 
-    icmd_obj = loaded_icron_file.create_icmd("DP_COMPONENT", "DP_PmLogState", False)
-    icmd_thread = Threading.Thread(target = loaded_icron_file.send_icmd, args=(icmd_obj, ser, args.device, args.baud,))
-    icmd_thread.start()
-    icmd_thread.join()
+#   icmd_obj = loaded_icron_file.create_icmd("DP_COMPONENT", "DP_PmLogState", False)
+#    executeIcmd(icmd_obj, ser)
+#   num_args, response = loaded_icron_file.get_icmd_resp(ser)
+#   print(num_args)
+#   print(response)
+#   print(icmd_thread.isAlive())
+
+#   icmd_obj = loaded_icron_file.create_icmd("CORE_COMPONENT", "BBCORE_printHWModuleVersion", False)
+#   executeIcmd(icmd_obj, ser)
+#   num_args, response = loaded_icron_file.get_icmd_resp(ser)
+#   print(num_args)
+#   print(response)
+
+    icmd_obj = loaded_icron_file.create_icmd("DP_COMPONENT", "DP_SetBwLc", False, [0x14, 0x4])
+    executeIcmd(icmd_obj, ser)
     num_args, response = loaded_icron_file.get_icmd_resp(ser)
     print(num_args)
     print(response)
-    print(icmd_thread.isAlive())
 
-    icmd_obj = loaded_icron_file.create_icmd("CORE_COMPONENT", "BBCORE_printHWModuleVersion", False)
-    icmd_thread = Threading.Thread(target = loaded_icron_file.send_icmd, args=(icmd_obj, ser, args.device, args.baud,))
-    icmd_thread.start()
-    icmd_thread.join()
-    num_args, response = loaded_icron_file.get_icmd_resp(ser)
-    print(num_args)
-    print(response)
-    print(icmd_thread.isAlive())
-
-
-#    icmd_obj = loaded_icron_file.create_icmd("TOPLEVEL_COMPONENT", "PrintSwVersion", False)
-#    icmd_thread = Threading.Thread(target = loaded_icron_file.send_icmd_wait_for_response, args=(icmd_obj, ser, args.device, args.baud,))
-#    response = loaded_icron_file.send_icmd_wait_for_response(icmd_obj, ser, args.device, args.baud)
-    #icmd_thread.Name = self.Text.replace("Cobs", "PrintSwVersion")
-#    icmd_thread.start()
-#    icmd_thread.join()
-#    print("response =")
-#    print(response)
 
     #bw_lc_testSequence(ser, args.device, args.baud, args.time_delay)
 

@@ -9,9 +9,11 @@ import script_lib.icron_depacketizer as idp
 
 class Loaded_icron_file:
 
-    def __init__(self, icron_parsed_file, device):
+    def __init__(self, icron_parsed_file, device, port, baud_rate):
         self.icron_parsed_file = icron_parsed_file
         self.device_name = device
+        self.port = port
+        self.rate = baud_rate
         self.icmd_response_id = 0
         self.ipacket_handlers = {}
         self.icmd_response_validator = {}
@@ -113,7 +115,7 @@ class Loaded_icron_file:
         else:
             return self.icmd_encoder.encode(component_name, function_name, arguments[0])
 
-    def send_icmd(self, icmd_obj, ser, port, rate, response=False):
+    def send_icmd(self, icmd_obj, ser, response=False):
         """
         Send icmd by writing the data packet of icmd to serial port.
 
@@ -121,6 +123,7 @@ class Loaded_icron_file:
                    response - whether sender expects a response from device
         """
         try:
+            print("len(icmd.obj.as_integer_list = ", len(icmd_obj.as_integer_list))
             packet = ipk.packetize(
                             self.icmd_channel_id,
                             len(icmd_obj.as_integer_list),
@@ -133,11 +136,11 @@ class Loaded_icron_file:
 
             ser.write(packet)
             print("{}: {}: Trying to send an icmd with a packet of {}". \
-                            format(port, self.device_name, packet))
+                            format(self.port, self.device_name, packet))
 
         except:
             print("{}: {}: Got an error when sending icmd". \
-                                format(port, self.device_name))
+                                format(self.port, self.device_name))
 
     """
         The following function gets the icmd response string from the firmware and
@@ -166,7 +169,7 @@ class Loaded_icron_file:
 
         return num_args, args
 
-    def send_icmd_wait_for_response(self, icmd_obj, ser, port, rate):
+    def send_icmd_wait_for_response(self, icmd_obj, ser):
         """
         Send icmd to device and wait for its response.
 
@@ -180,7 +183,7 @@ class Loaded_icron_file:
             print(
                 "{}: {}: Sending an icmd and waiting for response: respon_id={} chan_id={}". \
                     format(
-                        port,
+                        self.port,
                         self.device_name,
                         self.icmd_response_id,
                         self.icmd_channel_id))
@@ -190,11 +193,11 @@ class Loaded_icron_file:
                     self.icmd_response_id,
                     self.icmd_channel_id)
 
-            self.send_icmd(icmd_obj, ser, port, rate, True)
+            self.send_icmd(icmd_obj, ser, self.port, self.rate, True)
             return self._poll_icmd_response(self.icmd_response_id, self.icmd_channel_id)
         except:
             print("{}: {}: Got an error when sending icmd and waiting for response:" \
-                                .format(port, self.device_name))
+                                .format(self.port, self.device_name))
 
     def _decode_icmd_response(self, packet, timestamp=None):
         """
@@ -228,7 +231,7 @@ class Loaded_icron_file:
                         response_payload)
 
         except icr.IcmdResponseError as e:
-            error_message = "{}: {}: ".format(self.port_name, self.device_name) + str(e)
+            error_message = "{}: {}: ".format(self.port, self.device_name) + str(e)
             cbs_logger.exception(error_message)
             Forms.MessageBox.Show(
                 error_message,
@@ -237,7 +240,7 @@ class Loaded_icron_file:
                 Forms.MessageBoxIcon.Error)
         except:
             error_message = "{}: {}: Got an error when decoding icmd response". \
-                    format(self.port_name, self.device_name)
+                    format(self.port, self.device_name)
             error_string = error_message + "\n" + \
                     "{}: {}".format(sys.exc_info()[0], sys.exc_info()[1])
             cbs_logger.exception(error_string)

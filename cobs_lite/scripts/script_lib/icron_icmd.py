@@ -27,8 +27,8 @@ class Icmd():
         if len(self.args_list) == 0:
             header = icmd_header_signature << 3
         else:
-            header = icmd_header_signature << 3 | (len(self.args_list) / 4)
-        icmd = [header, self.component_index, self.function_index] 
+            header = icmd_header_signature << 3 | int(len(self.args_list) / 4)
+        icmd = [header, self.component_index, self.function_index]
         icmd.extend(self.args_list)
         return icmd
 
@@ -87,21 +87,10 @@ class IcmdEncoder():
                         arg_int = int(arg, 0) if isinstance(arg, str) else int(arg)
                         pack_format = IcmdEncoder.get_pack_format(arg_type)
                         pack_byte = struct.pack(pack_format, arg_int)
-
-                        # TODO: check if the given argument value is within the range bounded by
-                        # the defined c type.  struct.pack should raise an exception if the arg_int
-                        # is out of the range. However, it doesn't work for unsigned numbers i.e.
-                        # 'B', 'H'. This is a bug in Ironpython and Python2.6. The IcmdValueError
-                        # can be removed when we migrate to CPython.
-                        if arg_int > 0 and struct.unpack('>L', pack_byte)[0] != arg_int:
-                            raise IcmdArgValueError(
-                                    "Icmd argument is out of range for the defined type {}". \
-                                            format(arg_type),
-                                    component_string,
-                                    function_string,
-                                    arguments)
                         arg_bytes += pack_byte
-                    args_list = [ord(byte) for byte in arg_bytes]
+
+                    #args_list = [ord(byte) for byte in arg_bytes]
+                    args_list = list(arg_bytes)
 
                 return Icmd(component_index, function_index, args_list)
             else:
