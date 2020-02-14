@@ -1,0 +1,11 @@
+component:XAUI_COMPONENT
+L:XAUI_TEST S:XAUI code at line = %d\n
+L:XAUI_FAIL_TX_ALIGN S:RXAUI TX is not aligned before Aquantia release reset\n
+L:XAUI_STAT_GT0_DISP_ERR S:STAT:RXAUI rxaui->stats0->gt0_disp_err = 0x%x\n
+L:XAUI_STAT_GT0_NOT_IN_TBL S:STAT:RXAUI rxaui->stats0->gt0_not_in_table = 0x%x\n
+L:XAUI_STAT_GT1_DISP_ERR S:STAT:RXAUI rxaui->stats0->gt1_disp_err = 0x%x\n
+L:XAUI_STAT_GT1_NOT_IN_TBL S:STAT:RXAUI rxaui->stats0->gt1_not_in_table = 0x%x\n
+L:XAUI_STAT_MISSING_START S:STAT:RXAUI rxaui->stats0->missing_start = 0x%x\n
+L:XAUI_RX_ALIGN S:RXAUI RX align ISR %d\n
+L:XAUI_RX_TOGGLE_RESET S:RXAUI RX reset toggle\n
+L:XAUI_RESET_RX_BUFFERS S:RXAUI elasticity buffers reset\n

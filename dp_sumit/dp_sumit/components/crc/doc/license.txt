@@ -1,0 +1,35 @@
+This component uses a public domain CRC implementation, and a wraps it up in a
+Icron component.  Icron adds the makefile, and /doc/ files
+
+
+
+The files crc.h, crc.c and main.c have the following copyright
+
+/**********************************************************************
+ * Copyright (c) 2000 by Michael Barr.  This software is placed into
+ * the public domain and may be used for any purpose.  However, this
+ * notice must not be changed or removed and no warranty is either
+ * expressed or implied by its publication or distribution.
+ **********************************************************************/
+
+They were taken from http://www.barrgroup.com/code/crc.zip
+
+
+All other files
+
+///////////////////////////////////////////////////////////////////////////////
+///
+///   Icron Technology Corporation - Copyright 2012
+///
+///
+///   This source file and the information contained in it are confidential and
+///   proprietary to Icron Technology Corporation. The reproduction or
+///   disclosure, in whole or in part, to anyone outside of Icron without the
+///   written approval of a Icron officer under a Non-Disclosure Agreement, or
+///   to any employee of Icron who has not previously obtained written
+///   authorization for access from the individual responsible for the source
+///   code, will have a significant detrimental effect on Icron and is
+///   expressly prohibited.
+///
+///////////////////////////////////////////////////////////////////////////////
+

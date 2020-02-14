@@ -1,0 +1,78 @@
+component:I2C_COMPONENT
+L:I2C_FIFO_OVER_FLOW S:I2C fifo overflow\n
+L:I2C_FIFO_UNDER_FLOW S:I2C fifo underflow\n
+L:I2C_OPERATIONS S:I2C: %d tasks in fifo, current task: device 0x%x, i2c op 0x%x\n
+L:I2C_NO_OPERATIONS S:I2C: no operations in progress\n
+L:I2C_WAKE_LOG S:i2c: performing wake\n
+L:I2C_WAKE_DONE S:i2c: wake done\n
+L:I2C_READ_LOG S:i2c: read of device %d, for %d bytes\n
+L:I2C_READ_DONE S:i2c: done read %d bytes, contents 0x%x\n
+L:I2C_WRITE_LOG S:i2c: write device %d, byteCount %d\n
+L:I2C_WRITE_DONE S:i2c: write complete\n
+L:I2C_WRITE_FAILED S:i2c: write failed\n
+L:I2C_TRN_ERROR S:i2c: TRN ERR (0x%x)\n
+L:TIME_MARKER_ S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing \n
+L:TIME_MARKER_I2C_START S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing i2cStartInterface\n
+L:TIME_MARKER_I2C_WAKE_START S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing i2c wake start\n
+L:TIME_MARKER_I2C_WAKE_STOP S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing \n
+L:TIME_MARKER_FINALIZE_OP S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing finalize operation\n
+L:TIME_MARKER_SUBMIT_OP S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing submit operation\n
+L:I2C_INVALID_TASK_STATE S:i2c: invalid state at line %d, device 0x%x, operation 0x%x\n
+L:I2C_READ_TOO_MANY_BYTES S:i2c read too many bytes at line %d. Expected %d\n
+L:I2C_IRQ_LOG S:Interrupts 0x%x triggered\n
+L:I2C_IRQ_UNSERVICED S:Interrupts 0x%x were unserviced\n
+L:IRQ_HANDLER_NOT_SET S:Interrupt Handler is not set for pin %d\n
+L:REGISTERING_IRQ S:Registering Interrrupt handler for pin %d\n
+L:SERVICING_IRQ S:Servicing Interrupt for pin %d\n
+L:DISABLING_IRQ S:Disabling Interrupt for pin %d\n
+L:ENABLING_IRQ S:Enabling Interrupt for pin %d\n
+L:I2C_START_READ S:I2C read started for %d bytes\n
+L:I2C_START_WRITE S:I2C write started\n
+L:I2C_READ_FINISH S:I2C read finished\n
+L:I2C_WRITE_FINISH S:I2C write finished\n
+L:I2C_DO_WAKE_OP S:I2C do wake op %d\n
+L:I2C_WAKE_COMPLETE S:I2C wake complete\n
+L:I2C_WRITE2 S:i2c write data is 0x%x 0x%x\n
+L:I2C_CONTROLREG_READ S:I2C Control Reg is 0x%x\n
+L:I2C_START_WRITE_READ S:I2C writeRead started for %d bytes to write, %d bytes to read\n
+L:I2C_OPERATIONS_QUEUED S:I2C: %d operations queued, nothing in progress\n
+L:I2C_START_WRITE_READ_BLOCK S:I2C writeReadBlock started for %d bytes to write, %d maximum bytes to read\n
+L:I2C_RANDOM_READ_1BYTE_RESP S:I2C Random 1 Byte Read: Register: 0x%x; Value: 0x%x\n
+L:I2C_ICMD_READ_ERR S:I2C icmd read error - max read of 8 bytes\n
+L:I2C_ICMD_WRITEREAD_ERR S:I2C icmd write read error - max read of 8 bytes\n
+L:I2C_ICMD_WRITEREAD_DONE S:I2C icmd write read %d bytes, data 0x%x 0x%x\n
+L:UNSUPPORTED_PORT S:i2cSwitchPort = %d is unsupported\n
+L:ADDRESS_PORT_ALREADY_EXIST S:i2cAddress = 0x%x, portNumber = 0x%x already exist in the i2cDeviceList\n
+L:ADDRESS_NOT_EXISTS_FOR_HANDLE S:i2cAddress = 0x%x is not registered to TI switch port %d\n
+L:SETUP_SWITCH_FOR_ACCESS S:Setting up I2C switch for access to address %d on port %d\n
+L:CTRLLR_I2C_CONTROLLER_FIFO_OVERFLOW S:I2C operation FIFO overflow at line %d\n
+L:CTRLLR_I2C_CONTROLLER_FIFO_UNDERFLOW S:I2C operation FIFO underflow at line %d\n
+L:CTRLLR_UNHANDLED_SWITCH_CASE S:Execution reached an unhandled case of a switch statement.\n
+L:CTRLLR_I2C_CTRL_WRITE_ICMD_0 S:I2C controller write - deviceAddress=0x%x, speed=%d, switchPort=%d\n
+L:CTRLLR_I2C_CTRL_WRITE_ICMD_1 S:    byteCount=%d, dataMSW=0x%x, dataLSW=0x%x\n
+L:CTRLLR_I2C_CTRL_READ_ICMD_0 S:I2C controller read - deviceAddress=0x%x, speed=%d, switchPort=%d\n
+L:CTRLLR_I2C_CTRL_READ_ICMD_1 S:    byteCount=%d\n
+L:CTRLLR_I2C_CTRL_WRITE_READ_ICMD_0 S:I2C controller write-read - deviceAddress=0x%x, speed=%d, switchPort=%d\n
+L:CTRLLR_I2C_CTRL_WRITE_READ_ICMD_1 S:    writeByteCount=%d, writeData=0x%x, readByteCount=%d\n
+L:CTRLLR_I2C_CTRL_BLOCK_WRITE_READ_ICMD_0 S:I2C controller block write-read - deviceAddress=0x%x, speed=%d, switchPort=%d\n
+L:CTRLLR_I2C_CTRL_BLOCK_WRITE_READ_ICMD_1 S:    writeByteCount=%d, writeData=0x%x\n
+L:CTRLLR_I2C_CTRL_WRITE_COMPLETE S:I2C controller write complete.  Success=%d.\n
+L:CTRLLR_I2C_CTRL_READ_COMPLETE S:I2C controller read complete.  byteCount=%d, dataMSW=0x%x, dataLSW=0x%x.\n
+L:CTRLLR_I2C_CTRL_WRITE_READ_COMPLETE S:I2C controller write-read complete.  byteCount=%d, dataMSW=0x%x, dataLSW=0x%x.\n
+L:CTRLLR_I2C_CTRL_BLOCK_WRITE_READ_COMPLETE S:I2C controller block write-read complete.  byteCount=%d, dataMSW=0x%x, dataLSW=0x%x.\n
+L:CTRLLR_INVALID_I2C_ADDRESS S:Invalid I2C address: 0x%x\n
+L:CTRLLR_INVALID_I2C_SPEED S:Invalid I2C speed: %d\n
+L:CTRLLR_INVALID_SWITCH_PORT S:Invalid I2C switch port: %d\n
+L:CTRLLR_INVALID_BYTE_COUNT S:Invalid byte count. Given: %d, Max: %d.\n
+L:CTRLLR_INVALID_MUX_PORT S:Invalid I2C rtl Mux port: %d, line: %d\n
+L:I2C_POOL_IS_FULL S:I2C memory pool is full with size = %d, can't allocate a new element\n
+L:I2C_WRITE_GO_TIMEOUT S:I2C Blocking write timeout on Go bit. i2c_control: %x\n
+L:I2C_READ_GO_TIMEOUT S:I2C Blocking read timeout on Go bit\n
+L:I2C_WRITE_READ_GO_TIMEOUT S:I2C Blocking write-read timeout on Go bit\n
+L:I2C_BLOCKING_OP_IN_PROGRESS S:I2C Blocking (device:0x%x) cancelled - op (device:0x%x) in progress at line %d\n
+L:I2C_BLOCKING_ERROR S:I2C Blocking error at line %d\n
+L:I2C_FIFO_OVERFLOW_CALLBACK S:I2C FIFO overflow. Callback address = 0x%x\n
+L:I2C_FIFO_PRINT_CALLBACK S:I2C fifo idx = %d; callback = 0x%x\n
+L:I2C_UNEXPECTED_INT_DONE S:Unexpected I2C Interrupt\n
+L:I2C_SWITCH_SELECT_PORTS S:Reconfiguring I2C switch.  New ports enabled=0x%x\n
+L:I2C_CONTROL_SWITCH_ERROR S:Tried control I2C switch during operation\n

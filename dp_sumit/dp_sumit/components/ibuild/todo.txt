@@ -1,0 +1,35 @@
+
+precompiled headers support
+
+lint rules (splint), or cppcheck (cppcheck seems better):
+    would require us to separately exports DEFNFLAGS, and any extra INCLUDEFLAGS
+    Also need -systemdirs, with arg as "${CC} -print-search-dirs |  ${AWK} '/^install/ {print $2}'"
+
+
+test rules:
+    unit tests with HOSTCC & run them after, with a failing or passing condition.  Could use TAP
+    make T= options to build only tests, or don't build tests at all.  Also test harnesses or unit tests
+
+test harnesses with library support, like the Rexsch does with the extra C files
+
+
+add build rules for different TARGET_TYPEs
+    starting with a rule to just build dependencies
+        useful for a top level project component that can depend on components that create the programs & libs
+    a rule to create .icron files
+
+add section input variable for defining linker files
+    this would allow test harnesses to optionally use their own, but still grab top level LDFLAGS
+
+update the powerpoint presentation
+
+update doc/icron_file_format.txt
+
+*** Need some standardization of make variable names ***
+    Perhaps:
+        ibuild_arg_<argument name>      - For arguments from individual makefiles to ibuild
+        ibuild_out_<output name>        - For output from ibuild to makefiles, eg.  target/object directories
+        ibuild_int_<internal name>      - For internal ibuild variables/rules
+        ibuild_targ_<target name>       - For target rules, eg. a makefile rule could depend on a ibuild rule to build a specific component, or ilog rule, or icmd rule, etc.
+        ibuild_glbl_<global var name>   - For defining the location of ibuild's rules.mak file
+

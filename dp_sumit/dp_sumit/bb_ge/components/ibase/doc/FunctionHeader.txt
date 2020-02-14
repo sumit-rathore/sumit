@@ -1,0 +1,17 @@
+/**
+* FUNCTION NAME: MODPREFIX_FnName()
+*
+* @brief  - 
+*
+* @return - 
+*
+* @note   - 
+*
+*/
+type MODPREFIX_FnName
+(
+    // parameter description
+    // parameter description
+)
+{
+

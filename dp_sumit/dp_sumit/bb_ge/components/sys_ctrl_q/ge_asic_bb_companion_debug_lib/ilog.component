@@ -1,0 +1,51 @@
+component:SYS_CTRL_Q_COMPONENT
+L:INIT S:System Control Queue initialiation\n
+L:READ_Q_FRAME_ERR S:Got read Q frame error %d\n
+L:SYS_CTRL_Q_ADDR_NOT_IN_SYS S:Received packet for usb address %d, which isn't in sys\n
+L:NOT_XUSB_UPSTREAM_OR_DOWNSTREAM_PACKET S:Received packet that is not a XUSB upstream or downstream packet\n
+L:ISR_GOT_DOWNSTREAM_PACKET S:Received a downstream packet for usb address %d\n
+L:ISR_GOT_UPSTREAM_PACKET S:Received a upstream packet for usb address %d\n
+L:CLEAR_BCO S:Clearing BCO for USB address %d\n
+L:VF_CTRL_OUT_PACKET_FCN S:Recevied a VF Ctrl Out Packet, calling function 0x%x\n
+L:VF_CTRL_IN_ACK_PACKET_FCN S:Recevied a VF Ctrl In Ack Packet, calling function 0x%x\n
+L:INVALID_SETUP_PACKET S:Got invalid setup packet size %d\n
+L:HANDLE_DESC_REQ S:HandleDescReq:Got Desc request, USB address %d, length %d\n
+L:HANDLE_CLR_FTR_PORT S:HandleClearFeaturePort: Port %d on usbA %d\n
+L:SYS_CTRLQ_TEST_MODE_NOT_ROOT_DEV S:CtrlQ test mode is not for the root dev, usb %d, logical %d, test %d\n
+L:SYS_CTRLQ_TEST_MODE_INVALID_TEST S:CtrlQ test mode is invalid, usb %d, logical %d, test %d\n
+L:SYS_CTRLQ_TEST_MODE_TEST S:CtrlQ test mode, usb %d, logical %d, test %d\n
+L:SETUP_NOT_EP_ZERO S:Received setup packet for non-zero endpoint for usb %d, logical %d, ep %d\n
+L:DOWNSTREAM_PACKET_IS_IN_AND_NOT_VF S:Downstream packet is an IN packet, this isn't a Virtual Function\n
+L:VF_CTRL_OUT_PACKET_NO_FCN S:Recevied a VF Ctrl Out Packet, but no handler exists\n
+L:VF_CTRL_IN_ACK_PACKET_NO_FCN S:Recevied a VF Ctrl In Ack Packet, but no handler exists\n
+L:VF_CTRL_IN_PACKET_NO_FCN S:Recevied a VF Ctrl In Packet, but no handler exists\n
+L:VF_PING_PACKET S:Recevied a VF Ping Packet for ep %d\n
+L:VF_SETUP_BUT_NO_SETUP S:Received a VF Setup Packet, but there is no VF->Setup, on USB=%d, LA=%d, InSys=%d\n
+L:VF_SETUP_PACKET S:Recevied a VF Setup Packet, calling function 0x%x\n
+L:UPSTREAM_PACKET_RECEIVED S:Received an upstream packet for USB address %d, action %d, responseId %d\n
+L:GOT_NONACK_UPSTREAM_PKT_FOR_VF S:Got a NON_TERRY_HACK_ACK upstream packet for a Virtual Function??? Logical address %d, USB address %d\n
+L:UPSTREAM_PKT_NOT_USB_IN S:The upstream packet is not a USB IN packet, instead got action %d\n
+L:INVALID_XUSB_UPSTREAM_RESPONSE S:Invalid upstream response %d received\n
+L:DATA0_BUT_NOT_EXPECTING_GET_DESC_DATA0 S:Got Data0, but not expecting GetDescData0, instead expecting %d\n
+L:DATA1_BUT_UNHANDLED_BCI_TRANSACTION S:Got Data1, but unhandled BCI transaction %d\n
+L:DATA1_BUT_UNHANDLED_BCO_TRANSACTION S:Got Data1, but unhandled BCO transaction %d\n
+L:DATA1_BUT_NOT_EXPECTING_PACKET S:Got Data1, but not expecting a packet\n
+L:VF_SET_ADDR_HANDLER_IN_PACKET S:Got a Set address in request, sending a zero length packet\n
+L:GOT_SET_CFG_IN_PACKET S:Got a Set Cfg IN packet\n
+L:GOT_SET_INTF_IN_PACKET S:Got a Set Intf IN packet\n
+L:GOT_CLEAR_PORT_FEATURE_ENABLE_IN_PACKET S:Got a Clear Port Feature Enable In Packet\n
+L:GOT_SET_PORT_FEATURE_RESET_IN_PACKET S:Got a Set Port Feature Reset In Packet\n
+L:TEST_MODE_HANDLING_INVALID S:While handling the Test mode packets, got an invalid test mode\n
+L:GET_EXPECTED_UPSTREAM_PACKET S:Get the expected upstream packet for USB address %d, expected packet type %d\n
+L:SET_EXPECTED_UPSTREAM_PACKET S:Set the expected upstream packet for USB address %d, expected packet type %d, previous setting was %d\n
+L:VF_SET_ADDR_PACKET S:Recevied a VF Set Address Packet, NEW: Logical address %d, USB address %d\n
+L:VF_IN_PACKET_EP S:Recevied a VF Ctrl In Packet, calling function 0x%x, for ep: %d\n
+L:SET_ADDRESS_DEV_MGR_FAILED_FOR_VF S:Set address to USB %d, logical %d failed when processing dev manager for a virtual function\n
+L:RECEIVED_STALL S:Received stall for USB address %d, transaction type %d\n
+L:GOT_SET_CLR_TT_BUFFER_IN_PACKET S:Got a Clear TT Buffer In Packet\n
+L:INVALID_EP_ACK_FOR_VF S:At address logical %d, usb %d, Invalid virtual function endpoint %d\n
+L:ICMD_NOT_IN_SYS S:icommand: usb address %d is not in-sys\n
+L:DEV_X_EXPECTING_PACKET_Y S:Usb Address %d is expecting packet %d\n
+L:THIS_IS_THE_REX S:This is the rex\n
+L:RE_USE_USB_ZERO S:Resetting USB due to re-use of USB address 0.\n
+L:STARTING_TEST S:Starting test\n

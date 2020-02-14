@@ -1,0 +1,3 @@
+C:GRG_COMPONENT
+R:divide16bit C:icmdDivide L:INT16_DIVIDE A:(0,1)
+R:multiply16bit C:icmdMultiply L:INT16_MULTIPLY A:0

@@ -1,0 +1,3 @@
+component:EEPROM_COMPONENT
+F:EEPROM_icmdReadPage H:"Reads the specified page. Args: Page to read, display as words as boolean" A:uint8, uint8
+F:EEPROM_icmdWritePage H:"Writes the specified page. Args: page to write, msw0, lsw0, msw1, lsw1" A:uint8, uint32, uint32, uint32, uint32

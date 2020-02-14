@@ -1,0 +1,10 @@
+component:NETCFG_COMPONENT
+L:NETCFG_COULD_NOT_BIND_TO_PORT S:Could not bind the network based configuration listener to port %d.\n
+L:DEPRECATED_NETCFG_FLASH_VAR_WRONG_SIZE S:The flash variable read was %d bytes instead of %d.\n
+L:NETCFG_READ_INVALID_VPORT_PAIRING S:Tried to read the MAC address pairing for the invalid vport %d.\n
+L:DEPRECATED_NETCFG_FAILED_TO_WRITE_FLASH S:Failed to write flash variable %d.\n
+L:DEPRECATED_NETCFG_PRODUCT_VARIANT_NOT_DEFINED S:Product variant is not set in persistent data storage\n
+L:XUSBCFG_ICRON S:XUSB Configuration Protocol is Icron\n
+L:XUSBCFG_CRESTRON S:XUSB Configuration Protocol is Crestron\n
+L:NETCFG_RECEIVED_REQUEST S:Received netcfg command %d\n
+L:UDPpacket S:UDP transmission packet handled good and sender IP = %d\n

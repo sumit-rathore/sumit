@@ -1,0 +1,4 @@
+component:REXULM_COMPONENT
+F:REXULM_showCurrentState H:"Show the current Rex ULM states" A:void
+F:REXULM_adjustPrefetchTimer H:"Changes the prefetch timer timeout value" A:uint32
+F:REXULM_adjustConnectTimer H:"Changes the connect timer timeout value" A:uint32

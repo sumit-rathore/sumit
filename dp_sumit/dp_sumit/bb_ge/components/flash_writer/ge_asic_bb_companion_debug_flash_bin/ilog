@@ -1,0 +1,107 @@
+component:GRG_COMPONENT
+L:GPIO_INIT S:Initializing GPIO, direction reg 0x%x, output bits 0x%x\n
+L:GPIO_PULSE_TIMER S:Pulsing GPIOs, mask 0x%x, read 0x%x, writing 0x%x\n
+L:GPIO_READ S:GPIO_READ pin %d, bool val 0x%x\n
+L:GPIO_SET S:GPIO_SET pin %d\n
+L:GPIO_CLEAR S:GPIO_CLEAR pin %d\n
+L:GPIO_PULSE S:GPIO_PULSE pin %d\n
+L:FREQ_MEASURE S:Measuring PLL %d, XUSB is %d, CXM is %d\n
+L:MDIO_ICMD_WRITE S:Writing to MDIO device %d, address 0x%x, with data 0x%x\n
+L:INVALID_ICMD_ARG S:Invalid icmd arg 0x%x received\n
+L:PLL_MEASUREMENT S:Measured %d difference in clock ticks, xusb %d, cxm %d\n
+L:INVALID_MODULE S:Invalid module used at line %d\n
+L:REG_FAILURE S:Invalid register ID/Rev at line %d\n
+L:INVALID_GRG_CHIP_MINOR_REVISION_ERROR_LOG S:Invalid minor GRG chip revision, expecting 0x%x, read 0x%x\n
+L:INVALID_GRG_CHIP_MAJOR_REVISION_ERROR_LOG S:Invalid major GRG chip revision, expecting 0x%x, read 0x%x\n
+L:INVALID_PIN S:Invalid Pin number %d\n
+L:UNSUPPORTED_VARIANT_ID S:Unsupported variant ID = %d\n
+L:MDIO_ICMD_READ_START S:Reading MDIO device %d, address %d\n
+L:MDIO_ICMD_READ_DONE S:Read MDIO, returned data 0x%x\n
+L:MDIO_I2C_FIFO_OVER_FLOW S:MDIO/I2C fifo overflow\n
+L:MDIO_I2C_OPERATIONS S:MDIO/I2C: %d operations in progress, current operation: header 0x%x, mdio/i2c op 0x%x\n
+L:MDIO_I2C_NO_OPERATIONS S:MDIO/I2C: no operations in progress\n
+L:I2C_WAKE_LOG S:i2c: performing wake on bus %d\n
+L:I2C_WAKE_DONE S:i2c: wake done\n
+L:I2C_READ S:i2c: read of bus %d, device %d, for %d bytes\n
+L:I2C_READ_DONE S:i2c: done read %d bytes, contents 0x%x 0x%x\n
+L:I2C_READ_FAILED S:i2c: read failed\n
+L:I2C_WRITE S:i2c: write bus %d, device %d, byteCount %d\n
+L:I2C_WRITE_DONE S:i2c: write complete\n
+L:I2C_WRITE_FAILED S:i2c: write failed\n
+L:I2C_TRN_ERROR S:i2c: TRN ERR\n
+L:TIME_MARKER_MDIO_START S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing mdioStart\n
+L:TIME_MARKER_I2C_START S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing i2cStart\n
+L:TIME_MARKER_I2C_WAKE_START S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing i2c wake start\n
+L:TIME_MARKER_I2C_WAKE_STOP S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing \n
+L:TIME_MARKER_FINALIZE_OP S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing finalize operation\n
+L:TIME_MARKER_SUBMIT_OP S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing submit operation\n
+L:MDIO_I2C_INVALID_TASK_STATE S:mdio/i2c: invalid state at line %d, header 0x%x, mdio/i2c op 0x%x\n
+L:I2C_READ_TOO_MANY_BYTES S:i2c read too many bytes. Expected %d\n
+L:GRG_IRQ_LOG S:Interrupts 0x%x triggered\n
+L:GRG_IRQ_UNSERVICED S:Interrupts 0x%x were unserviced\n
+L:IRQ_HANDLER_NOT_SET S:Interrupt Handler is not set for pin %d\n
+L:REGISTERING_IRQ S:Registering Interrrupt handler for pin %d\n
+L:SERVICING_IRQ S:Servicing Interrupt for pin %d\n
+L:DISABLING_IRQ S:Disabling Interrupt for pin %d\n
+L:ENABLING_IRQ S:Enabling Interrupt for pin %d\n
+L:MDIO_START_READ S:MDIO start read: dev %d, addr %d\n
+L:MDIO_START_WRITE S:MDIO start write: dev %d, addr %d, data 0x%x\n
+L:MDIO_FINISH S:MDIO finished, data is 0x%x\n
+L:I2C_START_READ S:I2C read started for %d bytes\n
+L:I2C_START_WRITE S:I2C write started\n
+L:I2C_READ_FINISH S:I2C read finished\n
+L:I2C_WRITE_FINISH S:I2C write finished\n
+L:I2C_DO_WAKE_OP S:I2C do wake op %d\n
+L:I2C_WAKE_COMPLETE S:I2C wake complete\n
+L:I2C_WRITE2 S:i2c write data is 0x%x 0x%x\n
+L:I2C_MDIO_CONTROLREG_READ S:I2C/MDIO Control Reg is 0x%x\n
+L:I2C_START_WRITE_READ S:I2C writeRead started for %d bytes to write, %d bytes to read\n
+L:MDIO_I2C_OPERATIONS_QUEUED S:MDIO/I2C: %d operations queued, nothing in progress\n
+L:I2C_START_WRITE_READ_BLOCK S:I2C writeReadBlock started for %d bytes to write, sizeof(read buffer) = %d bytes\n
+L:GRG_SPECTAREG_READ S:Read GRG Register: 0x%x, Value: 0x%x\n
+L:INVALID_PLL S:Invalid PLL %d\n
+L:FREQ_MEASURE_CLM S:Measured CLM PLL: %d\n
+L:FREQ_MEASURE_CTM S:Measured CTM PLL: %d\n
+L:FREQ_MEASURE_CRM S:Measured CRM PLL: %d\n
+L:MDIO_I2C_OPERATIONS_FINALIZE S:MDIO/I2C: %d operations in progress, finalizing operation: arg1 0x%x, arg2 0x%x\n
+L:MDIO_I2C_QUEUED_OPERATION S:MDIO/I2C: queued operation: header 0x%x, mdio/i2c op 0x%x\n
+L:PLL2_READ S:PLL Read config 2 0x%x\n
+L:PLL2_WRITE S:PLL Write config2 0x%x\n
+L:INT16_DIVIDE S:Quotient is: %d, Remainder is: %d\n
+L:DIVIDE_BY_ZERO S:Fatal: divide by zero\n
+L:INT16_MULTIPLY S:Result of multiply is %d\n
+L:MEAS_PLL_FREQ S:Measured frequency of PLL %d is %dMHz\n
+L:SYNC_MDIO_READ_FIFO_NOT_EMPTY S:Requested to do a synchronous MDIO read while other jobs pending\n
+L:SYNC_MDIO_WRITE_FIFO_NOT_EMPTY S:Requested to do a synchronous MDIO write while other jobs pending\n
+L:MDIO_SYNC_WRITE S:Wrote data 0x%x to MDIO address %d register %d\n
+L:MDIO_SYNC_READ S:Read data 0x%x from MDIO address %d register %d\n
+L:INVALID_CLMTX_DRIVE_STR S:Invalid CLM TX drive strength GPIO setting %d\n
+L:GRG_PLATFORM_AND_VARIANT_ID S:Chip platform id=%d, variant id=%d.\n
+L:DRIVE_STRENGTH S:Drive strength read from GPIO = %d, drive strength written to register = %d\n
+L:GRG_READ_UNSUPPORTED_PIN S:Reading hardware pin is not supported on this platform/variant.  Line %d\n
+L:LED_SET_LOCATOR S:Set LED locator pattern: lockMode = %d\n
+L:LED_CLEAR_LOCATOR S:Clear LED locator pattern: lockMode = %d\n
+L:LED_SET S:Set LED: id = %d\n
+L:LED_CLEAR S:Clear LED: id = %d\n
+L:LED_PULSE S:Pulse LED: id = %d and rate = %d\n
+L:LED_UPDATE S:Update LED: id = %d, state = %d, lockMode = %d\n
+L:LED_UNKNOWN_ID S:Unknow LED: id = %d\n
+component:XMODEM_COMPONENT
+L:XMODEM_INTERRUPT_INIT S:Initializing Xmodem for interrupt driven mode\n
+L:XMODEM_POLLED_INIT S:Initializing Xmodem for polling mode\n
+L:PACKET_RECEIVED_BEFORE_READY S:A packet was received, before xmodem library was ready to receive the packet\n
+component:FLASH_DATA_COMPONENT
+L:FLASH_INIT S:Flash driver initialization\n
+L:MULTIPLE_ACTIVE_SECTIONS S:Multiple sections of flash were marked active\n
+L:INIT_SECTION1_MARKED_AS_ACTIVE S:Initialization: Marking section1 as the active section\n
+L:INIT_FOUND_GARBAGE_HEADER S:Initialization found a garbage flash header in section %d\n
+L:UNEXPECTED_HEADER_WHEN_SETTING S:Unexpectedly read header %d, when going to write %d\n
+L:WRITE_VAR_SIZE_TOO_BIG S:Error Writing variable %d.  Size %d is too big\n
+L:WRITE_VAR S:Writing variable %d, with size %d\n
+L:WRITE_VAR_IS_REPLACEMENT S:Wrote variable %d, & now erasing previous setting\n
+L:ERASE_VAR S:Erasing var %d\n
+L:ERASE_VAR_FOR_VAR_THAT_DOESNT_EXIST S:Trying to erase var %d, but it doesn't exist in flash\n
+L:READ_VAR S:Read variable %d\n
+L:CANT_READ_VAR S:Tried to read variable %d, but it doesn't exist\n
+L:UNABLE_TO_FIND_ACTIVE_DATA_SECTION S:Unable to find active data section\n
+L:FLASH_VAR_TOO_BIG S:Flash variable %d is too big at %d bytes to be read\n

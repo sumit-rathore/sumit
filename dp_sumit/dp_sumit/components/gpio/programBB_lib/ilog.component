@@ -1,0 +1,22 @@
+component:GPIO_COMPONENT
+L:GPIO_INIT S:Initializing GPIO, direction reg 0x%x, output bits 0x%x\n
+L:GPIO_READ S:GPIO_READ pin %d, bool val 0x%x\n
+L:GPIO_SET S:GPIO_SET pin %d\n
+L:GPIO_CLEAR S:GPIO_CLEAR pin %d\n
+L:GPIO_PULSE S:GPIO_PULSE pin %d\n
+L:FREQ_MEASURE S:Measuring PLL %d, XUSB is %d, CXM is %d\n
+L:INVALID_PIN S:Invalid Pin number %d\n
+L:BGRG_IRQ_LOG S:Interrupts 0x%x triggered\n
+L:BGRG_IRQ_UNSERVICED S:Interrupts 0x%x were unserviced\n
+L:BGRG_GPIO7_LOG S:Interrupt GPIO7 triggered\n
+L:IRQ_HANDLER_NOT_SET S:Interrupt Handler is not set for pin %d in line %d\n
+L:REGISTERING_IRQ S:Registering Interrrupt handler for pin %d\n
+L:SERVICING_IRQ S:Servicing Interrupt for pin %d\n
+L:DISABLING_IRQ S:Disabling Interrupt for pin %d\n
+L:ENABLING_IRQ S:Enabling Interrupt for pin %d\n
+L:BGRG_HW_DEFAULTS S:Power-on harware defaults from GPIOs are: 0x%x\n
+L:BGRG_INT_HANDLER_PRI S:BGRG Interrupt Handler Primary Reg: 0x%x\n
+L:BGRG_INT_HANDLER_SEC S:BGRG Interrupt Handler Secondary Reg: 0x%x\n
+L:BGRG_INT_HANDLER_PRI_POST S:BGRG Interrupt Handler POST Primary Reg: 0x%x\n
+L:BGRG_INT_HANDLER_SEC_POST S:BGRG Interrupt Handler POST Secondary Reg: 0x%x\n
+L:GPIO_IRQ_NOT_AVAIL S:GPIO has no more available interrupts for assignment\n

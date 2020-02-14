@@ -1,0 +1,6 @@
+component:TEST_COMPONENT
+L:TEST_PRINT_STATUS S:\nEnable status    :%d\nError State      :%d\nIsolated State   :%d\n
+L:TEST_SET_ERROR_STATE S:Diagnostic component : %d with Error code : %d\n
+L:TEST_PRINT_TEST_STATUS S:Test Status : %d\n
+L:TEST_FLASH_GOLDEN_PROTECT S:Golden Protected %d\n
+L:TEST_DP_OC_READ S:DP Over current status : %d\n

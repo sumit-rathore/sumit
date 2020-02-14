@@ -1,0 +1,4 @@
+component:XMODEM_COMPONENT
+L:XMODEM_INTERRUPT_INIT S:Initializing Xmodem for interrupt driven mode\n
+L:XMODEM_POLLED_INIT S:Initializing Xmodem for polling mode\n
+L:PACKET_RECEIVED_BEFORE_READY S:A packet was received, before xmodem library was ready to receive the packet\n

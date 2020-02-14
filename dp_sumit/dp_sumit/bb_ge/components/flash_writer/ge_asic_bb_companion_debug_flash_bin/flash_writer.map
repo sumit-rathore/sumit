@@ -1,0 +1,75 @@
+
+
+
+
+00000000 l    d  .comment	00000000 .comment
+00000000 l    df *ABS*	00000000 
+00000000 l    df *ABS*	00000000 cchn9Mcp.ltrans0.o
+00000000 l    df *ABS*	00000000 imath.c
+00000000 l    df *ABS*	00000000 start.o
+00000000 l    df *ABS*	00000000 trap_table.o
+00000000 l       *UND*	00000000 _ilog
+00000000  w      *UND*	00000000 __ftext_start
+00000000  w      *UND*	00000000 __load_start_ftext
+00000000  w      *UND*	00000000 __load_stop_ftext
+60000000 g       .text	00000000 _LEON_TrapHandler
+60000000 l    d  .text	00000000 .text
+60000084  w    O .text	00000080 _LEON_isrs
+60000104 l     F .text	000000c8 FLASHRAW_write.1455
+60000104 l       .text	00000000 _LEON_isrs_end
+600001cc l     F .text	0000001c waitForSFICompleteBit.1689.1453
+600001e8 l     F .text	000000a8 LEON_SFISendWrite.1446
+60000290 l     F .text	00000094 LEON_UartByteTx.1443
+60000324 l     F .text	00000058 LEON_UartPollingModeDoWork.1438
+6000037c l     F .text	00000098 LEON_UartInterruptHandlerRx.1363
+60000414 l     F .text	0000023c UART_printf.1426
+60000650 l     F .text	00000038 UartfifoSpaceAvail.1421
+60000688 l     F .text	00000028 UartfifoRead.1417
+600006b0 g       .text	00000000 _LEON_softTrap
+600006ec g     F .text	00000698 imain
+60000d84 l     F .text	0000023c _CMD_commandHandler.1402.1510
+60000fc0 l     F .text	0000002c CMD_commandSendResponse.1502
+60000fec l     F .text	00000028 CMD_programDataSendResponse.1496
+60001014 l     F .text	00000048 CMD_sendSoftwareVersion.1494
+6000105c l     F .text	00000158 CMD_programDataHandler.1475
+600011b4 l     F .text	00000018 PacketizeResetRxState.1827.1424
+600011cc g     F .text	0000008c memset
+600011cc  w    F .text	0000008c startup_memset
+60001258 g     F .text	00000060 memcpy
+60001258  w    F .text	00000060 startup_memcpy
+600012b8 l     F .text	00000098 UART_packetizeSendDataImmediate.constprop.15.1374
+60001350 g     F .text	000000c0 GRG_int16Divide
+60001410 g       .text	00000000 start
+60001428 g       .text	00000000 LEON_CPUInitStackAndCall
+6000144c l       .text	00000000 start2
+600014d0 l       .text	00000000 call_C_forever
+600014e0 g       .text	00000000 LEON_UninitializedISR
+600014e8 l    d  .rodata	00000000 .rodata
+60001538 g       *ABS*	00000000 __load_start_data
+60001538 g       *ABS*	00000000 __load_stop_data
+61000000 l    d  .stack	00000000 .stack
+61000800 g       .bss	00000000 __bss_start
+61000800 g       .stack	00000000 __stack_end
+61000800 l    d  .bss	00000000 .bss
+61000800 l     O .bss	00000200 txBuffer.1805.1694
+61000a00 l     O .bss	00000200 rxBuffer.1804.1695
+61000c00 l     O .bss	00000100 printf_msg.1806.1682
+61000d00 l     O .bss	00000100 rxPacketBuffer.1666
+61000e00 l     O .bss	00000004 cmdRespSent.1441.1639
+61000e04 l     O .bss	00000004 pgmDataRespSent.1439.1638
+61000e08 l     O .bss	0000000c pgmStartCmd.1523.1683
+61000e14 l     O .bss	00000020 pgmInfo.1524.1640
+61000e34 l     O .bss	00000400 crcTable.1692
+61001234 l     O .bss	00000004 _callback.1654
+61001238 l     O .bss	00000020 uartCtrl.1667
+61001258 l     O .bss	00000044 rxPacketHandler.1693
+6100129c l     O .bss	00000088 ResponseHandler.1675
+61001324 l     O .bss	00000008 rxPacket.1655
+6100132c l     O .bss	00000001 currCmdRespID.1437.1636
+6100132d l     O .bss	00000001 _eraseReceived.1438.1637
+6100132e l     O .bss	00000001 freeResponses.1663
+6100132f l     O .bss	00000001 activeResponses.1664
+61001330 g       .bss	00000000 __bss_end
+61001330 g       .comment	00000000 __data_start
+../ge_asic_bb_companion_debug_flash_bin/flash_writer.elf:     file format elf32-sparc
+SYMBOL TABLE:

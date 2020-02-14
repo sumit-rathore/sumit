@@ -1,0 +1,22 @@
+command	: rs232 ge_program flash_data sfi linkmgr timing callback uart crc top configuration core i2c i2cd gpio register_definitions icmd ilog leon ibase
+ge_program	: configuration command crc linkmgr bbge_comm led uart cpu_comm top core util gpio icmd ilog timing leon register_definitions ibase
+i2cd	: stats_mon ulp configuration uart icmd util callback top timing core ilog i2c gpio register_definitions ibase leon
+led	: event uart gpio timing core icmd ilog ibase register_definitions
+gpio	: uart i2cd i2c icmd ilog timing top leon  register_definitions ibase
+eeprom	: i2c timing icmd ilog leon ibase
+pcs_pma	: mdio top gpio register_definitions ibase
+mdio	: callback icmd ilog timing top gpio core leon register_definitions ibase
+xmodem	: timing ilog leon  uart ibase
+configuration	: flash_data i2c event callback core uart timing icmd ilog leon register_definitions ibase
+flash_data	:  core top gpio util sfi configuration uart timing icmd ilog register_definitions leon ibase
+callback	: event timing ilog leon ibase
+stats_mon	: callback icmd ilog timing leon register_definitions ibase
+event	: callback ilog ibase
+main_loop	: timing callback uart event leon core icmd ilog ibase register_definitions
+top	: crc timing callback event cpu_comm icmd ilog ibase mca led util uart gpio leon core register_definitions
+util	: icmd ilog leon ibase uart
+sfi	: top gpio core uart leon register_definitions ibase
+uart	: callback led top gpio timing leon util icmd ilog core register_definitions ibase
+core	: icmd ilog ibase leon register_definitions
+register_definitions	: 
+crc	: uart ibase

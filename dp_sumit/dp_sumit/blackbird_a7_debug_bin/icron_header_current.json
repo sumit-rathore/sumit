@@ -1,0 +1,68 @@
+{
+    "goldenears": {
+        "version": "5",
+        "device_name": "GE",
+        "icomponent": "ge_icomponent.json",
+        "ilog": "ge_ilog.json",
+        "icmd": "ge_icmd.json",
+        "ichannel_id": "ichannel_id.json",
+        "ilog_level": "ilog_level.json",
+        "flash_writer": null,
+        "main_firmware": null,
+        "lex_fpga_image": null,
+        "rex_fpga_image": null,
+        "istatus": null,
+        "golden_current": null,
+        "lex_fpga_build_time": "20170420123740",
+        "rex_fpga_build_time": "20170420123740",
+        "iregister": [
+            {
+                "xml_file_name": "grg_comp.xml",
+                "base_address": "0x20000000"
+            },
+            {
+                "xml_file_name": "ulmii_comp.xml",
+                "base_address": "0x20000100"
+            },
+            {
+                "xml_file_name": "clm_comp.xml",
+                "base_address": "0x20000200"
+            },
+            {
+                "xml_file_name": "xrr_comp.xml",
+                "base_address": "0x20000300"
+            },
+            {
+                "xml_file_name": "xlr_comp.xml",
+                "base_address": "0x20000400"
+            },
+            {
+                "xml_file_name": "xcsr_comp.xml",
+                "base_address": "0x20000500"
+            }
+        ]
+    },
+    "blackbird": {
+        "version": "4",
+        "device_name": "BB",
+        "icomponent": "bb_icomponent.json",
+        "ilog": "bb_ilog.json",
+        "icmd": "bb_icmd.json",
+        "ichannel_id": "ichannel_id.json",
+        "ilog_level": "ilog_level.json",
+        "flash_writer": "bb_flash_writer.bin",
+        "main_firmware": "target.bin",
+        "lex_fpga_image": "current_lex_fpga.bin",
+        "rex_fpga_image": "current_rex_fpga.bin",
+        "istatus": "bb_istatus.json",
+        "golden_current": "current",
+        "lex_fpga_build_time": "20170420123740",
+        "rex_fpga_build_time": "20170420123740",
+        "iregister": [
+            {
+                "xml_file_name": "bb_chip_a7_regs.ipxact.xml",
+                "base_address": "0"
+            }
+        ]
+    }
+}

@@ -1,0 +1,8 @@
+build/*_obj
+*_lib
+
+# Ignore the obj directory created when building LogReader using Visual Studio
+**/obj
+
+
+etc/LogReader/LogReader.v12.suo

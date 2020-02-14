@@ -1,0 +1,5 @@
+component:TIMING_COMPONENT
+F:showTimers H:"Show all timers" A:void
+F:startTimer H:"Start a timer" A:uint32
+F:stopTimer H:"Stop a timer" A:uint32
+F:changeTimeout H:"Change a timer timeout value.  Args: timer, newTimeoutValue" A:uint32, uint32

@@ -1,0 +1,52 @@
+component:VHUB_COMPONENT
+L:HOST_SUSPEND S:Message from host: Going into suspend\n
+L:HOST_RESUME S:Message from host: Going to resume \n
+L:HOST_CONNECT_HS S:Host Connected at high speed!\n
+L:HOST_CONNECT_FS S:Host Connected at full speed!\n
+L:HOST_DISCONNECT_MSG S:Host Disconnected\n
+L:HOST_OTHER S:Invalid message from host: %d\n
+L:VHUB_DEVICE_CONNECT S:Device Connection request on vPort %d\n
+L:VHUB_DEVICE_DISCONNECT S:Device Disconnection request on vPort %d\n
+L:VHUB_DEVICE_WAKEUP S:Device Remote Wakeup request on vPort %d\n
+L:VHUB_CONNECT_DEV S:Device Connected on Port %d, speed %d\n
+L:VHUB_DISCONNECT_DEV S:Device Disconnected on Port %d\n
+L:VHUB_SUSPEND_DEV S:Port %d Suspended\n
+L:VHUB_RESUME_DEV S:Port %d Resumed\n
+L:VHUB_SETUP_HANDLER S:Received setup packet bRequestType 0x%x, bRequest 0x%x, wValue 0x%x\n
+L:VHUB_SETUP_STALL S:Going to stall setup packet bRequestType 0x%x, bRequest 0x%x, wValue 0x%x\n
+L:VHUB_IN_DESC_HANDLER S:Received in desc. Sending %d bytes from mem address 0x%x\n
+L:VHUB_OUT_HANDLER S:Received out packet for ep %d, with PID 0x%x, %d data bytes\n
+L:VHUB_IN_ACK_DESC_HANDLER S:Descriptor handler got an Ack!\n
+L:VHUB_INT_IN_REQUEST S:IN request on INTERRUPT endpoint\n
+L:VHUB_INT_IN_REQUEST_SERV S:IN request on INTERRUPT endpoint - SERVICED\n
+L:VHUB_STD_REQ_GET_DESC S:STD REQ: Get Descriptor: 0x%x\n
+L:VHUB_STD_REQ_GET_DESC_DEV S:STD REQ: Get Descriptor - DEVICE\n
+L:VHUB_STD_REQ_GET_DESC_CONF S:STD REQ: Get Descriptor - CONFIGURATION\n
+L:VHUB_STD_REQ_GET_DESC_DEV_QUAL S:STD REQ: Get Descriptor - DEVICE QUALIFIER\n
+L:VHUB_STD_REQ_GET_DESC_OTHER_SPEED S:STD REQ: Get Descriptor - OTHER SPEED CONFIG\n
+L:VHUB_STD_REQ_GET_DEV_CONFIG S:STD REQ: Get Device Configuration\n
+L:VHUB_STD_REQ_SET_DEV_CONFIG S:STD REQ: Set Device Configuration\n
+L:VHUB_STD_REQ_SET_FEATURE S:STD REQ: Set Feature\n
+L:VHUB_STD_REQ_CLEAR_FEATURE S:STD REQ: Clear Feature\n
+L:VHUB_STD_REQ_GET_STATUS S:STD REQ: Get Status\n
+L:VHUB_STD_REQ_GET_STATUS_DEV S:STD REQ: Get Status - DEVICE\n
+L:VHUB_STD_REQ_GET_STATUS_INT S:STD REQ: Get Status - INTERFACE\n
+L:VHUB_STD_REQ_GET_STATUS_EP S:STD REQ: Get Status - ENDPOINT\n
+L:VHUB_HUB_REQ_GET_STATUS S:HUB REQ: Get Status\n
+L:VHUB_HUB_REQ_GET_STATUS_HUB S:HUB REQ: Get Status - HUB\n
+L:VHUB_HUB_REQ_GET_STATUS_PORT S:HUB REQ: Get Status - PORT %d\n
+L:VHUB_HUB_REQ_CLEAR_FEATURE S:HUB REQ: Clear Feature\n
+L:VHUB_HUB_REQ_CLEAR_FEATURE_HUB S:HUB REQ: Clear Feature - HUB\n
+L:VHUB_HUB_REQ_CLEAR_FEATURE_PORT S:HUB REQ: Clear Feature - PORT %d\n
+L:VHUB_HUB_REQ_SET_FEATURE_HUB S:HUB REQ: Set Feature - HUB - brequest=0x%x, wValue=0x%x\n
+L:VHUB_HUB_REQ_SET_FEATURE_PORT S:HUB REQ: Set Feature - PORT %d - brequest=0x%x, wValue=0x%x\n
+L:VHUB_HUB_REQ_GET_DESCRIPTOR S:HUB REQ: Get Descriptor\n
+L:VHUB_HUB_REQ_SET_FEATURE_PORT_RESET S:HUB REQ: PORT RESET, port %d\n
+L:VHUB_UNKNOWN_MSG_FROM_DOWNSTREAM S:Received an unknown message from downstream.  Message code=%d.\n
+L:UNEXPECTED_EVENT_IN_STATE S:Unexpected event %d in state %d at line %d\n
+L:VHUB_STATE1 S:Vhub is in linkState %d, operating at speed %d, with remoteWakeupEnabled=%d\n
+L:VHUB_STATE3 S:Vhub portInReset=%d, controlRequestReplyScratchArea.hword=0x%x, intEp1.hubAndPortStatusChangeMap=0x%x\n
+L:VHUB_PORT_STATE S:VHub port %d, has state/speed (msh/lsh) 0x%x, & port status response is 0x%x\n
+L:ADDR_NOT_IN_SYS S:Hub USB Addr: %d is not in sys\n
+L:PUSH_STATUS_WITH_NO_STATUS S:Pushing status interrupt endpoint, but there is no status\n
+L:VHUB_STATE2 S:Vhub intEp1.halted=%d\n

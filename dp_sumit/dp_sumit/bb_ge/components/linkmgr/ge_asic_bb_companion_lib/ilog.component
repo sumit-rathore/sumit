@@ -1,0 +1,75 @@
+component:LINKMGR_COMPONENT
+L:INVALID_MESSAGE S:Invalid message %d at line %d\n
+L:ICMD_DECODE_PHY_CONTROL_REG S:PHY control reg 0x%x\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE1 S:  PHY in reset\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE2 S:  PHY in loopback mode\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE3 S:  PHY auto-negotiate enabled\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE4 S:  PHY auto-negotiate NOT enabled\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE5 S:  PHY in power down mode\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE6 S:  PHY is electrically isolated from GMII\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE7 S:  PHY auto-negotiate restarting\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE8 S:  PHY auto-negotiate restart complete\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE9 S:  PHY full duplex\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE10 S:  PHY half duplex\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE11 S:  PHY collision test enabled\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE12 S:  PHY speed selected 1000Mbps\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE13 S:  PHY speed selected 100Mbps\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE14 S:  PHY speed selected 10Mbps\n
+L:ICMD_DECODE_PHY_STATUS_REG S:PHY status reg 0x%x\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE1 S:  PHY 100BASE-T4 capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE2 S:  PHY 100BASE-TX full duplex capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE3 S:  PHY 100BASE-X half duplex capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE4 S:  PHY 10BASE-T full duplex capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE5 S:  PHY 10BASE-T half duplex capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE6 S:  PHY 100BASE-T2 full duplex capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE7 S:  PHY 100BASE-T2 half duplex capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE8 S:  PHY extended status information in reg 0x0F\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE9 S:  PHY auto-negotiation complete\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE10 S:  PHY remote fault detected\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE11 S:  PHY auto-negotiate capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE12 S:  PHY auto-negotiate NOT capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE13 S:  PHY link up\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE14 S:  PHY link down\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE15 S:  PHY jabber condition detected\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE16 S:  PHY extended register capabilities\n
+L:PHY_MGR_UNEXPECTED_STATE S:PhyMgr: unexpected state %d at line %d\n
+L:PHY_MGR_LINK_UP S:PhyMgr: link up\n
+L:PHY_MGR_LINK_DOWN S:PhyMgr: link down\n
+L:XUSB_VPORT_LINK_UP S:XUSB Link up on vport %d\n
+L:XUSB_VPORT_LINK_DOWN S:XUSB Link down on vport %d\n
+L:XUSB_SET_STATE S:XUSB Link Manager setting Vport %d to state %d at line %d\n
+L:UNKNOWN_LINK_MODE S:Link manager initialization received an unexpected link mode (%d)\n
+L:MESSAGE_HANDLER_UNDEFINED S:The link manager's message handler is undefined\n
+L:LINKMGR_RECEIVED_MSG S:Received a message (%d) on vport %d\n
+L:LINKMGR_LEX_BROADCAST S:Broadcasted an XUSB announcement message\n
+L:LINKMGR_UNEXPECTED_LINK_MODE S:Execution reached code not intended for this link mode (%d) at line %d\n
+L:LINKMGR_INITIALIZING S:Link manager initializing with link mode = %d\n
+L:LINKMGR_PAIR_BUTTON_EVENT S:Pairing button pressed: %d.  Button state at interrupt: %d\n
+L:LINKMGR_REMOVE_ALL_LINKS S:Removing all stored link pairings.\n
+L:LINKMGR_INVALID_VP_NEG_TIMEOUT S:Reached the vport negotiation timeout in an unexpected state. linkState=%d\n
+L:LINKMGR_EXPECTING_NULL_CALLBACK S:Found an existing callback when trying to set the callbacks to begin=0x%x, end=0x%x\n
+L:LINKMGR_ADD_PAIRING_CALLBACK_EXISTS S:Found an existing callback 0x%x when trying to set the add pairing callback to 0x%x\n
+L:LINKMGR_MLP_ACQUISITION_TIMEOUT S:Timed out while trying to acquire an MLP link.\n
+L:LINKMGR_REX_VP_NEGOTIATION_TIMEOUT S:Timed out while waiting to be assigned a vport.\n
+L:LINKMGR_PAIR_INCOMPATIBLE S:The paired USB extender on vport %d is not compatible with this device.\n
+L:LINKMGR_CHECK_COMPATIBILITY_PAIR S:Checking compatibility against pair with firmware version %d.%d.%d.\n
+L:LINKMGR_CHECK_COMPATIBILITY_LOCAL S:The local firmware version is %d.%d.%d.\n
+L:ICMD_NOT_SUPPORTED_IN_THIS_BUILD S:ICMD is not supported in this build\n
+L:LEX_INVALID_STATE S:LEX state is invalid. Current LEX state is %d\n
+L:LINKMGR_CHECK_CONFIGURATION S:Comparing configuration of LEX: 0x%x, with configuration of REX: 0x%x\n
+L:UNHANDLED_LINK_TYPE S:Unhandled link type %d\n
+L:CRM_PLL_LOSS_OF_LOCK S:CRM PLL loss of lock\n
+L:CTM_PLL_LOSS_OF_LOCK S:CTM PLL loss of lock\n
+L:USELESS_PHY_SETTING S:Useless phy setting\n
+L:PHY_ID2 S:Phy ID 2 is 0x%.4x\n
+L:PHY_ID3 S:Phy ID 3 is 0x%.4x\n
+L:LINK_STATE S:PhyMgr is in state 0x%x, link type is %d, XUSB link manger is in state 0x%x\n
+L:INIT_LINK_TYPE S:PhyMgr Initialization for link type %d\n
+L:LINKMGR_MDIO_OPERATION_ALREADY_ACTIVE S:Submitted an ethernet PHY MDIO operation, when one is active.  Submitted Callback=0x%x, Active Callback=0x%x, Line=%d\n
+L:LINKMGR_INVALID_BUTTON_STATE S:Invalid button state %d on line %d\n
+L:LINKMGR_FOUND_PHY_AT_MDIO_ADDR S:Found a PHY at MDIO address %d\n
+L:LINKMGR_NULL_COMPLETION_HANDLER S:Null completion handler passed, line %d\n
+L:DEPRECATED_LINKMGR_DEBUGX S:__#### DEBUG 0x%x ####__\n
+L:LINKMGR_DEBUG_CLM_FLUSH_Q S:Flushing CLM Queues\n
+L:LINKMGR_VETOING_INCOMPATIBLE_VIDS S:Vetoing connection due to incompatible variant IDs; LexVID = %d, RexVID = %d\n
+L:LINKMGR_PHY_HAS_INVALID_IDENTIFIER S:The ethernet PHY ID2=0x%x and PHY ID3=0x%x are invalid for the ITC2053.\n

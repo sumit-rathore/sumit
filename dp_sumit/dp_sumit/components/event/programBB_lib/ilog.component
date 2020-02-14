@@ -1,0 +1,8 @@
+component:EVENT_COMPONENT
+L:EVENT_INVALID_ACCESS S:Event invalid access at line = %d\n
+L:EVENT_NULL_HANDLER S:Event subscribe a null handler\n
+L:EVENT_HANDLER_MAX S:Exceed max number of handlers\n
+L:EVENT_NULL_CHECK_FUNCTION S:Event check event status function is null, event = %d\n
+L:EVENT_INVALID_DEQUEUE S:Event invalid dequeue\n
+L:EVENT_INVALID_POP S:Event invalid stack pop at line = %d\n
+L:EVENT_INVALID_PUSH S:Event invalid stack push at line = %d\n

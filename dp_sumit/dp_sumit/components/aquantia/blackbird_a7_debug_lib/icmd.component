@@ -1,0 +1,109 @@
+component:AQUANTIA_COMPONENT
+F:MDIOD_aquantiaReadJunctionTempIcmd H:"Read Aquantia junction temperature" A:void
+F:MDIOD_aquantiaDblRdTest H:"Read two Aquantia registers: devType, reg1, reg2" A:uint8_t, uint16_t, uint16_t
+F:MDIOD_AquantiaStopTestPackets H:"Stop Generating Aquantia Packets" A:void
+F:MDIOD_aquantiaReadVersion H:"Show aquantia firmware version" A:void
+F:MDIOD_aquantiaShortReachMode H:"Aquantia Read/Write Short Reach Mode(1.83.0): write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTestModeControl H:"Aquantia Read/Write Test Control Mode(1.84.F:D): write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTransmitterTestFrequencies H:"Aquantia Read/Write Transmitter test frequencies (1.84.C:A) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaFastRetrainAbility H:"Aquantia Fast Retrain Ability (1.93.4) write?, writeValue" A:
+F:MDIOD_aquantiaFastRetrainEnable H:"Aquantia Fast Retrain Enable (1.93.0) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTestModeRate H:"Aquantia Test Mode rate[1:0] (1.C412.F:E) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaPmaDigitalSystemLoopback H:"Aquantia Digital System Loopback (1.D800.F) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaExternalPhyLoopback H:"Aquantia External Phy Loopback (1.E400.F) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaEnableFastRetrain H:"Enable Aquantia Fast Retrain (1.E400.2) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaForceMdiConfiguration H:"Aquantia Force Mdi Configuration (1.E400.1) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaMdiConfiguration H:"Aquantia Mdi Configuration(1.E400.0) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaPcsLoopback H:"Aquantia PCS loopback(3.0.E) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantia10GSpeedSelection H:"Aquantia 10G Speed Selection(3.0.5:2) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTxScramblerDisable H:"Aquantia Tx Scrambler Disable(3.D800.F) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTxInjectCrcError H:"Aquantia Tx Inject CRC Error(3.D800.E) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTxInjectFrameError H:"Aquantia Tx Inject Frame Error(3.D800.D) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaRxErrorLdpcFrameEnable H:"Aquantia Enable Rx LDPC Error Frame(3.E400.0) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaRxLdpcDecoderControl H:"Aquantia Control Rx LDPC Decoder (3.E400.F) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaXsLoopback H:"Aquantia XS Loopback (4.0.E) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaReceiveTestPatternEnable H:"Enable Aquantia Receive Test Pattern (4.19.2) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaPhyOperatingMode H:"Aquantia Operating Phy Mode (4.C441.8:6) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTestPatternSelect H:"Aquantia Select Test Pattern (4.19.1:0) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaLoopbackControl H:"Aquantia XS Loopback Control (4.C444.F:B) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaMdiPacketGeneration H:"Aquantia XS MDI Packet Generation (4.C444.5) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaXsSystemIFPacketGeneration H:"Aquantia XS I/F Packet Generation (4.C444.2) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaRate H:"Aquantia XS Rate (4.C444.1:0) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTestPatternForceError H:"Aquantia Select Test Pattern Force Error (4.D800.F) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTestPatternMode7ForceError H:"Aquantia XS Test Pattern Mode 7 Force Error (4.D800.E) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaXAUIRxLocalFaultInjection H:"Aquantia XAUI Rx Local Fault Injection (4.D800.D) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTestPatternExtendedSelect H:"Aquantia Test-Pattern Extended Select [1:0] (4.D800.C:B) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTestPatternCheckEnable H:"Aquantia Test Pattern Check Enable (4.D800.A) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTestPatternCheckPoint H:"Aquantia Test Pattern Check Point (4.D800.7) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTestPatternInsertExtraIdles H:"Aquantia Test Pattern Insert Extra Idles [2:0] (4.D801.E:C) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTestPatternCheckSelect H:"Aquantia Test Pattern Check Select [3:0] (4.D801.B:8) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTestPatternChannelSelect H:"Aquantia Test Pattern Channel Select [3:0] (4.D801.3:0) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaChannel0TestPatternErrorCounter H:"Aquantia Channel 0 Test Pattern Error Counter [F:0] (4.D810.F:0) " A:void
+F:MDIOD_aquantiaChannel1TestPatternErrorCounter H:"Aquantia Channel 1 Test Pattern Error Counter [F:0] (4.D811.F:0) " A:void
+F:MDIOD_aquantiaChannel2TestPatternErrorCounter H:"Aquantia Channel 2 Test Pattern Error Counter [F:0] (4.D812.F:0)" A:void
+F:MDIOD_aquantiaChannel3TestPatternErrorCounter H:"Aquantia Channel 3 Test Pattern Error Counter [F:0] (4.D813.F:0) " A:void
+F:MDIOD_aquantiaTestPatternMode7ErrorCounter H:"Aquantia Test Pattern Mode 7 Error Counter [F:0] (4.D814.F:0)" A:void
+F:MDIOD_aquantiaXauiTxErrorInjectionLaneSelect H:"Aquantia XAUI Tx Error Injection Lane Select [2:0] (4.F800.F:D) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaXauiTxInjectSynchronizationError H:"Aquantia XAUI Tx Inject Synchronization Error (4.F800.C) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaXauiTxInjectAlignmentError H:"Aquantia XAUI Tx Inject Alignment Error (4.F800.B) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaXauiTxInjectCodeViolation H:"Aquantia XAUI Tx Inject Code Violation (4.F800.A) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaXauiTx10BViolationCodeword H:"Aquantia XAUI Tx 10B Violation Codeword [9:0] (4.F800.9:0) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaPhyXsSystemLoopbackPassThrough H:"Aquantia PHY XS System Loopback Pass Through (4.F802.F) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaPhyXsSystemLoopbackEnable H:"Aquantia PHY XS System Loopback Enable (4.F802.E) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaXauiTxLocalFaultInjection H:"Aquantia XAUI Tx Local Fault Injection (4.F802.D) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaRestartAutonegotiation H:"Aquantia Restart Autonegotiation (7.0.9) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaSerdesStartUpMode H:"Aquantia SERDES Start-Up Mode [2:0] (7.C410.F:D) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaAutonegotiationTimeout H:"Aquantia Autonegotiation Timeout [3:0] (7.C411.F:C) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaAutonegotiationTimeoutMod H:"Aquantia Autonegotiation Timeout Mod (7.C411.B) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaLinkPartner1000BaseTFullDuplexAbility H:"Aquantia Link Partner 1000BASE-T Full Duplex Ability (7.E820.F)" A:void
+F:MDIOD_aquantiaLinkPartner1000BaseTHalfDuplexAbility H:"Aquantia Link Partner 1000BASE-T Half Duplex Ability (7.E820.E)" A:void
+F:MDIOD_aquantiaLinkPartnerShortReach H:"Aquantia Link Partner Short-Reach (7.E820.D)" A:void
+F:MDIOD_aquantialLinkPartnerAqRateDownshiftCapability H:"Aquantia Link Partner AQRate Downshift Capability (7.E820.C) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaLinkPartner5G H:"Aquantia Link Partner 5G (7.E820.B) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaLinkPartner2G H:"Aquantia Link Partner 2.5G (7.E820.A) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaLinkPartner H:"Aquantia Link Partner (7.E820.2)" A:void
+F:MDIOD_aquantiaAutonegotiationProtocolErrorState H:"Aquantia Autonegotiation Protocol Error State (7.E831.D)" A:void
+F:MDIOD_aquantiaFlpIdleErrorState H:"Aquantia FLP Idle Error State (7.E831.C)" A:void
+F:MDIOD_aquantiaEnableDiagnostics H:"Aquantia Enable Diagnostics (1E.C400.F) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaHighTempFailureThreshold H:"Aquantia High Temp Failure Threshold [F:0] (1E.C421) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaLowTempFailureThreshold H:"Aquantia Low Temp Failure Threshold [F:0] [F:0] (1E.C422) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaHighTempWarningThreshold H:"Aquantia High Temp Warning Threshold [F:0] [1:0] (1E.C423) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaLowTempWarningThreshold H:"Aquantia Low Temp Warning Threshold [F:0] (1E.C424) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaDiagnosticsSelect H:"Aquantia Diagnostics Select (1E.C470.F) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaExtendedMdiDiagnosticsSelect H:"Aquantia Extended MDI Diagnostics Select [1:0] (1E.C470.E:D) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaInitiateCableDiagnostics H:"Aquantia Initiate Cable Diagnostics (1E.C470.4) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaEnableVddPowerSupplyTuning H:"Aquantia Enable VDD Power Supply Tuning (1E.C472.E) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTunableExternalVddPowerSupplyPresent H:"Aquantia Tunable External VDD Power Supply Present (1E.C472.6)" A:bool, uint16_t
+F:MDIOD_aquantiaExternalVddChangeRequest H:"Aquantia External VDD Change Request [3:0] (1E.C472.5:2) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaEnable5ChannelRfiCancellation H:"Aquantia Enable 5th Channel RFI Cancellation (1E.C472.0) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaRateTransitionRequest H:"Aquantia Rate Transition Request [2:0] (1E.C473.A:8) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTrainingSnr H:"Aquantia Training SNR [7:0] (1E.C473.7:0) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaGlbLoopbackControl H:"Aquantia Loopback Control [4:0] (1E.C47A.F:B) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaGlbMdiPacketGeneration H:"Aquantia MDI Packet Generation (1E.C47A.5) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaGlbSystemIFPacketGeneration H:"Aquantia System I/F Packet Generation (1E.C47A.3) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaGlobalReservedProvisioningRate H:"Aquantia Rate [2:0] (1E.C47A.2:0) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaPairAStatus H:"Aquantia Pair A Status [2:0] (1E.C800.E:C)" A:void
+F:MDIOD_aquantiaPairBStatus H:"Aquantia Pair B Status [2:0] (1E.C800.A:8)" A:void
+F:MDIOD_aquantiaPairCStatus H:"Aquantia Pair C Status [2:0] (1E.C800.6:4)" A:void
+F:MDIOD_aquantiaPairDStatus H:"Aquantia Pair D Status [2:0] (1E.C800.2:0)" A:void
+F:MDIOD_aquantiaStatusPairAReflection1 H:"Aquantia Pair A Reflection #1 [7:0] (1E.C801.F:8)" A:void
+F:MDIOD_aquantiaStatusPairAReflection2 H:"Aquantia Pair A Reflection #2 [7:0] (1E.C801.7:0)" A:void
+F:MDIOD_aquantiaImpulseResponseMsw H:"Aquantia Impulse Response MSW [F:0] (1E.C802.F:0)" A:void
+F:MDIOD_aquantiaStatusPairBReflection1 H:"Aquantia Pair B Reflection #1 [7:0] (1E.C803.F:8)" A:void
+F:MDIOD_aquantiaStatusPairBReflection2 H:"Aquantia Pair B Reflection #2 [7:0] (1E.C803.7:0)" A:void
+F:MDIOD_aquantiaImpulseResponseLsw H:"Aquantia Impulse Response LSW [F:0] (1E.C804.F:0)" A:void
+F:MDIOD_aquantiaStatusPairCReflection1 H:"Aquantia Pair C Reflection #1 [7:0] (1E.C805.F:8)" A:void
+F:MDIOD_aquantiaStatusPairCReflection2 H:"Aquantia Pair C Reflection #2 [7:0] (1E.C805.7:0)" A:void
+F:MDIOD_aquantiaStatusPairDReflection1 H:"Aquantia Pair D Reflection #1 [7:0] (1E.C807.F:8)" A:void
+F:MDIOD_aquantiaStatusPairDReflection2 H:"Aquantia Pair D Reflection #2 [7:0] (1E.C807.7:0)" A:void
+F:MDIOD_aquantiaProcessorIntensiveOperationInProgress H:"Aquantia Processor Intensive MDIO Operation InProgress (1E.C831.F)" A:void
+F:MDIOD_aquantiaCableLength H:"Aquantia Cable Length [7:0] (1E.C884.7:0)" A:void
+F:MDIOD_aquantiaGlbLoopbackStatus H:"Aquantia Loopback Status [4:0] (1E.C888.F:B)" A:void
+F:MDIOD_aquantiaMdiPacketGenerationStatus H:"Aquantia MDI Packet Generation Status (1E.C888.5)" A:void
+F:MDIOD_aquantiaGlbSystemIFPacketGenerationStatus H:"Aquantia System I/F Packet Generation Status (1E.C888.3)" A:void
+F:MDIOD_aquantiaGlobalReservedStatusRate H:"Aquantia Rate [2:0] (1E.C888.2:0)" A:void
+F:AquantiaInNomalOperationIcmd H:"Check Aquantia operation status" A:void
+F:AQUANTIA_GeneralRead H:"Read Aquantia Register. First arg: Device Type, Second arg: Register Address" A:uint8_t, uint16_t
+F:AQUANTIA_GeneralWrite H:"Write Aquantia Register. First arg: Device Type, Second arg: Register Address, Third arg: Value to be Written" A:uint8_t, uint16_t, uint16_t
+F:AQUANTIA_SetWarningTemperature H:"Set Aquantia Warning temperature that firmware checks by reading Temperature value" A:uint8_t
+F:AQUANTIA_SetShutdownTemperature H:"Set Aquantia Shutdown temperature that firmware checks  by reading Temperature value" A:uint8_t

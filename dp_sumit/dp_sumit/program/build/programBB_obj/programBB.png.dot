@@ -1,0 +1,129 @@
+digraph {
+command [label="command"]
+ge_program [label="ge_program"]
+i2cd [label="i2cd"]
+led [label="led"]
+gpio [label="gpio"]
+eeprom [label="eeprom"]
+pcs_pma [label="pcs_pma"]
+mdio [label="mdio"]
+xmodem [label="xmodem"]
+configuration [label="configuration"]
+flash_data [label="flash_data"]
+callback [label="callback"]
+stats_mon [label="stats_mon"]
+event [label="event"]
+main_loop [label="main_loop"]
+top [label="top"]
+util [label="util"]
+sfi [label="sfi"]
+uart [label="uart"]
+core [label="core"]
+register_definitions [label="register_definitions"]
+crc [label="crc"]
+command -> rs232
+command -> ge_program
+command -> flash_data
+command -> sfi
+command -> linkmgr
+command -> callback
+command -> uart
+command -> crc
+command -> top
+command -> configuration
+command -> core
+command -> i2cd
+command -> gpio
+command -> register_definitions
+ge_program -> configuration
+ge_program -> command
+ge_program -> crc
+ge_program -> linkmgr
+ge_program -> bbge_comm
+ge_program -> led
+ge_program -> uart
+ge_program -> cpu_comm
+ge_program -> top
+ge_program -> core
+ge_program -> util
+ge_program -> gpio
+ge_program -> register_definitions
+i2cd -> stats_mon
+i2cd -> ulp
+i2cd -> configuration
+i2cd -> uart
+i2cd -> util
+i2cd -> callback
+i2cd -> top
+i2cd -> core
+i2cd -> gpio
+i2cd -> register_definitions
+led -> event
+led -> uart
+led -> gpio
+led -> core
+led -> register_definitions
+gpio -> uart
+gpio -> i2cd
+gpio -> top
+gpio -> register_definitions
+pcs_pma -> mdio
+pcs_pma -> top
+pcs_pma -> gpio
+pcs_pma -> register_definitions
+mdio -> callback
+mdio -> top
+mdio -> gpio
+mdio -> core
+mdio -> register_definitions
+xmodem -> uart
+configuration -> flash_data
+configuration -> event
+configuration -> callback
+configuration -> core
+configuration -> uart
+configuration -> register_definitions
+flash_data -> core
+flash_data -> top
+flash_data -> gpio
+flash_data -> util
+flash_data -> sfi
+flash_data -> configuration
+flash_data -> uart
+flash_data -> register_definitions
+callback -> event
+stats_mon -> callback
+stats_mon -> register_definitions
+event -> callback
+main_loop -> callback
+main_loop -> uart
+main_loop -> event
+main_loop -> core
+main_loop -> register_definitions
+top -> crc
+top -> callback
+top -> event
+top -> cpu_comm
+top -> mca
+top -> led
+top -> util
+top -> uart
+top -> gpio
+top -> core
+top -> register_definitions
+util -> uart
+sfi -> top
+sfi -> gpio
+sfi -> core
+sfi -> uart
+sfi -> register_definitions
+uart -> callback
+uart -> led
+uart -> top
+uart -> gpio
+uart -> util
+uart -> core
+uart -> register_definitions
+core -> register_definitions
+crc -> uart
+}

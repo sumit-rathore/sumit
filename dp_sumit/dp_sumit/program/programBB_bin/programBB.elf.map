@@ -1,0 +1,551 @@
+
+
+
+
+00000000 l    d  .comment	00000000 .comment
+00000000 l    df *ABS*	00000000 
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 ./programBB_obj/traps.o
+00000000 l    df *ABS*	00000000 start.o
+00000000 l    d  .gnu.attributes	00000000 .gnu.attributes
+00000000  w      *UND*	00000000 __atext_dst
+00000000  w      *UND*	00000000 __atext_size
+00000000  w      *UND*	00000000 __atext_src
+00000000  w      *UND*	00000000 icmd_AQUANTIA_COMPONENT
+00000000  w      *UND*	00000000 icmd_ATMEL_CRYPTO_COMPONENT
+00000000  w      *UND*	00000000 icmd_BBGE_COMM_COMPONENT
+00000000  w      *UND*	00000000 icmd_BGRG_COMPONENT
+00000000  w      *UND*	00000000 icmd_CALLBACK_COMPONENT
+00000000  w      *UND*	00000000 icmd_CPU_COMM_COMPONENT
+00000000  w      *UND*	00000000 icmd_CRC_COMPONENT
+00000000  w      *UND*	00000000 icmd_DP_AUX_COMPONENT
+00000000  w      *UND*	00000000 icmd_DP_COMPONENT
+00000000  w      *UND*	00000000 icmd_DP_STREAM_COMPONENT
+00000000  w      *UND*	00000000 icmd_EVENT_COMPONENT
+00000000  w      *UND*	00000000 icmd_FIBER5G_COMPONENT
+00000000  w      *UND*	00000000 icmd_HPD_COMPONENT
+00000000  w      *UND*	00000000 icmd_I2C_SLAVE_COMPONENT
+00000000  w      *UND*	00000000 icmd_IDT_CLK_COMPONENT
+00000000  w      *UND*	00000000 icmd_ISTATUS_COMPONENT
+00000000  w      *UND*	00000000 icmd_LAN_PORT_COMPONENT
+00000000  w      *UND*	00000000 icmd_LINKMGR_COMPONENT
+00000000  w      *UND*	00000000 icmd_MAC_COMPONENT
+00000000  w      *UND*	00000000 icmd_MCA_COMPONENT
+00000000  w      *UND*	00000000 icmd_MDIOD_COMPONENT
+00000000  w      *UND*	00000000 icmd_PCS_PMA_COMPONENT
+00000000  w      *UND*	00000000 icmd_RANDOM_COMPONENT
+00000000  w      *UND*	00000000 icmd_ROM_COMPONENT
+00000000  w      *UND*	00000000 icmd_RS232_COMPONENT
+00000000  w      *UND*	00000000 icmd_SFI_COMPONENT
+00000000  w      *UND*	00000000 icmd_SHA2_COMPONENT
+00000000  w      *UND*	00000000 icmd_TEST_COMPONENT
+00000000  w      *UND*	00000000 icmd_TEST_HARNESS_COMPONENT
+00000000  w      *UND*	00000000 icmd_TOPLEVEL_COMPONENT
+00000000  w      *UND*	00000000 icmd_ULP_COMPONENT
+00000000  w      *UND*	00000000 icmd_UPP_COMPONENT
+00000000  w      *UND*	00000000 icmd_XADC_COMPONENT
+00000000  w      *UND*	00000000 icmd_XAUI_COMPONENT
+00000000  w      *UND*	00000000 icmd_XMODEM_COMPONENT
+00000008 g       *ABS*	00000000 chip_version
+0000000c g       *ABS*	00000000 chip_date
+00000010 g       *ABS*	00000000 chip_time
+00000014 g       *ABS*	00000000 asic_golden_fw_address
+00000018 g       *ABS*	00000000 asic_current_fw_address
+0000001c g       *ABS*	00000000 fpga_golden_fw_address
+00000020 g       *ABS*	00000000 fpga_current_fw_address
+000001dc g       *ABS*	00000000 __data_size
+00000224 g     F *ABS*	00000108 ROM_uartBoot
+00000290 g       *ABS*	00000000 __rodata_size
+000012c4 g     O *ABS*	00000004 romRev
+000012c8 g     O *ABS*	00000200 ATMEL_secretKeyStore
+0000481c g       *ABS*	00000000 __bss_size
+00009178 g       *ABS*	00000000 __ftext_size
+a0000000 g       .start_text	00000000 start
+a0000000 l    d  .start_text	00000000 .start_text
+a0000018 g       .start_text	00000000 LEON_CPUInitStackAndCall
+a0000044 l       .start_text	00000000 start2
+a0000100 l       .start_text	00000000 call_C_forever
+a0000110 g       .start_text	00000000 curr_flash_pos
+a0001000 g       *ABS*	00000000 __ftext_src
+a0001000 g       .ftext	00000000 __ftext_dst
+a0001000 g       .ftext	00000000 _LEON_TrapHandler
+a0001000 l    d  .ftext	00000000 .ftext
+a000108c g       .ftext	00000000 LEON_UninitializedISR
+a0001094 g       .ftext	00000000 _LEON_softTrap
+a00010c4 g     F .ftext	00000044 .hidden LEON_TimerWaitMicroSec
+a00010c4 g       .ftext	00000000 __ftext_start
+a0001108 g     F .ftext	00000060 memcpy
+a0001168 g     F .ftext	0000008c memset
+a00011f4 g     F .ftext	00000028 .hidden UART_ByteTxByCh.constprop.43
+a000121c g     F .ftext	00000018 .hidden UART_PollingModeDoWork
+a0001234 l     F .ftext	0000014c UART_PollingModeDoWorkByCh
+a0001380 g     F .ftext	00000094 UART_InterruptHandlerRx
+a0001414 g     F .ftext	00000010 UART_InterruptHandlerTx
+a0001424 g     F .ftext	000000dc .hidden UART_InterruptHandlerRxGe
+a0001500 g     F .ftext	00000010 .hidden UART_InterruptHandlerTxGe
+a0001510 g     F .ftext	00000038 .hidden UartfifoSpaceAvail
+a0001548 g     F .ftext	00000028 .hidden UartfifoWrite
+a0001570 l     F .ftext	000000a4 UartfifoCopy
+a0001614 l     F .ftext	00000028 UartfifoRead
+a000163c g     F .ftext	0000007c .hidden PacketizeSendData.lto_priv.78
+a00016b8 l     F .ftext	00000324 UART_processPacket
+a00019dc g     F .ftext	00000084 .hidden _ilog
+a0001a60 g     F .ftext	00000030 .hidden LEON_SFISendInstruction
+a0001a90 g     F .ftext	00000034 .hidden LEON_SFISendReadStatus
+a0001ac4 g     F .ftext	000001fc .hidden MainLoop
+a0001cc0 g     F .ftext	00000068 .hidden FLASHRAW_write
+a0001d28 g     F .ftext	000000e4 .hidden FLASHRAW_GoldenProtect
+a0001e0c g     F .ftext	0000009c FLASHRAW_Unprotect
+a0001ea8 g     F .ftext	00000038 .hidden TIMING_TimerStart
+a0001ee0 g     F .ftext	00000020 .hidden TIMING_TimerStop
+a0001f00 g     F .ftext	000000a8 TIMING_TimerInterruptHandler
+a0001fa8 g     F .ftext	000000b8 .hidden Mdio_InterruptHandler
+a0002060 l     F .ftext	000001c0 mdioIdleTask
+a0002220 l     F .ftext	000000ac submitASyncOperation
+a00022cc l     F .ftext	00000068 __EEPROM_At24cxxReadCompleteHandler
+a0002334 l     F .ftext	00000058 __EEPROM_At24cxxWriteCompleteHandler
+a000238c l     F .ftext	00000034 __EEPROM_At24cxxAcquireLock
+a00023c0 g       .ftext	00000000 enableCache
+a00023e8 g       .ftext	00000000 disableCache
+a0002410 g     F .ftext	00000038 .hidden PacketizeResetRxState.lto_priv.93
+a0002448 g     F .ftext	0000000c .hidden PacketizeRxPacketTimeoutBB.lto_priv.178
+a0002454 g     F .ftext	00000144 .hidden PacketizeRxPacketTimeoutGE.lto_priv.179
+a0002598 g     F .ftext	00000010 .hidden LEON_TimerRead
+a00025a8 g     F .ftext	0000001c .hidden LEON_EnableIrq
+a00025c4 g     F .ftext	00000018 .hidden LEON_EnableIrq2Bits
+a00025dc g     F .ftext	0000009c .hidden crcInit
+a0002678 g     F .ftext	00000070 .hidden crcFast
+a00026e8 g     F .ftext	00000070 .hidden UART_packetizeSendResponseImmediate.constprop.48
+a0002758 g     F .ftext	000000a8 .hidden CMD_hardwareInfo.constprop.50
+a0002800 g     F .ftext	0000013c .hidden CMD_sendSoftwareVersion.constprop.51
+a000293c g     F .ftext	000000bc .hidden UART_packetizeSendDataImmediate.constprop.64
+a00029f8 g     F .ftext	00000084 .hidden SFI_sendWriteEnable.lto_priv.98
+a0002a7c g     F .ftext	00000094 .hidden SFI_readStatusFlags
+a0002b10 g     F .ftext	00000094 .hidden SFI_readStatusRegister
+a0002ba4 g     F .ftext	00000080 .hidden SFI_clearStatusFlags
+a0002c24 g     F .ftext	0000008c .hidden SFI_ReadNonVolatileLockBits
+a0002cb0 g     F .ftext	0000008c .hidden UART_WaitForTx
+a0002d3c g     F .ftext	000001b8 .hidden UART_RxInterrupt
+a0002ef4 g     F .ftext	00000128 .hidden _UART_initPort.lto_priv.190
+a000301c g     F .ftext	00000074 .hidden UART_packetizeResetBB
+a0003090 g     F .ftext	00000018 .hidden bb_top_IsDeviceLex
+a00030a8 g     F .ftext	000001e8 .hidden bb_top_drpReadModWrite
+a0003290 g     F .ftext	00000020 .hidden bb_top_IsFpgaGoldenImage
+a00032b0 g     F .ftext	0000003c bb_top_triggerFallbackFpgaIcmd
+a00032ec g     F .ftext	00000058 bb_top_readUserReg
+a0003344 g     F .ftext	00000044 bb_top_writeUserReg
+a0003388 g     F .ftext	00000054 bb_top_CalcTargetImageCrc
+a00033dc g     F .ftext	000000d0 bb_top_CalcFpgaImageCrc
+a00034ac g     F .ftext	00000034 bb_top_coreTypeIcmd
+a00034e0 g     F .ftext	00000050 bb_top_IcmddpSetTxDiffCtrl
+a0003530 g     F .ftext	00000060 bb_top_IcmddpSetTxPostCursor
+a0003590 g     F .ftext	000000bc .hidden ILOG_istatus
+a000364c l     F .ftext	00000134 AssertPrintRegisterWindows
+a0003780 g     F .ftext	000000c8 .hidden SFI_eraseSector
+a0003848 g     F .ftext	00000028 .hidden SFI_clearSuspendGoto3ByteAddress
+a0003870 g     F .ftext	00000098 .hidden SFI_sendEnterExit4ByteAddressMode.lto_priv.125
+a0003908 g     F .ftext	00000134 .hidden CALLBACK_RemoveCallbackFromQueue.lto_priv.124
+a0003a3c g     F .ftext	00000088 .hidden CALLBACK_Enqueue.lto_priv.81
+a0003ac4 g     F .ftext	000000dc .hidden CALLBACK_GetEntry.lto_priv.80
+a0003ba0 g     F .ftext	000001e4 STATSMON_PrintStatsCmd
+a0003d84 g     F .ftext	00000008 STATSMON_ClearAllStatsCmd
+a0003d8c g     F .ftext	00000034 .hidden EVENT_GetEventInfo
+a0003dc0 l     F .ftext	000000a4 bb_top_setDpGtpRxMiscCtrlPd
+a0003e64 g     F .ftext	000000a0 .hidden bb_top_a7_changeFpgaImage
+a0003f04 g     F .ftext	00000030 .hidden bb_top_a7_writePreamble.lto_priv.79
+a0003f34 g     F .ftext	0000020c bb_top_GtpResetIcmd
+a0004140 g     F .ftext	0000000c bb_top_ConfigureDpTransceiverLexIcmd
+a000414c l     F .ftext	000000d4 bb_top_dpConfigureDpTransceiverLexA7_2
+a0004220 l     F .ftext	00000120 bb_top_dpConfigureDpTransceiverLexA7_3
+a0004340 l     F .ftext	000000cc bb_top_dpConfigureDpTransceiverLexA7_4
+a000440c l     F .ftext	00000048 bb_top_GtpResetCallback
+a0004454 g     F .ftext	00000014 bb_top_switchFpgaImage
+a0004468 g     F .ftext	00000098 flashDeviceIcmd
+a0004500 g     F .ftext	0000000c flashProtectGoldenIcmd
+a000450c g     F .ftext	00000108 flashReadChipSectorProtectionIcmd
+a0004614 l     F .ftext	000002cc FlashPageWrite
+a00048e0 l     F .ftext	0000010c FlashPageWriteComplete
+a00049ec g     F .ftext	000000b0 .hidden FLASHRAW_eraseGeneric
+a0004a9c g     F .ftext	00000060 .hidden eraseBlocks.lto_priv.162
+a0004afc g     F .ftext	00000070 .hidden TIMING_TimerRegisterHandler
+a0004b6c g     F .ftext	00000018 .hidden _TIMING_AssertNullPointer.lto_priv.191
+a0004b84 g     F .ftext	000000e4 .hidden callBackTask
+a0004c68 g     F .ftext	0000008c .hidden CALLBACK_Schedule
+a0004cf4 g     F .ftext	00000060 .hidden CALLBACK_Run
+a0004d54 g     F .ftext	0000002c .hidden I2C_WriteAsync
+a0004d80 g     F .ftext	00000268 .hidden I2C_WriteBlocking
+a0004fe8 l     F .ftext	00000148 i2cIdleTask
+a0005130 l     F .ftext	00000038 i2cSetPortDone
+a0005168 l     F .ftext	000000a8 i2cStart
+a0005210 l     F .ftext	0000003c i2cWakeOp
+a000524c l     F .ftext	000000a0 i2cWakeDelay
+a00052ec g     F .ftext	00000054 .hidden i2cIdleDelay.lto_priv.174
+a0005340 l     F .ftext	0000016c i2cStartInterface
+a00054ac g     F .ftext	0000008c .hidden i2cReadHwFifo.lto_priv.148
+a0005538 g     F .ftext	00000068 .hidden finalizeAsyncOperation.lto_priv.147
+a00055a0 g     F .ftext	00000090 .hidden submitAsyncOperation.lto_priv.149
+a0005630 l     F .ftext	00000018 icmdMdioReadHelper
+a0005648 l     F .ftext	00000028 mdioAssertInvalidState
+a0005670 l     F .ftext	00000018 MdioNotifyReadHandler
+a0005688 l     F .ftext	00000014 MdioNotifyWriteHandler
+a000569c g     F .ftext	00000064 Configuration_ShowFeaturebits
+a0005700 g     F .ftext	00000050 flashFillCurrentIcmd
+a0005750 g     F .ftext	0000002c flashEraseCurrentIcmd
+a000577c g     F .ftext	00000020 flashDataWriteByte
+a000579c g     F .ftext	00000024 flashDataEraseFlashVars
+a00057c0 g     F .ftext	00000014 setMmuAddressOffsetIcmd
+a00057d4 g     F .ftext	00000010 flashDataEraseBlockIcmd
+a00057e4 g     F .ftext	00000180 .hidden _GE_PGM_sendGeFlashWriter.lto_priv.161
+a0005964 g     F .ftext	00000084 .hidden LED_SetLedState
+a00059e8 l     F .ftext	00000030 LED_OnOff
+a0005a18 g     F .ftext	000000a0 .hidden GPIO_irqHandler
+a0005ab8 g     F .ftext	00000024 .hidden GPIO_dataWriteRMW
+a0005adc g     F .ftext	000000e0 EEPROM_icmdReadPage
+a0005bbc l     F .ftext	000000d0 _EEPROM_icmdReadDone
+a0005c8c g     F .ftext	00000140 EEPROM_icmdWritePage
+a0005dcc l     F .ftext	00000024 _EEPROM_icmdWriteDone
+a0005df0 l     F .ftext	00000014 wakeComplete
+a0005e04 l     F .ftext	0000003c readComplete
+a0005e40 l     F .ftext	0000002c writeComplete
+a0005e6c l     F .ftext	00000024 i2cWriteReadComplete
+a0005e90 g     F .ftext	000002f0 .hidden I2c_InterruptHandler
+a0006180 g     F .ftext	00000050 .hidden assertPostHook.lto_priv.163
+a00061d0 g     F .ftext	00000018 LEON_TrapHandlerEndPoint
+a00061e8 g     F .ftext	00000028 LEON_AHBFailureHandler
+a0006210 g     F .ftext	0000001c LEON_DataStoreErrHandler
+a000622c g     F .ftext	0000001c LEON_InstFetchErr
+a0006248 g     F .ftext	0000001c LEON_IllegalInstErr
+a0006264 g     F .ftext	0000001c LEON_PrivInstErr
+a0006280 g     F .ftext	0000001c LEON_InstAccErr
+a000629c g     F .ftext	0000001c LEON_UnimplementedFlush
+a00062b8 g     F .ftext	0000001c LEON_DataAccErr
+a00062d4 g     F .ftext	0000001c LEON_DataAccExc
+a00062f0 g     F .ftext	0000001c LEON_DivByZeroErr
+a000630c g     F .ftext	00000128 .hidden CMD_programDataHandler
+a0006434 g     F .ftext	00000048 .hidden _CMD_watchdogTimerHandler.lto_priv.177
+a000647c l     F .ftext	000000cc eraseFinishHandler
+a0006548 g     F .ftext	00000020 .hidden CMD_commandSendResponseAck
+a0006568 g     F .ftext	00000014 CMD_programGE
+a000657c g     F .ftext	00000328 .hidden _CMD_commandHandler.lto_priv.176
+a00068a4 g     F .ftext	00000020 GE_PROGRAM_geEnterBootloaderMode
+a00068c4 g     F .ftext	00000038 GE_PROGRAM_geEnterReset
+a00068fc g     F .ftext	00000090 .hidden _GE_PGM_processRxByte
+a000698c g     F .ftext	00000048 .hidden _GE_PGM_commandResponseHandler.lto_priv.169
+a00069d4 g     F .ftext	00000038 .hidden _GE_PGM_programDataResponseHandler.lto_priv.171
+a0006a0c g     F .ftext	00000060 .hidden _GE_PGM_commandStatusHandler.lto_priv.170
+a0006a6c l     F .ftext	00000030 _GE_PGM_commandSendErase
+a0006a9c l     F .ftext	00000138 _GE_PGM_commandSendProgramData
+a0006bd4 l     F .ftext	00000014 _I2CD_icmdsGpioExpClearPinComplete
+a0006be8 l     F .ftext	00000014 _I2CD_icmdsGpioExpSetPinComplete
+a0006bfc l     F .ftext	00000024 _I2CD_icmdsGpioExpReadPinComplete
+a0006c20 l     F .ftext	0000003c _I2CD_gpioExpClearCallback
+a0006c5c l     F .ftext	0000000c _I2CD_gpioExpSetCallback
+a0006c68 l     F .ftext	0000003c _I2CD_gpioExpReadCallback
+a0006ca4 l     F .ftext	00000040 _I2CD_gpioExpReadInputsHandler
+a0006ce4 l     F .ftext	0000008c _I2CD_gpioExpBeginReadModifyWriteOperation
+a0006d70 l     F .ftext	0000002c _I2CD_gpioExpRmwReadHandler
+a0006d9c l     F .ftext	000000a4 setI2cGpioPin
+a0006e40 l     F .ftext	00000078 _I2CD_gpioExpRmwReadHandler.part.0
+a0006eb8 g     F .ftext	000000a8 TOPLEVEL_secondaryInterruptHandler
+a0006f60 l     F .ftext	00000028 TOPLEVEL_setPollingMask
+a0006f88 g     F .ftext	0000008c .hidden BBCore_InterruptHandler.lto_priv.77
+a0007014 g     F .ftext	0000008c .hidden BBTop_InterruptHandler.lto_priv.76
+a00070a0 l     F .ftext	00000048 _I2CD_dp130WriteCompleteHandler
+a00070e8 g     F .ftext	00000008 .hidden LEON_flushCache
+a00070f0 g     F .ftext	000000f0 BBCORE_printHWModuleVersion
+a00071e0 g     F .ftext	00000048 .hidden CMD_loadAndRunProgramBB.constprop.23
+a0007228 g     F .ftext	0000009c .hidden CALLBACK_Allocate.constprop.28
+a00072dc g     F .ftext	0000006c .hidden UART_WaitForTxSpaceByCh
+a0007348 g     F .ftext	00000224 .hidden UART_printf
+a000756c g     F .ftext	00000024 .hidden UartfifoClear
+a0007590 g     F .ftext	00000088 .hidden UART_packetizeRegisterClient
+a0007618 g     F .ftext	0000029c .hidden UART_packetizeDecodeRxData
+a00078b4 g     F .ftext	00000050 .hidden bb_top_SetGEToResetMode
+a0007904 g     F .ftext	00000028 bb_top_ApplyGEReset
+a000792c g     F .ftext	00000030 .hidden resetWatchdogHandler.lto_priv.181
+a000795c g     F .ftext	00000030 .hidden runWatchdogHandler.lto_priv.182
+a000798c g     F .ftext	00000188 .hidden _iassert
+a0007b14 g     F .ftext	000000dc .hidden ICMD_PacketizeHandler.lto_priv.175
+a0007bf0 g     F .ftext	00000020 bb_top_systemReset
+a0007c10 g     F .ftext	0000003c .hidden FLASHRAW_eraseTimerHandler.lto_priv.158
+a0007c4c g     F .ftext	0000008c .hidden CALLBACK_Reinit
+a0007cd8 g     F .ftext	00000058 icmdMdioWrite
+a0007d30 g     F .ftext	00000054 icmdMdioRead
+a0007d84 g     F .ftext	00000078 icmdMdioIndirectWrite
+a0007dfc g     F .ftext	00000070 icmdMdioIndirectRead
+a0007e8c g     F .ftext	00000278 .hidden LED_TimerHandler.lto_priv.172
+a0008104 l     F .ftext	00000038 LED_GetCurrentState
+a000813c g     F .ftext	00000014 .hidden LED_BootingFinish.lto_priv.173
+a0008150 l     F .ftext	00000068 LED_PatternDisplay.isra.0
+a0008218 g     F .ftext	00000450 .hidden _GE_PGM_geStateMachine.lto_priv.150
+a0008668 l     F .ftext	00000010 assertPreHook
+a0008678 l     F .ftext	00000040 _fwAliveTimerHandler
+a00086b8 g     F .ftext	00000dc0 imain
+a0009478 l     F .ftext	00000020 I2CD_dp130GeneralReadHandler
+a0009498 l     F .ftext	00000068 DP130ResetWaitTimerHandler
+a0009500 l     F .ftext	00000030 I2CD_dp130SetEqEnableHandler
+a0009530 g     F .ftext	00000060 flashmemcpy
+a0009590 g     F .ftext	0000008c flashmemset
+a000961c g     F .ftext	00000104 UART_ShowStats
+a0009720 g     F .ftext	0000005c UART_BBChangeBaudRate
+a000977c g     F .ftext	00000020 ilog_setBlockingMode
+a000979c g     F .ftext	0000001c ilog_clearBlockingMode
+a00097b8 g     F .ftext	00000068 assertStatus
+a0009820 g     F .ftext	0000005c ilog_SetLevel
+a000987c g     F .ftext	00000040 ilog_icmdGetLevel
+a00098bc g     F .ftext	00000010 testStackOverFlow
+a00098cc g     F .ftext	00000008 ResetStats
+a00098d4 g     F .ftext	00000044 readMemory
+a0009918 g     F .ftext	00000020 writeMemory
+a0009938 g     F .ftext	00000048 readModifyWriteMemory
+a0009980 g     F .ftext	0000006c modifyBitfield
+a00099ec g     F .ftext	0000005c dumpMemory32
+a0009a48 g     F .ftext	00000024 callFunction
+a0009a6c g     F .ftext	00000024 readMemory16
+a0009a90 g     F .ftext	00000020 writeMemory16
+a0009ab0 g     F .ftext	00000058 readModifyWriteMemory16
+a0009b08 g     F .ftext	0000001c readMemory8
+a0009b24 g     F .ftext	00000020 writeMemory8
+a0009b44 g     F .ftext	00000060 showTimers
+a0009ba4 g     F .ftext	00000028 startTimer
+a0009bcc g     F .ftext	00000028 stopTimer
+a0009bf4 g     F .ftext	00000034 changeTimeout
+a0009c28 g     F .ftext	00000098 i2cStatus
+a0009cc0 g     F .ftext	00000094 mdioStatus
+a0009d54 g     F .ftext	00000018 ledOnOff
+a0009d6c g     F .ftext	0000000c ledSetMode
+a0009d78 g     F .ftext	00000058 i2cWakeIcmd
+a0009dd0 g     F .ftext	00000080 i2cReadIcmd
+a0009e50 g     F .ftext	00000068 i2cWriteIcmd
+a0009eb8 g     F .ftext	00000088 i2cWriteReadIcmd
+a0009f40 g     F .ftext	00000070 i2cWriteReadBlockIcmd
+a0009fb0 g     F .ftext	00000040 I2CD_icmdsGpioExpClearPin
+a0009ff0 g     F .ftext	00000040 I2CD_icmdsGpioExpSetPin
+a000a030 g     F .ftext	00000084 I2CD_icmdsGpioExpReadPin
+a000a0b4 g     F .ftext	0000006c I2CD_icmdsGpioExpTest
+a000a120 g     F .ftext	00000058 I2CD_dp130GeneralRead
+a000a178 g       *ABS*	00000000 __rodata_src
+a000a178 g       .rodata	00000000 icmd_COMMAND_COMPONENT
+a000a178 g       .rodata	00000000 __rodata_dst
+a000a178 l    d  .rodata	00000000 .rodata
+a000a17c g       .rodata	00000000 icmd_GE_PROGRAM_COMPONENT
+a000a184 g       .rodata	00000000 icmd_I2CD_COMPONENT
+a000a198 g       .rodata	00000000 icmd_LED_COMPONENT
+a000a1a0 g       .rodata	00000000 icmd_EEPROM_COMPONENT
+a000a1a0 g       .rodata	00000000 icmd_GPIO_COMPONENT
+a000a1a8 g       .rodata	00000000 icmd_I2C_COMPONENT
+a000a1c0 g       .rodata	00000000 icmd_MDIO_COMPONENT
+a000a1d4 g       .rodata	00000000 icmd_CONFIG_COMPONENT
+a000a1d8 g       .rodata	00000000 icmd_FLASH_DATA_COMPONENT
+a000a200 g       .rodata	00000000 icmd_TIMING_COMPONENT
+a000a210 g       .rodata	00000000 icmd_STATS_MON_COMPONENT
+a000a218 g       .rodata	00000000 icmd_MAIN_LOOP_COMPONENT
+a000a21c g       .rodata	00000000 icmd_ICMD_COMPONENT
+a000a248 g       .rodata	00000000 icmd_TOP_COMPONENT
+a000a27c g       .rodata	00000000 icmd_ILOG_COMPONENT
+a000a27c g       .rodata	00000000 icmd_UTIL_COMPONENT
+a000a294 g       .rodata	00000000 icmd_UART_COMPONENT
+a000a29c g       .rodata	00000000 icmd_CORE_COMPONENT
+a000a2a0 g     O .rodata	00000020 .hidden gpioStatesRex
+a000a2c0 g     O .rodata	00000044 .hidden initSteps.lto_priv.167
+a000a304 l     O .rodata	00000001 pllCtrlStatSelCfg8k
+a000a305 l     O .rodata	00000001 pllCtrlStatSelCfg1k
+a000a306 l     O .rodata	00000001 rxEqCtrlStat
+a000a307 l     O .rodata	00000001 rxEqCtrlStatAdaptive
+a000a308 l     O .rodata	00000001 rxEqBERTcnt
+a000a309 l     O .rodata	00000001 pllCtrlStatCfgEnPllAlock
+a000a30a l     O .rodata	00000001 pllCtrlStatCfgDiPll
+a000a30b l     O .rodata	00000001 pllCtrlStatCfgEnPll
+a000a30c l     O .rodata	00000001 rxCtrlEnoc
+a000a30d l     O .rodata	00000001 rxEqFtcLevInit
+a000a30e l     O .rodata	00000001 rxCtrlEqLd
+a000a30f l     O .rodata	00000001 txEnInit
+a000a310 l     O .rodata	00000001 rxLnEnInit
+a000a312 l     O .rodata	00000002 pllCtrlStatPllMode
+a000a314 l     O .rodata	00000002 pllCtrlStatPdMode
+a000a316 l     O .rodata	00000002 pllCtrlStatCpFull
+a000a318 l     O .rodata	00000003 crPhaseStep1
+a000a31c l     O .rodata	00000002 dp159DisablePV
+a000a320 l     O .rodata	00000050 reInitSteps
+a000a370 l     O .rodata	00000020 crPhaseSteps
+a000a390 l     O .rodata	00000038 changePllMode
+a000a3c8 l     O .rodata	00000010 resetRxLane
+a000a3d8 l     O .rodata	00000010 tps23IrqSteps
+a000a3e8 g     O .rodata	00000020 .hidden gpioStatesLex
+a000a408 g     O .rodata.i2cDeviceGpioExpander	00000003 .hidden i2cDeviceGpioExpander
+a000a408 l    d  .rodata.i2cDeviceGpioExpander	00000000 .rodata.i2cDeviceGpioExpander
+a000a40b g     O .rodata.i2cDeviceDp130	00000003 .hidden i2cDeviceDp130
+a000a40b l    d  .rodata.i2cDeviceDp130	00000000 .rodata.i2cDeviceDp130
+a000a40e g     O .rodata.i2cDeviceDp159	00000003 .hidden i2cDeviceDp159
+a000a40e l    d  .rodata.i2cDeviceDp159	00000000 .rodata.i2cDeviceDp159
+a000a418 g     O .rodata.romBootSequence.lto_priv.155	0000002b .hidden romBootSequence.lto_priv.155
+a000a418 l    d  .rodata.romBootSequence.lto_priv.155	00000000 .rodata.romBootSequence.lto_priv.155
+a000a448 g     O .rodata.bootPattern.lto_priv.138	00000004 .hidden bootPattern.lto_priv.138
+a000a448 l    d  .rodata.bootPattern.lto_priv.138	00000000 .rodata.bootPattern.lto_priv.138
+a000a44c g     O .rodata.tempWarnPattern.lto_priv.141	00000004 .hidden tempWarnPattern.lto_priv.141
+a000a44c l    d  .rodata.tempWarnPattern.lto_priv.141	00000000 .rodata.tempWarnPattern.lto_priv.141
+a000a450 g     O .rodata.tempFaultPattern.lto_priv.142	00000004 .hidden tempFaultPattern.lto_priv.142
+a000a450 l    d  .rodata.tempFaultPattern.lto_priv.142	00000000 .rodata.tempFaultPattern.lto_priv.142
+a000a454 g     O .rodata.downloadPattern.lto_priv.140	00000008 .hidden downloadPattern.lto_priv.140
+a000a454 l    d  .rodata.downloadPattern.lto_priv.140	00000000 .rodata.downloadPattern.lto_priv.140
+a000a45c g     O .rodata.downloadPatternDP.lto_priv.139	0000000a .hidden downloadPatternDP.lto_priv.139
+a000a45c l    d  .rodata.downloadPatternDP.lto_priv.139	00000000 .rodata.downloadPatternDP.lto_priv.139
+a000a466 g     O .rodata.veriFaultPattern.lto_priv.144	00000004 .hidden veriFaultPattern.lto_priv.144
+a000a466 l    d  .rodata.veriFaultPattern.lto_priv.144	00000000 .rodata.veriFaultPattern.lto_priv.144
+a000a46a g     O .rodata.veriFaultPatternDP.lto_priv.143	00000004 .hidden veriFaultPatternDP.lto_priv.143
+a000a46a l    d  .rodata.veriFaultPatternDP.lto_priv.143	00000000 .rodata.veriFaultPatternDP.lto_priv.143
+a000a46e g     O .rodata.devicePc9548	00000003 .hidden devicePc9548
+a000a46e l    d  .rodata.devicePc9548	00000000 .rodata.devicePc9548
+a000a474 g     O .rodata.listTable.lto_priv.120	00000010 .hidden listTable.lto_priv.120
+a000a474 l    d  .rodata.listTable.lto_priv.120	00000000 .rodata.listTable.lto_priv.120
+a000a484 g     O .rodata.icmd_callbacks.lto_priv.106	000000d8 .hidden icmd_callbacks.lto_priv.106
+a000a484 l    d  .rodata.icmd_callbacks.lto_priv.106	00000000 .rodata.icmd_callbacks.lto_priv.106
+a000a55c g     O .rodata.mmcmSink.lto_priv.104	00000114 .hidden mmcmSink.lto_priv.104
+a000a55c l    d  .rodata.mmcmSink.lto_priv.104	00000000 .rodata.mmcmSink.lto_priv.104
+a000a670 g     O .rodata.rxCdrCfgSscOff5G.lto_priv.102	0000000a .hidden rxCdrCfgSscOff5G.lto_priv.102
+a000a670 l    d  .rodata.rxCdrCfgSscOff5G.lto_priv.102	00000000 .rodata.rxCdrCfgSscOff5G.lto_priv.102
+a000a67a g     O .rodata.rxCdrCfgSscOff.lto_priv.101	0000000a .hidden rxCdrCfgSscOff.lto_priv.101
+a000a67a l    d  .rodata.rxCdrCfgSscOff.lto_priv.101	00000000 .rodata.rxCdrCfgSscOff.lto_priv.101
+a000a684 g     O .rodata.uartFifoDefinitions.lto_priv.85	00000018 .hidden uartFifoDefinitions.lto_priv.85
+a000a684 l    d  .rodata.uartFifoDefinitions.lto_priv.85	00000000 .rodata.uartFifoDefinitions.lto_priv.85
+a000a69c l    d  .rodata.hwVersionInformation	00000000 .rodata.hwVersionInformation
+a000a69c l     O .rodata.hwVersionInformation	00000054 hwVersionInformation
+a000a6f0 g     O .rodata.crc64Table	00000800 .hidden crc64Table
+a000a6f0 l    d  .rodata.crc64Table	00000000 .rodata.crc64Table
+a000aef0 l    d  .rodata.str1.8	00000000 .rodata.str1.8
+a000af68 g       *ABS*	00000000 __data_src
+a1000000 g       .bss	00000000 __bss_dst
+a1000000 g     O .bss	00000100 .hidden geFwPayload.lto_priv.152
+a1000000 l    d  .bss	00000000 .bss
+a1000100 g     O .bss	00000080 .hidden geFlshWtrBuff.lto_priv.145
+a1000180 g     O .bss	00000010 .hidden pageBuffer
+a1000190 g     O .bss	00000036 .hidden component_logging_level
+a10001c8 g     O .bss	00000200 .hidden blackBirdRxBuffer.lto_priv.89
+a10003c8 g     O .bss	00001000 .hidden blackBirdTxBuffer.lto_priv.90
+a10013c8 g     O .bss	00000200 .hidden bbgeRxBuffer.lto_priv.91
+a10015c8 g     O .bss	00000200 .hidden bbgeTxBuffer.lto_priv.92
+a10017c8 g     O .bss	00000100 .hidden printf_msg.lto_priv.87
+a10018c8 g     O .bss	00000100 .hidden rxPacketBuffer
+a10019c8 g     O .bss	00000002 .hidden _packetizeEnabled.lto_priv.88
+a10019d0 g     O .bss	00000100 .hidden crcReflectData
+a1001ad0 g     O .bss	00000020 .hidden _gpioExpander.lto_priv.186
+a1001af0 g     O .bss	00000004 .hidden I2cLEDTimer.lto_priv.189
+a1001af4 g     O .bss	00000004 .hidden bb_chip_registers.lto_priv.113
+a1001af8 g     O .bss	00000004 .hidden pollingMask.lto_priv.114
+a1001afc g     O .bss	00000080 .hidden coreIrqHandlers.lto_priv.185
+a1001b7c g     O .bss	00000080 .hidden topIrqHandlers.lto_priv.184
+a1001bfc g     O .bss	00000004 .hidden fwAliveTimer.lto_priv.164
+a1001c00 g     O .bss	0000000c .hidden pgmStartCmd.lto_priv.159
+a1001c0c g     O .bss	00000020 .hidden pgmInfo.lto_priv.157
+a1001c2c l     O .bss	0000000c hwInfo
+a1001c38 g     O .bss	00000004 .hidden flash_bin_table_ptr.lto_priv.71
+a1001c3c g     O .bss	00000004 .hidden flash_bin_table_ptr.lto_priv.72
+a1001c40 g     O .bss	00000010 .hidden gePgm.lto_priv.151
+a1001c50 g     O .bss	00000014 .hidden ledContext.lto_priv.137
+a1001c64 g     O .bss	00000088 .hidden gpioIrqHandler.lto_priv.136
+a1001cec g     O .bss	00000004 .hidden gpio_registers
+a1001cf0 g     O .bss	0000002c .hidden eeprom_descriptor.lto_priv.135
+a1001d1c g     O .bss	00000008 .hidden i2cIcmdData.lto_priv.133
+a1001d24 g     O .bss	00000020 .hidden i2cContext
+a1001d44 g     O .bss	00000004 .hidden i2c_registers
+a1001d48 g     O .bss	00000004 .hidden i2c_blockCallback.lto_priv.132
+a1001d4c g     O .bss	00000058 .hidden i2c.lto_priv.131
+a1001da4 g     O .bss	00000018 .hidden mdioContext.lto_priv.129
+a1001dbc g     O .bss	00000068 .hidden mdio.lto_priv.130
+a1001e24 l     O .bss	00000004 featureByte
+a1001e28 g     O .bss	00000004 .hidden _callback
+a1001e2c g     O .bss	00000014 .hidden eraseContext
+a1001e40 g     O .bss	00000390 .hidden _TIMING_handlers
+a10021d0 g     O .bss	00000008 .hidden _TIMING.lto_priv.123
+a10021d8 g     O .bss	000013ec .hidden callbackArray.lto_priv.117
+a10035c4 g     O .bss	0000000c .hidden callbackList.lto_priv.121
+a10035d0 g     O .bss	00000218 .hidden statsContext
+a10037e8 g     O .bss	00000030 .hidden eventArray.lto_priv.110
+a1003818 g     O .bss	00000600 .hidden handlerArray.lto_priv.111
+a1003e18 g     O .bss	00000100 .hidden triggerArray.lto_priv.109
+a1003f18 g     O .bss	00000018 .hidden iCmdArgs.lto_priv.107
+a1003f30 g     O .bss	00000004 .hidden bb_top_registers.lto_priv.67
+a1003f34 g     O .bss	00000004 .hidden gtp.lto_priv.95
+a1003f38 g     O .bss	00000018 .hidden bbTopDpCtx.lto_priv.99
+a1003f50 g     O .bss	00000004 .hidden bb_top_registers.lto_priv.69
+a1003f54 g     O .bss	00000004 .hidden drp.lto_priv.97
+a1003f58 g     O .bss	00000004 .hidden bb_top_registers.lto_priv.70
+a1003f5c g     O .bss	00000014 .hidden bbTopGeContext.lto_priv.96
+a1003f70 g     O .bss	00000004 .hidden pAssertHookEndFunction
+a1003f74 g     O .bss	00000004 .hidden pAssertHookStartFunction
+a1003f78 g     O .bss	00000014 .hidden assertInfo
+a1003f8c g     O .bss	00000004 .hidden timeStampOffset.lto_priv.94
+a1003f90 g     O .bss	00000004 .hidden sfi_registers
+a1003f94 g     O .bss	00000004 .hidden timeSpentInRx
+a1003f98 g     O .bss	00000004 .hidden maxTimeSpentInRx
+a1003f9c g     O .bss	00000004 .hidden sumOfTime
+a1003fa0 g     O .bss	00000004 .hidden intCount
+a1003fa4 g     O .bss	00000004 .hidden geTimeSpentInRx
+a1003fa8 g     O .bss	00000004 .hidden geMaxTimeSpentInRx
+a1003fac g     O .bss	00000004 .hidden geSumOfTime
+a1003fb0 g     O .bss	00000004 .hidden geIntCount
+a1003fb4 g     O .bss	00000068 .hidden uartCtrl.lto_priv.82
+a100401c g     O .bss	00000008 .hidden receivePacketTimer.lto_priv.83
+a1004024 g     O .bss	00000050 .hidden bbRxPacketHandler
+a1004074 g     O .bss	00000058 .hidden geRxPacketHandler
+a10040cc g     O .bss	000000a8 .hidden ResponseHandler
+a1004174 g     O .bss	00000004 .hidden bb_core_registers.lto_priv.86
+a1004178 l     O .bss	00000400 crcTable
+a1004578 g     O .bss	00000002 .hidden totalBlocks.lto_priv.153
+a100457a g     O .bss	00000006 .hidden I2cSpeedPrescaler
+a1004580 g     O .bss	00000002 .hidden freeListCount.lto_priv.119
+a1004582 g     O .bss	00000010 .hidden rxPacket
+a1004592 g     O .bss	00000200 .hidden crc16Table
+a1004792 g     O .bss	00000001 .hidden i2cGpioPinSet.lto_priv.187
+a1004793 g     O .bss	00000001 .hidden currentRegPage.lto_priv.168
+a1004794 g     O .bss	00000001 .hidden underAssert.lto_priv.183
+a1004795 g     O .bss	00000001 .hidden currCmdRespID.lto_priv.156
+a1004796 g     O .bss	00000001 .hidden flashNeedsProtection.lto_priv.160
+a1004797 g     O .bss	00000001 .hidden romBootSequenceIdx.lto_priv.154
+a1004798 g     O .bss	00000001 .hidden blkNum.4323.lto_priv.146
+a1004799 g     O .bss	00000001 .hidden displayReadAsWords
+a100479a g     O .bss	00000003 .hidden i2cDeviceIcmd.lto_priv.134
+a100479d g     O .bss	00000001 .hidden i2c_hw_fifo_size
+a100479e g     O .bss	00000003 .hidden featureControl.lto_priv.126
+a10047a1 g     O .bss	00000003 .hidden featureMask.lto_priv.128
+a10047a4 g     O .bss	00000003 .hidden featureEnable.lto_priv.127
+a10047a7 g     O .bss	00000001 .hidden timersInUse.1432.lto_priv.122
+a10047a8 g     O .bss	00000002 .hidden callbackFreeList.lto_priv.118
+a10047aa g     O .bss	00000001 .hidden iCmdResponseId.lto_priv.105
+a10047ab g     O .bss	00000001 .hidden TxDiffCtrl
+a10047ac g     O .bss	00000001 .hidden TxPostCursor
+a10047ad g     O .bss	00000001 .hidden blockingLogMode
+a10047ae g     O .bss	00000001 .hidden newUart.lto_priv.84
+a10047af g     O .bss	00000001 .hidden freeResponses
+a10047b0 g     O .bss	00000001 .hidden activeResponses
+a10047b4 l     O .bss	00000018 dp130ApiCtx
+a10047cc g     O .bss	00000020 .hidden dp130Ctx.lto_priv.165
+a10047ec g     O .bss	0000001c .hidden DP159Api.lto_priv.166
+a1004808 l     O .bss	00000014 _DP159
+a100481c g       .bss	00000000 __bss_end
+a1004820 g       .data	00000000 __data_dst
+a1004820 l    d  .data	00000000 .data
+a1004820 l     O .data	00000002 crPhaseStep5
+a1004828 g     O .data	00000080 .hidden secondaryIrqHandlers.lto_priv.115
+a10048a8 g     O .data	00000004 .hidden leon2Registers.lto_priv.116
+a10048ac l     O .data	00000004 bb_chip.lto_priv.75
+a10048b0 g     O .data	00000001 .hidden i2cGpioPin.lto_priv.188
+a10048b1 g     O .data	00000093 .hidden regData
+a1004944 g     O .data	00000003 .hidden i2cDeviceEeprom
+a1004947 g     O .data	00000001 .hidden freeHandlerStack.lto_priv.180
+a1004948 g     O .data	00000002 .hidden activeQueue.lto_priv.108
+a100494a g     O .data	00000001 .hidden freeTriggerStack.lto_priv.112
+a100494c g     O .data	000000b0 _LEON_isrs
+a10049fc l       .data	00000000 _LEON_isrs_end
+a1004a00 l    d  .stack	00000000 .stack
+a1004e80 g       .stack	00000000 __stack_end
+../programBB_bin/programBB.elf:     file format elf32-sparc
+SYMBOL TABLE:

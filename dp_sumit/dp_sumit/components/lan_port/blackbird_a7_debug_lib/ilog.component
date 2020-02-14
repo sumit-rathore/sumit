@@ -1,0 +1,10 @@
+component:LAN_PORT_COMPONENT
+L:LAN_PORT_COMLINK_UP_EVENT S:Lan Port, comlink event, link is ** UP **\n
+L:LAN_PORT_COMLINK_DOWN_EVENT S:Lan Port, comlink event, link is ** DOWN **\n
+L:LAN_PORT_PHY_INIT_COMPLETED_1G S:1G GMII PHY init completed\n
+L:LAN_PORT_UNEXPECTED_CPU_MSG_LENGTH S:Unexpected length of CPU message received, msgLength = %d\n
+L:LAN_PORT_RCV_CPU_MSG S:Received a CPU message, PHY Link Remote State %d, PHY Remote Speed %d\n
+L:LAN_PORT_TX_CPU_MSG S:Transmitting a CPU message, Header %d, Speed %d\n
+L:LAN_PORT_PHY_INIT_COMPLETED_100M S:100M MII PHY init completed\n
+L:LAN_PORT_DEVICE_STATE_CHANGE S:Lan Port device state %d at speed %d\n
+L:LAN_PORT_MCA_CHANNEL_STATUS S:Lan Port channel status %d\n

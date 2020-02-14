@@ -1,0 +1,2214 @@
+<html>
+<!--
+***********************************************************************
+Component: XRR
+***********************************************************************
+-->
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>XRR Component's Memory Mapped Registers</title>
+   <link rel="stylesheet" type="text/css" href="comp_mmreg.css">
+</head>
+<body>
+   <h2>XRR Component's Memory Mapped Registers</h2>
+   <h3><a name="Register_Summary">Register Summary</a></h3>
+   <table class="registerSummary">
+      <thead>
+         <tr>
+            <th>Offset</th>
+            <th>Register Name</th>
+            <th>R/W</th>
+            <th>Reset Value (hex)</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr class="abRow">
+            <td colspan="4">XRR</td>
+         </tr>
+         <tr>
+            <td>0x20000300</td>
+            <td><a href="#XRR.Id-0x20000300">Id</a></td>
+            <td>?</td>
+            <td>5F585252</td>
+         </tr>
+         <tr>
+            <td>0x20000304</td>
+            <td><a href="#XRR.Rev-0x20000304">Rev</a></td>
+            <td>?</td>
+            <td>00000000</td>
+         </tr>
+         <tr>
+            <td>0x20000308</td>
+            <td><a href="#XRR.IntEn-0x20000308">IntEn</a></td>
+            <td>?</td>
+            <td>00000000</td>
+         </tr>
+         <tr>
+            <td>0x2000030C</td>
+            <td><a href="#XRR.IntFlg-0x2000030C">IntFlg</a></td>
+            <td>?</td>
+            <td>00000000</td>
+         </tr>
+         <tr>
+            <td>0x20000310</td>
+            <td><a href="#XRR.IntSrc-0x20000310">IntSrc</a></td>
+            <td>?</td>
+            <td>00000000</td>
+         </tr>
+         <tr>
+            <td>0x20000314</td>
+            <td><a href="#XRR.IntClr-0x20000314">IntClr</a></td>
+            <td>?</td>
+            <td>00000000</td>
+         </tr>
+         <tr>
+            <td>0x20000318</td>
+            <td><a href="#XRR.StatCntIn-0x20000318">StatCntIn</a></td>
+            <td>?</td>
+            <td>00000000</td>
+         </tr>
+         <tr>
+            <td>0x2000031C</td>
+            <td><a href="#XRR.StatCntOut-0x2000031C">StatCntOut</a></td>
+            <td>?</td>
+            <td>00000000</td>
+         </tr>
+         <tr>
+            <td>0x20000320</td>
+            <td><a href="#XRR.StatCntFlc-0x20000320">StatCntFlc</a></td>
+            <td>?</td>
+            <td>00000000</td>
+         </tr>
+         <tr>
+            <td>0x20000324</td>
+            <td><a href="#XRR.StatCntErr-0x20000324">StatCntErr</a></td>
+            <td>?</td>
+            <td>00000000</td>
+         </tr>
+         <tr>
+            <td>0x20000328</td>
+            <td><a href="#XRR.RexCtrl-0x20000328">RexCtrl</a></td>
+            <td>?</td>
+            <td>000001A0</td>
+         </tr>
+         <tr>
+            <td>0x2000032C</td>
+            <td><a href="#XRR.FrameInfo-0x2000032C">FrameInfo</a></td>
+            <td>?</td>
+            <td>00000010</td>
+         </tr>
+         <tr>
+            <td>0x20000330</td>
+            <td><a href="#XRR.RdFrmHdr0-0x20000330">RdFrmHdr0</a></td>
+            <td>?</td>
+            <td>00000000</td>
+         </tr>
+         <tr>
+            <td>0x20000334</td>
+            <td><a href="#XRR.RdFrmHdr1-0x20000334">RdFrmHdr1</a></td>
+            <td>?</td>
+            <td>00000000</td>
+         </tr>
+         <tr>
+            <td>0x20000338</td>
+            <td><a href="#XRR.RdFrmHdr2-0x20000338">RdFrmHdr2</a></td>
+            <td>?</td>
+            <td>00000000</td>
+         </tr>
+         <tr>
+            <td>0x2000033C</td>
+            <td><a href="#XRR.HSEofTime0-0x2000033C">HSEofTime0</a></td>
+            <td>?</td>
+            <td>04F8016A</td>
+         </tr>
+         <tr>
+            <td>0x20000340</td>
+            <td><a href="#XRR.HSEofTime1-0x20000340">HSEofTime1</a></td>
+            <td>?</td>
+            <td>00000517</td>
+         </tr>
+         <tr>
+            <td>0x20000344</td>
+            <td><a href="#XRR.FSEofTime-0x20000344">FSEofTime</a></td>
+            <td>?</td>
+            <td>2EE01F18</td>
+         </tr>
+         <tr>
+            <td>0x20000348</td>
+            <td><a href="#XRR.SchFrmHdr0-0x20000348">SchFrmHdr0</a></td>
+            <td>?</td>
+            <td>00000000</td>
+         </tr>
+         <tr>
+            <td>0x2000034C</td>
+            <td><a href="#XRR.SchFrmHdr1-0x2000034C">SchFrmHdr1</a></td>
+            <td>?</td>
+            <td>00000000</td>
+         </tr>
+         <tr>
+            <td>0x20000350</td>
+            <td><a href="#XRR.Schedule-0x20000350">Schedule</a></td>
+            <td>?</td>
+            <td>00000000</td>
+         </tr>
+         <tr>
+            <td>0x20000354</td>
+            <td><a href="#XRR.TxCtrl-0x20000354">TxCtrl</a></td>
+            <td>?</td>
+            <td>00000001</td>
+         </tr>
+         <tr>
+            <td>0x20000358</td>
+            <td><a href="#XRR.SofCtrl-0x20000358">SofCtrl</a></td>
+            <td>?</td>
+            <td>EA88EA38</td>
+         </tr>
+         <tr>
+            <td>0x2000035C</td>
+            <td><a href="#XRR.SofDbg1-0x2000035C">SofDbg1</a></td>
+            <td>?</td>
+            <td>00000000</td>
+         </tr>
+         <tr>
+            <td>0x20000360</td>
+            <td><a href="#XRR.RdFrmHdrMSA-0x20000360">RdFrmHdrMSA</a></td>
+            <td>?</td>
+            <td>00000000</td>
+         </tr>
+         <tr>
+            <td>0x20000364</td>
+            <td><a href="#XRR.XrtDebug-0x20000364">XrtDebug</a></td>
+            <td>?</td>
+            <td>00000000</td>
+         </tr>
+      </tbody>
+   </table>
+
+   <h3>Register Descriptions</h3>
+
+   <h3><a name="XRR.Id-0x20000300">Id</a></h3>
+   <p class="text">Offset: 0x20000300</p>
+   <p class="text">XRR registers ASCII identification register.</p>
+
+   <table class="bitFields">
+      <colgroup span="5">
+         <col class="bitsCol"/>
+         <col class="nameCol"/>
+         <col class="descCol"/>
+         <col class="rwCol"/>
+         <col class="rstCol"/>
+         <col class="valTypeCol"/>
+      </colgroup>
+      <thead>
+         <tr>
+            <th>Bits</th>
+            <th>Field Name</th>
+            <th>Description</th>
+            <th>R/W</th>
+            <th>Reset Value</th>
+            <th>Value Type</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>31:0</td>
+            <td>Id</td>
+            <td>XRR registers ASCII identification field.</td>
+            <td>read-only</td>
+            <td>0x5f585252</td>
+            <td>ascii</td>
+         </tr>
+      </tbody>
+   </table>
+   <p><a class="back" href="#Register_Summary">Back to Register Summary Table</a></p>
+
+   <h3><a name="XRR.Rev-0x20000304">Rev</a></h3>
+   <p class="text">Offset: 0x20000304</p>
+   <p class="text"></p>
+
+   <table class="bitFields">
+      <colgroup span="5">
+         <col class="bitsCol"/>
+         <col class="nameCol"/>
+         <col class="descCol"/>
+         <col class="rwCol"/>
+         <col class="rstCol"/>
+         <col class="valTypeCol"/>
+      </colgroup>
+      <thead>
+         <tr>
+            <th>Bits</th>
+            <th>Field Name</th>
+            <th>Description</th>
+            <th>R/W</th>
+            <th>Reset Value</th>
+            <th>Value Type</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>7:0</td>
+            <td>CvsMinor</td>
+            <td>XRR registers CVS minor revision field.  This field relates to the post-decimal CVS version number, as seen in the format: MAJOR.MINOR</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>15:8</td>
+            <td>CvsMajor</td>
+            <td>XRR registers CVS major revision field.  This field relates to the pre-decimal CVS version number, as seen in the format: MAJOR.MINOR</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+      </tbody>
+   </table>
+   <p><a class="back" href="#Register_Summary">Back to Register Summary Table</a></p>
+
+   <h3><a name="XRR.IntEn-0x20000308">IntEn</a></h3>
+   <p class="text">Offset: 0x20000308</p>
+   <p class="text">Interrupt enable register.
+
+0 = interrupt disabled.
+1 = interrupt enabled.</p>
+
+   <table class="bitFields">
+      <colgroup span="5">
+         <col class="bitsCol"/>
+         <col class="nameCol"/>
+         <col class="descCol"/>
+         <col class="rwCol"/>
+         <col class="rstCol"/>
+         <col class="valTypeCol"/>
+      </colgroup>
+      <thead>
+         <tr>
+            <th>Bits</th>
+            <th>Field Name</th>
+            <th>Description</th>
+            <th>R/W</th>
+            <th>Reset Value</th>
+            <th>Value Type</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>0</td>
+            <td>Irq0RexDevResp</td>
+            <td>Device response interrupt enable field.</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>1</td>
+            <td>Irq0RexRdFrmHdrAsync</td>
+            <td>Downstream Async Frame header read interrupt enable field.</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>2</td>
+            <td>Irq0RexRdFrmHdrPer</td>
+            <td>Downstream Periodic Frame header read interrupt enable field.</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>3</td>
+            <td>Irq0RexRdFrmHdrMSA</td>
+            <td>REX mass storage acceleration (MSA) event interrupt enable field.</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>4</td>
+            <td>Irq0RexSOF</td>
+            <td>REX start of frame (SOF) event interrupt enable field.</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>8</td>
+            <td>Irq1StatCntInOverflow</td>
+            <td>XRR.StatCntIn.XXXOvfl(s)=1 interrupt enable field.</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>9</td>
+            <td>Irq1StatCntOutOverflow</td>
+            <td>XRR.StatCntOut.XXXOvfl(s)=1 interrupt enable field.</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>10</td>
+            <td>Irq1StatCntFlcOverflow</td>
+            <td>XRR.StatCntFlc.XXXOvfl(s)=1 interrupt enable field.</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>11</td>
+            <td>Irq1StatCntErrOverflow</td>
+            <td>XRR.StatCntErr.XXXOvfl(s)=1 interrupt enable field.</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+      </tbody>
+   </table>
+   <p><a class="back" href="#Register_Summary">Back to Register Summary Table</a></p>
+
+   <h3><a name="XRR.IntFlg-0x2000030C">IntFlg</a></h3>
+   <p class="text">Offset: 0x2000030C</p>
+   <p class="text">Interrupt flag register.
+
+0 = no interrupt event detected
+1 = interrupt event detected
+
+Note: if the corresponding interrupt enable field (XRR.IntEn.xxx) is asserted and the corresponding interrupt source field (XRR.IntSrc.xxx) is asserted the interrupt flag will assert.  Unless otherwise stated.</p>
+
+   <table class="bitFields">
+      <colgroup span="5">
+         <col class="bitsCol"/>
+         <col class="nameCol"/>
+         <col class="descCol"/>
+         <col class="rwCol"/>
+         <col class="rstCol"/>
+         <col class="valTypeCol"/>
+      </colgroup>
+      <thead>
+         <tr>
+            <th>Bits</th>
+            <th>Field Name</th>
+            <th>Description</th>
+            <th>R/W</th>
+            <th>Reset Value</th>
+            <th>Value Type</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>0</td>
+            <td>Irq0RexDevResp</td>
+            <td>Device response interrupt flag field.<br/>
+<br/>
+LEVEL SENSITIVE INTERRUPT:<br/>
+This field is set when the corresponding interrupt source field and the corresponding interrupt enable field are set.  This field is cleared by writing the corresponding interrupt clear field '1' while the interrupt source field is '0'.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>1</td>
+            <td>Irq0RexRdFrmHdrAsync</td>
+            <td>Frame header read interrupt flag field.<br/>
+<br/>
+LEVEL SENSITIVE INTERRUPT:<br/>
+This field is set when the corresponding interrupt source field and the corresponding interrupt enable field are set.  This field is cleared by writing the corresponding interrupt clear field '1' while the interrupt source field is '0'.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>2</td>
+            <td>Irq0RexRdFrmHdrPer</td>
+            <td>REX mass storage acceleration (MSA) event interrupt flag field.<br/>
+<br/>
+LEVEL SENSITIVE INTERRUPT:<br/>
+This field is set when the corresponding interrupt source field and the corresponding interrupt enable field are set.  This field is cleared by writing the corresponding interrupt clear field '1' while the interrupt source field is '0'.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>3</td>
+            <td>Irq0RexRdFrmHdrMSA</td>
+            <td>REX start of frame (SOF) event interrupt flag field.<br/>
+<br/>
+LEVEL SENSITIVE INTERRUPT:<br/>
+This field is set when the corresponding interrupt source field and the corresponding interrupt enable field are set.  This field is cleared by writing the corresponding interrupt clear field '1' while the interrupt source field is '0'.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>4</td>
+            <td>Irq0RexSOF</td>
+            <td>LEVEL SENSITIVE INTERRUPT:<br/>
+This field is set when the corresponding interrupt source field and the corresponding interrupt enable field are set.  This field is cleared by writing the corresponding interrupt clear field '1' while the interrupt source field is '0'.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>8</td>
+            <td>Irq1StatCntInOverflow</td>
+            <td>XRR.StatCntIn.XXXOvfl(s)=1 interrupt flag field.<br/>
+<br/>
+POSEDGE INTERRUPT:<br/>
+This field is set on the rising edge of the corresponding interrupt source field when the corresponding interrupt enable field is set.  This field is cleared by writing the corresponding interrupt clear field '1'.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>9</td>
+            <td>Irq1StatCntOutOverflow</td>
+            <td>XRR.StatCntOut.XXXOvfl(s)=1 interrupt flag field.<br/>
+<br/>
+POSEDGE INTERRUPT:<br/>
+This field is set on the rising edge of the corresponding interrupt source field when the corresponding interrupt enable field is set.  This field is cleared by writing the corresponding interrupt clear field '1'.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>10</td>
+            <td>Irq1StatCntFlcOverflow</td>
+            <td>XRR.StatCntFlc.XXXOvfl(s)=1 interrupt flag field.<br/>
+<br/>
+POSEDGE INTERRUPT:<br/>
+This field is set on the rising edge of the corresponding interrupt source field when the corresponding interrupt enable field is set.  This field is cleared by writing the corresponding interrupt clear field '1'.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>11</td>
+            <td>Irq1StatCntErrOverflow</td>
+            <td>XRR.StatCntErr.XXXOvfl(s)=1 interrupt flag field.<br/>
+<br/>
+POSEDGE INTERRUPT:<br/>
+This field is set on the rising edge of the corresponding interrupt source field when the corresponding interrupt enable field is set.  This field is cleared by writing the corresponding interrupt clear field '1'.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+      </tbody>
+   </table>
+   <p><a class="back" href="#Register_Summary">Back to Register Summary Table</a></p>
+
+   <h3><a name="XRR.IntSrc-0x20000310">IntSrc</a></h3>
+   <p class="text">Offset: 0x20000310</p>
+   <p class="text">Interrupt source register.
+
+0 = interrupt source inactive.
+1 = interrupt source active.
+
+Note: These fields reflect the live interrupt source status and may not be valuable as polled fields.</p>
+
+   <table class="bitFields">
+      <colgroup span="5">
+         <col class="bitsCol"/>
+         <col class="nameCol"/>
+         <col class="descCol"/>
+         <col class="rwCol"/>
+         <col class="rstCol"/>
+         <col class="valTypeCol"/>
+      </colgroup>
+      <thead>
+         <tr>
+            <th>Bits</th>
+            <th>Field Name</th>
+            <th>Description</th>
+            <th>R/W</th>
+            <th>Reset Value</th>
+            <th>Value Type</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>0</td>
+            <td>Irq0RexDevResp</td>
+            <td>Device response interrupt source field.  Triggered when a device response is placed in the DevResp Queue</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>1</td>
+            <td>Irq0RexRdFrmHdrAsync</td>
+            <td>REX frame header read interrupt source field..  This field is asserted for a single cycle when the LexCtrlRespRexSch queue receives a packet.  This interrupt source applies to only REX implementations.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>2</td>
+            <td>Irq0RexRdFrmHdrPer</td>
+            <td>Downstream Periodic frame header interrupt source field.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>3</td>
+            <td>Irq0RexRdFrmHdrMSA</td>
+            <td>REX start of frame (SOF) event interrupt source field.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>4</td>
+            <td>Irq0RexSOF</td>
+            <td>REX start of frame (SOF) event interrupt source field.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>8</td>
+            <td>Irq1StatCntInOverflow</td>
+            <td>XRR.StatCntIn.XXXOvfl(s)=1 interrupt source field.  This field indicates that one or more of the overflow(s) in the XRR.StatCntIn register is = 1.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>9</td>
+            <td>Irq1StatCntOutOverflow</td>
+            <td>XRR.StatCntOut.XXXOvfl(s)=1 interrupt source field.  This field indicates that one or more of the overflow(s) in the XRR.StatCntOut register is = 1.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>10</td>
+            <td>Irq1StatCntFlcOverflow</td>
+            <td>XRR.StatCntFlc.XXXOvfl(s)=1 interrupt source field.  This field indicates that one or more of the overflow(s) in the XRR.StatCntFlc register is = 1.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>11</td>
+            <td>Irq1StatCntErrOverflow</td>
+            <td>XRR.StatCntErr.XXXOvfl(s)=1 interrupt source field.  This field indicates that one or more of the overflow(s) in the XRR.StatCntErr register is = 1.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+      </tbody>
+   </table>
+   <p><a class="back" href="#Register_Summary">Back to Register Summary Table</a></p>
+
+   <h3><a name="XRR.IntClr-0x20000314">IntClr</a></h3>
+   <p class="text">Offset: 0x20000314</p>
+   <p class="text">Interrupt clear register.  Writing '1' to a field within this register will clear the corresponding interrupt flag field in the XRR.IntFlg register.
+
+Note: All fields within this register are self clearing.</p>
+
+   <table class="bitFields">
+      <colgroup span="5">
+         <col class="bitsCol"/>
+         <col class="nameCol"/>
+         <col class="descCol"/>
+         <col class="rwCol"/>
+         <col class="rstCol"/>
+         <col class="valTypeCol"/>
+      </colgroup>
+      <thead>
+         <tr>
+            <th>Bits</th>
+            <th>Field Name</th>
+            <th>Description</th>
+            <th>R/W</th>
+            <th>Reset Value</th>
+            <th>Value Type</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>0</td>
+            <td>Irq0RexDevResp</td>
+            <td>Device response interrupt clear field.<br/>
+<br/>
+Note: Write '1' to this field to clear the corresponding interrupt flag.  This field is self-clearing.</td>
+            <td>write-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>1</td>
+            <td>Irq0RexRdFrmHdrAsync</td>
+            <td>Frame header read interrupt clear field.<br/>
+<br/>
+Note: Write '1' to this field to clear the corresponding interrupt flag.  This field is self-clearing.</td>
+            <td>write-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>2</td>
+            <td>Irq0RexRdFrmHdrPer</td>
+            <td>REX mass storage acceleration (MSA) event interrupt clear field.<br/>
+<br/>
+Note: Write '1' to this field to clear the corresponding interrupt flag.  This field is self-clearing.</td>
+            <td>write-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>3</td>
+            <td>Irq0RexRdFrmHdrMSA</td>
+            <td>REX start of frame (SOF) event interrupt clear field.<br/>
+<br/>
+Note: Write '1' to this field to clear the corresponding interrupt flag.  This field is self-clearing.</td>
+            <td>write-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>4</td>
+            <td>Irq0RexSOF</td>
+            <td>Note: Write '1' to this field to clear the corresponding interrupt flag.  This field is self-clearing.</td>
+            <td>write-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>8</td>
+            <td>Irq1StatCntInOverflow</td>
+            <td>XRR.StatCntIn.XXXOvfl(s)=1 interrupt clear field.<br/>
+<br/>
+Note: Write '1' to this field to clear the corresponding interrupt flag.  This field is self-clearing.</td>
+            <td>write-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>9</td>
+            <td>Irq1StatCntOutOverflow</td>
+            <td>XRR.StatCntOut.XXXOvfl(s)=1 interrupt clear field.<br/>
+<br/>
+Note: Write '1' to this field to clear the corresponding interrupt flag.  This field is self-clearing.</td>
+            <td>write-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>10</td>
+            <td>Irq1StatCntFlcOverflow</td>
+            <td>XRR.StatCntFlc.XXXOvfl(s)=1 interrupt clear field.<br/>
+<br/>
+Note: Write '1' to this field to clear the corresponding interrupt flag.  This field is self-clearing.</td>
+            <td>write-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>11</td>
+            <td>Irq1StatCntErrOverflow</td>
+            <td>XRR.StatCntErr.XXXOvfl(s)=1 interrupt clear field.<br/>
+<br/>
+Note: Write '1' to this field to clear the corresponding interrupt flag.  This field is self-clearing.</td>
+            <td>write-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+      </tbody>
+   </table>
+   <p><a class="back" href="#Register_Summary">Back to Register Summary Table</a></p>
+
+   <h3><a name="XRR.StatCntIn-0x20000318">StatCntIn</a></h3>
+   <p class="text">Offset: 0x20000318</p>
+   <p class="text">IN transaction statistics counter register.
+
+Note: all fields within this register are cleared upon read of this register.</p>
+
+   <table class="bitFields">
+      <colgroup span="5">
+         <col class="bitsCol"/>
+         <col class="nameCol"/>
+         <col class="descCol"/>
+         <col class="rwCol"/>
+         <col class="rstCol"/>
+         <col class="valTypeCol"/>
+      </colgroup>
+      <thead>
+         <tr>
+            <th>Bits</th>
+            <th>Field Name</th>
+            <th>Description</th>
+            <th>R/W</th>
+            <th>Reset Value</th>
+            <th>Value Type</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>7:0</td>
+            <td>Bulk</td>
+            <td>Bulk IN counter field.  This field is incremented every time it has been determined that a Bulk IN transaction has completed.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>8</td>
+            <td>BulkOvfl</td>
+            <td>Bulk IN transaction counter overflow field.<br/>
+<br/>
+0 = XUSB.StatCntIn.Bulk counter has not overflowed.<br/>
+1 = XUSB.StatCntIn.Bulk counter has overflowed.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>16:9</td>
+            <td>Iso</td>
+            <td>Isochronous IN counter field.  This field is incremented every time it has been determined that a Isochronous IN transaction has completed.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>17</td>
+            <td>IsoOvfl</td>
+            <td>Isochronous IN transaction counter overflow field.<br/>
+<br/>
+0 = XUSB.StatCntIn.Iso counter has not overflowed.<br/>
+1 = XUSB.StatCntIn.Iso counter has overflowed.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>23:18</td>
+            <td>Intrp</td>
+            <td>Interrupt IN counter field.  This field is incremented every time it has been determined that a Interrupt IN transaction has completed.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>24</td>
+            <td>IntrpOvfl</td>
+            <td>Interrupt IN transaction counter overflow field.<br/>
+<br/>
+0 = XUSB.StatCntIn.Intrp counter has not overflowed.<br/>
+1 = XUSB.StatCntIn.Intrp counter has overflowed.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>30:25</td>
+            <td>Ctrl</td>
+            <td>Control IN counter field.  This field is incremented every time it has been determined that a Control IN transaction has completed.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>31</td>
+            <td>CtrlOvfl</td>
+            <td>Control IN transaction counter overflow field.<br/>
+<br/>
+0 = XUSB.StatCntIn.Ctrl counter has not overflowed.<br/>
+1 = XUSB.StatCntIn.Ctrl counter has overflowed.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+      </tbody>
+   </table>
+   <p><a class="back" href="#Register_Summary">Back to Register Summary Table</a></p>
+
+   <h3><a name="XRR.StatCntOut-0x2000031C">StatCntOut</a></h3>
+   <p class="text">Offset: 0x2000031C</p>
+   <p class="text">OUT transaction statistics counter register.
+
+Note: all fields within this register are cleared upon read of this register.</p>
+
+   <table class="bitFields">
+      <colgroup span="5">
+         <col class="bitsCol"/>
+         <col class="nameCol"/>
+         <col class="descCol"/>
+         <col class="rwCol"/>
+         <col class="rstCol"/>
+         <col class="valTypeCol"/>
+      </colgroup>
+      <thead>
+         <tr>
+            <th>Bits</th>
+            <th>Field Name</th>
+            <th>Description</th>
+            <th>R/W</th>
+            <th>Reset Value</th>
+            <th>Value Type</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>7:0</td>
+            <td>Bulk</td>
+            <td>Bulk OUT counter field.  This field is incremented every time it has been determined that a Bulk OUT transaction has completed.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>8</td>
+            <td>BulkOvfl</td>
+            <td>Bulk OUT transaction counter overflow field.<br/>
+<br/>
+0 = XUSB.StatCntOut.Bulk counter has not overflowed.<br/>
+1 = XUSB.StatCntOut.Bulk counter has overflowed.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>16:9</td>
+            <td>Iso</td>
+            <td>Isochronous OUT counter field.  This field is incremented every time it has been determined that a Isochronous OUT transaction has completed.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>17</td>
+            <td>IsoOvfl</td>
+            <td>Isochronous OUT transaction counter overflow field.<br/>
+<br/>
+0 = XUSB.StatCntOut.Iso counter has not overflowed.<br/>
+1 = XUSB.StatCntOut.Iso counter has overflowed.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>23:18</td>
+            <td>Intrp</td>
+            <td>Interrupt OUT counter field.  This field is incremented every time it has been determined that a Interrupt OUT transaction has completed.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>24</td>
+            <td>IntrpOvfl</td>
+            <td>Interrupt OUT transaction counter overflow field.<br/>
+<br/>
+0 = XUSB.StatCntOut.Intrp counter has not overflowed.<br/>
+1 = XUSB.StatCntOut.Intrp counter has overflowed.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>30:25</td>
+            <td>Ctrl</td>
+            <td>Control OUT counter field.  This field is incremented every time it has been determined that a Control OUT transaction has completed.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>31</td>
+            <td>CtrlOvfl</td>
+            <td>Control OUT transaction counter overflow field.<br/>
+<br/>
+0 = XUSB.StatCntOut.Ctrl counter has not overflowed.<br/>
+1 = XUSB.StatCntOut.Ctrl counter has overflowed.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+      </tbody>
+   </table>
+   <p><a class="back" href="#Register_Summary">Back to Register Summary Table</a></p>
+
+   <h3><a name="XRR.StatCntFlc-0x20000320">StatCntFlc</a></h3>
+   <p class="text">Offset: 0x20000320</p>
+   <p class="text">IN/OUT transaction flow control statistics counter register.
+
+Note: all fields within this register are cleared upon read of this register.</p>
+
+   <table class="bitFields">
+      <colgroup span="5">
+         <col class="bitsCol"/>
+         <col class="nameCol"/>
+         <col class="descCol"/>
+         <col class="rwCol"/>
+         <col class="rstCol"/>
+         <col class="valTypeCol"/>
+      </colgroup>
+      <thead>
+         <tr>
+            <th>Bits</th>
+            <th>Field Name</th>
+            <th>Description</th>
+            <th>R/W</th>
+            <th>Reset Value</th>
+            <th>Value Type</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>2:0</td>
+            <td>BulkIn</td>
+            <td>Bulk IN transaction flow control counter field.  This field is incremented every time it has been determined that a Bulk IN transaction has been dropped due to flow control conditions.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>3</td>
+            <td>BulkInOvfl</td>
+            <td>Bulk IN transaction flow control counter overflow field.<br/>
+<br/>
+0 = XUSB.StatCntFlc.BulkIn counter has not overflowed.<br/>
+1 = XUSB.StatCntFlc.BulkIn counter has overflowed.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>6:4</td>
+            <td>IsoIn</td>
+            <td>Isochronous IN transaction flow control counter field.  This field is incremented every time it has been determined that a Isochronous IN transaction has been dropped due to flow control conditions.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>7</td>
+            <td>IsoInOvfl</td>
+            <td>Isochronous IN transaction flow control counter overflow field.<br/>
+<br/>
+0 = XUSB.StatCntFlc.IsoIn counter has not overflowed.<br/>
+1 = XUSB.StatCntFlc.IsoIn counter has overflowed.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>10:8</td>
+            <td>BulkOut</td>
+            <td>Bulk OUT transaction flow control counter field.  This field is incremented every time it has been determined that a Bulk OUT transaction has been dropped due to flow control conditions.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>11</td>
+            <td>BulkOutOvfl</td>
+            <td>Bulk OUT transaction flow control counter overflow field.<br/>
+<br/>
+0 = XUSB.StatCntFlc.BulkOut counter has not overflowed.<br/>
+1 = XUSB.StatCntFlc.BulkOut counter has overflowed.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>14:12</td>
+            <td>IsoOut</td>
+            <td>Isochronous OUT transaction flow control counter field.  This field is incremented every time it has been determined that a Isochronous OUT transaction has been dropped due to flow control conditions.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>15</td>
+            <td>IsoOutOvfl</td>
+            <td>Isochronous OUT transaction flow control counter overflow field.<br/>
+<br/>
+0 = XUSB.StatCntFlc.IsoOut counter has not overflowed.<br/>
+1 = XUSB.StatCntFlc.IsoOut counter has overflowed.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+      </tbody>
+   </table>
+   <p><a class="back" href="#Register_Summary">Back to Register Summary Table</a></p>
+
+   <h3><a name="XRR.StatCntErr-0x20000324">StatCntErr</a></h3>
+   <p class="text">Offset: 0x20000324</p>
+   <p class="text">Error statistics counter register.
+
+Note: all fields within this register are cleared upon read of this register.</p>
+
+   <table class="bitFields">
+      <colgroup span="5">
+         <col class="bitsCol"/>
+         <col class="nameCol"/>
+         <col class="descCol"/>
+         <col class="rwCol"/>
+         <col class="rstCol"/>
+         <col class="valTypeCol"/>
+      </colgroup>
+      <thead>
+         <tr>
+            <th>Bits</th>
+            <th>Field Name</th>
+            <th>Description</th>
+            <th>R/W</th>
+            <th>Reset Value</th>
+            <th>Value Type</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>3:0</td>
+            <td>Link</td>
+            <td>Link error counter field.  This field is incremented every time it has been determined that a Link error has occurred.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>4</td>
+            <td>LinkOvfl</td>
+            <td>Link error counter overflow field.<br/>
+<br/>
+0 = XUSB.StatCntErr.Link counter has not overflowed.<br/>
+1 = XUSB.StatCntErr.Link counter has overflowed.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>8:5</td>
+            <td>Crc16</td>
+            <td>CRC16 error counter field.  This field is incremented every time it has been determined that a CRC16 error has occurred.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>9</td>
+            <td>Crc16Ovfl</td>
+            <td>CRC16 error counter overflow field.<br/>
+<br/>
+0 = XUSB.StatCntErr.Crc16 counter has not overflowed.<br/>
+1 = XUSB.StatCntErr.Crc16 counter has overflowed.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>13:10</td>
+            <td>Crc5</td>
+            <td>CRC5 error counter field.  This field is incremented every time it has been determined that a CRC5 error has occurred.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>14</td>
+            <td>Crc5Ovfl</td>
+            <td>CRC5 error counter overflow field.<br/>
+<br/>
+0 = XUSB.StatCntErr.Crc5 counter has not overflowed.<br/>
+1 = XUSB.StatCntErr.Crc5 counter has overflowed.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>18:15</td>
+            <td>Pid</td>
+            <td>PID error counter field.  This field is incremented every time it has been determined that a PID error has occurred.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>19</td>
+            <td>PidOvfl</td>
+            <td>PID error counter overflow field.<br/>
+<br/>
+0 = XUSB.StatCntErr.Pid counter has not overflowed.<br/>
+1 = XUSB.StatCntErr.Pid counter has overflowed.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>23:20</td>
+            <td>BitStuff</td>
+            <td>Bit stuff error counter field.  This field is incremented every time it has been determined that a bit stuff error has occurred.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>24</td>
+            <td>BitStuffOvfl</td>
+            <td>Bit stuff error counter overflow field.<br/>
+<br/>
+0 = XUSB.StatCntErr.BitStuff counter has not overflowed.<br/>
+1 = XUSB.StatCntErr.BitStuff counter has overflowed.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>28:25</td>
+            <td>Babel</td>
+            <td>Babel error counter field.  This field is incremented every time it has been determined that a babel error has occurred.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>29</td>
+            <td>BabelOvfl</td>
+            <td>Babel error counter overflow field.<br/>
+<br/>
+0 = XUSB.StatCntErr.Babel counter has not overflowed.<br/>
+1 = XUSB.StatCntErr.Babel counter has overflowed.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+      </tbody>
+   </table>
+   <p><a class="back" href="#Register_Summary">Back to Register Summary Table</a></p>
+
+   <h3><a name="XRR.RexCtrl-0x20000328">RexCtrl</a></h3>
+   <p class="text">Offset: 0x20000328</p>
+   <p class="text">REX control register.
+
+Note: fields in this register apply only to REX configurations.</p>
+
+   <table class="bitFields">
+      <colgroup span="5">
+         <col class="bitsCol"/>
+         <col class="nameCol"/>
+         <col class="descCol"/>
+         <col class="rwCol"/>
+         <col class="rstCol"/>
+         <col class="valTypeCol"/>
+      </colgroup>
+      <thead>
+         <tr>
+            <th>Bits</th>
+            <th>Field Name</th>
+            <th>Description</th>
+            <th>R/W</th>
+            <th>Reset Value</th>
+            <th>Value Type</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>0</td>
+            <td>SofEn</td>
+            <td>SOF synchronization and generation enable field.<br/>
+0 = do not generate SOFs.<br/>
+1 = generate SOFs based on the setting in the SOFAvgMode field</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>1</td>
+            <td>SchEn</td>
+            <td>REX scheduler enable field.<br/>
+0 = REX scheduler is disabled.<br/>
+1 = REX will schedule packets in the Scheduled queue to either the uFrame or ISOC frame queues.</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>2</td>
+            <td>TxEn</td>
+            <td>REX transmit enable field.<br/>
+0 = REX will not transmit anything<br/>
+1 = REX will transmit packets in the SOF, Async, uFrame, and ISOC frame queues.</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>3</td>
+            <td>SOFAvgMode</td>
+            <td>0 = Average mode. SOF is synchronized to the received SOF<br/>
+1 = Fixed mode. SOF is generated base on the SOFMinTime rate and is not synchronized to the received SOF<br/>
+In Average mode Rex waits for the first downstream before it starts generating the SOF's to the device. In Fixed mode Rex will generate its own SOF once this field, TxEn, and SofEn are set.</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>7:4</td>
+            <td>DbgTxState</td>
+            <td>This is the current state of the xrex tx ctrl which deals with the sending and receiving of packets to/from the device.<br/>
+State<br/>
+0 : Check Cache : Wait for a packet to be written to the cache and then send to the device<br/>
+1 : Wait for read header : Wait for the frame header from the cache to be read<br/>
+2 : Wait Start Tx : If we are going to send an Out or Setup then wait for the data packet to be written to the data queue before sending the packet<br/>
+3 : Get Retry Q : Get a Queue to save a data packet to for retrying<br/>
+4 : Start Tx : Send the packet for the frame header read from the cache to the device<br/>
+5 : Retry : Retry the last packet sent<br/>
+6 : Wait for tx complete : Wait until the packet has been sent to the device<br/>
+7 : Wait for response : Wait for an errored response or the pid of the response from the device<br/>
+8 : Wait for end of response : Wait for the end of the response<br/>
+9 : Wait for send ack to device complete : Wait for the ack to be sent to the device<br/>
+10 : Wait for Sof : (default) Wait for Sof from Xcrm<br/>
+11 : Tx Sof : Wait until SOF has been sent<br/>
+12 : Dump Pkt : For flow control dump the In packets to be sent to the device<br/>
+13 : Wait for timeout : Wait for a timeout from the device<br/>
+14 : Send Upstream : send an upstream packet<br/>
+15 : Wait Xurm Done : Wait for the xurm to finish receiving the packet</td>
+            <td>read-only</td>
+            <td>0xA</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>10:8</td>
+            <td>SofAvgCnt</td>
+            <td>This sets when the SOF should be adjusted based on the frame count. A value of 1 means that every frame the SOF is adjusted. A value of 2 means the SOF is adjusted every second frame.</td>
+            <td>read-write</td>
+            <td>0x1</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>24</td>
+            <td>Msa_Retry_Disable</td>
+            <td>Setting this bit will disable the retrying of MSA packets in hardware and will send all responses back to the cpu</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+      </tbody>
+   </table>
+   <p><a class="back" href="#Register_Summary">Back to Register Summary Table</a></p>
+
+   <h3><a name="XRR.FrameInfo-0x2000032C">FrameInfo</a></h3>
+   <p class="text">Offset: 0x2000032C</p>
+   <p class="text">Frame information timer/uFrame counter register.</p>
+
+   <table class="bitFields">
+      <colgroup span="5">
+         <col class="bitsCol"/>
+         <col class="nameCol"/>
+         <col class="descCol"/>
+         <col class="rwCol"/>
+         <col class="rstCol"/>
+         <col class="valTypeCol"/>
+      </colgroup>
+      <thead>
+         <tr>
+            <th>Bits</th>
+            <th>Field Name</th>
+            <th>Description</th>
+            <th>R/W</th>
+            <th>Reset Value</th>
+            <th>Value Type</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>3:0</td>
+            <td>CurUFrame</td>
+            <td>REX current microframe status field.  This represents the current microframe on REX.<br/>
+<br/>
+Bit  [3]   = current microframe.<br/>
+Bits [2:0] = LSB of current frame.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>19:4</td>
+            <td>FrameTime</td>
+            <td>Frame time field (in system clocks).  This field is driven by a down counter that tracks the remaining time in the frame/microframe.</td>
+            <td>read-only</td>
+            <td>0x1</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>23:20</td>
+            <td>RxCurUFrame</td>
+            <td>Received microframe count field.  This field represents the microframe/frame that was received at REX.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+      </tbody>
+   </table>
+   <p><a class="back" href="#Register_Summary">Back to Register Summary Table</a></p>
+
+   <h3><a name="XRR.RdFrmHdr0-0x20000330">RdFrmHdr0</a></h3>
+   <p class="text">Offset: 0x20000330</p>
+   <p class="text">Frame header read from the scheduled queue status register.</p>
+
+   <table class="bitFields">
+      <colgroup span="5">
+         <col class="bitsCol"/>
+         <col class="nameCol"/>
+         <col class="descCol"/>
+         <col class="rwCol"/>
+         <col class="rstCol"/>
+         <col class="valTypeCol"/>
+      </colgroup>
+      <thead>
+         <tr>
+            <th>Bits</th>
+            <th>Field Name</th>
+            <th>Description</th>
+            <th>R/W</th>
+            <th>Reset Value</th>
+            <th>Value Type</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>6:0</td>
+            <td>Addr</td>
+            <td>Cache read address field.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>10:7</td>
+            <td>Endp</td>
+            <td>Cache read endpoint field.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>12:11</td>
+            <td>EndpType</td>
+            <td>Endpoint Type<br/>
+0 = Ctrl<br/>
+1 = Isoc<br/>
+2 = Bulk<br/>
+3 = Int</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>14:13</td>
+            <td>Action</td>
+            <td>Action<br/>
+0 = In<br/>
+1 = Out<br/>
+2 = Setup<br/>
+3 = Ping</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>16:15</td>
+            <td>Modifier</td>
+            <td>Modifier<br/>
+0 = Null<br/>
+1 = Pre<br/>
+2 = SSplit<br/>
+3 = CSplit</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>23:17</td>
+            <td>DataQid</td>
+            <td>Data Qid where a data packet for an Out or Setup is stored</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>24</td>
+            <td>Toggle</td>
+            <td>Setup Toggle</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>27:25</td>
+            <td>SchType</td>
+            <td>Schedule type of the packet that was last sent to the device. Only valid for DevResp packets</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>31:28</td>
+            <td>Response</td>
+            <td>Response ID<br/>
+0 = Null<br/>
+1 = Ack<br/>
+2 = Nak<br/>
+3 = Stall<br/>
+4 = Nyet<br/>
+5 = Err<br/>
+6 = Timeout<br/>
+7 = 3k (unused)<br/>
+8 = Data0<br/>
+9 = Data1<br/>
+A = Data2<br/>
+B = MData</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+      </tbody>
+   </table>
+   <p><a class="back" href="#Register_Summary">Back to Register Summary Table</a></p>
+
+   <h3><a name="XRR.RdFrmHdr1-0x20000334">RdFrmHdr1</a></h3>
+   <p class="text">Offset: 0x20000334</p>
+   <p class="text">Extended frame header read from the scheduled queue status register.</p>
+
+   <table class="bitFields">
+      <colgroup span="5">
+         <col class="bitsCol"/>
+         <col class="nameCol"/>
+         <col class="descCol"/>
+         <col class="rwCol"/>
+         <col class="rstCol"/>
+         <col class="valTypeCol"/>
+      </colgroup>
+      <thead>
+         <tr>
+            <th>Bits</th>
+            <th>Field Name</th>
+            <th>Description</th>
+            <th>R/W</th>
+            <th>Reset Value</th>
+            <th>Value Type</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>6:0</td>
+            <td>HubPort</td>
+            <td>Split Hub port</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>13:7</td>
+            <td>HubAddr</td>
+            <td>Split Hub address</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>15:14</td>
+            <td>SplitSE</td>
+            <td>Isoc Out<br/>
+Start  = 2<br/>
+Middle = 0<br/>
+End    = 1<br/>
+All    = 3<br/>
+<br/>
+Other<br/>
+LS     = 2<br/>
+FS     = 0</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>16</td>
+            <td>Error</td>
+            <td>USB Error<br/>
+Set if Transmited packet or received packet was errored</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>19:17</td>
+            <td>RxUFrame</td>
+            <td>Microframe in which packet was received field.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>30:20</td>
+            <td>RxFrame</td>
+            <td>Frame in which packet was received field.</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+      </tbody>
+   </table>
+   <p><a class="back" href="#Register_Summary">Back to Register Summary Table</a></p>
+
+   <h3><a name="XRR.RdFrmHdr2-0x20000338">RdFrmHdr2</a></h3>
+   <p class="text">Offset: 0x20000338</p>
+   <p class="text"></p>
+
+   <table class="bitFields">
+      <colgroup span="5">
+         <col class="bitsCol"/>
+         <col class="nameCol"/>
+         <col class="descCol"/>
+         <col class="rwCol"/>
+         <col class="rstCol"/>
+         <col class="valTypeCol"/>
+      </colgroup>
+      <thead>
+         <tr>
+            <th>Bits</th>
+            <th>Field Name</th>
+            <th>Description</th>
+            <th>R/W</th>
+            <th>Reset Value</th>
+            <th>Value Type</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>2:0</td>
+            <td>Accel</td>
+            <td>0 = Not Accelerated<br/>
+1 = CBW<br/>
+2 = Data</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>5:3</td>
+            <td>Count</td>
+            <td>Used for retry count and nyet count. Count is set by scheduler and returned back in devresp</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>6</td>
+            <td>CBWDir</td>
+            <td>This is the CBW Direction bit in the Mass Storage CBW packet</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+      </tbody>
+   </table>
+   <p><a class="back" href="#Register_Summary">Back to Register Summary Table</a></p>
+
+   <h3><a name="XRR.HSEofTime0-0x2000033C">HSEofTime0</a></h3>
+   <p class="text">Offset: 0x2000033C</p>
+   <p class="text">Isochronous frame/microframe cutoff configuration register.</p>
+
+   <table class="bitFields">
+      <colgroup span="5">
+         <col class="bitsCol"/>
+         <col class="nameCol"/>
+         <col class="descCol"/>
+         <col class="rwCol"/>
+         <col class="rstCol"/>
+         <col class="valTypeCol"/>
+      </colgroup>
+      <thead>
+         <tr>
+            <th>Bits</th>
+            <th>Field Name</th>
+            <th>Description</th>
+            <th>R/W</th>
+            <th>Reset Value</th>
+            <th>Value Type</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>15:0</td>
+            <td>Split</td>
+            <td>This is the time in system clocks before the EOF after which a HS Split packet will not be sent</td>
+            <td>read-write</td>
+            <td>0x16a</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>31:16</td>
+            <td>Isoc</td>
+            <td>This is the time in system clocks before the EOF after which a HS Isoc packet will not be sent</td>
+            <td>read-write</td>
+            <td>0x4f8</td>
+            <td>unsigned</td>
+         </tr>
+      </tbody>
+   </table>
+   <p><a class="back" href="#Register_Summary">Back to Register Summary Table</a></p>
+
+   <h3><a name="XRR.HSEofTime1-0x20000340">HSEofTime1</a></h3>
+   <p class="text">Offset: 0x20000340</p>
+   <p class="text">ASYNC packet frame/microframe cutoff configuration register.</p>
+
+   <table class="bitFields">
+      <colgroup span="5">
+         <col class="bitsCol"/>
+         <col class="nameCol"/>
+         <col class="descCol"/>
+         <col class="rwCol"/>
+         <col class="rstCol"/>
+         <col class="valTypeCol"/>
+      </colgroup>
+      <thead>
+         <tr>
+            <th>Bits</th>
+            <th>Field Name</th>
+            <th>Description</th>
+            <th>R/W</th>
+            <th>Reset Value</th>
+            <th>Value Type</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>15:0</td>
+            <td>Async</td>
+            <td>ASYNC packet cutoff configuration field.  This field defines the number of system clocks pre-EOF where no more ASYNC packets will be sent in the current frame/microframe.<br/>
+<br/>
+Note: the default time is based on the largest packet (Interrupt IN DATA ACK).</td>
+            <td>read-write</td>
+            <td>0x517</td>
+            <td>unsigned</td>
+         </tr>
+      </tbody>
+   </table>
+   <p><a class="back" href="#Register_Summary">Back to Register Summary Table</a></p>
+
+   <h3><a name="XRR.FSEofTime-0x20000344">FSEofTime</a></h3>
+   <p class="text">Offset: 0x20000344</p>
+   <p class="text">Full speed isochronous frame cutoff configuration register.</p>
+
+   <table class="bitFields">
+      <colgroup span="5">
+         <col class="bitsCol"/>
+         <col class="nameCol"/>
+         <col class="descCol"/>
+         <col class="rwCol"/>
+         <col class="rstCol"/>
+         <col class="valTypeCol"/>
+      </colgroup>
+      <thead>
+         <tr>
+            <th>Bits</th>
+            <th>Field Name</th>
+            <th>Description</th>
+            <th>R/W</th>
+            <th>Reset Value</th>
+            <th>Value Type</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>15:0</td>
+            <td>Async</td>
+            <td>This is the time in system clocks before the EOF after which a FS Async packet will not be sent</td>
+            <td>read-write</td>
+            <td>0x1f18</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>31:16</td>
+            <td>Isoc</td>
+            <td>This is the time in system clocks before the EOF after which a FS Isoc packet will not be sent</td>
+            <td>read-write</td>
+            <td>0x2ee0</td>
+            <td>unsigned</td>
+         </tr>
+      </tbody>
+   </table>
+   <p><a class="back" href="#Register_Summary">Back to Register Summary Table</a></p>
+
+   <h3><a name="XRR.SchFrmHdr0-0x20000348">SchFrmHdr0</a></h3>
+   <p class="text">Offset: 0x20000348</p>
+   <p class="text"></p>
+
+   <table class="bitFields">
+      <colgroup span="5">
+         <col class="bitsCol"/>
+         <col class="nameCol"/>
+         <col class="descCol"/>
+         <col class="rwCol"/>
+         <col class="rstCol"/>
+         <col class="valTypeCol"/>
+      </colgroup>
+      <thead>
+         <tr>
+            <th>Bits</th>
+            <th>Field Name</th>
+            <th>Description</th>
+            <th>R/W</th>
+            <th>Reset Value</th>
+            <th>Value Type</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>6:0</td>
+            <td>Addr</td>
+            <td>The USB Address to send</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>10:7</td>
+            <td>Endp</td>
+            <td>The USB Endpoint to send</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>12:11</td>
+            <td>EndpType</td>
+            <td>The USB Endpoint Type to send</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>14:13</td>
+            <td>Action</td>
+            <td>The Action to send</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>16:15</td>
+            <td>Modifier</td>
+            <td>The Modifier to send</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>23:17</td>
+            <td>DataQid</td>
+            <td>The Data Qid where the data packet is stored for an Out or Setup packet</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>24</td>
+            <td>Toggle</td>
+            <td>The Setup Toggle bit</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+      </tbody>
+   </table>
+   <p><a class="back" href="#Register_Summary">Back to Register Summary Table</a></p>
+
+   <h3><a name="XRR.SchFrmHdr1-0x2000034C">SchFrmHdr1</a></h3>
+   <p class="text">Offset: 0x2000034C</p>
+   <p class="text"></p>
+
+   <table class="bitFields">
+      <colgroup span="5">
+         <col class="bitsCol"/>
+         <col class="nameCol"/>
+         <col class="descCol"/>
+         <col class="rwCol"/>
+         <col class="rstCol"/>
+         <col class="valTypeCol"/>
+      </colgroup>
+      <thead>
+         <tr>
+            <th>Bits</th>
+            <th>Field Name</th>
+            <th>Description</th>
+            <th>R/W</th>
+            <th>Reset Value</th>
+            <th>Value Type</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>6:0</td>
+            <td>HubPort</td>
+            <td>The USB Hub Port to send</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>13:7</td>
+            <td>HubAddr</td>
+            <td>The USB Hub Address to send</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>15:14</td>
+            <td>SplitSE</td>
+            <td>Isoc Out<br/>
+Start  = 2<br/>
+Middle = 0<br/>
+End    = 1<br/>
+All    = 3<br/>
+<br/>
+Other<br/>
+LS     = 2<br/>
+FS     = 0</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>19:16</td>
+            <td>Response</td>
+            <td>Response to be sent upstream</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>22:20</td>
+            <td>Count</td>
+            <td>A value written to field will be returned in the RdFrmHdr.Count field</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+      </tbody>
+   </table>
+   <p><a class="back" href="#Register_Summary">Back to Register Summary Table</a></p>
+
+   <h3><a name="XRR.Schedule-0x20000350">Schedule</a></h3>
+   <p class="text">Offset: 0x20000350</p>
+   <p class="text"></p>
+
+   <table class="bitFields">
+      <colgroup span="5">
+         <col class="bitsCol"/>
+         <col class="nameCol"/>
+         <col class="descCol"/>
+         <col class="rwCol"/>
+         <col class="rstCol"/>
+         <col class="valTypeCol"/>
+      </colgroup>
+      <thead>
+         <tr>
+            <th>Bits</th>
+            <th>Field Name</th>
+            <th>Description</th>
+            <th>R/W</th>
+            <th>Reset Value</th>
+            <th>Value Type</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>0</td>
+            <td>Enable</td>
+            <td>Write 1 = Start transfer<br/>
+Read 1 = Busy<br/>
+Read 0 = Write/Read Complete</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>binary</td>
+         </tr>
+         <tr>
+            <td>3:1</td>
+            <td>Mode</td>
+            <td>0 = Write<br/>
+1 = Read<br/>
+2 = Copy<br/>
+3 = Copy and Replace Action<br/>
+4 = Copy and Replace Response<br/>
+5 = Copy and Replace Modifier</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>6:4</td>
+            <td>SchType</td>
+            <td>Describes how the xrex_tx_ctrl should handle the scheduling for this packet</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>14:8</td>
+            <td>DestQueue</td>
+            <td>This is the destination to be copied to</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>22:16</td>
+            <td>SrcQueue</td>
+            <td>This the source queue to be copied from</td>
+            <td>read-write</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>25:24</td>
+            <td>SrcQStat</td>
+            <td>This returns the queue status of the queue referenced in SrcQueue. 0 = not packet, 1 = not a full packet, 2 = 1 packet, 3 = more than one packet</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+      </tbody>
+   </table>
+   <p><a class="back" href="#Register_Summary">Back to Register Summary Table</a></p>
+
+   <h3><a name="XRR.TxCtrl-0x20000354">TxCtrl</a></h3>
+   <p class="text">Offset: 0x20000354</p>
+   <p class="text"></p>
+
+   <table class="bitFields">
+      <colgroup span="5">
+         <col class="bitsCol"/>
+         <col class="nameCol"/>
+         <col class="descCol"/>
+         <col class="rwCol"/>
+         <col class="rstCol"/>
+         <col class="valTypeCol"/>
+      </colgroup>
+      <thead>
+         <tr>
+            <th>Bits</th>
+            <th>Field Name</th>
+            <th>Description</th>
+            <th>R/W</th>
+            <th>Reset Value</th>
+            <th>Value Type</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>15:0</td>
+            <td>MsaNakLimit</td>
+            <td>This register specifies the maximum number of times the Xrex Tx Ctrl will retry a MSA packet when a Nak is received. It is specified in counts * 256. After the limit is reached then the nak response is return to the CpuDevResp queue</td>
+            <td>read-write</td>
+            <td>0x1</td>
+            <td>unsigned</td>
+         </tr>
+      </tbody>
+   </table>
+   <p><a class="back" href="#Register_Summary">Back to Register Summary Table</a></p>
+
+   <h3><a name="XRR.SofCtrl-0x20000358">SofCtrl</a></h3>
+   <p class="text">Offset: 0x20000358</p>
+   <p class="text"></p>
+
+   <table class="bitFields">
+      <colgroup span="5">
+         <col class="bitsCol"/>
+         <col class="nameCol"/>
+         <col class="descCol"/>
+         <col class="rwCol"/>
+         <col class="rstCol"/>
+         <col class="valTypeCol"/>
+      </colgroup>
+      <thead>
+         <tr>
+            <th>Bits</th>
+            <th>Field Name</th>
+            <th>Description</th>
+            <th>R/W</th>
+            <th>Reset Value</th>
+            <th>Value Type</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>15:0</td>
+            <td>MinTime</td>
+            <td>This sets the minimum time for the SOF period in terms of system clocks for one USB frame</td>
+            <td>read-write</td>
+            <td>0xea38</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>31:16</td>
+            <td>MaxTime</td>
+            <td>This sets the maximum time for the SOF period in terms of system clocks for one USB frame</td>
+            <td>read-write</td>
+            <td>0xea88</td>
+            <td>unsigned</td>
+         </tr>
+      </tbody>
+   </table>
+   <p><a class="back" href="#Register_Summary">Back to Register Summary Table</a></p>
+
+   <h3><a name="XRR.SofDbg1-0x2000035C">SofDbg1</a></h3>
+   <p class="text">Offset: 0x2000035C</p>
+   <p class="text"></p>
+
+   <table class="bitFields">
+      <colgroup span="5">
+         <col class="bitsCol"/>
+         <col class="nameCol"/>
+         <col class="descCol"/>
+         <col class="rwCol"/>
+         <col class="rstCol"/>
+         <col class="valTypeCol"/>
+      </colgroup>
+      <thead>
+         <tr>
+            <th>Bits</th>
+            <th>Field Name</th>
+            <th>Description</th>
+            <th>R/W</th>
+            <th>Reset Value</th>
+            <th>Value Type</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>10:0</td>
+            <td>RxFrameNum</td>
+            <td>This is the last SOF frame number that was received downstream by Rex</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>26:16</td>
+            <td>TxFrameNum</td>
+            <td>This is the last SOF frame number that was sent by Rex</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+      </tbody>
+   </table>
+   <p><a class="back" href="#Register_Summary">Back to Register Summary Table</a></p>
+
+   <h3><a name="XRR.RdFrmHdrMSA-0x20000360">RdFrmHdrMSA</a></h3>
+   <p class="text">Offset: 0x20000360</p>
+   <p class="text"></p>
+
+   <table class="bitFields">
+      <colgroup span="5">
+         <col class="bitsCol"/>
+         <col class="nameCol"/>
+         <col class="descCol"/>
+         <col class="rwCol"/>
+         <col class="rstCol"/>
+         <col class="valTypeCol"/>
+      </colgroup>
+      <thead>
+         <tr>
+            <th>Bits</th>
+            <th>Field Name</th>
+            <th>Description</th>
+            <th>R/W</th>
+            <th>Reset Value</th>
+            <th>Value Type</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>31:0</td>
+            <td>TransferLen</td>
+            <td>This is the Transfer Length field from the CBW data packet</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+      </tbody>
+   </table>
+   <p><a class="back" href="#Register_Summary">Back to Register Summary Table</a></p>
+
+   <h3><a name="XRR.XrtDebug-0x20000364">XrtDebug</a></h3>
+   <p class="text">Offset: 0x20000364</p>
+   <p class="text"></p>
+
+   <table class="bitFields">
+      <colgroup span="5">
+         <col class="bitsCol"/>
+         <col class="nameCol"/>
+         <col class="descCol"/>
+         <col class="rwCol"/>
+         <col class="rstCol"/>
+         <col class="valTypeCol"/>
+      </colgroup>
+      <thead>
+         <tr>
+            <th>Bits</th>
+            <th>Field Name</th>
+            <th>Description</th>
+            <th>R/W</th>
+            <th>Reset Value</th>
+            <th>Value Type</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>6:0</td>
+            <td>RdAddr</td>
+            <td>Last sent address</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>11:8</td>
+            <td>RdEndp</td>
+            <td>Last sent endpoint</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>13:12</td>
+            <td>RdAction</td>
+            <td>Last sent action</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>22:16</td>
+            <td>RdDataQid</td>
+            <td>Last sent data qid</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+         <tr>
+            <td>27:24</td>
+            <td>LastResp</td>
+            <td>Last response</td>
+            <td>read-only</td>
+            <td>0x0</td>
+            <td>unsigned</td>
+         </tr>
+      </tbody>
+   </table>
+   <p><a class="back" href="#Register_Summary">Back to Register Summary Table</a></p>
+
+</body>
+</html>

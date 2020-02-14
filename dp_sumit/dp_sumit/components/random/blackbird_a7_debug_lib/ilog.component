@@ -1,0 +1,8 @@
+component:RANDOM_COMPONENT
+L:ADD_ENTROPY S:Add random number 0x%.2x\n
+L:GET_ASYNCRAND S:Get random number asynchronously\n
+L:CANT_ADD_ANOTHER_CALLBACK S:Can't add another callback\n
+L:GET_QUICK_PSEUDO_RANDOM S:Got pseudo random number 0x%x\n
+L:INVALID_SEED S:Invalid seed\n
+L:FAILED_TO_LOAD_SEED S:Failed to load pseudorandom seed\n
+L:FAILED_TO_SAVE_SEED S:Failed to save pseudorandom seed\n

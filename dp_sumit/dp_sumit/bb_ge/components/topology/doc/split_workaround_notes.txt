@@ -1,0 +1,109 @@
+------------
+Introduction
+------------
+
+The following notes describe a family of race conditions relating to split transactions
+inherent in the XUSB protocol, and the approach used to deal with them when they occur.
+
+
+--------------
+Timing Diagram
+--------------
+
+Host                 Lex             Rex             Hub          Device
+1)     SSPLIT-IN ->
+2)     <- NAK        bs SSPLIT-IN ->
+3)                   bs                 SSPLIT-IN ->
+4)     SSPLIT-IN ->  bs                 <- ACK          IN ->
+5)     <- NAK        bs <- ACK                          <- DATA
+6)                   bs                                 ACK ->
+7)     SSPLIT-IN ->  bs
+8)     <- ACK         s
+9)                    s
+10)                   s
+11)    CSPLIT-IN ->   s
+12)    <- NYET       bs CSPLIT-IN ->
+13)                  bs                 CSPLIT-IN ->
+14)                  bs                 <- DATA
+15)                  bs <- DATA
+16)    CSPLIT-IN ->  bs
+17)    <- DATA
+
+NOTE: b means i/oBlk is set, and s means i/oSplit is set (all are XSST bits)
+
+
+-------------------
+The Race Conditions
+-------------------
+
+(Refer to the above timing diagram)
+
+Issue 1) The device involved in the split transaction is disconnected between steps 2 & 7
+         In this case the host will never issue another SSPLIT as it thinks the hub never started the transaction.
+         SW will need to issue a CSPLIT to the hub to clean up the hub buffer & then clear the data from the XSST
+         Detection: i/oSplit && i/oBlk && snoopQueueHead(XSST.qid) == SSPLIT. Need to wait until Rex returns with XSST.qid
+
+Issue 2) The device involved in the split transaction is disconnected between steps 8 & 11
+         In this case the host will issue a CSPLIT to get the last data packet out of the hub.
+         In this case SW should leave the device in-sys until the host finishes with the last transaction.
+         Detection: i/oSplit && ~i/oBlk
+
+Issue 3) The device involved in the split transaction is disconnected between steps 12 & 17
+         In this case the host will issue a CSPLIT to get the last data packet out of the hub.
+         In this case SW should leave the device in-sys until the host finishes with the last transaction.
+         Detection: i/oSplit && i/oBlk && snoopQueueHead(XSST.qid) == CSPLIT. Need to wait until Rex returns with XSST.qid
+
+
+---------------
+The Workarounds
+---------------
+
+SW needs to do different things when different types of endpoints are disconnected:
+
+CTRL participating in a SETUP SPLIT transaction (special case)
+    - Wait for the transaction to complete on its own
+
+BULK/CTRL IN (for BULK/CTRL OUT, just switch 'i' prefix with 'o')
+1) Check if iSplit
+2)   If ~iBlk (note we are in issue 2) SW should wait to remove device from in-sys until the host issues a CSPLIT and it completes
+3)   If iBlk, wait in idle task or timer for xsst.qid to be valid
+4)     Once xsst.qid is valid, snoop the head (ensure it is the head), and then recheck the xsst in case the host is reading at the same time
+5)     If iBlk and iSplit are cleared then no need to take action
+6)     If the head of the queue is a CSPLIT (issue 3), then wait for host to read out the packet
+7)     If the head of the queue is a SSPLIT (issue 1), then inject a CSPLIT for the hub to clear out its buffer
+
+ISO OUT - nothing to do
+
+ISO IN & INT IN/OUT
+    - Wait a couple of microframes
+    - Is it 1, 2 or 3 microframes? Can full speed response be split across 2 microframes?
+    - Since we only have 1 millisecond +/- 1 millisecond timer granularity, we should probably do a 3 ms timer delay
+      [this is what we did in the implementation].
+
+
+------------------
+The Implementation
+------------------
+
+1) Still use deviceNode->requiresCleanup to indicate which devices are monitored on timer
+2) Change existing 80ms xsstCleanUpTimer to 3 ms to allow the host to do the last periodic transfers
+3) Make timer periodic, but on a disconnect it will get restarted to ensure no chance of a disconnect to timer expiration in a microframe time scale
+4) On timer expiration go through all device nodes which have requiresCleanup set, use _DTT_GetAddressFromLogical
+    a) If the device is out of sys
+        i) do the issue (1) inject CSPLIT to rex
+        ii) clean up all endpoints - XCSR_XSSTResetEndpoints()
+        iii) remove it from the xsstCleanUpTimer checks, aka clear requiresCleanup
+    b) For each device increment or decrement a counter for how long this device has been in cleanup phase
+        i) At some point just take the device out of sys.  Perhaps in the second range (currently 750 ms)? Next timer expiration it will be cleaned up
+    c) For each BULK & CTRL endpoint:
+        i) Determine if any endpoints need cleanup (i.e. iSplit or oSplit set), from issue (2) or issue (3)
+            * if not, remove device from sys, i.e. call XCSR_XSSTClearInsys()
+
+
+--------
+Comments
+--------
+
+- The workaround is complicated by the fact that in order for the Lex to inject a CSPLIT towards the Rex, it is necessary
+  for the Lex to know the relevant port on the hub involved in the split transaction (note that this is not necessarily the
+  hub immediately above the participating device)

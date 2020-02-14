@@ -1,0 +1,34 @@
+component:XLR_COMPONENT
+L:INVALID_ID S:There is an invalid ID in the ID register\n
+L:INVALID_CVS_MAJOR S:Invalid register CVS Major value, read %d, expecting %d\n
+L:INVALID_CVS_MINOR S:Invalid register CVS Minor value, read %d, expecting %d\n
+L:FLOW_CONTROL_CTRL_OUT S:ctrl out flow control dropped %d packets\n
+L:FLOW_CONTROL_CTRL_OUT_OVERFLOW S:ctrl out flow control dropped counter overflowed\n
+L:FLOW_CONTROL_INTRP_OUT S:interrupt out flow control dropped %d packets\n
+L:FLOW_CONTROL_INTRP_OUT_OVERFLOW S:interrupt out flow control dropped counter overflowed\n
+L:FLOW_CONTROL_ISO_OUT S:iso out flow control dropped %d packets\n
+L:FLOW_CONTROL_ISO_OUT_OVERFLOW S:iso out flow control dropped counter overflowed\n
+L:FLOW_CONTROL_BULK_OUT S:bulk out flow control dropped %d packets\n
+L:FLOW_CONTROL_BULK_OUT_OVERFLOW S:bulk out flow control dropped counter overflowed\n
+L:FLOW_CONTROL_CTRL_IN S:ctrl in flow control dropped %d packets\n
+L:FLOW_CONTROL_CTRL_IN_OVERFLOW S:ctrl in flow control dropped counter overflowed\n
+L:FLOW_CONTROL_INTRP_IN S:interrupt in flow control dropped %d packets\n
+L:FLOW_CONTROL_INTRP_IN_OVERFLOW S:interrupt in flow control dropped counter overflowed\n
+L:FLOW_CONTROL_ISO_IN S:iso in flow control dropped %d packets\n
+L:FLOW_CONTROL_ISO_IN_OVERFLOW S:iso in flow control dropped counter overflowed\n
+L:FLOW_CONTROL_BULK_IN S:bulk in flow control dropped %d packets\n
+L:FLOW_CONTROL_BULK_IN_OVERFLOW S:bulk in flow control dropped counter overflowed\n
+L:LEX_FATAL_INTERRUPT S:Fatal Lex interrupt, interrupt flag register is 0x%x\n
+L:MSA_READ_LAT S:Read MSA LAT: usbAddr %d, logicalAddr %d, valid %d\n
+L:MSA_READ_PTR_TABLE S:Read MSA Pointer Table: usbAddr %d, endpoint %d, pointer %d\n
+L:MSA_ALLOCATE_PTR S:MSA Allocated pointer %d\n
+L:MSA_READ_MST S:Read MSA MST: usbAddr %d, endpoint %d, value 0x%x\n
+L:MSA_INIT_BAD_PTR S:MSA initialization got ptr %d instead of 0\n
+L:MSA_FREE_BAD_PTR S:MSA Free Pointer is trying to free a null pointer\n
+L:MSA_FREE_FAILED S:MSA Free Pointer failed\n
+L:MSA_ALLOCATE_PTR_FAILED S:MSA Allocate Pointer failed.  Out of pointers?\n
+L:RELEASE_RETRY_BUF S:Releasing retry buffer %d\n
+L:RELEASE_RETRY_BUF_INVALID S:Releasing retry buffer %d is invalid\n
+L:MSA_CLR_STS_TABLE S:MSA Clear Status Table for usbAddr %d, endpoint %d\n
+L:XLR_SPECTAREG_READ S:Read XLR Register: 0x%x, Value: 0x%x\n
+L:XLR_NOTIFY_MAX S:Maximum notify counts - In: %d, Out: %d\n

@@ -1,0 +1,149 @@
+Icron Firmware Platform
+=======================
+
+Summary
+-------
+The Icron firmware platform is build around a collection of shared components: ibase, ibuild, ilog, icmd, tasksch, timing, & cpu(leon or msp430).  It also contains concepts such as icomponents.  This platform is based on the premise that all operations will execute to completion in a very short amount of time, and since all operations complete in a short time, no operations need to be interrupted.  Therefore interrupts are always disabled, unless explicitly stated otherwise.  This concept allows for a very simple platform where everything is event triggered.  On the flip side blocking calls or polling operations are not allowed, so any long running operation such as an i2c access, must only start the operation, and return at once.  The caller can then be informed of the completion of the operation through a callback function, when the operation completes.
+
+
+Icron Firmware Directory Structure
+----------------------------------
+Icron components have the standard directory layout
+
+/build/ - Contains makefile, makefile settings, linker files, etc.
+/inc/   - Contains headers visible outside this component
+/src/   - Contains internal source files, and internal header files
+/doc/   - Documentation
+/test/  - Test harnesses
+/etc/   - Anything that doesn't fit in one of the other folders
+
+A project component will also have a directory /components/ in which other components are placed
+
+Example
+project/build/makefile
+project/build/project.mak                   -- See ibuild documentation
+project/inc/project_components.h            -- All projects must include this file. See ibase icomponent documentation
+project/inc/options.h                       -- All projects must include this file. This contains defines for component build options
+project/src/imain.c                         -- standard startup file
+project/doc/readme.txt
+project/etc/fpga_files.mcs
+
+project/components/ibase/inc/ibase.h
+project/components/ibase/inc/icomponents.h
+project/components/ibase/inc/ififo.h
+project/components/ibase/src/memset.c
+project/components/ibase/src/memcpy.c
+project/components/ibase/doc/readme.txt
+
+project/components/ilog/inc/ilog.h
+project/components/ilog/inc/iassert.h
+project/components/ilog/src/ilog_main.c
+project/components/ilog/doc/readme.txt
+
+ibuild is the standard building mechanism.  ibuild will create X_obj, X_lib, & X_bin directories in each component.  See ibuild documentation for details
+
+
+Base Components
+---------------
+Icron specific components are prefixed with an 'i' to indicate Icron association.
+
+ibase:      The base component.  Consists of portable macros and portable routines.
+ibuild:     A set of makefiles for building components in the Icron firmware directory structure
+ilog:       A library for logging events and assert processing.  Events are enums, and can take optional arguments.  Logs are decoded by hobbes
+icmd:       A library for sending commands to the target.  Commands are encoded by Hobbes
+tasksch:    An idle task scheduler.  Tasks are optionally pre-emptable
+timing:     A library for timers.  Granularity is 1ms.
+leon:       A driver for the basic CPU routines of the Leon CPU and peripherals.  Timers, interrupts, UART, etc.
+msp430:     A driver for the basic CPU routines of the MSP430 CPU and peripherals.  Timers, interrupts, UART, etc.
+hobbes:     An IronPython program to assist in the debugging of the target.  Communicates by ilogs and icmds.  Allows Python scripting
+expresslink:A C# program for upgrading firmware of target units
+
+Each component has its own internal documentation within its /doc/ directory.
+
+Each component may have a set of build time options.  All these options should be defined by the project in a file project/inc/options.h
+
+
+Startup
+-------
+Since this is an embedded platform the standard main function int main(int argc, char *argv[]), doesn't really make sense, as there are no startup args.  Instead a function void * imain(void) is used instead.
+
+Differences between main() and imain()
+* return value.  imain() returns a pointer to a function with no arguments.  When imain returns, this function pointer is called.  This function must have the same return value as imain(), IE another function can be called
+* arguments.  imain() has no arguments
+* At the end of initialization, imain() should return &TASKSCH_MainLoop, or the function that is does return should return &TASKSCH_MainLoop
+
+NOTE: imain() should ensure a global interrupt lock is in place, as it calls various initialization functions that do not expect to be interrupted.  When it returns with &TASKSCH_MainLoop, then the global interrupt lock can be released, as TASKSCH_MainLoop() expects interrupts to be enabled.
+
+
+Registering Events
+------------------
+Events should be registered at startup or a build time.  For example the timing component has a function TIMING_TimerRegisterHandler().  This function must only be called in initialization code.  Otherwise if memory allocation is done at runtime, and the system would need to be designed to handle out of memory scenarios.  Since all registration is done at startup, all registration must succeed.  Otherwise the component should assert.
+
+If the component doesn't use an event registration system, then the project needs to be analyzed to ensure an out of memory scenario can not happen.  For example in Goldenears 4 i2c/mdio operations are allowed to be submitted at once.  This was determined by examining the project and realizing that any time there could be 1 icmd, 1 linkmgr mdio, 1 i2c for non-volatile storage, and 1 i2c for system authentication.  Only 4 buffers ever need to be allocated.  A 5th outstanding operation should result in an assert.
+
+inc/options.h should be used as a place for each component to specify various buffer sizes, which are dependant on the specific project.
+
+
+Event sources
+-------------
+Interrupts through Leon component or MSP430 component
+  Project specific interrupt
+    This could include many events such as I2C, MDIO, Ethernet, USB, etc.
+  UART -> icmd component
+  Timer -> timing component
+TaskSch
+
+
+Chaining Events
+---------------
+Since all long operations involve asynchronous operations, it is quite common to chain events.
+
+Example:
+LinkManager initialization calls GRG_MdioWriteASync(<operation details>, &initDoneStep1);
+initDoneStep1() calls GRG_MdioWriteASync(<operation details>, &initDoneStep2);
+initDoneStep2() calls GRG_MdioWriteASync(<operation details>, &initDoneStep3);
+initDoneStep3() calls GRG_MdioWriteASync(<operation details>, &initDoneStep4);
+initDoneStep4() notes that the external phy is now initialized, and kicks off the rest of the initialization
+
+Example:
+Atmel Authentication chip driver needs to send an I2C command, and then read the result.  Both operations are appended by a CRC.  Before the operation the chip must be woken up, and after must be put back to sleep
+AtmelStart() starts tasksch task to compute CRC for message
+AtmelCRCGenerate() calculates CRC, stops the CRC its task, and calls i2cWakeup(&AtmelWakeup)
+AtmelWakeup() calls i2cWrite(<...>, &AtmelCmdSent)
+AtmelCmdSent() calls TIMING_StartTimer()
+AtmelTimerExpired() calls i2cRead(<...>, &AtmelResponse)
+AtmelResponse() starts tasksch task to check CRC
+AtmelCRCCheck() verifies the CRC, stops its task, and calls i2cWrite(<..Sleep Operation..>, &AtmelAsleep)
+AtmelAsleep() calls completionhandler for this whole operation
+
+Event chains can become quite long, and it is possible that they may not linear.  Some best practices can really help readability of the code.  If possible event chains should be in the order they are run, as read in the C file.  Each function in the chain should reference some documentation at the top of the C file, explaining how the whole chain fits together.  Each function in the chain should only start the next operation at the end of its function, which should make the code more readable, as it shows the reader where the operation is expected to continue.
+
+
+TaskSch - The Idle Task Scheduler
+---------------------------------
+The Task Scheduler is a fairly simple scheduler.
+
+* It runs all tasks to completion, and doesn't allow tasks to be pre-empted.
+* Normally interrupts will be disabled before starting a task, and disabled on the completion of the task.  However a task may request to have interrupt enabled
+* The task scheduler supports priorities, and will always run the highest priority tasks first
+
+If interrupts are enabled, the task must internally disabled interrupts when calling any API that doesn't support pre-emption.  This is most of Icron's firmware.  Usually this is only useful for operations such as CRC calculations where only mathematical calculations are being done.  When the task wants to run an ilog function, or call a completion handler, it must disabled interrupts first.  Interrupts should always be restored when the task returns.
+
+A long running task could keep a global state variable, and return from the task after only processing part of the operation.  The global state variable can then be used when the task is run again to determine where the task left off.  This allows interrupts a chance to run.  See the section on long running operations.
+
+
+Long Running Operations
+-----------------------
+Since long running operations are not allowed (other than the highest priority operation of the system), long running operations must be broken up.  There are multiple ways of doing this
+
+Leave interrupt enabled method:
+This method is for low priority interrupts.  They can process part of their operation, then leave the ISR.  The CPU will then take the highest pending priority interrupt.  This may be the prior interrupt, or a higher priority interrupt.  Either way the prior interrupt will eventually get processed again, as it was never cleared.  This time the ISR will complete the interrupt operation, clear the interrupt in HW, so it won't trigger until another event happens, then leave the ISR.
+
+Timer method:
+This is for very low priority operations.  In this method if an operation takes to long, a timer can be started, and the operation can be completed on the timer expiration.
+
+Idle task method:
+This method is for tasks that need to be processed soon, but are lower priority than every interrupt.  In this method if an operation takes to long, an idle task can be started.  The idle task can then finish the operation.  See the section on the TaskSch, as this operation offers some flexibility.
+
+Any of the methods can be combined for a multiple step operation, or they can be processed by the same method in multiple steps.
+

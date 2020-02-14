@@ -1,0 +1,2 @@
+C:CPU_COMM_COMPONENT
+R:readCpuMsg C:CPU_COMM_ReadCpuMessageIcmd L:CPU_COMM_ICMD_READ_MSG A:(0, 1, 2)

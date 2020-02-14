@@ -1,0 +1,104 @@
+component:TOPOLOGY_COMPONENT
+L:TOPOLOGY_INVALID_LOGICAL_ADDRESS_ARG S:Invalid logical address received %d @ line %d\n
+L:TOPOLOGY_INVALID_ENDPOINT_ARG S:Invalid endpoint received %d @ line %d\n
+L:TOPOLOGY_ICMD_NOT_LEX S:Duh, this is REX!!!!\n
+L:TOPOLOGY_ICMD_SHOW_DEVICE S:ShowDevice\n
+L:TOPOLOGY_ICMD_SHOW_DEVICE_ALL S:ShowDeviceAll\n
+L:TOPOLOGY_ICMD_SHOW_TOPOLOGY_BY_USB S:Device Topology Ordered By USB Address:\n
+L:TOPOLOGY_ICMD_SHOW_TOPOLOGY_BY_LA S:Device Topology Ordered By Logical Address:\n
+L:TOPOLOGY_ICMD_WRITE_XSST S:ShowTopologyByLogical\n
+L:TOPOLOGY_ICMD_WRITING_XSST1 S:Writing (0x%x, 0x%x) to XSST\n
+L:TOPOLOGY_ICMD_WRITING_XSST2 S:at address %d, endpoint %d\n
+L:TOPOLOGY_DEVICE_ADDING_DEVICE S:DEVICE_Add: adding device LA=%d, pLA=%d, portOnParent=%d\n
+L:TOPOLOGY_PORT_NOT_FOUND S:DEVICE_FindPort: port %d on parent %d not found\n
+L:TOPOLOGY_DISCONNECT S:Disconnecting node (LA %d) from parent %d @ port %d\n
+L:TOPOLOGY_INVALID_LA_IN_ICMD S:Invalid logical address %d received in ShowDevice iCmd\n
+L:TOPOLOGY_ICMD_VIEWING_ADDRESS_NOT_IN_SYS2 S:Using unused USB address to view logical address %d\n
+L:TOPOLOGY_SHOW_XSST_RETRY_USAGE S:XSST Monitor: USB %d, endpoint %d has rtyUsage as 0x%x\n
+L:GET_ADDR_FROM_LOGICAL_MISMATCH S:Get address from logical had a mismatch.  Logical arg is %d, USB address from logical is %d, Logical address from USB is %d\n
+L:DISPLAY_XSST S:LA(upper bits), endpoint(lower bits) 0x%x, XSST: 0x%x 0x%x\n
+L:TOPOLOGY_ICMD_SHOW_XSST S:ShowXSST\n
+L:TOPOLOGY_SET_ADDRESS_ON_EXISTING S:Logical address %d has moved from USB address %d to USB address %d\n
+L:XSSTMON_LEX_SPECIFIC_ICMD S:The command executed is only valid on a device configured as a LEX\n
+L:HOST_REUSING_USB_ADDR S:The host is re-using USB address %d\n
+L:MSA_MISCONFIGURED_PTRS1 S:MSA detected misconfigured ptrs on USB address %d, inEp is %d, inPtr is %d\n
+L:MSA_MISCONFIGURED_PTRS2 S:MSA detected misconfigured ptrs on USB address %d, outEp is %d, outPtr is %d\n
+L:MSA_FREE_LAT_FAILURE S:MSA Free LAT failure, MSA USB address %d, MSA LA address %d, msaLogicalAddressAllocatedBitField 0x%x\n
+L:MSA_FREE_INVALID S:MSA Free was given an invalid address, usb is %d, MSA LA is %d\n
+L:NEW_MSA_INTERFACE S:New MSA interface configured on USB %d, epIn %d, epOut %d\n
+L:MSA_OUT_OF_PTRS S:MSA HW is out of pointers\n
+L:RESET_XSST S:ResetXsst: LA %d, USB %d\n
+L:TOPOLOGY_INVALID_WHEN_GET_ADDR_FROM_USB S:Tried to get an XUSB address from a USB address (%d) without valid topology data at line %d\n
+L:TOPOLOGY_INVALID_TREE_STRUCTURE S:A topology tree invariant has been violated at line %d.\n
+L:MSA_TOPOLOGY_MISMATCH S:An MSA topology mismatch occured on USB address %d at line %d\n
+L:TOPOLOGY_EXPECTED_DEVICE_REQUIRING_CLEANUP S:Device with USB address %d should have required cleanup at line %d\n
+L:TOPOLOGY_INVALID_DEVICE_CONNECTED S:Found a connected device with LA %d that is not valid, but is connected at line %d\n
+L:TRAVERSE_TOPOLOGY S:Traverse: processing logical address %d\n
+L:LOGITECH_C910_FOUND S:Logitech C910 device found at usb address %d, configuring endpoint 2 as ISO\n
+L:FOUND_NEW_PRODUCT S:Found New Product. Usb Address: %d, Old Product ID: %d, New Product ID: %d\n
+L:FOUND_NEW_VENDOR S:Found New Vendor. Usb Address: %d, Old Vendor ID: %d, New Vendor ID: %d\n
+L:MSA_FREE_ADDR S: MSA freeing MSA LA %d, USB %d\n
+L:TOPOLOGY_ASSERT_XSST S:--- XSST for Devices in the Device Topology ---\n
+L:ADD_ENDPOINT1 S:Adding Endpoint. Interface: %d, Endpoint Number: %d, Endpoint type: %d ...\n
+L:ADD_ENDPOINT2 S:... Adding Endpoint. Alternate Setting: %d\n
+L:TOPOLOGY_SET_INTERFACE S:Setting Interface for LA: %d to Interface: %d, Alternate setting: %d\n
+L:DESC_DONE S:Descriptor has been parsed\n
+L:CLEAR_ENDPOINTS S:Cleared Endpoints for LA: %d\n
+L:TOPOLOGY_SET_CONFIGURATION S:Setting Configuration for LA: %d to value: %d\n
+L:ENDPOINT_INFO S:    Interface: %d, Endpoint: %d, Type: %d\n
+L:MEMPOOL_ALLOC_FAILED S:Memory pool in topology is full and data will not be saved\n
+L:SET_INTERFACE_MEM S:Endpoints for device with LA: %d were deleted; Set Interface will not work\n
+L:DELETE_DISCONNECTEDDEVICES S:Removing endpoints for disconnected devices\n
+L:DELETE_CONFIGURED S:Deleting configured devices to free some space in the memory pool\n
+L:TOPOLOGY_MEMPOOL S:Number of used slots in topology memory pool: %d; number of free slots: %d\n
+L:NEW_DEVICE S:New device at USB %d, Vendor ID 0x%.4x, Product ID 0x%.4x\n
+L:DTT_GET_DEV_NODE_INVALID_ARG S:DTT get dev node invalid arg\n
+L:DISCONNECT_SUBTREE S:Disconnecting subtree rooted at logical address %d\n
+L:CONFIGURATION_VALUE S:    Configuration value: %d\n
+L:ENDPOINT_INFO2 S:    Endpoint Direction: %d, MSA Paired Endpoint Number: %d, Alternate Setting: %d\n
+L:MSA_ENDPOINT_NONEXISTENT S:MSA Pair Endpoint does not exist\n
+L:BCI_BCO_SET S:Both BCI and BCO are set for LA: %d\n
+L:CLEAR_MSA_ENDPOINT S:Clearing MSA Overlay and Acceleration field for LA: %d, Endpoint %d, Direction %d\n
+L:SET_INTERFACE_UNCONFIGURED S:Setting Interface called on unconfigured device for LA: %d to Interface: %d, Alternate setting: %d\n
+L:IS_EP_SET_EQ_WITH_NULL_ARG S:_DTT_isEndpointSetEqualAndNoMsa: called with NULL arg\n
+L:SHOW_VIRT_FN S:  Virtual function at address 0x%x\n
+L:SHOW_VIRT_FN_1 S:    ep: %d, epType: %d\n
+L:SHOW_VIRT_FN_2 S:    inFn: 0x%x, inAckFn: 0x%x\n
+L:SHOW_VIRT_FN_3 S:    outFn: 0x%x, setupFn: 0x%x\n
+L:TOPOLOGY_SHOW_TOPOLOGY_1 S:Logical Address=%d, USB Address=%d\n
+L:TOPOLOGY_SHOW_TOPOLOGY_2 S:  Parent LA=%d, Child LA=%d, Sibling LA=%d\n
+L:TOPOLOGY_SHOW_TOPOLOGY_5 S:  Requires Cleanup=%d, Max Packet Size Ep0=%d, System Control Q State=%d\n
+L:TOPOLOGY_SHOW_ENDPOINTS_INFO S:  Stored Endpoint Information:\n
+L:INPUT_STUCK_ENDPOINT S:Input Endpoint at LA: %d, Endpoint: %d is stuck.\n
+L:OUTPUT_STUCK_ENDPOINT S:Output Endpoint at LA: %d, Endpoint: %d is stuck\n
+L:TOPOLOGY_HOST_RESET_SHOULD_NEVER_FAIL S:Host reset should never fail, but it did\n
+L:ENDPOINT_SHARED_INTF S:In Configuration %d, Endpoint %d is being shared by two distinct interfaces\n
+L:EXISTING_ENDPOINT_TYPE S:In Configuration %d, adding existing endpoint with endpoint number %d, endpoint direction %d but with different endpoint type\n
+L:DISCONNECT_DEVICE S:Disconnecting device USB %d, logical %d\n
+L:RELEASE_RETRY S:In XSST Monitor, releasing Retry Buffers for USB Addr: %d, Endpoint: %d\n
+L:START_XSST S:XSST Monitor has been started\n
+L:STOP_XSST S:XSST Monitor has been stopped\n
+L:FLUSH_IN_QUEUE S:Flushing Input Queue for device at LA: %d, Endpoint: %d\n
+L:FLUSH_OUT_QUEUE S:Flushing Output Queue for device at LA: %d, Endpoint: %d\n
+L:XSST_MONITOR_STILL_PROCESSING S:XSST Monitor is still processing the last address\n
+L:TOPOLOGY_WRITING_IN_ENDPOINT S:Writing IN endpoint: usbA=%d, EP=%d, EPType=%d\n
+L:TOPOLOGY_WRITING_OUT_ENDPOINT S:Writing OUT endpoint: usbA=%d, EP=%d, EPType=%d\n
+L:TOPOLOGY_SHOW_TOPOLOGY_7 S:  VID is 0x%04x, PID is 0x%04x, device Change is %d\n
+L:TOPOLOGY_SHOW_TOPOLOGY_4 S:  Is Hub=%d, Is Connected=%d\n
+L:TOPOLOGY_TOO_MANY_CONFIGURATIONS S:Device with LA %d has %d configurations but only %d are supported.\n
+L:TOPOLOGY_OPTIMIZING_ENDPOINT_SET S:Removing tracking of LA %d, EP number %d, EP direction %d because the type does not vary.\n
+L:TOPOLOGY_SET_CONFIG_UNKNOWN S:Host performed set configuration, but descparser hasn't seen the full config descriptor. \n
+L:TOPOLOGY_INVALID_ADDRESS_REQUIRES_CLEANUP S:Invalid address %d requires cleanup @ line %d\n
+L:TOPOLOGY_INVALID_DIRECTION_ARG S:Invalid transfer direction received %d @ line %d\n
+L:TOPOLOGY_LA_REQUIRES_CLEANUP S:Device at LA %d requires cleanup\n
+L:TOPOLOGY_DEVICE_REQUIRING_CLEANUP_INSYS_CLEARED S:Device at LA %d requiring cleanup was removed from sys. Timeout counter = %d\n
+L:TOPOLOGY_SENT_CSPLIT_TO_REX S:Device requiring cleanup had CSPLIT sent to REX. LA = %d, ep = %d, direction = %d\n
+L:TOPOLOGY_XSST_WRITE_CONDITIONAL_FAILED S:XSST WriteConditional failed for device requiring cleanup. Addr = %d, ep = %d, (epType << 8) | epDir  = 0x%x\n
+L:TOPOLOGY_SPLIT_BLK_NO_SPLIT_PACKET S:i/oSplit and i/oBlk are set but there is no s/cSplit packet in queue\n
+L:TOPOLOGY_SPLIT_DEVICE_HAS_NO_UPSTREAM_HS_HUB S:Split device at LA %d has no upstream high-speed hub!\n
+L:TOPOLOGY_SET_SPEED_MISSING_NODE S:Tried to set the speed of device with parent LA %d and port %d to %d, but couldn't find it in the topology!\n
+L:TOPOLOGY_SET_SPEED S:Set the speed of device with LA %d to %d\n
+L:TOPOLOGY_SHOW_TOPOLOGY_3 S:  Port On Parent=%d, Speed=%d, High Endpoint=%d\n
+L:TOPOLOGY_SHOW_TOPOLOGY_6 S:  MSA LA=%d, Configuration Value=%d\n
+L:TOPOLOGY_SENT_MSA_FREED_TO_REX S:Sent CPU message LEX_FREED_MSA_PAIR @ USBAddr %d to Rex on Vport %d\n
+L:TOPOLOGY_UPDATING_XSST_MSA S:Updating XSST MSA info for USBAddr %d endpoint %d line %d\n

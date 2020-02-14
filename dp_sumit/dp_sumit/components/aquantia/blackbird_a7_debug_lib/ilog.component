@@ -1,0 +1,248 @@
+component:AQUANTIA_COMPONENT
+L:AQUANTIA_PMA_RECEIVE_LINK_STATUS S:STAT: Aquantia PMA Receive Link Status (1.1.2): %d\n
+L:AQUANTIA_PMA_TRANSMIT_FAULT S:STAT: Aquantia PMA Transmit Fault (1.8.B): %d\n
+L:AQUANTIA_PMA_RECEIVE_FAULT S:STAT: Aquantia PMA Receive Fault (1.8.A): %d\n
+L:AQUANTIA_PMA_LP_RETRAIN_COUNT S:STAT: Aquantia PMA LP Fast Retrain Count (1.93.F:B): %d\n
+L:AQUANTIA_PMA_LD_RETRAIN_COUNT S:STAT: Aquantia PMA LD Fast Retrain Count (1.93.A:6): %d\n
+L:AQUANTIA_PMA_RETRAIN_SIGNAL_TYPE S:STAT: Aquantia PMA Fast Retrain Signal Type (1.93.2:1): %d\n
+L:AQUANTIA_PMA_NUM_LINK_RECOVERY S:STAT: Aquantia PMA Number Of Link Recovery Since Last AutoNeg (1.E811.F:8): %d\n
+L:AQUANTIA_PMA_NUM_RFI_RECOVERY S:STAT: Aquantia PMA Number Of RFI Training Link Recovery Since Last AutoNeg (1.E811.7:0): %d\n
+L:AQUANTIA_PCS_TRANSMIT_FAULT S:STAT: Aquantia PCS Transmit Fault (3.8.B): %d\n
+L:AQUANTIA_PCS_RECEIVE_FAULT S:STAT: Aquantia PCS Receive Fault (3.8.A): %d\n
+L:AQUANTIA_PCS_10G_LINK_STATUS S:STAT: Aquantia PCS 10G Receive Link Status (3.20.C): %d\n
+L:AQUANTIA_PCS_10G_HIGH_BER S:STAT: Aquantia PCS 10G BASE-T High BER (3.20.1): %d\n
+L:AQUANTIA_PCS_10G_BLOCK_LOCK S:STAT: Aquantia PCS 10G Block Lock (3.20.0): %d\n
+L:AQUANTIA_PCS_BLOCK_LOCK_LATCHED S:STAT: Aquantia PCS Block Lock Latched (3.21.F): %d\n
+L:AQUANTIA_PCS_HIGH_BER_LATCHED S:STAT: Aquantia PCS 10G BASE-T High BER Latched (3.21.E): %d\n
+L:AQUANTIA_PCS_ERROR_FRAME_COUNT S:STAT: Aquantia PCS LDPC Errored Frame Counter (3.21.D:8): %d\n
+L:AQUANTIA_PCS_ERROR_BLOCK_COUNT S:STAT: Aquantia PCS Errored 65B Block Counter (3.21.7:0): %d\n
+L:AQUANTIA_PCS_SYSTEM_INTERFACE_FAULT S:STAT: Aquantia PCS System Interface Transmit Fault (3.C8F0.0): %d\n
+L:AQUANTIA_PCS_XAUI_INVALID_BLOCK S:STAT: Aquantia PCS XAUI Transmit Invalid 64B Block Detected (3.CC00.0): %d\n
+L:AQUANTIA_PCS_TX_10G_BAD_FRAME_COUNT S:STAT: Aquantia PCS Transmit Vendor 10GBASE-T Bad Frame Counter (3.C823:C822): %d\n
+L:AQUANTIA_PCS_UNCORRECTED_FRAME_COUNT S:STAT: Aquantia PCS Receive Vendor Uncorrected Frame Counter (3.E821:E820): %d\n
+L:AQUANTIA_PCS_LDPC_CORRECTED_F4_ITERATION_COUNT S:STAT: Aquantia PCS LDPC corrected frames 4 iteration Counter (3.E847:E846): %d\n
+L:AQUANTIA_PCS_LDPC_CORRECTED_F5_ITERATION_COUNT S:STAT: Aquantia PCS LDPC corrected frames 5 iteration Counter (3.E849:E848): %d\n
+L:AQUANTIA_PCS_LDPC_CORRECTED_F6_ITERATION_COUNT S:STAT: Aquantia PCS LDPC corrected frames 6 iteration Counter (3.E850): %d\n
+L:AQUANTIA_PCS_LDPC_CORRECTED_F7_ITERATION_COUNT S:STAT: Aquantia PCS LDPC corrected frames 7 iteration Counter (3.E851): %d\n
+L:AQUANTIA_PCS_LDPC_CORRECTED_F8_ITERATION_COUNT S:STAT: Aquantia PCS LDPC corrected frames 8 iteration Counter (3.E852): %d\n
+L:AQUANTIA_PCS_CRC_ERROR S:STAT: Aquantia PCS Rx CRC Frame error (3.EC00.F): %d\n
+L:AQUANTIA_PCS_LDPC_DECODE_FAILURE S:STAT: Aquantia PCS LDPC decode failure (3.EC00.E): %d\n
+L:AQUANTIA_PCS_LOCAL_FAULT_DETECT S:STAT: Aquantia PCS RPL local fault detect (3.EC00.B): %d\n
+L:AQUANTIA_PCS_LOF_DETECT S:STAT: Aquantia PCS RPL LOF detect (3.EC00.A): %d\n
+L:AQUANTIA_PCS_40G_BIP_LOCK S:STAT: Aquantia PCS RPL 40G BIP lock (3.EC00.9): %d\n
+L:AQUANTIA_PCS_INVALID_65B_BLOCK S:STAT: Aquantia PCS Invalid Rx 65B block (3.EC00.8): %d\n
+L:AQUANTIA_PCS_LDPC_ERROR_EXCEEDED S:STAT: Aquantia PCS Rx LDPC consecutive errored frame threshold exceeded (3.EC00.5): %d\n
+L:AQUANTIA_PHY_TX_FAULT S:STAT: Aquantia PHY Transmit Fault (4.8.B): %d\n
+L:AQUANTIA_PHY_RX_FAULT S:STAT: Aquantia PHY Receive Fault (4.8.A): %d\n
+L:AQUANTIA_PHY_XGXS_LANE_ALIGN S:STAT: Aquantia PHY XGXS Lane Alignment Status (4.18.C): %d\n
+L:AQUANTIA_PHY_LANE_SYNC S:STAT: Aquantia PHY Lane Sync (4.18.3:0): %x\n
+L:AQUANTIA_PHY_TX_BAD_FRAME_COUNT S:STAT: Aquantia PHY XS Transmit (XAUI Rx) Bad Frame Counter (4.C805:C804): %d\n
+L:AQUANTIA_PHY_XAUI_RX_DELETION S:STAT: Aquantia PHY XAUI Rx Sequence Ordered Set Deletion (4.CC01.D): %d\n
+L:AQUANTIA_PHY_RXAUI_LANE_ALIGN_LOCK_B S:STAT: Aquantia PHY RXAUI Lane Alignment Lock Status [1:0] (4.CC01.B): 0x%x\n
+L:AQUANTIA_PHY_RXAUI_LANE_ALIGN_LOCK_A S:STAT: Aquantia PHY RXAUI Lane Alignment Lock Status [1:0] (4.CC01.A): 0x%x\n
+L:AQUANTIA_PHY_TX_RESERVED_XGMII_CHAR S:STAT: Aquantia PHY Reserved XGMII Character Received (4.CC01.9): 0x%x\n
+L:AQUANTIA_PHY_TX_INVALID_XGMII_CHAR S:STAT: Aquantia PHY XAUI Tx Invalid XGMII Character Received (4.CC01.8): %d\n
+L:AQUANTIA_PHY_TX_CODE_VIOLATION_ERR_1 S:STAT: Aquantia PHY XAUI Tx Code Violation Error For Lane 0 [3:0] (4.CC01.4): %x\n
+L:AQUANTIA_PHY_TX_CODE_VIOLATION_ERR_2 S:STAT: Aquantia PHY XAUI Tx Code Violation Error For Lane 1 [3:0] (4.CC01.5): %x\n
+L:AQUANTIA_PHY_TX_CODE_VIOLATION_ERR_3 S:STAT: Aquantia PHY XAUI Tx Code Violation Error For Lane 2 [3:0] (4.CC01.6): %x\n
+L:AQUANTIA_PHY_TX_CODE_VIOLATION_ERR_4 S:STAT: Aquantia PHY XAUI Tx Code Violation Error For Lane 3 [3:0] (4.CC01.7): %x\n
+L:AQUANTIA_PHY_TX_RUN_DISPARITY_ERR_1 S:STAT: Aquantia PHY XAUI Tx Running Disparity Error For Lane 0 [3:0] (4.CC01.0): 0x%x\n
+L:AQUANTIA_PHY_TX_RUN_DISPARITY_ERR_2 S:STAT: Aquantia PHY XAUI Tx Running Disparity Error For Lane 1 [3:0] (4.CC01.1): 0x%x\n
+L:AQUANTIA_PHY_TX_RUN_DISPARITY_ERR_3 S:STAT: Aquantia PHY XAUI Tx Running Disparity Error For Lane 2 [3:0] (4.CC01.2): 0x%x\n
+L:AQUANTIA_PHY_TX_RUN_DISPARITY_ERR_4 S:STAT: Aquantia PHY XAUI Tx Running Disparity Error For Lane 3 [3:0] (4.CC01.3): 0x%x\n
+L:AQUANTIA_PHY_RX_BAD_FRAME_COUNT S:STAT: Aquantia PHY XS Receive (XAUI Tx) Rx Bad Frame Counter (4.E805:E804): %d\n
+L:AQUANTIA_PHY_USX_AUTONEGO_NUMBER S:STAT: Aquantia PHY Number of USX Aneg Restarts [F:0] (4.E810.F:0): %d\n
+L:AQUANTIA_PHY_AUTONEGO_STATUS S:STAT: Aquantia PHY System interface Autoneg Status [1:0] (4.E812.F:E): %d\n
+L:AQUANTIA_PHY_RX_LINK_UP S:STAT: Aquantia PHY Rx Link Up (4.E812.D): %d\n
+L:AQUANTIA_PHY_TX_READY S:STAT: Aquantia PHY Tx Ready (4.E812.C): %d\n
+L:AQUANTIA_PHY_RX_RESERVED_XGMII_CHAR S:STAT: Aquantia PHY Reserved XGMII Character Received from PCS (4.EC00.F): %d\n
+L:AQUANTIA_PHY_RX_INVALID_XGMII_CHAR S:STAT: Aquantia PHY Invalid XGMII Character Received from PCS (4.EC00.E): %d\n
+L:AQUANTIA_PHY_RX_LINK_STATUS_MSG S:STAT: Aquantia PHY Link status Message Received from PCS (4.EC00.D): %d\n
+L:AQUANTIA_AUTONEG_LINK_PULSE_DETECT S:STAT: Aquantia AUTO-NEG Link Pulse Detect (7.CC01.F): %d\n
+L:AQUANTIA_AUTONEG_LINK_CONNECT S:STAT: Aquantia AUTO-NEG Link Connect / Disconnect (7.CC01.0): %d\n
+L:AQUANTIA_GLOBAL_HIGH_TEMP_FAIL S:STAT: Aquantia GLOBAL High Temperature Failure (1E.CC00.E): %d\n
+L:AQUANTIA_GLOBAL_LOW_TEMP_FAIL S:STAT: Aquantia GLOBAL Low Temperature Failure (1E.CC00.D): %d\n
+L:AQUANTIA_GLOBAL_HIGH_TEMP_WARNING S:STAT: Aquantia GLOBAL High Temperature Warning (1E.CC00.C): %d\n
+L:AQUANTIA_GLOBAL_LOW_TEMP_WARNING S:STAT: Aquantia GLOBAL Low Temperature Warning (1E.CC00.B): %d\n
+L:AQUANTIA_GLOBAL_DEVICE_FAULT S:STAT: Aquantia GLOBAL Device Fault (1E.CC00.4): %d\n
+L:AQUANTIA_GLOBAL_FAST_LINK_DROP_FAULT S:STAT: Aquantia GLOBAL Fast Link Drop (1E.CC01.A): %d\n
+L:AQUANTIA_GLOBAL_MDIOD_COMMAND_OVERFLOW S:STAT: Aquantia GLOBAL MDIO Command Handling Overflow (1E.CC01.7): %d\n
+L:AQUANTIA_DTEXS_RX_LOCAL_FAULT S:STAT: Aquantia DTE XS Receive Local Fault (5.8.10): %d\n
+L:AQUANTIA_DTEXS_TX_LOCAL_FAULT S:STAT: Aquantia DTE XS Transmit Local Fault (5.8.11): %d\n
+L:AQUANTIA_PMA_CHANNEL_A_RECEIVED_SIGNAL_POWER S:STAT: Aquantia PMA Channel A Received Signal Power (1.8D.F:0): %d\n
+L:AQUANTIA_PMA_CHANNEL_B_RECEIVED_SIGNAL_POWER S:STAT: Aquantia PMA Channel B Received Signal Power (1.8E.F:0): %d\n
+L:AQUANTIA_PMA_CHANNEL_C_RECEIVED_SIGNAL_POWER S:STAT: Aquantia PMA Channel C Received Signal Power (1.8F.F:0): %d\n
+L:AQUANTIA_PMA_CHANNEL_D_RECEIVED_SIGNAL_POWER S:STAT: Aquantia PMA Channel D Received Signal Power (1.90.F:0): %d\n
+L:AQUANTIA_PMA_RECEIVE_CURRENT_LINK_STATUS S:STAT: Aquantia PMA Receive Link Current Status (1.E800.0): %d\n
+L:AQUANTIA_PMA_FAST_RETRAIN_TIME S:STAT: Aquantia PMA Accumulated Fast Retrain Time (1.E810.F:0): %d\n
+L:AQUANTIA_PCS_FAULT_STATUS S:STAT: Aquantia PCS Fault (3.1.7): %d\n
+L:AQUANTIA_PCS_RECEIVE_LINK_STATUS S:STAT: Aquantia PCS Receive Link Status (3.1.2): %d\n
+L:AQUANTIA_PHY_TRANSMIT_LINK_ALIGNMENT_STATUS S:STAT: Aquantia PHY XS Transmit Link Alignment Status (4.1.2): %d\n
+L:AQUANTIA_PHY_SERDES_CALS_NUMBER S:STAT: Aquantia PHY Number of Serdes Cals [F:0] (4.C820.F:0): %d\n
+L:AQUANTIA_PHY_SIF_BLOCK_LOCK_TRANSITIONS_1_0_NUMBER S:STAT: Aquantia PHY Number of SIF Block Lock Transtitions 1 - 0 [7:0] (4.C821.F:8): %d\n
+L:AQUANTIA_PHY_SIF_BLOCK_LOCK_TRANSITIONS_0_1_NUMBER S:STAT: Aquantia PHY Number of SIF Block Lock Transtitions 0 - 1 [7:0] (4.C821.7:0): %d\n
+L:AQUANTIA_PHY_SIF_XGS_SWITCH_OVERS_NUMBER S:STAT: Aquantia PHY Number of SIF XGS Switch-overs [F:0] (4.C822.F:0): %d\n
+L:AQUANTIA_PHY_SIGNAL_LOSS_1 S:STAT: Aquantia PHY Loss of signal [3:0] (4.CC02.C): %d\n
+L:AQUANTIA_PHY_SIGNAL_LOSS_2 S:STAT: Aquantia PHY Loss of signal [3:0] (4.CC02.D): %d\n
+L:AQUANTIA_PHY_SIGNAL_LOSS_3 S:STAT: Aquantia PHY Loss of signal [3:0] (4.CC02.E): %d\n
+L:AQUANTIA_PHY_SIGNAL_LOSS_4 S:STAT: Aquantia PHY Loss of signal [3:0] (4.CC02.F): %d\n
+L:AQUANTIA_AUTONEG_PARALLEL_DETECTION_FAULT S:STAT: Aquantia AUTO-NEG Parallel Detection Fault (7.1.9): %d\n
+L:AQUANTIA_AUTONEG_REMOTE_FAULT S:STAT: Aquantia AUTO-NEG Remote Fault (7.1.4): %d\n
+L:AQUANTIA_AUTONEG_LINK_STATUS S:STAT: Aquantia AUTO-NEG Link Status (7.1.2): %d\n
+L:AQUANTIA_AUTONEG_MASTER_SLAVE_CONFIG_FAULT S:STAT: Aquantia AUTO-NEG MASTER-SLAVE Configuration Fault (7.21.F): %d\n
+L:AQUANTIA_AUTONEG_LOCAL_RECEIVER_STATUS S:STAT: Aquantia AUTO-NEG Local Receiver Status (7.21.D): %d\n
+L:AQUANTIA_AUTONEG_REMOTE_RECEIVER_STATUS S:STAT: Aquantia AUTO-NEG Remote Receiver Status (7.21.C): %d\n
+L:AQUANTIA_AUTONEG_RESTARTS_HANDLED S:STAT: Aquantia AUTO-NEG Autonegotiation Restarts Handled [F:0] (7.C813.F:0): %d\n
+L:AQUANTIA_AUTONEG_LINK_PULSE_DETECTED_STATUS S:STAT: Aquantia AUTO-NEG Link Pulse Detected Status (7.C812.F): %d\n
+L:AQUANTIA_AUTONEG_AUTOMATIC_DOWNSHIFT S:STAT: Aquantia AUTO-NEG Automatic Downshift (7.CC00.1): %d\n
+L:AQUANTIA_AUTONEG_CONNECTION_STATE_CHANGE S:STAT: Aquantia AUTO-NEG Connection State Change (7.CC00.0): %d\n
+L:AQUANTIA_AUTONEG_10G_DOWNSHIFT S:STAT: Aquantia AUTO-NEG Downshift From 10G (7.E411.B): %d\n
+L:AQUANTIA_AUTONEG_5G_DOWNSHIFT S:STAT: Aquantia AUTO-NEG Downshift From 5G (7.E411.A): %d\n
+L:AQUANTIA_AUTONEG_2G_DOWNSHIFT S:STAT: Aquantia AUTO-NEG Downshift From 2.5G (7.E411.9): %d\n
+L:AQUANTIA_AUTONEG_1G_DOWNSHIFT S:STAT: Aquantia AUTO-NEG Downshift From 1G (7.E411.8): %d\n
+L:AQUANTIA_AUTONEG_MAX_ADVERTISED_RATE S:STAT: Aquantia AUTO-NEG Max Advertised Rate [3:0] (7.E411.7:4): %d\n
+L:AQUANTIA_AUTONEG_PROTOCOL_ERROR S:STAT: Aquantia AUTO-NEG Autonegotiation Protocol Error (7.EC01.D): %d\n
+L:AQUANTIA_AUTONEG_FLP_IDLE_ERROR S:STAT: Aquantia AUTO-NEG FLP Idle Error (7.EC01.C): %d\n
+L:AQUANTIA_GLOBAL_HIGH_TEMP_FAILURE_STATE S:STAT: Aquantia GLOBAL High Temperature Failure State (1E.C830.E): %d\n
+L:AQUANTIA_GLOBAL_LOW_TEMP_FAILURE_STATE S:STAT: Aquantia GLOBAL Low Temperature Failure State (1E.C830.D): %d\n
+L:AQUANTIA_GLOBAL_HIGH_TEMP_WARNING_STATE S:STAT: Aquantia GLOBAL High Temperature Warning State (1E.C830.C): %d\n
+L:AQUANTIA_GLOBAL_LOW_TEMP_WARNING_STATE S:STAT: Aquantia GLOBAL Low Temperature Warning State (1E.C830.B): %d\n
+L:AQUANTIA_GLOBAL_MESSAGE S:STAT: Aquantia GLOBAL Message [F:0] (1E.C850.F:0): %d\n
+L:AQUANTIA_TEMP_THRESHOLD S:Aquantia temperature threshold: Warning %d C, Shutdown %d C.\n
+L:AQUANTIA_TEMP_WARNING S:STAT: Aquantia Temperature warning %d C\n
+L:AQUANTIA_SET_TEMP_WARNING S:Aquantia warning temperature set to %d C.\n
+L:AQUANTIA_SET_TEMP_SHUTDOWN S:Aquantia shutdown temperature set to %d C.\n
+L:AQUANTIA_AUTONEG_CONNECTION_STATE S:STAT: Aquantia AUTO-NEG Connection State[4:0] (7.C810.D:9): %d\n
+L:AQUANTIA_AUTONEG_ATTEMPTS_SINCE_RESET S:STAT: Aquantia AUTO-NEG Attempts Since Reset (7.C814.F:0): %d\n
+L:AQUANTIA_PCS_LOOPBACK S:Aquantia PCS loopback(3.0.E): 0x%x\n
+L:AQUANTIA_10G_SPEED_SELECTION S:Aquantia 10G Speed Selection(3.0.5:2): 0x%x\n
+L:AQUANTIA_TX_SCRAMBLER_DISABLE S:Aquantia Tx Scrambler Disable(3.D800.F): 0x%x\n
+L:AQUANTIA_TX_INJECT_CRC_ERROR S:Aquantia Tx Inject CRC Error(3.D800.E): 0x%x\n
+L:AQUANTIA_TX_INJECT_FRAME_ERROR S:Aquantia Tx Inject Frame Error(3.D800.D): 0x%x\n
+L:AQUANTIA_RX_ERROR_LDPC_FRAME_ENABLE S:Aquantia Enable Rx LDPC Error Frame(3.E400.0): 0x%x\n
+L:AQUANTIA_RX_LDPC_DECODER_CONTROL S:Aquantia Control Rx LDPC Decoder (3.E400.F): 0x%x\n
+L:AQUANTIA_XS_LOOPBACK S:Aquantia XS Loopback (4.0.E): 0x%x\n
+L:AQUANTIA_RECEIVE_TEST_PATTERN_ENABLE S:Enable Aquantia Receive Test Pattern (4.19.2): 0x%x\n
+L:AQUANTIA_PHY_OPERATING_MODE S:Aquantia Operating Phy Mode (4.C441.8:6): 0x%x\n
+L:AQUANTIA_TEST_PATTERN_SELECT S:Aquantia Select Test Pattern (4.19.1:0): 0x%x\n
+L:AQUANTIA_LOOPBACK_CONTROL S:Aquantia XS Loopback Control (4.C444.F:B): 0x%x\n
+L:AQUANTIA_MDI_PACKET_GENERATION S:Aquantia XS MDI Packet Generation (4.C444.5): 0x%x\n
+L:AQUANTIA_XS_SYSTEM_IF_PACKET_GENERATION S:Aquantia XS I/F Packet Generation (4.C444.2): 0x%x\n
+L:AQUANTIA_RATE S:Aquantia XS Rate (4.C444.1:0): 0x%x\n
+L:AQUANTIA_TEST_PATTERN_FORCE_ERROR S:Aquantia Select Test Pattern Force Error (4.D800.F): 0x%x\n
+L:AQUANTIA_TEST_PATTERN_MODE_7_FORCE_ERROR S:Aquantia XS Test Pattern Mode 7 Force Error (4.D800.E): 0x%x\n
+L:AQUANTIA_XAUI_RX_LOCAL_FAULT_INJECTION S:Aquantia XAUI Rx Local Fault Injection (4.D800.D): 0x%x\n
+L:AQUANTIA_TEST_PATTERN_EXTENDED_SELECT S:Aquantia Test-Pattern Extended Select [1:0] (4.D800.C:B): 0x%x\n
+L:AQUANTIA_TEST_PATTERN_CHECK_ENABLE S:Aquantia Test Pattern Check Enable (4.D800.A): 0x%x\n
+L:AQUANTIA_TEST_PATTERN_CHECK_POINT S:Aquantia Test Pattern Check Point (4.D800.7): 0x%x\n
+L:AQUANTIA_TEST_PATTERN_INSERT_EXTRA_IDLES S:Aquantia Test Pattern Insert Extra Idles [2:0] (4.D801.E:C): 0x%x\n
+L:AQUANTIA_TEST_PATTERN_CHECK_SELECT S:Aquantia Test Pattern Check Select [3:0] (4.D801.B:8): 0x%x\n
+L:AQUANTIA_TEST_PATTERN_CHANNEL_SELECT S:Aquantia Test Pattern Channel Select [3:0] (4.D801.3:0): 0x%x\n
+L:AQUANTIA_CHANNEL_0_TEST_PATTERN_ERROR_COUNTER S:Aquantia Channel 0 Test Pattern Error Counter [F:0] (4.D810.F:0): 0x%x\n
+L:AQUANTIA_CHANNEL_1_TEST_PATTERN_ERROR_COUNTER S:Aquantia Channel 1 Test Pattern Error Counter [F:0] (4.D811.F:0): 0x%x\n
+L:AQUANTIA_CHANNEL_2_TEST_PATTERN_ERROR_COUNTER S:Aquantia Channel 2 Test Pattern Error Counter [F:0] (4.D812.F:0): 0x%x\n
+L:AQUANTIA_CHANNEL_3_TEST_PATTERN_ERROR_COUNTER S:Aquantia Channel 3 Test Pattern Error Counter [F:0] (4.D813.F:0): 0x%x\n
+L:AQUANTIA_TEST_PATTERN_MODE_7_ERROR_COUNTER S:Aquantia Test Pattern Mode 7 Error Counter [F:0] (4.D814.F:0): 0x%x\n
+L:AQUANTIA_XAUI_TX_ERROR_INJECTION_LANE_SELECT S:Aquantia XAUI Tx Error Injection Lane Select [2:0] (4.F800.F:D): 0x%x\n
+L:AQUANTIA_XAUI_TX_INJECT_SYNCHRONIZATION_ERROR S:Aquantia XAUI Tx Inject Synchronization Error (4.F800.C): 0x%x\n
+L:AQUANTIA_XAUI_TX_INJECT_ALIGNMENT_ERROR S:Aquantia XAUI Tx Inject Alignment Error (4.F800.B): 0x%x\n
+L:AQUANTIA_XAUI_TX_INJECT_CODE_VIOLATION S:Aquantia XAUI Tx Inject Code Violation (4.F800.A): 0x%x\n
+L:AQUANTIA_XAUI_TX_10B_VIOLATION_CODEWORD S:Aquantia XAUI Tx 10B Violation Codeword [9:0] (4.F800.9:0): 0x%x\n
+L:AQUANTIA_PHY_XS_SYSTEM_LOOPBACK_PASS_THROUGH S:Aquantia PHY XS System Loopback Pass Through (4.F802.F): 0x%x\n
+L:AQUANTIA_PHY_XS_SYSTEM_LOOPBACK_ENABLE S:Aquantia PHY XS System Loopback Enable (4.F802.E): 0x%x\n
+L:AQUANTIA_XAUI_TX_LOCAL_FAULT_INJECTION S:Aquantia XAUI Tx Local Fault Injection (4.F802.D): 0x%x\n
+L:AQUANTIA_RESTART_AUTONEGOTIATION S:Aquantia Restart Autonegotiation (7.0.9): 0x%x\n
+L:AQUANTIA_SERDES_START_UP_MODE S:Aquantia SERDES Start-Up Mode [2:0] (7.C410.F:D): 0x%x\n
+L:AQUANTIA_AUTONEGOTIATION_TIMEOUT S:Aquantia Autonegotiation Timeout [3:0] (7.C411.F:C): 0x%x\n
+L:AQUANTIA_AUTONEGOTIATION_TIMEOUT_MOD S:Aquantia Autonegotiation Timeout Mod (7.C411.B): 0x%x\n
+L:AQUANTIA_LINK_PARTNER_1000_BASE_T_FULL_DUPLEX_ABILITY S:Aquantia Link Partner 1000BASE-T Full Duplex Ability (7.E820.F): 0x%x\n
+L:AQUANTIA_LINK_PARTNER_1000_BASE_T_HALF_DUPLEX_ABILITY S:Aquantia Link Partner 1000BASE-T Half Duplex Ability (7.E820.E): 0x%x\n
+L:AQUANTIA_LINK_PARTNER_SHORT_REACH S:Aquantia Link Partner Short-Reach (7.E820.D): 0x%x\n
+L:AQUANTIA_LINK_PARTNER_AQ_RATE_DOWNSHIFT_CAPABILITY S:Aquantia Link Partner AQRate Downshift Capability (7.E820.C): 0x%x\n
+L:AQUANTIA_LINK_PARTNER_5G S:Aquantia Link Partner 5G (7.E820.B): 0x%x\n
+L:AQUANTIA_LINK_PARTNER_2G S:Aquantia Link Partner 2.5G (7.E820.A): 0x%x\n
+L:AQUANTIA_LINK_PARTNER S:Aquantia Link Partner (7.E820.2): 0x%x\n
+L:AQUANTIA_AUTONEGOTIATION_PROTOCOL_ERROR_STATE S:Aquantia Autonegotiation Protocol Error State (7.E831.D): 0x%x\n
+L:AQUANTIA_FLP_IDLE_ERROR_STATE S:Aquantia FLP Idle Error State (7.E831.C): 0x%x\n
+L:AQUANTIA_ENABLE_DIAGNOSTICS S:Aquantia Enable Diagnostics (1E.C400.F): 0x%x\n
+L:AQUANTIA_HIGH_TEMP_FAILURE_THRESHOLD S:Aquantia High Temp Failure Threshold [F:0] (1E.C421): 0x%x\n
+L:AQUANTIA_LOW_TEMP_FAILURE_THRESHOLD S:Aquantia Low Temp Failure Threshold [F:0] [F:0] (1E.C422): 0x%x\n
+L:AQUANTIA_HIGH_TEMP_WARNING_THRESHOLD S:Aquantia High Temp Warning Threshold [F:0] [1:0] (1E.C423): 0x%x\n
+L:AQUANTIA_LOW_TEMP_WARNING_THRESHOLD S:Aquantia Low Temp Warning Threshold [F:0] (1E.C424): 0x%x\n
+L:AQUANTIA_DIAGNOSTICS_SELECT S:Aquantia Diagnostics Select (1E.C470.F): 0x%x\n
+L:AQUANTIA_EXTENDED_MDI_DIAGNOSTICS_SELECT S:Aquantia Extended MDI Diagnostics Select [1:0] (1E.C470.E:D): 0x%x\n
+L:AQUANTIA_INITIATE_CABLE_DIAGNOSTICS S:Aquantia Initiate Cable Diagnostics (1E.C470.4): 0x%x\n
+L:AQUANTIA_ENABLE_VDD_POWER_SUPPLY_TUNING S:Aquantia Enable VDD Power Supply Tuning (1E.C472.E): 0x%x\n
+L:AQUANTIA_TUNABLE_EXTERNAL_VDD_POWER_SUPPLY_PRESENT S:Aquantia Tunable External VDD Power Supply Present (1E.C472.6): 0x%x\n
+L:AQUANTIA_EXTERNAL_VDD_CHANGE_REQUEST S:Aquantia External VDD Change Request [3:0] (1E.C472.5:2): 0x%x\n
+L:AQUANTIA_ENABLE_5TH_CHANNEL_RFI_CANCELLATION S:Aquantia Enable 5th Channel RFI Cancellation (1E.C472.0): 0x%x\n
+L:AQUANTIA_RATE_TRANSITION_REQUEST S:Aquantia Rate Transition Request [2:0] (1E.C473.A:8): 0x%x\n
+L:AQUANTIA_TRAINING_SNR S:Aquantia Training SNR [7:0] (1E.C473.7:0): 0x%x\n
+L:AQUANTIA_GLB_LOOPBACK_CONTROL S:Aquantia Loopback Control [4:0] (1E.C47A.F:B): 0x%x\n
+L:AQUANTIA_GLB_MDI_PACKET_GENERATION S:Aquantia MDI Packet Generation (1E.C47A.5): 0x%x\n
+L:AQUANTIA_GLB_SYSTEM_IF_PACKET_GENERATION S:Aquantia Global Provisioning System IF Packet Generation (1E.C47A.3): 0x%x\n
+L:AQUANTIA_GLOBAL_RESERVED_PROVISIONING_RATE S:Aquantia Rate [2:0] (1E.C47A.2:0): 0x%x\n
+L:AQUANTIA_PAIR_A_STATUS S:Aquantia Pair A Status [2:0] (1E.C800.E:C): 0x%x\n
+L:AQUANTIA_PAIR_B_STATUS S:Aquantia Pair B Status [2:0] (1E.C800.A:8): 0x%x\n
+L:AQUANTIA_PAIR_C_STATUS S:Aquantia Pair C Status [2:0] (1E.C800.6:4): 0x%x\n
+L:AQUANTIA_PAIR_D_STATUS S:Aquantia Pair D Status [2:0] (1E.C800.2:0): 0x%x\n
+L:AQUANTIA_STATUS_PAIR_A_REFLECTION_1 S:Aquantia Pair A Reflection #1 [7:0] (1E.C801.F:8): 0x%x\n
+L:AQUANTIA_STATUS_PAIR_A_REFLECTION_2 S:Aquantia Pair A Reflection #2 [7:0] (1E.C801.7:0): 0x%x\n
+L:AQUANTIA_IMPULSE_RESPONSE_MSW S:Aquantia Impulse Response MSW [F:0] (1E.C802.F:0): 0x%x\n
+L:AQUANTIA_STATUS_PAIR_B_REFLECTION_1 S:Aquantia Pair B Reflection #1 [7:0] (1E.C803.F:8): 0x%x\n
+L:AQUANTIA_STATUS_PAIR_B_REFLECTION_2 S:Aquantia Pair B Reflection #2 [7:0] (1E.C803.7:0): 0x%x\n
+L:AQUANTIA_IMPULSE_RESPONSE_LSW S:Aquantia Impulse Response LSW [F:0] (1E.C804.F:0): 0x%x\n
+L:AQUANTIA_STATUS_PAIR_C_REFLECTION_1 S:Aquantia Pair C Reflection #1 [7:0] (1E.C805.F:8): 0x%x\n
+L:AQUANTIA_STATUS_PAIR_C_REFLECTION_2 S:Aquantia Pair C Reflection #2 [7:0] (1E.C805.7:0): 0x%x\n
+L:AQUANTIA_STATUS_PAIR_D_REFLECTION_1 S:Aquantia Pair D Reflection #1 [7:0] (1E.C807.F:8): 0x%x\n
+L:AQUANTIA_STATUS_PAIR_D_REFLECTION_2 S:Aquantia Pair D Reflection #2 [7:0] (1E.C807.7:0): 0x%x\n
+L:AQUANTIA_PROCESSOR_INTENSIVE_OPERATION_IN_PROGRESS S:Aquantia Processor Intensive MDIO Operation InProgress (1E.C831.F): 0x%x\n
+L:AQUANTIA_CABLE_LENGTH S:Aquantia Cable Length [7:0] (1E.C884.7:0): 0x%x\n
+L:AQUANTIA_GLB_LOOPBACK_STATUS S:Aquantia Loopback Status [4:0] (1E.C888.F:B): 0x%x\n
+L:AQUANTIA_MDI_PACKET_GENERATION_STATUS S:Aquantia MDI Packet Generation Status (1E.C888.5): 0x%x\n
+L:AQUANTIA_GLB_SYSTEM_IF_PACKET_GENERATION_STATUS S:Aquantia System I/F Packet Generation Status (1E.C888.3): 0x%x\n
+L:AQUANTIA_GLOBAL_RESERVED_STATUS_RATE S:Aquantia Rate [2:0] (1E.C888.2:0): 0x%x\n
+L:AQUANTIA_SHORT_REACH_MODE S:Aquantia Short Reach Mode (1.83.0): 0x%x\n
+L:AQUANTIA_TEST_MODE_CONTROL S:Aquantia Test Control Mode (1.84.F:D): 0x%x\n
+L:AQUANTIA_TRANSMITTER_TEST_FREQUENCIES S:Aquantia Transmitter test frequencies (1.84.C:A): 0x%x\n
+L:AQUANTIA_FAST_RETRAIN_ABILITY S:Aquantia Fast Retrain Ability (1.93.4): 0x%x\n
+L:AQUANTIA_FAST_RETRAIN_ENABLE S:Aquantia Fast Retrain Enable (1.93.0): 0x%x\n
+L:AQUANTIA_TEST_MODE_RATE S:Aquantia Test Mode rate[1:0] (1.C412.F:E): 0x%x\n
+L:AQUANTIA_PMA_DIGITAL_SYSTEM_LOOPBACK S:Aquantia Digital System Loopback (1.D800.F): 0x%x\n
+L:AQUANTIA_EXTERNAL_PHY_LOOPBACK S:Aquantia External Phy Loopback (1.E400.F): 0x%x\n
+L:AQUANTIA_ENABLE_FAST_RETRAIN S:Enable Aquantia Fast Retrain (1.E400.2): 0x%x\n
+L:AQUANTIA_FORCE_MDI_CONFIGURATION S:Aquantia Force Mdi Configuration (1.E400.1): 0x%x\n
+L:AQUANTIA_MDI_CONFIGURATION S:Aquantia Mdi Configuration(1.E400.0): 0x%x\n
+L:AQUANTIA_GENERAL_RW S:Aquantia Read/Write Result for (%x.%x): 0x%x\n
+L:AQUANTIA_ISR_NOT_GEN S:MDIOD not Aquantia generated ISR\n
+L:AQUANTIA_DBL_READ S:MDIOD Aquantia DblRead reg1 0x%x, reg2 0x%x\n
+L:AQUANTIA_READ_ASYNC_BITFIELD_NOT_FINISHED S:Requested to do a asynchronous bit field read while other jobs pending\n
+L:AQUANTIA_PHY_DISABLED S:Aquantia PHY disabled\n
+L:AQUANTIA_SETUP_STARTED S:Aquantia PHY setup\n
+L:AQUANTIA_INT_HIGH_TEMP_WARN S:Aquantia PHY high temp warning!\n
+L:AQUANTIA_INT_HIGH_TEMP_FAIL S:Aquantia PHY high temp failure, shutting down PHY!\n
+L:AQUANTIA_INIT_COMPLETED S:Aquantia init completed\n
+L:AQUANTIA_JUNCTION_TEMP S:Aquantia Stats Junction Temperature Read %d C\n
+L:AQUANTIA_FIRMWARE_VER1 S:Aquantia Firmware Version: v%d.%x.%d\n
+L:AQUANTIA_FIRMWARE_VER2 S:Aquantia Firmware Version: ID%d_VER%d\n
+L:AQUANTIA_DRIVER_STATE_TICK S:Aquantia driver previous state = %d new state %d\n
+L:AQUANTIA_TX_LINK_UP S:Aquantia TX Link Up checked\n
+L:AQUANTIA_RXAUI_ALIGNED S:Aquantia RXAUI is aligned\n
+L:AQUANTIA_RX_LINK_UP S:Aquantia RX Link Up checked\n
+L:AQUANTIA_MONITOR_REG S:Aquantia Monitor Reg link down triggered %x\n
+L:AQUANTIA_LINK_TX_READY S:Aquantia Tx Ready Check. Step: %d, Result: %x, Required: %x\n
+L:AQUANTIA_STABILITY_CHECK S:Aquantia Stability Check. Step: %d, Result: %x, Required: %x\n
+L:AQUANTIA_LINK_STATUS S:Aquantia CheckLinkStatus New status: 0x%x, raw Value: 0x%x\n
+L:AQUANTIA_INIT_READ S:Aquantia Initialization Read Step: %d, Read: 0x%x, Required: 0x%x\n
+L:AQUANTIA_INIT_WRITE S:Aquantia Initialization Write Step: %d\n
+L:AQUANTIA_INIT_5G S:Aquantia Set to 5G link speed Write Step: %d\n
+L:AQUANTIA_READ_REG_FAILED S:Aquantia Read Register FAILED! Step: %d, Read: 0x%x, Required: 0x%x\n
+L:AQUANTIA_READ_CRC8_FAILED S:Aquantia Read CRC 8 FAILED! Step: %d, Read: 0x%x\n
+L:AQUANTIA_GTX_ERROR_DETECTED S:Aquantia - RXAUI GTx errors detected!\n
+L:AQUANTIA_POST_STABILITY_CHECK_DONE S:Aquantia - Post stability checks done\n
+L:AQUANTIA_AUTO_RESET_DETECTED S:Aquantia auto-reset detected, restart link-up sequence\n
+L:AQUANTIA_STOP_STATS_INPROGRESS S:Aquantia stats stop already in progress!\n
+L:AQUANTIA_STOP_STAT_NULL_POINTER S:Aquantia stop stats pointer invalid!\n
+L:AQUANTIA_NORMAL_OPERATION S:Aquantia check normal operation, read value is 0x%x normal operation:%d (1:Normal, 0:Abnormal)\n
+L:AQUANTIA_ERROR_STATE S:Aquantia link connection rate error status : %d\n
+L:AQUANTIA_AUTONEG_UNSUPP_SPEED S:Aquantia linked at an unsupported speed\n

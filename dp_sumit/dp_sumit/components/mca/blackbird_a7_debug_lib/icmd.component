@@ -1,0 +1,5 @@
+component:MCA_COMPONENT
+F:PrintLatencyValueIcmd H:"Prints the Latency Value of MCA_CHANNEL[0] if it is not zero" A:void
+F:MCA_ChannelLinkUp H:"Channel Link up (Channel number)" A:uint8_t
+F:MCA_ChannelLinkDn H:"Channel Link dn (Channel number)" A:uint8_t
+F:MCA_IcmdPrintFifoLevel H:"Set the time interval and start printing pfifo and nfifo levels (Set in msec)\n Setting the interval to Zero will stop the timer" A:uint32_t

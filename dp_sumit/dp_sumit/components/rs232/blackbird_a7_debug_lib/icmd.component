@@ -1,0 +1,2 @@
+component:RS232_COMPONENT
+F:RS232_enable H:"Enable arg0 > 1" A:uint8_t

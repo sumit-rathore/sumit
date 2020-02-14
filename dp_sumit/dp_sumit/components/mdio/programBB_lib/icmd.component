@@ -1,0 +1,6 @@
+component:MDIO_COMPONENT
+F:icmdMdioWrite H:"Write to MDIO: 1st arg device, 2nd arg address, 3rd arg data, 4th arg mux port" A:uint8_t, uint8_t, uint16_t, uint8_t
+F:icmdMdioRead H:"Read from MDIO: 1st arg device, 2nd arg address, 3rd arg mux port" A:uint8_t, uint8_t, uint8_t
+F:mdioStatus H:"Check the MDIO state of where it is in processing ASync operations" A:void
+F:icmdMdioIndirectWrite H:"Indirect write to MDIO: 1st arg device, 2nd arg devtype, 3rd arg address, 4th arg data, 5th arg mux port" A:uint8_t, uint8_t, uint16_t, uint16_t, uint8_t
+F:icmdMdioIndirectRead H:"Indirect read from MDIO: 1st arg device, 2nd arg devtype, 3rd arg address, 4th arg mux port" A:uint8_t, uint8_t, uint16_t, uint8_t

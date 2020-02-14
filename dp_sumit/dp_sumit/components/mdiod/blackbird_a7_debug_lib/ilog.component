@@ -1,0 +1,50 @@
+component:MDIOD_COMPONENT
+L:MDIOD_FOUND_PHY_AT_MDIO_ADDR S:Found a PHY at MDIO address %d\n
+L:MDIOD_NULL_COMPLETION_HANDLER S:Null completion handler passed, line %d\n
+L:MDIOD_PHY_FIFO_FULL S:PHY MDIO operation FIFO full. Can't submit Callback=0x%x, Active Callback=0x%x, Line=%d\n
+L:UNSUPPORTED_BMSR_ERCAP S:The PHY does not suppport extended capability registers\n
+L:UNSUPPORTED_BMSR_ANEGCAPABLE S:The PHY does not support auto negotiation\n
+L:UNSUPPORTED_BMSR_ESTATEN S:The PHY does not support 1000Base-T extended status register\n
+L:UNSUPPORTED_ESTATUS_1000_TFULL S:The PHY does not support 1000Base-T full duplex\n
+L:USELESS_PHY_SETTING S:Useless PHY Setting\n
+L:LINK_UP S:PHY link up\n
+L:LINK_DOWN S:PHY link down\n
+L:ICMD_DECODE_PHY_CONTROL_REG S:PHY control reg 0x%x\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE1 S:  PHY in reset\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE2 S:  PHY in loopback mode\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE3 S:  PHY auto-negotiate enabled\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE4 S:  PHY auto-negotiate NOT enabled\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE5 S:  PHY in power down mode\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE6 S:  PHY is electrically isolated from GMII\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE7 S:  PHY auto-negotiate restarting\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE8 S:  PHY auto-negotiate restart complete\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE9 S:  PHY full duplex\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE10 S:  PHY half duplex\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE11 S:  PHY collision test enabled\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE12 S:  PHY speed selected 1000Mbps\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE13 S:  PHY speed selected 100Mbps\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE14 S:  PHY speed selected 10Mbps\n
+L:ICMD_DECODE_PHY_STATUS_REG S:PHY status reg 0x%x\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE1 S:  PHY 100BASE-T4 capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE2 S:  PHY 100BASE-TX full duplex capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE3 S:  PHY 100BASE-X half duplex capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE4 S:  PHY 10BASE-T full duplex capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE5 S:  PHY 10BASE-T half duplex capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE6 S:  PHY 100BASE-T2 full duplex capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE7 S:  PHY 100BASE-T2 half duplex capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE8 S:  PHY extended status information in reg 0x0F\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE9 S:  PHY auto-negotiation complete\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE10 S:  PHY remote fault detected\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE11 S:  PHY auto-negotiate capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE12 S:  PHY auto-negotiate NOT capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE13 S:  PHY link up\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE14 S:  PHY link down\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE15 S:  PHY jabber condition detected\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE16 S:  PHY extended register capabilities\n
+L:MDIOD_ETH_PHY_NOT_FOUND S:No ethernet PHY was detected.\n
+L:MDIOD_DEBUG_D_X S:MDIOD DGB LINE %d VAL 0x%x\n
+L:MDIOD_ETH_PHY_ISR_NOT_GEN S:MDIOD not EnetPHY generated ISR\n
+L:MDIOD_ETH_PHY_ISR_NOT_LINK_GEN S:MDIOD not EnetPHY Link generated ISR, value: %x\n
+L:MDIOD_ETH_PHY_ISR_GEN S:MDIOD EnetPHY generated ISR: 0x%x\n
+L:ENET_PHY_CHANGE_PHY_SPEED S:Changing PHY speed to %d\n
+L:UNSUPPORTED_1000MBPS_SPEED_CHANGE_REQUEST S:Requested speed of 1000Mbps not supported by this PHY\n

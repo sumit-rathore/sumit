@@ -1,0 +1,49 @@
+Goldenears Software v0.0.2
+===========================
+
+Target FPGA: build_2015_04_10_v01_08_00
+
+Significant Changes:
+    * Added GE_BB Communication system, all transfers are packetized
+    * Added status message GE sends to BB
+    * Cannot be used with standard Hobbes, requires Hobbes4_1
+    * Introduce Led locator pattern
+    * Existing GPIO functions replaced with new LED control functions
+    * Added Led locator on/off in xusbnetcfg
+    * Added new filteration to block everything but audio and vendor specific devices
+    * Added reset device in xusbnetcfg
+    * Added request configuration response data and reply configuration response data
+    * Added NETCFG_RegisterResetDeviceResponseTimer in options.h
+    * Added request configuration response data, reply configuration response data, reset device, led locator on/off in xusbnetcfg_broadcast
+    * Added DHCP option 60 in DHCP that allows the client to indicate its vendor type
+    * Fixed xusbnetcfg usage message to include port option on request_device_info and ping subcommands
+    * Fixed a bug where xusbnetcfg port number was mandatory instead of optional
+    * Improved and extended Hobbes GUI functionality for accessing registers
+    * Log all the configuration variables stored in the EEPROM on system startup
+    * Added new configuration bit to disable xusbNetCfg
+    * Fixed bug 4644 where switching from Static IP to DHCP will fail for the first time
+
+Git Revision Log:
+* commit 63234de488b7589cfa1992350a520e618e837b7c
+| Author: Robert Chan Russell <robert.chanrussell@icron.com>
+| Date:   Fri Sep 16 12:18:52 2016 -0700
+| 
+|     Update release notes for v0.0.2
+|  
+* commit ccf03383e329c29c8ab15a33f80b501fb90f72a4
+| Author: Robert Chan Russell <robert.chanrussell@icron.com>
+| Date:   Wed Aug 31 16:16:10 2016 -0700
+| 
+|     updated leon and rexulm to send rex msg to bb rex on dev conn and disconn
+|  
+* commit d433ac5fa6ec6161a08ba4ec0c5633d1d326cd29
+| Author: Robert Chan Russell <robert.chanrussell@icron.com>
+| Date:   Wed Aug 31 13:14:29 2016 -0700
+| 
+|     Updated to send message to BB when startup completed
+|  
+* commit 06b62fff233681ac4869457835447aa4e617aaf2
+  Author: Robert Chan Russell <robert.chanrussell@icron.com>
+  Date:   Wed Aug 17 16:43:57 2016 -0700
+  
+      Added new signal from BB to enable REXULM and fixed GE status

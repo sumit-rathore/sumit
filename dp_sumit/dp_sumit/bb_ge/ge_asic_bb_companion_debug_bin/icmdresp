@@ -1,0 +1,8 @@
+C:ATMEL_CRYPTO_COMPONENT
+R:sendAtmelCmd C:atmel_icmdSend L:READ_BYTE A:0
+R:sendAtmelCmdWithData C:atmel_icmdWithDataWordSend L:READ_BYTE A:0
+C:GRG_COMPONENT
+R:divide16bit C:icmdDivide L:INT16_DIVIDE A:(0,1)
+R:multiply16bit C:icmdMultiply L:INT16_MULTIPLY A:0
+C:ICMD_COMPONENT
+R:read32 C:readMemory L:BASE_READ_MEM A:1

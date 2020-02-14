@@ -1,0 +1,64 @@
+Goldenears Firmware Design
+==========================
+This document describes the Goldenears firmware design.  The Goldenears project is intended to include multiple products.  Not all products will contain the exact same components.  For example the UoN product uses the Atmel crypto authentication chip to guard against stolen firmware.  A future product may use a different mechanism, and will have a different product build within this project.
+
+
+NOTE: The original document that was done before the project got under way is in /doc/old/GoldenEarsSWDesign.docx.  This document is slightly out of date, but provides a lot of details on the components and their interactions.
+
+
+Firmware Platform
+-----------------
+The icron firmware platform is described in components/ibase/doc/icron_platform.txt.  This document describes all the base level components and the generic architecture of this firmware platform.
+
+Each component has its own detailed documentation in its components/<name>/doc folder.
+
+
+ExtremeUSB
+----------
+The ExtremeUSB transactions are described in U:\Projects\GoldenEars\90-00381 ExtremeUSB Transactions
+
+
+File Hiearchy
+-------------
+The icron_platform.txt document describes the standard file hiearchy used in this design.
+
+Components used:
+Drivers: CLM, ULM, XCSR, GRG, XRR, XLR
+TODO:
+
+After building the project there will be a png file in the /*_bin/ directory.  This png file has a diagram of how most the components interact with each other.  Some common components such as ilog, icmd, leon, etc are left out, as every component depends on these, and they just clutter the graph.
+
+
+Firmware Role in Goldenears Architecture
+----------------------------------------
+The Goldenears RTL is responsible for passing all fast path operations, IE all data packets.  Goldenears firmware is responsible for managing the system, such as Lex/Rex link acquistion, passing link level messages (connects/disconnects/etc), USB device tracking, and USB device configuration.  Goldenears firmware is also responible for detecting RTL bugs, and attempting to resolve the system from deadlock scenarios.
+
+Firmware responibilities
+
+1) Initialization of all RTL blocks
+    Fairly straight forward.  Each (most) component has its own initialization function.  The driver components all do the RTL initialization.  The GRG component also has inputs from external pins, that indicate the configuration this device is, IE UoN product, IP core, Virtex dev board, etc.
+
+2) Maintaining link between Lex and Rex
+    This is to inform the rest of the system when the link is acquired or lost.  The link is maintained with by the link manager component, and is managed by RTL.  Depending on the link type, there are various different configuration settings that need to be configured.  In the UoN product where Lex and Rex link by Mac Addresses the netcfg component will configure the link manager component.  In UoN this also involves DHCP or a static IP address which is done in the net component.
+
+3) USB link level event handling
+    The ULM RTL block triggers interrupts for firmware on all USB link level conditions.  Firmware is responsible for passing these events between the Lex and the Rex.  The LexULM component is mostly an event pass through from messages received from the RexULM, and interrupts from the ULM, while the RexULM has a fair bit of logic in it, and tracks a fair bit of state information.  The RexULM needs to do additional work such as pre-fetching the device speed, before informing Lex of a device connect, ensuring minimum link event times are met (IE bus resets at least 10ms), work around RTL and device bugs, plus more.  The RexULM component contains detailed documentation in its /doc/ folder.
+
+4) USB topology and address tracking
+    Goldenears firmware has to snoop on the USB control packets to see what each type of device is, what address each device is, and where devices are connected behind hubs.  The firmware is then responsible for examining USB port resets and enabling new devices to be extended by ExtremeUSB, and examing device disconnects to disable extended devices that have been disconnected.  This involves snooping packets in the sys_ctrl_q component, examining the packets the device manager component, and tracking the topology in the topology component.  The topology component then interacts with the XCSR driver to configure the RTL.
+
+5) USB endpoint configuration
+    Each endpoint is extended by ExtremeUSB slightly differently.  The Lex RTL maintains a table called the XSST in the XCSR component.  This table must be configured for each endpoint on each device in the topology.  This is done by snooping configuration descriptor packets in the sys_ctrl_q component, parsing the descriptors in the descriptor parser component, and tracking the endpoint configurations in the topology component.  The topology component then configures the RTL with the XCSR driver component.
+
+6) Stuck endpoint Monitoring
+    Due to the nature of ExtremeUSB a host may request data from an endpoint only once.  This will result in the the Lex sending the host a NAK, and relaying the request to the Rex.  The Rex will send the request to the device, and the response back to the Lex.  If the host never requests data from the endpoint again, then the data will sit in the Lex forever.  Firmware is responsible for identifying the scenario, and cleaning up the endpoint.  An example is an application closing.  The last request will be stuck in the Lex, until the application is restarted.  When the application is restarted, the application will expect fresh data, and not the old packet.  The XSST Monitor also looks for failures from the lost packets between Lex and Rex, and other scenarios where the endpoint is stuck.  This is implemented in the the topology component and documented there.
+
+7) Some Rex packet scheduling
+    Scheduling packets from the Rex to a device is partially done in the RTL, and partially done in firmware.  This is documented in U:\Projects\GoldenEars\Rex Operation\
+
+8) Firmware upgrade
+    Firmware upgrade procedure is done through X-Modem from running firmware and through the ROM.  Running firmware actually just jumps into ROM for the upgrade procedure.  ExpressLink (a component) is intended to be run on the host computer and connect to GE through a UART cable.  This contains a new firmware build, and a flash writer program.  The flash writer is a component as well.  Icron debug tools Tigger & Hobbes can also upgrade units.
+
+9) Authenticate the IP (depending on specific product, UoN only as of June 2013)
+    The UoN product is designed with the Atmel crypto authentication chip.  This chip has a secret key programmed in it.  The secret key is only accessible by doing a SHA-256 against the secret with a randomly generated number.  Firmware is responsible for verifying that the correct SHA-256 hash is produced, and if it isn't the product operation will be halted.
+

@@ -1,0 +1,49 @@
+component:DP_AUX_COMPONENT
+L:AUX_RX_INVALID_TRANSACTION_SIZE S:RECEIVED AUX TRANSACTION WITH INVALID SIZE %d !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! \n
+L:AUX_RECEIVE_TRANSACTION S:Received an AUX transaction with length %d B, first word = 0x%x\n
+L:AUX_RX_HEX_DUMP S:RX Word %d = 0x%x\n
+L:AUX_TX_HEX_DUMP S:TX Word %d = 0x%x\n
+L:AUX_TX_INVALID_TRANSACTION_SIZE S:Requested to transmit AUX transaction with invalid size %d\n
+L:AUX_TX_INVALID_TRANSACTION_DATA S:Tx Request Buffer[%d]: 0%x\n
+L:AUX_HOST_REQUEST S:Host Request Buffer[%d]: 0%x\n
+L:AUX_TX_BUSY S:Attempted to transmit when already transmitting\n
+L:AUX_SEND_TRANSACTION S:Sent an AUX transaction with length %d B, first word = 0x%x\n
+L:AUX_INVALID_REQUEST_COMMAND S:Invalid request command 0x%x at line %d\n
+L:AUX_DEFERRING S:Deferring request for the request header 0x%x, address 0x%x, length 0x%x\n
+L:AUX_DEFERRING_STAT S:Deferring request took time %d by 0x%x\n
+L:AUX_DEFER_OVER S:Aux defer over the maximum amount %d. Restart link training\n
+L:AUX_REQUEST_FIFO_OVERFLOW S:Request FIFO overflow Handler = 0x%x\n
+L:AUX_STATE_CHANGE S:Changing state from %d to %d\n
+L:AUX_RETRY_MAX S:AUX reply maximum retrial failed\n
+L:AUX_LOADED_LOCAL_REQUEST S:Loaded local request: length = %d B, first word = 0x%x\n
+L:AUX_GEN_HPD_IRQ S:Generating HPD IRQ event\n
+L:AUX_GEN_HPD_REPLUG S:Generating HPD replug event\n
+L:AUX_GEN_HPD_UP S:Generating HPD up event\n
+L:AUX_GEN_HPD_DOWN S:Generating HPD down event\n
+L:AUX_ENTERING_ISR S:Entering AUX ISR: %x\n
+L:AUX_LEX_ISR_TIME S:Time spent in AUX ISR = %d us; time between AUX ISRs = %d us\n
+L:AUX_RX_FIFO_OVERFLOW S:RX FIFO overflow\n
+L:AUX_UNHANDLED_INTERRUPT S:Unhandled interrupt at line %d: unhandled interrupts = 0x%x\n
+L:AUX_ISR_TIME S:Time spent in AuxISR = %d us\n
+L:AUX_DDCCI_WRITE_REQUEST S:DDC/CI Write request with size : %d\n
+L:AUX_I2C_READ_REQUEST S:I2C read request with size : %d\n
+L:AUX_I2C_WRITE_REQUEST S:AUX I2C Write request with size : %d\n
+L:AUX_I2C_STATUS S:Go bit status for I2C : %d\n
+L:AUX_TRANS_REQUEST_BYTE S:Word = %d | Data = 0x%.8x\n
+L:AUX_TRANS_READ_WRITE_INDEX S:Read Index = %d | Write Index = %d\n
+L:AUX_I2C_DEBUG S:I2C write at line : %d\n
+L:AUX_LEX_SRC_IRQ_COUNT S:Source connect count = %d source disconnect count = %d Aux status = %d\n
+L:AUX_RX_RETRY_MAX S:AUX receive maximum retrail failed\n
+L:AUX_TRANS_BUFF_WRITE_OVERFLOW S:AUX trans buff is full, not saving more data\n
+L:AUX_TRANS_BUFF_READ_OVERFLOW S:AUX trans read buff has reached end of the buffer\n
+L:AUX_TRANS_SET_READ_INDEX S:Setting the new read index to %d\n
+L:AUX_TRANS_BUFF_CLEAR S:Clearing the AUX trans buffer\n
+L:AUX_NATIVE_WRITE_REQ_SRC S:Source    Native  Req WR %d bytes to 0x%x\n
+L:AUX_NATIVE_READ_REQ_SRC S:Source    Native  Req RD %d bytes from 0x%x\n
+L:AUX_NATIVE_ACK_SNK S:Sink      Native  AUX_ACK - %d bytes\n
+L:AUX_NATIVE_HEX_DUMP S:
+L:AUX_I2C_WRITE_REQ_SRC S:Source    I2C     Req WR %d bytes to 0x%x MOT=%d\n
+L:AUX_I2C_READ_REQ_SRC S:Source    I2C     Req RD %d bytes to 0x%x MOT=%d\n
+L:AUX_I2C_ACK_SNK S:Sink      I2C     AUX_ACK - %d bytes\n
+L:AUX_I2C_HEX_DUMP S:
+L:AUX_NATIVE_DEFER S:Sink      Native  AUX_DEFER - 0 bytes\n

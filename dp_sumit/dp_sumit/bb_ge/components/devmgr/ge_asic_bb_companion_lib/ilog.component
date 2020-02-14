@@ -1,0 +1,10 @@
+component:DEVMGR_COMPONENT
+L:REX_HUB_PORT_STATUS_HANDLER S:RexHubPortStatusHandler: LA=%d port=%d\n
+L:REX_HUB_PORT_STATUS_HANDLER_PORT_EN_LS S:RexHubPortStatusHandler: Port%d enabled LA%d, speed=LS\n
+L:REX_HUB_PORT_STATUS_HANDLER_PORT_EN_HS S:RexHubPortStatusHandler: Port%d enabled LA%d, speed=HS\n
+L:REX_HUB_PORT_STATUS_HANDLER_PORT_EN_FS S:RexHubPortStatusHandler: Port%d enabled LA%d, speed=FS\n
+L:PORT_RESET_HUB_DETAILS S:Reset port%d on Hub LA%d, USB Addr %d\n
+L:SET_ADDR_ADD_DEV S:Set Address: new USB Address %d, LA %d\n
+L:SET_ADDR_RESPONSE S:Got set address response\n
+L:CLR_FEATURE_DISABLE_PORT S:Disabling port %d on parent logical address %d\n
+L:PORT_RESET_FAILED S:DEVMGR_ProcessPortReset: reset failed on port %d, on hub logical addr %d, usb addr %d\n

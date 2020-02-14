@@ -1,0 +1,5 @@
+component:CLM_COMPONENT
+F:CLM_LogRxStats H:"Log the RX Stats register" A:void
+F:CLM_LogTxStats H:"Log the TX Stats register" A:void
+F:CLM_AdjustTxWaitForRespLimit H:"Adjust TX wait for response limit, args: limit, CntThresh" A:uint8, uint8
+F:CLM_AdjustTxQidThresh H:"Adjust TX QID Threshold. IE # of packets in flight (1-15)" A:uint8

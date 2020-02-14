@@ -1,0 +1,3 @@
+component:LED_COMPONENT
+L:LED_INVALID_MODE S:Invalid LED mode %d\n
+L:LED_SET_MODE S:New LED mode set. Result = %x\n

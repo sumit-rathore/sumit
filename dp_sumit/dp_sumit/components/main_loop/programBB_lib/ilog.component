@@ -1,0 +1,4 @@
+component:MAIN_LOOP_COMPONENT
+L:MAX_TIME S:Max task time: %d us\n
+L:MAX_TIME_DETAIL S:poll:%d, event and callback:%d\n
+L:RESET_STAT S:Reset Max task time\n

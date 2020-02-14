@@ -1,0 +1,6 @@
+component:I2CD_COMPONENT
+F:I2CD_icmdsGpioExpClearPin H:"I2C GPIO Expander clear pin" A:uint8_t
+F:I2CD_icmdsGpioExpSetPin H:"I2C GPIO Expander set pin" A:uint8_t
+F:I2CD_icmdsGpioExpReadPin H:"I2C GPIO Expander read pin" A:uint8_t
+F:I2CD_icmdsGpioExpTest H:"Enable I2C GPIO LED pattern to run" A:uint32_t
+F:I2CD_dp130GeneralRead H:"Read DP130 Register" A:uint8_t

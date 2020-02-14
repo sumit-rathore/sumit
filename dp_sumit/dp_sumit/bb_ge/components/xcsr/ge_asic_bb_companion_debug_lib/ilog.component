@@ -1,0 +1,136 @@
+component:XCSR_COMPONENT
+L:XCSR_Q_ALLOCATE_ERROR_LOG S:Queue allocate error @ line %d\n
+L:XCSR_INVALID_QID_ERROR S:Invalid QID received during static Q allocation for Q %d, expecting %d @ line %d\n
+L:XCSR_Q_FLUSH_ERROR_LOG S:Invalid QID %d received in XCSR queue flush @ line %d\n
+L:XCSR_Q_WRITE_ERROR_LOG S:Queue write error @ line %d\n
+L:XCSR_Q_STATUS_ERROR_LOG S:Invalid QID %d received in XCSR queue get empty status @ line %d\n
+L:XCSR_READ_LOOKUP_TABLE_INVALID_ARG_ERROR_LOG S:Invalid argument received in XCSR_ReadDeviceStatus @ line %d\n
+L:XCSR_INVALID_XUSB_CHIP_ID_ERROR_LOG S:Invalid XUSB chip ID, expecting 0x%x, read 0x%x\n
+L:XCSR_INVALID_ENDPOINT_NUMBER S:Invalid endpoint number %d @ line %d\n
+L:XCSR_INVALID_ENDPOINT_TYPE S:Invalid endpoint type %d @ line %d\n
+L:XCSR_WRITE_FRAME S:XCSR_XICSWriteFrame writing qid %d, with header 0x%x 0x%x\n
+L:XCSR_XSST_WRITE_MASK_LSW S:XCSR_XSSTWriteMask LSW value is 0x%x, mask is 0x%x, old value is 0x%x\n
+L:XCSR_XSST_WRITE_MASK_MSW S:XCSR_XSSTWriteMask MSW value is 0x%x, mask is 0x%x, old value is 0x%x\n
+L:XICSQ_ICMD_GET_Q_STATS1 S:Qid %d: frame count 0x%x, word count 0x%x\n
+L:XICSQ_ICMD_GET_Q_STATS2 S:empty status %d, data0 0x%x, data1 0x%x\n
+L:CLR_BCO S:Clearing BCO for usb %d, logical %d, valid(msb) / insys(lsb) as 2 bits 0x%x\n
+L:CLR_BCI S:Clearing BCI for usb %d, logical %d, valid(msb) / insys(lsb) as 2 bits 0x%x\n
+L:XCSR_INVALID_XUSB_CHIP_MINOR_REVISION_ERROR_LOG S:Invalid minor XUSB chip revision, expecting 0x%x, read 0x%x\n
+L:XCSR_INVALID_XUSB_CHIP_MAJOR_REVISION_ERROR_LOG S:Invalid major XUSB chip revision, expecting 0x%x, read 0x%x\n
+L:XCSR_Q_STATUS_ERROR_CONTAIN_COMPLT_FRAME S:Invalid QID %d in XCSR_XICSQueueContainsCompleteFrame\n
+L:XCSR_XICS_WRITE_FRAME_NULL_ARG S:XCSR_XICSWriteFrame passed a null arg\n
+L:ICMD_INVALID_QID S:Invalid qid %d\n
+L:XICSQ_ICMD_GET_Q_STATS3 S:empty status %d\n
+L:ICMD_CACHE_STATS_QID_SID_FREE_COUNT S:Free QIDs %d, free SIDs %d\n
+L:ICMD_READ_FRAME_SHOW_ERROR S:Reading from Q %d, Error %d\n
+L:ICMD_READ_FRAME_SHOW_Q S:Reading from Q %d\n
+L:ICMD_READ_FRAME_SHOW_HEADER S:Frame header: 0x%x 0x%x\n
+L:ICMD_READ_FRAME_SHOW_HEADER2 S:              0x%x 0x%x\n
+L:ICMD_READ_FRAME_SHOW_DATA S:Frame data: 0x%x 0x%x\n
+L:WRITE_FRAME_TOO_MUCH_DATA S:Write Frame was called with too much data, %d bytes to be exact\n
+L:IRQ2XICSSIDEMPTY S:XICS SIDs are exhausted\n
+L:IRQ2XICSSIDAEMPTYLTHRESH S:Above XICS SID almost empty low threshold\n
+L:IRQ2XICSSIDAEMPTYMTHRESH S:Above XICS SID almost empty medium threshold\n
+L:IRQ2XICSSIDAEMPTYHTHRESH S:Above XICS SID almost empty high threshold\n
+L:IRQ2XICSQIDEMPTY S:IRQ2XICSQIDEMPTY\n
+L:IRQ2XICSQIDAEMPTY S:IRQ2XICSQIDAEMPTY\n
+L:DUMP_FRAME_NULL_ARG S:XCSR_XICSDumpFrame: got null arg\n
+L:DUMP_FRAME_HEADER_1 S:XCSR_XICSDumpFrame: 1st header cache word 0x%x 0x%x\n
+L:DUMP_FRAME_HEADER_2 S:XCSR_XICSDumpFrame: 2nd header cache word 0x%x 0x%x\n
+L:DUMP_FRAME_SIZE S:XCSR_XICSDumpFrame: Frame size is %d bytes\n
+L:DUMP_FRAME_RAW_BYTE S:XCSR_XICSDumpFrame: raw dump %.02x\n
+L:LOG_XSST_WRITE_LAT S:XSST Write LAT addr %d endPoint %d, Data 0x%x\n
+L:LOG_XSST_WRITE_SST S:XSST Write addr(MSW)/endPoint(LSW) 0x%x, Data 0x%x 0x%x\n
+L:LOG_XSST_READ S:XSST Read addr(MSW)/endPoint(LSW) 0x%x, Data 0x%x 0x%x\n
+L:LOG_LAT_READ S:LAT Read addr %d endPoint %d, Data 0x%x\n
+L:WRITING_ENDPOINT_DATA1 S:writing XSST LA %d, endpoint number %d, endpoint type %d\n
+L:WRITING_ENDPOINT_DATA2 S:value: 0x%x 0x%x\n
+L:WRITING_ENDPOINT_DATA3 S:mask:  0x%x 0x%x\n
+L:FLUSHED_AND_DEALLOCATED_QID S:QID %d flushed and deallocated\n
+L:SHOW_XSST_NOT_IN_SYS S:USB %d, Not in-sys\n
+L:SHOW_XSST_IN_SYS S:USB %d, LA %d\n
+L:SHOW_XSST_ENDPOINT_ENTRY S:  XSST(%d,%d) = 0x%x\n
+L:SHOW_XSST_ENDPOINT_ENTRY2 S:              0x%x\n
+L:SHOW_XSST_ALL_ZEROES S:  XSST is all zeros\n
+L:DECODE_XSST_IN_BLOCKING S:  IN Blocking set\n
+L:DECODE_XSST_OUT_BLOCKING S:  OUT Blocking set\n
+L:DECODE_XSST_IN_ERRORS S:  In Errors = %d\n
+L:DECODE_XSST_OUT_ERRORS S:  Out Errors = %d\n
+L:DECODE_XSST_RETRY_USAGE S:  Retry usage = %d\n
+L:DECODE_XSST_BCO S:  BCO set\n
+L:DECODE_XSST_BCI S:  BCI set\n
+L:DECODE_XSST_EP_INSYS_OVERRIDE S:  Endpoint in-sys override set\n
+L:DECODE_XSST_SETUP_RESP_TOGGLE S:  Setup response toggle set\n
+L:DECODE_XSST_SETUP_RESP_PENDING S:  Setup response pending set\n
+L:DECODE_XSST_SETUP_RESP_STALL S:  Setup response stall set\n
+L:DECODE_XSST_INVALID_ENDPOINT_TYPE S:  Invalid Endpoint type %d in XSST entry\n
+L:DECODE_XSST_IN_CLEAR S:  IN Clear set\n
+L:DECODE_XSST_OUT_CLEAR S:  OUT Clear set\n
+L:DECODE_XSST_IN_DETECT S:  IN Detect set\n
+L:DECODE_XSST_OUT_DETECT S:  OUT Detect set\n
+L:DECODE_XSST_OUT_QID S:  Out QID = %d\n
+L:DECODE_XSST_IN_QID S:  In QID = %d\n
+L:DECODE_XSST_ALTERNATE_RESPONSE S:  Alternate response set\n
+L:DECODE_XSST_ACCELERATION S:  Acceleration set\n
+L:DECODE_LAT_LA_INSYS_VAL S:LA %d: in-sys %d, valid %d\n
+L:DECODE_LAT_VPORT S:  Vport ID %d\n
+L:DECODE_LAT_SPLIT S:  Split device\n
+L:DECODE_LAT_VFEN S:  Virtual function enabled\n
+L:XCSR_NON_ZERO_IN_QID_BEFORE_WRITE S:Nonzero in endpoint QID seen before upstream frame: qid %d @ line %d\n
+L:XCSR_NON_ZERO_OUT_QID_BEFORE_WRITE S:Nonzero out endpoint QID seen before upstream frame: qid %d @ line %d\n
+L:ICMD_WRITING_QUEUE S:Write Queue iCmd: Writing a queue with %d bytes of arbitrary data\n
+L:UPDATE_ADDRESS S:Updating Address USB:%d,LA:%d,VPORT:%d\n
+L:DECODE_XSST_INOTIFY_COUNT S:  iNotify Count = %d\n
+L:DECODE_XSST_ONOTIFY_COUNT S:  oNotify Count = %d\n
+L:XCSR_NON_ZERO_INTFYCNT_BEFORE_WRITE S:Nonzero iNotify count seen before upstream frame: count %d @ line %d\n
+L:XCSR_NON_ZERO_ONTFYCNT_BEFORE_WRITE S:Nonzero oNotify count seen before upstream frame: count %d @ line %d\n
+L:XSST_BITFIELD_CHECK_FAILURE S:XSST bitfield check failed at line %d\n
+L:XCSR_SHOW_XUSB_ADDRESS_1 S:XUSB Address - Logical Address: %d, USB Address: %d, VPort: %d\n
+L:XCSR_SHOW_XUSB_ADDRESS_2 S:               USB Valid: %d, In System: %d, Virtual Function: 0x%x\n
+L:LAT_BITFIELD_CHECK_FAILURE S:LAT bitfield check failed at line %d\n
+L:XSST_CONDITIONAL_WRITE_FAILURE S:XSST conditional write failed! LA%d: USB address %d, endpoint %d\n
+L:DECODE_XSST_IHOST_ACCESS S:  In Host Access set\n
+L:DECODE_XSST_OHOST_ACCESS S:  Out Host Access set\n
+L:Q_UNDERFLOW_ERROR_DETAILS S:A queue underflow occurred while performing operation %d (0=READ,1=WRITE) on Q ID %d from interface %d\n
+L:Q_OVERFLOW_ERROR_DETAILS S:A queue overflow occurred while performing operation %d (0=READ,1=WRITE) on Q ID %d from interface %d\n
+L:XCSR_READ_EMPTY_Q S:Tried to read an empty queue (%d) at line %d\n
+L:INVALID_QID S:Received an invalid qid (%d) at line %d\n
+L:XCSR_ASSERT_Q_STATS S:--- XCSR Non-Empty Queue Stats: ---\n
+L:XCSR_ASSERT_Q_STATS_1 S:Qid %d: frame count 0x%x, word count 0x%x\n
+L:XCSR_ASSERT_Q_STATS_2 S:    data0 0x%x, data1 0x%x\n
+L:XICSSTATUS S:Xics Status : Qid %d Sid %d\n
+L:XUSBIRQ_XCRMNOTINSYS S:We got an upstream packet for an endpoint that is not in sys\n
+L:XUSBIRQ_XCRMAFIFOUFLOW S:The xcrm fifo has underflowed, damn fifo!!\n
+L:XUSBIRQ_XCRMAFIFOOFLOW S:The xcrm fifo has overflowed, who designed this thing!!\n
+L:XUSBIRQ_XCRMAFIFOSYNC S:The xcrm fifo synced?? what is that, a disease?\n
+L:XUSBIRQ_XCRMDROPFRM S:The xcrm has dropped a frame, why?\n
+L:XUSBIRQ_XCRMFRAMING S:xcrm framing error, how lame!\n
+L:XUSBIRQ_XCRMFRMCRC S:xcrm frame crc error, how scary\n
+L:XUSBIRQ_XCRMPLDCRC S:xcrm payload error, ouch\n
+L:XUSBIRQ_XCRMTOUT S:xcrm time out, canucks suck!!\n
+L:XUSBIRQ_XCTMAFIFOUFLOW S:The xctm fifo has underflowed, stupid fifo\n
+L:XUSBIRQ_XCTMAFIFOOFLOW S:The xctm fifo has overflowed, Ken is this your??\n
+L:XUSBIRQ_XCTMPKT S:xctm packet framing error, boring!\n
+L:IRQ2XICSSIDAEMPTYNTHRESH S:Below XICS SID almost empty low threshold\n
+L:FLC_EVENT_LOCAL_INTERRUPT S:Received local flow control event interrupt\n
+L:FLC_EVENT_REMOTE_INTERRUPT S:Received remote flow control event interrupt\n
+L:DECODE_XSST_ENDPOINT_CTRL_IN S:  Endpoint type: CTRL IN\n
+L:DECODE_XSST_ENDPOINT_ISO_IN S:  Endpoint type: ISO IN\n
+L:DECODE_XSST_ENDPOINT_BULK_IN S:  Endpoint type: BULK IN\n
+L:DECODE_XSST_ENDPOINT_INT_IN S:  Endpoint type: INT IN\n
+L:DECODE_XSST_ENDPOINT_CTRL_OUT S:  Endpoint type: CTRL OUT\n
+L:DECODE_XSST_ENDPOINT_ISO_OUT S:  Endpoint type: ISO OUT\n
+L:DECODE_XSST_ENDPOINT_BULK_OUT S:  Endpoint type: BULK OUT\n
+L:DECODE_XSST_ENDPOINT_INT_OUT S:  Endpoint type: INT OUT\n
+L:DECODE_XSST_MSAPAIREP S:  MSA Paired Endpoint: %d\n
+L:DECODE_XSST_INT_COPYTOCPU S:  Copy IN response data to CPU\n
+L:DECODE_XSST_INT_FULLHALFRATE S:  Standard forwarding to maximize effective polling rate\n
+L:XCSR_VP_LINK_DOWN S:Vport %d down.  Cleaning up flow control rules.\n
+L:RELEASE_RETRY S:In XSST Reset, releasing Retry Buffers for USB Addr: %d, Endpoint: %d\n
+L:XCSR_SPECTAREG_READ S:Read XCSR Register: 0x%x, Value: 0x%x\n
+L:XCTM_DISABLE_FAILURE S:Unable to disable the XCTM\n
+L:XICS_READ_Q_SNOOP_ERR S:Unable to snoop queue: %d\n
+L:IRQ2XURMPKTLIMIT S:IRQ2XURMPKTLIMIT\n
+L:XICS_SENDING_CSPLIT_TOWARDS_HS_DEVICE S:Sending a CSPLIT towards a high speed device?! Device address = %d\n
+L:XCSR_DEALLOCATED_STATIC_QUEUE S:Attempted to deallocate a static queue: qid %d\n
+L:XCSR_MSA_OUT_INT_IN_DISABLED_OPTIMIZED_NAK S:Disabled optimized NAK for endpoint %d at USB address %d\n

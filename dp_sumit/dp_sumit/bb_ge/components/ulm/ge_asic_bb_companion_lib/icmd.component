@@ -1,0 +1,7 @@
+component:ULM_COMPONENT
+F:ULM_ConnectRexUsbPort H:"Connect the USB port on the Rex" A:void
+F:ULM_ConnectLexUsbPort H:"Connect the USB port on the Lex. Arg: connection speed; 0 for HS, 1 for FS, 2 for LS" A:uint8
+F:ULM_DisconnectUsbPort H:"Disconnect the USB port" A:void
+F:ULM_GenerateRexUsbReset H:"Generate a USB reset on the Rex. Arg: ULM speed; 0 for HS, 1 for FS, 2 for LS" A:uint8
+F:ULM_GenerateRexUsbResume H:"Generate a USB resume on the Rex" A:void
+F:ULM_GenerateLexUsbRemoteWakeup H:"Generate a Lex USB remote wakeup" A:void

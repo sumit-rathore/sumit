@@ -1,0 +1,430 @@
+The .icron files are .tar.bz2 files that contain at a minimum a file called icron_header.  The icron_header file will always have at least 2 lines: one that starts with "version:", and one that starts with "project:".
+
+
+LIONSGATE PROJECT
+-----------------
+
+For Lionsgate the project must be specified as lg1_vhub (note: lg1_vhub has the vhub name as the original code LGSW 2.x code base was intended for LG1 + VHub FPGA).
+
+Version 1 used the Icron custom Stewie protocol to send both a flash writer and the main firmware.  The icron_header file format is
+
+version:1
+project:lg1_vhub
+ilog:ilog
+flash_writer:flash_writer.icr
+main_firmware:AsicFirmware.icr
+
+The .icron file would also need to contain the files ilog, flash_writer.icr, and AsicFirmware.icr.  Those 3 files could have different names, if the name on the right of the colon in the icron_header is changed.  In this version the ilog file needed to have the components listed at the top of the file
+
+
+Version 2 replaced stewie formated main firmware file with a binary files sent by X-Modem
+
+version:2
+project:lg1_vhub
+ilog:ilog
+flash_writer:flash_writer.icr
+main_firmware:AsicFirmware.bin
+
+
+
+Version 3 had the following changes:
+1) replaced the sending of the flash writer by stewie with a binary sent by X-Modem, except when transfering by the ROM, which meant a flash_writer2: field was added
+2) Added icmd support with an icmd file
+3) removed the component listing from the top of the ilog file, and placed it into a new file called icomponent
+
+The icron_header now looks like this:
+
+version:3
+project:lg1_vhub
+icomponent:icomponent
+ilog:ilog
+icmd:icmd
+flash_writer:flash_writer.icr
+flash_writer2:flash_writer.bin
+main_firmware:AsicFirmware.bin
+
+
+
+Version 4 changed the format of the ilog file.  The ilog file now uses the format of "L:<msg name> S:<msg string for printf>".  The icron_header format is otherwise identical
+
+version:4
+project:lg1_vhub
+icomponent:icomponent
+ilog:ilog
+icmd:icmd
+flash_writer:flash_writer.icr
+flash_writer2:flash_writer.bin
+main_firmware:AsicFirmware.bin
+
+
+
+Version 5 added support for icmdresp
+
+version:5
+project:lg1_vhub
+icomponent:icomponent
+ilog:ilog
+icmd:icmd
+icmdresp:icmdresp
+flash_writer:flash_writer.icr
+flash_writer2:flash_writer.bin
+main_firmware:AsicFirmware.bin
+
+
+Version 6 added spectareg XML files
+
+version:6
+project:lg1_vhub
+icomponent:icomponent
+ilog:ilog
+icmd:icmd
+icmdresp:icmdresp
+spectareg_xml: grg_comp.xml ulm_comp.xml clm_comp.xml xcsr_comp.xml
+spectareg_grg_comp_offset: 0x20000000
+spectareg_ulm_comp_offset: 0x20000100
+spectareg_clm_comp_offset: 0x20000200
+spectareg_xcsr_comp_offset: 0x20000800
+flash_writer:flash_writer.icr
+flash_writer2:flash_writer.bin
+main_firmware:AsicFirmware.bin
+
+
+Version 7 load default icmd buttons for common operations
+
+version:7
+project:lg1_vhub
+icomponent:icomponent
+ilog:ilog
+icmd:icmd
+icmdresp:icmdresp
+spectareg_xml: grg_comp.xml ulm_comp.xml clm_comp.xml xcsr_comp.xml
+spectareg_grg_comp_offset: 0x20000000
+spectareg_ulm_comp_offset: 0x20000100
+spectareg_clm_comp_offset: 0x20000200
+spectareg_xcsr_comp_offset: 0x20000800
+flash_writer:flash_writer.icr
+flash_writer2:flash_writer.bin
+main_firmware:AsicFirmware.bin
+hobbes_default_icmd_button1: Reset: iCmds['GRG_COMPONENT']['GRG_ResetChip']()
+hobbes_default_icmd_button2: SwVersion: iCmds['TOPLEVEL_COMPONENT']['PrintSwVersion']()
+hobbes_default_icmd_button3: Topology: iCmds['TOPOLOGY_COMPONENT']['_DTT_showAllDeviceXSST']()
+
+
+
+LG1 TEST HARNESSES
+------------------
+
+Version 1 of the LG1 test harnesses used the custom Icron Stewie format and an icron_header file format of
+
+version:1
+project:lg1_test
+ilog:ilog
+test_image:<name of file>.icr
+
+
+
+(Version 2 skipped)
+Version 3 changed the image format to X-Modem and added icmd format
+
+version:3
+project:lg1_test
+ilog:ilog
+icmd:icmd
+test_image:<name of file>.bin
+
+
+
+Version 4 added a Stewie format image (so either a Stewie or X-Modem file could be sent) and icomponents
+
+version:4
+project:lg1_test
+icomponent:icomponent
+ilog:ilog
+icmd:icmd
+test_image:<name of file>.icr
+test_image2:<name of file>.bin
+
+Version 5 added support for icmdresp
+
+version:5
+project:lg1_test
+icomponent:icomponent
+ilog:ilog
+icmd:icmd
+icmdresp:icmdresp
+test_image:<name of file>.icr
+test_image2:<name of file>.bin
+
+Version 6 load default icmd buttons for common operations
+
+version:6
+project:lg1_test
+icomponent:icomponent
+ilog:ilog
+icmd:icmd
+icmdresp:icmdresp
+test_image:<name of file>.icr
+test_image2:<name of file>.bin
+hobbes_default_icmd_button1: Reset: iCmds['GRG_COMPONENT']['GRG_ResetChip']()
+hobbes_default_icmd_button2: SwVersion: iCmds['TOPLEVEL_COMPONENT']['PrintSwVersion']()
+hobbes_default_icmd_button3: Topology: iCmds['TOPOLOGY_COMPONENT']['_DTT_showAllDeviceXSST']()
+
+Version 7 adds in the Spectareg XML files
+version:7
+project:lg1_test
+icomponent:icomponent
+ilog:ilog
+icmd:icmd
+icmdresp:icmdresp
+test_image:<name of file>.icr
+test_image2:<name of file>.bin
+hobbes_default_icmd_button1: Reset: iCmds['GRG_COMPONENT']['GRG_ResetChip']()
+hobbes_default_icmd_button2: SwVersion: iCmds['TOPLEVEL_COMPONENT']['PrintSwVersion']()
+hobbes_default_icmd_button3: Topology: iCmds['TOPOLOGY_COMPONENT']['_DTT_showAllDeviceXSST']()
+spectareg_xml: grg_comp.xml ulm_comp.xml clm_comp.xml xcsr_comp.xml
+spectareg_grg_comp_offset: 0x20000000
+spectareg_ulm_comp_offset: 0x20000100
+spectareg_clm_comp_offset: 0x20000200
+spectareg_xcsr_comp_offset: 0x20000800
+
+
+GOLDENEARS PROJECT
+------------------
+
+The Goldenears Icron headers must have "goldenears" as the project parameter.
+
+Version 1 used X-Modem for both the flash writer and the main firmware.  Stewie is not used at all.
+
+version:1
+project:goldenears
+icomponent:icomponent
+ilog:ilog
+icmd:icmd
+flash_writer:flash_writer.bin
+main_firmware:goldenears_fpga.bin
+
+
+
+Version 2 changed the ilog file format, similar to the difference between LG1 versions 3 and 4.
+In addition, it added icmdresp support, which wraps around an icmd and ilog to return a value from the ilog when the icmd is sent.
+
+version:2
+project:goldenears
+icomponent:icomponent
+ilog:ilog
+icmd:icmd
+icmdresp:icmdresp
+flash_writer:flash_writer.bin
+main_firmware:goldenears_fpga.bin
+
+Version 3 added spectareg XML files
+
+version:3
+project:goldenears
+icomponent:icomponent
+ilog:ilog
+icmd:icmd
+icmdresp:icmdresp
+spectareg_xml: grg_comp.xml ulmii_comp.xml clm_comp.xml xcsr_comp.xml xlrc_comp.xml
+spectareg_grg_comp_offset: 0x20000000
+spectareg_ulmii_comp_offset: 0x20000100
+spectareg_clm_comp_offset: 0x20000200
+spectareg_xlrc_comp_offset: 0x20000300
+spectareg_xcsr_comp_offset: 0x20000400
+flash_writer:flash_writer.bin
+main_firmware:goldenears_fpga.bin
+
+Version 4 load default icmd buttons for common operations
+
+version:4
+project:goldenears
+icomponent:icomponent
+ilog:ilog
+icmd:icmd
+icmdresp:icmdresp
+spectareg_xml: grg_comp.xml ulmii_comp.xml clm_comp.xml xcsr_comp.xml xlrc_comp.xml
+spectareg_grg_comp_offset: 0x20000000
+spectareg_ulmii_comp_offset: 0x20000100
+spectareg_clm_comp_offset: 0x20000200
+spectareg_xlrc_comp_offset: 0x20000300
+spectareg_xcsr_comp_offset: 0x20000400
+flash_writer:flash_writer.bin
+main_firmware:goldenears_fpga.bin
+hobbes_default_icmd_button1: Reset: iCmds['GRG_COMPONENT']['GRG_ResetChip']()
+hobbes_default_icmd_button2: SwVersion: iCmds['TOPLEVEL_COMPONENT']['PrintSwVersion']()
+hobbes_default_icmd_button3: Topology: iCmds['TOPOLOGY_COMPONENT']['_DTT_showAllDeviceXSST']()
+
+GE TEST HARNESSES
+-----------------
+
+The versions of Goldenears test harnesses are synchronized with those of regular Goldenears builds.
+The Icron headers should be exactly the same between a GE regular build and a GE test harness of the same version.
+
+Version 1 uses X-Modem for everything.
+
+version:1
+project:goldenears_test
+icomponent:icomponent
+ilog:ilog
+icmd:icmd
+test_image:<name of file>.bin
+
+
+
+Version 2 contains the more detailed ilogs and adds icmdresps.
+
+version:2
+project:goldenears_test
+icomponent:icomponent
+ilog:ilog
+icmd:icmd
+icmdresp:icmdresp
+test_image:<name of file>.bin
+
+Version 3 added spectareg XML files
+
+version:3
+project:goldenears_test
+icomponent:icomponent
+ilog:ilog
+icmd:icmd
+icmdresp:icmdresp
+spectareg_xml: grg_comp.xml ulmii_comp.xml clm_comp.xml xcsr_comp.xml xlrc_comp.xml
+spectareg_grg_comp_offset: 0x20000000
+spectareg_ulmii_comp_offset: 0x20000100
+spectareg_clm_comp_offset: 0x20000200
+spectareg_xlrc_comp_offset: 0x20000300
+spectareg_xcsr_comp_offset: 0x20000400
+test_image:<name of file>.bin
+
+Version 4 load default icmd buttons for common operations
+
+version:4
+project:goldenears_test
+icomponent:icomponent
+ilog:ilog
+icmd:icmd
+icmdresp:icmdresp
+spectareg_xml: grg_comp.xml ulmii_comp.xml clm_comp.xml xcsr_comp.xml xlrc_comp.xml
+spectareg_grg_comp_offset: 0x20000000
+spectareg_ulmii_comp_offset: 0x20000100
+spectareg_clm_comp_offset: 0x20000200
+spectareg_xlrc_comp_offset: 0x20000300
+spectareg_xcsr_comp_offset: 0x20000400
+test_image:<name of file>.bin
+hobbes_default_icmd_button1: Reset: iCmds['GRG_COMPONENT']['GRG_ResetChip']()
+hobbes_default_icmd_button2: SwVersion: iCmds['TOPLEVEL_COMPONENT']['PrintSwVersion']()
+hobbes_default_icmd_button3: Topology: iCmds['TOPOLOGY_COMPONENT']['_DTT_showAllDeviceXSST']()
+
+FALCON PROJECT
+--------------
+Version 1 only has ilog & icmd support.  No upgrading, no test harnesses
+
+version:1
+project:falcon
+icomponent:icomponent
+ilog:ilog
+icmd:icmd
+icmdresp:icmdresp
+
+
+BLACKBIRD PROJECT
+-----------------
+Version 1 add ilog, icmd and spectareg
+
+version:1
+project:blackbird
+icomponent:icomponent
+ilog:ilog
+icmd:icmd
+icmdresp:icmdresp
+spectareg_xml: <AS GE VERSION 3>
+flash_writer:flash_writer.bin
+main_firmware:blackbird.bin
+
+Version 2 load default icmd buttons for common operations
+
+version:2
+project:blackbird
+icomponent:icomponent
+ilog:ilog
+icmd:icmd
+icmdresp:icmdresp
+spectareg_xml: <AS GE VERSION 3>
+flash_writer:flash_writer.bin
+main_firmware:blackbird.bin
+hobbes_default_icmd_button1: Reset: iCmds['GRG_COMPONENT']['GRG_ResetChip']()
+hobbes_default_icmd_button2: SwVersion: iCmds['TOPLEVEL_COMPONENT']['PrintSwVersion']()
+hobbes_default_icmd_button3: Topology: iCmds['TOPOLOGY_COMPONENT']['_DTT_showAllDeviceXSST']()
+
+Version 3 add idesign support
+
+version:3
+project:blackbird
+ilog:ilog
+icmd:icmd
+icomponent:icomponent
+icmdresp:icmdresp
+flash_writer:flash_writer.bin
+main_firmware:target.bin
+hobbes_default_icmd_button1: Start GE: iCmds['TOPLEVEL_COMPONENT']['StartGE']()
+hobbes_default_icmd_button2: Reset: iCmds['BGRG_COMPONENT']['BGRG_ResetChip']()
+spectareg_xml: ulp_comp.xml xgp_comp.xml pcsdrp_comp.xml
+spectareg_bgrg_comp_offset: 0x20000000
+spectareg_xgp_comp_offset: 0x20000100
+spectareg_ulp_comp_offset: 0x20000200
+spectareg_pcsdrp_comp_offset: 0x20000300
+idesign_xml: BGrg.ipxact.xml
+idesign_BGrg.ipxact_offset: 0x20000000
+idesign_xgp.ipxact_offset: 0x20000100
+idesign_ulp.ipxact_offset: 0x20000200
+idesign_pcsdrp.ipxact_offset: 0x20000300
+
+
+BLACKBIRD TEST HARNESSES
+-----------------
+Version 1 add ilog, icmd and spectareg
+
+version:1
+project:blackbird_test
+icomponent:icomponent
+ilog:ilog
+icmd:icmd
+icmdresp:icmdresp
+spectareg_xml: <AS GE VERSION 3>
+test_image:<name of file>.bin
+
+Version 2 load default icmd buttons for common operations
+
+version:2
+project:blackbird_test
+icomponent:icomponent
+ilog:ilog
+icmd:icmd
+icmdresp:icmdresp
+spectareg_xml: <AS GE VERSION 3>
+test_image:<name of file>.bin
+hobbes_default_icmd_button1: Reset: iCmds['GRG_COMPONENT']['GRG_ResetChip']()
+hobbes_default_icmd_button2: SwVersion: iCmds['TOPLEVEL_COMPONENT']['PrintSwVersion']()
+hobbes_default_icmd_button3: Topology: iCmds['TOPOLOGY_COMPONENT']['_DTT_showAllDeviceXSST']()
+
+Version 3 add idesign support
+
+version:3
+project:blackbird_test
+ilog:ilog
+icmd:icmd
+icomponent:icomponent
+icmdresp:icmdresp
+test_image:target.bin
+spectareg_xml: ulp_comp.xml xgp_comp.xml pcsdrp_comp.xml
+spectareg_bgrg_comp_offset: 0x20000000
+spectareg_xgp_comp_offset: 0x20000100
+spectareg_ulp_comp_offset: 0x20000200
+spectareg_pcsdrp_comp_offset: 0x20000300
+idesign_xml: BGrg.ipxact.xml
+idesign_BGrg.ipxact_offset: 0x20000000
+idesign_xgp.ipxact_offset: 0x20000100
+idesign_ulp.ipxact_offset: 0x20000200
+idesign_pcsdrp.ipxact_offset: 0x20000300
+

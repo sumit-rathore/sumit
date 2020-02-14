@@ -1,0 +1,4 @@
+component:RS232_COMPONENT
+L:RS232_UNEXPECTED_CPU_MSG_LENGTH S:Unexpected length of CPU message received, msgLength = %d\n
+L:RS232_RCV_CPU_MSG S:Received a CPU message, RS232 device state %d\n
+L:RS232_MCA_CHANNEL_STATUS S:RS232 MCA channel status %d\n

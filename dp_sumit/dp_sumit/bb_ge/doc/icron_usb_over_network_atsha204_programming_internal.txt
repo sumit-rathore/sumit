@@ -1,0 +1,18 @@
+Icron Internal USB over Network ATSHA204 Programming Information
+================================================================
+
+The following steps are required to initialize a ATSHA204 chip for UoN:
+
+1) Load test harness atmel_cfg.icron
+2) Place board in uart boot mode by boot jumpers & then hit reset
+3) Hit boot load button
+4) Load Hobbes Script AtmelBurnAndLock.py & send it
+5) close COM port in Hobbes
+6) Load test harness persistent_data_configure.icron
+7) Hit reset
+8) Hit boot load button
+9) Load Hobbes Script flash_var.py & send it
+10) Set the MAC address for the unit & the destination MAC address
+11) close COM port in Hobbes
+12) Remove boot mode jumpers
+

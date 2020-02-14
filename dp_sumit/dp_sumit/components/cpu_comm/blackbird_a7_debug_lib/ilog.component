@@ -1,0 +1,34 @@
+component:CPU_COMM_COMPONENT
+L:CPU_COMM_SENT_MSG S:Tx CPU message seq %03d type:data %04x size:%02d\n
+L:CPU_COMM_DROP_TX_MSG S:Dropped CPU Tx message type:data %04x msg[0]:0x%x\n
+L:CPU_COMM_RECEIVED_MSG S:Rx CPU message seq %03d type:data %04x size:%02d\n
+L:CPU_COMM_LINK_UP S:Comm channel received a link UP status event\n
+L:CPU_COMM_LINK_DOWN S:Comm channel received a link DOWN status event\n
+L:CPU_COMM_EOP_TO_SOP S:Time from EOP sent to SOP received in usec %d\n
+L:CPU_COMM_INVALID_MESSAGE_TYPE S:Invalid message type: %d.\n
+L:CPU_COMM_INVALID_MESSAGE_SIZE S:Message size too big: type %d size %d.\n
+L:CPU_COMM_TX_SIZE_INVALID S:TX message too big: type %d size %d.\n
+L:CPU_COMM_TX_FIFO_NO_SPACE S:Not enough space on TX FIFO for message: type %04x size %d space available %d.\n
+L:CPU_COMM_MSG_HANDLER_ALREADY_REGISTERED S:The message handler for type %d has already been registered to the function at 0x%x.\n
+L:CPU_COMM_RECEIVED_UNHANDLED_MSG S:Received a message of type %d for which no handler is registered.\n
+L:CPU_COMM_RECEIVED_MSG_TIMEOUT S:Received a message of size %d which took too long to process.\n
+L:CPU_COMM_RECEIVED_OVERSIZED_MSG S:Received a message of size %d which is too large to be processed.\n
+L:CPU_COMM_ICMD_RECEIVE_MSG S:Received an icmd CPU message of size %d bytes\n
+L:CPU_COMM_ICMD_FIFO_FULL S:Icmd CPU message fifo full and drop the message, pushIndex = %d, msgLength = %d, popIndex = %d\n
+L:CPU_COMM_ICMD_READ_MSG S:Icmd read CPU message data valid = %d, word0 = 0x%x, word1 = 0x%x\n
+L:CPU_COMM_TX_RACE_DETECTED S:Tx Race detected linkEnabled: %d, type: %d, msg[0]: %d\n
+L:CPU_COMM_RX_RACE_DETECTED S:Rx Race detected linkEnabled: %d, sequence num: %d, type: %d\n
+L:CPU_COMM_PCK_END S:Tx/Rx end writing/receiving packet: took %d us\n
+L:CPU_COMM_INALID_ACK S:Ack not valid! seq = %d last seq = %d, data %d\n
+L:CPU_COMM_RESEND S:resending Tx %d seq %d\n
+L:CPU_COMM_RESET S:Request CPU Comm RX reset\n
+L:CPU_COMM_RX_RESET S:Received Tx's Request CPU Comm RX reset\n
+L:CPU_COMM_RESET_ACK S:Received Ack for CPU Comm RX reset\n
+L:CPU_COMM_FAIL S:CPU comm failed. Request link-restart\n
+L:CPU_COMM_DROP_PACKET1 S:Dropped packet type %d. ReadLength(%d) and Packet size(%d) is different\n
+L:CPU_COMM_DROP_PACKET2 S:Dropped packet type %d, subType %d. Link is not ready\n
+L:CPU_COMM_DROP_PACKET3 S:dropped packet type %d seq %d nextRxSeq %d. Sequence mis-matching\n
+L:CPU_COMM_NP_SOP S:No SOP, Can't read Comm channel\n
+L:CPU_COMM_MESSAGETYPE S:COMM message type : %04x\n
+L:CPU_COMM_RX_DEFAULT_HANDLER S:Handler is not registered for this message type\n
+L:CPU_COMM_RX_TYPE_INVALID S:Can't handle invalid comm msg type : 0%d\n

@@ -1,0 +1,5 @@
+component:REXSCH_COMPONENT
+F:REXSCH_Enable H:"Enables rex scheduler. Argument: 0 for high speed, 1 for full speed, 2 for low speed" A:uint8
+F:REXSCH_Disable H:"Disables rex scheduler" A:void
+F:REXMSA_Disp_Stat H:"Display the Msa Status" A:void
+F:ICMD_deprecatedIcmdFunction H:"Set the max msa pkt count per microframe" A:uint32

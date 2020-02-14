@@ -1,0 +1,9 @@
+component:STATS_MON_COMPONENT
+L:STATS_MON_MAX_REGISTERED S:Max number of stat groups registered for monitoring\n
+L:STATS_MON_GROUP_REGISTERED S:Stat group registered %d of %d, number of stats %d\n
+L:STATS_MON_GROUP_STILL_PROCESSING S:Stat group %d still being processed when interval expired\n
+L:STATS_MON_GROUP_NOT_REGISTERED S:Stats group not registered %08x!?\n
+L:STATS_MON_GROUP_PRINT_STATS S:****Printing non-zero statistics: ****\n
+L:STATS_MON_PRINT_REG_VALUE S:Reg address %08x value %x\n
+L:STATS_MON_NO_PARAM S:Group has no parameters! \n
+L:STATS_MON_MULTIPLE_STAT S:Multiple Stats are running at the same time: %d \n

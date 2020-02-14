@@ -1,0 +1,1909 @@
+component:TOPLEVEL_COMPONENT
+L:SW_VERSION S:----> ICRON Technologies Blackbird Project - Software version v%d.%d.%d <----\n
+L:CHIP_REV S:Chip ID is Major 0x%x, Minor 0x%x, Debug 0x%x\n
+L:UNIT_TYPE S:The unit type is %d\n
+L:PLATFORM_ID S:The platform ID is %d\n
+L:VARIANT_ID S:The variant ID is %d\n
+L:BUILD_DATE S:SW build was done on %04d/%02d/%02d\n
+L:BUILD_TIME S:SW build was done at %02d:%02d:%02d\n
+L:UNEXPECTED_TRAP S:Unexpected trap occurred, PC was 0x%x, nPC was 0x%x\n
+L:UNEXPECTED_TRAP_WITHOUT_WINDOWS S:Unexpected trap occurred without spare windows, last i7 is 0x%x, previous was 0x%x, previous to that was 0x%x\n
+L:AHB_FAILURE_TRAP S:AHB FAILURE TRAP Status: 0x%x, Failure Addr: 0x%x\n
+L:INST_FETCH_ERR_TRAP S:INSTRUCTION FETCH ERROR\n
+L:ILLEGAL_INST_ERR_TRAP S:ILLEGAL INSTRUCTION ERROR\n
+L:PRIV_INST_ERR_TRAP S:PRIVILEGED INSTRUCTION ERROR\n
+L:INST_ACC_ERR_TRAP S:INSTRUCTION ACCESS ERROR\n
+L:UNIMPL_FLUSH_TRAP S:UNIMPLEMENTED FLUSH\n
+L:DATA_ACC_ERR_TRAP S:DATA ACCESS ERROR\n
+L:DIV_BY_ZERO_ERR_TRAP S:DIVIDE BY ZERO ERROR\n
+L:TRAP_END_POINT S:Trap Handler End Point. Sparc TBR=0x%x\n
+L:DATA_ACC_EXC_TRAP S:DATA ACCESS EXCEPTION PC was 0x%x, nPC was 0x%x\n
+L:DATA_STORE_ERR_TRAP S:DATA STORE ERROR TRAP PC was 0x%x, nPC was 0x%x\n
+L:ATMEL_NOT_PROGRAM S:Atmel is not programmed (%d). All features will be disabled soon\n
+L:ATMEL_VALIDATION_FAIL S:Atmel ATSHA204 Vaildation Failed, ATMEL_processState = %d, ErrCnt = %d \n
+L:KILL_SYSTEM S:**** SYSTEM SHUTDOWN ****\n
+L:TIMER1_ERROR S:Timer1 does not work !!\n
+L:TEST_CPUCOM_LEX_RECV S:Received message count %d. Elapsed time since last tx=%d us.\n
+L:TEST_CPUCOM_REX_SEND S:Received and Sending message count %d\n
+L:HW_SW_VER_MISMATCH S:FPGA / FIRMWARE version doesn't match!\n
+L:TOPLEVEL_READ_INREVIUM_LMK_REG S:Readback from LMK reg %d: 0x%x\n
+L:TOPLEVEL_BOARD_INFO S:Current Core Board is A0%d\n
+L:DEBUG_ASSERT_BB S:CAUSE AN ASSERT IN BB FOR DEBUGGING\n
+L:PLUG_TEST_IMAGE S:  *** This is a PlugTest Image ***\n
+component:ULP_COMPONENT
+L:ULP_LEX_INITIALIZATION S:Lex ULP initialization\n
+L:ULP_LEX_ISR S:Got a Lex ULP ISR, Irq0: 0x%08x Irq1: 0x%02x LTSSM: 0x%02x\n
+L:ULP_LEX_HOST_VBUS_INTERRUPT S:Lex Host VBus interrupt, %d\n
+L:ULP_LEX_HOST_VBUS_DETECT S:Lex VBus detected %d\n
+L:ULP_LEX_HOST_RX_DETECT S:Lex Rx detected %d\n
+L:ULP_LEX_HOST_STATE_MSG S:Lex host state machine received a message, old state = %d, Event = %d new state = %d\n
+L:ULP_LEX_HOST_USB3 S:** Host port supports USB3/2 **\n
+L:ULP_LEX_HOST_USB2 S:** Host port supports USB2 **\n
+L:ULP_LEX_HOST_USB3_REMOVED S:USB3 removed\n
+L:ULP_LEX_HOST_SNOOP_TIMEOUT S:Host port Snoop mode timeout RxDetect = %d ltssm = 0x%x\n
+L:ULP_LEX_USB2_ENABLED_NO_CONNECTION S:Lex USB2 state machine enabled but not connected!\n
+L:ULP_LEX_USB2_STATE_MSG S:Lex USB2 state machine received a message, old state = %d, Event = %d new state = %d\n
+L:ULP_LEX_USB2_UNEXPECTED_EVENT S:Lex USB2 state machine received an unexpected event, Event = %d state = %d\n
+L:ULP_LEX_USB3_STATE_MSG S:Lex USB3 state machine received a message, old state = %d, Event = %d new state = %d\n
+L:ULP_LEX_USB3_UNEXPECTED_EVENT S:Lex USB3 state machine received an unexpected event, Event = %d state = %d\n
+L:ULP_LEX_USB3_RESET_STATE_MSG S:Lex USB3 reset state machine received a message, old state = %d, Event = %d new state = %d\n
+L:ULP_LEX_USB3_INVALID_RESET_STATE_MSG S:Lex USB3 reset state machine in a bad state for this event, state = %d Event = %d \n
+L:ULP_LEX_USB3_RESET_PLL_NOT_LOCKED S:Lex USB3 reset PLL not locked!\n
+L:ULP_LEX_USB3_LEX_SETUP_ERROR_DETECTED S:Lex USB3 setup failure; failure count %d\n
+L:ULP_LEX_USB3_REX_SETUP_ERROR_DETECTED S:Rex USB3 setup failure reported; failure count %d\n
+L:ULP_LEX_USB3_LEX_STUCK_AT_INACTIVE S:Lex USB3 - Lex stuck at inactive; failure count %d\n
+L:ULP_LEX_USB3_WARM_RESET_COUNT_CLEARED S:Lex USB3 - Warm reset count %d cleared\n
+L:ULP_LEX_USB3_FAILURE_RECOVERY S:Lex USB3 - Lex recovery; failure count %d\n
+L:ULP_LEX_UNEXPECTED_CPU_MSG_LENGTH S:Unexpected length of CPU message received by Lex, msgLength = %d\n
+L:ULP_LEX_COMLINK_UP_EVENT S:Lex received a comlink event, link is ** UP **\n
+L:ULP_LEX_COMLINK_DOWN_EVENT S:Lex received a comlink event, link is ** DOWN **\n
+L:ULP_LEX_RCV_REX_USB_MSG S:Lex received a Rex USB CPU message, msg = %d\n
+L:ULP_LEX_RCV_REX_USB2_MSG S:Lex received a Rex USB2 CPU message, msg = %d\n
+L:ULP_LEX_RCV_REX_USB3_MSG S:Lex received a Rex USB3 CPU message, msg = %d\n
+L:ULP_LEX_RCV_REX_USB3_RESET_MSG S:Lex received a Rex USB3 reset CPU message, msg = %d\n
+L:ULP_LEX_RCV_UNEXPECTED_USB3_RESET_MSG S:Lex USB3 reset: expected %d, but received %d message from Rex \n
+L:ULP_LTSSM_VALID S:LTSSM register value is valid time %d microseconds\n
+L:ULP_LTSSM_INVALID S:LTSSM register value is invalid, lttssm = 0x%x\n
+L:ULP_CTRL_USB3_VBUS_ON S:vBus is ON\n
+L:ULP_CTRL_USB3_VBUS_OFF S:vBus is OFF\n
+L:ULP_CTRL_PHY_USB3_VBUS_ON S:PHY vBus is ON\n
+L:ULP_CTRL_PHY_USB3_VBUS_OFF S:PHY vBus is OFF\n
+L:ULP_REX_ISR S:Got a Rex ULP ISR, Irq0: 0x%08x Irq1: 0x%02x LTSSM: 0x%02x\n
+L:ULP_REX_USB2_STATE_MSG S:Rex USB2 state machine received a message, old state = %d, Event = %d, new state = %d\n
+L:ULP_REX_USB3_STATE_MSG S:Rex USB3 state machine received a message, old state = %d, Event = %d, new state = %d\n
+L:ULP_REX_USB3_DELAY_TIMEOUT S:Rex USB3 delayed ready timeout rexUlpFsmState = %d\n
+L:ULP_REX_USB3_UNEXPECTED_EVENT S:Rex USB3 state machine received an unexpected event, Event = %d state = %d\n
+L:ULP_REX_UNEXPECTED_CPU_MSG_LENGTH S:Unexpected length of CPU message received by Rex, msgLength = %d\n
+L:ULP_REX_NO_RX_DETECT_YET S:USB3 Rex - no Rx terminations detected\n
+L:ULP_REX_RCV_LEX_USB_MSG S:Rex received a Lex USB CPU message, msg = %d\n
+L:ULP_REX_RCV_LEX_USB2_MSG S:Rex received a Lex USB2 CPU message, msg = %d\n
+L:ULP_REX_RCV_LEX_USB3_MSG S:Rex received a Lex USB3 CPU message, msg = %d\n
+L:ULP_REX_RCV_LEX_USB3_RESET_MSG S:Rex received a Lex USB3 Reset CPU message, msg = %d\n
+L:ULP_REX_GE_REX_DEV_DISCONN S:REX - GE REX device disconnect\n
+L:ULP_REX_GE_REX_DEV_CONN S:REX - GE REX device connect\n
+L:ULP_ULP_CORE_PLL_LOCK_FAIL S:Ulp Core failed to lock\n
+L:ULP_REX_COMLINK_UP_EVENT S:Rex received a comlink event, link is ** UP **\n
+L:ULP_REX_COMLINK_DOWN_EVENT S:Rex received a comlink event, link is ** DOWN **\n
+L:ULP_LEX_SET_CONTROL_RESULT S:ULP_LexUsbControl() controlflags 0x%x Operation %d\n
+L:ULP_LEX_SYSTEM_UPDATE_RESULT S:LexUlpUpdateSystem() controlflags 0x%x hostEnable  %d\n
+L:ULP_REX_SET_CONTROL_RESULT S:ULP_RexUsbControl controlflags 0x%x Operation %d result %d\n
+L:ULP_REX_USB2_SET_CONTROL_RESULT S:ULP_RexUsb2Control flags 0x%x Operation %d result %d\n
+L:ULP_LEX_USB2_SET_CONTROL_RESULT S:ULP_LexUsb2Control flags 0x%x Operation %d result %d\n
+L:ULP_REX_USB3_SET_CONTROL_RESULT S:ULP_RexUsb3Control flags 0x%x Operation %d result %d\n
+L:ULP_LEX_USB3_SET_CONTROL_RESULT S:ULP_LexUsb3Control flags 0x%x Operation %d result %d\n
+L:ULP_HAL_SET_IRQ_ENABLE S:USB3 IRQ enabled irq0:0x%x irq1: 0x%x\n
+L:ULP_HAL_SET_IRQ_DISABLE S:USB3 IRQ disabled irq0:0x%x irq1: 0x%x\n
+L:ULP_HAL_SET_SS_DISABLE S:USB3 SS_DISABLED set\n
+L:ULP_HAL_GO_TO_INACTIVE S:USB3 Go to Inactive set\n
+L:ULP_HAL_SET_RX_DETECT S:USB3 Rx.Detect set\n
+L:ULP_HAL_SET_HOT_RESET_WAIT_ON S:USB3 Hot Reset wait ON\n
+L:ULP_HAL_SET_HOT_RESET_WAIT_OFF S:USB3 Hot Reset wait OFF\n
+L:ULP_HAL_SET_HOT_RESET S:USB3 generating Hot Reset\n
+L:ULP_HAL_SET_WARM_RESET S:USB3 generating warm reset\n
+L:ULP_HAL_WAIT_IN_POLLING_ON S:USB3 Wait in the polling state ON\n
+L:ULP_HAL_WAIT_IN_POLLING_OFF S:USB3 Wait in the polling state OFF\n
+L:ULP_HAL_RX_AUTO_TERM_ON S:USB3 Auto Rx terminations on\n
+L:ULP_HAL_RX_AUTO_TERM_OFF S:USB3 Auto Rx terminations off\n
+L:ULP_HAL_RX_TERM_ON S:USB3 Rx terminations on\n
+L:ULP_HAL_RX_TERM_OFF S:USB3 Rx terminations off\n
+L:ULP_HAL_GE_VBUS_ON S:USB2 Lex GE vBus on\n
+L:ULP_HAL_GE_VBUS_OFF S:USB2 Lex GE vBus off\n
+L:ULP_HAL_ENTER_STANDBY S:USB3 Entering Standby\n
+L:ULP_HAL_EXIT_STANDBY S:USB3 Exiting Standby\n
+L:ULP_HAL_REX_VBUS_ON S:Rex vBus on\n
+L:ULP_HAL_REX_VBUS_OFF S:Rex vBus off\n
+L:ULP_INIT_CALLED S:ULP initialization called\n
+L:ULP_CORE_RESET_CALLED S:ULP core reset triggered PLL lock took %d microseconds\n
+L:ULP_USB3_TAKEDOWN_CALLED S:ULP_controlTakedownUSB3() called\n
+L:ULP_GE_CONTROL_RCV_CPU_MSG S:GE Control received a CPU message, msg = %d\n
+L:ULP_RESET_STATE S:ULP Reset State machine, state = 0x%x\n
+L:ULP_LTSSM_VALUE_AFTER_DISABLE S:LTSSM register value after vBus disable= 0x%x\n
+L:ULP_CORE_STATS_SENT_LRTY S:STAT:ULP bb_chip->ulp_core->stats0->snt_lrty: %d\n
+L:ULP_CORE_STATS_SENT_LBAD S:STAT:ULP bb_chip->ulp_core->stats0->snt_lbad: %d\n
+L:ULP_CORE_STATS_RCVD_LRTY S:STAT:ULP bb_chip->ulp_core->stats0->rcvd_lrty: %d\n
+L:ULP_CORE_STATS_RCVD_LBAD S:STAT:ULP bb_chip->ulp_core->stats0->rcvd_lbad: %d\n
+L:ULP_CORE_STATS_TX_LFPS_CNT_IN_ERR S:STAT:ULP bb_chip->ulp_core->stats0->tx_lfps_cnt_in_err: %d\n
+L:ULP_CORE_STATS_RX_LFPS_CNT_IN_ERR S:STAT:ULP bb_chip->ulp_core->stats0->rx_lfps_cnt_in_err: %d\n
+L:ULP_CORE_STATS_TX_FRAMER_PTP_VIOLATED S:STAT:ULP bb_chip->ulp_core->stats0->tx_framer_ptp_violated: %d\n
+L:ULP_CORE_STATS_LINK_TRAINING_PTP_VIOLATED S:STAT:ULP bb_chip->ulp_core->stats0->link_training_ptp_violated: %d\n
+L:ULP_CORE_STATS_LINK_CMD_PTP_VIOLATED S:USTAT:ULP bb_chip->ulp_core->stats0->link_command_ptp_violated: %d\n
+L:ULP_CORE_STATS_LMP_PTP_VIOLATED S:STAT:ULP bb_chip->ulp_core->stats0->lmp_ptp_violated: %d\n
+L:XUSB3_STATS_LINK_PARTNER_PTP_VIOLATED S:STAT:ULP bb_chip->xusb3->stats0->link_partner_ptp_violated: %d\n
+L:ULP_CORE_STATS_LINK_CMD_RX_EVENT_FIFO_OVERFLOW S:STAT:ULP bb_chip->ulp_core->stats0->link_command_rx_event_fifo_overflow: %d\n
+L:ULP_CORE_STATS_LINK_CMD_RX_EVENT_FIFO_UNDERFLOW S:STAT:ULP bb_chip->ulp_core->stats0->link_command_rx_event_fifo_underflow: %d\n
+L:ULP_CORE_STATS_LMP_RX_EVENT_FIFO_OVERFLOW S:STAT:ULP bb_chip->ulp_core->stats0->lmp_rx_event_fifo_overflow: %d\n
+L:ULP_CORE_STATS_LMP_RX_EVENT_FIFO_UNDERFLOW S:STAT:ULP bb_chip->ulp_core->stats0->lmp_rx_event_fifo_underflow: %d\n
+L:ULP_CORE_STATS_REMOTE_RX_HDR_BUFF_CRDT_IN S:STAT:ULP bb_chip->ulp_core->stats0->remote_rx_hdr_buff_crdt_cnt_in_err: %d\n
+L:ULP_CORE_STATS_TO_PHY_OUT_SOP S:ULP CORE STATS PTP SOP to PHY path count %d\n
+L:ULP_CORE_STATS_TO_PHY_OUT_EOP S:ULP CORE STATS PTP EOP to PHY path count %d\n
+L:ULP_CORE_STATS_FROM_PHY_IN_SOP S:ULP CORE STATS PTP SOP from PHY path count %d\n
+L:ULP_CORE_STATS_FROM_PHY_IN_EOP S:ULP CORE STATS PTP EOP from PHY path count %d\n
+L:ULP_CORE_STATS_TO_LINK_OUT_SOP S:ULP CORE STATS PTP SOP to ethernet link path count %d\n
+L:ULP_CORE_STATS_TO_LINK_OUT_EOP S:ULP CORE STATS PTP EOP to ethernet link path count %d\n
+L:ULP_CORE_STATS_FROM_LINK_IN_SOP S:ULP CORE STATS PTP SOP from ethernet link path count %d\n
+L:ULP_CORE_STATS_FROM_LINK_IN_EOP S:ULP CORE STATS PTP EOP from ethernet link path count %d\n
+L:ULP_CORE_STATS_GO2_U0_FROM_RECOVERY S:STAT:ULP bb_chip->ulp_core->stats0->go2_u0_from_recovery: %d\n
+L:ULP_CORE_STATS_RX_GO_RECOVERY S:STAT:ULP bb_chip->ulp_core->stats0->rx_go_recovery: %d\n
+L:ULP_PHY_STATS0_RX_ELASTIC_BUFF_OVERFLOW S:USTAT:ULP bb_chip->ulp_phy->stats0->rx_elastic_buff_overflow: %d\n
+L:ULP_PHY_STATS0_RX_ELASTIC_BUFF_UNDERFLOW S:STAT:ULP bb_chip->ulp_phy->stats0->rx_elastic_buff_underflow: %d\n
+L:ULP_PHY_STATS0_RX_DISPARITY_ERR S:STAT:ULP bb_chip->ulp_phy->stats0->rx_disparity_err: %d\n
+L:ULP_PHY_STATS1_SKIP_INSERT_IN_ERR S:STAT:ULP bb_chip->ulp_phy->stats1->skp_insert_in_err: %d\n
+L:ULP_PHY_STATS1_DPP_ABORT S:STAT:ULP bb_chip->ulp_phy->stats1->dpp_abort: %d\n
+L:ULP_PHY_STATS1_RX_FRAMER_PTP_VIOLATED S:STAT:ULP bb_chip->ulp_phy->stats1->rx_framer_ptp_violated: %d\n
+L:XUSB3_STATS_UNKNOWN_PKT_DRP S:STAT:ULP bb_chip->xusb3->stats0->unknown_pkt_drp: %d\n
+L:XUSB3_STATS_DWN_STREAM_BUSY_DRP S:STAT:ULP bb_chip->xusb3->stats0->dwn_stream_busy_drp: %d\n
+L:XUSB3_STATS_DROP_LONE_DPP S:STAT:ULP bb_chip->xusb3->stats0->drop_lone_dpp: %d\n
+L:XUSB3_STATS_RCVD_LONE_DPH S:STAT:ULP bb_chip->xusb3->stats0->rcvd_lone_dph: %d\n
+L:XUSB3_STATS_TIMEDOUT_2JOIN_DPP S:STAT:ULP bb_chip->xusb3->stats0->timedout_2join_dpp: %d\n
+L:XUSB3_RX_PFIFO_WRENG_STATS0_PKT_MAX_BYTE_CNT_ERR S:STAT:ULP bb_chip->xusb3->rx_pfifo->write_engine->stats0->pkt_max_byte_cnt_err: %d\n
+L:XUSB3_RX_PFIFO_WRENG_STATS0_FIFO_FULL_ERR S:STAT:ULP bb_chip->xusb3->rx_pfifo->write_engine->stats0->fifo_full_err: %d\n
+L:XUSB3_RX_PFIFO_WRENG_STATS0_PKT_ERR S:STAT:ULP bb_chip->xusb3->rx_pfifo->write_engine->stats0->pkt_err: %d\n
+L:XUSB3_RX_PFIFO_WRENG_STATS0_PKT_SOP_ERR S:STAT:ULP bb_chip->xusb3->rx_pfifo->write_engine->stats0->pkt_sop_err: %d\n
+L:XUSB3_RX_PFIFO_WRENG_STATS0_DRP_PKT_RD S:STAT:ULP bb_chip->xusb3->rx_pfifo->write_engine->stats0->drp_pkt_rd: %d\n
+L:XUSB3_RX_PFIFO_WRENG_STATS0_DRP_PKT_WR S:STAT:ULP bb_chip->xusb3->rx_pfifo->write_engine->stats0->drp_pkt_wr: %d\n
+L:XUSB3_RX_PFIFO_RDENG_STATS0_DRP_PKT S:STAT:ULP bb_chip->xusb3->rx_pfifo->read_engine->stats0->drp_pkt: %d\n
+L:XUSB3_PTPGUARD_2CORE_MISSING_SOP_ERR S:STAT:ULP bb_chip->xusb3->ptp_guard_2core->stats0->missing_sop_err: %d\n
+L:XUSB3_PTPGUARD_2CORE_MISSING_EOP_ERR S:STAT:ULP bb_chip->xusb3->ptp_guard_2core->stats0->missing_eop_err: %d\n
+L:XUSB3_PTPGUARD_2CORE_MAX_CYCLE_ERR S:STAT:ULP bb_chip->xusb3->ptp_guard_2core->stats0->max_cycle_err: %d\n
+L:ULP_CORE_PTPGUARD_2PHY_MISSING_SOP_ERR S:STAT:ULP bb_chip->ulp_core->ptp_guard_2phy->stats0->missing_sop_err: %d\n
+L:ULP_CORE_PTPGUARD_2PHY_MISSING_EOP_ERR S:STAT:ULP bb_chip->ulp_core->ptp_guard_2phy->stats0->missing_eop_err: %d\n
+L:ULP_CORE_PTPGUARD_2PHY_MAX_CYCLE_ERR S:STAT:ULP bb_chip->ulp_core->ptp_guard_2phy->stats0->max_cycle_err: %d\n
+L:ULP_GE_CONTROL_STATES S:geControl.controlStates old: %d new:%d enable:%d\n
+L:ULP_GE_CHANNEL_STATUS S:UlpGeChannelStatus() %d\n
+L:ULP_GE_FAILURE_HANDLER S:GeFailureHandler: Running Watchdog Occur !!!!\n
+L:ULP_LEX_USB3_CHANNEL_STATUS S:UlpLexUsb3ChannelStatus() %d lexOnlyResetActive %d\n
+L:ULP_LEX_USB3_RESET_STATE S:UlpLexUsb3ResetLexOnly() lexOnlyResetState %d\n
+L:ULP_REX_USB3_CHANNEL_STATUS S:UlpRexUsb3ChannelStatus() %d RexOnlyResetActive %d\n
+L:ULP_LEX_USB_3_IRQ_1 S:rexReqInactive %d standbyExit %d LexOnlyResetTriggered %d\n
+L:ULP_MAX_CYCLE S:max_cycle_mode %d max_cycles %d\n
+component:RS232_COMPONENT
+L:RS232_UNEXPECTED_CPU_MSG_LENGTH S:Unexpected length of CPU message received, msgLength = %d\n
+L:RS232_RCV_CPU_MSG S:Received a CPU message, RS232 device state %d\n
+L:RS232_MCA_CHANNEL_STATUS S:RS232 MCA channel status %d\n
+component:ROM_COMPONENT
+L:ROM_PLATFORM_LEX S:Blackbird LEX, Platform ID: %d\n
+L:ROM_PLATFORM_REX S:Blackbird REX, Platform ID: %d\n
+L:ROM_FPGA_VERSION S:Version: %d.%d.%d\n
+L:ROM_FPGA_DATE S:Date: %d/%d/%d\n
+L:ROM_FPGA_TIME S:Time: %d:%d:%d\n
+L:ROM_VERSION S:Bootloader Version: %d.%d\n
+L:ROM_DBGXX S:ROMDBG 0x%x, 0x%x\n
+component:COMMAND_COMPONENT
+L:CMD_PROGRAM_ERASE_BLOCK S:Erasing block %d of %d\n
+L:CMD_PROGRAM_ERASE_BLOCK_FAILED S:ERROR: Erasing block %d of %d failed\n
+L:CMD_PROGRAM_WRITE_FAILED S:ERROR: Write failed!\n
+L:CMD_PROGRAM_WRITE_SUCCESS S:Write success!\n
+L:CMD_PROGRAM_ADDRESS S:>>>   Programming to address 0%x\n
+L:CMD_SYSTEM_INVALID S:CMD Rx invalid Cmd: 0x%x, SubCmd: 0x%x\n
+L:CMD_RUN_PROGRAMBB S:### Rx RunPgmBB ### Start Addr: %x, Size: %d\n
+L:VERIFY_ERASE_FAILED S:Verify Erase Failed: Erased addr %x has data %x\n
+L:INVALID_RX_CMD S:CMD_processCommandProgramSubcommand: CMD Rx invalid, Cmd %x, SubCmd %x\n
+L:CMD_PROGRAM_BB_CALL S:Load and run PROGRAM_BB After 300ms\n
+component:GE_PROGRAM_COMPONENT
+L:GE_PROGRAM_RCV_EVENT S:In state %d, received event %d\n
+L:GE_PROGRAM_COMPLETED S:Ge programming completed, restart GE\n
+L:GE_PGM_BLK S:Programming GE blk %d of %d sent\n
+L:GE_PGM_ADDR S:Programming GE addr 0x%x\n
+L:GE_PGM_PKT_END S:Programming GE cannot send - reached end\n
+L:GE_PGM_START S:GE Automatic download start \n
+L:GE_PGM_RESP_FAIL S:GE ProgramStart rejected\n
+L:GE_PGM_ERASE_BLOCK_FAIL S:GE Program Erasing block 0x%x failed\n
+L:GE_PGM_SIZE_DIFF S:GE Program InfoMsg size 0x%x, expected 0x%x\n
+L:GE_PGM_NAK S:GE Program NAK\n
+component:LAN_PORT_COMPONENT
+L:LAN_PORT_COMLINK_UP_EVENT S:Lan Port, comlink event, link is ** UP **\n
+L:LAN_PORT_COMLINK_DOWN_EVENT S:Lan Port, comlink event, link is ** DOWN **\n
+L:LAN_PORT_PHY_INIT_COMPLETED_1G S:1G GMII PHY init completed\n
+L:LAN_PORT_UNEXPECTED_CPU_MSG_LENGTH S:Unexpected length of CPU message received, msgLength = %d\n
+L:LAN_PORT_RCV_CPU_MSG S:Received a CPU message, PHY Link Remote State %d, PHY Remote Speed %d\n
+L:LAN_PORT_TX_CPU_MSG S:Transmitting a CPU message, Header %d, Speed %d\n
+L:LAN_PORT_PHY_INIT_COMPLETED_100M S:100M MII PHY init completed\n
+L:LAN_PORT_DEVICE_STATE_CHANGE S:Lan Port device state %d at speed %d\n
+L:LAN_PORT_MCA_CHANNEL_STATUS S:Lan Port channel status %d\n
+component:DP_COMPONENT
+L:AUX_SENT_CPU_MESSAGE S:Sent CPU message with header %d\n
+L:AUX_READ_CPU_MESSAGE S:Read CPU message type %d length %d\n
+L:AUX_UNHANDLED_CPU_MESSAGE S:Read CPU message(%d) which can't be handled\n
+L:AUX_GOT_HPD_IRQ S:Got HPD IRQ event\n
+L:AUX_GOT_HPD_UP S:Got HPD up event\n
+L:AUX_GOT_HPD_DOWN S:Got HPD down event\n
+L:AUX_LANE_COUNT_SET S:Got LANE_COUNT_SET = 0x%x, ENHANCED_FRAME_EN = 0x%d\n
+L:AUX_TRAINING_PATTERN_SET S:Got TRAINING_PATTERN_SET; value = 0x%x\n
+L:AUX_LANEX_Y_STATUS S:Got read LANEX_Y_STATUS: addr = 0x%x, response data = 0x%x\n
+L:AUX_LANE_ALIGN_STATUS_UPDATED S:Got LANE_ALIGN_STATUS_UPDATED: response = 0x%x\n
+L:AUX_TRAINING_LANEX_SET_REQUEST S:Got TRAINING_LANEX_SET write request: DPCD addr = 0x%x, value = 0x%x\n
+L:AUX_STARTING_LINK_TRAINING S:Beginning link training\n
+L:AUX_INVALID_LANE_INDEX S:Invalid lane index %d at line %d\n
+L:AUX_GOT_READ_ADJUST_REQUEST S:Got ADJUST_REQUEST_LANEX_Y read, reply data = 0x%x\n
+L:AUX_INVALID_BW S:Invalid bandwidth 0x%x at line %d\n
+L:AUX_MAX_BW_OVER S:We don't support max bandwidth 0x%x and changed to 0x%x\n
+L:AUX_INVALID_LC S:Invalid Lane Count = %x\n
+L:AUX_INVALID_BW_LC S:Invalid Bandwidth = 0x%x Lane count = %d at line %d\n
+L:AUX_INVALID_DPCD_REV S:Invalid DPCD Rev = 0x%x at line %d\n
+L:AUX_DPCD_REV S:DPCD Rev of Monitor = 0x%x & Monitor capability validated\n
+L:AUX_LINK_TRAINING_FAILED S:Link training failed at bw=%d, lc=%d, tps=%d\n
+L:AUX_INVALID_REQUEST S:Invalid request at line %d: got address=0x%x, dataLen=%d\n
+L:AUX_LINK_PARAMETERS S:Link training with parameters bw=0x%x, lc=0x%x, line=%d\n
+L:PM_LOG_STATE S:Policy maker: current state = %d\n
+L:PM_STATE_TRANSITION S:Policy maker: old state = %d, new state = %d on event = %d\n
+L:PM_UNHANDLED_EVENT S:Policy maker: unhandled event %d in state %d\n
+L:PM_INVALID_EVENT S:Policy maker: got invalid event %d in state %d\n
+L:LT_STATE_TRANSITION S:LinkTR: old state = %d, new state = %d on event = %d\n
+L:LT_UNHANDLED_EVENT S:LinkTR: unhandled event %d in state %d\n
+L:LT_INVALID_EVENT S:LinkTR: got invalid event %d in state %d\n
+L:PM_END_READ_RECEIVER_CAP S:Policy maker: finished reading receiver capability\n
+L:PM_END_READ_EDID S:Policy maker: finished reading EDID; nextFreeIndex = %d\n
+L:PM_DPCD_BYTE_VALUE S:Policy maker: DPCD byte Addr 0x%x = 0x%x\n
+L:PM_EDID_BYTE_VALUE S:Policy maker: EDID byte 0x%x = 0x%x\n
+L:PM_READING_EDID_BLOCK S:Policy maker: reading EDID block %d\n
+L:PM_EDID_ERROR S:Policy maker: EDID read error at line %d, Reason = %d\n
+L:PM_MULTIPLE_EDID_EXTENSION_BLOCKS S:Num EDID extenion blocks = %d; only processing 1 extension block\n
+L:PM_UPDATING_EDID_CACHE S:Policy maker: updating EDID cache; nextFreeIndex = %d\n
+L:PM_UPDATING_MCCS_CACHE S:Policy maker: updating MCCS cache; nextFreeIndex = %d\n
+L:PM_LOADED_FORWARDED_DPCD_TABLE_VALUE S:Policy maker: loaded forwarded DPCD table byte; tableIndex=%d, dpcdAddress=0x%x, value=0x%d\n
+L:PM_SENT_LINK_AND_STREAM_PARAMS S:Sent Link and Stream Parameters\n
+L:PM_SENT_MCCS_REQUEST S:Sent MCCS request string to REX\n
+L:PM_SENT_SINK_PARAMS S:Sent Sink Params (CAP, EDID)\n
+L:PM_SENT_CHANGED_LINK_PARAMS S:Sent Changed Link Params (BW: 0x%x, LC:0x%x)\n
+L:PM_SENT_MCCS_CAPS S:Sent MCCS Capabilities\n
+L:PM_SENT_VCP_TABLE S:Sent VCP Table\n
+L:PM_SENT_TIMING_REPORT S:Sent Timing Report\n
+L:PM_READ_IRQ_VECTOR S:IRQ Vector (0x%x) read result: 0x%x\n
+L:AUX_ISOLATED_LEX_ENABLED S:****** DP ISOLATED LEX ENABLED *******\n
+L:AUX_ISOLATED_LEX_DISABLED S:****** DP ISOLATED LEX DISABLED *******\n
+L:AUX_ISOLATED_REX_ENABLED S:****** DP ISOLATED REX ENABLED *******\n
+L:AUX_ISOLATED_REX_DISABLED S:****** DP ISOLATED REX DISABLED *******\n
+L:AUX_RESTART_CR S:RESTART CLOCK RECOVERY --> MAX VS = %d, laneXYStatusReadCount = %d, sameAdjustmentRequestCounter = %d\n
+L:AUX_CHANGE_BW S:Changing BandWidth from 0x%x to 0x%x\n
+L:AUX_CHANGE_LC S:Changing LaneCount from 0x%x to 0x%x\n
+L:AUX_CR_RBR S:Already at RBR, reducing Lane Count to lanes with clock recovery\n
+L:AUX_CR_LC_1 S:Already at RBR and no active lanes have clock recovery, ending Link Training\n
+L:AUX_CR_DATA S:CR Data 1 = 0x%x and Data 2 = 0x%x at line = %d\n
+L:AUX_EDID_TYPE S:AUX EDID type = %d\n
+L:AUX_BPC_MODE S:AUX BPC Mode = %d\n
+L:AUX_SSC_ADVERTISE_MODE S:SSC Advertise Mode = %d | 0=disable, 1=enable, 2=pass Monitor's value\n
+L:AUX_ISOLATED_STATUS S:AUX Isolated = %d\n
+L:AUX_CAP_WRONG_ADDR S:AUX CAP addr doesn't exist = 0x%x\n
+L:AUX_NATIVE_AUX_READ_ICMD S:NATIVE AUX READ ICMD ADDRESS = 0x%x   Value = 0x%x\n
+L:AUX_I2C_AUX_READ_ICMD S:I2C AUX READ ICMD ADDRESS = 0x%x   Value = 0x%x\n
+L:AUX_GOT_HOST_CONNECTION_MSG S:AUX Got Host Connection Msg = %d\n
+L:AUX_GOT_LINK_MSG S:AUX Got Phy Link Msg = %d \n
+L:AUX_GOT_FEATURE_MSG S:AUX Got Feature Control Msg = %d \n
+L:AUX_STATE_IDLE S:AUX IDLE state started\n
+L:AUX_STATE_DISABLE S:AUX DISABLE state started\n
+L:AUX_MONITOR_INFO_FAIL S:AUX monitor info failed at line %d\n
+L:AUX_SENT_MONITOR_INFO S:AUX sent monitor data to LEX\n
+L:AUX_GOT_OTHERS_REQ S:AUX got message of other request. AddressOnly: %d, Request Command: %d\n
+L:AUX_LINK_FAIL S:AUX link failed. Code: %d count = %d\n
+L:AUX_WRITE_ICMD S:NATIVE AUX WRITE ICMD ADDRESS = 0x%x   Value = 0x%x\n
+L:AUX_READ_TRAINING1 S:AUX read training 202:%x, 203:%x, 204:%x\n
+L:AUX_READ_TRAINING2 S:AUX read training 205:%x, 206:%x, 207:%x\n
+L:AUX_TU_TIMEOUT S:AUX Lex failed to link train within timeout \n
+L:AUX_DP_CONFIG S:BW: 0x%x, LC:%d, Enhanced:%d \n
+L:AUX_SEND_DEFER S:Aux sent DEFER by SW at line %d \n
+L:AUX_SAME_REQUEST S:Aux got same TPS request and ignored it TPS %d\n
+L:AUX_DEFER_OVER S:Aux defer over the maximum amount\n
+L:AUX_GOT_NEW_STREAM_INFO S:Got new host information: new streamParams = %d\n
+L:AUX_GOT_NEW_LINK_INFO S:Got new host information: new linkParams = %d\n
+L:AUX_GOT_NEW_MONITOR_INFO S:Got new monitor information. edidChanged: %d, capChanged: %d\n
+L:AUX_GOT_SAME_MSA S:Got the same msa value, ignore it\n
+L:AUX_INVALID_INTERVAL S:Training Aux interval value is not valid (%d)\n
+L:AUX_CAP_VALUE S:Aux CAP read value [0x%x] = 0x%x\n
+L:AUX_VS_PE S:********** LC = %d, VS = %d,  PE = %d\n
+L:AUX_GOT_DP_ISR S:Aux got DP ISR Type = 0x%0x\n
+L:NOT_LINk_OR_PHY_TEST_REQUEST S:This is not a link or phy test request\n
+L:WRONG_TEST_PATTERN S:Test pattern not available\n
+L:AUX_DP_CHANNEL_STATUS S:Aux DP Channel Status: %d\n
+L:AUX_DP_SSC_INFO S:Freq: %d, BW: %d, Detect SSC (0: disbled, 1:enabled): %d\n
+L:AUX_MONITOR_SSC_INFO S:Monitor support SSC (1: support, 0: no-support): %d\n
+L:LEX_VS S:Voltage Swing Advertised on LEX: %d\n
+L:LEX_PE S:Pre Emphasis Advertised on LEX: %d\n
+L:AUX_ACTIVE_INFO_REX S:Aux Generate Lex Active/Offline Phy:%d, dpEnable:%d, Host:%d\n
+L:AUX_ACTIVE_INFO_LEX S:Aux Generate Rex Active/Offline Phy:%d, dpEnable:%d, Monitor:%d\n
+L:AUX_MCA_DETECT_LINKDN S:Aux detect MCA link down or disabled.\n
+L:AUX_SET_BW_LC_STATUS S:BW = 0x%x; LC = 0x%x\n
+L:AUX_AUDIO_COPY_STATUS S:Copy Audio to current EDID status %d\n
+L:REX_READ_MONITOR_CAP S:RexReadMonitorCap \n
+L:DPCD_INVALID_ADDRESS S:Accessing invalid address 0x%x \n
+L:AUX_REX_AUDIO_FREQ S:Supported Audio Frequency %d\n
+L:AUX_EDID_SUPPS_AUDIO S:Extended block of the edid advertizes audio support, byte = 0x%x\n
+L:AUX_FPS S:Aux Frame period = %d, FPS on LEX = %d\n
+L:AUX_LINK_STATUS S:Aux current link is trained: %d, state: 0x%x\n
+L:AUX_DP_159_REINIT_ERROR S:Aux: DP159 Reinit not done!\n
+L:EDID_WRONG_INDEX S:Tried to access wrong edid index!\n
+L:EDID_TESTED S:Edid compared:%d, 1(New) 0(Same)\n
+L:DP_LEX_CAP_CHANGED S:BW/LC compared:%d, 1(New) 0(Same)\n
+L:AUX_NO_MSA S:Couldn't get MSA value within time.\n
+L:AUX_LINK_TRAINED S:Link Trained with VS:%d, EQ:%d\n
+L:AUX_LEX_LT_CR_STATUS S:Clock Recovery status %d\n
+L:AUX_LEX_LT_CE_STATUS S:Symbol Lock : %d; Lane Alignment : %d; BER Error : %d\n
+L:SOURCE_OUT_RESET S:Source is not out of reset, DP's StreamParameters not updated\n
+L:DP_LEX_LT_MODE S:Link Training Mode = %d\n
+L:YCBCR_STATUS S:yCbCr support disabled in Edid\n
+L:DP_10BPC_DISABLE S:10 BPC is disabled in Edid\n
+L:DP_10BPC_STREAM_FAIL S:Stream Extraction Failed due to 10BPC\n
+L:DP_VALID_SYMBOL_STREAM_FAIL S:Stream Extraction Failed due to invalid valid symbols = %d\n
+L:BPC_UPDATE S:Maximum bpc updated from 0x%x to BPC10 \n
+L:DP_NEW_ALU_CAL S:DP New ALU cal   = %d      * (0: Legacy,   1:New)\n
+L:DP_ISOLATE_VALUE S:DP ISOLATE       = %d      * (0 = disable, 1 = enable)\n
+L:DP_LEX_SSC_VALUE S:DP LEX SSC       = %d      * (0 = disable, 1 = advertise, 2 = pass monitor's value)\n
+L:DP_REX_SSC_VALUE S:DP REX SSC       = %d      * (0 = disable, 1 = advertise, 2 = pass monitor's value)\n
+L:DP_NO_READ_MCCS_VALUE S:DP No Read MCCS  = %d      * (0 = Don't read MCCS 1 = Read MCCS\n
+L:DP_VOLTAGE_SWING S:DP VS            = %d      * (255 = default, anything else = forced)\n
+L:DP_PRE_EMPHASIS S:DP PE            = %d      * (255 = default, anything else = forced)\n
+L:DP_BANDWIDTH S:DP BANDWIDTH     = 0x%x    * (0 = default, anything else = forced)\n
+L:DP_LANE_COUNT S:DP LANE COUNT    = 0x%x    * (0 = default, anything else = forced)\n
+L:DP_EDID_TYPE S:DP EDID TYPE     = %d      * (0 = monitor's edid, 1 = 4k, 2 = 1080p)\n
+L:DP_BPC_MODE S:DP BPC MODE      = %d      * (6 = 6bpc, 8 = 8bpc, 10 = 10bpc)\n
+L:DP_AUX_LT_MODE S:DP AUX LT Mode   = %d      * (0 = Normal Mode, 1 = Fast Mode)\n
+L:DP_AUDIO_SEND S:DP AUDIO Send    = %d      * (0 = Enable, 1 = Disable)\n
+L:DP_YCBCR_STATUS S:DP YCBCR Disable = %d      * (1 = disable, 0 = Pass through)\n
+L:DP_ERR_CNT_STATUS S:DP Error Counter = %d      * (0 = Return true error counter value, 1 = Return True always)\n
+L:DP_REX_PW_DN_TIMEOUT S:DP Rex PD Timeout= %d      * (Value in sec, Max 10 sec)\n
+L:DP_COMP_RATIO S:DP Comp Ratio    = %d      * (0 = default, 2 = 2.4, 4 = 4, 6 = 6)\n
+L:DP_LEX_ICMD S:***    This is a Rex only iCommand     ***\n
+L:DP_REX_ICMD S:***    This is a Lex only iCommand     ***\n
+L:AUX_LINK_TRAINING_STATS S:********LINK TRAINING STATS*******\n
+L:AUX_LEX_SYMBOL_ERROR_COUNT_LANEXY S:Got read SYMBOL_ERROR_COUNT_LANEX_Y: addr = 0x%x, resp = 0x%x\n
+L:FLASH_LC_UPDATED S:Flash value for Lane count updated in DPCD reg = 0x%x\n
+L:FLASH_BW_UPDATED S:Flash value for Bandwidth updated in DPCD reg = 0x%x\n
+L:DP_LEX_AUDIO_MSG S:Audio msg sent to Rex AudioMute = %d Maud = %d\n
+L:DP_LEX_CR_FAIL_STATUS S:Clock Recovery Fail status : %d\n
+L:DP_LEX_UNSUPP_SETTINGS S:Redundant Unsupported setting with VS = %d; PE = %d\n
+L:DP_LINK_TRAINING_STATE S:Link Training State : %d (1: Start of CLock Recovery, 2: Start Equalization, 3: Link Trained)\n
+L:LEX_SET_ERROR_COUNT_TRUE S:Error count function set to return : %d\n
+L:DP_REX_MIVD S:Rex Calculated Mvid:%d, Nvid:%d\n
+L:AUX_SET_PW_DN_TIMER S:Power down timer value set = %d sec\n
+L:DP_POWER_STATE S:Setting Monitor Power state = 0x%d\n
+L:AUX_REX_MCCS_CAP_READ_DONE S:MCCS capabilities string read done. String size : %d, VCP Table size : %d\n
+L:AUX_LEX_MCCS_RECEIVE_STATUS S:MCCS capabilities received. String size : %d\n
+L:AUX_LEX_VCP_RECEIVE_STATUS S:VCP Table received. Table size : %d\n
+L:AUX_REX_VCP_TABLE_HEADING S:****SUPPORTED VCP CODES****\n
+L:AUX_REX_VCP_TABLE_ENTRY S:Opcode 0x%x\n
+L:SET_VCP_FEATURE S:VCP feature set\n
+L:AUX_REX_VCP_READ_DONE S:VCP Table read done. Sending to LEX\n
+L:AUX_REX_MCCS_RETRY_COUNT S:MCCS capabilities retry counter : %d\n
+L:AUX_REX_VCP_RETRY_COUNT S:VCP Table retry counter : %d\n
+L:DP_MCA_DN S:Bringing MCA channel 1 down
+L:DP_MCA_UP S:Bringing MCA channel 1 up
+L:AUX_GOT_HPD_REPLUG S:Got HPD Replug event\n
+L:DP_ERR_CNT S:Lex error counts Extraction error = %d,  Stream error = %d\n
+L:DP_LEX_ERR S:Stream Error count = %d\n
+L:DP_READ_MCCS_STATUS S:No Read MCCS = %d\n
+L:DP_REX_READ_MCCS S:Start reading MCCS and VCP table\n
+L:DP_REX_MCCS_FAIL S:MCCS and VCP table read failed\n
+L:AUX_REX_MCCS_READ_FAIL S:MCCS read failed\n
+L:AUX_REX_VCP_READ_FAIL S:VCP table read failed\n
+L:DP_REX_MCCS_SUCESS S:MCCS and VCP table read successfully\n
+L:DP_LEX_HOST_SHUTDOWN S:DP Frequency Out of Range detected\n
+L:DP_REX_START_CR S:Rex Start CR with LC:%d, BW:%d\n
+L:DP_LEX_EQ_FAIL S:Lex EQ Fail with VS:%d, EQ:%d, Align:%d\n
+L:DP_LEX_REACHED_HIGHEST_LEVEL S:Current HOST's VS:%d, EQ:%d, Highest:%d\n
+L:DP_LEX_DISABLE_COMBINATION S:Failed. Disable VS:%d, EQ:%d Combination\n
+L:DP_LEX_VS0_PE S:[0][0]:%d, [0][1]:%d, [0][2]:%d\n
+L:DP_LEX_VS1_PE S:[1][0]:%d, [1][1]:%d, [1][2]:%d\n
+L:DP_LEX_VS2_PE S:[2][0]:%d, [2][1]:%d, [2][2]:%d\n
+L:DP_SEND_AUDIO_STATE S:Lex Audio status chnaged = %d\n
+L:AUX_REX_MCCS_READ_RETRY_COUNT S:Rex tried reading MCCS %d times\n
+L:AUX_REX_END_READ_MCCS S:Rex completed reading MCCS, VCP Table and Timing Report\n
+L:AUX_REX_START_SENDING_MCCS S:Rex start sending MCCS to LEX\n
+L:AUX_REX_SINK_PARAMS_SENT S:Sink Parameters sent to LEX\n
+L:AUX_AUDIO_ERR S:Exceeded audio error recovery Count = %d\n
+L:AUX_REX_NEW_CONTROL_REQUEST S:Sent New Control Request to Sink\n
+L:AUX_REX_NEW_CONTROL_CHANGED S:New Control Value changed to 0x%x\n
+L:AUX_REX_ACTIVE_CONTROL_REQUEST S:Sent Active Control Request to Sink\n
+L:AUX_REX_ACTIVE_CONTROL_CHANGED S:Active Control value is 0x%x\n
+L:AUX_REX_SEND_NEW_CONTROL S:Sending active control values to LEX over COMMLINK\n
+L:AUX_REX_RECEIVED_ACTIVE_CONTROL S:Received Active Control. Updating VCP Table\n
+L:DP_REX_MCCS_SUCCESS_COUNTER S:MCCS read success counter : %d\n
+L:AUX_REX_LINK_PARAM_RETRY S:Monitor not trained with Max BW and LC, retry LT counter: %d\n
+L:AUX_REX_MCCS_SEND_PENDING S:MCCS send to LEX is pending\n
+L:AUX_REX_MCCS_SEND_CRITERIA S:MCCS send criteria ReadyToSend : %d, SendCount: %d\n
+L:AUX_REX_MCCS_CAP_RX_FAIL S:MCCS Cap Rx failed Idx1 : %d, Idx2 : %d, line : %d\n
+L:AUX_REX_UTILIZATION S:Utilzation is (%d)\n
+L:AUX_ADJUST_SSC S:Utilzation is over 100%% adjust SSC %d\n
+L:AUX_ADJUST_FPS S:Utilzation is over 100%% adjust FPS from %d to %d\n
+L:AUX_REX_SEND_DUMMY S:Sending dummy video to the monitor\n
+L:DP_OVER_CURRENT_WARNING S:Over current detected in DP\n
+L:DP_EDID_INVALID S:REX is unable to get valid EDID values from the sink, passing the invalid EDID to LEX\n
+L:DP_CAP_INVALID S:REX is unable to read valid CAP values from the sink after Max tries\n
+L:AUX_REX_READ_EDID S:***  Monitor Edid read   ***\n
+L:AUX_EDID_READ_ICMD S:0x%x, //0x%x\n
+L:AUX_DPCD_DUMP S:DPCD Byte 0x%x = 0x%x\n
+L:DP_ENABLE_AUX_TRAFFIC_STATUS S:Enable AUX over UART = %d\n
+L:DP_RESTART_PM_STATE_MACHINE S:****** Restarting DP PM State Machine ******\n
+L:DP_LEX_REMOVE_RESOLUTION S:Removing unsupported standard timing edid = %d\n
+L:DP_LEX_DETAIL_TIME S:Removing unsupported detail timing from edid = %d\n
+L:DP_LEX_CVT S:Removing unsupported CVT 3 byte code timing from edid = %d\n
+L:DP_REX_EDID_BLOCK_NUM S:EDID received with block number: %d\n
+L:DP_REX_EDID_SIZE S:TOTAL EDID SIZE: %d\n
+L:DP_INVALID_CAP_EDID S:Failed to read Cap and Edid\n
+L:DP_PRINT_STATUS S:***       Status Flags        ***\n
+L:DP_PHYUP S:PhyUp                  = %d\n
+L:DP_REXACTV S:RexActive              = %d\n
+L:DP_VIDEORXRDY S:VideoRxReady           = %d\n
+L:DP_ISOLATE S:IsolateEnabled         = %d\n
+L:DP_REXWAITHOST S:RexWaitHostInfo        = %d\n
+L:DP_REXNEWMONI S:RexNewMonitor          = %d\n
+L:DP_REXNEWLNKPARA S:RexNewLinkParams       = %d\n
+L:DP_REXDPEN S:RexDpEnabled           = %d\n
+L:DP_MONCONN S:monitorConnected       = %d\n
+L:DP_LEXDPEN S:LexDpEnabled           = %d\n
+L:DP_HOSTCONN S:HostConnected          = %d\n
+L:DP_LEXRXREADY S:LexVideoTxReady        = %d\n
+L:DP_GOTSINKPARAM S:GotSinkParamters       = %d\n
+L:DP_GOTSTREAMPARAM S:GotStreamParamters     = %d\n
+L:DP_MONINFORDY S:MonitorInfoReady       = %d\n
+L:DP_LEXWAITMONINFO S:LexWaitMonitorInfo     = %d\n
+L:DP_GOTNEWSTRMPARAMS S:GotNewStreamParams     = %d\n
+L:DP_GOTNEWLINKPARAMS S:GotNewLinkParams       = %d\n
+L:DP_LEXACT S:LexActive              = %d\n
+L:DP_REXDRIVEINIT S:RedriverInitDone       = %d\n
+L:DP_CURNTSTATE S:CurrentState           = %d\n
+L:DP_PREVSTATE S:PrevState              = %d\n
+L:DP_EVENT S:Event                  = %d\n
+L:DP_CAPVALID S:CapIsValid             = %d\n
+component:DP_STREAM_COMPONENT
+L:DP_INVALID_BANDWIDTH S:Invalid bandwidth setting %d at line %d\n
+L:DP_INVALID_LANE_COUNT S:Invalid lane count setting %d at line %d\n
+L:DP_SETTING_TRAINING_PATTERN S:Setting training pattern %d\n
+L:DP_SCRAMBLE_EN S:Scrambling enabled = %d\n
+L:DP_DESCRAMBLE_EN S:Descrambling enabled = %d\n
+L:DP_INVALID_VALUE S:DP Has Wrong Value. mvid = %d, nvid = %d, lc= %d\n
+L:DP_INVALID_VALUE2 S:DP Has Wrong Value. vs0 = %d, tu_size = %d, bpp = %d\n
+L:DP_LEX_TU_SIZE_RDY S:Got TU size ready interrupt: tu_size = %d\n
+L:DP_RESET_SINK S:Reset DP Sink = %d | (1:reset, 0:take out of reset)\n
+L:DP_RESET_ENC S:Reset TICO Encoder = %d | (1:reset, 0:take out of reset)\n
+L:DP_ENABLING_TICO_ENC S:Enabling TICO encoder\n
+L:DP_CONFIGURE_ENCODER_EXTRACTOR S:Configuring encoder extractor\n
+L:DP_COMMAND_MODE S:Put TICO encoder in command mode\n
+L:DP_ENABLING_TICO_DEC S:Enabling TICO decoder\n
+L:DP_MSA_PARAMS S:MSA MVID value =  %d and NVID value = %d at line = %d\n
+L:DP_MSA_TWIDTH S:MSA total_width = %d and line duration = %d at line = %d\n
+L:DP_COLOR_CODE S:Color Code = 0x%x\n
+L:DP_INVALID_MSA S:Invalid MSA, colorCode = 0x%x, tuSize = %d\n
+L:DP_MSA_ALIGN_ERROR S:MSA Align Error, height(b3),  width(b2), hSyncWidth(b1), vSyncWidth(b0) = 0x%x, nvid = %d\n
+L:DP_PIXEL_CLOCK_ERROR S:Invalid MSA, Pixel Clock1(%d) & Pixel Clock2(%d) are different by %d\n
+L:DP_LEX_RESET_LANE_ERR_CNT S:8b10b Error Count reset\n
+L:DP_LAST_TU_ZERO S:Last Tu is zero, manifulate Last Tu\n
+L:DP_SET_LANE S:Rex request to set lane count %d, RTL %d\n
+L:DP_ALIGNER_CONTROL S:Aligner En(1)/Disable(0): %d, TPS: %d\n
+L:DP_YCBCR422_DETECTED S:YCbCr422 is detected. Color code:0x%x\n
+L:DP_INVALID_COLOR S:Invalid color code: 0x%x\n
+L:DP_VBD_MAJORITY_FAIL S:DP VBD Majority Fail interrupt occurred\n
+L:DP_MSA_MAJORITY_FAIL S:DP MSA Majority Fail interrupt occurred\n
+L:DP_NO_VID_STREAM S:DP No Video Stream status = %d\n
+L:DP_AUDIO_MUTE S:DP Audio Mute status = %d\n
+L:DP_STREAM_CLEAR_CXFIFO S:Read Cx Fifo Overflow to clear it. C0:%d, C1:%d, C2:%d\n
+L:DP_STREAM_CXFIFO_OVERFLOW S:DP Stream Extractor Overflow detected by Cx Fifo Overflow\n
+L:DP_STREAM_EXTRACTOR_OVERFLOW S:DP Stream Extractor Overflow interrupt occurred: dpInt:0x%x\n
+L:DP_STREAM_EXTRACTOR_UNDERFLOW S:DP Stream Extractor Underflow interrupt occurred\n
+L:DP_BOND_ALIGN_DONE S:DP Bond Align Done interrupt occurred\n
+L:DP_LANES_WITH_8B10B_ERR S:DP Lanes with 8b10b error interrupt occurred\n
+L:DP_GT_RXBYTE_REALIGN S:DP GTP RX byte re-align interrupt occurred\n
+L:DP_ALIGNER_FIFO_OVERFLOW S:DP Aligner Fifo Overflow interrupt occurred\n
+L:DP_FIRST_IDLE_PATTERN S:DP First idle pattern interrupt occured \n
+L:DP_ALIGNER_FIFO_UNDERFLOW S:DP Aligner Fifo Underflow interrupt occurred\n
+L:DP_EDID_CHANGE S:Edid changed to %d due to Standard blanking\n
+L:DP_BER_ERR_CNT S:DP Link Quality management error Threshold = %d Error count = %d\n
+L:DP_LEX_SDP_FIFO_OF S:SDP fifo overflow = %d or Underflow occured = %d\n
+L:DP_LEX_FRQ_OOR S:DP freq out of range count = %d , Frq Count = %d\n
+L:DP_DECODER_ERR_FLAG S:DP Decoder Error Flag interrupt occurred\n
+L:DP_FIFO_PIX_0_UNDERFLOW S:DP FIFO PIX 0 Underflow interrupt occurred\n
+L:DP_FIFO_PIX_0_OVERFLOW S:DP FIFO PIX 0 Overflow interrupt occurred\n
+L:DP_FIFO_SDP_UNDERFLOW S:DP FIFO SDP Underflow interrupt occurred\n
+L:DP_FIFO_SDP_OVERFLOW S:DP FIFO SDP Overflow interrupt occurred\n
+L:DP_FIFO_CS_UNDERFLOW S:DP FIFO CS Underflow interrupt occurred\n
+L:DP_FIFO_CS_OVERFLOW S:DP FIFO CS Overflow interrupt occurred\n
+L:DP_VIDEO_STREAM_END S:DP Video Stream End interrupt occurred\n
+L:IDLE_PATTERN_INTERRUPT S:DP Idle pattern interrupt occurred\n
+L:DP_FIFO_SDP_TAG_UNDERFLOW S:DP FIFO SDP TAG UNDERFLOW interrupt occured\n running count = %d\n, associated frame number = %d\n
+L:DP_FIFO_SDP_TAG_OVERFLOW S:DP FIFO SDP TAG OVERFLOW interrupt occured\n running count = %d\n, associated frame number = %d\n
+L:DP_SDP_MAUD S:DP sdp AudioMute flag status = %d || Maud set value = %d || Maud method select = %d\n
+L:DP_SDP_VBID S:DP sdp vbid = 0x%x || Maud = %d || Mvid = %d\n
+L:DP_LC S:Lane Count                  = %d\n
+L:DP_BW S:Bandwidth                   = %d.%2d Gbps\n
+L:DP_ENHANCED_FRAMING S:Enhanced Framing            = %d\n
+L:DP_MSA_MVID S:Mvid                        = %d\n
+L:DP_MSA_NVID S:Nvid                        = %d\n
+L:DP_MSA_H_TOTAL S:H Total                     = %d\n
+L:DP_MSA_H_START S:H Start                     = %d\n
+L:DP_MSA_H_WIDTH S:H Width                     = %d\n
+L:DP_MSA_H_POLARITY S:H Polarity                  = %d\n
+L:DP_MSA_H_SYNC_WIDTH S:H Sync Width                = %d\n
+L:DP_MSA_V_TOTAL S:V Total                     = %d\n
+L:DP_MSA_V_START S:V Start                     = %d\n
+L:DP_MSA_V_HEIGHT S:V Height                    = %d\n
+L:DP_MSA_V_POLARITY S:V Polarity                  = %d\n
+L:DP_MSA_V_SYNC_WIDTH S:V Sync Width                = %d\n
+L:DP_MSA_Y_ONLY S:Misc Y Only                 = %d\n
+L:DP_MSA_STEREO S:Misc Stereo                 = %d\n
+L:DP_MSA_INT_TOTAL S:Misc Int Total              = %d\n
+L:DP_MSA_CLK_SYNC S:Misc Clock Sync             = %d\n
+L:DP_CS_PKT_LENGTH S:CS Packet Length            = %d\n
+L:DP_MSA_COLOR S:Color Code                  = 0x%x and BPP = %d\n
+L:DP_SINK_BOND_ALIGN_DEBUG_STATS4 S:bond_align_debug_stats      = 0x%x\n
+L:DP_SINK_BOND_ALIGN_DEBUG_STATS3 S:com_det_dbg                 = 0x%x\n
+L:DP_SINK_BOND_ALIGN_DEBUG_STATS2 S:fifo_rd_en_dbg              = 0x%x\n
+L:DP_SINK_BOND_ALIGN_DEBUG_STATS1 S:state_dbg                   = 0x%x\n
+L:DP_TPS_USE S:TPS pattern used            = %d\n
+L:DP_TU_SIZE S:Tu Size                     = %d\n
+L:DP_FPS S:Frames per second           = %d\n
+L:DP_COMPRESSION_RATIO S:TICO compression ratio      = %d.%d to 1\n
+L:DP_STATS_0 S:**** DP STATS ****\n
+L:DP_SINK_VID_C0_FIFO_OVERFLOW S:vid_c0_fifo_overflow        = %d\n
+L:DP_SINK_VID_C0_FIFO_UNDERFLOW S:vid_c0_fifo_underflow       = %d\n
+L:DP_SINK_VID_C0_FIFO_LEVEL S:vid_c0_fifo_level           = %d\n
+L:DP_SINK_VID_C0_FIFO_LEVEL_WATERMARK S:vid_c0_fifo_level_watermark = %d\n
+L:DP_SINK_VID_C0_SR_FULL S:vid_c0_sr_full              = %d\n
+L:DP_SINK_VID_C1_FIFO_OVERFLOW S:vid_c1_fifo_overflow        = %d\n
+L:DP_SINK_VID_C1_FIFO_UNDERFLOW S:vid_c1_fifo_underflow       = %d\n
+L:DP_SINK_VID_C1_FIFO_LEVEL S:vid_c1_fifo_level           = %d\n
+L:DP_SINK_VID_C1_FIFO_LEVEL_WATERMARK S:vid_c1_fifo_level_watermark = %d\n
+L:DP_SINK_VID_C1_SR_FULL S:vid_c1_sr_full              = %d\n
+L:DP_SINK_VID_C2_FIFO_OVERFLOW S:vid_c2_fifo_overflow        = %d\n
+L:DP_SINK_VID_C2_FIFO_UNDERFLOW S:vid_c2_fifo_underflow       = %d\n
+L:DP_SINK_VID_C2_FIFO_LEVEL S:vid_c2_fifo_level           = %d\n
+L:DP_SINK_VID_C2_FIFO_LEVEL_WATERMARK S:vid_c2_fifo_level_watermark = %d\n
+L:DP_SINK_VID_C2_SR_FULL S:vid_c2_sr_full              = %d\n
+L:DP_SOURCE_FIFO_PIX_0_OVERFLOW S:fifo_pix_0_overflow         = %d\n
+L:DP_SOURCE_FIFO_PIX_0_UNDERFLOW S:fifo_pix_0_underflow        = %d\n
+L:DP_SOURCE_PIX_0_SR_UNDERFLOW S:pix_0_sr_underflow          = %d\n
+L:DP_SOURCE_PIX_1_SR_UNDERFLOW S:pix_1_sr_underflow          = %d\n
+L:DP_SOURCE_PIX_2_SR_UNDERFLOW S:pix_2_sr_underflow          = %d\n
+L:DP_SOURCE_PIX_3_SR_UNDERFLOW S:pix_3_sr_underflow          = %d\n
+L:DP_SOURCE_FIFO_PIX_0_LEVEL_WATERMARK S:fifo_pix_0_level_watermark  = %d\n
+L:DP_SOURCE_FIFO_PIX_0_LEVEL S:fifo_pix_0_level            = %d\n
+L:DP_SOURCE_FIFO_CS_OVERFLOW S:fifo_cs_overflow            = %d\n
+L:DP_SOURCE_FIFO_CS_UNDERFLOW S:fifo_cs_underflow           = %d\n
+L:DP_SOURCE_FIFO_CS_LEVEL S:fifo_cs_level               = %d\n
+L:DP_SOURCE_FIFO_CS_LEVEL_WATERMARK S:fifo_cs_level_watermark     = %d\n
+L:DP_VS_VALUE S:Average Valid Symbol: Int %d: Fraction %d /1000\n
+L:DP_ALU_STATS S:**** DP_ALU_STATS ****\n
+L:DP_WIDTH_ACTIVE S:dp_width_active            = %d\n
+L:DP_WIDTH_TOTAL S:dp_width_total             = %d\n
+L:DP_FULL_TU_SIZE S:full_tu_size               = %d\n
+L:DP_LAST_TU_SIZE S:last_tu_size               = %d\n
+L:DP_FULL_TU_NUM S:full_tu_num                = %d\n
+L:DP_CPU_MATH_RESULT_READY S:cpu_math_result_rdy        = %d\n
+L:DP_VALID_BYTES_RPT_NUM S:valid_bytes_repeat_num     = %d\n
+L:DP_VALID_BYTES_PER_FULL_TU S:valid_bytes_per_full_tu    = %d\n
+L:DP_VALID_BYTES_NUM_PER_LANE S:valid_bytes_num_per_lane   = %d\n
+L:DP_GTP_STATS S:**** DP GTP STATS ****\n
+L:DP_GT3_RXBYTE_ALIGN_CNT S:dp_lane0_rxbyterealign_cnt          = %d\n
+L:DP_GT2_RXBYTE_ALIGN_CNT S:dp_lane2_rxbyterealign_cnt          = %d\n
+L:DP_GT1_RXBYTE_ALIGN_CNT S:dp_lane3_rxbyterealign_cnt          = %d\n
+L:DP_GT0_RXBYTE_ALIGN_CNT S:dp_lane1_rxbyterealign_cnt          = %d\n
+L:DP_8B10B_DISP_ERROR_STATS S:**** DP 8b10b DISP ERROR STATS ****\n
+L:DP_8B10B_NIT_ERROR_STATS S:**** DP 8b10b NIT ERROR STATS ****\n
+L:DP_LANE_0_WITH_8B10B_DIS_ERR_CNT S:lane_0_with_8b10b_dis_err_cnt      = %d\n
+L:DP_LANE_1_WITH_8B10B_DIS_ERR_CNT S:lane_1_with_8b10b_dis_err_cnt      = %d\n
+L:DP_LANE_2_WITH_8B10B_DIS_ERR_CNT S:lane_2_with_8b10b_dis_err_cnt      = %d\n
+L:DP_LANE_3_WITH_8B10B_DIS_ERR_CNT S:lane_3_with_8b10b_dis_err_cnt      = %d\n
+L:DP_LANE_0_WITH_8B10B_NIT_ERR_CNT S:lane_0_with_8b10b_nit_err_cnt      = %d\n
+L:DP_LANE_1_WITH_8B10B_NIT_ERR_CNT S:lane_1_with_8b10b_nit_err_cnt      = %d\n
+L:DP_LANE_2_WITH_8B10B_NIT_ERR_CNT S:lane_2_with_8b10b_nit_err_cnt      = %d\n
+L:DP_LANE_3_WITH_8B10B_NIT_ERR_CNT S:lane_3_with_8b10b_nit_err_cnt      = %d\n
+L:DP_FSM_STATS S:**** DP FSM STATS ****\n
+L:DP_FIFO_CS_STATUS_STATE_VID S:fsm_state_vid  = %d\n
+L:DP_FIFO_CS_STATUS_STATE_DP S:fsm_state_dp   = %d\n
+L:DP_SDP_STATS S:**** DP SDP FIFO STATS ****\n
+L:DP_SDP_FIFO_FULL S:sdp_fifo_status_full                = %d\n
+L:DP_SDP_FIFO_EMPTY S:sdp_fifo_status_empty               = %d\n
+L:DP_SDP_FIFO_OVERFLOW S:sdp_fifo_status_overflow            = %d\n
+L:DP_SDP_FIFO_UNDERFLOW S:sdp_fifo_status_underflow           = %d\n
+L:DP_SDP_FIFO_LEVEL S:sdp_fifo_status_level               = %d\n
+L:DP_SDP_FIFO_LEVEL_WATERMARK S:sdp_fifo_status_level_watermark     = %d\n
+L:DP_SDP_SS_SE_BYTE_NUM S:sdp_ss_se_same_cycle_byte_num       = 0x%x\n
+L:DP_SDP_PKT_SENT S:sdp_pkt_sent_cnt                    = %d\n
+L:DP_SDP_PK_SENT_WATERMARK S:sdp_pkt_sent_cnt_watermark          = %d\n
+L:DP_SDP_TAG_STATS S:**** DP SDP TAG FIFO STATS ****\n
+L:DP_SDP_TAG_FIFO_FULL S:sdp_tag_fifo_status_full            = %d\n
+L:DP_SDP_TAG_FIFO_EMPTY S:sdp_tag_fifo_status_empty           = %d\n
+L:DP_SDP_TAG_FIFO_OVERFLOW S:sdp_tag_fifo_status_overflow        = %d\n
+L:DP_SDP_TAG_FIFO_UNDERFLOW S:sdp_tag_fifo_status_underflow       = %d\n
+L:DP_SDP_TAG_FIFO_LEVEL S:sdp_tag_fifo_status_level           = %d\n
+L:DP_SDP_TAG_FIFO_LEVEL_WATERMARK S:sdp_tag_fifo_status_level_watermark = %d\n
+L:DP_SDP_MADU S:Maud value = %d\n
+L:DP_STANDARD_BLANKING S:STANDARD BLANKING DETECTED\n
+L:DP_LEX_IDLE_PATTERN_CNT_RESET S:Dp lex idle pattern counter has been reset\n
+L:DP_REX_IDLE_PATTERN_CNT_RESET S:Dp rex idle pattern counter has been reset\n
+L:DP_REX_TU_INVAID S:TU is not measure properly, substituting it with 64 for programming ALU\n
+L:DP_LEX_ERR_CNT_RESET S:DP 8b10b error counter set to 0x%x\n
+L:DEBUG_ASSERT_BB S:CAUSE AN ASSERT IN BB FOR DEBUGGING IRQ count %d\n
+L:DP_FRQ_DETC S:Measured frequency = %d\n
+L:DP_INVALID_COMP_RATIO S:Invalid compression ratio = %d\n
+component:DP_AUX_COMPONENT
+L:AUX_RX_INVALID_TRANSACTION_SIZE S:RECEIVED AUX TRANSACTION WITH INVALID SIZE %d !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! \n
+L:AUX_RECEIVE_TRANSACTION S:Received an AUX transaction with length %d B, first word = 0x%x\n
+L:AUX_RX_HEX_DUMP S:RX Word %d = 0x%x\n
+L:AUX_TX_HEX_DUMP S:TX Word %d = 0x%x\n
+L:AUX_TX_INVALID_TRANSACTION_SIZE S:Requested to transmit AUX transaction with invalid size %d\n
+L:AUX_TX_INVALID_TRANSACTION_DATA S:Tx Request Buffer[%d]: 0%x\n
+L:AUX_HOST_REQUEST S:Host Request Buffer[%d]: 0%x\n
+L:AUX_TX_BUSY S:Attempted to transmit when already transmitting\n
+L:AUX_SEND_TRANSACTION S:Sent an AUX transaction with length %d B, first word = 0x%x\n
+L:AUX_INVALID_REQUEST_COMMAND S:Invalid request command 0x%x at line %d\n
+L:AUX_DEFERRING S:Deferring request for the request header 0x%x, address 0x%x, length 0x%x\n
+L:AUX_DEFERRING_STAT S:Deferring request took time %d by 0x%x\n
+L:AUX_DEFER_OVER S:Aux defer over the maximum amount %d. Restart link training\n
+L:AUX_REQUEST_FIFO_OVERFLOW S:Request FIFO overflow Handler = 0x%x\n
+L:AUX_STATE_CHANGE S:Changing state from %d to %d\n
+L:AUX_RETRY_MAX S:AUX reply maximum retrial failed\n
+L:AUX_LOADED_LOCAL_REQUEST S:Loaded local request: length = %d B, first word = 0x%x\n
+L:AUX_GEN_HPD_IRQ S:Generating HPD IRQ event\n
+L:AUX_GEN_HPD_REPLUG S:Generating HPD replug event\n
+L:AUX_GEN_HPD_UP S:Generating HPD up event\n
+L:AUX_GEN_HPD_DOWN S:Generating HPD down event\n
+L:AUX_ENTERING_ISR S:Entering AUX ISR: %x\n
+L:AUX_LEX_ISR_TIME S:Time spent in AUX ISR = %d us; time between AUX ISRs = %d us\n
+L:AUX_RX_FIFO_OVERFLOW S:RX FIFO overflow\n
+L:AUX_UNHANDLED_INTERRUPT S:Unhandled interrupt at line %d: unhandled interrupts = 0x%x\n
+L:AUX_ISR_TIME S:Time spent in AuxISR = %d us\n
+L:AUX_DDCCI_WRITE_REQUEST S:DDC/CI Write request with size : %d\n
+L:AUX_I2C_READ_REQUEST S:I2C read request with size : %d\n
+L:AUX_I2C_WRITE_REQUEST S:AUX I2C Write request with size : %d\n
+L:AUX_I2C_STATUS S:Go bit status for I2C : %d\n
+L:AUX_TRANS_REQUEST_BYTE S:Word = %d | Data = 0x%.8x\n
+L:AUX_TRANS_READ_WRITE_INDEX S:Read Index = %d | Write Index = %d\n
+L:AUX_I2C_DEBUG S:I2C write at line : %d\n
+L:AUX_LEX_SRC_IRQ_COUNT S:Source connect count = %d source disconnect count = %d Aux status = %d\n
+L:AUX_RX_RETRY_MAX S:AUX receive maximum retrail failed\n
+L:AUX_TRANS_BUFF_WRITE_OVERFLOW S:AUX trans buff is full, not saving more data\n
+L:AUX_TRANS_BUFF_READ_OVERFLOW S:AUX trans read buff has reached end of the buffer\n
+L:AUX_TRANS_SET_READ_INDEX S:Setting the new read index to %d\n
+L:AUX_TRANS_BUFF_CLEAR S:Clearing the AUX trans buffer\n
+L:AUX_NATIVE_WRITE_REQ_SRC S:Source    Native  Req WR %d bytes to 0x%x\n
+L:AUX_NATIVE_READ_REQ_SRC S:Source    Native  Req RD %d bytes from 0x%x\n
+L:AUX_NATIVE_ACK_SNK S:Sink      Native  AUX_ACK - %d bytes\n
+L:AUX_NATIVE_HEX_DUMP S:
+L:AUX_I2C_WRITE_REQ_SRC S:Source    I2C     Req WR %d bytes to 0x%x MOT=%d\n
+L:AUX_I2C_READ_REQ_SRC S:Source    I2C     Req RD %d bytes to 0x%x MOT=%d\n
+L:AUX_I2C_ACK_SNK S:Sink      I2C     AUX_ACK - %d bytes\n
+L:AUX_I2C_HEX_DUMP S:
+L:AUX_NATIVE_DEFER S:Sink      Native  AUX_DEFER - 0 bytes\n
+component:LINKMGR_COMPONENT
+L:LINKMGR_RCV_EVENT S:Link state machine: In state %d, received event %d new state %d\n
+L:LINKMGR_RCV_INVALID_EVENT S:Link state machine: Unexpected event %d for state %d\n
+L:PHY_ENABLED S:*** PHY Enabled ***\n
+L:PHY_DISABLED S:*** PHY Disabled ***\n
+L:NVM_CONFIG_STATUS_LINK_TO_5G S:*** Link set to 5G ***\n
+L:NVM_CONFIG_STATUS_LINK_TO_10G S:*** Link set to 10G ***\n
+L:LINK_HW_PHY_START S:HW Phy Start: %d\n
+L:LINK_ERROR_DETECTED S:Link error detected, restarting link\n
+L:LINK_HW_PHY_RESTART S:Link is not stable, Restart HW Phy\n
+L:LINK_HW_PHY_MAC_LINK_RX_STATUS S:Link Status MAC Link Layer Rx: %d\n
+L:LINK_HW_PHY_XAUI_STATUS S:Link Status XAUI: %d\n
+L:LINK_HW_PHY_LINK_STATUS S:HW Phy Link Status: %d\n
+L:LINK_NOT_10G_SPEED S:Aquantia is not running at 10G speed\n
+L:LINK_MGR_STATE_TRANSITION S:Link manager: old state = %d, new state = %d on event = %d\n
+L:LINK_MGR_INVALID_EVENT S:Link manager: got invalid event %d in state %d\n
+L:COMLINK_RCV_EVENT S:COMLINK In state %d, received event %d new state %d\n
+L:COMLINK_MSG_RCVD S:COMLINK Msg Rcvd in state %d, msg %d\n
+L:COMLINK_STATE S:COMLINK SysEvent State 0 == DN, 1 == UP: %d\n
+L:COMLINK_STATE_EVENT_INVALID S:Comm Link: Invalid Event %d for state %d\n
+L:COMLINK_LINKUP_TIMEOUT S:Comlink couldn't bring up in time\n
+L:COMLINK_CH_DOWN_DELAYED_LINKUP S:link down - channel down in delayed link up\n
+L:COMLINK_CH_DOWN_LINKUP S:link down - channel down in link up\n
+L:COMLINK_MCA_CH_STATUS S:ComlinkMcaChannelStatusHandler got Channel status: %d\n
+L:COMLINK_SECOND_LINKUP S:REX START 2nd LinkUp for stable train \n
+component:XAUI_COMPONENT
+L:XAUI_TEST S:XAUI code at line = %d\n
+L:XAUI_FAIL_TX_ALIGN S:RXAUI TX is not aligned before Aquantia release reset\n
+L:XAUI_STAT_GT0_DISP_ERR S:STAT:RXAUI rxaui->stats0->gt0_disp_err = 0x%x\n
+L:XAUI_STAT_GT0_NOT_IN_TBL S:STAT:RXAUI rxaui->stats0->gt0_not_in_table = 0x%x\n
+L:XAUI_STAT_GT1_DISP_ERR S:STAT:RXAUI rxaui->stats0->gt1_disp_err = 0x%x\n
+L:XAUI_STAT_GT1_NOT_IN_TBL S:STAT:RXAUI rxaui->stats0->gt1_not_in_table = 0x%x\n
+L:XAUI_STAT_MISSING_START S:STAT:RXAUI rxaui->stats0->missing_start = 0x%x\n
+L:XAUI_RX_ALIGN S:RXAUI RX align ISR %d\n
+L:XAUI_RX_TOGGLE_RESET S:RXAUI RX reset toggle\n
+L:XAUI_RESET_RX_BUFFERS S:RXAUI elasticity buffers reset\n
+component:IDT_CLK_COMPONENT
+L:IDT_CLK_CFG_RETRY S:IDT clk NAKed at index = %d, retryCount = %d\n
+L:IDT_CLK_CFG_6914_RETRY S:IDT6914 clk NAKed retryCount = %d\n
+L:IDT_CLK_CONFIGURE_REGISTERS S:IDT clk is being configured at index = %d, regOffset = 0x%x, value = 0x%x\n
+L:IDT_CLK_CFG_DONE S:IDT clk configuration done, type=%d\n
+L:IDT_CLK_CFG_FAIL S:IDT clk configuration fail, result=%d\n
+L:IDT_CLK_UNLOCKED S:IDT clk is not locked\n
+L:IDT_CLK_GENERAL_READWRITE S:IDT General read and write for register (0x%x) result: 0x%x\n
+L:IDT_CLK_INVALID_TYPE S:IDT6914 Invalid Type: %d\n
+L:IDT_CLK_SSC_MODE S:Rex SSC Mode = %d\n
+L:IDT_CLK_DP_SSC_MODE S:Rex DP SSC Mode = %d\n
+component:FIBER5G_COMPONENT
+L:LINK_5G_INIT S:5G fiber Link Init\n
+L:LINK_5G_FIBER_LOS_INACTIVE S:5G fiber Link signal detected\n
+L:LINK_5G_FIBER_LOS_IRQ_ACTIVE S:5G fiber LOS IRQ - signal absent\n
+L:LINK_5G_FIBER_LOS_IRQ_INACTIVE S:5G fiber LOS IRQ - signal present\n
+L:LINK_5G_FIBER_SIGNAL_VALID S:5G fiber Link signal valid\n
+L:LINK_5G_FIBER_SIGNAL_INVALID S:5G fiber Link signal too weak\n
+L:LINK_5G_FIBER_TX_FSM_RESET_START S:5G fiber Link Tx FSM reset start\n
+L:LINK_5G_FIBER_TX_FSM_RESET_DONE S:5G fiber Link Tx FSM reset done IRQ\n
+L:LINK_5G_FIBER_RX_FSM_RESET_START S:5G fiber Link Rx FSM reset start\n
+L:LINK_5G_FIBER_RX_FSM_RESET_DONE S:5G fiber Link Rx FSM reset done IRQ: Train time %d microseconds\n
+L:LINK_5G_FIBER_RX_BUF_UNDERFLOW S:5G fiber Link Rx elastic buffer underflow IRQ\n
+L:LINK_5G_FIBER_RX_BUF_OVERFLOW S:5G fiber Link Rx elastic buffer overflow IRQ\n
+L:LINK_5G_FIBER_RX_STABILITY S:5G fiber Link Rx stability check, dispErr %d notInTable %d realign %d\n
+L:LINK_5G_FIBER_ENABLED S:5G fiber Link Enabled\n
+L:LINK_5G_FIBER_DISABLED S:5G fiber Link Disabled\n
+L:LINK_5G_SYSTEM_UP S:5G fiber Link System up detected\n
+L:LINK_5G_FIBER_SIGNAL_DEBOUNCE S:5G fiber Link debounce, state:%d losState:%d current state:%d\n
+L:LINK_5G_FIBER_STATS_RX_DISPARITY S:STATS:LINKMGR bb_chip->bb_top->sl_5g->gt_disp_err %d\n
+L:LINK_5G_FIBER_STATS_RX_SYMBOL_NOT_IN_TABLE S:STATS:LINKMGR bb_chip->bb_top->sl_5g->gt_not_in_table %d\n
+L:LINK_5G_FIBER_STATS_RX_REALIGN_COUNT S:STATS:LINKMGR bb_chip->bb_top->sl_5g->gt_realign %d\n
+L:SFP_FINISAR_STATS_MEAS_TEMP S:*** SFP STATS Temperature %x\n
+L:SFP_FINISAR_STATS_MEAS_VCC S:*** SFP STATS Vcc %x\n
+L:SFP_FINISAR_STATS_MEAS_TX_BIAS S:*** SFP STATS TX Bias %x\n
+L:SFP_FINISAR_STATS_MEAS_TX_POWER S:*** SFP STATS TX Power %x\n
+L:SFP_FINISAR_STATS_MEAS_RX_POWER S:*** SFP STATS RX Power %x\n
+component:I2CD_COMPONENT
+L:DE_JITTER_WRITE_FAILED S:Setting De-jitter chip failed at line: %d\n
+L:DEJITTER_CHIP_CONFIGURED S:De-jitter chip was configured to 1 ppm\n
+L:I2C_WRITE_FAILED S:I2C Write failed\n
+L:READ_WITH_NULL_CALLBACK S:Tried to read I2C GPIO expander pin, but specified a NULL callback\n
+L:DEJITTER_CHIP_FAILED_CALIBRATION S:Polled the dejitter chip %d times without achieving calibration.\n
+L:DEJITTER_CHIP_IRQ_LOS2 S:CLKIN 2 Loss Of Signal Int Alarm Flag set.\n
+L:DEJITTER_CHIP_IRQ_LOS1 S:CLKIN 1 Loss Of Signal Int Alarm Flag set.\n
+L:DEJITTER_CHIP_IRQ_LOSX S:External Reference Loss Of Signal Int Alarm Flag set.\n
+L:DEJITTER_CHIP_IRQ_FOS2 S:CLKIN 2 Frequency Offset Int Alarm Flag set.\n
+L:DEJITTER_CHIP_IRQ_FOS1 S:CLKIN 1 Frequency Offset Int Alarm Flag set.\n
+L:DEJITTER_CHIP_IRQ_LOL S:PLL Loss Of Lock Int Alarm Flag set.\n
+L:DEJITTER_CHIP_FAILED_IRQ_WRITE S:Failure writing to clear all Int Alarm IRQ Flags.\n
+L:DEJITTER_CHIP_FAILED_IRQ_READ S:Failure reading IRQ flag registers\n
+L:I2CD_SET_GPIO_PIN S:Setting I2C Expander GPIO pin %d\n
+L:I2CD_SET_GPIO_PIN_DONE S:Setting I2C Expander GPIO pin completed\n
+L:I2CD_CLEAR_GPIO_PIN S:Clearing I2C Expander GPIO pin %d\n
+L:I2CD_CLEAR_GPIO_PIN_DONE S:Clearing I2C Expander GPIO pin completed\n
+L:I2CD_READ_GPIO_PIN S:Reading I2C Expander GPIO pin %d\n
+L:I2CD_READ_GPIO_PIN_SET S:Read I2C Expander GPIO pin set\n
+L:I2CD_READ_GPIO_PIN_CLEARED S:Read I2C Expander GPIO pin cleared\n
+L:DP159_TRANS_IN_PROGRESS S:DP Retimer chip transaction already in progress state %d, line %d!\n
+L:DP159_WRITE_FAILED S:DP Retimer chip write failed!\n
+L:DP159_READ_FAILED S:DP Retimer chip read failed!\n
+L:DP159_REINITIALIZE S:DP Retimer Re-initialize start\n
+L:DP159_CONFIG_FAIL S:DP Retimer config can't start.(L:%d) Current opState = %d\n
+L:DP159_CANCEL_CONFIG S:DP Retimer canceled config while configuring state %d, for new state is %d\n
+L:DP159_CR_CONFIG S:DP Retimer CR configuration phase %d\n
+L:DP159_CONFIGURATION S:DP Retimer configuration table: 0x%x, mode: %d, step: %d\n
+L:DP159_CONFIG_DATA S:DP Retimer configuration reg: 0x%x, data: 0x%x\n
+L:DP130_GENERAL_READ S:DP Redriver chip read value is 0x%x\n
+L:DP130_TRANS_IN_PROGRESS S:DP Redriver chip transaction already in progress, line %d!\n
+L:DP130_WRITE_FAILED S:DP Redriver chip write failed!\n
+L:DP130_READ_FAILED S:DP Redriver chip read failed!\n
+L:CYPRESS_HX3_RETRY S:Cypress HX3 failed writing firmware at offset=%d, retryCount=%d\n
+L:CYPRESS_UPGRADING_FIRMWARE S:Cypress downloading firmware, FW size = %d\n
+L:CYPRESS_FIRMWARE_UPGRADE_IN_PROGRESS S:Cypress firmware download already in progress\n
+L:CYPRESS_HUB_TIMER_STATE S:Cypress Hx3 Hub timer state = %d\n
+L:CYPRESS_HUB_NOT_FOUND S:Cypress Hx3 Hub not found\n
+L:CYPRESS_HUB_FAILED_PROGRAMMING S:Cypress Hx3 Hub programming failed\n
+L:CYPRESS_HUB_PROGRAMMING_SUCCESS S:Cypress Hx3 Hub programming succeeded!\n
+L:DP159_READ_RETRY S:DP Retimer chip read retried retryRdCount = %d\n
+L:DP159_WRITE_RETRY S:DP Retimer chip write retried retryWtCount = %d\n
+L:CYPRESS_HX3_PROGAMMING_STATUS S:Cypress HX3 USB3 hub programming status = %d\n
+L:DP130_DETECT_READ S:DP Redriver chip read byteCount 0x%x\n
+L:DP159_DETECT_READ S:DP Retimer chip read byteCount 0x%x\n
+L:DP159_RESET_RX S:Disable and enable Rx lane\n
+component:LED_COMPONENT
+L:LED_INVALID_MODE S:Invalid LED mode %d\n
+L:LED_SET_MODE S:New LED mode set. Result = %x\n
+component:BBGE_COMM_COMPONENT
+L:BBGE_COMM_ERROR_BB S:Error: GE communicating BB\n
+L:BBGE_COMM_ERROR_GE S:Error: BB communicating GE\n
+L:BBGE_COMM_GE_ASSERTED S:** GE Asserted!\n
+L:BBGE_COMM_GE_ASSERT_INFO S:GE Assert Info[%d]: 0x%x\n
+L:BBGE_COMM_GE_CRC S:Got Running GE CRC: %x \n
+L:BBGE_COMM_GE_VERSION_MISMATCH S:BB Flash's GE ver[%x] or CRC[%x] doesn't match with Running GE. Start GE automatic update\n
+L:BBGE_COMM_GE_VERSION_MATCH S:Checked BB Flash's GE ver[%x] and CRC[%x] match with Running GE.\n
+L:BBGE_COMM_GE_VERSION S:Got Running GE ver: %d.%d.%d\n
+L:BBGE_COMM_GE_WRONG_INDEX S:storage write to wrong index %d\n
+L:BBGE_COMM_GE_STORAGE_FAIL S:storage send to GE failed\n
+component:GPIO_COMPONENT
+L:GPIO_INIT S:Initializing GPIO, direction reg 0x%x, output bits 0x%x\n
+L:GPIO_READ S:GPIO_READ pin %d, bool val 0x%x\n
+L:GPIO_SET S:GPIO_SET pin %d\n
+L:GPIO_CLEAR S:GPIO_CLEAR pin %d\n
+L:GPIO_PULSE S:GPIO_PULSE pin %d\n
+L:FREQ_MEASURE S:Measuring PLL %d, XUSB is %d, CXM is %d\n
+L:INVALID_PIN S:Invalid Pin number %d\n
+L:BGRG_IRQ_LOG S:Interrupts 0x%x triggered\n
+L:BGRG_IRQ_UNSERVICED S:Interrupts 0x%x were unserviced\n
+L:BGRG_GPIO7_LOG S:Interrupt GPIO7 triggered\n
+L:IRQ_HANDLER_NOT_SET S:Interrupt Handler is not set for pin %d in line %d\n
+L:REGISTERING_IRQ S:Registering Interrrupt handler for pin %d\n
+L:SERVICING_IRQ S:Servicing Interrupt for pin %d\n
+L:DISABLING_IRQ S:Disabling Interrupt for pin %d\n
+L:ENABLING_IRQ S:Enabling Interrupt for pin %d\n
+L:BGRG_HW_DEFAULTS S:Power-on harware defaults from GPIOs are: 0x%x\n
+L:BGRG_INT_HANDLER_PRI S:BGRG Interrupt Handler Primary Reg: 0x%x\n
+L:BGRG_INT_HANDLER_SEC S:BGRG Interrupt Handler Secondary Reg: 0x%x\n
+L:BGRG_INT_HANDLER_PRI_POST S:BGRG Interrupt Handler POST Primary Reg: 0x%x\n
+L:BGRG_INT_HANDLER_SEC_POST S:BGRG Interrupt Handler POST Secondary Reg: 0x%x\n
+L:GPIO_IRQ_NOT_AVAIL S:GPIO has no more available interrupts for assignment\n
+component:EEPROM_COMPONENT
+L:EEPROM_BUSY S:There is already an EEPROM access in progress.\n
+L:EEPROM_ADDRESS_EXCEEDS_CAPACITY S:An attempt was made to access EEPROM page %d which exceeds capacity %d.\n
+L:ICMD_EEPROM_READ_FAILED S:Failed reading external eeprom\n
+L:ICMD_EEPROM_WRITE_FAILED S:Failed writing to external eeprom\n
+L:ICMD_EEPROM_WRITE_SUCCESSFUL S:Write to EEPROM is complete\n
+L:ICMD_EEPROM_WRONG_READ_LENGTH S:Expected %d bytes, read %d bytes instead\n
+L:ICMD_PAGE_VALUES S:Byte %d: Value: 0x%x\n
+L:ICMD_WORD_VALUES S:Word %d: Value: 0x%x\n
+L:ICMD_INVALID_PAGE S:Page %d is outside the valid range of 0 to %d\n
+L:EEPROM_INITIALIZATION_STARTING S:Beginning EEPROM initialization\n
+L:EEPROM_READ_SUBMIT S:Submitting an EEPROM read of page %d with pageData pointing at 0x%x\n
+L:EEPROM_WRITE_SUBMIT S:Submitting an EEPROM write of page %d with pageData pointing at 0x%x\n
+component:ATMEL_CRYPTO_COMPONENT
+L:READ_FAILED S:Atmel chip read failed\n
+L:READ_SUCCESS S:Successfully read %d bytes from Atmel chip\n
+L:READ_BYTE S:Read byte 0x%x\n
+L:INVALID_COND S:Invalid condition at line %d\n
+L:WRITE_FAILED S:Atmel chip write failed\n
+L:CRC_FAIL S:CRC failure: expecting 0x%x, got 0x%x\n
+L:LONG_PACKET S:Read more bytes (%d) than the size of the packet (%d)\n
+L:SHORT_PACKET S:Read less bytes (%d) than the size of the packet (%d)\n
+L:INVALID_SHORT_PACKET S:Packet of length %d is less than the minimum 4 byte size\n
+L:SYS_BUSY_ABORTING_ICMD S:Sorry, system is busy, please try icommand later\n
+L:INVALID_LARGE_READ_REQUEST S:Invalid read request of %d bytes\n
+L:ICMD_FAILED S:icommand failed\n
+L:INVALID_ATMEL_SLOT S:Invalid Atmel slot %d\n
+L:INVALID_ATMEL_BLOCK S:Invalid Atmel OTP block %d\n
+L:READ_SLOT_FAILED S:Read slot failed, read %d bytes instead of 32 bytes\n
+L:WRITE_SLOT_FAILED S:Write slot/block failed, read %d status bytes, data[0] is 0x%x\n
+L:INVALID_BYTE_ADDR S:Invalid byte address %d\n
+L:READ_CONFIG_WORD_FAILED S:Read config word failed, read %d bytes instead of 4 bytes\n
+L:WRITE_CONFIG_WORD_FAILED S:Write config word failed, read %d status bytes, data[0] is 0x%x\n
+L:LOCK_FAILED S:Lock failed, read %d status bytes, data[0] is 0x%x\n
+L:ATMEL_SUBMIT_I2C_SYS_BUSY S:Submit i2c op, but system is busy at step:%d\n
+L:ATMEL_SUBMIT_I2C_1 S:Submit i2c op, opcode:0x%.2x, param1:0x%.2x, param2:0x%.4x\n
+L:ATMEL_SUBMIT_I2C_2 S:Submit i2c op, writeDataSize:%d, readDataSize:%d, completionHandler:0x%x\n
+L:SENDING_ATMEL_I2C_WAKEUP S:Sending Atmel i2c wakeup\n
+L:IDLE_FAILED S:Atmel idle command failed\n
+L:ICMD_SEND S:Atmel icmd sending opCode 0x%02x, param1 0x%02x, param2 0x%04x\n
+L:CRC_WRITE_PACKET_DONE S:Calculated SW CRC for write in %dus\n
+L:CRC_READ_PACKET_DONE S:Calculated SW CRC for read in %dus\n
+L:SW_MAC_DONE S:SW MAC done! digestsMatch=%d. It took %dus\n
+L:RUN_MAC_CALLED_WHILE_IN_PROGRESS S:run mac called while in progress\n
+L:RUN_MAC_CALLED S:Run MAC called, secretKey is at 0x%x, challenge is at 0x%x, completionHandler is at 0x%x\n
+L:HW_MAC_DONE S:HW MAC operation done, returned data at 0x%x, dataSize %d, userPtr 0x%x\n
+L:HW_MAC_DONE_INVALID_ARGS S:HW MAC done got invalid args. Got data at 0x%x, dataSize %d, userPtr 0x%x\n
+L:CHIP_STATE1 S:Atmel chip state is %d, completionHandler is 0x%x, userPtr is 0x%x\n
+L:CHIP_STATE2 S:Atmel chip state readReqSize is %d, simpleCmd is 0x%x, writeBuffer[0-3] in Big endian is 0x%x\n
+L:SET_SPEED S:Atmel chip speed changing from speed %d to speed %d\n
+L:CHIP_STATE3 S:Atmel chip state readBuffer[0-3] in Big endian is 0x%x\n
+L:MAX_I2C_RETRY_EXCEEDED S:Maximum # of i2c retries exceeded\n
+L:I2C_RECOVERY_START S:i2c recovery start attempt %d\n
+L:I2C_RECOVERY_WOKEUP S:i2c recovery did wakeup\n
+L:I2C_RECOVERY_DONE S:i2c recovery done, info is %d\n
+L:ATMEL_WRITE_BUFFER_BOUNDS S:Tried to write outside the bounds of the buffer at wordOffset %d\n
+L:ATMEL_WRITE_DATA_SLOT_OR_OTP_BLOCK_ICMD_COMPLETE S:ICMD write of data slot / OTP block completed\n
+L:ATMEL_READ_CONFIG_WORD_ICMD_COMPLETE S:ICMD read of config word returned data: 0x%x\n
+L:ATMEL_WRITE_CONFIG_WORD_ICMD_COMPLETE S:ICMD write of config word completed\n
+L:ATMEL_LOCK_ZONE_ICMD_COMPLETE S:Lock authentication zone ICMD completed.\n
+L:ATMEL_LOCK_STATUS S:Atmel authentication chip lock status: Data+OTP=%d, Config=%d.\n
+L:ATMEL_WRITE_DATA_BUFFER_DONE S:Atmel data buffer written at word offset %d with value 0x%x.\n
+L:ATMEL_INIT_STEP1 S:Starting initialization sequence\n
+L:ATMEL_INIT_STEP2 S:Atmel chip has woken up\n
+L:ATMEL_INIT_STEP3 S:Initialization is done, success flag is: %d\n
+L:RUN_NONCE_CALLED_WHILE_IN_PROGRESS S:run Nonce called while in progress\n
+L:RUN_NONCE_CALLED S:Run Nonce called, secretKey is at 0x%x, challenge is at 0x%x, completionHandler is at 0x%x\n
+L:ENCRYPT_STEP S:Current Encrypt Step is %d\n
+L:READ_32BYTES S:ATMEL READ 32 BYTES: 0x%04x, 0x%04x, 0x%04x\n
+L:ATMEL_FIFO_FULL S:ATMEL FIFO TASK FULL \n
+L:MAC_FAILED S:MAC challenge failed\n
+L:MAC_PASSED S:MAC challenge passed\n
+L:ATMEL_NOT_EXIST S:Atmel ATSHA204 does not exist\n
+L:ATMEL_TASK_TIME S:Atmel Task current tick is = %d\n
+L:ATMEL_VALIDATION S:Atmel Validation Start\n
+L:ATMEL_INVALID_STATE S:Atmel invalid state\n
+component:UPP_COMPONENT
+L:UPP_INIT S:Upp Initialised \n
+L:UPP_ULP_STATUS S:UppUlpStatus(), status = %d \n
+L:UPP_INTERRUPT S:UPP interrupt %08x\n
+L:UPP_PROCESS_H2D S:Host to Device packet received\n
+L:UPP_PROCESS_D2H S:Device to Host packet processed\n
+L:UPP_UNHANDLED_ISR S:Unhandled Upp ISR ISR0:%08x ISR1:%08x\n
+L:UPP_PACKET_INFO S:Packet Data: %08x Control: %04x bytes rx:%d\n
+L:UPP_END_OF_PACKET S:End of packet time = %d microseconds vlane %d\n
+L:UPP_PACKET_END_PROCESSING S:Packet end, writing device address %x\n
+L:UPP_HAL_SET_ENDPOINT_BAD_BINTERVAL S:Bad bInterval value %d\n
+L:UPP_HAL_SET_ENDPOINT S:Writing to Endpoint table, device:%d number:%d QID:%d\n
+L:UPP_HAL_SET_ENDPOINT_RAW S:                           enable = %d config0 = %08x config1 = %08x\n
+L:UPP_PARSE_CONFIG_DESCRIPTOR_INFO S:New Configuration,  Device: %d Configuration:%d Number of interfaces:%d\n
+L:UPP_INTERFACE_DESCRIPTOR_INFO S:New Interface:%d Alt:%d Number of endpoints:%d\n
+L:UPP_ENDPOINT_ATTRIBUTE_CONTROL S:Endpoint transfer type is Control\n
+L:UPP_ENDPOINT_ATTRIBUTE_ISO S:Endpoint transfer type is Iso\n
+L:UPP_ENDPOINT_ATTRIBUTE_BULK S:Endpoint transfer type is Bulk\n
+L:UPP_ENDPOINT_ATTRIBUTE_INTERRUPT S:Endpoint transfer type is Interrupt\n
+L:UPP_ENDPOINT_ADDRESS S:Endpoint address is %d\n
+L:UPP_LEX_MSG_SET_ENDPOINT S:Endpoint set message, device %d, endpoint %d buffer %d\n
+L:UPP_LEX_MSG_CLEAR_ENDPOINT S:Endpoint clear message, device %d, endpoint %d buffer %d\n
+L:UPP_LEX_MSG_SET_INTERFACE S:Set interface, device %d location %08x\n
+L:UPP_LEX_MSG_REMOVE_DEVICE S:Remove device %d, devicePtr %08x\n
+L:UPP_LEX_MSG_ROUTE_CHANGE_DONE S:Lex Route change done, device %d\n
+L:UPP_REX_MSG_SET_ENDPOINT S:Rex set endpoint, device %d, endpoint %d buffer %d\n
+L:UPP_REX_MSG_CLEAR_ENDPOINT S:Rex cleared endpoint, device %d, endpoint %d buffer %d\n
+L:UPP_REX_MSG_ENDPOINT_NOT_RESPONSIVE S:Rex detected unresponsive endpoint, device %d, endpoint %d buffer %d\n
+L:UPP_REX_MSG_DEVICE_REMOVED S:Rex removed device, device %08x\n
+L:UPP_REX_MSG_SET_INTERFACE S:Rex Set interface, device address %d config settings: %08x\n
+L:UPP_REX_MSG_ROUTE_CHANGE_DONE S:Rex Route change done for device %d  config settings: %08x\n
+L:UPP_LEX_INVALID_BUFFER_ID_ENDPOINT S:Invalid buffer when clearing endpoint %d device %d\n
+L:UPP_TRANSACTION_NOT_AVAILABLE S:Transaction not available!\n
+L:UPP_TRANSACTION_IN_USE S:Transaction already in use, Device Address %d\n
+L:UPP_TRANSACTION_DEVICE_NOT_FOUND S:Get Free Transaction, Device not found, Device Address %d\n
+L:UPP_TRANSACTION_DOWNSTREAM_NOT_FOUND S:Downstream only Transaction not found, Device Address %d, line %d\n
+L:UPP_NO_FREE_TRANSACTIONS S:No free transactions to allocate\n
+L:UPP_ILLEGAL_FREE_TRANSACTION S:Freeing a transaction when none allocated!\n
+L:UPP_ILLEGAL_FREE_TRANSACTION_INDEX S:Illegal free transaction from bad index %d previous %d\n
+L:UPP_FREE_ABANDONED_TRANSACTION S:Freeing abandoned transaction, device address %d location %8x\n
+L:UPP_CORRUPT_OPEN_LIST S:Corrupt Open list index %d line %d\n
+L:UPP_ILLEGAL_TRANSACTION_INDEX S:Index %d does not match transaction given line %d\n
+L:UPP_TRANSACTION_WATERMARK_CHANGE S:UPP opentransactionHighWaterMark: %d\n
+L:UPP_TRANSACTION_HOST_DUPLICATE_SEQ S:**Host duplicate seq number %d device %02d time stamp %d skipping rest of packet\n
+L:UPP_TRANSACTION_DEVICE_DUPLICATE_SEQ S:**Device duplicate seq number %d device %02d time stamp %d skipping rest of packet\n
+L:UPP_TRANSACTION_ILLEGAL_HOST_PACKET S:Host packet ILLEGAL!  Device %d multiple setup packet received, seq %d timestamp %d\n
+L:UPP_TRANSACTION_ILLEGAL_SETUP_PACKET S:ILLEGAL setup packet! Device %d, transaction type %d, sequence %d\n
+L:UPP_TRANSACTION_SET_ADDRESS S:Set address, new address = %d route string = %x timeStamp %d\n
+L:UPP_TRANSACTION_GET_CONFIGURATION S:Get Configuration, device address %d route %x timeStamp %d\n
+L:UPP_MAX_DEVICE_OVER S:Can't allocated new device. No more available slot\n
+L:UPP_MAX_ENDPOINT_OVER S:Can't allocated new endpoint. No more available slot\n
+L:UPP_ADD_SAME_DEVICE S:The device address(%d) and route (0x%8x)already exist\n
+L:UPP_ADD_ADDRESS_EXIST S:The device address(%d) is already exist, Can't add it!\n
+L:UPP_ADD_ROUTE_EXIST S:The device route string(0x%8x) is already in use by device %d!\n
+L:UPP_NULL_DEVICE S:Device pointer is NULL! address %d at line %d\n
+L:UPP_DEVICE_ALREADY_PENDING S:Device add already pending %08x\n
+L:UPP_WRONG_ENDPOINT S:Endpoint index (%d) is wrong\n
+L:UPP_FOUND_REMOVE_DEVICE S:Found the device to be removed: addr(%d), route(0x%x), mem address(0x%X) \n
+L:UPP_DEVICE_ADD S:Add device request: dev addr(%d), route(0x%x), mem address(0x%X) \n
+L:UPP_DEVICE_REMOVE S:Remove device: dev addr(%d), route(0x%x), mem address(0x%X) \n
+L:UPP_DEVICE_FREE S:Free device: dev addr(%d), route(0x%x), mem address(0x%X) \n
+L:UPP_INVALID_DEVICE_FREE S:Free device %08x called with unexpected device pointer %08x\n
+L:UPP_DEVICE_LOCATION S:\n\n                             Device Address %3d. Route Path: 0x%08x. ======================\n
+L:UPP_DEVICE_ENDPOINT S:    Endpoint: Number:%2d, type %d            Route:0x%08x, \n
+L:UPP_DEVICE_ENDPOINT_DETAIL S:              Active|Set|Clear|Dir: 0x%04x Max Burst: %d bInterval %d\n
+L:UPP_ENDPOINT_NEXT S:              Current:0x%08x, Next endpoint 0x%08x, Prev endpoint 0x%08x\n
+L:UPP_ENDPOINT_FREE S:Free endpoint: Number:%d, Type:%d route:0x%08x\n
+L:UPP_DEVICE_NEXT S:Next device 0x%x, Prev device 0x%x\n
+L:UPP_DEVICE_ADDR S:Allocated Memory for address %d is 0x%08X\n
+L:UPP_NUM_DEVICES S:\n             Number of allocated devices:%d, free devices:%d\n
+L:UPP_NUM_ENDPOINTS S:               Number of allocated endpoints:%d, free endpoints:%d\n\n
+L:UPP_NEW_ENDPOINT S:New endpoint: route 0x%x, number %d, type %d\n
+L:UPP_DEVICE_SET_INTERFACE S:Set Interface: Device %d value %08x\n
+L:UPP_DEVICE_SET_CONFIFGURATION S:Set Configuration: Device %d Route 0x%08x Config value: %d\n
+L:UPP_SAME_ACTIVE_INTERFACE S:Active interface is the same with before. Route: 0x%x endpoint %08x\n
+L:UPP_NO_ENDPOINTS_FOR_INTERFACE S:No endpoints found for the specified interface Route: 0x%08x\n
+L:UPP_ACTIVE_INTERFACE S:Active interface callback. Endpoint Route: 0x%x, Number:%d\n
+L:UPP_INACTIVE_INTERFACE S:Inactive interface callback. Endpoint Route: 0x%x, Number:%d\n
+L:UPP_NO_FREE_INTERFACES S:No free interfaces available. Interface Route: 0x%x\n
+L:UPP_INTERFACE_LINK_ERROR S:Error when adding interface to active list. Interface Route: 0x%x\n
+L:UPP_NO_ENDPOINTS_MARKED_CLEAR S:No endpoints found that were marked to be cleared\n
+L:UPP_NO_ENDPOINTS_MARKED_SET S:No endpoints found that were marked to be set\n
+L:UPP_ID_MGR_FIFO_WRENG_STATS0_PKT_MAX_BYTE_CNT_ERR S:STAT:UPP upp->id_mgr_fifo->write_engine->stats0->pkt_max_byte_cnt_err: %d\n
+L:UPP_ID_MGR_FIFO_WRENG_STATS0_FIFO_FULL_ERR S:STAT:UPP upp->id_mgr_fifo->write_engine->stats0->fifo_full_err: %d\n
+L:UPP_ID_MGR_FIFO_WRENG_STATS0_PKT_ERR S:STAT:UPP upp->id_mgr_fifo->write_engine->stats0->pkt_err: %d\n
+L:UPP_ID_MGR_FIFO_WRENG_STATS0_PKT_SOP_ERR S:STAT:UPP upp->id_mgr_fifo->write_engine->stats0->pkt_sop_err: %d\n
+L:UPP_ID_MGR_FIFO_WRENG_STATS0_DRP_PKT_RD S:STAT:UPP upp->id_mgr_fifo->write_engine->stats0->drp_pkt_rd: %d\n
+L:UPP_ID_MGR_FIFO_WRENG_STATS0_DRP_PKT_WR S:STAT:UPP upp->id_mgr_fifo->write_engine->stats0->drp_pkt_wr: %d\n
+L:UPP_ID_MGR_FIFO_WRENG_STATS0_DRP_PKT S:STAT:UPP upp->id_mgr_fifo->read_engine->stats0->drp_pkt: %d\n
+L:UPP_ISO_REX_FIFO_WRENG_STATS0_PKT_MAX_BYTE_CNT_ERR S:STAT:UPP upp->iso_rex_fifo->write_engine->stats0->pkt_max_byte_cnt_err: %d\n
+L:UPP_ISO_REX_FIFO_WRENG_STATS0_FIFO_FULL_ERR S:STAT:UPP upp->iso_rex_fifo->write_engine->stats0->fifo_full_err: %d\n
+L:UPP_ISO_REX_FIFO_WRENG_STATS0_PKT_ERR S:STAT:UPP upp->iso_rex_fifo->write_engine->stats0->pkt_err: %d\n
+L:UPP_ISO_REX_FIFO_WRENG_STATS0_PKT_SOP_ERR S:STAT:UPP upp->iso_rex_fifo->write_engine->stats0->pkt_sop_err: %d\n
+L:UPP_ISO_REX_FIFO_WRENG_STATS0_DRP_PKT_RD S:STAT:UPP upp->iso_rex_fifo->write_engine->stats0->drp_pkt_rd: %d\n
+L:UPP_ISO_REX_FIFO_WRENG_STATS0_DRP_PKT_WR S:STAT:UPP upp->iso_rex_fifo->write_engine->stats0->drp_pkt_wr: %d\n
+L:UPP_ISO_REX_FIFO_WRENG_STATS0_DRP_PKT S:STAT:UPP upp->iso_rex_fifo->read_engine->stats0->drp_pkt: %d\n
+L:UPP_CTRL_TRFR_H2D_FIFO_WRENG_STATS0_PKT_MAX_BYTE_CNT_ERR S:STAT:UPP upp->ctrl_trfr_h2d_fifo->write_engine->stats0->pkt_max_byte_cnt_err: %d\n
+L:UPP_CTRL_TRFR_H2D_FIFO_WRENG_STATS0_FIFO_FULL_ERR S:STAT:UPP upp->ctrl_trfr_h2d_fifo->write_engine->stats0->fifo_full_err: %d\n
+L:UPP_CTRL_TRFR_H2D_FIFO_WRENG_STATS0_PKT_ERR S:STAT:UPP upp->ctrl_trfr_h2d_fifo->write_engine->stats0->pkt_err: %d\n
+L:UPP_CTRL_TRFR_H2D_FIFO_WRENG_STATS0_PKT_SOP_ERR S:STAT:UPP upp->ctrl_trfr_h2d_fifo->write_engine->stats0->pkt_sop_err: %d\n
+L:UPP_CTRL_TRFR_H2D_FIFO_WRENG_STATS0_DRP_PKT_RD S:STAT:UPP upp->ctrl_trfr_h2d_fifo->write_engine->stats0->drp_pkt_rd: %d\n
+L:UPP_CTRL_TRFR_H2D_FIFO_WRENG_STATS0_DRP_PKT_WR S:STAT:UPP upp->ctrl_trfr_h2d_fifo->write_engine->stats0->drp_pkt_wr: %d\n
+L:UPP_CTRL_TRFR_H2D_FIFO_WRENG_STATS0_DRP_PKT S:STAT:UPP upp->ctrl_trfr_h2d_fifo->read_engine->stats0->drp_pkt: %d\n
+L:UPP_CTRL_TRFR_H2D_FIFO_WRENG_STATS0_NFIFO_DCOUNT S:STAT:UPP upp->ctrl_trfr_h2d_fifo->write_engine->stats0->nfifo_dcount: %d\n
+L:UPP_CTRL_TRFR_H2D_FIFO_WRENG_STATS0_PFIFO_DCOUNT S:STAT:UPP upp->ctrl_trfr_h2d_fifo->write_engine->stats0->pfifo_dcount: %d\n
+L:UPP_CTRL_TRFR_D2H_FIFO_WRENG_STATS0_PKT_MAX_BYTE_CNT_ERR S:STAT:UPP upp->ctrl_trfr_d2h_fifo->write_engine->stats0->pkt_max_byte_cnt_err: %d\n
+L:UPP_CTRL_TRFR_D2H_FIFO_WRENG_STATS0_FIFO_FULL_ERR S:STAT:UPP upp->ctrl_trfr_d2h_fifo->write_engine->stats0->fifo_full_err: %d\n
+L:UPP_CTRL_TRFR_D2H_FIFO_WRENG_STATS0_PKT_ERR S:STAT:UPP upp->ctrl_trfr_d2h_fifo->write_engine->stats0->pkt_err: %d\n
+L:UPP_CTRL_TRFR_D2H_FIFO_WRENG_STATS0_PKT_SOP_ERR S:STAT:UPP upp->ctrl_trfr_d2h_fifo->write_engine->stats0->pkt_sop_err: %d\n
+L:UPP_CTRL_TRFR_D2H_FIFO_WRENG_STATS0_DRP_PKT_RD S:STAT:UPP upp->ctrl_trfr_d2h_fifo->write_engine->stats0->drp_pkt_rd: %d\n
+L:UPP_CTRL_TRFR_D2H_FIFO_WRENG_STATS0_DRP_PKT_WR S:STAT:UPP upp->ctrl_trfr_d2h_fifo->write_engine->stats0->drp_pkt_wr: %d\n
+L:UPP_CTRL_TRFR_D2H_FIFO_WRENG_STATS0_DRP_PKT S:STAT:UPP upp->ctrl_trfr_d2h_fifo->read_engine->stats0->drp_pkt: %d\n
+L:UPP_CTRL_TRFR_D2H_FIFO_WRENG_STATS0_NFIFO_DCOUNT S:STAT:UPP upp->ctrl_trfr_d2h_fifo->write_engine->stats0->nfifo_dcount: %d\n
+L:UPP_CTRL_TRFR_D2H_FIFO_WRENG_STATS0_PFIFO_DCOUNT S:STAT:UPP upp->ctrl_trfr_d2h_fifo->write_engine->stats0->pfifo_dcount: %d\n
+L:UPP_QUEUE_STATE_TRANSITION S:Queue manager: old state = %d, new state = %d on event = %d\n
+L:UPP_QUEUE_INVALID_EVENT S:Queue manager: got invalid event %d in state %d\n
+L:UPP_QUEUE_SPURIOUS_INTERRUPT_EVENT S:Queue manager: spurious interrupt received %x\n
+L:UPP_ENDPOINT_ENTRY_SET S:Set Endpoint device %d endpoint %d buffer ID %d\n
+L:UPP_ENDPOINT_ENTRY_CLEARED S:Clear Endpoint device %d endpoint %d buffer ID %d\n
+L:UPP_NO_FREE_ISO_BUFFERS S:No more accelerated queues available!\n
+L:UPP_ICMD_ENABLED S:UPP is enabled\n
+L:UPP_ICMD_DISABLED S:UPP is disabled\n
+L:UPP_ICMD_CONTROL_TRANSFER_ENABLED S:UPP control transfer is enabled\n
+L:UPP_ICMD_CONTROL_TRANSFER_DISABLED S:UPP control transfer is disabled\n
+L:IS_UPP_ISO_ENABLE_STATUS S:UPP ISO enabled (0 = disabled) = %d \n
+L:IS_UPP_CONTROL_TRANSFER_ENABLED S:UPP control transfer = %d\n
+component:I2C_COMPONENT
+L:I2C_FIFO_OVER_FLOW S:I2C fifo overflow\n
+L:I2C_FIFO_UNDER_FLOW S:I2C fifo underflow\n
+L:I2C_OPERATIONS S:I2C: %d tasks in fifo, current task: device 0x%x, i2c op 0x%x\n
+L:I2C_NO_OPERATIONS S:I2C: no operations in progress\n
+L:I2C_WAKE_LOG S:i2c: performing wake\n
+L:I2C_WAKE_DONE S:i2c: wake done\n
+L:I2C_READ_LOG S:i2c: read of device %d, for %d bytes\n
+L:I2C_READ_DONE S:i2c: done read %d bytes, contents 0x%x\n
+L:I2C_WRITE_LOG S:i2c: write device %d, byteCount %d\n
+L:I2C_WRITE_DONE S:i2c: write complete\n
+L:I2C_WRITE_FAILED S:i2c: write failed\n
+L:I2C_TRN_ERROR S:i2c: TRN ERR (0x%x)\n
+L:TIME_MARKER_ S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing \n
+L:TIME_MARKER_I2C_START S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing i2cStartInterface\n
+L:TIME_MARKER_I2C_WAKE_START S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing i2c wake start\n
+L:TIME_MARKER_I2C_WAKE_STOP S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing \n
+L:TIME_MARKER_FINALIZE_OP S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing finalize operation\n
+L:TIME_MARKER_SUBMIT_OP S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing submit operation\n
+L:I2C_INVALID_TASK_STATE S:i2c: invalid state at line %d, device 0x%x, operation 0x%x\n
+L:I2C_READ_TOO_MANY_BYTES S:i2c read too many bytes at line %d. Expected %d\n
+L:I2C_IRQ_LOG S:Interrupts 0x%x triggered\n
+L:I2C_IRQ_UNSERVICED S:Interrupts 0x%x were unserviced\n
+L:IRQ_HANDLER_NOT_SET S:Interrupt Handler is not set for pin %d\n
+L:REGISTERING_IRQ S:Registering Interrrupt handler for pin %d\n
+L:SERVICING_IRQ S:Servicing Interrupt for pin %d\n
+L:DISABLING_IRQ S:Disabling Interrupt for pin %d\n
+L:ENABLING_IRQ S:Enabling Interrupt for pin %d\n
+L:I2C_START_READ S:I2C read started for %d bytes\n
+L:I2C_START_WRITE S:I2C write started\n
+L:I2C_READ_FINISH S:I2C read finished\n
+L:I2C_WRITE_FINISH S:I2C write finished\n
+L:I2C_DO_WAKE_OP S:I2C do wake op %d\n
+L:I2C_WAKE_COMPLETE S:I2C wake complete\n
+L:I2C_WRITE2 S:i2c write data is 0x%x 0x%x\n
+L:I2C_CONTROLREG_READ S:I2C Control Reg is 0x%x\n
+L:I2C_START_WRITE_READ S:I2C writeRead started for %d bytes to write, %d bytes to read\n
+L:I2C_OPERATIONS_QUEUED S:I2C: %d operations queued, nothing in progress\n
+L:I2C_START_WRITE_READ_BLOCK S:I2C writeReadBlock started for %d bytes to write, %d maximum bytes to read\n
+L:I2C_RANDOM_READ_1BYTE_RESP S:I2C Random 1 Byte Read: Register: 0x%x; Value: 0x%x\n
+L:I2C_ICMD_READ_ERR S:I2C icmd read error - max read of 8 bytes\n
+L:I2C_ICMD_WRITEREAD_ERR S:I2C icmd write read error - max read of 8 bytes\n
+L:I2C_ICMD_WRITEREAD_DONE S:I2C icmd write read %d bytes, data 0x%x 0x%x\n
+L:UNSUPPORTED_PORT S:i2cSwitchPort = %d is unsupported\n
+L:ADDRESS_PORT_ALREADY_EXIST S:i2cAddress = 0x%x, portNumber = 0x%x already exist in the i2cDeviceList\n
+L:ADDRESS_NOT_EXISTS_FOR_HANDLE S:i2cAddress = 0x%x is not registered to TI switch port %d\n
+L:SETUP_SWITCH_FOR_ACCESS S:Setting up I2C switch for access to address %d on port %d\n
+L:CTRLLR_I2C_CONTROLLER_FIFO_OVERFLOW S:I2C operation FIFO overflow at line %d\n
+L:CTRLLR_I2C_CONTROLLER_FIFO_UNDERFLOW S:I2C operation FIFO underflow at line %d\n
+L:CTRLLR_UNHANDLED_SWITCH_CASE S:Execution reached an unhandled case of a switch statement.\n
+L:CTRLLR_I2C_CTRL_WRITE_ICMD_0 S:I2C controller write - deviceAddress=0x%x, speed=%d, switchPort=%d\n
+L:CTRLLR_I2C_CTRL_WRITE_ICMD_1 S:    byteCount=%d, dataMSW=0x%x, dataLSW=0x%x\n
+L:CTRLLR_I2C_CTRL_READ_ICMD_0 S:I2C controller read - deviceAddress=0x%x, speed=%d, switchPort=%d\n
+L:CTRLLR_I2C_CTRL_READ_ICMD_1 S:    byteCount=%d\n
+L:CTRLLR_I2C_CTRL_WRITE_READ_ICMD_0 S:I2C controller write-read - deviceAddress=0x%x, speed=%d, switchPort=%d\n
+L:CTRLLR_I2C_CTRL_WRITE_READ_ICMD_1 S:    writeByteCount=%d, writeData=0x%x, readByteCount=%d\n
+L:CTRLLR_I2C_CTRL_BLOCK_WRITE_READ_ICMD_0 S:I2C controller block write-read - deviceAddress=0x%x, speed=%d, switchPort=%d\n
+L:CTRLLR_I2C_CTRL_BLOCK_WRITE_READ_ICMD_1 S:    writeByteCount=%d, writeData=0x%x\n
+L:CTRLLR_I2C_CTRL_WRITE_COMPLETE S:I2C controller write complete.  Success=%d.\n
+L:CTRLLR_I2C_CTRL_READ_COMPLETE S:I2C controller read complete.  byteCount=%d, dataMSW=0x%x, dataLSW=0x%x.\n
+L:CTRLLR_I2C_CTRL_WRITE_READ_COMPLETE S:I2C controller write-read complete.  byteCount=%d, dataMSW=0x%x, dataLSW=0x%x.\n
+L:CTRLLR_I2C_CTRL_BLOCK_WRITE_READ_COMPLETE S:I2C controller block write-read complete.  byteCount=%d, dataMSW=0x%x, dataLSW=0x%x.\n
+L:CTRLLR_INVALID_I2C_ADDRESS S:Invalid I2C address: 0x%x\n
+L:CTRLLR_INVALID_I2C_SPEED S:Invalid I2C speed: %d\n
+L:CTRLLR_INVALID_SWITCH_PORT S:Invalid I2C switch port: %d\n
+L:CTRLLR_INVALID_BYTE_COUNT S:Invalid byte count. Given: %d, Max: %d.\n
+L:CTRLLR_INVALID_MUX_PORT S:Invalid I2C rtl Mux port: %d, line: %d\n
+L:I2C_POOL_IS_FULL S:I2C memory pool is full with size = %d, can't allocate a new element\n
+L:I2C_WRITE_GO_TIMEOUT S:I2C Blocking write timeout on Go bit. i2c_control: %x\n
+L:I2C_READ_GO_TIMEOUT S:I2C Blocking read timeout on Go bit\n
+L:I2C_WRITE_READ_GO_TIMEOUT S:I2C Blocking write-read timeout on Go bit\n
+L:I2C_BLOCKING_OP_IN_PROGRESS S:I2C Blocking (device:0x%x) cancelled - op (device:0x%x) in progress at line %d\n
+L:I2C_BLOCKING_ERROR S:I2C Blocking error at line %d\n
+L:I2C_FIFO_OVERFLOW_CALLBACK S:I2C FIFO overflow. Callback address = 0x%x\n
+L:I2C_FIFO_PRINT_CALLBACK S:I2C fifo idx = %d; callback = 0x%x\n
+L:I2C_UNEXPECTED_INT_DONE S:Unexpected I2C Interrupt\n
+L:I2C_SWITCH_SELECT_PORTS S:Reconfiguring I2C switch.  New ports enabled=0x%x\n
+L:I2C_CONTROL_SWITCH_ERROR S:Tried control I2C switch during operation\n
+component:I2C_SLAVE_COMPONENT
+L:I2C_VERSION1_DATA S:I2C Slave Version %d.%d.%d\n
+L:I2C_READ_DATA S:I2C Read data: %x, Fifo level: %x\n
+L:I2C_TRANSACTION_COMPLETE S:Transaction Complete\n
+L:I2C_READ_COMMAND S:I2C Read command: %02d\n
+L:I2C_BUSY S:Transaction Complete: %d\n
+component:MDIOD_COMPONENT
+L:MDIOD_FOUND_PHY_AT_MDIO_ADDR S:Found a PHY at MDIO address %d\n
+L:MDIOD_NULL_COMPLETION_HANDLER S:Null completion handler passed, line %d\n
+L:MDIOD_PHY_FIFO_FULL S:PHY MDIO operation FIFO full. Can't submit Callback=0x%x, Active Callback=0x%x, Line=%d\n
+L:UNSUPPORTED_BMSR_ERCAP S:The PHY does not suppport extended capability registers\n
+L:UNSUPPORTED_BMSR_ANEGCAPABLE S:The PHY does not support auto negotiation\n
+L:UNSUPPORTED_BMSR_ESTATEN S:The PHY does not support 1000Base-T extended status register\n
+L:UNSUPPORTED_ESTATUS_1000_TFULL S:The PHY does not support 1000Base-T full duplex\n
+L:USELESS_PHY_SETTING S:Useless PHY Setting\n
+L:LINK_UP S:PHY link up\n
+L:LINK_DOWN S:PHY link down\n
+L:ICMD_DECODE_PHY_CONTROL_REG S:PHY control reg 0x%x\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE1 S:  PHY in reset\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE2 S:  PHY in loopback mode\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE3 S:  PHY auto-negotiate enabled\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE4 S:  PHY auto-negotiate NOT enabled\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE5 S:  PHY in power down mode\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE6 S:  PHY is electrically isolated from GMII\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE7 S:  PHY auto-negotiate restarting\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE8 S:  PHY auto-negotiate restart complete\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE9 S:  PHY full duplex\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE10 S:  PHY half duplex\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE11 S:  PHY collision test enabled\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE12 S:  PHY speed selected 1000Mbps\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE13 S:  PHY speed selected 100Mbps\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE14 S:  PHY speed selected 10Mbps\n
+L:ICMD_DECODE_PHY_STATUS_REG S:PHY status reg 0x%x\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE1 S:  PHY 100BASE-T4 capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE2 S:  PHY 100BASE-TX full duplex capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE3 S:  PHY 100BASE-X half duplex capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE4 S:  PHY 10BASE-T full duplex capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE5 S:  PHY 10BASE-T half duplex capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE6 S:  PHY 100BASE-T2 full duplex capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE7 S:  PHY 100BASE-T2 half duplex capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE8 S:  PHY extended status information in reg 0x0F\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE9 S:  PHY auto-negotiation complete\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE10 S:  PHY remote fault detected\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE11 S:  PHY auto-negotiate capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE12 S:  PHY auto-negotiate NOT capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE13 S:  PHY link up\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE14 S:  PHY link down\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE15 S:  PHY jabber condition detected\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE16 S:  PHY extended register capabilities\n
+L:MDIOD_ETH_PHY_NOT_FOUND S:No ethernet PHY was detected.\n
+L:MDIOD_DEBUG_D_X S:MDIOD DGB LINE %d VAL 0x%x\n
+L:MDIOD_ETH_PHY_ISR_NOT_GEN S:MDIOD not EnetPHY generated ISR\n
+L:MDIOD_ETH_PHY_ISR_NOT_LINK_GEN S:MDIOD not EnetPHY Link generated ISR, value: %x\n
+L:MDIOD_ETH_PHY_ISR_GEN S:MDIOD EnetPHY generated ISR: 0x%x\n
+L:ENET_PHY_CHANGE_PHY_SPEED S:Changing PHY speed to %d\n
+L:UNSUPPORTED_1000MBPS_SPEED_CHANGE_REQUEST S:Requested speed of 1000Mbps not supported by this PHY\n
+component:AQUANTIA_COMPONENT
+L:AQUANTIA_PMA_RECEIVE_LINK_STATUS S:STAT: Aquantia PMA Receive Link Status (1.1.2): %d\n
+L:AQUANTIA_PMA_TRANSMIT_FAULT S:STAT: Aquantia PMA Transmit Fault (1.8.B): %d\n
+L:AQUANTIA_PMA_RECEIVE_FAULT S:STAT: Aquantia PMA Receive Fault (1.8.A): %d\n
+L:AQUANTIA_PMA_LP_RETRAIN_COUNT S:STAT: Aquantia PMA LP Fast Retrain Count (1.93.F:B): %d\n
+L:AQUANTIA_PMA_LD_RETRAIN_COUNT S:STAT: Aquantia PMA LD Fast Retrain Count (1.93.A:6): %d\n
+L:AQUANTIA_PMA_RETRAIN_SIGNAL_TYPE S:STAT: Aquantia PMA Fast Retrain Signal Type (1.93.2:1): %d\n
+L:AQUANTIA_PMA_NUM_LINK_RECOVERY S:STAT: Aquantia PMA Number Of Link Recovery Since Last AutoNeg (1.E811.F:8): %d\n
+L:AQUANTIA_PMA_NUM_RFI_RECOVERY S:STAT: Aquantia PMA Number Of RFI Training Link Recovery Since Last AutoNeg (1.E811.7:0): %d\n
+L:AQUANTIA_PCS_TRANSMIT_FAULT S:STAT: Aquantia PCS Transmit Fault (3.8.B): %d\n
+L:AQUANTIA_PCS_RECEIVE_FAULT S:STAT: Aquantia PCS Receive Fault (3.8.A): %d\n
+L:AQUANTIA_PCS_10G_LINK_STATUS S:STAT: Aquantia PCS 10G Receive Link Status (3.20.C): %d\n
+L:AQUANTIA_PCS_10G_HIGH_BER S:STAT: Aquantia PCS 10G BASE-T High BER (3.20.1): %d\n
+L:AQUANTIA_PCS_10G_BLOCK_LOCK S:STAT: Aquantia PCS 10G Block Lock (3.20.0): %d\n
+L:AQUANTIA_PCS_BLOCK_LOCK_LATCHED S:STAT: Aquantia PCS Block Lock Latched (3.21.F): %d\n
+L:AQUANTIA_PCS_HIGH_BER_LATCHED S:STAT: Aquantia PCS 10G BASE-T High BER Latched (3.21.E): %d\n
+L:AQUANTIA_PCS_ERROR_FRAME_COUNT S:STAT: Aquantia PCS LDPC Errored Frame Counter (3.21.D:8): %d\n
+L:AQUANTIA_PCS_ERROR_BLOCK_COUNT S:STAT: Aquantia PCS Errored 65B Block Counter (3.21.7:0): %d\n
+L:AQUANTIA_PCS_SYSTEM_INTERFACE_FAULT S:STAT: Aquantia PCS System Interface Transmit Fault (3.C8F0.0): %d\n
+L:AQUANTIA_PCS_XAUI_INVALID_BLOCK S:STAT: Aquantia PCS XAUI Transmit Invalid 64B Block Detected (3.CC00.0): %d\n
+L:AQUANTIA_PCS_TX_10G_BAD_FRAME_COUNT S:STAT: Aquantia PCS Transmit Vendor 10GBASE-T Bad Frame Counter (3.C823:C822): %d\n
+L:AQUANTIA_PCS_UNCORRECTED_FRAME_COUNT S:STAT: Aquantia PCS Receive Vendor Uncorrected Frame Counter (3.E821:E820): %d\n
+L:AQUANTIA_PCS_LDPC_CORRECTED_F4_ITERATION_COUNT S:STAT: Aquantia PCS LDPC corrected frames 4 iteration Counter (3.E847:E846): %d\n
+L:AQUANTIA_PCS_LDPC_CORRECTED_F5_ITERATION_COUNT S:STAT: Aquantia PCS LDPC corrected frames 5 iteration Counter (3.E849:E848): %d\n
+L:AQUANTIA_PCS_LDPC_CORRECTED_F6_ITERATION_COUNT S:STAT: Aquantia PCS LDPC corrected frames 6 iteration Counter (3.E850): %d\n
+L:AQUANTIA_PCS_LDPC_CORRECTED_F7_ITERATION_COUNT S:STAT: Aquantia PCS LDPC corrected frames 7 iteration Counter (3.E851): %d\n
+L:AQUANTIA_PCS_LDPC_CORRECTED_F8_ITERATION_COUNT S:STAT: Aquantia PCS LDPC corrected frames 8 iteration Counter (3.E852): %d\n
+L:AQUANTIA_PCS_CRC_ERROR S:STAT: Aquantia PCS Rx CRC Frame error (3.EC00.F): %d\n
+L:AQUANTIA_PCS_LDPC_DECODE_FAILURE S:STAT: Aquantia PCS LDPC decode failure (3.EC00.E): %d\n
+L:AQUANTIA_PCS_LOCAL_FAULT_DETECT S:STAT: Aquantia PCS RPL local fault detect (3.EC00.B): %d\n
+L:AQUANTIA_PCS_LOF_DETECT S:STAT: Aquantia PCS RPL LOF detect (3.EC00.A): %d\n
+L:AQUANTIA_PCS_40G_BIP_LOCK S:STAT: Aquantia PCS RPL 40G BIP lock (3.EC00.9): %d\n
+L:AQUANTIA_PCS_INVALID_65B_BLOCK S:STAT: Aquantia PCS Invalid Rx 65B block (3.EC00.8): %d\n
+L:AQUANTIA_PCS_LDPC_ERROR_EXCEEDED S:STAT: Aquantia PCS Rx LDPC consecutive errored frame threshold exceeded (3.EC00.5): %d\n
+L:AQUANTIA_PHY_TX_FAULT S:STAT: Aquantia PHY Transmit Fault (4.8.B): %d\n
+L:AQUANTIA_PHY_RX_FAULT S:STAT: Aquantia PHY Receive Fault (4.8.A): %d\n
+L:AQUANTIA_PHY_XGXS_LANE_ALIGN S:STAT: Aquantia PHY XGXS Lane Alignment Status (4.18.C): %d\n
+L:AQUANTIA_PHY_LANE_SYNC S:STAT: Aquantia PHY Lane Sync (4.18.3:0): %x\n
+L:AQUANTIA_PHY_TX_BAD_FRAME_COUNT S:STAT: Aquantia PHY XS Transmit (XAUI Rx) Bad Frame Counter (4.C805:C804): %d\n
+L:AQUANTIA_PHY_XAUI_RX_DELETION S:STAT: Aquantia PHY XAUI Rx Sequence Ordered Set Deletion (4.CC01.D): %d\n
+L:AQUANTIA_PHY_RXAUI_LANE_ALIGN_LOCK_B S:STAT: Aquantia PHY RXAUI Lane Alignment Lock Status [1:0] (4.CC01.B): 0x%x\n
+L:AQUANTIA_PHY_RXAUI_LANE_ALIGN_LOCK_A S:STAT: Aquantia PHY RXAUI Lane Alignment Lock Status [1:0] (4.CC01.A): 0x%x\n
+L:AQUANTIA_PHY_TX_RESERVED_XGMII_CHAR S:STAT: Aquantia PHY Reserved XGMII Character Received (4.CC01.9): 0x%x\n
+L:AQUANTIA_PHY_TX_INVALID_XGMII_CHAR S:STAT: Aquantia PHY XAUI Tx Invalid XGMII Character Received (4.CC01.8): %d\n
+L:AQUANTIA_PHY_TX_CODE_VIOLATION_ERR_1 S:STAT: Aquantia PHY XAUI Tx Code Violation Error For Lane 0 [3:0] (4.CC01.4): %x\n
+L:AQUANTIA_PHY_TX_CODE_VIOLATION_ERR_2 S:STAT: Aquantia PHY XAUI Tx Code Violation Error For Lane 1 [3:0] (4.CC01.5): %x\n
+L:AQUANTIA_PHY_TX_CODE_VIOLATION_ERR_3 S:STAT: Aquantia PHY XAUI Tx Code Violation Error For Lane 2 [3:0] (4.CC01.6): %x\n
+L:AQUANTIA_PHY_TX_CODE_VIOLATION_ERR_4 S:STAT: Aquantia PHY XAUI Tx Code Violation Error For Lane 3 [3:0] (4.CC01.7): %x\n
+L:AQUANTIA_PHY_TX_RUN_DISPARITY_ERR_1 S:STAT: Aquantia PHY XAUI Tx Running Disparity Error For Lane 0 [3:0] (4.CC01.0): 0x%x\n
+L:AQUANTIA_PHY_TX_RUN_DISPARITY_ERR_2 S:STAT: Aquantia PHY XAUI Tx Running Disparity Error For Lane 1 [3:0] (4.CC01.1): 0x%x\n
+L:AQUANTIA_PHY_TX_RUN_DISPARITY_ERR_3 S:STAT: Aquantia PHY XAUI Tx Running Disparity Error For Lane 2 [3:0] (4.CC01.2): 0x%x\n
+L:AQUANTIA_PHY_TX_RUN_DISPARITY_ERR_4 S:STAT: Aquantia PHY XAUI Tx Running Disparity Error For Lane 3 [3:0] (4.CC01.3): 0x%x\n
+L:AQUANTIA_PHY_RX_BAD_FRAME_COUNT S:STAT: Aquantia PHY XS Receive (XAUI Tx) Rx Bad Frame Counter (4.E805:E804): %d\n
+L:AQUANTIA_PHY_USX_AUTONEGO_NUMBER S:STAT: Aquantia PHY Number of USX Aneg Restarts [F:0] (4.E810.F:0): %d\n
+L:AQUANTIA_PHY_AUTONEGO_STATUS S:STAT: Aquantia PHY System interface Autoneg Status [1:0] (4.E812.F:E): %d\n
+L:AQUANTIA_PHY_RX_LINK_UP S:STAT: Aquantia PHY Rx Link Up (4.E812.D): %d\n
+L:AQUANTIA_PHY_TX_READY S:STAT: Aquantia PHY Tx Ready (4.E812.C): %d\n
+L:AQUANTIA_PHY_RX_RESERVED_XGMII_CHAR S:STAT: Aquantia PHY Reserved XGMII Character Received from PCS (4.EC00.F): %d\n
+L:AQUANTIA_PHY_RX_INVALID_XGMII_CHAR S:STAT: Aquantia PHY Invalid XGMII Character Received from PCS (4.EC00.E): %d\n
+L:AQUANTIA_PHY_RX_LINK_STATUS_MSG S:STAT: Aquantia PHY Link status Message Received from PCS (4.EC00.D): %d\n
+L:AQUANTIA_AUTONEG_LINK_PULSE_DETECT S:STAT: Aquantia AUTO-NEG Link Pulse Detect (7.CC01.F): %d\n
+L:AQUANTIA_AUTONEG_LINK_CONNECT S:STAT: Aquantia AUTO-NEG Link Connect / Disconnect (7.CC01.0): %d\n
+L:AQUANTIA_GLOBAL_HIGH_TEMP_FAIL S:STAT: Aquantia GLOBAL High Temperature Failure (1E.CC00.E): %d\n
+L:AQUANTIA_GLOBAL_LOW_TEMP_FAIL S:STAT: Aquantia GLOBAL Low Temperature Failure (1E.CC00.D): %d\n
+L:AQUANTIA_GLOBAL_HIGH_TEMP_WARNING S:STAT: Aquantia GLOBAL High Temperature Warning (1E.CC00.C): %d\n
+L:AQUANTIA_GLOBAL_LOW_TEMP_WARNING S:STAT: Aquantia GLOBAL Low Temperature Warning (1E.CC00.B): %d\n
+L:AQUANTIA_GLOBAL_DEVICE_FAULT S:STAT: Aquantia GLOBAL Device Fault (1E.CC00.4): %d\n
+L:AQUANTIA_GLOBAL_FAST_LINK_DROP_FAULT S:STAT: Aquantia GLOBAL Fast Link Drop (1E.CC01.A): %d\n
+L:AQUANTIA_GLOBAL_MDIOD_COMMAND_OVERFLOW S:STAT: Aquantia GLOBAL MDIO Command Handling Overflow (1E.CC01.7): %d\n
+L:AQUANTIA_DTEXS_RX_LOCAL_FAULT S:STAT: Aquantia DTE XS Receive Local Fault (5.8.10): %d\n
+L:AQUANTIA_DTEXS_TX_LOCAL_FAULT S:STAT: Aquantia DTE XS Transmit Local Fault (5.8.11): %d\n
+L:AQUANTIA_PMA_CHANNEL_A_RECEIVED_SIGNAL_POWER S:STAT: Aquantia PMA Channel A Received Signal Power (1.8D.F:0): %d\n
+L:AQUANTIA_PMA_CHANNEL_B_RECEIVED_SIGNAL_POWER S:STAT: Aquantia PMA Channel B Received Signal Power (1.8E.F:0): %d\n
+L:AQUANTIA_PMA_CHANNEL_C_RECEIVED_SIGNAL_POWER S:STAT: Aquantia PMA Channel C Received Signal Power (1.8F.F:0): %d\n
+L:AQUANTIA_PMA_CHANNEL_D_RECEIVED_SIGNAL_POWER S:STAT: Aquantia PMA Channel D Received Signal Power (1.90.F:0): %d\n
+L:AQUANTIA_PMA_RECEIVE_CURRENT_LINK_STATUS S:STAT: Aquantia PMA Receive Link Current Status (1.E800.0): %d\n
+L:AQUANTIA_PMA_FAST_RETRAIN_TIME S:STAT: Aquantia PMA Accumulated Fast Retrain Time (1.E810.F:0): %d\n
+L:AQUANTIA_PCS_FAULT_STATUS S:STAT: Aquantia PCS Fault (3.1.7): %d\n
+L:AQUANTIA_PCS_RECEIVE_LINK_STATUS S:STAT: Aquantia PCS Receive Link Status (3.1.2): %d\n
+L:AQUANTIA_PHY_TRANSMIT_LINK_ALIGNMENT_STATUS S:STAT: Aquantia PHY XS Transmit Link Alignment Status (4.1.2): %d\n
+L:AQUANTIA_PHY_SERDES_CALS_NUMBER S:STAT: Aquantia PHY Number of Serdes Cals [F:0] (4.C820.F:0): %d\n
+L:AQUANTIA_PHY_SIF_BLOCK_LOCK_TRANSITIONS_1_0_NUMBER S:STAT: Aquantia PHY Number of SIF Block Lock Transtitions 1 - 0 [7:0] (4.C821.F:8): %d\n
+L:AQUANTIA_PHY_SIF_BLOCK_LOCK_TRANSITIONS_0_1_NUMBER S:STAT: Aquantia PHY Number of SIF Block Lock Transtitions 0 - 1 [7:0] (4.C821.7:0): %d\n
+L:AQUANTIA_PHY_SIF_XGS_SWITCH_OVERS_NUMBER S:STAT: Aquantia PHY Number of SIF XGS Switch-overs [F:0] (4.C822.F:0): %d\n
+L:AQUANTIA_PHY_SIGNAL_LOSS_1 S:STAT: Aquantia PHY Loss of signal [3:0] (4.CC02.C): %d\n
+L:AQUANTIA_PHY_SIGNAL_LOSS_2 S:STAT: Aquantia PHY Loss of signal [3:0] (4.CC02.D): %d\n
+L:AQUANTIA_PHY_SIGNAL_LOSS_3 S:STAT: Aquantia PHY Loss of signal [3:0] (4.CC02.E): %d\n
+L:AQUANTIA_PHY_SIGNAL_LOSS_4 S:STAT: Aquantia PHY Loss of signal [3:0] (4.CC02.F): %d\n
+L:AQUANTIA_AUTONEG_PARALLEL_DETECTION_FAULT S:STAT: Aquantia AUTO-NEG Parallel Detection Fault (7.1.9): %d\n
+L:AQUANTIA_AUTONEG_REMOTE_FAULT S:STAT: Aquantia AUTO-NEG Remote Fault (7.1.4): %d\n
+L:AQUANTIA_AUTONEG_LINK_STATUS S:STAT: Aquantia AUTO-NEG Link Status (7.1.2): %d\n
+L:AQUANTIA_AUTONEG_MASTER_SLAVE_CONFIG_FAULT S:STAT: Aquantia AUTO-NEG MASTER-SLAVE Configuration Fault (7.21.F): %d\n
+L:AQUANTIA_AUTONEG_LOCAL_RECEIVER_STATUS S:STAT: Aquantia AUTO-NEG Local Receiver Status (7.21.D): %d\n
+L:AQUANTIA_AUTONEG_REMOTE_RECEIVER_STATUS S:STAT: Aquantia AUTO-NEG Remote Receiver Status (7.21.C): %d\n
+L:AQUANTIA_AUTONEG_RESTARTS_HANDLED S:STAT: Aquantia AUTO-NEG Autonegotiation Restarts Handled [F:0] (7.C813.F:0): %d\n
+L:AQUANTIA_AUTONEG_LINK_PULSE_DETECTED_STATUS S:STAT: Aquantia AUTO-NEG Link Pulse Detected Status (7.C812.F): %d\n
+L:AQUANTIA_AUTONEG_AUTOMATIC_DOWNSHIFT S:STAT: Aquantia AUTO-NEG Automatic Downshift (7.CC00.1): %d\n
+L:AQUANTIA_AUTONEG_CONNECTION_STATE_CHANGE S:STAT: Aquantia AUTO-NEG Connection State Change (7.CC00.0): %d\n
+L:AQUANTIA_AUTONEG_10G_DOWNSHIFT S:STAT: Aquantia AUTO-NEG Downshift From 10G (7.E411.B): %d\n
+L:AQUANTIA_AUTONEG_5G_DOWNSHIFT S:STAT: Aquantia AUTO-NEG Downshift From 5G (7.E411.A): %d\n
+L:AQUANTIA_AUTONEG_2G_DOWNSHIFT S:STAT: Aquantia AUTO-NEG Downshift From 2.5G (7.E411.9): %d\n
+L:AQUANTIA_AUTONEG_1G_DOWNSHIFT S:STAT: Aquantia AUTO-NEG Downshift From 1G (7.E411.8): %d\n
+L:AQUANTIA_AUTONEG_MAX_ADVERTISED_RATE S:STAT: Aquantia AUTO-NEG Max Advertised Rate [3:0] (7.E411.7:4): %d\n
+L:AQUANTIA_AUTONEG_PROTOCOL_ERROR S:STAT: Aquantia AUTO-NEG Autonegotiation Protocol Error (7.EC01.D): %d\n
+L:AQUANTIA_AUTONEG_FLP_IDLE_ERROR S:STAT: Aquantia AUTO-NEG FLP Idle Error (7.EC01.C): %d\n
+L:AQUANTIA_GLOBAL_HIGH_TEMP_FAILURE_STATE S:STAT: Aquantia GLOBAL High Temperature Failure State (1E.C830.E): %d\n
+L:AQUANTIA_GLOBAL_LOW_TEMP_FAILURE_STATE S:STAT: Aquantia GLOBAL Low Temperature Failure State (1E.C830.D): %d\n
+L:AQUANTIA_GLOBAL_HIGH_TEMP_WARNING_STATE S:STAT: Aquantia GLOBAL High Temperature Warning State (1E.C830.C): %d\n
+L:AQUANTIA_GLOBAL_LOW_TEMP_WARNING_STATE S:STAT: Aquantia GLOBAL Low Temperature Warning State (1E.C830.B): %d\n
+L:AQUANTIA_GLOBAL_MESSAGE S:STAT: Aquantia GLOBAL Message [F:0] (1E.C850.F:0): %d\n
+L:AQUANTIA_TEMP_THRESHOLD S:Aquantia temperature threshold: Warning %d C, Shutdown %d C.\n
+L:AQUANTIA_TEMP_WARNING S:STAT: Aquantia Temperature warning %d C\n
+L:AQUANTIA_SET_TEMP_WARNING S:Aquantia warning temperature set to %d C.\n
+L:AQUANTIA_SET_TEMP_SHUTDOWN S:Aquantia shutdown temperature set to %d C.\n
+L:AQUANTIA_AUTONEG_CONNECTION_STATE S:STAT: Aquantia AUTO-NEG Connection State[4:0] (7.C810.D:9): %d\n
+L:AQUANTIA_AUTONEG_ATTEMPTS_SINCE_RESET S:STAT: Aquantia AUTO-NEG Attempts Since Reset (7.C814.F:0): %d\n
+L:AQUANTIA_PCS_LOOPBACK S:Aquantia PCS loopback(3.0.E): 0x%x\n
+L:AQUANTIA_10G_SPEED_SELECTION S:Aquantia 10G Speed Selection(3.0.5:2): 0x%x\n
+L:AQUANTIA_TX_SCRAMBLER_DISABLE S:Aquantia Tx Scrambler Disable(3.D800.F): 0x%x\n
+L:AQUANTIA_TX_INJECT_CRC_ERROR S:Aquantia Tx Inject CRC Error(3.D800.E): 0x%x\n
+L:AQUANTIA_TX_INJECT_FRAME_ERROR S:Aquantia Tx Inject Frame Error(3.D800.D): 0x%x\n
+L:AQUANTIA_RX_ERROR_LDPC_FRAME_ENABLE S:Aquantia Enable Rx LDPC Error Frame(3.E400.0): 0x%x\n
+L:AQUANTIA_RX_LDPC_DECODER_CONTROL S:Aquantia Control Rx LDPC Decoder (3.E400.F): 0x%x\n
+L:AQUANTIA_XS_LOOPBACK S:Aquantia XS Loopback (4.0.E): 0x%x\n
+L:AQUANTIA_RECEIVE_TEST_PATTERN_ENABLE S:Enable Aquantia Receive Test Pattern (4.19.2): 0x%x\n
+L:AQUANTIA_PHY_OPERATING_MODE S:Aquantia Operating Phy Mode (4.C441.8:6): 0x%x\n
+L:AQUANTIA_TEST_PATTERN_SELECT S:Aquantia Select Test Pattern (4.19.1:0): 0x%x\n
+L:AQUANTIA_LOOPBACK_CONTROL S:Aquantia XS Loopback Control (4.C444.F:B): 0x%x\n
+L:AQUANTIA_MDI_PACKET_GENERATION S:Aquantia XS MDI Packet Generation (4.C444.5): 0x%x\n
+L:AQUANTIA_XS_SYSTEM_IF_PACKET_GENERATION S:Aquantia XS I/F Packet Generation (4.C444.2): 0x%x\n
+L:AQUANTIA_RATE S:Aquantia XS Rate (4.C444.1:0): 0x%x\n
+L:AQUANTIA_TEST_PATTERN_FORCE_ERROR S:Aquantia Select Test Pattern Force Error (4.D800.F): 0x%x\n
+L:AQUANTIA_TEST_PATTERN_MODE_7_FORCE_ERROR S:Aquantia XS Test Pattern Mode 7 Force Error (4.D800.E): 0x%x\n
+L:AQUANTIA_XAUI_RX_LOCAL_FAULT_INJECTION S:Aquantia XAUI Rx Local Fault Injection (4.D800.D): 0x%x\n
+L:AQUANTIA_TEST_PATTERN_EXTENDED_SELECT S:Aquantia Test-Pattern Extended Select [1:0] (4.D800.C:B): 0x%x\n
+L:AQUANTIA_TEST_PATTERN_CHECK_ENABLE S:Aquantia Test Pattern Check Enable (4.D800.A): 0x%x\n
+L:AQUANTIA_TEST_PATTERN_CHECK_POINT S:Aquantia Test Pattern Check Point (4.D800.7): 0x%x\n
+L:AQUANTIA_TEST_PATTERN_INSERT_EXTRA_IDLES S:Aquantia Test Pattern Insert Extra Idles [2:0] (4.D801.E:C): 0x%x\n
+L:AQUANTIA_TEST_PATTERN_CHECK_SELECT S:Aquantia Test Pattern Check Select [3:0] (4.D801.B:8): 0x%x\n
+L:AQUANTIA_TEST_PATTERN_CHANNEL_SELECT S:Aquantia Test Pattern Channel Select [3:0] (4.D801.3:0): 0x%x\n
+L:AQUANTIA_CHANNEL_0_TEST_PATTERN_ERROR_COUNTER S:Aquantia Channel 0 Test Pattern Error Counter [F:0] (4.D810.F:0): 0x%x\n
+L:AQUANTIA_CHANNEL_1_TEST_PATTERN_ERROR_COUNTER S:Aquantia Channel 1 Test Pattern Error Counter [F:0] (4.D811.F:0): 0x%x\n
+L:AQUANTIA_CHANNEL_2_TEST_PATTERN_ERROR_COUNTER S:Aquantia Channel 2 Test Pattern Error Counter [F:0] (4.D812.F:0): 0x%x\n
+L:AQUANTIA_CHANNEL_3_TEST_PATTERN_ERROR_COUNTER S:Aquantia Channel 3 Test Pattern Error Counter [F:0] (4.D813.F:0): 0x%x\n
+L:AQUANTIA_TEST_PATTERN_MODE_7_ERROR_COUNTER S:Aquantia Test Pattern Mode 7 Error Counter [F:0] (4.D814.F:0): 0x%x\n
+L:AQUANTIA_XAUI_TX_ERROR_INJECTION_LANE_SELECT S:Aquantia XAUI Tx Error Injection Lane Select [2:0] (4.F800.F:D): 0x%x\n
+L:AQUANTIA_XAUI_TX_INJECT_SYNCHRONIZATION_ERROR S:Aquantia XAUI Tx Inject Synchronization Error (4.F800.C): 0x%x\n
+L:AQUANTIA_XAUI_TX_INJECT_ALIGNMENT_ERROR S:Aquantia XAUI Tx Inject Alignment Error (4.F800.B): 0x%x\n
+L:AQUANTIA_XAUI_TX_INJECT_CODE_VIOLATION S:Aquantia XAUI Tx Inject Code Violation (4.F800.A): 0x%x\n
+L:AQUANTIA_XAUI_TX_10B_VIOLATION_CODEWORD S:Aquantia XAUI Tx 10B Violation Codeword [9:0] (4.F800.9:0): 0x%x\n
+L:AQUANTIA_PHY_XS_SYSTEM_LOOPBACK_PASS_THROUGH S:Aquantia PHY XS System Loopback Pass Through (4.F802.F): 0x%x\n
+L:AQUANTIA_PHY_XS_SYSTEM_LOOPBACK_ENABLE S:Aquantia PHY XS System Loopback Enable (4.F802.E): 0x%x\n
+L:AQUANTIA_XAUI_TX_LOCAL_FAULT_INJECTION S:Aquantia XAUI Tx Local Fault Injection (4.F802.D): 0x%x\n
+L:AQUANTIA_RESTART_AUTONEGOTIATION S:Aquantia Restart Autonegotiation (7.0.9): 0x%x\n
+L:AQUANTIA_SERDES_START_UP_MODE S:Aquantia SERDES Start-Up Mode [2:0] (7.C410.F:D): 0x%x\n
+L:AQUANTIA_AUTONEGOTIATION_TIMEOUT S:Aquantia Autonegotiation Timeout [3:0] (7.C411.F:C): 0x%x\n
+L:AQUANTIA_AUTONEGOTIATION_TIMEOUT_MOD S:Aquantia Autonegotiation Timeout Mod (7.C411.B): 0x%x\n
+L:AQUANTIA_LINK_PARTNER_1000_BASE_T_FULL_DUPLEX_ABILITY S:Aquantia Link Partner 1000BASE-T Full Duplex Ability (7.E820.F): 0x%x\n
+L:AQUANTIA_LINK_PARTNER_1000_BASE_T_HALF_DUPLEX_ABILITY S:Aquantia Link Partner 1000BASE-T Half Duplex Ability (7.E820.E): 0x%x\n
+L:AQUANTIA_LINK_PARTNER_SHORT_REACH S:Aquantia Link Partner Short-Reach (7.E820.D): 0x%x\n
+L:AQUANTIA_LINK_PARTNER_AQ_RATE_DOWNSHIFT_CAPABILITY S:Aquantia Link Partner AQRate Downshift Capability (7.E820.C): 0x%x\n
+L:AQUANTIA_LINK_PARTNER_5G S:Aquantia Link Partner 5G (7.E820.B): 0x%x\n
+L:AQUANTIA_LINK_PARTNER_2G S:Aquantia Link Partner 2.5G (7.E820.A): 0x%x\n
+L:AQUANTIA_LINK_PARTNER S:Aquantia Link Partner (7.E820.2): 0x%x\n
+L:AQUANTIA_AUTONEGOTIATION_PROTOCOL_ERROR_STATE S:Aquantia Autonegotiation Protocol Error State (7.E831.D): 0x%x\n
+L:AQUANTIA_FLP_IDLE_ERROR_STATE S:Aquantia FLP Idle Error State (7.E831.C): 0x%x\n
+L:AQUANTIA_ENABLE_DIAGNOSTICS S:Aquantia Enable Diagnostics (1E.C400.F): 0x%x\n
+L:AQUANTIA_HIGH_TEMP_FAILURE_THRESHOLD S:Aquantia High Temp Failure Threshold [F:0] (1E.C421): 0x%x\n
+L:AQUANTIA_LOW_TEMP_FAILURE_THRESHOLD S:Aquantia Low Temp Failure Threshold [F:0] [F:0] (1E.C422): 0x%x\n
+L:AQUANTIA_HIGH_TEMP_WARNING_THRESHOLD S:Aquantia High Temp Warning Threshold [F:0] [1:0] (1E.C423): 0x%x\n
+L:AQUANTIA_LOW_TEMP_WARNING_THRESHOLD S:Aquantia Low Temp Warning Threshold [F:0] (1E.C424): 0x%x\n
+L:AQUANTIA_DIAGNOSTICS_SELECT S:Aquantia Diagnostics Select (1E.C470.F): 0x%x\n
+L:AQUANTIA_EXTENDED_MDI_DIAGNOSTICS_SELECT S:Aquantia Extended MDI Diagnostics Select [1:0] (1E.C470.E:D): 0x%x\n
+L:AQUANTIA_INITIATE_CABLE_DIAGNOSTICS S:Aquantia Initiate Cable Diagnostics (1E.C470.4): 0x%x\n
+L:AQUANTIA_ENABLE_VDD_POWER_SUPPLY_TUNING S:Aquantia Enable VDD Power Supply Tuning (1E.C472.E): 0x%x\n
+L:AQUANTIA_TUNABLE_EXTERNAL_VDD_POWER_SUPPLY_PRESENT S:Aquantia Tunable External VDD Power Supply Present (1E.C472.6): 0x%x\n
+L:AQUANTIA_EXTERNAL_VDD_CHANGE_REQUEST S:Aquantia External VDD Change Request [3:0] (1E.C472.5:2): 0x%x\n
+L:AQUANTIA_ENABLE_5TH_CHANNEL_RFI_CANCELLATION S:Aquantia Enable 5th Channel RFI Cancellation (1E.C472.0): 0x%x\n
+L:AQUANTIA_RATE_TRANSITION_REQUEST S:Aquantia Rate Transition Request [2:0] (1E.C473.A:8): 0x%x\n
+L:AQUANTIA_TRAINING_SNR S:Aquantia Training SNR [7:0] (1E.C473.7:0): 0x%x\n
+L:AQUANTIA_GLB_LOOPBACK_CONTROL S:Aquantia Loopback Control [4:0] (1E.C47A.F:B): 0x%x\n
+L:AQUANTIA_GLB_MDI_PACKET_GENERATION S:Aquantia MDI Packet Generation (1E.C47A.5): 0x%x\n
+L:AQUANTIA_GLB_SYSTEM_IF_PACKET_GENERATION S:Aquantia Global Provisioning System IF Packet Generation (1E.C47A.3): 0x%x\n
+L:AQUANTIA_GLOBAL_RESERVED_PROVISIONING_RATE S:Aquantia Rate [2:0] (1E.C47A.2:0): 0x%x\n
+L:AQUANTIA_PAIR_A_STATUS S:Aquantia Pair A Status [2:0] (1E.C800.E:C): 0x%x\n
+L:AQUANTIA_PAIR_B_STATUS S:Aquantia Pair B Status [2:0] (1E.C800.A:8): 0x%x\n
+L:AQUANTIA_PAIR_C_STATUS S:Aquantia Pair C Status [2:0] (1E.C800.6:4): 0x%x\n
+L:AQUANTIA_PAIR_D_STATUS S:Aquantia Pair D Status [2:0] (1E.C800.2:0): 0x%x\n
+L:AQUANTIA_STATUS_PAIR_A_REFLECTION_1 S:Aquantia Pair A Reflection #1 [7:0] (1E.C801.F:8): 0x%x\n
+L:AQUANTIA_STATUS_PAIR_A_REFLECTION_2 S:Aquantia Pair A Reflection #2 [7:0] (1E.C801.7:0): 0x%x\n
+L:AQUANTIA_IMPULSE_RESPONSE_MSW S:Aquantia Impulse Response MSW [F:0] (1E.C802.F:0): 0x%x\n
+L:AQUANTIA_STATUS_PAIR_B_REFLECTION_1 S:Aquantia Pair B Reflection #1 [7:0] (1E.C803.F:8): 0x%x\n
+L:AQUANTIA_STATUS_PAIR_B_REFLECTION_2 S:Aquantia Pair B Reflection #2 [7:0] (1E.C803.7:0): 0x%x\n
+L:AQUANTIA_IMPULSE_RESPONSE_LSW S:Aquantia Impulse Response LSW [F:0] (1E.C804.F:0): 0x%x\n
+L:AQUANTIA_STATUS_PAIR_C_REFLECTION_1 S:Aquantia Pair C Reflection #1 [7:0] (1E.C805.F:8): 0x%x\n
+L:AQUANTIA_STATUS_PAIR_C_REFLECTION_2 S:Aquantia Pair C Reflection #2 [7:0] (1E.C805.7:0): 0x%x\n
+L:AQUANTIA_STATUS_PAIR_D_REFLECTION_1 S:Aquantia Pair D Reflection #1 [7:0] (1E.C807.F:8): 0x%x\n
+L:AQUANTIA_STATUS_PAIR_D_REFLECTION_2 S:Aquantia Pair D Reflection #2 [7:0] (1E.C807.7:0): 0x%x\n
+L:AQUANTIA_PROCESSOR_INTENSIVE_OPERATION_IN_PROGRESS S:Aquantia Processor Intensive MDIO Operation InProgress (1E.C831.F): 0x%x\n
+L:AQUANTIA_CABLE_LENGTH S:Aquantia Cable Length [7:0] (1E.C884.7:0): 0x%x\n
+L:AQUANTIA_GLB_LOOPBACK_STATUS S:Aquantia Loopback Status [4:0] (1E.C888.F:B): 0x%x\n
+L:AQUANTIA_MDI_PACKET_GENERATION_STATUS S:Aquantia MDI Packet Generation Status (1E.C888.5): 0x%x\n
+L:AQUANTIA_GLB_SYSTEM_IF_PACKET_GENERATION_STATUS S:Aquantia System I/F Packet Generation Status (1E.C888.3): 0x%x\n
+L:AQUANTIA_GLOBAL_RESERVED_STATUS_RATE S:Aquantia Rate [2:0] (1E.C888.2:0): 0x%x\n
+L:AQUANTIA_SHORT_REACH_MODE S:Aquantia Short Reach Mode (1.83.0): 0x%x\n
+L:AQUANTIA_TEST_MODE_CONTROL S:Aquantia Test Control Mode (1.84.F:D): 0x%x\n
+L:AQUANTIA_TRANSMITTER_TEST_FREQUENCIES S:Aquantia Transmitter test frequencies (1.84.C:A): 0x%x\n
+L:AQUANTIA_FAST_RETRAIN_ABILITY S:Aquantia Fast Retrain Ability (1.93.4): 0x%x\n
+L:AQUANTIA_FAST_RETRAIN_ENABLE S:Aquantia Fast Retrain Enable (1.93.0): 0x%x\n
+L:AQUANTIA_TEST_MODE_RATE S:Aquantia Test Mode rate[1:0] (1.C412.F:E): 0x%x\n
+L:AQUANTIA_PMA_DIGITAL_SYSTEM_LOOPBACK S:Aquantia Digital System Loopback (1.D800.F): 0x%x\n
+L:AQUANTIA_EXTERNAL_PHY_LOOPBACK S:Aquantia External Phy Loopback (1.E400.F): 0x%x\n
+L:AQUANTIA_ENABLE_FAST_RETRAIN S:Enable Aquantia Fast Retrain (1.E400.2): 0x%x\n
+L:AQUANTIA_FORCE_MDI_CONFIGURATION S:Aquantia Force Mdi Configuration (1.E400.1): 0x%x\n
+L:AQUANTIA_MDI_CONFIGURATION S:Aquantia Mdi Configuration(1.E400.0): 0x%x\n
+L:AQUANTIA_GENERAL_RW S:Aquantia Read/Write Result for (%x.%x): 0x%x\n
+L:AQUANTIA_ISR_NOT_GEN S:MDIOD not Aquantia generated ISR\n
+L:AQUANTIA_DBL_READ S:MDIOD Aquantia DblRead reg1 0x%x, reg2 0x%x\n
+L:AQUANTIA_READ_ASYNC_BITFIELD_NOT_FINISHED S:Requested to do a asynchronous bit field read while other jobs pending\n
+L:AQUANTIA_PHY_DISABLED S:Aquantia PHY disabled\n
+L:AQUANTIA_SETUP_STARTED S:Aquantia PHY setup\n
+L:AQUANTIA_INT_HIGH_TEMP_WARN S:Aquantia PHY high temp warning!\n
+L:AQUANTIA_INT_HIGH_TEMP_FAIL S:Aquantia PHY high temp failure, shutting down PHY!\n
+L:AQUANTIA_INIT_COMPLETED S:Aquantia init completed\n
+L:AQUANTIA_JUNCTION_TEMP S:Aquantia Stats Junction Temperature Read %d C\n
+L:AQUANTIA_FIRMWARE_VER1 S:Aquantia Firmware Version: v%d.%x.%d\n
+L:AQUANTIA_FIRMWARE_VER2 S:Aquantia Firmware Version: ID%d_VER%d\n
+L:AQUANTIA_DRIVER_STATE_TICK S:Aquantia driver previous state = %d new state %d\n
+L:AQUANTIA_TX_LINK_UP S:Aquantia TX Link Up checked\n
+L:AQUANTIA_RXAUI_ALIGNED S:Aquantia RXAUI is aligned\n
+L:AQUANTIA_RX_LINK_UP S:Aquantia RX Link Up checked\n
+L:AQUANTIA_MONITOR_REG S:Aquantia Monitor Reg link down triggered %x\n
+L:AQUANTIA_LINK_TX_READY S:Aquantia Tx Ready Check. Step: %d, Result: %x, Required: %x\n
+L:AQUANTIA_STABILITY_CHECK S:Aquantia Stability Check. Step: %d, Result: %x, Required: %x\n
+L:AQUANTIA_LINK_STATUS S:Aquantia CheckLinkStatus New status: 0x%x, raw Value: 0x%x\n
+L:AQUANTIA_INIT_READ S:Aquantia Initialization Read Step: %d, Read: 0x%x, Required: 0x%x\n
+L:AQUANTIA_INIT_WRITE S:Aquantia Initialization Write Step: %d\n
+L:AQUANTIA_INIT_5G S:Aquantia Set to 5G link speed Write Step: %d\n
+L:AQUANTIA_READ_REG_FAILED S:Aquantia Read Register FAILED! Step: %d, Read: 0x%x, Required: 0x%x\n
+L:AQUANTIA_READ_CRC8_FAILED S:Aquantia Read CRC 8 FAILED! Step: %d, Read: 0x%x\n
+L:AQUANTIA_GTX_ERROR_DETECTED S:Aquantia - RXAUI GTx errors detected!\n
+L:AQUANTIA_POST_STABILITY_CHECK_DONE S:Aquantia - Post stability checks done\n
+L:AQUANTIA_AUTO_RESET_DETECTED S:Aquantia auto-reset detected, restart link-up sequence\n
+L:AQUANTIA_STOP_STATS_INPROGRESS S:Aquantia stats stop already in progress!\n
+L:AQUANTIA_STOP_STAT_NULL_POINTER S:Aquantia stop stats pointer invalid!\n
+L:AQUANTIA_NORMAL_OPERATION S:Aquantia check normal operation, read value is 0x%x normal operation:%d (1:Normal, 0:Abnormal)\n
+L:AQUANTIA_ERROR_STATE S:Aquantia link connection rate error status : %d\n
+L:AQUANTIA_AUTONEG_UNSUPP_SPEED S:Aquantia linked at an unsupported speed\n
+component:MDIO_COMPONENT
+L:MDIO_ICMD_WRITE S:Writing to MDIO device %d, address 0x%x, with data 0x%x\n
+L:MDIO_INDIRECT_ICMD_WRITE S:Writing to MDIO device %d, devType %d\n
+L:MDIO_INDIRECT_ICMD_WRITE2 S:                address 0x%x, with data 0x%x\n
+L:INVALID_ICMD_ARG S:Invalid icmd arg 0x%x received\n
+L:REG_FAILURE S:Invalid register ID/Rev at line %d\n
+L:INVALID_PIN S:Invalid Pin number %d\n
+L:SYNC_MDIO_READ_FIFO_NOT_EMPTY S:Requested to do a synchronous MDIO read while other jobs pending\n
+L:SYNC_MDIO_WRITE_FIFO_NOT_EMPTY S:Requested to do a synchronous MDIO write while other jobs pending\n
+L:MDIO_ICMD_READ_START S:Reading MDIO device %d, address %d\n
+L:MDIO_INDIRECT_ICMD_READ_START S:Reading MDIO device %d, devType %d, address %d\n
+L:MDIO_ICMD_READ_DONE S:Read MDIO, returned data 0x%x\n
+L:MDIO_FIFO_OVER_FLOW S:MDIO fifo overflow\n
+L:MDIO_FIFO_UNDER_FLOW S:MDIO fifo underflow\n
+L:MDIO_OPERATIONS S:MDIO: %d operations in progress, current operation: header 0x%x, mdio op 0x%x\n
+L:MDIO_NO_OPERATIONS S:MDIO: no operations in progress\n
+L:TIME_MARKER_ S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing \n
+L:TIME_MARKER_MDIO_START S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing mdioStart\n
+L:TIME_MARKER_FINALIZE_OP S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing finalize operation\n
+L:TIME_MARKER_SUBMIT_OP S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing submit operation\n
+L:MDIO_INVALID_TASK_STATE S:mdio/i2c: invalid state at line %d, header 0x%x, mdio op 0x%x\n
+L:MDIO_IRQ_LOG S:Interrupts 0x%x triggered\n
+L:MDIO_IRQ_UNSERVICED S:Interrupts 0x%x were unserviced\n
+L:MDIO_GPIO7_LOG S:Interrupt GPIO7 triggered\n
+L:IRQ_HANDLER_NOT_SET S:Interrupt Handler is not set for pin %d\n
+L:REGISTERING_IRQ S:Registering Interrrupt handler for pin %d\n
+L:SERVICING_IRQ S:Servicing Interrupt for pin %d\n
+L:DISABLING_IRQ S:Disabling Interrupt for pin %d\n
+L:ENABLING_IRQ S:Enabling Interrupt for pin %d\n
+L:MDIO_START_READ S:MDIO start read: dev %d, addr/devtype 0x%x\n
+L:MDIO_START_WRITE S:MDIO start write: dev %d, addr/devtype 0x%x, data 0x%x\n
+L:MDIO_START_ADDRESS S:MDIO start address: dev %d, devtype 0x%x, addr 0x%x\n
+L:MDIO_FINISH S:MDIO finished, data is 0x%x\n
+L:MDIO_CONTROLREG_READ S:MDIO Control Reg is 0x%x\n
+L:MDIO_OPERATIONS_QUEUED S:MDIO: %d operations queued, nothing in progress\n
+L:MDIO_SYNC_READ_TIMEOUT S:MDIO Sync Read timeout\n
+L:MDIO_SYNC_WRITE_TIMEOUT S:MDIO Sync Write timeout\n
+L:MDIO_INDIRECT_SYNC_READ_ADDRESS_TIMEOUT S:MDIO Indirect Sync Read address timeout\n
+L:MDIO_INDIRECT_SYNC_READ_DATA_TIMEOUT S:MDIO Indirect Sync Read data timeout\n
+L:MDIO_INDIRECT_SYNC_WRITE_ADDRESS_TIMEOUT S:MDIO Indirect Sync Write address timeout\n
+L:MDIO_INDIRECT_SYNC_WRITE_DATA_TIMEOUT S:MDIO Indirect Sync Write data timeout\n
+component:XMODEM_COMPONENT
+L:XMODEM_INTERRUPT_INIT S:Initializing Xmodem for interrupt driven mode\n
+L:XMODEM_POLLED_INIT S:Initializing Xmodem for polling mode\n
+L:PACKET_RECEIVED_BEFORE_READY S:A packet was received, before xmodem library was ready to receive the packet\n
+component:MCA_COMPONENT
+L:MCA_INVALID_CH_ASSERT S:Channel %d not valid!\n
+L:MCA_CORE_NOT_READY S:MCA core not ready, Rx =%d Tx = %d\n
+L:MCA_CORE_INTERRUPT S:Core IRQ pending interrupt 0x%08x, raw interrupt state 0x%08x\n
+L:MCA_CHANNEL_INTERRUPT S:Channel %d IRQ pending interrupt 0x%08x, raw interrupt state 0x%08x\n
+L:MCA_ENABLE_CORE_UP S:MCA Enable Core Up \n 
+L:MCA_ENABLE_TX S:MCA Tx Enabled\n 
+L:MCA_DISABLE_TX S:MCA Tx Disabled\n 
+L:MCA_ENABLE_RX S:MCA Rx Enabled\n 
+L:MCA_DISABLE_RX S:MCA Rx Disabled\n 
+L:MCA_CHANNEL_LINK_SETUP S:MCA Channel link setup channel %d\n
+L:MCA_CHANNEL_LINK_NOT_ENABLED S:MCA Channel Link Setup: Channel %d Not Enabled\n 
+L:MCA_CHANNEL_TX_RX_NOT_ENABLED S:MCA Channel Tx Rx Setup: Channel %d Not Enabled\n 
+L:MCA_CHANNEL_DISABLE_NOT_ENABLED S:MCA Channel Disable: Channel %d Not Enabled\n 
+L:MCA_DISABLE_TIMEOUT S:MCA CH[%d] Disable timeout, irq = 0x%x\n
+L:MCA_UP_FAILED S:MCA CH[%d] Up couldn't handled. status = 0x%x\n
+L:MCA_DN_FAILED S:MCA CH[%d] is down already. status = 0x%x, down processing = %d\n
+L:MCA_CHANNEL_LINKUP S:MCA Channel[%d] Link Up, Status: %d\n
+L:MCA_CHANNEL_LINKUP_REQ S:MCA Channel[%d] Link Up Requested while Link Dn processing\n
+L:MCA_CHANNEL_LINKDN S:MCA Channel[%d] Link Dn, Status: %d\n
+L:MCA_CHANNEL_LINKDN_REQ S:MCA Channel[%d] Link Down Requested while Link Up processing\n
+L:MCA_CHANNEL_LINKDN_DONE S:MCA Channel[%d] Link Down finished\n
+L:MCA_CHANNEL_RX_FIFO_FULL S:MCA Channel[%d] Rx fifo full (Pending Irq: 0x%x). Disable this channel\n
+L:MCA_CHANNEL_RX_GRD_MAX_ERR S:MCA Channel[%d] Rx Grd Max Error (Pending Irq: 0x%x). Disable this channel\n
+L:MCA_LINK_STAT_U0_TO_REC S:STAT:MCA mca_channel[%d]->link->stats0->u0_to_rec = 0x%x\n
+L:MCA_LINK_STAT_POL_FAIL S:STAT:MCA mca_channel[%d]->link->stats0->pol_fail = 0x%x\n
+L:MCA_LINK_STAT_TX_FRM S:STAT:MCA mca_channel[%d]->link->stats0->tx_frm = 0x%x\n
+L:MCA_LINK_STAT_TX_MCUP S:STAT:MCA mca_channel[%d]->link->stats0->tx_mcup = 0%x\n
+L:MCA_LINK_STAT_RX_FRM S:STAT:MCA mca_channel[%d]->link->stats0->rx_frm = 0x%x\n
+L:MCA_LINK_STAT_RX_MCUP S:STAT:MCA mca_channel[%d]->link->stats0->rx_mcup = 0x%x\n
+L:MCA_TX_STAT_CMD_FIFO S:STAT:MCA mca_channel[%d]->tx->stats0->cmd_fifo = 0x%x\n
+L:MCA_TX_STAT_DP_PFIFO S:STAT:MCA mca_channel[%d]->tx->stats0->dp_pfifo = 0x%x\n
+L:MCA_TX_STAT_DP_NFIFO S:STAT:MCA mca_channel[%d]->tx->stats0->dp_nfifo = 0x%x\n
+L:MCA_TX_STAT_DP_FIFO_RD_DRP_PKT S:STAT:MCA mca_channel[%d]->tx->stats0->dp_fifo_rd_drp_pkt = 0x%x\n
+L:MCA_TX_STAT_DP_FIFO_WR_DRP_PKT S:STAT:MCA mca_channel[%d]->tx->stats0->dp_fifo_wr_drp_pkt = 0x%x\n
+L:MCA_TX_STAT_DP_FIFO_WR_PKT_ERR S:STAT:MCA mca_channel[%d]->tx->stats0->dp_fifo_wr_pkt_err = 0x%x\n
+L:MCA_TX_STAT_DP_FIFO_FIFO_FULL_ERR S:STAT:MCA mca_channel[%d]->tx->stats0->dp_fifo_fifo_full_err = 0x%x\n
+L:MCA_TX_STAT_DP_FIFO_PKT_MAX_ERR S:STAT:MCA mca_channel[%d]->tx->stats0->dp_fifo_pkt_max_err = 0x%x\n
+L:MCA_TX_STAT_DP_GRD_NO_SOP_ERR S:STAT:MCA mca_channel[%d]->tx->stats0->dp_grd_no_sop_err = 0x%x\n
+L:MCA_TX_STAT_DP_GRD_NO_EOP_ERR S:STAT:MCA mca_channel[%d]->tx->stats0->dp_grd_no_eop_err = 0x%x\n
+L:MCA_TX_STAT_DP_GRD_MAX_ERR S:STAT:MCA mca_channel[%d]->tx->stats0->dp_grd_max_err = 0x%x\n
+L:MCA_RX_STAT_DP_PFIFO S:STAT:MCA mca_channel[%d]->rx->stats0->dp_pfifo = 0x%x\n
+L:MCA_RX_STAT_DP_NFIFO S:STAT:MCA mca_channel[%d]->rx->stats0->dp_nfifo = 0x%x\n
+L:MCA_RX_STAT_DP_FIFO_RD_DRP_PKT S:STAT:MCA mca_channel[%d]->rx->stats0->dp_fifo_rd_drp_pkt = 0x%x\n
+L:MCA_RX_STAT_DP_FIFO_WR_DRP_PKT S:STAT:MCA mca_channel[%d]->rx->stats0->dp_fifo_wr_drp_pkt = 0x%x\n
+L:MCA_RX_STAT_DP_FIFO_WR_PKT_ERR S:STAT:MCA mca_channel[%d]->rx->stats0->dp_fifo_wr_pkt_err = 0x%x\n
+L:MCA_RX_STAT_DP_FIFO_FIFO_FULL_ERR S:STAT:MCA mca_channel[%d]->rx->stats0->dp_fifo_fifo_full_err = 0x%x\n
+L:MCA_RX_STAT_DP_FIFO_PKT_MAX_ERR S:STAT:MCA mca_channel[%d]->rx->stats0->dp_fifo_pkt_max_err = 0x%x\n
+L:MCA_RX_STAT_DP_GRD_NO_SOP_ERR S:STAT:MCA mca_channel[%d]->rx->stats0->dp_grd_no_sop_err = 0x%x\n
+L:MCA_RX_STAT_DP_GRD_NO_EOP_ERR S:STAT:MCA mca_channel[%d]->rx->stats0->dp_grd_no_eop_err = 0x%x\n
+L:MCA_RX_STAT_DP_GRD_MAX_ERR S:STAT:MCA mca_channel[%d]->rx->stats0->dp_grd_max_err = 0x%x\n
+L:MCA_CORE_TX_PFIFO S:STAT:MCA mca_core->tx->stats0->pfifo = 0x%x\n
+L:MCA_CORE_TX_NFIFO S:STAT:MCA mca_core->tx->stats0->nfifo = 0x%x\n
+L:MCA_CORE_TX_CMD_FIFO_DCOUNT S:STAT:MCA mca_core->tx->stats0->cmd_fifo_dcount = 0x%x\n
+L:MCA_CORE_TX_LBAD S:STAT:MCA mca_core->tx->stats0->lbad = 0x%x\n
+L:MCA_CORE_TX_LRTRY S:STAT:MCA mca_core->tx->stats0->lrtry = 0x%x\n
+L:MCA_CORE_RX_CMD_FIFO_DCOUNT S:STAT:MCA mca_core->rx->stats0->cmd_fifo_dcount = 0x%x\n
+L:MCA_CORE_RX_LBAD S:STAT:MCA mca_core->rx->stats0->lbad = 0x%x\n
+L:MCA_CORE_RX_LRTRY S:STAT:MCA mca_core->rx->stats0->lrtry = 0x%x\n
+L:MCA_CORE_RX_LCRD S:STAT:MCA mca_core->rx->stats0->lcrd = 0x%x\n
+L:MCA_CORE_IRQ0_ENABLE S:STAT:MCA mca_core->irq0->enable = 0x%x\n
+L:MCA_INVALID_CHANNEL_INDEX S: 0x%x INVALID CHANNEL INDEX TO MONITOR \n
+L:MCA_RX_FIFO_FULL_ERROR S:Channel Rx FIFO full ERROR ASSERT !!\n
+L:MCA_GUARD_ERROR S:Channel GUARD ERROR ASSERT !!\n
+L:MCA_CORE_GUARD_ERROR S:Core GUARD ERROR ASSERT !!\n
+L:MCA_CHANNEL_0_LATENCY_VALUE S:Channel 0 latency value = 0x%x\n
+L:MCA_CHANNEL_0_LATENCY_ERROR S:Timed out waiting for MCA Channel 0 latency value to change from zero\n
+L:CORE_GUARD_ERROR S:Core Guard Error! IRQ = %d\n
+L:DEBUG_ASSERT_BB S:CAUSE AN ASSERT IN BB FOR DEBUGGING\n
+L:MCA_CHANNEL_NP_FIFO S:MCA Channel[%d] dp_pfifo = %04d dp_nfifo = %04d\n
+L:MCA_BANDWIDTH S:MCA Channel[%d] Bandwidth = %04d\n
+component:CPU_COMM_COMPONENT
+L:CPU_COMM_SENT_MSG S:Tx CPU message seq %03d type:data %04x size:%02d\n
+L:CPU_COMM_DROP_TX_MSG S:Dropped CPU Tx message type:data %04x msg[0]:0x%x\n
+L:CPU_COMM_RECEIVED_MSG S:Rx CPU message seq %03d type:data %04x size:%02d\n
+L:CPU_COMM_LINK_UP S:Comm channel received a link UP status event\n
+L:CPU_COMM_LINK_DOWN S:Comm channel received a link DOWN status event\n
+L:CPU_COMM_EOP_TO_SOP S:Time from EOP sent to SOP received in usec %d\n
+L:CPU_COMM_INVALID_MESSAGE_TYPE S:Invalid message type: %d.\n
+L:CPU_COMM_INVALID_MESSAGE_SIZE S:Message size too big: type %d size %d.\n
+L:CPU_COMM_TX_SIZE_INVALID S:TX message too big: type %d size %d.\n
+L:CPU_COMM_TX_FIFO_NO_SPACE S:Not enough space on TX FIFO for message: type %04x size %d space available %d.\n
+L:CPU_COMM_MSG_HANDLER_ALREADY_REGISTERED S:The message handler for type %d has already been registered to the function at 0x%x.\n
+L:CPU_COMM_RECEIVED_UNHANDLED_MSG S:Received a message of type %d for which no handler is registered.\n
+L:CPU_COMM_RECEIVED_MSG_TIMEOUT S:Received a message of size %d which took too long to process.\n
+L:CPU_COMM_RECEIVED_OVERSIZED_MSG S:Received a message of size %d which is too large to be processed.\n
+L:CPU_COMM_ICMD_RECEIVE_MSG S:Received an icmd CPU message of size %d bytes\n
+L:CPU_COMM_ICMD_FIFO_FULL S:Icmd CPU message fifo full and drop the message, pushIndex = %d, msgLength = %d, popIndex = %d\n
+L:CPU_COMM_ICMD_READ_MSG S:Icmd read CPU message data valid = %d, word0 = 0x%x, word1 = 0x%x\n
+L:CPU_COMM_TX_RACE_DETECTED S:Tx Race detected linkEnabled: %d, type: %d, msg[0]: %d\n
+L:CPU_COMM_RX_RACE_DETECTED S:Rx Race detected linkEnabled: %d, sequence num: %d, type: %d\n
+L:CPU_COMM_PCK_END S:Tx/Rx end writing/receiving packet: took %d us\n
+L:CPU_COMM_INALID_ACK S:Ack not valid! seq = %d last seq = %d, data %d\n
+L:CPU_COMM_RESEND S:resending Tx %d seq %d\n
+L:CPU_COMM_RESET S:Request CPU Comm RX reset\n
+L:CPU_COMM_RX_RESET S:Received Tx's Request CPU Comm RX reset\n
+L:CPU_COMM_RESET_ACK S:Received Ack for CPU Comm RX reset\n
+L:CPU_COMM_FAIL S:CPU comm failed. Request link-restart\n
+L:CPU_COMM_DROP_PACKET1 S:Dropped packet type %d. ReadLength(%d) and Packet size(%d) is different\n
+L:CPU_COMM_DROP_PACKET2 S:Dropped packet type %d, subType %d. Link is not ready\n
+L:CPU_COMM_DROP_PACKET3 S:dropped packet type %d seq %d nextRxSeq %d. Sequence mis-matching\n
+L:CPU_COMM_NP_SOP S:No SOP, Can't read Comm channel\n
+L:CPU_COMM_MESSAGETYPE S:COMM message type : %04x\n
+L:CPU_COMM_RX_DEFAULT_HANDLER S:Handler is not registered for this message type\n
+L:CPU_COMM_RX_TYPE_INVALID S:Can't handle invalid comm msg type : 0%d\n
+component:TEST_COMPONENT
+L:TEST_PRINT_STATUS S:\nEnable status    :%d\nError State      :%d\nIsolated State   :%d\n
+L:TEST_SET_ERROR_STATE S:Diagnostic component : %d with Error code : %d\n
+L:TEST_PRINT_TEST_STATUS S:Test Status : %d\n
+L:TEST_FLASH_GOLDEN_PROTECT S:Golden Protected %d\n
+L:TEST_DP_OC_READ S:DP Over current status : %d\n
+component:CONFIG_COMPONENT
+L:CONFIG_SAVE_VARIABLE S:Config_ArbitrateSetVar Source = %d, variable = %d, data = 0x%x\n
+L:CONFIG_LOAD_VARIABLE S:Config_ArbitrateGetVar Variable = %d, data = 0x%x, result = %d\n
+L:NVM_CONFIG_STATUS_USB2_ON S:*** USB 2 Enabled ***\n
+L:NVM_CONFIG_STATUS_USB2_OFF S:*** USB 2 DISABLED ***\n
+L:NVM_CONFIG_STATUS_USB3_ON S:*** USB 3 Enabled ***\n
+L:NVM_CONFIG_STATUS_USB3_OFF S:*** USB 3 DISABLED ***\n
+L:NVM_CONFIG_STATUS_ISO_ON S:*** USB 3 ISO ENABLED ***\n
+L:NVM_CONFIG_STATUS_ISO_OFF S:*** USB 3 ISO Bypassed ***\n
+L:NVM_CONFIG_STATUS_ISO_CTRL_ON S:*** USB 3 ISO Control Transfer ENABLED ***\n
+L:NVM_CONFIG_STATUS_ISO_CTRL_OFF S:*** USB 3 ISO Control Transfer DISABLED ***\n
+L:NVM_CONFIG_STATUS_DP_ON S:*** Display Port Enabled ***\n
+L:NVM_CONFIG_STATUS_DP_OFF S:*** Display Port DISABLED ***\n
+L:NVM_CONFIG_STATUS_LANPORT_ON S:*** Lan Port Enabled ***\n
+L:NVM_CONFIG_STATUS_LANPORT_OFF S:*** Lan Port DISABLED ***\n
+L:NVM_CONFIG_STATUS_RS232_ON S:*** RS232 Enabled ***\n
+L:NVM_CONFIG_STATUS_RS232_OFF S:*** RS232 DISABLED ***\n
+L:CONFIG_LOAD_FAIL S:Atmel Featurebits load fail. All features are disabled\n
+L:CONFIG_EVENT S:Configuration Event [%d] Generated. \n
+L:CONFIG_FEATURE_CONTROL S:FeatureControl USB:[%x] DP:[%x] MISC:[%x]\n
+L:CONFIG_FEATURE_ENABLE S:FeatureEnable USB:[%x] DP:[%x] MISC:[%x]\n
+L:CONFIG_FEATURE_MASK S:FeatureMask USB:[%x] DP:[%x] MISC:[%x]\n
+L:CONFIG_HW_NOT_SUPPORTED S:HW doesn't support the SW features: [%x]\n
+L:CONFIG_GET_DATA_PTR_FAILED S:Config_GetDataPointer: No pointer for the given variabled\n
+component:FLASH_DATA_COMPONENT
+L:FLASH_STORAGE_INIT S:Flash storage initialization - status %d active block %d used space = 0x%x\n
+L:NO_BLOCK_TO_SWAP_TO S:No erased block to swap to\n
+L:LOAD_VARIABLE_FROM_FLASH S:load variable %d from FLASH, data end at: 0x%x\n
+L:FOUND_VARIABLE_FROM_FLASH S:Found variable %d from FLASH, size = %d data = 0x%x\n
+L:FOUND_VARIABLE_MORE_INFO S:Variable at address 0x%08x\n
+L:LOAD_VAR_INVALID_SIZE S:Variable has wrong size: expected: %d actual %d key:%d\n
+L:LOAD_VAR_INVALID_HEADER_ADDRESS S:Variable has wrong header: address 0x%x\n
+L:LOAD_VAR_INVALID_HEADER S:Variable has wrong header: [0]: 0x%x [1] 0x%x data[0] 0x%x\n
+L:FLASH_ERASE_SIZE_WRONG S:Erase region should be a multiple of 4, instead is 0x%x\n
+L:CLEAR_VAR_AREA S:clear region should be a multiple of 4, instead is address % bytes 0x%x\n
+L:FLASH_GET_BLOCK_INFO S:Block number %d address 0x%x status %d\n
+L:FLASH_STORAGE_ERASE S:Flash Vars successfully erased\n
+L:FLASH_STORAGE_HEADER_ZEROED S:*** Flash Vars zeroed header data found, from address %x, %d bytes\n
+L:FLASH_STORAGE_HEADER_ERASED S:*** Flash Vars erased header data found, from address %x, %d bytes\n
+L:FLASH_STORAGE_HEADER_INVALID S:*** Flash Vars invalid header data found, from address %x, %d bytes\n
+L:FLASH_ERASE_COMPLETE S:Chip Erase Complete\n
+L:FLASH_WRITE_BYTES S:Offset%d %x %d\n
+L:FLASH_DISPLAY_SECTOR_PROTECTED S:Protected:   %x to %x\n
+L:FLASH_DISPLAY_SECTOR_UNPROTECTED S:Unprotected: %x to %x\n
+L:FLASH_DEVICE_ID S:Flash ID: %x\n
+L:FLASH_WRITE_PROTECT_FAIL S:Address %x protected\n
+L:FLASH_GOLDEN_PROTECT S:Golden Area Protect\n
+L:FLASH_SECTORS_UNPROTECT S:Flash unprotected\n
+L:FLASH_SECTOR_ERASED S:Flash sector %x erased\n
+L:FLASH_GOLDEN_PROTECT_PASS S:Golden Protected %d\n
+L:FLASH_GLOBAL_FREEZE S:GLOBAL Freeze %d\n
+L:FLASH_LOCK_BITS S:Lock Bits %d\n
+L:FLASH_WRITE_TIMEOUT S:Flash write timeout at line :%d\n
+L:FLASH_WRITE_BIG S:Flash write too big number: %d\n
+component:RANDOM_COMPONENT
+L:ADD_ENTROPY S:Add random number 0x%.2x\n
+L:GET_ASYNCRAND S:Get random number asynchronously\n
+L:CANT_ADD_ANOTHER_CALLBACK S:Can't add another callback\n
+L:GET_QUICK_PSEUDO_RANDOM S:Got pseudo random number 0x%x\n
+L:INVALID_SEED S:Invalid seed\n
+L:FAILED_TO_LOAD_SEED S:Failed to load pseudorandom seed\n
+L:FAILED_TO_SAVE_SEED S:Failed to save pseudorandom seed\n
+component:XADC_COMPONENT
+L:XADC_READ_TEMP S:XADC Read Temp %d.%.2d C\n
+L:XADC_SET_TEMP_WARNING_2 S:FPGA warning temperature for -2 board set to %d C.\n
+L:XADC_SET_TEMP_WARNING_3 S:FPGA warning temperature for -3 board set to %d C.\n
+L:XADC_SET_TEMP_SHUTDOWN_2 S:FPGA shutdown temperature for -2 board set to %d C.\n
+L:XADC_SET_TEMP_SHUTDOWN_3 S:FPGA shutdown temperature for -3 board set to %d C.\n
+L:XADC_FPGA_THRESHOLD S:FPGA temperature threshold: Warning %d C, Shutdown %d C.\n
+L:XADC_READ_VCC_INT S:XADC Read VCC INT %d.%.3d V\n
+L:XADC_READ_VCC_AUX S:XADC Read VCC AUX %d.%.3d V\n
+L:XADC_READ_VCC_BRAM S:XADC Read VCC BRAM %d.%.3d V\n
+component:STATS_MON_COMPONENT
+L:STATS_MON_MAX_REGISTERED S:Max number of stat groups registered for monitoring\n
+L:STATS_MON_GROUP_REGISTERED S:Stat group registered %d of %d, number of stats %d\n
+L:STATS_MON_GROUP_STILL_PROCESSING S:Stat group %d still being processed when interval expired\n
+L:STATS_MON_GROUP_NOT_REGISTERED S:Stats group not registered %08x!?\n
+L:STATS_MON_GROUP_PRINT_STATS S:****Printing non-zero statistics: ****\n
+L:STATS_MON_PRINT_REG_VALUE S:Reg address %08x value %x\n
+L:STATS_MON_NO_PARAM S:Group has no parameters! \n
+L:STATS_MON_MULTIPLE_STAT S:Multiple Stats are running at the same time: %d \n
+component:TIMING_COMPONENT
+L:TIMING_MAXIMUM_HANDLERS_REGISTERED S:The maximum number of timers are already registered %d callback 0x%x\n
+L:TIMING_NUMBER_HANDLERS_REGISTERED S:Timer registered,  %d of %d callback 0x%x\n
+L:SHOW_TIMERS1 S:Timer 0x%x has callback 0x%x, and is set for %d ms\n
+L:START_TIMER S:Starting timer 0x%x\n
+L:STOP_TIMER S:Stopping timer 0x%x\n
+L:CHANGE_TIMEOUT S:Changing timer 0x%x timeout to %d ms\n
+L:NULL_TIMER_ARG_LINE S:Called with a NULL timer arg, at line %d\n
+L:TIMING_INTERNAL_STATE S:Internal state: lastIteration = %d, tickCounter = %d\n
+L:SHOW_TIMERS3 S:         is enabled %d, is periodic %d, set to expire at tick %d\n
+L:UTIL_PROFILE_TIMING_TABLE_HEADER S:TimerNo | Shortest (usec) | Longest (usec)\n
+L:UTIL_PROFILE_TIMING_TABLE_ENTRY S:%7d | %15d | %d \n
+L:UTIL_PROFILE_TIMING_INVALID_TIMER_START S:Attempt to start invalid profile timer value: %d\n
+L:UTIL_PROFILE_TIMING_INVALID_TIMER_STOP S:Attempt to stop invalid profile timer value: %d\n
+L:UTIL_PROFILE_TIMING_TABLE_LAST_HDR S:Last %d entries: \n
+L:UTIL_PROFILE_TIMING_TABLE_LAST_LIST_ENTRY S:%d \n
+L:UTIL_PROFILE_WATCHDOG_TIMEOUT S: ** ** Watchdog Timeout! Time %d ms exceeded by %d us\n
+component:CALLBACK_COMPONENT
+L:CALLBACK_INVALID_TYPE S:Callback invalid type %d callback[index].type %d at line = %d\n
+L:CALLBACK_INVALID_HANDLE S:Callback invalid handle, tokens mismatched, at line = %d\n
+L:CALLBACK_INVALID_REMOVE S:Callback invalid remove at line = %d type %d index %d\n
+L:CALLBACK_FREE_LIST_EMPTY S:Callback free stack is empty\n
+L:CALLBACK_SINGLE_RUN_CANCELED S:New single run callback command canceled\n
+component:EVENT_COMPONENT
+L:EVENT_INVALID_ACCESS S:Event invalid access at line = %d\n
+L:EVENT_NULL_HANDLER S:Event subscribe a null handler\n
+L:EVENT_HANDLER_MAX S:Exceed max number of handlers\n
+L:EVENT_NULL_CHECK_FUNCTION S:Event check event status function is null, event = %d\n
+L:EVENT_INVALID_DEQUEUE S:Event invalid dequeue\n
+L:EVENT_INVALID_POP S:Event invalid stack pop at line = %d\n
+L:EVENT_INVALID_PUSH S:Event invalid stack push at line = %d\n
+component:MAIN_LOOP_COMPONENT
+L:MAX_TIME S:Max task time: %d us\n
+L:MAX_TIME_DETAIL S:poll:%d, event and callback:%d\n
+L:RESET_STAT S:Reset Max task time\n
+component:MAC_COMPONENT
+L:LL_TX_MAC_ENABLED S:MAC Tx Enabled\n
+L:LL_RX_MAC_ENABLED S:MAC Rx Enabled\n
+L:LL_TX_MAC_DISABLED S:MAC Tx Disabled\n
+L:LL_RX_MAC_DISABLED S:MAC Rx Disabled\n
+L:LL_TX_LINK_LAYER3_ENABLED S:Link Layer 3 Tx Enabled\n
+L:LL_RX_LINK_LAYER3_ENABLED S:Link Layer 3 Rx Enabled\n
+L:LL_TX_LINK_LAYER3_DISABLED S:Link Layer 3 Tx Disabled\n
+L:LL_RX_LINK_LAYER3_DISABLED S:Link Layer 3 Rx Disabled\n
+L:LL_RX_LINK_LAYER_IRQ S:Link Layer Rx IRQ pending:%x link ok:%d remote fault:%d\n
+L:LL_TX_MAC_STATS0_PAUSE_FRAME_COUNT S:STAT:MAC link_layer_tx->mac->stats0->pause_frame: %d\n
+L:LL_TX_MAC_STATS0_FSM_BEYOND_PTP_COUNT S:STAT:MAC link_layer_tx->mac->stats0->fsm_count_beyond_ptp: %d\n
+L:LL_TX_MAC_STATS0_FSM_ROLLOVER_COUNT S:STAT:MAC link_layer_tx->mac->stats0->fsm_rollover: %d\n
+L:LL_TX_MEDIARS_PFIFO_WRENG_STATS0_PKT_MAX_BYTE_CNT_ERR S:STAT:MAC link_layer_tx->media_rs->pfifo->write_engine->stats0->pkt_max_byte_cnt_err: %d\n
+L:LL_TX_MEDIARS_PFIFO_WRENG_STATS0_FIFO_FULL_ERR S:STAT:MAC link_layer_tx->media_rs->pfifo->write_engine->stats0->fifo_full_err: %d\n
+L:LL_TX_MEDIARS_PFIFO_WRENG_STATS0_PKT_ERR S:STAT:MAC link_layer_tx->media_rs->pfifo->write_engine->stats0->pkt_err: %d\n
+L:LL_TX_MEDIARS_PFIFO_WRENG_STATS0_PKT_SOP_ERR S:STAT:MAC link_layer_tx->media_rs->pfifo->write_engine->stats0->pkt_sop_err: %d\n
+L:LL_TX_MEDIARS_PFIFO_WRENG_STATS0_DRP_PKT_RD S:STAT:MAC link_layer_tx->media_rs->pfifo->write_engine->stats0->drp_pkt_rd: %d\n
+L:LL_TX_MEDIARS_PFIFO_WRENG_STATS0_DRP_PKT_WR S:STAT:MAC link_layer_tx->media_rs->pfifo->write_engine->stats0->drp_pkt_wr: %d\n
+L:LL_TX_MEDIARS_PFIFO_WRENG_STATS0_DRP_PKT S:STAT:MAC link_layer_tx->media_rs->pfifo->read_engine->stats0->drp_pkt: %d\n
+L:LL_TX_PTP_GUARD_STATS0_SOP_ERROR S:STAT:MAC link_layer_tx->ptp_guard->stats0->missing_sop_err: %d\n
+L:LL_TX_PTP_GUARD_STATS0_EOP_ERROR S:STAT:MAC link_layer_tx->ptp_guard->stats0->missing_eop_err:  %d\n
+L:LL_TX_PTP_GUARD_STATS0_MAX_CYCLE_ERROR S:STAT:MAC link_layer_tx->ptp_guard->stats0->max_cycle_err: %d\n
+L:LL_RX_MEDIARS_STATS1_XGMII_DATA_ERROR_COUNT S:STAT:MAC link_layer_rx->media_rs->stats1->xgmii_data_error: %d\n
+L:LL_RX_MEDIARS_STATS1_XGMII_MISSING_SFD_COUNT S:STAT:MAC link_layer_rx->media_rs->stats1->xgmii_missing_sfd: %d\n
+L:LL_RX_MEDIARS_STATS1_XGMII_WRONG_LANE_START_COUNT S:STAT:MAC link_layer_rx->media_rs->stats1->xgmii_wrong_lane_start: %d\n
+L:LL_RX_MAC_STATS0_PAUSE_FRAME_COUNT S:STAT:MAC link_layer_rx->mac->stats0->pause_frame: %d\n
+L:LL_RX_MAC_STATS0_OUT_FSM_ROLLOVER_COUNT S:STAT:MAC link_layer_rx->mac->stats0->out_fsm_rollover: %d\n
+L:LL_RX_MAC_STATS0_IN_FSM_ROLLOVER_COUNT S:STAT:MAC link_layer_rx->mac->stats0->in_fsm_rollover: %d\n
+L:LL_RX_MAC_STATS0_DBG_SEQ_NUM_IN_ERR S:STAT:MAC link_layer_rx->mac->stats0->dbg_seq_num_in_err: %d\n
+L:LL_RX_MCI_STATS0_FILTER_FIFO_OVERFLOW S:STAT:MAC link_layer_rx->mac_client_interface->client_array->stats0->filter_fifo_overflow: %d\n
+L:LL_RX_MCI_STATS0_ONE_CYCLE_PKT S:STAT:MAC link_layer_rx->mac_client_interface->client_array->stats0->one_cycle_pkt: %d\n
+L:LL_RX_MCI_STATS0_IN_FSM_ROLLOVER S:STAT:MAC link_layer_rx->mac_client_interface->client_array->stats0->in_fsm_rollover: %d\n
+L:LL_RX_MAC_PFIFO_WRENG_STATS0_PKT_MAX_BYTE_CNT_ERR S:STAT:MAC link_layer_rx->mac->pfifo->write_engine->stats0->pkt_max_byte_cnt_err: %d\n
+L:LL_RX_MAC_PFIFO_WRENG_STATS0_FIFO_FULL_ERR S:STAT:MAC link_layer_rx->mac->pfifo->write_engine->stats0->fifo_full_err: %d\n
+L:LL_RX_MAC_PFIFO_WRENG_STATS0_PKT_ERR S:STAT:MAC link_layer_rx->mac->pfifo->write_engine->stats0->pkt_err: %d\n
+L:LL_RX_MAC_PFIFO_WRENG_STATS0_PKT_SOP_ERR S:STAT:MAC link_layer_rx->mac->pfifo->write_engine->stats0->pkt_sop_err: %d\n
+L:LL_RX_MAC_PFIFO_WRENG_STATS0_DRP_PKT_RD S:STAT:MAC link_layer_rx->mac->pfifo->write_engine->stats0->drp_pkt_rd: %d\n
+L:LL_RX_MAC_PFIFO_WRENG_STATS0_DRP_PKT_WR S:STAT:MAC link_layer_rx->mac->pfifo->write_engine->stats0->drp_pkt_wr: %d\n
+L:LL_RX_MAC_PFIFO_RDENG_STATS0_DRP_PKT S:STAT:MAC link_layer_rx->mac->pfifo->read_engine->stats0->drp_pkt: %d\n
+L:LL_RX_PTP_GUARD_STATS0_SOP_ERROR S:STAT:MAC link_layer_rx->ptp_guard->stats0->missing_sop_err: %d\n
+L:LL_RX_PTP_GUARD_STATS0_EOP_ERROR S:STAT:MAC link_layer_rx->ptp_guard->stats0->missing_eop_err:  %d\n
+L:LL_RX_PTP_GUARD_STATS0_MAX_CYCLE_ERROR S:STAT:MAC link_layer_rx->ptp_guard->stats0->max_cycle_err: %d\n
+L:L3_TX_ETH_FRAMER_PFIFO_WRENG_STATS0_PKT_MAX_BYTE_CNT_ERR S:STAT:MAC layer3_tx->eth_framer->pfifo->write_engine->stats0->pkt_max_byte_cnt_err: %d\n
+L:L3_TX_ETH_FRAMER_PFIFO_WRENG_STATS0_FIFO_FULL_ERR S:STAT:MAC layer3_tx->eth_framer->pfifo->write_engine->stats0->fifo_full_err: %d\n
+L:L3_TX_ETH_FRAMER_PFIFO_WRENG_STATS0_PKT_ERR S:STAT:MAC layer3_tx->eth_framer->pfifo->write_engine->stats0->pkt_err: %d\n
+L:L3_TX_ETH_FRAMER_PFIFO_WRENG_STATS0_PKT_SOP_ERR S:STAT:MAC layer3_tx->eth_framer->pfifo->write_engine->stats0->pkt_sop_err: %d\n
+L:L3_TX_ETH_FRAMER_PFIFO_WRENG_STATS0_DRP_PKT_RD S:STAT:MAC layer3_tx->eth_framer->pfifo->write_engine->stats0->drp_pkt_rd: %d\n
+L:L3_TX_ETH_FRAMER_PFIFO_WRENG_STATS0_DRP_PKT_WR S:STAT:MAC layer3_tx->eth_framer->pfifo->write_engine->stats0->drp_pkt_wr: %d\n
+L:L3_TX_ETH_FRAMER_PFIFO_RDENG_STATS0_DRP_PKT S:STAT:MAC layer3_tx->eth_framer->pfifo->read_engine->Stats0->drp_pkt: %d\n
+L:L3_TX_ETH_FRAMER_PTP_GUARD_STATS0_SOP_ERROR S:STAT:MAC layer3_tx->eth_framer->ptp_guard->stats0->missing_sop_err: %d\n
+L:L3_TX_ETH_FRAMER_PTP_GUARD_STATS0_EOP_ERROR S:STAT:MAC layer3_tx->eth_framer->ptp_guard->stats0->missing_eop_err:  %d\n
+L:L3_TX_ETH_FRAMER_PTP_GUARD_STATS0_MAX_CYCLE_ERROR S:STAT:MAC layer3_tx->eth_framer->ptp_guard->stats0->max_cycle_err: %d\n
+L:L3_RX_ETH_DE_FRAMER_STATS0_NON_ETH_PKT S:STAT:MAC layer3_rx->eth_de_framer->stats0->non_eth_pkt: %d\n
+L:L3_RX_PTP_GUARD_STATS0_SOP_ERROR S:STAT:MAC layer3_rx->ptp_guard->stats0->missing_sop_err: %d\n
+L:L3_RX_PTP_GUARD_STATS0_EOP_ERROR S:STAT:MAC layer3_rx->ptp_guard->stats0->missing_eop_err:  %d\n
+L:L3_RX_PTP_GUARD_STATS0_MAX_CYCLE_ERROR S:STAT:MAC layer3_rx->ptp_guard->stats0->max_cycle_err: %d\n
+component:ICMD_COMPONENT
+L:INVALID_HEADER S:Received 0x%x, when expecting an icmd header\n
+L:INVALID_COMPONENT S:Received %d, when expecting a component\n
+L:TOO_MANY_ARGS S:Too many args %d in icmd request\n
+L:CUROFFSET_CORRUPTED S:curOffset with value %d, is corrupt at line %d\n
+L:CALLING_HANDLER S:Calling function 0x%x, with 1st two args 0x%x, 0x%x\n
+L:RECVD_ICMD S:Received icmd for component %d, function %d, with %d arguments\n
+L:NO_ICMD_FCN_PTR_ARRAY S:No icmd function pointer array found for component %d\n
+L:ICMD_TIMEOUT S:icmd message timed out. Resetting receive buffer\n
+L:BASE_READ_MEM S:Read address 0x%x: value 0x%x\n
+L:BASE_WRITE_MEM S:Wrote address 0x%x: value 0x%x\n
+L:DEPRECATED_ICMD_TIMER_REGISTER_FAILURE S:Unable to register icmd timer\n
+L:ICMD_TIMER_NOT_REGISTERED S:ICmd timer is not register, did no one call ICMD_Init()?\n
+L:BASE_READ_MODIFY_WRITE S:Read-Modify-Write address 0x%x: Read value 0x%x, Write value 0x%x\n
+L:BASE_READ_MODIFY_WRITE_CONFLICT_MASKS S:Read-Modify-Write for address 0x%x has conflicting bits in set bitfields 0x%x and clear bitfields0x%x\n
+L:BASE_MODIFY_BITFIELD S:Modify bitfield for address 0x%x starting at position %i for width %i bits\n
+L:MODIFY_BITFIELD_RESULT S:Write value: 0x%x, Read value: 0x%x, New value 0x%x\n
+L:DUMP_MEMORY_ADDR_INVALID S:Address 0x%x is not a valid 32bit memory location\n
+L:DEPRECATED_ICMD S:This iCommand is no longer available\n
+L:BASE_READ_MEM16 S:Read address 0x%x: value 0x%x\n
+L:BASE_WRITE_MEM16 S:Wrote address 0x%x: value 0x%x\n
+L:BASE_READ_MODIFY_WRITE16 S:Read-Modify-Write address 0x%x: Read value 0x%x, Write value 0x%x\n
+L:BASE_READ_MODIFY_WRITE_CONFLICT_MASKS16 S:Read-Modify-Write for address 0x%x has conflicting bits in set bitfields 0x%x and clear bitfields0x%x\n
+L:JUNK_TIMER_EXPIRED_REENABLING_PROCESSING S:Junk timer expired.  Re-enabling processing of icmds\n
+component:TOP_COMPONENT
+L:BB_TOP_DRP_READ_INVALID_MASK S:Tried to read from more than one DRP bus at a time: drpEnMask = 0x%x\n
+L:BB_TOP_BAD_MUTEX_TOKEN S:Wrong IMutex token at line %d\n
+L:BB_TOP_DP_DRP_WRITE S:Wrote DRP address 0x%x with drpEnMask = 0x%x and write data = 0x%x\n
+L:BB_TOP_DP_DRP_READ S:Read DRP address 0x%x with drpEnMask = 0x%x: read data = 0x%x\n
+L:BB_TOP_DP_DRP_RMW1 S:RMWed DRP address 0x%x with drpEnMask = 0x%x, rmwMask = %d\n
+L:BB_TOP_DP_DRP_RMW2 S: and write data = 0x%x\n
+L:BB_TOP_DP_INVALID_DRP_READ S:Tried to read from more than one DRP bus at a time: drpEnMask = 0x%x\n
+L:BB_TOP_DP_INVALID_BANDWIDTH S:Invalid bandwidth setting %d at line %d\n
+L:BB_TOP_DP_INVALID_LANE_COUNT S:Invalid lane count setting %d at line %d\n
+L:BB_TOP_DP_TRANSCEIVER_CONFIG_VALUE_ERROR S:DP transceiver value error: bad value = 0x%x at line %d\n
+L:BB_TOP_DP_INVALID_MMCM_OUTPUT_FREQ S:Invalid MMCM output frequency: bw = %d\n
+L:BB_TOP_DP_INVALID_MMCM_OUTPUT_ENCODING S:Invalid MMCM output encoding: bw = %d, laneWidth = %d\n
+L:BB_TOP_DP_GTX_RESET_TOO_SLOW S:GTX took too long to come out of reset!\n
+L:BB_TOP_DP_GTP_RESET_TOO_SLOW S:GTP took too long to come out of reset! Waited for %d us\n
+L:BB_TOP_DP_SET_VOLTAGE_SWING S:Writing txDiffCtrl with 0x%x -> 0x%x\n
+L:BB_TOP_DP_SET_PREEMPHASIS S:Writing txPostCursor with 0x%x -> 0x%x\n
+L:BB_TOP_DP_PRECHARGE S:Pre-charging main link with txInhibit = %d, laneCount = %d\n
+L:BB_TOP_DP_INITIALIZING_DP_TRANSCEIVERS S:Initializing DP transceivers: bw = %d, lc = %d\n
+L:BB_TOP_DBGXX S:### DBG 0x%x, 0x%x\n
+L:BB_TOP_HOLD_GE_RESET S:Placing GE in reset mode\n
+L:BB_TOP_GE_RUN S:Placing GE in run mode\n
+L:BB_TOP_GE_BOOTLOADER S:Placing GE in bootloader mode\n
+L:BB_TOP_GE_NULL_RUN_WATCHDOG_CALLBACK S:GE Run Wathdog happen without Callback\n
+L:BB_TOP_GE_NULL_RESET_WATCHDOG_CALLBACK S:GE Reset Wathdog happen without Callback\n
+L:BB_TOP_GE_RUN_AGAIN S:Set GE Run mode again while it's alreay in Run mode\n
+L:BB_TOP_DRP_WRITE_WAIT_TIMEOUT S:DRP Write wait for busses idle timeout\n
+L:BB_TOP_LINK_LOCK_WAIT_TIMEOUT S:Link PLL lock wait timeout\n
+L:BB_TOP_GTP_OUT_OF_RESET S:GTP is out of reset\n
+L:BB_TOP_DP_FRQ S:DP Freq took %d us to measure count = %d\n
+L:BB_TOP_DP_MMCM_LOCK S:DP MMCM Lock done took %d us to lock\n
+L:BB_TOP_DP_FRQ_TIMEOUT S:DP Freq measure time out\n
+L:BB_TOP_SSC_DETECTION S:***** SSC Detection = %d *****\n
+L:BB_TOP_READ_ICAP S:Read Reg = %x Val = %x\n
+L:BB_TOP_WRITE_ICAP S:Write Reg = %x Val = %x\n
+L:BB_TOP_READ_USER_REG S:User Reg = %x\n
+L:BB_TOP_WRITE_USER_REG S:Write User Reg = %x\n
+L:BB_TOP_FRQ_RUNNING S: Frequency detection still running\n
+L:BB_TOP_DRP_WRITE_TIMER_OVER S:DRP Set Timerover. drp_en_mask = 0x%x\n
+L:BB_TOP_DRP_READ_TIME_OVER S:DRP Read Timerover. Line at: %d\n
+L:BB_TOP_DP_SOURCE_RST S:DP Source Reset :%d (1:Apply reset, 0: Clear reset)\n
+L:BB_TOP_DP_NO_SYMBOL_LOCK S:No symbol lock. align status: 0x%x\n
+L:BB_TOP_CORE_TYPE S:The core type is -%d\n
+component:UTIL_COMPONENT
+L:UTIL_IMUTEX_HELD_ACQUIRE S:Attempted to acquire a held iMutex\n
+L:UTIL_IMUTEX_UNHELD_RELEASE S:Attempted to release an unheld iMutex\n
+L:UTIL_IMUTEX_BAD_TOKEN S:Attempted to release a held iMutex with an invalid token\n
+L:UTIL_IMUTEX_BAD_PARAM S:Bad parameter passed to UTIL_IMutexWait; mutex = 0x%x, f = 0x%x\n
+L:UTIL_IMUTEX_NO_FREE_CALLBACK_SLOTS S:Ran out of callback slots! Mutex addr = 0x%x, function addr = 0x%x\n
+component:ILOG_COMPONENT
+L:INVALID_COMPONENT S:ILOG Received an invalid component %d from line %d\n
+L:INVALID_LEVEL S:ILOG Received an invalid logging level %d from line %d\n
+L:TOO_MANY_ARGS S:ILOG Received too many args, %d to be exact\n
+L:GET_LEVEL S:Component %d is at logging level %d\n
+L:COPROC_REG_DUMP S:Sparc reg dump:           TBR = 0x%x, PSR = 0x%x, WIM = 0x%x\n
+L:GLOBAL_REG_DUMP S:Sparc reg dump:           %%g5 = 0x%x, %%g6 = 0x%x, %%g7 = 0x%x\n
+L:MISC_REG_DUMP S:Sparc reg dump:           current window %d\n\n
+L:SEPERATOR_LOG S:\n\n---------- Active windows follow ----------\n\n
+L:GEN_REG_DUMP0 S:Sparc reg dump for win %2d:%%l0 = 0x%x, %%l1 = 0x%x\n
+L:GEN_REG_DUMP1 S:Sparc reg dump:           %%l2 = 0x%x, %%l3 = 0x%x, %%l4 = 0x%x\n
+L:GEN_REG_DUMP2 S:Sparc reg dump:           %%l5 = 0x%x, %%l6 = 0x%x, %%l7 = 0x%x\n
+L:GEN_REG_DUMP3 S:Sparc reg dump for win %2d:%%i0 = 0x%x, %%i1 = 0x%x\n
+L:GEN_REG_DUMP4 S:Sparc reg dump:           %%i2 = 0x%x, %%i3 = 0x%x, %%i4 = 0x%x\n
+L:GEN_REG_DUMP5 S:Sparc reg dump:           %%i5 = 0x%x, %%i6 = 0x%x, %%i7 = 0x%x\n
+L:SET_BLOCKING_MODE S:Setting ilog blocking mode\n
+L:CLEAR_BLOCKING_MODE S:Clearing ilog blocking mode\n
+L:ILOG_SET_TIMESTAMP S:Setting timestamp to value %d, offset needed %d\n
+L:TEST_ASSERT S:Icmd run for testing asserts.  Args are %d, %d, %d\n
+L:LOG_LEVEL_CHANGED S:Changing logging level for component %d to level %d\n
+L:INVALID_COMPONENT_ILOG_MAIN S:ILOG main logging function received an invalid component %d\n
+L:INVALID_LEVEL_ILOG_MAIN S:ILOG main logging function received an invalid logging level %d\n
+L:ILOG_MSG_DROPPED S:ILOG message dropped\n
+L:ASSERT_STATUS1 S:Assert status: preAssertHookFunction is 0x%x, postAssertHookFunction is 0x%x\n
+L:ASSERT_STATUS2 S:Assert status: no asserts have occured\n
+L:ASSERT_STATUS3 S:Assert status: %d asserts have occured, last assert message was:\n
+component:BBGE_COMM_COMPONENT
+L:BBGE_COMM_ERROR_BB S:Error: GE communicating BB\n
+L:BBGE_COMM_ERROR_GE S:Error: BB communicating GE\n
+L:BBGE_COMM_GE_ASSERTED S:** GE Asserted!\n
+L:BBGE_COMM_GE_ASSERT_INFO S:GE Assert Info[%d]: 0x%x\n
+L:BBGE_COMM_GE_CRC S:Got Running GE CRC: %x \n
+L:BBGE_COMM_GE_VERSION_MISMATCH S:BB Flash's GE ver[%x] or CRC[%x] doesn't match with Running GE. Start GE automatic update\n
+L:BBGE_COMM_GE_VERSION_MATCH S:Checked BB Flash's GE ver[%x] and CRC[%x] match with Running GE.\n
+L:BBGE_COMM_GE_VERSION S:Got Running GE ver: %d.%d.%d\n
+L:BBGE_COMM_GE_WRONG_INDEX S:storage write to wrong index %d\n
+L:BBGE_COMM_GE_STORAGE_FAIL S:storage send to GE failed\n
+component:UART_COMPONENT
+L:PACKETIZE_MAX_RESPONSE_HANDLERS_REGISTERED S:The maximum number of response handlers are already registered\n
+L:PACKETIZE_MAX_CHANNEL_HANDLERS_REGISTERED S:The maximum number of channel rx handlers are already registered\n
+L:PACKETIZE_RESPONSE_NOT_FREED S:Could not free the given response ID %d\n
+L:PACKETIZE_RX_HANDLER_NOT_FOUND S:Receive packet handler not found clientId=%d, uartPort=%d, responseID=%d\n
+L:UART_ILLEGAL_PORT_GIVEN S:The port given was not Blackbird or GE\n
+L:PACKETIZE_RX_HANDLER_FOUND S:Receive packet handler is found uartPort=%d, clientId=%d, responseID=%d\n
+L:INVALID_CHANNEL_ID_GIVEN S:Got an invalid channel id 0x%x\n
+L:PACKETIZE_RX_MAX_HANDLERS S:maxHandlers=%d\n
+L:PACKETIZE_RX_FOUND S:Receive packet handler found at line = %d\n
+L:PACKETIZE_UART_FIFO_FULL S:UART FIFO full for port %d\n
+L:UART_HIGH_SPEED S:UART IsHighSpeed = %d\n
+L:PKT_TIMEOUT_BB S:#### Pkt Timeout BB port ^^^ RxPktState: %d, Offset: %d\n
+L:PKT_TIMEOUT_GE S:#### Pkt Timeout GE port ^^^ RxPktState: %d, Offset: %d, bytes Rx: %d\n
+L:PKT_IN_FIFO S:#### Fifo[0x%x]: 0x%x\n
+L:PKT_TIMEOUT_FINISH S:#### finished!!!\n
+L:BB_OVERRUN S:UART BB: HW overrun:%d, SW overrun:%d\n
+L:GE_OVERRUN S:UART GE: HW overrun:%d, SW overrun:%d\n
+L:PACKETIZE_NO_RX_HANDLER S:No RX Handler for PORT ID %d\n
+L:PACKETIZE_BUFFER_COPY_FAIL S:Buffer copy failed: Port %d Size %d\n
+L:MAX_UART_RX_TIME S:Max Rx Time %d\n
+L:AVG_UART_RX_TIME S:Average Rx Time %d\n
+component:CORE_COMPONENT
+L:BB_UART_VERSION S:BB UART Version: %d.%d.%d\n
+L:I2C_MASTER_VERSION S:I2C MASTER Version: %d.%d.%d\n
+L:I2C_SLAVE_VERSION S:I2C SLAVE Version: %d.%d.%d\n
+L:MDIO_MASTER_VERSION S:MDIO MASTER Version: %d.%d.%d\n
+L:SPI_FLASH_VERSION S:SPI FLASH Version: %d.%d.%d\n
+L:GPIO_VERSION S:GPIO Version: %d.%d.%d\n
+L:LINK_LAYER_TX_VERSION S:LINK LAYER TX Version: %d.%d.%d\n
+L:LINK_LAYER_RX_VERSION S:LINK LAYER RX Version: %d.%d.%d\n
+L:LAYER3_TX_VERSION S:LAYER3 TX Version: %d.%d.%d\n
+L:LAYER3_RX_VERSION S:LAYER3 RX Version: %d.%d.%d\n
+L:MCA_VERSION S:MCA Version: %d.%d.%d\n
+L:ULP_CORE_VERSION S:ULP CORE Version: %d.%d.%d\n
+L:ULP_PHY_VERSION S:ULP PHY Version: %d.%d.%d\n
+L:DP_SINK_MAIN_VERSION S:DP SINK MAIN Version: %d.%d.%d\n
+L:DP_SINK_HPD_VERSION S:DP SINK HPD Version: %d.%d.%d\n
+L:DP_SOURCE_MAIN_VERSION S:DP SOURCE MAIN Version: %d.%d.%d\n
+L:DP_SOURCE_HPD_VERSION S:DP SOURCE HPD Version: %d.%d.%d\n
+L:XMII_ADAPTER_VERSION S:XMII ADAPTER Version: %d.%d.%d\n
+L:GE_ADAPTER_VERSION S:GE ADAPTER Version: %d.%d.%d\n
+L:GE_UART_VERSION S:GE UART Version: %d.%d.%d\n
+L:RS232_EXTENDER_VERSION S:RS232 EXTENDER Version: %d.%d.%d\n
+L:TOP_VERSION S:TOP Version: %d.%d.%d\n
+L:CORE_VERSION S:CORE Version: %d.%d.%d\n

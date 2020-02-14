@@ -1,0 +1,41 @@
+component:MDIO_COMPONENT
+L:MDIO_ICMD_WRITE S:Writing to MDIO device %d, address 0x%x, with data 0x%x\n
+L:MDIO_INDIRECT_ICMD_WRITE S:Writing to MDIO device %d, devType %d\n
+L:MDIO_INDIRECT_ICMD_WRITE2 S:                address 0x%x, with data 0x%x\n
+L:INVALID_ICMD_ARG S:Invalid icmd arg 0x%x received\n
+L:REG_FAILURE S:Invalid register ID/Rev at line %d\n
+L:INVALID_PIN S:Invalid Pin number %d\n
+L:SYNC_MDIO_READ_FIFO_NOT_EMPTY S:Requested to do a synchronous MDIO read while other jobs pending\n
+L:SYNC_MDIO_WRITE_FIFO_NOT_EMPTY S:Requested to do a synchronous MDIO write while other jobs pending\n
+L:MDIO_ICMD_READ_START S:Reading MDIO device %d, address %d\n
+L:MDIO_INDIRECT_ICMD_READ_START S:Reading MDIO device %d, devType %d, address %d\n
+L:MDIO_ICMD_READ_DONE S:Read MDIO, returned data 0x%x\n
+L:MDIO_FIFO_OVER_FLOW S:MDIO fifo overflow\n
+L:MDIO_FIFO_UNDER_FLOW S:MDIO fifo underflow\n
+L:MDIO_OPERATIONS S:MDIO: %d operations in progress, current operation: header 0x%x, mdio op 0x%x\n
+L:MDIO_NO_OPERATIONS S:MDIO: no operations in progress\n
+L:TIME_MARKER_ S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing \n
+L:TIME_MARKER_MDIO_START S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing mdioStart\n
+L:TIME_MARKER_FINALIZE_OP S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing finalize operation\n
+L:TIME_MARKER_SUBMIT_OP S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing submit operation\n
+L:MDIO_INVALID_TASK_STATE S:mdio/i2c: invalid state at line %d, header 0x%x, mdio op 0x%x\n
+L:MDIO_IRQ_LOG S:Interrupts 0x%x triggered\n
+L:MDIO_IRQ_UNSERVICED S:Interrupts 0x%x were unserviced\n
+L:MDIO_GPIO7_LOG S:Interrupt GPIO7 triggered\n
+L:IRQ_HANDLER_NOT_SET S:Interrupt Handler is not set for pin %d\n
+L:REGISTERING_IRQ S:Registering Interrrupt handler for pin %d\n
+L:SERVICING_IRQ S:Servicing Interrupt for pin %d\n
+L:DISABLING_IRQ S:Disabling Interrupt for pin %d\n
+L:ENABLING_IRQ S:Enabling Interrupt for pin %d\n
+L:MDIO_START_READ S:MDIO start read: dev %d, addr/devtype 0x%x\n
+L:MDIO_START_WRITE S:MDIO start write: dev %d, addr/devtype 0x%x, data 0x%x\n
+L:MDIO_START_ADDRESS S:MDIO start address: dev %d, devtype 0x%x, addr 0x%x\n
+L:MDIO_FINISH S:MDIO finished, data is 0x%x\n
+L:MDIO_CONTROLREG_READ S:MDIO Control Reg is 0x%x\n
+L:MDIO_OPERATIONS_QUEUED S:MDIO: %d operations queued, nothing in progress\n
+L:MDIO_SYNC_READ_TIMEOUT S:MDIO Sync Read timeout\n
+L:MDIO_SYNC_WRITE_TIMEOUT S:MDIO Sync Write timeout\n
+L:MDIO_INDIRECT_SYNC_READ_ADDRESS_TIMEOUT S:MDIO Indirect Sync Read address timeout\n
+L:MDIO_INDIRECT_SYNC_READ_DATA_TIMEOUT S:MDIO Indirect Sync Read data timeout\n
+L:MDIO_INDIRECT_SYNC_WRITE_ADDRESS_TIMEOUT S:MDIO Indirect Sync Write address timeout\n
+L:MDIO_INDIRECT_SYNC_WRITE_DATA_TIMEOUT S:MDIO Indirect Sync Write data timeout\n

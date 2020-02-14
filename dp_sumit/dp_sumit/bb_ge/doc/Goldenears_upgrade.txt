@@ -1,0 +1,40 @@
+# Goldenears ASIC Firmware Upgrade Procedure
+
+## Contacting Iron
+For the latest version of this document, the flash writer and firmware images, e-mail Icron
+technical support (techsupport@icron.com).
+
+## Datasheet
+Pins referenced in this document are described in more detail in the datasheet
+"90-01154-XXX Core 23xx Datasheet.pdf"
+
+## Serial Port Configuration
+The serial ports receive and transmit pins on the Goldenears based product are C23_UART_RXD and
+C23_UART_TXD respectively.  The serial port operates at a baud rate of 115200 bits per second, with
+parity N, 8 data bits and 1 stop bits.
+
+## Upgrade Steps
+1. Connect the serial port using the settings specified in the Serial Port Configuration section of
+   this document.
+2. Pull the C23_BOOT_SEL0 pin of the Goldenears based product low
+3. Reset the Goldenears based product by pulsing the PROG_B pin low.
+4. Wait until Bootloader startup string is received on the serial port.
+   It should look like this
+    printf("Goldenears %x.%x.%x Bootloader version %d.%d\n", ...);
+    printf("%s PlatformID %d\n", GRG_IsDeviceLex() ? "Lex" : "Rex", GRG_getPlatformId());
+   The Goldenears based product will now transmit a NAK character (Hex: 0x15) to initiate the
+   transfer of the firmware image.
+5. Transmit FlashWriterGoldenears.bin over the serial port using the XMODEM protocol.
+   The XMODEM protocol is [described on Wikipedia](http://en.wikipedia.org/wiki/XMODEM).
+6. Wait for the Goldenears based product to print the message "Serial Flash Erase Complete" to the
+   serial port.  This indicates that the flash is now erased and ready for programming.  The
+   Goldenears based product will now transmit a NAK character (Hex: 0x15) to initiate the transfer
+   of the firmware image.
+7. Transmit either the Rex image RexFirmwareGoldenears.bin, or the Lex image
+   LexFirmwareGoldenears.bin over the serial port using the XMODEM protocol.
+   The XMODEM protocol is [described on Wikipedia](http://en.wikipedia.org/wiki/XMODEM).
+8. Pull the C23_BOOT_SEL0 pin high.
+9. After completion of the upgrade, the system will wait for a carriage
+   return/linefeed (CR/LF) prior to rebooting itself.  Alternatively, pulse
+   PROG_B low to reset.
+

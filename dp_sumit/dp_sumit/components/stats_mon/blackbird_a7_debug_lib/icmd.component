@@ -1,0 +1,3 @@
+component:STATS_MON_COMPONENT
+F:STATSMON_PrintStatsCmd H:"Print all non zero stats" A:void
+F:STATSMON_ClearAllStatsCmd H:"Clear all stats" A:void

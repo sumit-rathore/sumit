@@ -1,0 +1,9 @@
+component:TIMING_COMPONENT
+L:TIMING_MAXIMUM_HANDLERS_REGISTERED S:The maximum number of timers are already registered\n
+L:SHOW_TIMERS1 S:Timer 0x%x has callback 0x%x, and is set for %d ms\n
+L:START_TIMER S:Starting timer 0x%x\n
+L:STOP_TIMER S:Stopping timer 0x%x\n
+L:CHANGE_TIMEOUT S:Changing timer 0x%x timeout to %d ms\n
+L:NULL_TIMER_ARG_LINE S:Called with a NULL timer arg, at line %d\n
+L:TIMING_INTERNAL_STATE S:Internal state: lastIteration = %d, tickCounter = %d\n
+L:SHOW_TIMERS3 S:         is enabled %d, is periodic %d, set to expire at tick %d\n

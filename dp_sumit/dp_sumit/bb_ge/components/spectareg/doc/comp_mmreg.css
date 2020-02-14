@@ -1,0 +1,139 @@
+/******************************************************************************
+ * Copyright (c) Productivity Design Tools Inc. (PDTi) 2006, 2007. Confidential.
+ * All rights reserved.
+ * $Revision: 1.1 $
+ *****************************************************************************/
+
+body {
+	width: 60em;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Heading Styles
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+h1{
+  font-family: tahoma;
+  font-size: 14pt;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: underline;
+  text-transform: uppercase
+  }
+h2{
+  font-family: tahoma;
+  font-size: 14pt;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: underline;  
+  }
+h3{
+  font-family: tahoma;
+  font-size: 12pt;
+  font-weight: bold;
+  font-style: normal;
+  }  
+h4{
+  font-family: tahoma;
+  font-size: 11pt;
+  font-weight: bold;
+  font-style: normal;
+  }
+h5{
+  font-family: tahoma;
+  font-size: 11pt;
+  font-weight: normal;
+  font-style: italic;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Table Styles
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+table, a.back {
+  font-family: tahoma;
+  font-size: 8pt;
+  font-style: normal;
+}
+table{
+	width: 60em;
+	border-collapse: collapse;
+	border-width: 1px;
+	border-color: black;
+	border-style: solid;
+	background-color: white;
+}
+table.registerSummary tr.abRow{
+	background-color: #E0E0E0;
+  text-align: center;	
+  font-weight: bold;
+}
+
+table.bitFields{
+	table-layout: fixed;
+}
+table.bitFields col.bitsCol {
+	width: 5%;
+}
+table.bitFields col.nameCol {
+	width: 25%;
+}
+table.bitFields col.rwCol {
+	width: 5%;
+}
+table.bitFields col.rstCol {
+	width: 10%;
+}
+table.bitFields col.valTypeCol {
+	width: 10%;
+}
+table.bitFields col.classCol {
+	width: 18%;
+}
+
+
+thead{
+  font-weight: bold;
+	background-color: #C0C0C0;
+}
+th,td{
+	border-width: 1px;
+	border-color: black;
+	border-style: solid;
+	padding: 3px;
+}
+
+table.footer{
+  color: #C0C0C0;
+  font-family: tahoma;
+  font-size: 9pt;
+  font-weight: normal;
+  font-style: normal;
+	border-color: white;
+}
+table.footer td{
+	border-color: white;
+	border-top-color: #C0C0C0;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Paragraph Styles
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+p {
+  font-weight: normal;
+  font-style: normal;
+}
+p.text {
+  font-family: tahoma;
+  font-size: 11pt;
+  text-align: justify;
+	width: 640px;
+  }
+p.code{
+  font-family: courier;
+  font-size: 8pt;
+  }
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Hyperlink Styles
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+a:link{
+  color: #1c7bab;
+ }
+

@@ -1,0 +1,25 @@
+component:LINKMGR_COMPONENT
+L:LINKMGR_RCV_EVENT S:Link state machine: In state %d, received event %d new state %d\n
+L:LINKMGR_RCV_INVALID_EVENT S:Link state machine: Unexpected event %d for state %d\n
+L:PHY_ENABLED S:*** PHY Enabled ***\n
+L:PHY_DISABLED S:*** PHY Disabled ***\n
+L:NVM_CONFIG_STATUS_LINK_TO_5G S:*** Link set to 5G ***\n
+L:NVM_CONFIG_STATUS_LINK_TO_10G S:*** Link set to 10G ***\n
+L:LINK_HW_PHY_START S:HW Phy Start: %d\n
+L:LINK_ERROR_DETECTED S:Link error detected, restarting link\n
+L:LINK_HW_PHY_RESTART S:Link is not stable, Restart HW Phy\n
+L:LINK_HW_PHY_MAC_LINK_RX_STATUS S:Link Status MAC Link Layer Rx: %d\n
+L:LINK_HW_PHY_XAUI_STATUS S:Link Status XAUI: %d\n
+L:LINK_HW_PHY_LINK_STATUS S:HW Phy Link Status: %d\n
+L:LINK_NOT_10G_SPEED S:Aquantia is not running at 10G speed\n
+L:LINK_MGR_STATE_TRANSITION S:Link manager: old state = %d, new state = %d on event = %d\n
+L:LINK_MGR_INVALID_EVENT S:Link manager: got invalid event %d in state %d\n
+L:COMLINK_RCV_EVENT S:COMLINK In state %d, received event %d new state %d\n
+L:COMLINK_MSG_RCVD S:COMLINK Msg Rcvd in state %d, msg %d\n
+L:COMLINK_STATE S:COMLINK SysEvent State 0 == DN, 1 == UP: %d\n
+L:COMLINK_STATE_EVENT_INVALID S:Comm Link: Invalid Event %d for state %d\n
+L:COMLINK_LINKUP_TIMEOUT S:Comlink couldn't bring up in time\n
+L:COMLINK_CH_DOWN_DELAYED_LINKUP S:link down - channel down in delayed link up\n
+L:COMLINK_CH_DOWN_LINKUP S:link down - channel down in link up\n
+L:COMLINK_MCA_CH_STATUS S:ComlinkMcaChannelStatusHandler got Channel status: %d\n
+L:COMLINK_SECOND_LINKUP S:REX START 2nd LinkUp for stable train \n

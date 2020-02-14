@@ -1,0 +1,15 @@
+component:PLL_COMPONENT
+L:TBI_125 S:TBI 125MHz\n
+L:GMII_125 S:GMII 125MHz\n
+L:MII_25 S:MII 25MHz\n
+L:RGMII_25 S:RGMII 25MHz\n
+L:RGMII_125 S:RGMII 125MHz\n
+L:NO_IRQ_HANDLER S:No IRQ handler at line %d\n
+L:RMII_50 S:RMII 50MHz\n
+L:CLEI_LOG S:CLEI\n
+L:NO_LOCK_AT_LINE S:Unable to lock PLL %d at line %d\n
+L:EXTERNAL_CLK_ENABLED S:External clock enabled\n
+L:UNHANDLED_CLK_RANGE S:Unhandled ASIC clock range %d\n
+L:CLEI_UNSUPPORTED_ON_KINTEX S:The CLEI link type is unsupported on the Kintex platform\n
+L:RGMII25_UNSUPPORTED_ON_KINTEX S:The RGMII25 link type is unsupported on the Kintex platform\n
+L:CLEI_CTM_INPUT_CLK S:The CLEI operating clock is %d\n

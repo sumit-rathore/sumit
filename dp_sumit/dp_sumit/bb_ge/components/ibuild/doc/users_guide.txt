@@ -1,0 +1,289 @@
+User's guide to ibuild
+======================
+
+ibuild is a component to help build multiple components.  It is designed to ease the creation of makefile rules, by providing the common rules, and logic to call dependant components.  It's dependency tracking will track source file changes, included header file changes, and compiler flag changes.  iBuild doesn't track changes in the tools (ie compiler changes from version X.X.X to Y.Y.Y) or linker flags (LDFLAGS), and these types of changes will require the user to run "make clean" before rebuilding.
+
+
+ibuild for a new component
+--------------------------
+1) Create the component hiearachy
+ibuild uses a standard layout across all components to encourage a standard layout for maintainability, and to simplify the ibuild design.  See the section below Directory Layout Details for more information.  New component shoulds create the following directories:
+
+mkdir build doc etc inc src test
+
+If this component is a project level component(ie a top level component that references other components), also create the directory for subcomponents
+
+mkdir components
+
+If multiple components are created all components should be placed in the components directory of the project component(top level component).  ibuild would be one of these components.
+
+2) Create the component build/makefile
+This file needs to define the variables for the ibuild rules to operate on, and then include the ibuild rules.  For a project component also look at the section further down on addtiional steps for an ibuilt for a project component.
+
+The makefile should define the following variables, for simpilicity copy the build/makefile.sample from ibuild into your components build directory
+CSOURCES                : a list of all C source files
+ASMSOURCES              : a list of all assembly source files
+TARGET_TYPE             : the target type (lib or elf or lib_collector or icron)
+TARGET                  : target name, anything for elf, "lib<component name>.a" for library
+COMPONENT_DEPS          : a list of all of the components dependencies
+FORCED_LINK_DEPS        : a list of component libraries that must be linked in, in full for elf targets.  Useful for startup libs which call the main code, but aren't dependencies of anything 
+TEST_HARNESSES          : a list of all test harnesses in the test directory
+COMPONENT_ILOG_FILE     : a filename with path that contains the ilog data for this component
+COMPONENT_ICMD_FILE     : a filename without a path inside the src directory that contains the icmd data for this component
+IBUILD_DEP_GRAPH_PNG    : name of a png target file for ibuild to create a dependency graph
+IBUILD_DEP_GRAPH_EXCLUDES : a list of components to exclude from the ibuild dependency graph
+TARG_DIR_CLEANUP_FILES  : if this build creates more files in the target directory after ibuild is complete, this list of files will be removed by ibuild on a clean
+OBJ_DIR_CLEANUP_FILES   : if this build creates more files in the object directory after ibuild is complete, this list of files will be removed by ibuild on a clean
+HOBBES_DEFAULT_ICMD_BUTTON[1-9] : an icmd name and setting for a quick button in Hobbes
+
+To pull in the ibuild rules at the end of the makefile there should be
+
+include $(IBUILD_RULES)
+
+
+
+Additional steps for ibuild for a project component
+---------------------------------------------------
+The top level makefile needs to include a project.mak file.  A sample is available in the s_ibuild/build/ directory.  This file defines the tools used by this project, and the name of the project.
+
+The project.mak file should define:
+PROJECT                                 : the name of the project, see notes below
+TOP_LEVEL_COMPONENTS_DIR                : the directory containing all of the components
+CC                                      : the compiler
+AS                                      : the assembler
+LD                                      : the linker
+AR                                      : the static library archiving generation tool ar
+OBJCOPY                                 : the GNU binutils objcopy program
+MKDIR                                   : command to make directories
+RMDIR                                   : command to remove directories
+RM                                      : command to delete files
+SED                                     : the sed program
+AWK                                     : the awk program
+CFLAGS                                  : compiler flags
+LDFLAGS                                 : linker flags
+LDFLAGS_TEST_HARNESS                    : linker flags for test harnesses
+IBUILD_RULES                            : the location of rules.mak
+IBUILD_PROJECT_MAK_CONFIGURED_VERSION   : the variable to set to indicate that all of the project.mak variables are defined
+PROJECT_COMPONENTS                      : the location of the project_components.h file
+ICRON_HEADER_PROJECT                    : the name/type of this project for generating .icron files
+SPECTAREG_XML_FILES                     : the XML files for spectareg for this project
+IBUILD_ICRON_HEADER_SPECTAREG_BLOCK     : the contents of the icron_header file .icron files for spectareg files (see icron_file_format.txt)
+
+The PROJECT variable could take on multiple settings in a project, when multiple executables are required.
+
+For example:
+1) In the LG1 project the top level make file could set it to LG1_REX to build the rex files, and LG1_LEX to build the lex files
+2) For each setting of PROJECT there may be a slightly different setting of CFLAGS to define different preprocessor pragmas.
+3) Then each set of object files would be placed in <component>/<project>_obj
+4) Then each set of library files would be placed in <component>/<project>_lib
+5) Then each set of elf files would be placed in <component>/<project>_bin
+
+
+Build .icron files for Hobbes
+-----------------------------
+ibuild can produce .icron files for the Hobbes debug environment.  However each .icron file is specific for the RTL of the platform it is running on.  Everytime a new platform is added src/icron_target.mak needs to be updated.  This allows shared components to have no knowledge of the target platform, yet still be able to generate target files for Hobbes.  IE no knowledge of LG1 stewie format vs Spectareg settings.
+
+Creating a .icron file will generate $(targ_dir)/target.bin & $(targ_dir)/target.elf which can be used outside of ibuild.  Manufacturing ihex & checksum files are examples for using this
+
+
+Including header files in C
+---------------------------
+ibuild automatically adds the -I flags to the compiler so all exported header files from dependent components and this component can be used with
+
+#include <header_in_a_components_inc_dir.h>
+
+And all local header files to this component can be included with
+
+#include "header_in_this_components_src_dir.h"
+
+
+
+
+Automatic linking of component dependency libraries
+---------------------------------------------------
+Since ibuild knows about all of dependent components it can add the -L and the -l flags automatically.  This depends on components creating libraries of the name format "lib<component name>.a"
+
+
+
+
+Directory Layout Details
+------------------------
+ibuild depends on a very specific layout as mentioned earlier
+
+The following directory layout rules apply when calling ibuild:
+1) When ibuild is called it is expected to be in a component's /build directory
+2) When building dependent components, it expects makefiles to be in $(component)/build
+3) All exported headers must be in $(component)/inc
+4) All source files must be in $(component)/src
+5) ibuild expects TOP_LEVEL_COMPONENTS_DIR to be set to the top level components directory, so all components can be referenced by $(TOP_LEVEL_COMPONENTS_DIR)/$(component).  Note that this should have being done in the project.mak file, with numerous other project settings.  This is just highlighted here as it is part of the directory layout
+6) TARGET for a library must be set to "lib<component name>.a"
+7) All tests should be in $(component)/test.  See the Test Directory Setup below
+
+By convention the following should also be created:
+1) $(component)/doc to store all documentation
+2) $(component)/components on a project component as a directory for all dependent components
+3) $(component)/etc for anything that doesn't fit in the other directories.  Examples include xml data files
+
+ibuild will create the following directories during the build process
+1) $(component)/build/<project>_obj for storing object files and make dependency files
+2) $(component)/<project>_lib for storing generated libraries
+3) $(component)/<project>_bin for storing generated executable files
+4) FUTURE: TODO: Add information about tests, and lint
+
+
+
+
+The Test Directory Setup
+------------------------
+The test directory should contain tests for this component which could include:
+1) Testing this component in isolation (unit tests) by compiling for the host and running on the host
+2) Compiling for the target and linking against other libraries, in this case the directory layout might be:
+    test/test_name/src/
+    test/test_name/doc/     <--- test description goes there
+    test/test_name/build/   <--- makefile goes there
+        makefile would:
+        a) continue to use the original PROJECT_TOP_LEVEL
+        b) but now the test objects and executables end up test/test_name/<PROJECT>_obj & the bin dir
+        c) possible could redefine PROJECT to test_name to build libraries specifically for test with different preprocessor macros
+        d) of course define one of its component dependencies as itself so the test code can link to its own library
+
+Creating Test harnesses
+-----------------------
+Test harnesses are built with the "make test" rule.  The following list applies to building test harnesses
+1) Define all the test harnesses in the component makefile under the variable TEST_HARNESSES
+2) The test directory setup above must be followed for ibuild to know the location of the tests and source files
+3) They do not recursively build their component dependencies.  This is to prevent conflicts with parallel makes rebuilding the same libraries.  If it is desired that a test build its own version of a library (for different CFLAGS with different -D options for example), then it should define a new project name with PROJECT to avoid conflicts.  Also the variable BUILD_DEPS will explicity need to be set to a value other than '0'.
+4) To test against this component, the test harnesses makefile must define itself (ie the component name) as a dependency.  For example the ilog test harnesses need to include ilog as a dependency so the test code can link again libilog.a
+
+
+
+ibuild Partial Implementations
+------------------------------
+Also ibuild is intended to build complete projects where every component uses ibuild, as library names match component names for simplicity.  Take care for the assumptions ibuild makes about directory locations depending on the project name
+
+For partial implementations:
+1) where the libary components are built with ibuild, it is trivial to include the project.mak file when calling the libary makefile, and the libary will be generated.
+2) If the elf target file uses ibuild, and the libraries don't, then the toplevel makefile should add the appropiate include dirs, library dirs, and library names to the top level LDFLAGS and CFLAGS, as well as creating a new default rule in the makefile to build the libraries before the target rule which would invoke the ibuild build.
+3) Also the lib_collector target type can be used to collect multiple libraries and place them in one library.  Useful to build & collect all the ibuild libraries and present a single library to the higher level program
+
+
+
+lib_collector target type
+-------------------------
+ibuild supports collecting of multiple libraries to present a single library to components which are dependent on this library.  Useful to create when a project component includes another project component.  In this use case the lower level project component would redefine parts of project.mak (or perhaps the whole thing) and most importantly TOP_LEVEL_COMPONENTS_DIR.  Now it could build its components which are embedded further down the filesystem hierarchy and present a single library to the top level component.  This doesn't support collecting ilogs and icmds of sub-components, this will have to be done at the level of the lib_collector if desired.
+
+
+
+Verbose Builds
+--------------
+ibuild provides the option to output all the commands make runs.  Simply run "make V=1"
+
+
+
+Debug Builds
+------------
+During development it is sometimes required to examine the .i and .s files.  Simply run "make D=1" and the intermediary files will be created.  Note a make clean may be required to fix up the dependency files and force the intermediaries to be created.
+
+
+ibuild Targets
+--------------
+ibuild provides the following rules to be used as targets by a build system
+$(TARGET)       - This rule builds the target that was defined in the makefile.  It is also the first rule in the rules.mak file, so it will be the default rule
+clean           - This rule cleans all files that ibuild creates
+clean_ibuild    - This rule is identical to clean, but is provided in case the makefile provides its own clean rule, and needs to depend on, or call the ibuild clean rule
+test            - This builds the tests in the test directory defined by the TEST_HARNESSSES variable
+
+
+ilog Support
+------------
+ibuild supports the building of ilog files for the ilog component.  All that is needed is for the user to specify COMPONENT_ILOG_FILE in the makefile and ibuild will call the C preproccessor on this file with the ilog extra flags.  This will create an ilog.component file in the target directory, and if the target is an elf file it will also create an ilog file which contains the ilog.component files of this component and all dependencies.  The ilog files can then be used by the runtime ilog parser.
+
+
+icmd Support
+------------
+ibuild supports the building of icmd files for the icmd component.  All that is needed is for the user to specify COMPONENT_ICMD_FILE in the makefile and ibuild will call the C preproccessor on this file with the ilog extra flags.  This will create an icmd.component file in the target directory, and if the target is an elf file it will also create an icmd file which contains the icmd.component files of this component and all dependencies.  The icmd files can then be used by the runtime tools.
+
+If icmd support is not desired, a user can specify a value for NO_ICMD_SUPPORT.  This can be used on a single library by defining that library's makefile or throughout the program by defining at the top level project.mak file.
+
+
+Dependency Graphs
+-----------------
+ibuild can create a graph of the dependencies of this component, and all of its dependents components.  Simply specify the name of the image file target in the variable IBUILD_DEP_GRAPH_PNG, and specify a list of excluded dependencies in the variable IBUILD_DEP_GRAPH_EXCLUDES.  The excluded dependencies can be used to remove the common components that every component depends on, that would just clutter the graph.
+
+
+Multiple Projects For Multiple Targets
+--------------------------------------
+Sometimes a project code base may be used to build multiple targets or projects.  For example in Icron a single code base may be used to build both Lex and Rex code, or a single code based could be compiled against multiple hardware targets, where each target has slightly different preprocessor definitions.
+
+An example of this can be seen in the early stages of the lionsgate + virtual hub project (In git under clover:p_lg1_vhub, latest code at the time of this example is commit 650d14df562fea54f348b2cff9227efc83386f95).  The top level makefile along with the top level project.mak file define everything required, but don't directly set the PROJECT variable.  Instead rules.mak is only included when PROJECT has being defined.  In this manner the top level makefile has different rules which call $(MAKE) with different PROJECT settings.  To build the rule $(TARGET) needs to be called, and to clean the rule clean_ibuild needs to be called, and in this manner, no default rules are used from rules.mak.
+
+The p_lg1_vhub project also takes advantage of a default rule that depends on $(TARGET) so it can post process the exported elf file.
+
+Example makefile code:
+
+The rule fpga builds only the fpga code & the rule asic only builds the asic, by defining the project and then calling the target rule, the target rule depends $(TARGET) and then post-processes the output
+fpga:
+	@echo "building $@"
+	PROJECT=FpgaFirmware $(MAKE)  target
+	PROJECT=FpgaFirmware $(MAKE)  test
+asic:
+	@echo "building $@"
+	PROJECT=AsicFirmware $(MAKE)  target ASIC=1
+	PROJECT=AsicFirmware $(MAKE)  test ASIC=1
+target: $(TARGET)
+	$(OBJCOPY) -O srec $(targ_dir)/$(TARGET) $(targ_dir)/$(TARGET:.elf=.s19)
+	srec_cat $(targ_dir)/$(TARGET:.elf=.s19) -o $(targ_dir)/$(TARGET:.elf=.icr) -Stewie -Enable_Sequence_Warnings
+	$(OBJDUMP) -t $(targ_dir)/$(TARGET) |sort > $(targ_dir)/$(TARGET:.elf=.map)
+	$(OBJDUMP) -d $(targ_dir)/$(TARGET) > $(targ_dir)/$(TARGET:.elf=.s)
+	$(SIZE) $(targ_dir)/$(TARGET)
+
+
+In this project the rules.mak is only included when the makefiles are ready for it to be included
+# Pull in the ibuild make rules
+# But not when there is no project defined, as we aren't ready yet for ibuild rules
+ifneq ($(PROJECT), "")
+include $(IBUILD_RULES)
+endif
+
+# The following variable ensures that all the files we created in the $(targ_dir) are removed
+TARG_DIR_CLEANUP_FILES  = $(PROJECT).* icron_header flash_writer.icr
+
+The clean rule also takes advantage of not included the rules.mak until the project is setup
+# Clean up our files, and then the ibuild files
+clean:
+	PROJECT=FpgaFirmware $(MAKE) clean_ibuild
+	PROJECT=AsicFirmware $(MAKE) clean_ibuild ASIC=1
+	PROJECT=FpgaDiagFirmware $(MAKE) clean_ibuild DIAG=1
+	PROJECT=AsicDiagFirmware $(MAKE) clean_ibuild ASIC=1 DIAG=1
+	PROJECT=RobsonFirmware $(MAKE) clean_ibuild ASIC=1 ROBSON=1
+
+
+Unique C FLAGS for each source file
+-----------------------------------
+Sometimes it is desirable to have unique C flags for each source file.  An example can be seen in p_lg1_vhub where the file buildtime.c is supplied with the flags for the current time when built.
+
+To use the feature simply specify in the makefile the name of the source file followed by an underscore followed by CFLAGS as a makefile variable.  It's definition will be used as extra C flags for this source file.
+
+Example:
+# in the makefile
+# Supply the build time flags for the buildtime file & strip leading zeroes so nothing is treated as octal
+buildtime.c_CFLAGS=                                         \
+ -DMAKE_BUILD_YEAR=$(shell date +"%Y" | sed 's/^0*//g')     \
+ -DMAKE_BUILD_MONTH=$(shell date +"%m" | sed 's/^0*//g')    \
+ -DMAKE_BUILD_DAY=$(shell date +"%d" | sed 's/^0*//g')      \
+ -DMAKE_BUILD_HOUR=$(shell date +"%H" | sed 's/^0*//g')     \
+ -DMAKE_BUILD_MINUTE=$(shell date +"%M" | sed 's/^0*//g')   \
+ -DMAKE_BUILD_SECOND=$(shell date +"%S" | sed 's/^0*//g')
+
+Then when buildtime.c is built make will add the following to compile command
+ -DMAKE_BUILD_YEAR=2010 -DMAKE_BUILD_MONTH=9 -DMAKE_BUILD_DAY=1 -DMAKE_BUILD_HOUR=11 -DMAKE_BUILD_MINUTE=16 -DMAKE_BUILD_SECOND=17
+
+Also note that in this example the C flags will change everytime make is called.  This will result in buildtime.c being rebuilt on every invocation of make.
+
+
+Unique dependencies for each source file
+----------------------------------------
+
+Example:
+ge_core.S_DEPS=../etc/ge_core.bin
+

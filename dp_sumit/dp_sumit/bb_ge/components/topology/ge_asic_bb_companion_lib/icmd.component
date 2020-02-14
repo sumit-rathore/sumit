@@ -1,0 +1,12 @@
+component:TOPOLOGY_COMPONENT
+F:_DTT_showDeviceXSST H:"Show the XSST entry for a single device: Argument is the logical address" A:uint8
+F:_DTT_showAllDeviceXSST H:"Show the XSST entry for all devices in-sys" A:void
+F:DEPRECATED_ShowTopologyByUsb H:"DEPRECATED" A:void
+F:_DTT_showAllDeviceTopologyByLA H:"Show the topology information for all devices ordered by logical address.  Args: (view <0=compact, 1=verbose>)" A:uint8
+F:WriteXSSTCmd H:"Do a rmw of a word to the XSST: Args USB Address, endpoint, XSST value MSW, mask MSW, XSST value LSW, mask LSW" A:uint8, uint8, uint32, uint32, uint32, uint32
+F:ShowLat H:"Show the LAT entry for a USB address: Argument is the usb address" A:uint8
+F:ShowXsst H:"Show the XSST entry for a Logical address: Arg1 logical address, Arg2 endpoint" A:uint8, uint8
+F:_DTT_XSSTMonStop H:"Stop the XSST Monitor" A:void
+F:_DTT_XSSTMonStart H:"Start the XSST Monitor" A:void
+F:_DTT_showSingleDeviceTopology H:"Show the topology information associated with the provided logical address.  Args: (LA, view <0=compact, 1=verbose>)" A:uint8, uint8
+F:_DTT_showAllDeviceTopologyByUSB H:"Show the topology information for all devices ordered by USB address.  Args: (view <0=compact, 1=verbose>)" A:uint8

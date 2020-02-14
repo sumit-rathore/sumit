@@ -1,0 +1,7 @@
+This test Sends:
+1) A startup string announcing that it will print out a source string
+2) A string stored at a souce location (byte by byte)
+3) A message annucning the string has been copied to a new location and the value at the new location will be printed out
+4) The same string from a new location, to which it has been copied (byte by byte)
+5) A test finished message
+

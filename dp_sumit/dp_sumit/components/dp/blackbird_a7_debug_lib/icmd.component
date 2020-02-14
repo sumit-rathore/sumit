@@ -1,0 +1,42 @@
+component:DP_COMPONENT
+F:DP_LEX_SetEdidTypeIcmd H:"0 = Monitor, 1 = 640_480, 2 = 800_600, 3 = 1024_768, 4 = 1280_720, 5 = 1280_768,             6 = 1280_800, 7 = 1280_1024, 8 = 1360_768, 9 = 1440_900, 10 = 1600_900,             11 = 1680_1050, 12 = 1920_1080, 13 = 1920_200, 14 = 2560_1600, 15 = 3840_2160" A:uint8_t
+F:DP_LEX_SetBpcModeIcmd H:"6 = 6bpc, 8 = 8bpc, 10 = 10bpc, 12 = 12bpc" A:uint8_t
+F:DP_LEX_ReadEdidValues H:"Dumps the current EDID values used by LEX" A:void
+F:DP_LEX_SscAdvertiseEnable H:"Arg0 = 0: Disable SSC, 1: Enable SSC, 2: pass Monitor's value" A:uint8_t
+F:DP_LEX_YCbCrDisableIcmd H:"Arg0 = 0: Disable YCbCr, 1: Pass through YCbCr" A:bool
+F:DP_LEX_ReLinkTrainIcmd H:"This icmd will initiate re-linkTraining at LEX" A:void
+F:DP_LEX_VS_PE_icmd H:"Arg0 = Voltage Swing, Arg1 = Pre emphasis, write 0xff for regular link training" A:uint8_t, uint8_t
+F:DP_LEX_SetPowerDownWaitTime H:"Arg0 = Time out value in sec" A:uint32_t
+F:DP_AUX_LexErrorRecovery H:"Arg0 = 0: Restart Stream Extractor, 1: Program/Validate/Enable encoder" A:uint8_t
+F:DP_LEX_SetCompressionRatioIcmd H:"Valid Arguments are 0 = default, 2 = 2.4, 4 = 4, 6 = 6. Default is 4" A:uint8_t
+F:DP_REX_NativeAuxReadIcmd H:"Arg0 = DPCD address, Arg1 = Num Bytes to read (Max = 16)" A:uint32_t, uint8_t
+F:DP_REX_NativeAuxWriteIcmd H:"Arg0 = DPCD address, Arg1 = Data to write(Max = 1 byte)" A:uint32_t, uint8_t
+F:DP_REX_I2cAuxReadIcmd H:"Arg0 = I2C address, Arg1 = Num Bytes to read (Max = 16)" A:uint32_t, uint8_t
+F:DP_REX_I2cAuxWriteIcmd H:"Arg0 = I2C address" A:uint32_t
+F:DP_REX_MccsRequest H:"Sends MCCS capabilities request to monitor and reads reply" A:void
+F:DP_REX_ReadMccs H:"Read MCCS and VCP table" A:void
+F:DP_REX_ChangeMvidIcmd H:"Arg0 = Mvid value, it will send black and then after 15ms resume video again with new MVID)" A:uint32_t
+F:DP_REX_SetNewAluCalculation H:"Use new ALU calculation, 0:disable(old ALU), 1:enable(New ALU, default) " A:bool
+F:DP_REX_MccsEnable H:"Read MCCS, 0: Don't read MCCS(Default), 1: Read MCCS " A:bool
+F:DP_AUX_RexErrorRecovery H:"Attempt Rex Error recovery" A:void
+F:DP_REX_SscAdvertiseEnable H:"Arg0 = 0: Disable SSC, 1: Enable SSC, 2: pass Monitor's value" A:uint8_t
+F:DP_REX_CheckNewControlValues H:"Executes Syschronization flow as in page 126" A:void
+F:DP_REX_TestSync H:"Executes Syschronization flow as in page 126" A:void
+F:DP_REX_ProgramAlu H:"Programs the ALU values" A:void
+F:DP_REX_MccsVcpRequestIcmd H:"Arg0 = Opcode" A:uint8_t
+F:DP_REX_EdidReadIcmd H:"Read Monitor Edid" A:void
+F:DP_REX_ReadDpcdCap H:"Prints first 16 bytes of the DPCD capabilities" A:void
+F:DP_REX_ChangeLastTu H:"Change last Tu size to 8 when less than 4" A:void
+F:DP_SetBwLc H:"Arg0 = Bandwidth (default : 0), Arg1 = Lane Count (default : 0)\nBW : 0x06, 0x0A, 0x14, 0x1E\nLC : 0x1, 0x2, 0x4" A:uint8_t, uint8_t
+F:DP_PmLogState H:"Log the current AUX policy maker FSM state. For debugging." A:void
+F:DP_SetIsolateEnable H:"Arg0 = 0: Disable isolate, Other: Enable isolate" A:bool
+F:DP_PmPostEvent H:"Post an event to Policy maker state. EVENT number, Enter 17 for ERROR_EVENT only for REX" A:uint8_t
+F:DP_LtPostEvent H:"Post an event to Link Training state. EVENT number" A:uint8_t
+F:DP_enableDp H:"Enable  DP" A:void
+F:DP_disableDp H:"Disable DP" A:void
+F:DP_DumpFlashVarsIcmd H:"Dump the current status of DP flash vars" A:void
+F:DP_MCAUpDnIcmd H:"Arg0 = 0: MCA down, 1: MCA up" A:bool
+F:DP_SetAudioState H:"Arg0 = 0: Enable SDP and send audio state to Rex, 1 : Disable SDP" A:bool
+F:DP_RestartDPStateMachine H:"Restarts the DP state machine" A:void
+F:DP_EnableAuxTraffic H:"Printing of AUX traffic over UART 0: Disable, 1: Enable" A:bool
+F:DP_IcmdPrintAllStatusFlag H:"Print all the status and state flags" A:void

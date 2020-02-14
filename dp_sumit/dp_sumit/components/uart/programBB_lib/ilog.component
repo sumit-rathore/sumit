@@ -1,0 +1,22 @@
+component:UART_COMPONENT
+L:PACKETIZE_MAX_RESPONSE_HANDLERS_REGISTERED S:The maximum number of response handlers are already registered\n
+L:PACKETIZE_MAX_CHANNEL_HANDLERS_REGISTERED S:The maximum number of channel rx handlers are already registered\n
+L:PACKETIZE_RESPONSE_NOT_FREED S:Could not free the given response ID %d\n
+L:PACKETIZE_RX_HANDLER_NOT_FOUND S:Receive packet handler not found clientId=%d, uartPort=%d, responseID=%d\n
+L:UART_ILLEGAL_PORT_GIVEN S:The port given was not Blackbird or GE\n
+L:PACKETIZE_RX_HANDLER_FOUND S:Receive packet handler is found uartPort=%d, clientId=%d, responseID=%d\n
+L:INVALID_CHANNEL_ID_GIVEN S:Got an invalid channel id 0x%x\n
+L:PACKETIZE_RX_MAX_HANDLERS S:maxHandlers=%d\n
+L:PACKETIZE_RX_FOUND S:Receive packet handler found at line = %d\n
+L:PACKETIZE_UART_FIFO_FULL S:UART FIFO full for port %d\n
+L:UART_HIGH_SPEED S:UART IsHighSpeed = %d\n
+L:PKT_TIMEOUT_BB S:#### Pkt Timeout BB port ^^^ RxPktState: %d, Offset: %d\n
+L:PKT_TIMEOUT_GE S:#### Pkt Timeout GE port ^^^ RxPktState: %d, Offset: %d, bytes Rx: %d\n
+L:PKT_IN_FIFO S:#### Fifo[0x%x]: 0x%x\n
+L:PKT_TIMEOUT_FINISH S:#### finished!!!\n
+L:BB_OVERRUN S:UART BB: HW overrun:%d, SW overrun:%d\n
+L:GE_OVERRUN S:UART GE: HW overrun:%d, SW overrun:%d\n
+L:PACKETIZE_NO_RX_HANDLER S:No RX Handler for PORT ID %d\n
+L:PACKETIZE_BUFFER_COPY_FAIL S:Buffer copy failed: Port %d Size %d\n
+L:MAX_UART_RX_TIME S:Max Rx Time %d\n
+L:AVG_UART_RX_TIME S:Average Rx Time %d\n

@@ -1,0 +1,332 @@
+component:TOPLEVEL_COMPONENT
+F:PrintSwVersion H:"Print out the current software version and build date/time" A:void
+F:Badger_getDeviceInfo H:"Print out the device info for Badger" A:void
+F:bb_top_TriStateMdioMdc H:"Tristate Mdio MDC - motherboard only" A:bool
+F:TOPLEVEL_DEBUG_ASSERT H:"Test Assert" A:void
+component:ULP_COMPONENT
+F:ULP_enableUsb2 H:"Enable  USB 2" A:void
+F:ULP_disableUsb2 H:"Disable USB 2" A:void
+F:ULP_enableUsb3 H:"Enable  USB 3" A:void
+F:ULP_disableUsb3 H:"Disable USB 3" A:void
+F:ULP_enableUsb3ResetOnDisconnect H:"Enable  USB 3 reset on disconnect" A:void
+F:ULP_disableUsb3ResetOnDisconnect H:"Disable USB 3 reset on disconnect" A:void
+F:ULP_LexHostUsb3RestartRequest H:"Restart USB3" A:void
+F:UlpLexUsb3LexOnlyResetStart H:"Restart USB3 Lex only" A:void
+F:ULP_LexHostCycleRequest H:"Disconnect/reconnect USB2&3" A:void
+component:RS232_COMPONENT
+F:RS232_enable H:"Enable arg0 > 1" A:uint8_t
+component:COMMAND_COMPONENT
+F:CMD_programGE H:"Program GE - for testing" A:void
+component:LAN_PORT_COMPONENT
+F:LANPORT_enable H:"Enable  LAN Port" A:void
+F:LANPORT_disable H:"Disable LAN Port" A:void
+component:DP_COMPONENT
+F:DP_LEX_SetEdidTypeIcmd H:"0 = Monitor, 1 = 640_480, 2 = 800_600, 3 = 1024_768, 4 = 1280_720, 5 = 1280_768,             6 = 1280_800, 7 = 1280_1024, 8 = 1360_768, 9 = 1440_900, 10 = 1600_900,             11 = 1680_1050, 12 = 1920_1080, 13 = 1920_200, 14 = 2560_1600, 15 = 3840_2160" A:uint8_t
+F:DP_LEX_SetBpcModeIcmd H:"6 = 6bpc, 8 = 8bpc, 10 = 10bpc, 12 = 12bpc" A:uint8_t
+F:DP_LEX_ReadEdidValues H:"Dumps the current EDID values used by LEX" A:void
+F:DP_LEX_SscAdvertiseEnable H:"Arg0 = 0: Disable SSC, 1: Enable SSC, 2: pass Monitor's value" A:uint8_t
+F:DP_LEX_YCbCrDisableIcmd H:"Arg0 = 0: Disable YCbCr, 1: Pass through YCbCr" A:bool
+F:DP_LEX_ReLinkTrainIcmd H:"This icmd will initiate re-linkTraining at LEX" A:void
+F:DP_LEX_VS_PE_icmd H:"Arg0 = Voltage Swing, Arg1 = Pre emphasis, write 0xff for regular link training" A:uint8_t, uint8_t
+F:DP_LEX_SetPowerDownWaitTime H:"Arg0 = Time out value in sec" A:uint32_t
+F:DP_AUX_LexErrorRecovery H:"Arg0 = 0: Restart Stream Extractor, 1: Program/Validate/Enable encoder" A:uint8_t
+F:DP_LEX_SetCompressionRatioIcmd H:"Valid Arguments are 0 = default, 2 = 2.4, 4 = 4, 6 = 6. Default is 4" A:uint8_t
+F:DP_REX_NativeAuxReadIcmd H:"Arg0 = DPCD address, Arg1 = Num Bytes to read (Max = 16)" A:uint32_t, uint8_t
+F:DP_REX_NativeAuxWriteIcmd H:"Arg0 = DPCD address, Arg1 = Data to write(Max = 1 byte)" A:uint32_t, uint8_t
+F:DP_REX_I2cAuxReadIcmd H:"Arg0 = I2C address, Arg1 = Num Bytes to read (Max = 16)" A:uint32_t, uint8_t
+F:DP_REX_I2cAuxWriteIcmd H:"Arg0 = I2C address" A:uint32_t
+F:DP_REX_MccsRequest H:"Sends MCCS capabilities request to monitor and reads reply" A:void
+F:DP_REX_ReadMccs H:"Read MCCS and VCP table" A:void
+F:DP_REX_ChangeMvidIcmd H:"Arg0 = Mvid value, it will send black and then after 15ms resume video again with new MVID)" A:uint32_t
+F:DP_REX_SetNewAluCalculation H:"Use new ALU calculation, 0:disable(old ALU), 1:enable(New ALU, default) " A:bool
+F:DP_REX_MccsEnable H:"Read MCCS, 0: Don't read MCCS(Default), 1: Read MCCS " A:bool
+F:DP_AUX_RexErrorRecovery H:"Attempt Rex Error recovery" A:void
+F:DP_REX_SscAdvertiseEnable H:"Arg0 = 0: Disable SSC, 1: Enable SSC, 2: pass Monitor's value" A:uint8_t
+F:DP_REX_CheckNewControlValues H:"Executes Syschronization flow as in page 126" A:void
+F:DP_REX_TestSync H:"Executes Syschronization flow as in page 126" A:void
+F:DP_REX_ProgramAlu H:"Programs the ALU values" A:void
+F:DP_REX_MccsVcpRequestIcmd H:"Arg0 = Opcode" A:uint8_t
+F:DP_REX_EdidReadIcmd H:"Read Monitor Edid" A:void
+F:DP_REX_ReadDpcdCap H:"Prints first 16 bytes of the DPCD capabilities" A:void
+F:DP_REX_ChangeLastTu H:"Change last Tu size to 8 when less than 4" A:void
+F:DP_SetBwLc H:"Arg0 = Bandwidth (default : 0), Arg1 = Lane Count (default : 0)\nBW : 0x06, 0x0A, 0x14, 0x1E\nLC : 0x1, 0x2, 0x4" A:uint8_t, uint8_t
+F:DP_PmLogState H:"Log the current AUX policy maker FSM state. For debugging." A:void
+F:DP_SetIsolateEnable H:"Arg0 = 0: Disable isolate, Other: Enable isolate" A:bool
+F:DP_PmPostEvent H:"Post an event to Policy maker state. EVENT number, Enter 17 for ERROR_EVENT only for REX" A:uint8_t
+F:DP_LtPostEvent H:"Post an event to Link Training state. EVENT number" A:uint8_t
+F:DP_enableDp H:"Enable  DP" A:void
+F:DP_disableDp H:"Disable DP" A:void
+F:DP_DumpFlashVarsIcmd H:"Dump the current status of DP flash vars" A:void
+F:DP_MCAUpDnIcmd H:"Arg0 = 0: MCA down, 1: MCA up" A:bool
+F:DP_SetAudioState H:"Arg0 = 0: Enable SDP and send audio state to Rex, 1 : Disable SDP" A:bool
+F:DP_RestartDPStateMachine H:"Restarts the DP state machine" A:void
+F:DP_EnableAuxTraffic H:"Printing of AUX traffic over UART 0: Disable, 1: Enable" A:bool
+F:DP_IcmdPrintAllStatusFlag H:"Print all the status and state flags" A:void
+component:DP_STREAM_COMPONENT
+F:DP_STREAM_GetVideoInfoIcmd H:"Prints out the video information" A:void
+F:DP_STREAM_SdpStatsIcmd H:"Prints out the DP SDP stats" A:void
+F:DP_STREAM_freqMeasureIcmd H:"Measure DP clock" A:void
+F:DP_STREAM_RexEnableAudioIcmd H:"Enables audio on REX" A:void
+F:DP_STREAM_LexPrintErrCount H:"Prints all the error count\n" A:void
+F:DP_STREAM_LexResetIdlePatternCnt H:"Resets idle pattern counter" A:void
+F:DP_STREAM_RexSetAdjustWidthOffset H:"Set dp_width_total_minus/plus_offset0/1. arg0:-off1, 1:+off1, 2:-off0, 3:+off0)" A:uint8_t, uint8_t, uint8_t, uint8_t
+component:DP_AUX_COMPONENT
+component:LINKMGR_COMPONENT
+F:LINKMGR_comLinkEnableIcmd H:"COM Link Disable (0) or Enable (>0)" A:uint8_t
+F:LINKMGR_comLinkTxPacketIcmd H:"COM Link test packet send" A:void
+F:LINKMGR_phyEnableIcmd H:"PHY link Disable (0) or Enable (>0)" A:uint8_t
+F:LINKMGR_phyToggleIcmd H:"PHY link toggle" A:void
+F:LinkMgrSetLinkTo5GIcmd H:"Set link to 5G" A:void
+F:LinkMgrSetLinkTo10GIcmd H:"Set link to 10G" A:void
+F:LINKMGR_phyLinkDownErrorDetected H:"Disable MAC/MCA and Restart Aquantia/Fiber link" A:void
+component:XAUI_COMPONENT
+F:Xaui_ResetBuffers H:"Reset RXAUI elasticity buffers" A:void
+component:IDT_CLK_COMPONENT
+F:I2CD_icmdIdtGeneralRead H:"IDT read register. arg: read register address" A:uint8_t
+F:I2CD_icmdIdtGeneralWrite H:"IDT write register. arg1: write register address, arg2: value to write" A:uint8_t, uint8_t
+F:IDT_CLK_icmdSscControl H:"IDT write register. arg1: 1 enable, 0 disable" A:bool
+F:IDT_CLK_SetRexSscSupport H:"Arg0 = 0: Disable SSC support on Rex, Other: Enable SSC support on Rex" A:bool
+component:FIBER5G_COMPONENT
+F:Link_SL_5G_RestartRx H:"Restart Fiber receive" A:void
+F:I2CD_icmdSfpFinisarStartStatsMonitor H:"SFP Start Stats Monitoring" A:void
+F:I2CD_icmdSftFinisarStopStatsMonitor H:"SFP Stop Stats Monitoring" A:void
+F:I2CD_icmdSfpFinisarSetRxPowerThresholds H:"Set SFP RxPower Lower and Upper Thresholds" A:uint16_t, uint16_t
+F:I2CD_icmdSfpFinisarSetRxPowerPollingPeriod H:"Set SFP RxPower Polling Period" A:uint32_t
+component:I2CD_COMPONENT
+F:I2CD_icmdsGpioExpClearPin H:"I2C GPIO Expander clear pin" A:uint8_t
+F:I2CD_icmdsGpioExpSetPin H:"I2C GPIO Expander set pin" A:uint8_t
+F:I2CD_icmdsGpioExpReadPin H:"I2C GPIO Expander read pin" A:uint8_t
+F:I2CD_icmdsGpioExpTest H:"Enable I2C GPIO LED pattern to run" A:uint32_t
+F:I2CD_dp130GeneralRead H:"Read DP130 Register" A:uint8_t
+component:LED_COMPONENT
+F:ledOnOff H:"id: SYS=0 LINK=2 USB2=4 USB3=5 VIDEO=6, On=1 Off=0 " A:uint8_t, bool
+F:ledSetMode H:"LS_USER=0, LS_TEMP_FAULT=1, LS_DOWNLOAD=2, LS_VERI_FAULT=3, LS_TEMP_WARN_FPGA=4, LS_TEMP_WARN_AQUANTIA=5, LS_BOOTING=6, LS_OPERATION=7" A:uint8_t, bool
+component:GPIO_COMPONENT
+component:EEPROM_COMPONENT
+F:EEPROM_icmdReadPage H:"Reads the specified page. Args: Page to read, display as words as boolean" A:uint8_t, uint8_t
+F:EEPROM_icmdWritePage H:"Writes the specified page. Args: page to write, msw0, lsw0, msw1, lsw1" A:uint8_t, uint32_t, uint32_t, uint32_t, uint32_t
+component:ATMEL_CRYPTO_COMPONENT
+F:atmel_icmdSend H:"Do an I2C transaction to the Atmel Chip. Args: opcode, param1, param2, resultReadSize, operationExecutionTime" A:uint8, uint8, uint16, uint8, uint32
+F:atmel_icmdWithDataWordSend H:"Do an I2C transaction to the Atmel Chip. Args: opcode, param1, param2, data, resultReadSize, operationExecutionTime" A:uint8, uint8, uint16, uint32, uint8, uint32
+F:atmel_setICmdWriteDataBuffer H:"Writes one word into the 8 word wide data slot or OTP block write buffer. Args: wordOffset, word" A:uint8, uint32
+F:atmel_writeDataSlotFromBuffer H:"Writes the incrementally constructed data slot buffer to the given slot. Args: slotNumber" A:uint8
+F:atmel_encryptedWriteDataSlotFromBuffer H:"Encrypted writes the incrementally constructed data slot buffer to the given slot. Args: slotNumber" A:uint8
+F:atmel_writeOtpBlockFromBuffer H:"Writes the incrementally constructed OTP block buffer to the given slot. Args: slotNumber" A:uint8
+F:atmel_readConfigWordIcmd H:"Reads a single 32bit word from the configuration settings. Args: byteOffset - must be divisible by 4" A:uint8
+F:atmel_writeConfigWordIcmd H:"Writes a single 32bit word to the configuration settings. Args: byteOffset - must be divisible by 4, data" A:uint8, uint32
+F:atmel_isChipLockedIcmd H:"Checks to see if the config and data+otp zones are locked. Args:" A:void
+F:atmel_lockConfigZoneIcmd H:"Locks the config zone of the authentication chip. Args: configuration zone CRC" A:uint16
+F:atmel_lockDataAndOtpZonesIcmd H:"Locks the data and OTP zones of the authentication chip. Args: data and OTP zone CRC" A:uint16
+F:atmel_encryptedReadDataSlotIcmd H:"Encrypted Reads a single 32 byte slot fromt the data zone" A:uint8
+component:UPP_COMPONENT
+component:I2C_COMPONENT
+F:i2cStatus H:"Check the I2C state of where it is in processing ASync operations" A:void
+F:i2cWakeIcmd H:"Wake the i2c bus,    arg0(device Addr), arg1(speed - 0:Slow 100khz, 1:Fast 400kHz, 2:Fast plus 1Mhz),    arg2(port - 8:core, 9:Motherboard, 0~7:Ti Switch)" A:uint8_t, uint8_t, uint8_t
+F:i2cReadIcmd H:"Read from i2c,    arg0(device Addr), arg1(speed 0:Slow 100khz, 1:Fast 400kHz, 2:Fast plus 1Mhz),    arg2(port - 8:core, 9:Motherboard, 0~7:Ti Switch), arg3(number of bytes to read)" A:uint8_t, uint8_t, uint8_t, uint8_t
+F:i2cWriteIcmd H:"Write to i2c Max 8 bytes,    arg0(device Addr), arg1(speed 0:Slow 100khz, 1:Fast 400kHz, 2:Fast plus 1Mhz),    arg2(port - 8:core, 9:Motherboard, 0~7:Ti Switch), arg3(data to write 4bytes)    arg4(data to write 4bytes), arg5(number of bytes to write)" A:uint8_t, uint8_t, uint8_t, uint32_t, uint32_t, uint8_t
+F:i2cWriteReadIcmd H:"Write then read i2c.  SMBus read,    arg0(device Addr), arg1(speed 0:Slow 100khz, 1:Fast 400kHz, 2:Fast plus 1Mhz),    arg2(port - 8:core, 9:Motherboard, 0~7:Ti Switch), arg3(data to write 4bytes),    arg4(number of bytes to write), arg5(number of bytes to read)" A:uint8_t, uint8_t, uint8_t, uint32_t, uint8_t, uint8_t
+F:i2cWriteReadBlockIcmd H:"Write then read i2c. SMBus read block,    arg0(device Addr), arg1(speed 0:Slow 100khz, 1:Fast 400kHz, 2:Fast plus 1Mhz),    arg2(port - 8:core, 9:Motherboard, 0~7:Ti Switch), arg3(data to write 4bytes)    arg4(number of bytes to write)" A:uint8_t, uint8_t, uint8_t, uint32_t, uint8_t
+component:I2C_SLAVE_COMPONENT
+F:I2C_Slave_StartTest H:"I2C Slave Start Test (mode)" A:uint8_t
+component:MDIOD_COMPONENT
+component:AQUANTIA_COMPONENT
+F:MDIOD_aquantiaReadJunctionTempIcmd H:"Read Aquantia junction temperature" A:void
+F:MDIOD_aquantiaDblRdTest H:"Read two Aquantia registers: devType, reg1, reg2" A:uint8_t, uint16_t, uint16_t
+F:MDIOD_AquantiaStopTestPackets H:"Stop Generating Aquantia Packets" A:void
+F:MDIOD_aquantiaReadVersion H:"Show aquantia firmware version" A:void
+F:MDIOD_aquantiaShortReachMode H:"Aquantia Read/Write Short Reach Mode(1.83.0): write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTestModeControl H:"Aquantia Read/Write Test Control Mode(1.84.F:D): write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTransmitterTestFrequencies H:"Aquantia Read/Write Transmitter test frequencies (1.84.C:A) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaFastRetrainAbility H:"Aquantia Fast Retrain Ability (1.93.4) write?, writeValue" A:
+F:MDIOD_aquantiaFastRetrainEnable H:"Aquantia Fast Retrain Enable (1.93.0) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTestModeRate H:"Aquantia Test Mode rate[1:0] (1.C412.F:E) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaPmaDigitalSystemLoopback H:"Aquantia Digital System Loopback (1.D800.F) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaExternalPhyLoopback H:"Aquantia External Phy Loopback (1.E400.F) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaEnableFastRetrain H:"Enable Aquantia Fast Retrain (1.E400.2) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaForceMdiConfiguration H:"Aquantia Force Mdi Configuration (1.E400.1) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaMdiConfiguration H:"Aquantia Mdi Configuration(1.E400.0) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaPcsLoopback H:"Aquantia PCS loopback(3.0.E) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantia10GSpeedSelection H:"Aquantia 10G Speed Selection(3.0.5:2) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTxScramblerDisable H:"Aquantia Tx Scrambler Disable(3.D800.F) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTxInjectCrcError H:"Aquantia Tx Inject CRC Error(3.D800.E) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTxInjectFrameError H:"Aquantia Tx Inject Frame Error(3.D800.D) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaRxErrorLdpcFrameEnable H:"Aquantia Enable Rx LDPC Error Frame(3.E400.0) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaRxLdpcDecoderControl H:"Aquantia Control Rx LDPC Decoder (3.E400.F) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaXsLoopback H:"Aquantia XS Loopback (4.0.E) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaReceiveTestPatternEnable H:"Enable Aquantia Receive Test Pattern (4.19.2) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaPhyOperatingMode H:"Aquantia Operating Phy Mode (4.C441.8:6) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTestPatternSelect H:"Aquantia Select Test Pattern (4.19.1:0) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaLoopbackControl H:"Aquantia XS Loopback Control (4.C444.F:B) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaMdiPacketGeneration H:"Aquantia XS MDI Packet Generation (4.C444.5) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaXsSystemIFPacketGeneration H:"Aquantia XS I/F Packet Generation (4.C444.2) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaRate H:"Aquantia XS Rate (4.C444.1:0) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTestPatternForceError H:"Aquantia Select Test Pattern Force Error (4.D800.F) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTestPatternMode7ForceError H:"Aquantia XS Test Pattern Mode 7 Force Error (4.D800.E) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaXAUIRxLocalFaultInjection H:"Aquantia XAUI Rx Local Fault Injection (4.D800.D) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTestPatternExtendedSelect H:"Aquantia Test-Pattern Extended Select [1:0] (4.D800.C:B) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTestPatternCheckEnable H:"Aquantia Test Pattern Check Enable (4.D800.A) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTestPatternCheckPoint H:"Aquantia Test Pattern Check Point (4.D800.7) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTestPatternInsertExtraIdles H:"Aquantia Test Pattern Insert Extra Idles [2:0] (4.D801.E:C) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTestPatternCheckSelect H:"Aquantia Test Pattern Check Select [3:0] (4.D801.B:8) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTestPatternChannelSelect H:"Aquantia Test Pattern Channel Select [3:0] (4.D801.3:0) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaChannel0TestPatternErrorCounter H:"Aquantia Channel 0 Test Pattern Error Counter [F:0] (4.D810.F:0) " A:void
+F:MDIOD_aquantiaChannel1TestPatternErrorCounter H:"Aquantia Channel 1 Test Pattern Error Counter [F:0] (4.D811.F:0) " A:void
+F:MDIOD_aquantiaChannel2TestPatternErrorCounter H:"Aquantia Channel 2 Test Pattern Error Counter [F:0] (4.D812.F:0)" A:void
+F:MDIOD_aquantiaChannel3TestPatternErrorCounter H:"Aquantia Channel 3 Test Pattern Error Counter [F:0] (4.D813.F:0) " A:void
+F:MDIOD_aquantiaTestPatternMode7ErrorCounter H:"Aquantia Test Pattern Mode 7 Error Counter [F:0] (4.D814.F:0)" A:void
+F:MDIOD_aquantiaXauiTxErrorInjectionLaneSelect H:"Aquantia XAUI Tx Error Injection Lane Select [2:0] (4.F800.F:D) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaXauiTxInjectSynchronizationError H:"Aquantia XAUI Tx Inject Synchronization Error (4.F800.C) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaXauiTxInjectAlignmentError H:"Aquantia XAUI Tx Inject Alignment Error (4.F800.B) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaXauiTxInjectCodeViolation H:"Aquantia XAUI Tx Inject Code Violation (4.F800.A) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaXauiTx10BViolationCodeword H:"Aquantia XAUI Tx 10B Violation Codeword [9:0] (4.F800.9:0) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaPhyXsSystemLoopbackPassThrough H:"Aquantia PHY XS System Loopback Pass Through (4.F802.F) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaPhyXsSystemLoopbackEnable H:"Aquantia PHY XS System Loopback Enable (4.F802.E) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaXauiTxLocalFaultInjection H:"Aquantia XAUI Tx Local Fault Injection (4.F802.D) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaRestartAutonegotiation H:"Aquantia Restart Autonegotiation (7.0.9) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaSerdesStartUpMode H:"Aquantia SERDES Start-Up Mode [2:0] (7.C410.F:D) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaAutonegotiationTimeout H:"Aquantia Autonegotiation Timeout [3:0] (7.C411.F:C) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaAutonegotiationTimeoutMod H:"Aquantia Autonegotiation Timeout Mod (7.C411.B) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaLinkPartner1000BaseTFullDuplexAbility H:"Aquantia Link Partner 1000BASE-T Full Duplex Ability (7.E820.F)" A:void
+F:MDIOD_aquantiaLinkPartner1000BaseTHalfDuplexAbility H:"Aquantia Link Partner 1000BASE-T Half Duplex Ability (7.E820.E)" A:void
+F:MDIOD_aquantiaLinkPartnerShortReach H:"Aquantia Link Partner Short-Reach (7.E820.D)" A:void
+F:MDIOD_aquantialLinkPartnerAqRateDownshiftCapability H:"Aquantia Link Partner AQRate Downshift Capability (7.E820.C) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaLinkPartner5G H:"Aquantia Link Partner 5G (7.E820.B) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaLinkPartner2G H:"Aquantia Link Partner 2.5G (7.E820.A) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaLinkPartner H:"Aquantia Link Partner (7.E820.2)" A:void
+F:MDIOD_aquantiaAutonegotiationProtocolErrorState H:"Aquantia Autonegotiation Protocol Error State (7.E831.D)" A:void
+F:MDIOD_aquantiaFlpIdleErrorState H:"Aquantia FLP Idle Error State (7.E831.C)" A:void
+F:MDIOD_aquantiaEnableDiagnostics H:"Aquantia Enable Diagnostics (1E.C400.F) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaHighTempFailureThreshold H:"Aquantia High Temp Failure Threshold [F:0] (1E.C421) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaLowTempFailureThreshold H:"Aquantia Low Temp Failure Threshold [F:0] [F:0] (1E.C422) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaHighTempWarningThreshold H:"Aquantia High Temp Warning Threshold [F:0] [1:0] (1E.C423) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaLowTempWarningThreshold H:"Aquantia Low Temp Warning Threshold [F:0] (1E.C424) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaDiagnosticsSelect H:"Aquantia Diagnostics Select (1E.C470.F) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaExtendedMdiDiagnosticsSelect H:"Aquantia Extended MDI Diagnostics Select [1:0] (1E.C470.E:D) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaInitiateCableDiagnostics H:"Aquantia Initiate Cable Diagnostics (1E.C470.4) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaEnableVddPowerSupplyTuning H:"Aquantia Enable VDD Power Supply Tuning (1E.C472.E) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTunableExternalVddPowerSupplyPresent H:"Aquantia Tunable External VDD Power Supply Present (1E.C472.6)" A:bool, uint16_t
+F:MDIOD_aquantiaExternalVddChangeRequest H:"Aquantia External VDD Change Request [3:0] (1E.C472.5:2) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaEnable5ChannelRfiCancellation H:"Aquantia Enable 5th Channel RFI Cancellation (1E.C472.0) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaRateTransitionRequest H:"Aquantia Rate Transition Request [2:0] (1E.C473.A:8) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaTrainingSnr H:"Aquantia Training SNR [7:0] (1E.C473.7:0) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaGlbLoopbackControl H:"Aquantia Loopback Control [4:0] (1E.C47A.F:B) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaGlbMdiPacketGeneration H:"Aquantia MDI Packet Generation (1E.C47A.5) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaGlbSystemIFPacketGeneration H:"Aquantia System I/F Packet Generation (1E.C47A.3) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaGlobalReservedProvisioningRate H:"Aquantia Rate [2:0] (1E.C47A.2:0) write?, writeValue" A:bool, uint16_t
+F:MDIOD_aquantiaPairAStatus H:"Aquantia Pair A Status [2:0] (1E.C800.E:C)" A:void
+F:MDIOD_aquantiaPairBStatus H:"Aquantia Pair B Status [2:0] (1E.C800.A:8)" A:void
+F:MDIOD_aquantiaPairCStatus H:"Aquantia Pair C Status [2:0] (1E.C800.6:4)" A:void
+F:MDIOD_aquantiaPairDStatus H:"Aquantia Pair D Status [2:0] (1E.C800.2:0)" A:void
+F:MDIOD_aquantiaStatusPairAReflection1 H:"Aquantia Pair A Reflection #1 [7:0] (1E.C801.F:8)" A:void
+F:MDIOD_aquantiaStatusPairAReflection2 H:"Aquantia Pair A Reflection #2 [7:0] (1E.C801.7:0)" A:void
+F:MDIOD_aquantiaImpulseResponseMsw H:"Aquantia Impulse Response MSW [F:0] (1E.C802.F:0)" A:void
+F:MDIOD_aquantiaStatusPairBReflection1 H:"Aquantia Pair B Reflection #1 [7:0] (1E.C803.F:8)" A:void
+F:MDIOD_aquantiaStatusPairBReflection2 H:"Aquantia Pair B Reflection #2 [7:0] (1E.C803.7:0)" A:void
+F:MDIOD_aquantiaImpulseResponseLsw H:"Aquantia Impulse Response LSW [F:0] (1E.C804.F:0)" A:void
+F:MDIOD_aquantiaStatusPairCReflection1 H:"Aquantia Pair C Reflection #1 [7:0] (1E.C805.F:8)" A:void
+F:MDIOD_aquantiaStatusPairCReflection2 H:"Aquantia Pair C Reflection #2 [7:0] (1E.C805.7:0)" A:void
+F:MDIOD_aquantiaStatusPairDReflection1 H:"Aquantia Pair D Reflection #1 [7:0] (1E.C807.F:8)" A:void
+F:MDIOD_aquantiaStatusPairDReflection2 H:"Aquantia Pair D Reflection #2 [7:0] (1E.C807.7:0)" A:void
+F:MDIOD_aquantiaProcessorIntensiveOperationInProgress H:"Aquantia Processor Intensive MDIO Operation InProgress (1E.C831.F)" A:void
+F:MDIOD_aquantiaCableLength H:"Aquantia Cable Length [7:0] (1E.C884.7:0)" A:void
+F:MDIOD_aquantiaGlbLoopbackStatus H:"Aquantia Loopback Status [4:0] (1E.C888.F:B)" A:void
+F:MDIOD_aquantiaMdiPacketGenerationStatus H:"Aquantia MDI Packet Generation Status (1E.C888.5)" A:void
+F:MDIOD_aquantiaGlbSystemIFPacketGenerationStatus H:"Aquantia System I/F Packet Generation Status (1E.C888.3)" A:void
+F:MDIOD_aquantiaGlobalReservedStatusRate H:"Aquantia Rate [2:0] (1E.C888.2:0)" A:void
+F:AquantiaInNomalOperationIcmd H:"Check Aquantia operation status" A:void
+F:AQUANTIA_GeneralRead H:"Read Aquantia Register. First arg: Device Type, Second arg: Register Address" A:uint8_t, uint16_t
+F:AQUANTIA_GeneralWrite H:"Write Aquantia Register. First arg: Device Type, Second arg: Register Address, Third arg: Value to be Written" A:uint8_t, uint16_t, uint16_t
+F:AQUANTIA_SetWarningTemperature H:"Set Aquantia Warning temperature that firmware checks by reading Temperature value" A:uint8_t
+F:AQUANTIA_SetShutdownTemperature H:"Set Aquantia Shutdown temperature that firmware checks  by reading Temperature value" A:uint8_t
+component:MDIO_COMPONENT
+F:icmdMdioWrite H:"Write to MDIO: 1st arg device, 2nd arg address, 3rd arg data, 4th arg mux port" A:uint8_t, uint8_t, uint16_t, uint8_t
+F:icmdMdioRead H:"Read from MDIO: 1st arg device, 2nd arg address, 3rd arg mux port" A:uint8_t, uint8_t, uint8_t
+F:mdioStatus H:"Check the MDIO state of where it is in processing ASync operations" A:void
+F:icmdMdioIndirectWrite H:"Indirect write to MDIO: 1st arg device, 2nd arg devtype, 3rd arg address, 4th arg data, 5th arg mux port" A:uint8_t, uint8_t, uint16_t, uint16_t, uint8_t
+F:icmdMdioIndirectRead H:"Indirect read from MDIO: 1st arg device, 2nd arg devtype, 3rd arg address, 4th arg mux port" A:uint8_t, uint8_t, uint16_t, uint8_t
+component:MCA_COMPONENT
+F:PrintLatencyValueIcmd H:"Prints the Latency Value of MCA_CHANNEL[0] if it is not zero" A:void
+F:MCA_ChannelLinkUp H:"Channel Link up (Channel number)" A:uint8_t
+F:MCA_ChannelLinkDn H:"Channel Link dn (Channel number)" A:uint8_t
+F:MCA_IcmdPrintFifoLevel H:"Set the time interval and start printing pfifo and nfifo levels (Set in msec)\n Setting the interval to Zero will stop the timer" A:uint32_t
+component:CPU_COMM_COMPONENT
+component:TEST_COMPONENT
+F:TEST_SystemDiagnosticIcmd H:"Sets system diagnostic flash variable and performs diagnostic" A:void
+F:TEST_ProtectFlashIcmd H:"Protects the production fpga and micro firmware" A:void
+F:TEST_ReadFlashProtectIcmd H:"Reads the protected and unprotected area of the flash" A:void
+F:TEST_SetTestStatusFlashVariableIcmd H:"Arg0 : 0 (Clear Test Status in Flash), 1 (Sets Test Status in Flash)" A:uint8_t
+F:TEST_GetTestStatusFlashVariableIcmd H:"Reads Test Status bit from Flash" A:void
+F:TEST_GetFpgaOCStatusIcmd H:"Reads DP Over current status pin" A:void
+component:CONFIG_COMPONENT
+F:Configuration_ShowFeaturebits H:"Show Feature status" A:void
+component:FLASH_DATA_COMPONENT
+F:flashDataWriteByte H:"arg1 = address, arg2 = 1 byte value" A:uint32_t, uint8_t
+F:flashDataEraseFlashVars H:"Erases all the storage vars" A:void
+F:setMmuAddressOffsetIcmd H:"Set Read Address Offset" A:uint32_t
+F:flashDataEraseBlockIcmd H:"Erase block, arg0 = address" A:uint32_t
+F:flashProtectGoldenIcmd H:"Protect Golden Image Area" A:void
+F:FLASHRAW_Unprotect H:"Flash unprotected" A:void
+F:flashReadChipSectorProtectionIcmd H:"Display chip protection" A:void
+F:flashDeviceIcmd H:"Display chip ID" A:void
+F:flashEraseCurrentIcmd H:"Erase the Current Image" A:void
+F:flashFillCurrentIcmd H:"Fill the Current Image image area arg1 = val" A:uint8_t
+component:RANDOM_COMPONENT
+component:XADC_COMPONENT
+F:XADC_getVoltageIcmd H:"Get XADC Voltages" A:void
+F:XADC_getFpgaTempIcmd H:"Get FPGA Temperature" A:void
+F:XADC_setFpgaWarningTemperature_2 H:"Set FPGA Temperature Warning Threshold for -2 board" A:uint8_t
+F:XADC_setFpgaWarningTemperature_3 H:"Set FPGA Temperature Warning Threshold for -3 board" A:uint8_t
+F:XADC_setFpgaShutdownTemperature_2 H:"Set FPGA Temperature Shutdown Threshold for -2 board" A:uint8_t
+F:XADC_setFpgaShutdownTemperature_3 H:"Set FPGA Temperature Shutdown Threshold for -3 board" A:uint8_t
+component:STATS_MON_COMPONENT
+F:STATSMON_PrintStatsCmd H:"Print all non zero stats" A:void
+F:STATSMON_ClearAllStatsCmd H:"Clear all stats" A:void
+component:TIMING_COMPONENT
+F:showTimers H:"Show all timers" A:void
+F:startTimer H:"Start a timer" A:uint32_t
+F:stopTimer H:"Stop a timer" A:uint32_t
+F:changeTimeout H:"Change a timer timeout value.  Args: timer, newTimeoutValue" A:uint32_t, uint32_t
+F:UTIL_printTimingEntriesTable H:"Print Timing Entries Table" A:void
+F:UTIL_timingProfileWatchdogEnable H:"Enable Watchdog, arg: timeout in ms" A:uint32_t
+F:UTIL_timingProfileWatchdogDisable H:"Disable Watchdog" A:void
+component:MAIN_LOOP_COMPONENT
+F:ResetStats H:"" A:void
+component:ICMD_COMPONENT
+F:readMemory H:"Read any memory address. Argument: full 32 bit address" A:uint32_t
+F:writeMemory H:"Write any memory address. Arguments: full 32 bit address, 32 bit value to write" A:uint32_t, uint32_t
+F:readModifyWriteMemory H:"Read-Modify-Write any memory address. Arguments: full 32 bit address, 32 bit set mask, 32 bit clear mask" A:uint32_t, uint32_t, uint32_t
+F:modifyBitfield H:"Write data from a given position within any memory address. Arguments: full 32 bit address, 8 bit position to start modifying, 8 bit width to modify, 32 bit value to write" A:uint32_t, uint8_t, uint8_t, uint32_t
+F:dumpMemory32 H:"Dump data from any number of sequential memory locations. Arguments: full 32 bit address, number of 32bit words to read" A:uint32_t, uint8_t
+F:callFunction H:"Call any function. Arguments: full 32 bit address, arguments for function(if not needed enter 0)" A:uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t
+F:readMemory16 H:"Read any memory address. Argument: full 16 bit address" A:uint32_t
+F:writeMemory16 H:"Write any memory address. Arguments: full 16 bit address, 16 bit value to write" A:uint32_t, uint16_t
+F:readModifyWriteMemory16 H:"Read-Modify-Write any memory address. Arguments: full 16 bit address, 16 bit set mask, 16 bit clear mask" A:uint32_t, uint16_t, uint16_t
+F:readMemory8 H:"Read any memory address. Argument: full 32 bit address" A:uint32_t
+F:writeMemory8 H:"Write any memory address. Arguments: full 32 bit address, 8 bit value to write" A:uint32_t, uint8_t
+component:TOP_COMPONENT
+F:bb_top_systemReset H:"Perform system restart" A:void
+F:bb_top_triggerFallbackFpgaIcmd H:"Trigger the fallback" A:void
+F:bb_top_ApplyGEReset H:"Reset GE, 1 to put GE in reset and 0 to put GE in run" A:bool
+F:bb_top_GtpResetIcmd H:"Resets the GTP tranceivers and take them out of reset after configuration" A:void
+F:bb_top_ConfigureDpTransceiverLexIcmd H:"Configure DP transreceivers on LEX" A:void
+F:bb_top_IcmddpSetTxDiffCtrl H:"Sets a value for txdiffctrl, Arg 2 = 1 to presist Arg 1, 0 to keep Arg 1 only for one link training" A:uint8_t, bool
+F:bb_top_IcmddpSetTxPostCursor H:"Sets a value for txpostcursor, Arg 2 = 1 to presist Arg 1, 0 to keep Arg 1 only for one link training" A:uint8_t, bool
+F:bb_top_switchFpgaImage H:"Change the running image. NOTE does not set the fallback bit" A:void
+F:bb_top_CalcFpgaImageCrc H:"Calculate the FPGA 64bit CRC" A:void
+F:bb_top_CalcTargetImageCrc H:"Calculate the Target image CRC" A:void
+F:bb_top_writeUserReg H:"Write the FPGA user register" A:uint32_t
+F:bb_top_readUserReg H:"Read the FPGA user register" A:void
+F:bb_top_coreTypeIcmd H:"This icmd states if the core type is -2 or -3" A:void
+component:UTIL_COMPONENT
+component:ILOG_COMPONENT
+F:ilog_SetLevel H:"Set the ilog logging level of any component: 1st arg level, 2nd arg component" A:uint8_t, component_t
+F:ilog_icmdGetLevel H:"Get the ilog logging level of any component" A:component_t
+F:ilog_setBlockingMode H:"Put ilog into a blocking logging mode" A:void
+F:ilog_clearBlockingMode H:"Put ilog into normal logging mode" A:void
+F:testStackOverFlow H:"Test the assert function by creating a stack overflow (Creates a SPARC register window overflow)" A:void
+F:assertStatus H:"Check the status of the assert module" A:void
+component:UART_COMPONENT
+F:UART_ShowStats H:"Show Uart stats" A:void
+F:UART_BBChangeBaudRate H:"Change Baud Rate" A:uint32_t
+component:CORE_COMPONENT
+F:BBCORE_printHWModuleVersion H:"Show FPAGE modules' version" A:void

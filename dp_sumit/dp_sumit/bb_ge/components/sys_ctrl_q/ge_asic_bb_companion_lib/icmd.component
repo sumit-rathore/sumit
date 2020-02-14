@@ -1,0 +1,2 @@
+component:SYS_CTRL_Q_COMPONENT
+F:showExpectedPacket H:"Show the expected packet for a particular USB address that has BCO/BCI set" A:uint8

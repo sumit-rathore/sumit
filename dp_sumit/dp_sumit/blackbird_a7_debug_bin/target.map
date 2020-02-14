@@ -1,0 +1,2029 @@
+
+
+
+
+00000000 g       *ABS*	00000000 __lex_srodata_size
+00000000 g       *ABS*	00000000 __lex_stext_size
+00000000 g       *ABS*	00000000 __rex_data_size
+00000000 g       *ABS*	00000000 __rex_srodata_size
+00000000 g       *ABS*	00000000 __rex_stext_size
+00000000 g       *ABS*	00000000 __srodata_size
+00000000 g       *ABS*	00000000 __stext_size
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    df *ABS*	00000000 
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 <artificial>
+00000000 l    df *ABS*	00000000 ./blackbird_a7_debug_obj/traps.o
+00000000 l    df *ABS*	00000000 libgcc2.c
+00000000 l    df *ABS*	00000000 libgcc2.c
+00000000 l    df *ABS*	00000000 libgcc2.c
+00000000 l    df *ABS*	00000000 start.o
+00000000 l    d  .gnu.attributes	00000000 .gnu.attributes
+00000000 l       *UND*	00000000 LEON_UninitializedISR_C_helper1
+00000000  w      *UND*	00000000 __atext_dst
+00000000  w      *UND*	00000000 __atext_size
+00000000  w      *UND*	00000000 __atext_src
+00000000  w      *UND*	00000000 icmd_BBGE_COMM_COMPONENT
+00000000  w      *UND*	00000000 icmd_BGRG_COMPONENT
+00000000  w      *UND*	00000000 icmd_CALLBACK_COMPONENT
+00000000  w      *UND*	00000000 icmd_CRC_COMPONENT
+00000000  w      *UND*	00000000 icmd_EVENT_COMPONENT
+00000000  w      *UND*	00000000 icmd_GE_PROGRAM_COMPONENT
+00000000  w      *UND*	00000000 icmd_HPD_COMPONENT
+00000000  w      *UND*	00000000 icmd_ISTATUS_COMPONENT
+00000000  w      *UND*	00000000 icmd_MAC_COMPONENT
+00000000  w      *UND*	00000000 icmd_PCS_PMA_COMPONENT
+00000000  w      *UND*	00000000 icmd_ROM_COMPONENT
+00000000  w      *UND*	00000000 icmd_SFI_COMPONENT
+00000000  w      *UND*	00000000 icmd_SHA2_COMPONENT
+00000000  w      *UND*	00000000 icmd_TEST_HARNESS_COMPONENT
+00000000  w      *UND*	00000000 icmd_XMODEM_COMPONENT
+00000008 g       *ABS*	00000000 chip_version
+0000000c g       *ABS*	00000000 chip_date
+00000010 g       *ABS*	00000000 chip_time
+00000014 g       *ABS*	00000000 asic_golden_fw_address
+00000018 g       *ABS*	00000000 asic_current_fw_address
+0000001c g       *ABS*	00000000 fpga_golden_fw_address
+00000020 g       *ABS*	00000000 fpga_current_fw_address
+00000020 g       *ABS*	00000000 __rex_rodata_size
+00000031 g       *ABS*	00000000 __lexbss_size
+00000039 g       *ABS*	00000000 __rexbss_size
+0000014c g       *ABS*	00000000 __lex_rodata_size
+00000224 g     F *ABS*	00000108 ROM_uartBoot
+00000494 g       *ABS*	00000000 __lex_data_size
+000005e4 g       *ABS*	00000000 __data_size
+000012c4 g     O *ABS*	00000004 romRev
+000012c8 g     O *ABS*	00000200 ATMEL_secretKeyStore
+00001538 g       *ABS*	00000000 _binary____bb_ge_ge_asic_bb_companion_debug_bin_flash_writer_bin_size
+00001538 g       *ABS*	00000000 __ge_flshwtr_size
+000026c4 g       *ABS*	00000000 __rodata_size
+00003bb0 g       *ABS*	00000000 __flashcode_size
+0000620c g       *ABS*	00000000 __flashrodata_size
+00007258 g       *ABS*	00000000 __bss_size
+00007444 g       *ABS*	00000000 __rex_ftext_size
+00009528 g       *ABS*	00000000 __lex_ftext_size
+0000b144 g       *ABS*	00000000 _binary____program_programBB_bin_programBB_bin_size
+0000b144 g       *ABS*	00000000 __pgmbb_size
+000161f8 g       *ABS*	00000000 __ftext_size
+0001c5d4 g       *ABS*	00000000 _binary____bb_ge_ge_asic_bb_companion_debug_bin_ge_asic_bb_companion_debug_bin_size
+0001c5d4 g       *ABS*	00000000 __ge_fw_size
+00033cd8 g       *ABS*	00000000 __bb_fw_size
+0005c928 g       *ABS*	00000000 __target_size
+60000000 g       *ABS*	00000000 __load_start_lexsrodata
+60000000 g       *ABS*	00000000 __load_start_lexstext
+60000000 g       .lexftext	00000000 __rex_lex_ahbram_overlay_start
+60000000 g       .lexftext	00000000 __stext_dst
+60000000 g       .lexrodata	00000000 __rex_lex_srodata_overlay_start
+60000000 g       .lexrodata	00000000 __srodata_dst
+a0000000 g       .ftext	00000000 __ftext_dst
+a0000000 g       .ftext	00000000 _LEON_TrapHandler
+a0000000 l    d  .ftext	00000000 .ftext
+a000008c g       .ftext	00000000 LEON_UninitializedISR
+a0000094 g       .ftext	00000000 _LEON_softTrap
+a00000c4 g     F .ftext	0000007c .hidden PacketizeSendData.lto_priv.268
+a00000c4 g       .ftext	00000000 __ftext_start
+a0000140 g     F .ftext	00000324 .hidden UART_processPacket.lto_priv.277
+a0000464 g     F .ftext	00000044 .hidden LEON_TimerWaitMicroSec
+a00004a8 g     F .ftext	00000060 memcpy
+a0000508 g     F .ftext	0000008c memset
+a0000594 g     F .ftext	000001ec .hidden MdioIndirectWriteSync.constprop.7
+a0000780 g     F .ftext	000001f0 .hidden MdioIndirectReadSync.constprop.9
+a0000970 g     F .ftext	00000160 .hidden AUX_RexEnqueueDDCCIOverI2CWrite.constprop.77
+a0000ad0 g     F .ftext	000000f4 .hidden AUX_RexEnqueueI2cOverAuxRead.constprop.82
+a0000bc4 g     F .ftext	00000064 .hidden _ilog
+a0000c28 g     F .ftext	00000030 .hidden LEON_SFISendInstruction
+a0000c58 g     F .ftext	00000034 .hidden LEON_SFISendReadStatus
+a0000c8c g     F .ftext	00000018 .hidden UART_PollingModeDoWork
+a0000ca4 l     F .ftext	0000014c UART_PollingModeDoWorkByCh
+a0000df0 g     F .ftext	00000094 UART_InterruptHandlerRx
+a0000e84 g     F .ftext	00000010 UART_InterruptHandlerTx
+a0000e94 g     F .ftext	000000f4 .hidden UART_InterruptHandlerRxGe
+a0000f88 g     F .ftext	00000010 .hidden UART_InterruptHandlerTxGe
+a0000f98 g     F .ftext	00000038 .hidden UartfifoSpaceAvail
+a0000fd0 g     F .ftext	00000028 .hidden UartfifoWrite
+a0000ff8 g     F .ftext	000000a4 .hidden UartfifoCopy
+a000109c g     F .ftext	00000028 .hidden UartfifoRead
+a00010c4 g     F .ftext	000001fc .hidden MainLoop
+a00012c0 g     F .ftext	00000038 .hidden TIMING_TimerStart
+a00012f8 g     F .ftext	00000020 .hidden TIMING_TimerStop
+a0001318 g     F .ftext	00000020 .hidden TIMING_TimerResetTimeout
+a0001338 g     F .ftext	000000a8 TIMING_TimerInterruptHandler
+a00013e0 g     F .ftext	00000080 .hidden FLASHRAW_write
+a0001460 g     F .ftext	0000011c .hidden FLASHRAW_ReadGoldenProtect
+a000157c g     F .ftext	000000e4 .hidden FLASHRAW_GoldenProtect
+a0001660 g     F .ftext	0000009c FLASHRAW_Unprotect
+a00016fc g     F .ftext	000000b8 .hidden Mdio_InterruptHandler
+a00017b4 g     F .ftext	0000003c .hidden MdioReadASync
+a00017f0 g     F .ftext	00000054 .hidden MdioIndirectWriteASync
+a0001844 g     F .ftext	00000054 .hidden MdioIndirectReadASync
+a0001898 l     F .ftext	000001c0 mdioIdleTask
+a0001a58 g     F .ftext	000000ac .hidden submitASyncOperation.lto_priv.518
+a0001b04 g     F .ftext	0000003c .hidden genericPhyTimer.lto_priv.713
+a0001b40 g     F .ftext	00000030 .hidden initPhyTimer.lto_priv.714
+a0001b70 l     F .ftext	00000018 phyBasicModeStatusRead
+a0001b88 l     F .ftext	00000060 phyBasicModeStatusRead2
+a0001be8 g     F .ftext	000000c8 .hidden MDIOD_phyRegRead.lto_priv.726
+a0001cb0 l     F .ftext	00000100 MDIOD_phyRegWrite
+a0001db0 l     F .ftext	00000094 MDIOD_mdioReadAsyncCompletionFunction
+a0001e44 l     F .ftext	000000c0 MDIOD_mdioWriteAsyncCompletionFunction
+a0001f04 g     F .ftext	00000048 .hidden atmel_genNonceDone.lto_priv.531
+a0001f4c g     F .ftext	0000003c .hidden atmel_runGenDigDone.lto_priv.194
+a0001f88 g     F .ftext	000000f8 .hidden atmel_doneHwMac.lto_priv.532
+a0002080 g     F .ftext	00000108 .hidden __ATMEL_submitI2cOperation
+a00021b4 g     F .ftext	00000068 .hidden __EEPROM_At24cxxReadCompleteHandler.lto_priv.538
+a000221c g     F .ftext	00000058 .hidden __EEPROM_At24cxxWriteCompleteHandler.lto_priv.537
+a0002274 g     F .ftext	00000034 .hidden __EEPROM_At24cxxAcquireLock.lto_priv.563
+a00022a8 l     F .ftext	00000058 atmel_writeSlotDone
+a0002300 l     F .ftext	00000034 atmel_readConfigWordDone
+a0002334 l     F .ftext	00000058 atmel_writeConfigWordDone
+a000238c l     F .ftext	0000007c atmel_isChipLockedDone
+a0002408 l     F .ftext	00000040 atmel_encryptedReadSlotDone
+a0002448 l     F .ftext	0000003c atmel_encryptedWriteSlotDone
+a0002484 g     F .ftext	000003fc .hidden atmel_encryptReadWrite.lto_priv.175
+a0002880 g     F .ftext	00000038 .hidden GpioRead
+a00028b8 g     F .ftext	00000020 .hidden AUX_EnableAuxInterrupts
+a00028d8 g     F .ftext	00000020 .hidden AUX_DisableAuxInterrupts
+a00028f8 g     F .ftext	00000020 .hidden AUX_DDCCIRequestIsAddressOnly
+a0002918 g     F .ftext	00000090 .hidden AUX_LoadTransaction
+a00029a8 g     F .ftext	00000148 .hidden AUX_WriteTransaction
+a0002af0 g     F .ftext	00000038 .hidden RexEdidChanged
+a0002b28 g     F .ftext	00000044 .hidden UpdateEdidChecksumByte
+a0002b6c g       .ftext	00000000 enableCache
+a0002b94 g       .ftext	00000000 disableCache
+a0002bbc g     F .ftext	00000090 .hidden UART_packetizeSendResponseImmediate
+a0002c4c g     F .ftext	00000088 .hidden UART_packetizeResetBB
+a0002cd4 g     F .ftext	00000038 .hidden PacketizeResetRxState.lto_priv.287
+a0002d0c g     F .ftext	0000000c .hidden PacketizeRxPacketTimeoutBB.lto_priv.885
+a0002d18 g     F .ftext	00000150 .hidden PacketizeRxPacketTimeoutGE.lto_priv.886
+a0002e68 g     F .ftext	00000010 .hidden LEON_TimerRead
+a0002e78 g     F .ftext	0000001c .hidden LEON_EnableIrq
+a0002e94 g     F .ftext	00000018 .hidden LEON_EnableIrq2Bits
+a0002eac l     F .ftext	0000024c sha256_transf
+a00030f8 g     F .ftext	0000018c .hidden sha256
+a0003284 g     F .ftext	000000a0 .hidden memeq
+a0003324 g     F .ftext	000000c4 .hidden CALLBACK_RunSingle.constprop.16
+a00033e8 g     F .ftext	00000104 .hidden CMD_sendSoftwareVersion.constprop.109
+a00034ec g     F .ftext	00000130 .hidden CpuCommSaveTx.constprop.134
+a000361c g     F .ftext	0000005c .hidden Config_GetDataPointer.constprop.143
+a0003678 g     F .ftext	000000f0 .hidden UART_packetizeSendDataImmediate.constprop.163
+a0003768 g     F .ftext	00000034 .hidden getIlogTimestamp
+a000379c g     F .ftext	00000098 .hidden SFI_sendEnterExit4ByteAddressMode.lto_priv.339
+a0003834 g     F .ftext	00000084 .hidden SFI_sendWriteEnable.lto_priv.340
+a00038b8 g     F .ftext	00000094 .hidden SFI_readStatusFlags
+a000394c g     F .ftext	00000094 .hidden SFI_readStatusRegister
+a00039e0 g     F .ftext	00000080 .hidden SFI_clearStatusFlags
+a0003a60 g     F .ftext	0000008c .hidden SFI_ReadNonVolatileLockBits
+a0003aec g     F .ftext	0000009c .hidden crcInit
+a0003b88 g     F .ftext	00000070 .hidden crcFast
+a0003bf8 g     F .ftext	0000006c .hidden crcFastBlock
+a0003c64 g     F .ftext	0000008c .hidden UART_WaitForTx
+a0003cf0 l     F .ftext	000001b8 UART_RxInterrupt
+a0003ea8 g     F .ftext	00000128 .hidden _UART_initPort.lto_priv.906
+a0003fd0 g     F .ftext	000000cc .hidden bb_top_dpConfigureDpTransceiverLexA7_4.lto_priv.293
+a000409c g     F .ftext	00000048 .hidden bb_top_GtpResetCallback.lto_priv.299
+a00040e4 g     F .ftext	000000ec .hidden bb_top_a7_checkDpFreq.lto_priv.300
+a00041d0 g     F .ftext	00000014 bb_top_switchFpgaImage
+a00041e4 g     F .ftext	00000040 .hidden bb_top_ApplyResetDpSource
+a0004224 g     F .ftext	00000018 .hidden bb_top_IsDeviceLex
+a000423c g     F .ftext	00000128 .hidden bb_top_drpRead
+a0004364 g     F .ftext	000000e8 .hidden bb_top_drpReadModWrite
+a000444c g     F .ftext	00000020 .hidden bb_top_IsFpgaGoldenImage
+a000446c g     F .ftext	0000003c bb_top_triggerFallbackFpgaIcmd
+a00044a8 g     F .ftext	00000058 bb_top_readUserReg
+a0004500 g     F .ftext	00000044 bb_top_writeUserReg
+a0004544 g     F .ftext	00000054 bb_top_CalcTargetImageCrc
+a0004598 g     F .ftext	00000078 bb_top_CalcFpgaImageCrc
+a0004610 g     F .ftext	00000034 bb_top_coreTypeIcmd
+a0004644 g     F .ftext	000000bc .hidden drpWrite.lto_priv.867
+a0004700 g     F .ftext	00000050 bb_top_IcmddpSetTxDiffCtrl
+a0004750 g     F .ftext	00000060 bb_top_IcmddpSetTxPostCursor
+a00047b0 g     F .ftext	00000048 .hidden computeMmcmTxClkOutEncoding
+a00047f8 g     F .ftext	0000010c .hidden UTILSM_PostEvent
+a0004904 g     F .ftext	0000009c .hidden ILOG_istatus
+a00049a0 l     F .ftext	00000134 AssertPrintRegisterWindows
+a0004ad4 g     F .ftext	000000dc .hidden CALLBACK_GetEntry.lto_priv.270
+a0004bb0 g     F .ftext	000000cc .hidden EVENT_Trigger
+a0004c7c g     F .ftext	00000034 .hidden EVENT_GetEventInfo
+a0004cb0 g     F .ftext	00000074 .hidden MAC_LinkLayerRxIsr
+a0004d24 g     F .ftext	000000a4 .hidden bb_top_setDpGtpRxMiscCtrlPd
+a0004dc8 g     F .ftext	000000a4 .hidden bb_top_setDpGtpTxMiscCtrlPd
+a0004e6c g     F .ftext	00000024 bb_top_TriStateMdioMdc
+a0004e90 g     F .ftext	000000a0 .hidden bb_top_a7_changeFpgaImage
+a0004f30 g     F .ftext	00000030 .hidden bb_top_a7_writePreamble.lto_priv.292
+a0004f60 g     F .ftext	00000050 .hidden bb_top_a7_isFpgaFallback
+a0004fb0 g     F .ftext	0000030c .hidden bb_top_dpConfigureDpTransceiverRexA7
+a00052bc g     F .ftext	00000078 .hidden bb_top_dpEnableDpSourceA7
+a0005334 g     F .ftext	0000007c .hidden bb_top_dpPreChargeMainLinkA7
+a00053b0 g     F .ftext	00000098 .hidden bb_top_a7_getDpFreq
+a0005448 g     F .ftext	0000001c bb_top_GtpResetIcmd
+a0005464 g     F .ftext	0000000c bb_top_ConfigureDpTransceiverLexIcmd
+a0005470 l     F .ftext	000000f0 configureDpTransceiverCommonA7
+a0005560 l     F .ftext	000000b4 bb_top_dpConfigureDpTransceiverLexA7_2
+a0005614 l     F .ftext	00000120 bb_top_dpConfigureDpTransceiverLexA7_3
+a0005734 g     F .ftext	00000044 .hidden STATSMON_FpgaRegisterRead
+a0005778 g     F .ftext	00000064 .hidden StatsMonGetStatValue
+a00057dc l     F .ftext	000000a0 StatsScheduler
+a000587c l     F .ftext	000000a4 StatsRun
+a0005920 l     F .ftext	00000050 StatsMonGroupGetStatValue
+a0005970 l     F .ftext	0000018c StatsMonGroupStatValueCallback
+a0005afc g     F .ftext	00000094 .hidden getParamsPtr.isra.0.lto_priv.338
+a0005b90 g     F .ftext	000000d0 .hidden UTIL_timingProfileStopTimer
+a0005c60 l     F .ftext	00000080 watchdogCallback
+a0005ce0 g     F .ftext	00000070 .hidden TIMING_TimerRegisterHandler
+a0005d50 g     F .ftext	00000018 .hidden _TIMING_AssertNullPointer.lto_priv.865
+a0005d68 g     F .ftext	000000e4 .hidden callBackTask
+a0005e4c g     F .ftext	0000008c .hidden CALLBACK_Schedule
+a0005ed8 g     F .ftext	00000060 .hidden CALLBACK_Run
+a0005f38 l     F .ftext	00000134 CALLBACK_RemoveCallbackFromQueue
+a000606c g     F .ftext	00000088 .hidden CALLBACK_Enqueue.lto_priv.271
+a00060f4 l     F .ftext	000002cc FlashPageWrite
+a00063c0 l     F .ftext	0000010c FlashPageWriteComplete
+a00064cc g     F .ftext	00000174 .hidden FLASHRAW_eraseGeneric
+a0006640 g     F .ftext	0000006c .hidden FLASH_StartBlockSwap
+a00066ac g     F .ftext	000000d0 .hidden FLASH_SaveConfigVariable
+a000677c g     F .ftext	000000a8 .hidden SetActiveFlashBlock.lto_priv.374
+a0006824 g     F .ftext	00000068 .hidden FlashClearBytes.lto_priv.373
+a000688c g     F .ftext	00000048 .hidden IsFlashVariableHeaderValid.lto_priv.272
+a00068d4 g     F .ftext	000000a4 STATSMON_PrintStatsCmd
+a0006978 g     F .ftext	00000008 STATSMON_ClearAllStatsCmd
+a0006980 g     F .ftext	000000a8 .hidden MCA_DisableTimerHandler.lto_priv.454
+a0006a28 g     F .ftext	00000048 .hidden MCA_ChannelStatusCallback.lto_priv.455
+a0006a70 g     F .ftext	0000008c .hidden MCA_ChannelPrintFifoLevel.lto_priv.844
+a0006afc g     F .ftext	0000003c .hidden McaHal_GetChannelStatus.isra.0.lto_priv.456
+a0006b38 g     F .ftext	0000005c .hidden CPU_COMM_RegisterHandler
+a0006b94 g     F .ftext	00000014 .hidden CPU_COMM_sendSubType
+a0006ba8 g     F .ftext	000001b4 .hidden CPU_COMM_sendMessage
+a0006d5c g     F .ftext	000003d8 .hidden CPU_COMM_Irq
+a0007134 l     F .ftext	000000f4 CpuConnSendTx
+a0007228 l     F .ftext	00000038 CpuCommClearContext
+a0007260 g     F .ftext	00000014 .hidden CpuCommRxDefaultHandler.lto_priv.182
+a0007274 l     F .ftext	00000078 CpuComm_HalWrite
+a00072ec g     F .ftext	00000028 .hidden TEST_PrintTestVariables
+a0007314 g     F .ftext	0000000c .hidden TestDiagnosticTimerHandler.lto_priv.757
+a0007320 g     F .ftext	00000024 .hidden TEST_SetErrorState.part.0.lto_priv.608
+a0007344 g     F .ftext	000000cc TEST_SystemDiagnosticIcmd
+a0007410 g     F .ftext	0000000c TEST_ProtectFlashIcmd
+a000741c g     F .ftext	00000018 TEST_ReadFlashProtectIcmd
+a0007434 g     F .ftext	00000058 TEST_SetTestStatusFlashVariableIcmd
+a000748c g     F .ftext	0000003c TEST_GetTestStatusFlashVariableIcmd
+a00074c8 g     F .ftext	00000030 TEST_GetFpgaOCStatusIcmd
+a00074f8 g     F .ftext	000002c4 .hidden Config_ArbitrateSetVar
+a00077bc g     F .ftext	00000074 .hidden Config_ArbitrateGetVar
+a0007830 g     F .ftext	00000064 Configuration_ShowFeaturebits
+a0007894 l     F .ftext	0000006c Config_SaveFlashVar
+a0007900 g     F .ftext	00000210 .hidden Config_LoadAllVarsFromFlash.lto_priv.903
+a0007b10 g     F .ftext	0000005c .hidden Config_SaveAllFlashVariables.lto_priv.902
+a0007b6c l     F .ftext	00000124 Config_FlashSaveVariables
+a0007c90 g     F .ftext	0000004c .hidden Config_MarkAllVarsToSave.lto_priv.904
+a0007cdc g     F .ftext	00000050 flashFillCurrentIcmd
+a0007d2c g     F .ftext	0000002c flashEraseCurrentIcmd
+a0007d58 g     F .ftext	00000020 flashDataWriteByte
+a0007d78 g     F .ftext	00000024 flashDataEraseFlashVars
+a0007d9c g     F .ftext	00000014 setMmuAddressOffsetIcmd
+a0007db0 g     F .ftext	00000010 flashDataEraseBlockIcmd
+a0007dc0 g     F .ftext	00000098 flashDeviceIcmd
+a0007e58 g     F .ftext	0000000c flashProtectGoldenIcmd
+a0007e64 g     F .ftext	0000000c flashReadChipSectorProtectionIcmd
+a0007e70 l     F .ftext	00000018 icmdMdioReadHelper
+a0007e88 l     F .ftext	00000028 mdioAssertInvalidState
+a0007eb0 l     F .ftext	00000018 MdioNotifyReadHandler
+a0007ec8 l     F .ftext	00000014 MdioNotifyWriteHandler
+a0007edc g     F .ftext	00000090 PrintLatencyValueIcmd
+a0007f6c g     F .ftext	00000034 MCA_IcmdPrintFifoLevel
+a0007fa0 g     F .ftext	0000005c .hidden MCA_CoreIrq
+a0007ffc g     F .ftext	00000010 .hidden MCA_Channel0Irq
+a000800c g     F .ftext	00000010 .hidden MCA_Channel1Irq
+a000801c g     F .ftext	00000010 .hidden MCA_Channel2Irq
+a000802c g     F .ftext	00000010 .hidden MCA_Channel3Irq
+a000803c g     F .ftext	00000010 .hidden MCA_Channel4Irq
+a000804c g     F .ftext	00000010 .hidden MCA_Channel5Irq
+a000805c l     F .ftext	00000144 McaHal_ChannelIrqHandler
+a00081a0 g     F .ftext	00000010 .hidden MCA_DisableTimerHandler_CPU_COMM.lto_priv.183
+a00081b0 g     F .ftext	00000010 .hidden MCA_DisableTimerHandler_DP.lto_priv.184
+a00081c0 g     F .ftext	00000010 .hidden MCA_DisableTimerHandler_USB3.lto_priv.185
+a00081d0 g     F .ftext	00000010 .hidden MCA_DisableTimerHandler_GE.lto_priv.186
+a00081e0 g     F .ftext	00000010 .hidden MCA_DisableTimerHandler_GMII.lto_priv.187
+a00081f0 g     F .ftext	00000010 .hidden MCA_DisableTimerHandler_RS232.lto_priv.188
+a0008200 g     F .ftext	0000011c .hidden _interruptHandlerReply.lto_priv.891
+a000831c g     F .ftext	00000054 AQUANTIA_SetWarningTemperature
+a0008370 g     F .ftext	00000054 AQUANTIA_SetShutdownTemperature
+a00083c4 g     F .ftext	00000044 .hidden AquantiaInNomalOperation
+a0008408 g     F .ftext	00000008 .hidden ATMEL_encryptInit
+a0008408 g     F .ftext	00000008 .hidden I2C_Slave_InterruptHandler
+a0008410 g     F .ftext	0000002c .hidden I2C_WriteAsync
+a000843c g     F .ftext	0000002c .hidden I2C_WriteReadAsync
+a0008468 g     F .ftext	00000030 .hidden I2C_Wake
+a0008498 g     F .ftext	000001f0 .hidden I2C_WriteBlocking
+a0008688 l     F .ftext	00000148 i2cIdleTask
+a00087d0 l     F .ftext	00000038 i2cSetPortDone
+a0008808 l     F .ftext	000000a8 i2cStart
+a00088b0 l     F .ftext	0000003c i2cWakeOp
+a00088ec l     F .ftext	000000a0 i2cWakeDelay
+a000898c g     F .ftext	00000054 .hidden i2cIdleDelay.lto_priv.879
+a00089e0 l     F .ftext	0000016c i2cStartInterface
+a0008b4c g     F .ftext	0000008c .hidden i2cReadHwFifo.lto_priv.526
+a0008bd8 g     F .ftext	00000068 .hidden finalizeAsyncOperation.lto_priv.525
+a0008c40 g     F .ftext	00000090 .hidden submitAsyncOperation.lto_priv.527
+a0008cd0 g     F .ftext	00000094 .hidden I2C_SetPortBlock.lto_priv.900
+a0008d64 g     F .ftext	00000008 I2C_Slave_StartTest
+a0008d6c g     F .ftext	00000194 .hidden atmel_print32Bytes
+a0008f00 g     F .ftext	00000038 .hidden atmel_write.lto_priv.875
+a0008f38 g     F .ftext	000000b4 .hidden UppUlpSetStatus.lto_priv.809
+a0008fec l     F .ftext	00000014 wakeComplete
+a0009000 l     F .ftext	0000003c readComplete
+a000903c l     F .ftext	0000002c writeComplete
+a0009068 l     F .ftext	00000024 i2cWriteReadComplete
+a000908c g     F .ftext	000002f0 .hidden I2c_InterruptHandler
+a000937c g     F .ftext	00000024 .hidden _EEPROM_icmdWriteDone.lto_priv.536
+a00093a0 g     F .ftext	000000c0 .hidden ATMEL_isChipLockedDone.lto_priv.753
+a0009460 l     F .ftext	00000054 ATMEL_AuthenticateDone
+a00094b4 l     F .ftext	00000034 ATMEL_EncryptReadDone
+a00094e8 l     F .ftext	00000044 atmel_lockDone
+a000952c g     F .ftext	00000080 .hidden Link_SL_5G_TxFsmResetDoneIrq
+a00095ac g     F .ftext	00000084 .hidden Link_SL_5G_RxFsmResetDoneIrq
+a0009630 g     F .ftext	00000044 .hidden Link_SL_5G_RxBufferUnderflowIsr
+a0009674 g     F .ftext	00000044 .hidden Link_SL_5G_RxBufferOverflowIsr
+a00096b8 g     F .ftext	0000009c .hidden Link_SL_5G_LosChangeIrq
+a0009754 g     F .ftext	00000084 .hidden LED_SetLedState
+a00097d8 g     F .ftext	00000030 .hidden LED_OnOff
+a0009808 g     F .ftext	00000024 .hidden BBGE_COMM_gePrintfHandler
+a000982c g     F .ftext	000002c4 .hidden BBGE_COMM_geStatusHandler
+a0009af0 g     F .ftext	0000003c .hidden BBGE_COMM_geRexDevStatusHandler
+a0009b2c g     F .ftext	0000015c .hidden GEBB_COMM_StorageRxHandler
+a0009c88 g     F .ftext	00000084 .hidden BBGE_COMM_ilogRxHandler
+a0009d0c g     F .ftext	00000024 .hidden BBGE_COMM_geIcmdHandler
+a0009d30 g     F .ftext	00000024 .hidden BBGE_COMM_icmdRxHandler
+a0009d54 g     F .ftext	00000018 .hidden GpioSet
+a0009d6c g     F .ftext	00000070 .hidden GpioEnableIrq
+a0009ddc g     F .ftext	000000a0 .hidden GPIO_irqHandler
+a0009e7c g     F .ftext	00000024 .hidden GPIO_dataWriteRMW
+a0009ea0 g     F .ftext	00000098 .hidden GPIO_isrCfgWrite
+a0009f38 g     F .ftext	000000ac EEPROM_icmdReadPage
+a0009fe4 l     F .ftext	000000d0 _EEPROM_icmdReadDone
+a000a0b4 g     F .ftext	00000140 EEPROM_icmdWritePage
+a000a1f4 g     F .ftext	00000080 LINKMGR_phyEnableIcmd
+a000a274 g     F .ftext	0000001c LINKMGR_phyToggleIcmd
+a000a290 g     F .ftext	00000018 LINKMGR_comLinkEnableIcmd
+a000a2a8 g     F .ftext	00000054 LinkMgrSetLinkTo5GIcmd
+a000a2fc g     F .ftext	00000050 LinkMgrSetLinkTo10GIcmd
+a000a34c g     F .ftext	0000000c .hidden LinkMgrGetPhyLinkUpStatus.lto_priv.846
+a000a358 g     F .ftext	00000014 LINKMGR_comLinkTxPacketIcmd
+a000a36c g     F .ftext	00000034 .hidden ComlinkGetComlinkState.lto_priv.850
+a000a3a0 g     F .ftext	0000004c .hidden XAUI_AlignmentStatusIsr
+a000a3ec g     F .ftext	00000050 Xaui_ResetBuffers
+a000a43c l     F .ftext	000000c4 I2CD_sfpFinisarStatsReadCallback
+a000a500 l     F .ftext	000000bc I2CD_sfpFinisarRxPowerReadCallback
+a000a5bc g     F .ftext	00000038 .hidden I2CD_sfpFinisarRxPowerTimerDone.lto_priv.863
+a000a5f4 g     F .ftext	00000050 .hidden DP_GetRtlValueFromBandwidth
+a000a644 g     F .ftext	0000005c .hidden DP_SetMainLinkBandwidth
+a000a6a0 g     F .ftext	000000ac .hidden DP_SetLaneCount
+a000a74c g     F .ftext	00000054 .hidden DP_SetEnhancedFramingEnable
+a000a7a0 g     F .ftext	00000148 .hidden DP_SetTrainingPatternSequence
+a000a8e8 g     F .ftext	0000003c .hidden mapColorCodeToBitsPerPixel
+a000a924 g     F .ftext	00000044 .hidden DP_GetBpp
+a000a968 l     F .ftext	0000001c DP_STREAM_frqPrint
+a000a984 g     F .ftext	00000064 .hidden vcpToHex
+a000a9e8 l     F .ftext	00000030 UpdateMccsReplyChecksumByte
+a000aa18 g     F .ftext	00000024 .hidden LexLoadEdidPnPid.lto_priv.648
+a000aa3c g     F .ftext	00000040 LANPORT_enable
+a000aa7c g     F .ftext	00000040 LANPORT_disable
+a000aabc g     F .ftext	00000038 .hidden AUX_getDPFeature
+a000aaf4 g     F .ftext	0000002c .hidden Aux_GetSymbolClock
+a000ab20 g     F .ftext	000000c4 .hidden LexUlpReceiveCpuMsgHandler.lto_priv.811
+a000abe4 g     F .ftext	00000054 RS232_enable
+a000ac38 l     F .ftext	00000024 CMD_commandSendResponseAck
+a000ac5c g     F .ftext	00000020 CMD_programGE
+a000ac7c g     F .ftext	0000039c .hidden _CMD_commandHandler.lto_priv.882
+a000b018 g     F .ftext	00000054 .hidden CMD_GetPlatformId
+a000b06c g     F .ftext	0000012c .hidden CMD_programDataHandler
+a000b198 g     F .ftext	00000048 .hidden _CMD_watchdogTimerHandler.lto_priv.883
+a000b1e0 g     F .ftext	00000018 UlpLexUsb3LexOnlyResetStart
+a000b1f8 g     F .ftext	00000400 .hidden ULP_UlpISR
+a000b5f8 g     F .ftext	0000001c LEON_InstAccErr
+a000b614 g     F .ftext	0000001c LEON_UnimplementedFlush
+a000b630 g     F .ftext	0000001c LEON_DataAccErr
+a000b64c g     F .ftext	0000001c LEON_DivByZeroErr
+a000b668 g     F .ftext	00000040 ULP_enableUsb2
+a000b6a8 g     F .ftext	00000040 ULP_disableUsb2
+a000b6e8 g     F .ftext	00000040 ULP_enableUsb3
+a000b728 g     F .ftext	00000040 ULP_disableUsb3
+a000b768 g     F .ftext	00000040 ULP_enableUsb3ResetOnDisconnect
+a000b7a8 g     F .ftext	00000040 ULP_disableUsb3ResetOnDisconnect
+a000b7e8 g     F .ftext	0000006c .hidden ULP_LexVbusDetectIntHandler
+a000b854 g     F .ftext	00000050 .hidden assertPostHook.lto_priv.869
+a000b8a4 g     F .ftext	00000018 LEON_TrapHandlerEndPoint
+a000b8bc g     F .ftext	0000001c LEON_DataAccessException
+a000b8d8 g     F .ftext	0000001c LEON_DataStoreErrHandler
+a000b8f4 g     F .ftext	00000028 LEON_AHBFailureHandler
+a000b91c g     F .ftext	0000001c LEON_InstFetchErr
+a000b938 g     F .ftext	0000001c LEON_IllegalInstErr
+a000b954 g     F .ftext	0000001c LEON_PrivInstErr
+a000b970 l     F .ftext	00000014 _I2CD_icmdsGpioExpClearPinComplete
+a000b984 l     F .ftext	00000014 _I2CD_icmdsGpioExpSetPinComplete
+a000b998 l     F .ftext	00000024 _I2CD_icmdsGpioExpReadPinComplete
+a000b9bc l     F .ftext	0000003c _I2CD_gpioExpClearCallback
+a000b9f8 l     F .ftext	0000000c _I2CD_gpioExpSetCallback
+a000ba04 l     F .ftext	0000003c _I2CD_gpioExpReadCallback
+a000ba40 l     F .ftext	00000040 _I2CD_gpioExpReadInputsHandler
+a000ba80 l     F .ftext	00000068 _I2CD_gpioExpBeginReadModifyWriteOperation
+a000bae8 l     F .ftext	0000002c _I2CD_gpioExpRmwReadHandler
+a000bb14 l     F .ftext	000000a4 setI2cGpioPin
+a000bbb8 l     F .ftext	00000078 _I2CD_gpioExpRmwReadHandler.part.0
+a000bc30 g     F .ftext	0000006c .hidden I2CD_CypressHx3HubInit
+a000bc9c g     F .ftext	000000a8 TOPLEVEL_secondaryInterruptHandler
+a000bd44 g     F .ftext	00000028 .hidden TOPLEVEL_setPollingMask
+a000bd6c g     F .ftext	00000024 .hidden TOPLEVEL_clearPollingMask
+a000bd90 g     F .ftext	0000007c .hidden BBCore_InterruptHandler.lto_priv.267
+a000be0c g     F .ftext	00000078 .hidden BBTop_InterruptHandler.lto_priv.266
+a000be84 g     F .ftext	00000070 .hidden mdioIsr.lto_priv.265
+a000bef4 l     F .ftext	0000004c mdioIsrDone
+a000bf40 g     F .ftext	000001f8 .hidden __udivdi3
+a000c138 g     F .ftext	00000208 .hidden __umoddi3
+a000c340 g       .ftext	00000000 dataAccessException
+a000c358 g       .ftext	00000000 dataStoreError
+a000c370 g     F .ftext	000000f0 BBCORE_printHWModuleVersion
+a000c460 g     F .ftext	00000040 .hidden bb_core_rs232_configure
+a000c4a0 g     F .ftext	0000004c .hidden RS232_enableConfigureHW.constprop.94
+a000c4ec g     F .ftext	00000038 .hidden UlpHalEnableUlpInterrupts.constprop.101
+a000c524 g     F .ftext	00000048 .hidden UlpHalDisableUlpInterrupts.constprop.102
+a000c56c g     F .ftext	0000009c .hidden getFlashBlockInfo.constprop.118
+a000c608 g     F .ftext	00000098 .hidden CALLBACK_Allocate.constprop.129
+a000c6a0 g     F .ftext	00000124 .hidden EVENT_Subscribe.constprop.146
+a000c7dc g     F .ftext	00000224 .hidden UART_printf
+a000ca00 g     F .ftext	00000088 .hidden UART_packetizeRegisterClient
+a000ca88 g     F .ftext	000002dc .hidden UART_packetizeDecodeRxData
+a000cd64 g     F .ftext	00000090 .hidden bb_top_getXmiiRxClockFrequency
+a000cdf4 g     F .ftext	00000078 .hidden bb_top_SetGEToRunMode
+a000ce6c g     F .ftext	0000004c .hidden bb_top_SetGEToResetMode
+a000ceb8 g     F .ftext	00000030 .hidden bb_top_StartGEWatchdogRunningTimer
+a000cee8 g     F .ftext	00000020 .hidden bb_top_StopGEWatchdogResetTimer
+a000cf08 g     F .ftext	00000028 bb_top_ApplyGEReset
+a000cf30 g     F .ftext	00000030 .hidden resetWatchdogHandler.lto_priv.888
+a000cf60 g     F .ftext	00000030 .hidden runWatchdogHandler.lto_priv.889
+a000cf90 g     F .ftext	00000188 .hidden _iassert
+a000d118 g     F .ftext	00000040 .hidden EVENT_Register
+a000d158 g     F .ftext	000000dc .hidden ICMD_PacketizeHandler.lto_priv.881
+a000d234 g     F .ftext	00000020 bb_top_systemReset
+a000d254 g     F .ftext	000000f4 .hidden bb_top_a7_getNominalGcmFrequencyDetected
+a000d348 g     F .ftext	000000a0 .hidden STATSMON_RegisterStatgroup
+a000d3e8 g     F .ftext	00000080 .hidden STATSMON_StatgroupControl
+a000d468 g     F .ftext	00000068 .hidden STATSMON_StatgroupDisable
+a000d4d0 g     F .ftext	00000068 .hidden STATSMON_ClearStatData
+a000d538 g     F .ftext	0000007c .hidden StatsMonTickHandler.lto_priv.880
+a000d5b4 l     F .ftext	00000050 StatsMonFindStatsGroup
+a000d604 g     F .ftext	00000098 .hidden StatsMonPrintValue.isra.2.lto_priv.337
+a000d69c g     F .ftext	0000008c .hidden CALLBACK_Reinit
+a000d728 g     F .ftext	00000094 .hidden getShaRandom
+a000d7bc l     F .ftext	00000050 XADC_readTemperature
+a000d80c g     F .ftext	00000100 .hidden XAdcReadStatRegister.lto_priv.181
+a000d90c g     F .ftext	0000007c .hidden MCA_ControlStatsMonitorChannel
+a000d988 g     F .ftext	00000070 .hidden CpuCommPhyLinkEventHandler.lto_priv.854
+a000d9f8 g     F .ftext	000000cc .hidden CpuCommAckTimeout.lto_priv.853
+a000dac4 g     F .ftext	000000b8 .hidden MapAtmelReadtoFeatureEnable.lto_priv.864
+a000db94 l     F .ftext	0000001c AQUANTIA_GeneralWriteHandler
+a000dbb0 l     F .ftext	00000028 AQUANTIA_ShowGeneralReadWriteResult
+a000dbd8 g     F .ftext	00000058 icmdMdioWrite
+a000dc30 g     F .ftext	00000028 icmdMdioRead
+a000dc58 g     F .ftext	00000038 icmdMdioIndirectWrite
+a000dc90 g     F .ftext	0000002c icmdMdioIndirectRead
+a000dcbc g     F .ftext	00000078 .hidden MCA_ChannelTxRxSetup
+a000dd34 g     F .ftext	00000334 MCA_ChannelLinkUp
+a000e068 g     F .ftext	000001b0 MCA_ChannelLinkDn
+a000e258 g     F .ftext	000000cc .hidden MDIOD_aquantiaReadWrite
+a000e324 l     F .ftext	0000002c MDIOD_aquantiaReadJunctionTemp
+a000e350 g     F .ftext	00000038 .hidden AquantiaReadIndirectAsync
+a000e388 g     F .ftext	000001ac .hidden AquantiaStateHandler.lto_priv.856
+a000e534 g     F .ftext	00000020 .hidden AquantiaMonitorRegs.lto_priv.857
+a000e554 l     F .ftext	00000074 AquantiaTxRxUpdate
+a000e5c8 l     F .ftext	000000d0 AquantiaDoWriteSequence
+a000e698 l     F .ftext	00000058 AquantiaStartReadSequence
+a000e6f0 l     F .ftext	000000e8 AquantiaDoReadSequence
+a000e7d8 l     F .ftext	00000030 AquantiaReadModifyHandler
+a000e808 l     F .ftext	00000010 AquantiaWaitResetDone
+a000e818 l     F .ftext	00000058 AquantiaInitDone
+a000e870 l     F .ftext	0000002c MDIOD_aquantiaStart
+a000e89c l     F .ftext	0000007c AquantiaTxReady
+a000e918 l     F .ftext	00000034 AquantiaLinkReady
+a000e94c l     F .ftext	00000024 AquantiaStabilityRegsCleared
+a000e970 l     F .ftext	0000004c AquantiaDetectAutoReset
+a000e9bc l     F .ftext	0000006c AquantiaStabilityRegsGood
+a000ea28 l     F .ftext	000000d8 Aquantia10GSupportStatus
+a000eb00 l     F .ftext	000000e4 AquantiaPrintiStatus
+a000ebe4 g     F .ftext	0000003c .hidden AquantiaRxauiAlignedStatusCallback.lto_priv.858
+a000ec20 g     F .ftext	000000c8 .hidden versionDisplayHandler.lto_priv.506
+a000ece8 l     F .ftext	00000038 MdioIndirectReadBitHandler
+a000ed20 l     F .ftext	00000030 MDIOD_aquantiaShowILog
+a000ed50 l     F .ftext	00000150 AquantiaStatsReadCallback
+a000eea0 l     F .ftext	00000034 AquantiaStatsReadCallbackBitField
+a000eed4 g     F .ftext	000000f8 .hidden AquantiaReadStatRegister.lto_priv.189
+a000efcc l     F .ftext	00000028 AquantiaSaveStats
+a000eff4 l     F .ftext	000000b0 AquantiaMonitorTemperature
+a000f0a4 g     F .ftext	0000001c .hidden MDIOD_AquantiaStopStats8Handler.lto_priv.507
+a000f0c0 l     F .ftext	0000001c MDIOD_AquantiaStopStats16Handler
+a000f0dc g     F .ftext	00000038 .hidden MDIOD_AquantiaStopStatsFinished.lto_priv.517
+a000f114 g     F .ftext	0000002c .hidden i2cConfigBlocking.isra.0.part.1.lto_priv.901
+a000f140 g     F .ftext	00000114 .hidden MDIOD_setPhySpeed
+a000f254 l     F .ftext	00000050 phyMgrReset
+a000f2a4 l     F .ftext	00000018 phyMgrReset1
+a000f2bc l     F .ftext	00000040 phyCheckForResetClear
+a000f2fc l     F .ftext	00000018 phyCtrlSetup1
+a000f314 l     F .ftext	000000b8 phyStatusCheckCapabilities
+a000f3cc l     F .ftext	00000068 phyExtendedStatusCheckCapabilities
+a000f434 l     F .ftext	00000020 phyReadId1
+a000f454 l     F .ftext	00000054 phyReadId2
+a000f4a8 l     F .ftext	0000001c phyDisableEee1
+a000f4c4 l     F .ftext	00000020 phyDisableEee2
+a000f4e4 l     F .ftext	0000001c phyDisableEee3
+a000f500 l     F .ftext	00000064 phyAdvertise10_100FullDuplexCapability
+a000f564 l     F .ftext	00000050 phyAdvertise1000FullDuplexCapability
+a000f5b4 l     F .ftext	00000040 phyWriteFinalControlSetting
+a000f5f4 l     F .ftext	00000034 phyResetDone
+a000f628 l     F .ftext	00000018 phyCtrlRead
+a000f640 l     F .ftext	0000001c phyCtrlDisableClk125
+a000f65c g     F .ftext	0000001c .hidden phyCtrlEnableClk125.lto_priv.711
+a000f678 l     F .ftext	0000001c phyDisableInterrupts
+a000f694 l     F .ftext	00000020 phyConfigureRealtekDisableEEE0
+a000f6b4 l     F .ftext	0000001c phyConfigureRealtekDisableEEE1
+a000f6d0 l     F .ftext	0000001c phyConfigureRealtekDisableEEE2
+a000f6ec l     F .ftext	0000001c phyConfigureRealtekDisableEEE3
+a000f708 l     F .ftext	0000001c phyConfigureRealtekLeds1
+a000f724 l     F .ftext	0000001c phyConfigureRealtekLeds2
+a000f740 l     F .ftext	0000001c phyConfigureRealtekLeds3
+a000f75c l     F .ftext	0000001c phyConfigureRealtekLeds4
+a000f778 l     F .ftext	0000003c phyDisableEee0
+a000f7b4 l     F .ftext	000000d8 MDIOD_enetCheckPhyAddr
+a000f88c g     F .ftext	000000e8 .hidden MDIOD_aquantiaPhyDisable
+a000f974 g     F .ftext	0000002c MDIOD_aquantiaReadVersion
+a000f9a0 l     F .ftext	000000e0 atmel_crc
+a000fa80 l     F .ftext	00000054 atmel_start_wakeup
+a000fad4 l     F .ftext	00000034 atmel_wokeup
+a000fb08 l     F .ftext	00000054 atmel_writeDone
+a000fb5c g     F .ftext	00000084 .hidden atmel_executionTimeElapsed.lto_priv.874
+a000fbe0 l     F .ftext	00000174 atmel_readDone
+a000fd54 l     F .ftext	00000050 atmel_idleDone
+a000fda4 l     F .ftext	0000006c atmel_i2cComplete
+a000fe10 l     F .ftext	00000018 atmel_assertHelper
+a000fe28 l     F .ftext	00000094 atmel_startRecovery
+a000febc l     F .ftext	00000068 atmel_recoveryWokeup
+a000ff24 l     F .ftext	00000070 atmel_recoveryInactive
+a000ff94 l     F .ftext	0000005c atmel_i2cIcmdDone
+a000fff0 l     F .ftext	00000038 _atmel_onWriteDataSlotOrOtpBlockDone
+a0010028 l     F .ftext	00000060 _atmel_onReadConfigWordIcmdDone
+a0010088 l     F .ftext	00000038 _atmel_onWriteConfigWordIcmdDone
+a00100c0 l     F .ftext	00000030 _atmel_onIsChipLockedDone
+a00100f0 l     F .ftext	00000038 _atmel_onLockDone
+a0010128 g     F .ftext	00000044 .hidden ATMEL_isChipLocked
+a001016c l     F .ftext	000000d4 ATMEL_encryptStart
+a0010260 g     F .ftext	000000fc .hidden Link_SL_5G_LosDebounceTimer.lto_priv.859
+a001035c g     F .ftext	00000100 .hidden Link_SL_5G_StabilityCheck.lto_priv.860
+a001045c l     F .ftext	00000034 Link_SL_5G_UpdateLinkStatus
+a0010490 g     F .ftext	00000094 .hidden Link_SL_5G_TakedownReceive.lto_priv.590
+a0010524 g     F .ftext	000000ac .hidden Link_SL_5G_RxPowerChangeCallback.lto_priv.861
+a00105d0 g     F .ftext	00000278 .hidden LED_TimerHandler.lto_priv.877
+a0010848 l     F .ftext	00000038 LED_GetCurrentState
+a0010880 g     F .ftext	00000014 .hidden LED_BootingFinish.lto_priv.878
+a0010894 l     F .ftext	00000068 LED_PatternDisplay.isra.0
+a00108fc g     F .ftext	000000d0 .hidden BBGE_COMM_versionCrcCheckHandler.lto_priv.761
+a00109cc g     F .ftext	00000024 .hidden BBGE_COMM_CheckUsb2EventStatus.lto_priv.884
+a0010a08 g     F .ftext	0000008c .hidden _LINKMGR_phyWaitRemoteHandler.lto_priv.200
+a0010a94 g     F .ftext	000002ac .hidden _LINKMGR_phyLinkOperational.lto_priv.201
+a0010d40 g     F .ftext	00000040 .hidden _LINKMGR_phyPendingDisableHandler.lto_priv.202
+a0010d80 g     F .ftext	00000044 .hidden _LINKMGR_phyPendingEnableHandler.lto_priv.203
+a0010dc4 g     F .ftext	00000038 .hidden _LINKMGR_phyErrorHandler.lto_priv.204
+a0010dfc g     F .ftext	00000038 .hidden _LINKMGR_phyCommonHandler.lto_priv.589
+a0010e34 l     F .ftext	00000010 LinkMgrSignalReadyForShutdown
+a0010e44 g     F .ftext	00000010 .hidden _LINKMGR_DebounceTimerHandler.lto_priv.845
+a0010e54 g     F .ftext	00000034 .hidden LinkMgrPhyEnableStatus.lto_priv.591
+a0010e88 g     F .ftext	0000004c .hidden LINKMGR_HwPhyLinkStatus.lto_priv.855
+a0010ed4 g     F .ftext	00000020 .hidden LINKMGR_MacLinkRxStatus.lto_priv.574
+a0010ef4 g     F .ftext	00000038 .hidden ComlinkReceiveCpuMsgHandler.lto_priv.847
+a0010f2c l     F .ftext	0000001c ComLinkStateMachineSendEvent
+a0010f48 l     F .ftext	00000274 ComLinkStateCallback
+a00111bc g     F .ftext	00000010 .hidden ComlinkDebounceTimeout.lto_priv.848
+a00111cc g     F .ftext	00000014 .hidden ComLinkLinkDownTimeout.lto_priv.849
+a00111e0 g     F .ftext	000000c4 .hidden ComLinkSetStatus.lto_priv.564
+a00112a4 l     F .ftext	0000002c ComLinkDisableLink
+a00112d0 g     F .ftext	00000018 .hidden CommlinkPhyLinkStatusHandler.lto_priv.851
+a00112e8 g     F .ftext	0000006c .hidden ComlinkMcaChannelStatusHandler.lto_priv.852
+a0011354 g     F .ftext	00000038 .hidden XAUI_GtxErrorStatus
+a001138c g     F .ftext	00000050 .hidden IDT_CLK_SscControl
+a00113dc l     F .ftext	00000020 I2CD_IdtReadAsyncHandler
+a00113fc l     F .ftext	00000020 I2CD_IdtWriteAsyncHandler
+a001141c g     F .ftext	00000058 .hidden I2CD_sfpFinisarRegRead
+a0011474 g     F .ftext	00000020 .hidden I2CD_sfpFinisarRxPowerPollingDisable
+a0011494 g     F .ftext	00000038 Link_SL_5G_RestartRx
+a00114cc g     F .ftext	00000060 .hidden LINKMGR_phyEnable
+a001152c g     F .ftext	00000024 LINKMGR_phyLinkDownErrorDetected
+a0011550 g     F .ftext	0000001c .hidden LinkMgrStateMachineSendEvent.lto_priv.573
+a001156c l     F .ftext	0000001c LinkMgrStateCallback
+a0011588 g     F .ftext	0000029c .hidden _LINKMGR_phyDisabledHandler.lto_priv.197
+a0011824 g     F .ftext	00000068 .hidden _LINKMGR_phyDelayedStart.lto_priv.198
+a001188c g     F .ftext	000005d4 .hidden _LINKMGR_phyWaitLinkUp.lto_priv.199
+a0011e60 g     F .ftext	00000008 .hidden _ULP_HalInit
+a0011e60 g     F .ftext	00000008 .hidden xmiiBasicConfigDone.lto_priv.712
+a0011e68 g     F .ftext	00000110 .hidden xmiiDeviceConnectReadHandler.lto_priv.768
+a0011f78 g     F .ftext	00000064 .hidden xmiiSetupGmiiStep2.lto_priv.710
+a0011fdc g     F .ftext	0000002c .hidden LanPortSendConnectedMessage.lto_priv.725
+a0012008 g     F .ftext	0000002c .hidden LanPortChannelStatus.lto_priv.766
+a0012034 g     F .ftext	00000038 .hidden LanPortConfigurationEventHandler.lto_priv.769
+a001206c g     F .ftext	000000a8 .hidden ULP_controlTurnOffUSB3
+a0012114 g     F .ftext	00000060 .hidden UlpVbusControl
+a0012174 g     F .ftext	00000040 .hidden RS232_LinkEventHandler.lto_priv.764
+a00121b4 g     F .ftext	000000e4 .hidden RS232_ReceiveCpuMsgHandler.lto_priv.763
+a0012298 g     F .ftext	00000048 .hidden RS232ChannelStatus.lto_priv.762
+a00122e0 g     F .ftext	00000038 .hidden RS232ConfigurationEventHandler.lto_priv.765
+a0012318 g     F .ftext	0000003c .hidden RS232EnabledStatus.lto_priv.866
+a0012354 g     F .ftext	000000b4 .hidden CMD_loadAndRunProgramBB
+a0012408 l     F .ftext	000000d4 CMD_runProgramBB
+a00124dc g     F .ftext	00000138 .hidden LanPortCommLinkEventHandler.lto_priv.707
+a0012614 g     F .ftext	00000038 .hidden LanPortEnabledStatus.lto_priv.706
+a001264c g     F .ftext	00000068 .hidden initGmiiDone.lto_priv.709
+a00126b4 g     F .ftext	00000214 .hidden LanPortReceiveCpuMsgHandler.lto_priv.767
+a00128c8 g     F .ftext	00000034 .hidden LanPortSendCPUCommMessage.lto_priv.708
+a001292c g     F .ftext	00000048 .hidden ulp_GetUsbEnables
+a0012974 g     F .ftext	000000d4 .hidden ULP_UsbSetControl
+a0012a48 g     F .ftext	0000001c .hidden UlpStatusChange
+a0012a64 g     F .ftext	00000070 .hidden UlpHalSetupUlpCoreGuards
+a0012ad4 g     F .ftext	000000ac .hidden UlpHalRxPartnerFifo
+a0012b80 g     F .ftext	00000070 .hidden ulp_StatMonCoreControl
+a0012bf0 g     F .ftext	00000040 .hidden ulp_StatMonPhyControl
+a0012c30 g     F .ftext	000001bc .hidden UlpGeControl
+a0012dec g     F .ftext	00000078 .hidden UlpGeReceiveCpuMsgHandler.lto_priv.841
+a0012e64 g     F .ftext	00000030 .hidden UlpGeResetDone.lto_priv.840
+a0012e94 g     F .ftext	000000ac .hidden UlpGeChannelStatus.lto_priv.839
+a0012f40 g     F .ftext	00000030 .hidden GeMinimumResetTimeout.lto_priv.842
+a0012f70 l     F .ftext	00000034 GeFailureHandler
+a0012fa4 g     F .ftext	000000e0 .hidden logBuildInfo.lto_priv.905
+a0013084 g     F .ftext	00000010 .hidden assertPreHook.lto_priv.868
+a0013094 g     F .ftext	0000164c .hidden ATMEL_TimerValidation.lto_priv.873
+a00146e0 g     F .ftext	00000028 .hidden validationTimerHandler.lto_priv.871
+a0014708 g     F .ftext	00000048 .hidden I2CD_CypressHubStartProgramming
+a0014750 l     F .ftext	000000a8 I2cd_upgradeCypressHx3HubFirmware
+a00147f8 l     F .ftext	0000008c CypressHubTimerHandler
+a0014884 l     F .ftext	000000d4 I2cd_CypressWriteCompleteHandler
+a0014958 g     F .ftext	00000044 .hidden killSystem
+a001499c g     F .ftext	00000014 TOPLEVEL_DEBUG_ASSERT
+a00149b0 g     F .ftext	00001848 imain
+a00161f8 g     F .lexftext	00000090 .hidden I2CD_linkTrainingPollForPllLock.constprop.154
+a00161f8 g     F .rexftext	0000004c .hidden TestResponse.constprop.37
+a00161f8 g       .ftext	00000000 __rex_lex_iram_overlay_start
+a00161f8 l    d  .lexftext	00000000 .lexftext
+a00161f8 l    d  .rexftext	00000000 .rexftext
+a0016244 g     F .rexftext	00000078 .hidden IssueTrainingLaneXSetRequest.constprop.54
+a0016288 g     F .lexftext	00000028 .hidden AUX_GetHostConnectedInfo
+a00162b0 g     F .lexftext	00000430 .hidden AUX_LexISR
+a00162bc g     F .rexftext	00000068 .hidden IssueTrainingPatternSetRequest.constprop.58
+a0016324 g     F .rexftext	0000006c .hidden bb_top_dpEnable8b10benA7
+a0016390 g     F .rexftext	0000001c .hidden AUX_RexOverCurrentIsrHandler.lto_priv.789
+a00163ac l     F .rexftext	00000028 AUX_RexOverCurrentIntCallback
+a00163d4 g     F .rexftext	00000058 .hidden RexAuxSuperHandler.part.1.lto_priv.601
+a001642c g     F .rexftext	0000015c .hidden AUX_RexISR
+a0016588 g     F .rexftext	0000001c .hidden RexStepAuxStateMachine
+a00165a4 g     F .rexftext	000000a8 .hidden AUX_RexEnqueueLocalRequest
+a001664c l     F .rexftext	00000034 RexAuxEventCallback
+a0016680 l     F .rexftext	00000020 RexSendRequestDownstream
+a00166a0 g     F .rexftext	0000010c .hidden RexRequestPendingHandler.lto_priv.205
+a00166e0 g     F .lexftext	00000028 .hidden DP_LexClearAutoFrqDet
+a0016708 g     F .lexftext	0000001c .hidden DP_EnableVideoStreamIrqOnly
+a0016724 g     F .lexftext	00000110 .hidden DP_PrintLexStats
+a00167ac g     F .rexftext	0000024c .hidden RexReplyPendingHandler.lto_priv.206
+a0016834 l     F .lexftext	00000060 DP_PrintGtpStats
+a0016894 g     F .lexftext	000000f4 .hidden ComputeEncoderPacketLength.lto_priv.684
+a0016988 g     F .lexftext	0000006c .hidden DP_GetCompressionRatio.lto_priv.606
+a00169f4 g     F .lexftext	00000074 .hidden DP_SymbolErrCountLaneXY.part.0.lto_priv.607
+a0016a14 g     F .rexftext	0000001c .hidden MonitorIrqHandler.lto_priv.633
+a0016a30 l     F .rexftext	000000ac DeviceServiceIrqReplyHandler
+a0016a68 g     F .lexftext	0000003c .hidden LexDoReset.lto_priv.592
+a0016aa4 g     F .lexftext	0000001c .hidden AUX_LexOverCurrentIsrHandler.lto_priv.790
+a0016ac0 l     F .lexftext	00000028 AUX_LexOverCurrentIntCallback
+a0016adc l     F .rexftext	00000064 RexReadLinkStatusIrqHandler
+a0016ae8 g     F .lexftext	00000220 .hidden DP_LexDpISR
+a0016b40 g     F .rexftext	00000074 .hidden RexMonitorInfoEventHandler.lto_priv.631
+a0016bb4 g     F .rexftext	00000218 .hidden RexUpdateMvid.lto_priv.621
+a0016d08 g     F .lexftext	00000040 .hidden DP_ResetEncoder
+a0016d48 g     F .lexftext	00000034 .hidden DP_ResetSinkAndEncoder
+a0016d7c g     F .lexftext	0000002c .hidden DP_EnableLaneAligner
+a0016da8 g     F .lexftext	00000030 .hidden DP_GotLaneAlignment
+a0016dcc l     F .rexftext	00000074 TestRequestReplyHandler
+a0016dd8 g     F .lexftext	0000003c .hidden DP_EnableStreamEncoder
+a0016e14 g     F .lexftext	00000098 .hidden DP_ConfigureEncoderExtractor
+a0016e40 l     F .rexftext	0000002c TestLinkRateReplyHandler
+a0016e6c l     F .rexftext	00000064 TestLaneCountReplyHandler
+a0016eac g     F .lexftext	00000110 .hidden DP_CheckLineErrorCnt
+a0016ed0 l     F .rexftext	00000028 TestPatternReplyHandler
+a0016ef8 l     F .rexftext	00000114 TestRexXYLaneReplyHandler
+a0016fbc g     F .lexftext	00000230 .hidden DP_LexIsMsaValid
+a001700c l     F .rexftext	00000074 Test80BitCustomReplyHandler
+a0017080 g     F .rexftext	00000230 .hidden DP_RexDpISR
+a00171ec g     F .lexftext	00000070 .hidden DP_ResetErrorCnt
+a001725c g     F .lexftext	00000098 .hidden DP_SymbolErrCountLaneXY
+a00172b0 g     F .rexftext	00000038 .hidden DP_SourceEnableScrambler
+a00172e8 g     F .rexftext	0000001c .hidden RexEventCallback.lto_priv.642
+a00172f4 g     F .lexftext	00000068 .hidden DP_LexCheckCxFifoOverflow
+a0017304 g     F .rexftext	000000ac .hidden RexLexActiveEventGenerate.lto_priv.630
+a001735c g     F .lexftext	00000370 .hidden DP_LexVideoInfo
+a00173b0 g     F .rexftext	00000028 .hidden RexSendRexPmStatus.lto_priv.627
+a00173d8 g     F .rexftext	00000068 .hidden RexPmMcaEventHandler.lto_priv.774
+a0017440 g     F .rexftext	0000001c .hidden RexSendCpuMessageToLex.lto_priv.609
+a001745c g     F .rexftext	00000044 .hidden RexPmClearContext.lto_priv.647
+a00174a0 g     F .rexftext	0000001c .hidden RexPmStateSendEventWithNoData
+a00174bc g     F .rexftext	00000054 .hidden SubmitNativeAuxRead
+a0017510 g     F .rexftext	00000050 .hidden SubmitNativeAuxWrite
+a0017560 g     F .rexftext	000000dc .hidden RexIsrHandler
+a001763c g     F .rexftext	0000004c .hidden RexErrorHandler
+a0017688 g     F .rexftext	00000020 DP_REX_ReadMccs
+a00176a8 g     F .rexftext	0000001c DP_REX_CheckNewControlValues
+a00176c4 g     F .rexftext	0000001c .hidden RexLtStateSendEventWithNoData
+a00176cc g     F .lexftext	0000001c .hidden LexEventCallback.lto_priv.652
+a00176e0 g     F .rexftext	00000068 .hidden WriteLinkConfigurationParameters
+a00176e8 g     F .lexftext	00000028 .hidden LexSendLexPmStatus.lto_priv.655
+a0017710 g     F .lexftext	00000040 .hidden LexValidateAndSendMaud.lto_priv.658
+a0017748 g     F .rexftext	00000038 .hidden AUX_DpRexIsrEventHandler
+a0017750 g     F .lexftext	00000058 .hidden LexSendLexAudioStatus.lto_priv.661
+a0017780 g     F .rexftext	0000004c .hidden AdjustVoltageSwingAndPreEmphasisLane0_1
+a00177a8 g     F .lexftext	00000020 .hidden LexPmMcaErrorCallback.lto_priv.796
+a00177c8 g     F .lexftext	00000058 .hidden LexPmHostConnectMsgHandler.lto_priv.660
+a00177cc g     F .rexftext	0000004c .hidden AdjustVoltageSwingAndPreEmphasisLane2_3
+a0017818 g     F .rexftext	00000010 .hidden GetDpcdLaneStatus.lto_priv.788
+a0017820 g     F .lexftext	00000068 .hidden LexPmMcaEventHandler.lto_priv.795
+a0017828 l     F .rexftext	0000001c ReadAllLaneStatus
+a0017844 l     F .rexftext	00000218 RexLaneXYStatusReadReplyHandler
+a0017888 g     F .lexftext	00000070 .hidden LexLinkAndStreamParamChanged.lto_priv.657
+a00178f8 g     F .lexftext	00000038 .hidden LexCheckLinkQuality.lto_priv.799
+a0017930 g     F .lexftext	00000034 .hidden LexSetRexPowerDownTimerHandler.lto_priv.800
+a0017964 g     F .lexftext	00000054 .hidden LexidlePatternCntRstTimerHandler.lto_priv.801
+a00179b8 g     F .lexftext	00000358 .hidden LexWrongMsaNeedRetrainHandler.lto_priv.656
+a0017a5c l     F .rexftext	00000084 AUX_RexStartCR
+a0017ae0 l     F .rexftext	0000002c AUX_RexDriveSetupAndReadLaneStatus
+a0017b0c l     F .rexftext	00000030 TerminateLinkTrainingSequence
+a0017b3c l     F .rexftext	00000070 GetLaneStatusResult
+a0017bac l     F .rexftext	0000009c AUX_RexVoltageAndPeSet
+a0017c48 g     F .rexftext	000000b8 .hidden SendVideoToMonitor
+a0017d00 g     F .rexftext	00000050 .hidden SendBlackVideoToMonitor
+a0017d10 g     F .lexftext	00000018 .hidden LexMsaWaitTimerHandler.lto_priv.802
+a0017d28 g     F .lexftext	0000002c .hidden LexTps1WaitTimerHandler.lto_priv.803
+a0017d50 g     F .rexftext	000007cc .hidden RexProgramALU
+a0017d54 g     F .lexftext	00000048 .hidden DPCD_DpcdRegisterWrite
+a0017d9c g     F .lexftext	00000028 .hidden DPCD_DpcdRegisterRead
+a0017dc4 g     F .lexftext	000000b4 .hidden LexUpdateFlashSettings
+a0017e78 g     F .lexftext	00000010 .hidden DPCD_DefaultReadHandler.lto_priv.240
+a0017e88 g     F .lexftext	0000002c .hidden DPCD_DefaultWriteHandler.lto_priv.241
+a0017eb4 g     F .lexftext	00000054 .hidden LexIsrHandler
+a0017f08 g     F .lexftext	0000001c .hidden LexPmStateSendEventWithData
+a0017f24 g     F .lexftext	00000010 .hidden LexPmStateSendEventWithNoData
+a0017f34 g     F .lexftext	0000001c .hidden LexSendCpuMessageToRex
+a0017f50 g     F .lexftext	00000348 .hidden LexLocalMccsRead
+a0018298 g     F .lexftext	000000f4 .hidden LexLocalVcpRead
+a001838c g     F .lexftext	000000c8 .hidden SaveVcpCacheToVcpTable
+a0018454 g     F .lexftext	00000068 .hidden DPCD_GetDpcdRegister
+a0018510 g     F .lexftext	000000cc .hidden AUX_LexLtCommonHandler.lto_priv.699
+a001851c g     F .rexftext	000000e4 .hidden RexUlpCpuMsgEventHandler.lto_priv.827
+a00185dc g     F .lexftext	000002f8 .hidden LexEdidReadHandler.lto_priv.264
+a0018600 l     F .rexftext	00000048 _I2CD_dp130WriteCompleteHandler
+a0018648 g     F .rexftext	00000284 .hidden DP_RexVideoInfo
+a00188cc l     F .rexftext	0000031c VcpReplyHandler
+a00188d4 g     F .lexftext	0000026c .hidden LexEdidWriteHandler.lto_priv.263
+a0018b40 g     F .lexftext	0000003c .hidden AUX_LexLinkTrainingTimeoutHandler.lto_priv.804
+a0018b7c l     F .lexftext	00000024 RetimerReinitDoneHandler
+a0018ba0 g     F .lexftext	00000010 .hidden RetimerCRPhaseDoneHandler.lto_priv.688
+a0018bb0 l     F .lexftext	00000024 RetimerPllModeChangeHandler
+a0018bd4 g     F .lexftext	000000fc .hidden RetimerLockCheckHandler.lto_priv.168
+a0018be8 g     F .rexftext	0000001c .hidden RexMccsReplyTimerHandler.lto_priv.777
+a0018c04 g     F .rexftext	0000001c .hidden RexVcpReplyTimerHandler.lto_priv.779
+a0018c20 g     F .rexftext	00000044 .hidden RexDdcciRetryTimerHandler.lto_priv.780
+a0018c64 g     F .rexftext	0000001c .hidden RexTimingReportTimerHandler.lto_priv.781
+a0018c80 l     F .rexftext	00000138 TimingReplyHandler
+a0018cd0 g     F .lexftext	00000040 .hidden TransceiverConfigCallback.lto_priv.687
+a0018d10 l     F .lexftext	0000005c LexDpFrqHandler
+a0018d6c g     F .lexftext	00000028 .hidden AUX_LexEnableStreamExtractor.lto_priv.805
+a0018d94 g     F .lexftext	000004a8 .hidden AUX_LexFpsCalculateHandler.lto_priv.806
+a0018db8 g     F .rexftext	0000002c .hidden ReadVcpTable.lto_priv.625
+a0018de4 g     F .rexftext	00000040 .hidden EndReadVcpTable.lto_priv.629
+a0018e24 g     F .rexftext	00000034 .hidden RexSendMccsCapabilities.lto_priv.636
+a0018e58 g     F .rexftext	0000000c .hidden RexMccsRequestTimerHandler.lto_priv.778
+a0018e64 g     F .rexftext	00000060 .hidden NewControlTimerHandler.lto_priv.785
+a0018ec4 g     F .rexftext	0000008c .hidden ComplianceTimerHandler.lto_priv.784
+a0018f50 g     F .rexftext	00000158 .hidden RexMccsEventHandler.lto_priv.624
+a00190a8 g     F .rexftext	0000000c .hidden MccsRetryTimerHandler.lto_priv.783
+a00190b4 g     F .rexftext	0000005c .hidden SendVcpRequest.lto_priv.628
+a0019110 g     F .rexftext	00000010 .hidden VcpSetTimerHandler.lto_priv.786
+a0019120 l     F .rexftext	00000054 ResetNewControlValue
+a0019174 g     F .rexftext	000000ac .hidden ReadEdidBlock.lto_priv.626
+a0019220 g     F .rexftext	00000068 .hidden RexPmCommLinkEventHandler.lto_priv.771
+a001923c g     F .lexftext	00000010 .hidden AUX_LexHpdDownTime.lto_priv.807
+a001924c g     F .lexftext	00000030 .hidden AUX_LexHasCR.lto_priv.698
+a001927c g     F .lexftext	00000070 .hidden AUX_LexStartChannelEQ.lto_priv.700
+a0019288 g     F .rexftext	00000048 .hidden RexPmConfigurationEventHandler.lto_priv.772
+a00192d0 g     F .rexftext	00000048 .hidden RexPmDpEnabled.lto_priv.634
+a00192ec g     F .lexftext	0000000c .hidden LexLinkBwSetWriteHandler
+a00192f8 g     F .lexftext	0000001c .hidden LexLaneCountSetWriteHandler
+a0019314 g     F .lexftext	00000174 .hidden LexTrPatternSetWriteHandler
+a0019318 g     F .rexftext	00000010 .hidden RexPendingTimerHandler.lto_priv.776
+a0019328 g     F .rexftext	00000018 .hidden RexVideoStartTimerHandler.lto_priv.782
+a0019340 g     F .rexftext	000000d8 .hidden RexResetCountTimerHandler.lto_priv.787
+a0019418 g     F .rexftext	0000001c .hidden RexPmUpdateVideoStatus.lto_priv.632
+a0019434 g     F .rexftext	0000000c .hidden RexPmGetVideoStatus.lto_priv.770
+a0019440 g     F .rexftext	00000028 .hidden RexPowerSetAndSinkCount.lto_priv.638
+a0019468 l     F .rexftext	00000088 RexSinkCountHandler
+a0019488 g     F .lexftext	00000108 .hidden LexTrLaneXSetWriteHandler
+a00194f0 g     F .rexftext	00000030 .hidden RexSendBlackVideo.lto_priv.635
+a0019520 g     F .rexftext	000002f4 .hidden RexUpdateAUXandDpStreamParams.lto_priv.637
+a0019590 g     F .lexftext	0000001c .hidden LexPowerSaveWriteHandler
+a00195ac g     F .lexftext	00000024 .hidden LexLinkBwSetReadHandler
+a00195d0 g     F .lexftext	00000044 .hidden LexLaneCountSetReadHandler
+a0019614 g     F .lexftext	00000034 .hidden LexTrLaneXSetReadHandler
+a0019648 g     F .lexftext	0000018c .hidden LexLaneXYStatusReadHandler
+a00197d4 g     F .lexftext	00000274 .hidden LexLaneAlignReadHandler
+a0019814 g     F .rexftext	00000030 .hidden RexDP130InitCallback.lto_priv.640
+a0019844 g     F .rexftext	00000020 .hidden RexPmMcaErrorCallback.lto_priv.775
+a0019864 l     F .rexftext	000003f4 EdidReplyHandler
+a0019a48 g     F .lexftext	00000034 .hidden LexSinkStatusReadHandler
+a0019a7c g     F .lexftext	0000024c .hidden LexAdjustLaneXYReadHandler
+a0019c9c g     F .rexftext	000000a8 .hidden RexPmWaitRedriverInitHandler.lto_priv.215
+a0019cc8 g     F .lexftext	00000104 .hidden LEXSymErrCntLaneXYReadHandler
+a0019d44 g     F .rexftext	0000026c .hidden RexPmLinkTrainedNoVideoHandler.lto_priv.217
+a0019dcc g     F .lexftext	000000ac .hidden AUX_MakeSettingUnsupported
+a0019e78 g     F .lexftext	000000e8 .hidden DP_LEX_ClearErrCounter
+a0019f60 g     F .lexftext	00000040 .hidden DP_LEX_resetStreamExtractor
+a0019fa0 g     F .lexftext	0000001c .hidden LexLtEventCallback.lto_priv.703
+a0019fb0 g     F .rexftext	000000b0 .hidden RexPmLinkTrainedWaitMcaHandler.lto_priv.218
+a0019fbc g     F .lexftext	0000015c .hidden LexLtDisablePendingHandler.lto_priv.248
+a001a060 g     F .rexftext	000000f4 .hidden RexPmWaitHostVideoHandler.lto_priv.219
+a001a118 g     F .lexftext	00000044 .hidden LexLtDisabledHandler.lto_priv.249
+a001a154 g     F .rexftext	00000370 .hidden RexPmVideoFlowingHandler.lto_priv.220
+a001a15c g     F .lexftext	00000068 .hidden LexLtPoweredDownHandler.lto_priv.250
+a001a1c4 g     F .lexftext	00000038 .hidden LexLtPowerUpHandler.lto_priv.251
+a001a1fc g     F .lexftext	00000058 .hidden LexLtWaitRetrainHandler.lto_priv.252
+a001a254 g     F .lexftext	00000054 .hidden LexLtWaitTps1Handler.lto_priv.253
+a001a2a8 g     F .lexftext	000001d4 .hidden LexLtRetimerCrHandler.lto_priv.254
+a001a47c g     F .lexftext	0000008c .hidden LexLtCheckRetimerLockHandler.lto_priv.255
+a001a4c4 g     F .rexftext	00000084 .hidden RexPmIdlePendingHandler.lto_priv.221
+a001a508 g     F .lexftext	000000cc .hidden LexLtGtpSetupHandler.lto_priv.256
+a001a548 g     F .rexftext	000000b0 .hidden RexPmDisablePendingHandler.lto_priv.222
+a001a5d4 g     F .lexftext	00000040 .hidden LexLtVsAdvertiseHandler.lto_priv.257
+a001a5f8 g     F .rexftext	00000084 .hidden RexPmComplianceHandler.lto_priv.223
+a001a614 g     F .lexftext	00000054 .hidden LexLtWaitTps23Handler.lto_priv.258
+a001a668 g     F .lexftext	00000020 .hidden LexLtCheckGtpFrqHandler.lto_priv.259
+a001a67c g     F .rexftext	00000050 .hidden RexPmErrorHandler.lto_priv.224
+a001a688 g     F .lexftext	00000020 .hidden LexLtWaitSymbolLockHandler.lto_priv.260
+a001a6a8 g     F .lexftext	00000264 .hidden LexLtPeAdvertiseHandler.lto_priv.261
+a001a6cc g     F .rexftext	00000090 .hidden RexPmCommonHandler.lto_priv.646
+a001a75c g     F .rexftext	000003e4 .hidden RexPmCpuMsgReceivedEventHandler.lto_priv.773
+a001a90c g     F .lexftext	0000007c .hidden LexLtLinkTrainedHandler.lto_priv.262
+a001a988 l     F .lexftext	000000dc LexLtVsAdvertiseAlgorithm
+a001aa64 g     F .lexftext	00000048 DP_AUX_LexErrorRecovery
+a001aaac g     F .lexftext	0000001c .hidden LexLtStateSendEventWithNoData
+a001aac8 g     F .lexftext	00000258 .hidden LexAuxHandleRequest
+a001ab40 g     F .rexftext	000000e0 .hidden AuxReplyCapHandler.lto_priv.616
+a001ac20 g     F .rexftext	0000006c .hidden ReadMccsCap.lto_priv.622
+a001ac8c g     F .rexftext	000004b0 .hidden MccsReplyHandler.lto_priv.620
+a001ad20 g     F .lexftext	00000378 .hidden AUX_DpLexIsrEventHandler
+a001b098 l     F .lexftext	00000024 LexSetupHotResetWait
+a001b0bc g     F .lexftext	000000c4 .hidden _I2CD_linkTrainingPllPoll.lto_priv.167
+a001b13c g     F .rexftext	000000f4 .hidden RexPmDisabledHandler.lto_priv.212
+a001b180 g     F .lexftext	0000003c .hidden I2CD_DP159SetConfiguration.lto_priv.683
+a001b1bc l     F .lexftext	00000084 I2CD_DP159RunConfiguration
+a001b230 g     F .rexftext	000000e8 .hidden RexPmIdleHandler.lto_priv.213
+a001b240 l     F .lexftext	00000078 I2CD_setDp159
+a001b2b8 g     F .lexftext	00000070 .hidden setPage.lto_priv.269
+a001b318 g     F .rexftext	0000012c .hidden RexPmMonitorInfoHandler.lto_priv.214
+a001b328 l     F .lexftext	0000000c _DP159_setPageCallback
+a001b334 l     F .lexftext	00000070 performTransaction
+a001b3a4 l     F .lexftext	00000084 _I2CD_dp159WriteCompleteHandler
+a001b428 l     F .lexftext	000000d4 _I2CD_dp159ReadCompleteHandler
+a001b444 g     F .rexftext	0000037c .hidden RexPmLinkTrainingHandler.lto_priv.216
+a001b4fc g     F .lexftext	00000060 .hidden AUX_LexAttemptErrorRecovery.constprop.62
+a001b55c g     F .lexftext	0000009c .hidden bb_top_dpInitConfigureDpTransceiverLexA7
+a001b5f8 g     F .lexftext	00000114 .hidden bb_top_dpConfigureDpTransceiverLexA7
+a001b70c g     F .lexftext	00000090 .hidden bb_top_dpGotSymbolLockA7
+a001b79c g     F .lexftext	00000048 .hidden SendLinkAndStreamParameters.lto_priv.659
+a001b7c0 g     F .rexftext	0000001c .hidden RexLtEventCallback.lto_priv.604
+a001b7dc g     F .rexftext	00000258 .hidden RexLtDisabledHandler.lto_priv.244
+a001b7e4 g     F .lexftext	00000054 .hidden LexPmCommLinkEventHandler.lto_priv.792
+a001b838 g     F .lexftext	0000007c .hidden LexPmConfigurationEventHandler.lto_priv.793
+a001b8b4 g     F .lexftext	00000010 .hidden LexPendingTimerHandler.lto_priv.797
+a001b8c4 g     F .lexftext	0000001c .hidden LexPmUpdateVideoStatus.lto_priv.654
+a001b8e0 g     F .lexftext	0000000c .hidden LexPmGetVideoStatus.lto_priv.791
+a001b8ec g     F .lexftext	000000a0 .hidden LexRexActiveEventGenerate.lto_priv.653
+a001b98c g     F .lexftext	00000020 .hidden LexAudioMuteTimerHandler.lto_priv.798
+a001ba34 g     F .rexftext	00000210 .hidden RexLtClockRecoveryHandler.lto_priv.245
+a001ba40 g     F .lexftext	00000064 .hidden DP_Lex_StartRexPowerDownTimer
+a001baa4 g     F .lexftext	000000bc .hidden LexPmDisabledHandler.lto_priv.227
+a001bb60 g     F .lexftext	000000f0 .hidden LexPmIdlePendingHandler.lto_priv.228
+a001bc44 g     F .rexftext	00000244 .hidden RexLtChannelEqHandler.lto_priv.246
+a001bc50 g     F .lexftext	000000e8 .hidden LexPmIdleHandler.lto_priv.229
+a001bd38 g     F .lexftext	00000068 .hidden LexPmWaitForRexParamsHandler.lto_priv.230
+a001bda0 g     F .lexftext	0000014c .hidden LexPmLinkTrainingHandler.lto_priv.231
+a001be88 g     F .rexftext	0000008c .hidden RexLtLinkTrainedHandler.lto_priv.247
+a001beec g     F .lexftext	000000fc .hidden LexPmLinkTrainedWaitMsaHandler.lto_priv.232
+a001bf14 l     F .rexftext	00000054 AUX_RexLtCommonHandler
+a001bfe8 g     F .lexftext	00000104 .hidden LexPmLinkTrainedHandler.lto_priv.233
+a001c0ec g     F .lexftext	0000014c .hidden LexPmLinkTrainedWaitMcaHandler.lto_priv.234
+a001c1c0 g     F .rexftext	00000010 .hidden RexCypressHubInitComplete.lto_priv.832
+a001c1d0 g     F .rexftext	000000d0 .hidden RexCommLinkEventHandler.lto_priv.830
+a001c238 g     F .lexftext	000000e4 .hidden LexPmVideoWaitingForRexHandler.lto_priv.235
+a001c2a0 g     F .rexftext	00000044 .hidden RexConfigurationEventHandler.lto_priv.831
+a001c2e4 g     F .rexftext	00000034 .hidden RexUlpVbusDelayTimeout.lto_priv.825
+a001c318 g     F .rexftext	00000010 .hidden UlpRexUsb2DevDisconnectHandler.lto_priv.828
+a001c31c g     F .lexftext	00000270 .hidden LexPmVideoFlowingHandler.lto_priv.236
+a001c328 g     F .rexftext	00000014 .hidden UlpRexUsb2DevConnectHandler.lto_priv.829
+a001c33c g     F .rexftext	00000014 .hidden RexUlpComLinkSendTimeout.lto_priv.826
+a001c350 g     F .rexftext	00000090 .hidden ULP_RexUsb3Control
+a001c3e0 g     F .rexftext	000000d8 .hidden ULP_RexUsb3RxCpuMessageHandler
+a001c4b8 g     F .rexftext	000002d4 .hidden ULP_RexUsb3ResetRxCpuMessageHandler
+a001c58c g     F .lexftext	00000144 .hidden LexPmNoVideoHandler.lto_priv.237
+a001c6d0 g     F .lexftext	000000a0 .hidden LexPmDisablePendingHandler.lto_priv.238
+a001c770 g     F .lexftext	0000005c .hidden LexPmErrorHandler.lto_priv.239
+a001c78c l     F .rexftext	00000010 ULP_RexUsb3Enabled
+a001c79c g     F .rexftext	0000001c .hidden ULP_RexUsb3StateMachineSendEvent.lto_priv.744
+a001c7b8 l     F .rexftext	000003f0 ULP_RexUsb3StateCallback
+a001c7cc l     F .lexftext	00000088 LexPmCommonHandler
+a001c854 g     F .lexftext	00000798 .hidden LexPmCpuMsgReceivedEventHandler.lto_priv.794
+a001cba8 l     F .rexftext	00000070 RexSetupUSB3
+a001cc18 l     F .rexftext	0000002c RexUsb3Disabled
+a001cc44 l     F .rexftext	00000028 RexUsb3Disconnected
+a001cc6c l     F .rexftext	00000020 RexUsb3Failed
+a001cc8c l     F .rexftext	00000038 RexUsb3DeviceRemoved
+a001ccc4 l     F .rexftext	00000034 RexUsb3TurnOffUsb3
+a001ccf8 g     F .rexftext	0000003c .hidden RexUsb3ReadyDelayTimeout.lto_priv.836
+a001cd34 g     F .rexftext	00000034 .hidden RexUsb3DeviceConnectTimeout.lto_priv.835
+a001cd68 l     F .rexftext	00000030 RexUsb3StartSetupPolling
+a001cd98 g     F .rexftext	000000b4 .hidden RexUsb3LtssmPoll.lto_priv.834
+a001ce4c l     F .rexftext	00000048 RexUsb3SetupHotResetState
+a001ce94 l     F .rexftext	00000044 RexUsb3SetupWarmResetState
+a001ced8 g     F .rexftext	00000030 .hidden RexUsb3GetUsb3Status.lto_priv.837
+a001cf08 g     F .rexftext	0000015c .hidden UlpRexUsb3ChannelStatus.lto_priv.833
+a001cfec g     F .lexftext	0000011c .hidden LexLtResetMainComponents.lto_priv.701
+a001d064 g     F .rexftext	0000001c .hidden ULP_RexUsb3OverCurrentIntHandler.lto_priv.838
+a001d080 l     F .rexftext	00000028 ULP_RexUsb3OverCurrentIntCallback
+a001d0a8 g     F .rexftext	0000006c .hidden ULP_RexUsb2Control
+a001d108 g     F .lexftext	00000044 .hidden LexAdvertiseNextVsAvailable.lto_priv.697
+a001d114 g     F .rexftext	000000ac .hidden ULP_RexUsb2RxCpuMessageHandler
+a001d14c g     F .lexftext	00000018 .hidden linkTrainingTPS23callback.lto_priv.691
+a001d164 g     F .lexftext	00000010 .hidden AUX_LexTps1TimeoutHandler.lto_priv.808
+a001d174 g     F .lexftext	0000007c .hidden ReInitiateLinkTraining
+a001d1c0 l     F .rexftext	00000010 ULP_RexUsb2Enabled
+a001d1d0 g     F .rexftext	0000001c .hidden ULP_RexUsb2StateMachineSendEvent.lto_priv.751
+a001d1ec l     F .rexftext	000000c8 ULP_RexUsb2StateCallback
+a001d1f0 g     F .lexftext	0000003c .hidden UlpLexRexUsbAllowed
+a001d22c g     F .lexftext	00000014 .hidden UlpSendCPUCommLexUsb2Message
+a001d240 g     F .lexftext	00000014 .hidden UlpSendCPUCommLexUsb3Message
+a001d254 g     F .lexftext	00000014 .hidden UlpSendCPUCommLexUsb3ResetMessage
+a001d268 g     F .lexftext	000000b8 .hidden LexCommLinkEventHandler.lto_priv.812
+a001d2b4 l     F .rexftext	00000020 UlpRexUsb2SetDisabledState
+a001d300 g     F .rexftext	00000140 .hidden ULP_RexUsbControl
+a001d320 g     F .lexftext	00000044 .hidden LexConfigurationEventHandler.lto_priv.813
+a001d364 g     F .lexftext	0000000c .hidden LexIamAliveTimeout.lto_priv.810
+a001d370 g     F .lexftext	000000a4 .hidden LexUlpUpdateSystem.lto_priv.733
+a001d414 g     F .lexftext	00000010 .hidden LexCypressHubInitComplete.lto_priv.814
+a001d424 g     F .lexftext	00000140 .hidden ULP_controlLexInitUSB3
+a001d440 g     F .rexftext	00000014 .hidden UlpSendCPUCommRexUsb3Message
+a001d454 g     F .rexftext	00000014 .hidden UlpSendCPUCommRexUsb3ResetMessage
+a001d468 g     F .rexftext	000000f0 .hidden UlpRexSetVbus
+a001d558 g     F .rexftext	0000002c .hidden I2CD_dp130Enable
+a001d564 g     F .lexftext	0000004c .hidden ULP_controlLexBringUpUSB3
+a001d584 l     F .rexftext	00000020 I2CD_dp130GeneralReadHandler
+a001d5a4 g     F .rexftext	00000068 .hidden DP130ResetWaitTimerHandler.lto_priv.758
+a001d5d4 g     F .lexftext	00000100 .hidden ULP_LexUsbControl
+a001d60c l     F .rexftext	00000030 I2CD_dp130SetEqEnableHandler
+a001d7ec g     F .lexftext	0000004c .hidden LexUsb3GetUsb3Status.lto_priv.750
+a001d838 g     F .lexftext	00000038 .hidden LexUsb3SnoopTimeout.lto_priv.816
+a001d870 g     F .lexftext	00000028 .hidden LexUsb3WarmResetCountClear.lto_priv.817
+a001d898 g     F .lexftext	00000028 .hidden LexUsb3InactiveCountClear.lto_priv.819
+a001d8c0 g     F .lexftext	00000020 .hidden LexUsb3InactiveTimeout.lto_priv.818
+a001d8e0 g     F .lexftext	00000050 .hidden UlpLexUsb2Status
+a001d930 g     F .lexftext	00000074 .hidden ULP_LexUsb2Control
+a001d9a4 g     F .lexftext	000000c4 .hidden ULP_LexUsb2RxCpuMessageHandler
+a001da68 g     F .lexftext	0000001c .hidden ULP_LexUsb2StateMachineSendEvent.lto_priv.752
+a001da84 l     F .lexftext	0000018c ULP_LexUsb2StateCallback
+a001dc10 l     F .lexftext	00000034 UlpLexUsb2Disable
+a001dc44 l     F .lexftext	00000038 UlpLexUsb2FailHandler
+a001dc7c g     F .lexftext	00000060 .hidden ULP_UlpLexUsb3ResetStart
+a001dcdc l     F .lexftext	0000002c ULP_UlpLexUsb3LexOnlyResetStart
+a001dd08 g     F .lexftext	00000028 .hidden ULP_UlpLexUsb3LexOnlyResetStop
+a001dd30 g     F .lexftext	000000b0 .hidden ULP_LexUsb3ResetRxCpuMessageHandler
+a001dde0 g     F .lexftext	00000010 .hidden UlpLexUsb3ResetStepTimeout.lto_priv.821
+a001ddf0 g     F .lexftext	0000000c .hidden UlpLexUsb3ResetRexStartTimeout.lto_priv.822
+a001ddfc g     F .lexftext	0000001c .hidden UlpLexUsb3ResetStateMachineSendEvent.lto_priv.728
+a001de18 l     F .lexftext	00000484 UlpLexUsb3ResetStateCallback
+a001e29c g     F .lexftext	000000d8 .hidden UlpLexUsb3ChannelStatus.lto_priv.820
+a001e374 g     F .lexftext	00000234 .hidden UlpLexUsb3ResetLexOnly.lto_priv.823
+a001e8ac g     F .lexftext	00000010 ULP_LexHostUsb3RestartRequest
+a001e8bc g     F .lexftext	00000010 ULP_LexHostCycleRequest
+a001e8cc g     F .lexftext	0000009c .hidden LexDebounceVbus.lto_priv.824
+a001e968 g     F .lexftext	0000001c .hidden ULP_LexHostStateMachineSendEvent.lto_priv.727
+a001e984 l     F .lexftext	000002a8 ULP_LexHostStateCallback
+a001ec2c l     F .lexftext	00000034 UlpLexHostCheckUsbStatus
+a001ec60 l     F .lexftext	00000024 UlpLexHostUsb2Selected
+a001ec84 l     F .lexftext	00000034 LexHostSoftCycle
+a001ecb8 l     F .lexftext	00000050 LexHostRemoved
+a001ed08 l     F .lexftext	0000002c LexHostDisabled
+a001ed34 g     F .lexftext	00000064 .hidden UlpLexUsb3Status
+a001ed98 g     F .lexftext	00000074 .hidden ULP_LexUsb3Control
+a001ee0c g     F .lexftext	000000cc .hidden ULP_LexUsb3RxCpuMessageHandler
+a001eed8 g     F .lexftext	0000001c .hidden ULP_LexUsb3StateMachineSendEvent.lto_priv.747
+a001eef4 l     F .lexftext	000004e4 ULP_LexUsb3StateCallback
+a001f3d8 l     F .lexftext	000000a0 LexSetupUSB3
+a001f478 l     F .lexftext	00000050 LexSetupWarmResetWait
+a001f4c8 l     F .lexftext	00000034 LexUsb3SetDisabledState
+a001f4fc l     F .lexftext	00000028 LexUSB3SetFailedState
+a001f524 l     F .lexftext	0000002c LexUSB3HandleDisconnectEvent
+a001f550 g     F .lexftext	0000005c .hidden LexUsb3TurnOffUsb3.lto_priv.746
+a001f5ac l     F .lexftext	00000028 LexUsbNoRexDevice
+a001f5d4 g     F .lexftext	00000050 .hidden LexUsb3FailureRecovery.lto_priv.745
+a001f624 g     F .lexftext	000000fc .hidden LexCheckLtssm.lto_priv.815
+a001f720 g     O .rodata	00000005 .hidden CSWTCH.21.lto_priv.731
+a001f720 g       .rodata	00000000 __rodata_dst
+a001f720 l    d  .rodata	00000000 .rodata
+a001f728 g     O .rodata	00000005 .hidden trainingEQInterval
+a001f730 g     O .rodata	00000020 .hidden encryptedWriteTail.lto_priv.196
+a001f750 g     O .rodata	00000003 .hidden nonceMessageTail.lto_priv.529
+a001f758 g     O .rodata	00000020 .hidden genDigMessageTail.lto_priv.530
+a001f778 g     O .rodata	00000018 .hidden messageTail.lto_priv.524
+a001f790 g     O .rodata	00000008 .hidden dflt1_MacAddress
+a001f798 g     O .rodata	00000008 .hidden dflt1_geConfigBits
+a001f7a0 g     O .rodata	00000020 .hidden flashClearBuffer.lto_priv.332
+a001f7c0 g     O .rodata	00000800 .hidden crc64Table
+a0020088 g     O .rodata	00000100 .hidden __clz_tab
+a0020188 g     O .rodata	00000098 .hidden UlpCoreStatU8Regs.lto_priv.740
+a0020220 g     O .rodata	00000088 .hidden UlpCoreStatU16Regs.lto_priv.742
+a00202a8 g     O .rodata	00000020 .hidden UlpPhyStat0U16Regs.lto_priv.736
+a00202c8 g     O .rodata	00000028 .hidden UlpPhyStat1U32Regs.lto_priv.738
+a00202f0 g     O .rodata	00000018 .hidden UlpCore8Stats
+a0020308 g     O .rodata	00000018 .hidden UlpCore16Stats
+a0020320 g     O .rodata	00000018 .hidden UlpPhyStat016Stats
+a0020338 g     O .rodata	00000018 .hidden UlpPhyStat132Stats
+a0020350 g     O .rodata	00000018 .hidden symbolClockTable
+a0020368 g     O .rodata	0000001c .hidden Aux_I2C_Handlers.lto_priv.702
+a0020384 l     O .rodata	0000003c ltStateTable.lto_priv.242
+a00203c0 g     O .rodata	0000000c .hidden sscFrqThreshold.lto_priv.666
+a00203cc l     O .rodata	00000010 ltStateTable.lto_priv.243
+a00203dc l     O .rodata	00000034 pmStateTable.lto_priv.210
+a0020410 l     O .rodata	00000034 pmStateTable.lto_priv.211
+a0020444 g     O .rodata	0000000c .hidden CompMinCount.lto_priv.686
+a0020450 g     O .rodata	0000000c .hidden CompMaxCountSsc.lto_priv.685
+a002045c g     O .rodata	00000008 .hidden stateTable.lto_priv.594
+a0020464 l     O .rodata	00000020 phyStateTable
+a0020484 g     O .rodata	00000028 .hidden XauiStatChannelU32Regs.lto_priv.504
+a00204ac g     O .rodata	00000018 .hidden Xaui32bitStats
+a00204c4 g     O .rodata	00000028 .hidden idtConfig
+a00204ec g     O .rodata	00000030 .hidden idt6914DiffConfig
+a002051c g     O .rodata	00000018 .hidden I2c16bitsStats
+a0020534 g     O .rodata	00000018 .hidden FiberStatU32Regs.lto_priv.559
+a002054c g     O .rodata	00000018 .hidden Fiber16bitsStats
+a0020564 g     O .rodata	00000018 .hidden AquantiaStat8Registration.lto_priv.489
+a002057c g     O .rodata	00000018 .hidden AquantiaStat16Registration.lto_priv.485
+a0020594 g     O .rodata	00000018 .hidden AquantiaStat32Registration.lto_priv.484
+a00205ac g     O .rodata	00000018 .hidden AquantiaLinkDropStatRegistration.lto_priv.508
+a00205c4 g     O .rodata	00000018 .hidden MCA_interrupt_ChannelMask.lto_priv.375
+a00205dc g     O .rodata	00000018 .hidden disableTimerHandlers.lto_priv.843
+a00205f4 l     O .rodata	00000070 McaStatChannelU8Regs
+a0020664 g     O .rodata	00000038 .hidden McaStatCoreU8Regs.lto_priv.587
+a002069c l     O .rodata	00000010 McaStatChannelU16Regs
+a00206ac l     O .rodata	00000018 Mca8bitStatsChannelCpuComm
+a00206c4 l     O .rodata	00000018 Mca16bitStatsChannelCpuComm
+a00206dc l     O .rodata	00000018 Mca8bitStatsChannelDp
+a00206f4 l     O .rodata	00000018 Mca16bitStatsChannelDp
+a002070c l     O .rodata	00000018 Mca8bitStatsChannelUsb3
+a0020724 l     O .rodata	00000018 Mca16bitStatsChannelUsb3
+a002073c l     O .rodata	00000018 Mca8bitStatsChannelGE
+a0020754 l     O .rodata	00000018 Mca16bitStatsChannelGE
+a002076c l     O .rodata	00000018 Mca8bitStatsChannelGMII
+a0020784 l     O .rodata	00000018 Mca16bitStatsChannelGMII
+a002079c l     O .rodata	00000018 Mca8bitStatsChannelRS232
+a00207b4 l     O .rodata	00000018 Mca16bitStatsChannelRS232
+a00207cc g     O .rodata	00000018 .hidden Mca8bitStatsCore
+a00207e4 g     O .rodata	000000b8 .hidden configVars
+a002089c g     O .rodata	00000004 .hidden dflt1_randomSeed
+a00208a0 g     O .rodata	00000008 .hidden dflt1_usbExtendedConfig
+a00208a8 g     O .rodata	00000010 .hidden dflt1_ulpUsb3ResetParams
+a00208b8 g     O .rodata	00000010 .hidden dflt1_fiberParams
+a00208c8 g     O .rodata	00000088 .hidden default1_table
+a0020950 g     O .rodata	00000018 .hidden XAdc8Registration.lto_priv.327
+a0020968 g     O .rodata	00000004 .hidden readMask.lto_priv.325
+a002096c g     O .rodata	00000010 .hidden listTable.lto_priv.318
+a002097c g     O .rodata	000000d0 .hidden MacStatU8Regs.lto_priv.567
+a0020a4c g     O .rodata	00000088 .hidden MacStatU16Regs.lto_priv.569
+a0020ad4 g     O .rodata	00000018 .hidden MacStatU32Regs.lto_priv.571
+a0020aec g     O .rodata	00000018 .hidden Mac8bitStats
+a0020b04 g     O .rodata	00000018 .hidden Mac16bitsStats
+a0020b1c g     O .rodata	00000018 .hidden Mac32bitsStats
+a0020b34 g     O .rodata	000000d8 .hidden icmd_callbacks.lto_priv.303
+a0020c0c g     O .rodata	00000018 .hidden uartFifoDefinitions.lto_priv.280
+a0020cd4 g       .rodata	00000000 icmd_TOPLEVEL_COMPONENT
+a0020ce4 g       .rodata	00000000 icmd_ULP_COMPONENT
+a0020d08 g       .rodata	00000000 icmd_RS232_COMPONENT
+a0020d0c g       .rodata	00000000 icmd_COMMAND_COMPONENT
+a0020d10 g       .rodata	00000000 icmd_LAN_PORT_COMPONENT
+a0020d18 g       .rodata	00000000 icmd_DP_COMPONENT
+a0020dbc g       .rodata	00000000 icmd_DP_STREAM_COMPONENT
+a0020dd8 g       .rodata	00000000 icmd_DP_AUX_COMPONENT
+a0020dd8 g       .rodata	00000000 icmd_LINKMGR_COMPONENT
+a0020df4 g       .rodata	00000000 icmd_XAUI_COMPONENT
+a0020df8 g       .rodata	00000000 icmd_IDT_CLK_COMPONENT
+a0020e08 g       .rodata	00000000 icmd_FIBER5G_COMPONENT
+a0020e1c g       .rodata	00000000 icmd_I2CD_COMPONENT
+a0020e30 g       .rodata	00000000 icmd_LED_COMPONENT
+a0020e38 g       .rodata	00000000 icmd_EEPROM_COMPONENT
+a0020e38 g       .rodata	00000000 icmd_GPIO_COMPONENT
+a0020e40 g       .rodata	00000000 icmd_ATMEL_CRYPTO_COMPONENT
+a0020e70 g       .rodata	00000000 icmd_I2C_COMPONENT
+a0020e70 g       .rodata	00000000 icmd_UPP_COMPONENT
+a0020e88 g       .rodata	00000000 icmd_I2C_SLAVE_COMPONENT
+a0020e8c g       .rodata	00000000 icmd_AQUANTIA_COMPONENT
+a0020e8c g       .rodata	00000000 icmd_MDIOD_COMPONENT
+a002103c g       .rodata	00000000 icmd_MDIO_COMPONENT
+a0021050 g       .rodata	00000000 icmd_MCA_COMPONENT
+a0021060 g       .rodata	00000000 icmd_CPU_COMM_COMPONENT
+a0021060 g       .rodata	00000000 icmd_TEST_COMPONENT
+a0021078 g       .rodata	00000000 icmd_CONFIG_COMPONENT
+a002107c g       .rodata	00000000 icmd_FLASH_DATA_COMPONENT
+a00210a4 g       .rodata	00000000 icmd_RANDOM_COMPONENT
+a00210a4 g       .rodata	00000000 icmd_XADC_COMPONENT
+a00210bc g       .rodata	00000000 icmd_STATS_MON_COMPONENT
+a00210c4 g       .rodata	00000000 icmd_TIMING_COMPONENT
+a00210e0 g       .rodata	00000000 icmd_MAIN_LOOP_COMPONENT
+a00210e4 g       .rodata	00000000 icmd_ICMD_COMPONENT
+a0021110 g       .rodata	00000000 icmd_TOP_COMPONENT
+a0021144 g       .rodata	00000000 icmd_ILOG_COMPONENT
+a0021144 g       .rodata	00000000 icmd_UTIL_COMPONENT
+a002115c g       .rodata	00000000 icmd_UART_COMPONENT
+a0021164 g       .rodata	00000000 icmd_CORE_COMPONENT
+a0021168 g     O .rodata	00000010 .hidden s15G_Init.lto_priv.862
+a0021178 g     O .rodata	00000020 .hidden initReadSteps.lto_priv.493
+a0021198 g     O .rodata	00000060 .hidden initWriteSteps.lto_priv.494
+a00211f8 g     O .rodata	00000018 .hidden initWriteSteps5G.lto_priv.491
+a0021210 g     O .rodata	00000010 .hidden versionDisplaySteps.lto_priv.488
+a0021220 g     O .rodata	00000010 .hidden txLinkUpSteps.lto_priv.496
+a0021230 g     O .rodata	00000008 .hidden rxLinkUpSteps.lto_priv.495
+a0021238 g     O .rodata	00000040 .hidden stabilitySteps.lto_priv.497
+a0021278 g     O .rodata	000004ec .hidden AquantiaStatU8Regs.lto_priv.502
+a0021764 g     O .rodata	000000c4 .hidden AquantiaStatU16Regs.lto_priv.500
+a0021828 g     O .rodata	00000038 .hidden AquantiaStatU32Regs.lto_priv.498
+a0021860 g     O .rodata	0000001c .hidden AquantiaLinkDropRegs.lto_priv.515
+a002187c g     O .rodata	00000008 .hidden dflt1_temperatureConfig
+a0021884 g     O .rodata	00000002 .hidden dflt1_devPortNumber
+a0021886 g     O .rodata	00000006 .hidden dflt1_USB2vhubSetup
+a002188c g     O .rodata	00000050 .hidden xadcInit.lto_priv.876
+a00218dc g     O .rodata	00000006 .hidden XAdcStatU8Regs.lto_priv.335
+a00218e2 g     O .rodata	00000114 .hidden mmcmSource.lto_priv.301
+a00219f6 g     O .rodata	00000114 .hidden mmcmSink.lto_priv.298
+a0021b0a g     O .rodata	0000000a .hidden rxCdrCfgSscOff5G.lto_priv.296
+a0021b14 g     O .rodata	0000000a .hidden rxCdrCfgSscOff.lto_priv.295
+a0021b1e g     O .rodata	00000054 .hidden hwVersionInformation.lto_priv.273
+a0021b72 g     O .rodata	00000003 .hidden i2cDeviceGpioExpander
+a0021b75 g     O .rodata	00000003 .hidden i2cDeviceCypress
+a0021b78 g     O .rodata	00000003 .hidden i2cDeviceDp130
+a0021b7b g     O .rodata	00000003 .hidden i2cDeviceDp159
+a0021b7e g     O .rodata	00000002 .hidden message.4160.lto_priv.705
+a0021b80 g     O .rodata	00000016 .hidden currentVSPairs.lto_priv.668
+a0021b96 g     O .rodata	00000021 .hidden fallbackStreamParam
+a0021bb7 g     O .rodata	00000098 .hidden bppTable.lto_priv.596
+a0021c4f g     O .rodata	00000003 .hidden deviceIdtClk
+a0021c52 g     O .rodata	0000003c .hidden lexIdtClkCfg
+a0021c8e g     O .rodata	00000044 .hidden rexIdtClkCfg
+a0021cd2 g     O .rodata	0000000a .hidden rexIdtClkEnableSscCfg
+a0021cdc g     O .rodata	0000000a .hidden rexIdtClkDisableSscCfg
+a0021ce6 g     O .rodata	00000006 .hidden IDT6914_rexUsb3Dp
+a0021cec g     O .rodata	0000001c .hidden IDT6914_rexUsb2Dp
+a0021d08 g     O .rodata	00000024 .hidden IDT6914_lexUsb2
+a0021d2c g     O .rodata	00000010 .hidden IDT6914_rexUsb3DpSsc
+a0021d3c g     O .rodata	00000026 .hidden IDT6914_rexUsb2DpSsc
+a0021d62 g     O .rodata	00000003 .hidden i2cDeviceSfpFinisar
+a0021d65 g     O .rodata	00000019 .hidden I2cStatU16Regs.lto_priv.561
+a0021d7e g     O .rodata	00000004 .hidden bootPattern.lto_priv.550
+a0021d82 g     O .rodata	00000004 .hidden tempWarnPattern.lto_priv.553
+a0021d86 g     O .rodata	00000004 .hidden tempFaultPattern.lto_priv.554
+a0021d8a g     O .rodata	00000008 .hidden downloadPattern.lto_priv.552
+a0021d92 g     O .rodata	0000000a .hidden downloadPatternDP.lto_priv.551
+a0021d9c g     O .rodata	00000004 .hidden veriFaultPattern.lto_priv.556
+a0021da0 g     O .rodata	00000004 .hidden veriFaultPatternDP.lto_priv.555
+a0021da4 g     O .rodata	00000003 .hidden i2cDeviceAtmel
+a0021da7 g     O .rodata	00000003 .hidden devicePc9548
+a0021daa g     O .rodata	00000003 .hidden dflt1_featureMask
+a0021dad g     O .rodata	00000003 .hidden dflt1_featureEnable
+a0021db0 g     O .rodata	00000001 .hidden dflt1_phyConfig
+a0021db1 g     O .rodata	0000001f .hidden dflt1_brandName
+a0021dd0 g     O .rodata	00000010 .hidden dflt1_dpConfig
+a0021de0 g     O .rodata	00000001 .hidden dflt1_idtClk
+a0021de1 g     O .rodata	00000002 .hidden dflt1_usbConfig
+a0021de4 g     O .rexrodata	00000020 .hidden gpioStatesRex
+a0021de4 g       .rodata	00000000 __rex_lex_rodata_overlay_start
+a0021de4 l    d  .lexrodata	00000000 .lexrodata
+a0021de4 l    d  .rexrodata	00000000 .rexrodata
+a0021de8 g     O .lexrodata	00000044 .hidden initSteps.lto_priv.759
+a0021e2c g     O .lexrodata	00000001 .hidden pllCtrlStatSelCfg8k.lto_priv.678
+a0021e2d g     O .lexrodata	00000001 .hidden pllCtrlStatSelCfg1k.lto_priv.672
+a0021e2e g     O .lexrodata	00000001 .hidden rxEqCtrlStat.lto_priv.680
+a0021e2f g     O .lexrodata	00000001 .hidden rxEqCtrlStatAdaptive.lto_priv.695
+a0021e30 g     O .lexrodata	00000001 .hidden rxEqBERTcnt.lto_priv.696
+a0021e31 g     O .lexrodata	00000001 .hidden pllCtrlStatCfgEnPllAlock.lto_priv.671
+a0021e32 g     O .lexrodata	00000001 .hidden pllCtrlStatCfgDiPll.lto_priv.674
+a0021e33 g     O .lexrodata	00000001 .hidden pllCtrlStatCfgEnPll.lto_priv.694
+a0021e34 g     O .lexrodata	00000001 .hidden rxCtrlEnoc.lto_priv.675
+a0021e35 g     O .lexrodata	00000001 .hidden rxEqFtcLevInit.lto_priv.679
+a0021e36 g     O .lexrodata	00000001 .hidden rxCtrlEqLd.lto_priv.681
+a0021e37 g     O .lexrodata	00000001 .hidden txEnInit.lto_priv.682
+a0021e38 g     O .lexrodata	00000001 .hidden rxLnEnInit.lto_priv.670
+a0021e3a g     O .lexrodata	00000002 .hidden pllCtrlStatPllMode.lto_priv.677
+a0021e3c g     O .lexrodata	00000002 .hidden pllCtrlStatPdMode.lto_priv.673
+a0021e3e g     O .lexrodata	00000002 .hidden pllCtrlStatCpFull.lto_priv.676
+a0021e40 g     O .lexrodata	00000003 .hidden crPhaseStep1.lto_priv.693
+a0021e44 l     O .lexrodata	00000002 dp159DisablePV
+a0021e48 g     O .lexrodata	00000050 .hidden reInitSteps.lto_priv.669
+a0021e98 g     O .lexrodata	00000020 .hidden crPhaseSteps.lto_priv.690
+a0021eb8 g     O .lexrodata	00000038 .hidden changePllMode.lto_priv.667
+a0021ef0 g     O .lexrodata	00000010 .hidden resetRxLane.lto_priv.664
+a0021f00 g     O .lexrodata	00000010 .hidden tps23IrqSteps.lto_priv.692
+a0021f10 g     O .lexrodata	00000020 .hidden gpioStatesLex
+a1000000 g       .bss	00000000 __bss_dst
+a1000000 g     O .bss	00000013 .hidden UlpCoreStatU8data.lto_priv.741
+a1000000 l    d  .bss	00000000 .bss
+a1000018 g     O .bss	0000000a .hidden activeControlFifo
+a1000028 g     O .bss	00000180 .hidden edid_monitor
+a10001a8 g     O .bss	0000000a .hidden edid_header
+a10001b8 g     O .bss	00000258 .hidden mccs_monitor
+a1000410 g     O .bss	00000009 .hidden localTimingString
+a1000420 g     O .bss	00000009 .hidden timingReportReply
+a1000430 g     O .bss	00000008 .hidden streamClk1000.lto_priv.613
+a1000438 g     O .bss	00000010 .hidden sendValue.lto_priv.543
+a1000448 g     O .bss	00000100 .hidden geIlogExpanded.lto_priv.540
+a1000548 g     O .bss	00000010 .hidden pageBuffer
+a1000558 g     O .bss	00000020 .hidden macChallenge
+a1000578 g     O .bss	00000018 .hidden mdiod_phy_read.lto_priv.512
+a1000590 g     O .bss	00000018 .hidden mdiod_phy_write.lto_priv.511
+a10005a8 g     O .bss	0000005a .hidden AquantiaStatU8data.lto_priv.503
+a1000608 l     O .bss	0000000e McaStatStatChannel0U8data
+a1000618 l     O .bss	0000000e McaStatStatChannel1U8data
+a1000628 l     O .bss	0000000e McaStatStatChannel2U8data
+a1000638 l     O .bss	0000000e McaStatStatChannel3U8data
+a1000648 l     O .bss	0000000e McaStatStatChannel4U8data
+a1000658 l     O .bss	0000000e McaStatStatChannel5U8data
+a1000668 g     O .bss	00000007 .hidden McaStatStatCoreU8data.lto_priv.588
+a1000670 g     O .bss	00000008 .hidden macAddress.lto_priv.359
+a1000678 g     O .bss	00000008 .hidden geConfigBits.lto_priv.366
+a1000680 g     O .bss	00000020 .hidden configBuffer.lto_priv.328
+a10006a0 g     O .bss	00000040 .hidden shaDigest.1689.lto_priv.330
+a10006e0 g     O .bss	00000020 .hidden shaRandom.1688.lto_priv.331
+a1000700 g     O .bss	00000001 .hidden XAdcStatU8data.lto_priv.336
+a1000708 g     O .bss	0000001a .hidden MacStatStatU8data.lto_priv.568
+a1000728 g     O .bss	00000036 .hidden component_logging_level
+a1000760 g     O .bss	00000100 .hidden crcReflectData
+a1000860 g     O .bss	00000200 .hidden blackBirdRxBuffer.lto_priv.283
+a1000a60 g     O .bss	00001000 .hidden blackBirdTxBuffer.lto_priv.284
+a1001a60 g     O .bss	00000200 .hidden bbgeRxBuffer.lto_priv.285
+a1001c60 g     O .bss	00000200 .hidden bbgeTxBuffer.lto_priv.286
+a1001e60 g     O .bss	00000100 .hidden printf_msg.lto_priv.281
+a1001f60 g     O .bss	00000100 .hidden rxPacketBuffer
+a1002060 g     O .bss	00000002 .hidden _packetizeEnabled.lto_priv.276
+a1002068 g     O .bss	00000020 .hidden _gpioExpander.lto_priv.896
+a1002088 g     O .bss	00000004 .hidden I2cLEDTimer.lto_priv.899
+a100208c g     O .bss	0000002c .hidden hx3.lto_priv.895
+a10020b8 g     O .bss	00000004 .hidden bb_chip_registers.lto_priv.311
+a10020bc g     O .bss	00000004 .hidden pollingMask.lto_priv.312
+a10020c0 g     O .bss	00000004 .hidden mdioIsrNotifySubscriber_.lto_priv.890
+a10020c4 g     O .bss	00000004 .hidden validationTimer.lto_priv.872
+a10020c8 g     O .bss	00000004 .hidden unlockedExecutionTimer.lto_priv.755
+a10020cc g     O .bss	0000000c .hidden lexHostUlp.lto_priv.749
+a10020d8 g     O .bss	00000008 .hidden geControl.lto_priv.748
+a10020e0 g     O .bss	0000002c .hidden lexUsb3Ulp.lto_priv.722
+a100210c g     O .bss	00000004 .hidden updateFunction
+a1002110 g     O .bss	00000014 .hidden ulpLexUsb3Reset.lto_priv.734
+a1002124 g     O .bss	00000014 .hidden UlpPhyStat1U32data.lto_priv.739
+a1002138 g     O .bss	0000000c .hidden rexUlp.lto_priv.732
+a1002144 g     O .bss	00000018 .hidden rexUsb3Ulp.lto_priv.730
+a100215c g     O .bss	00000008 .hidden lexUlp.lto_priv.724
+a1002164 g     O .bss	0000000c .hidden hwInfo
+a1002170 g     O .bss	00000004 .hidden flash_bin_table_ptr.lto_priv.720
+a1002174 g     O .bss	0000000c .hidden pgmStartCmd.lto_priv.716
+a1002180 g     O .bss	00000020 .hidden pgmInfo.lto_priv.715
+a10021a0 g     O .bss	0000003c .hidden mccsRequestContext
+a10021dc g     O .bss	00000004 .hidden dpConfigPtr
+a10021e0 g     O .bss	00000004 .hidden CapReadTimer
+a10021e4 g     O .bss	0000006c .hidden lexTransInitCtx.lto_priv.597
+a1002250 g     O .bss	00000004 .hidden mccsMonitorSize
+a1002254 g     O .bss	00000004 .hidden localVcpTableSize
+a1002258 g     O .bss	00000264 .hidden mccsCache.lto_priv.225
+a10024bc g     O .bss	00000004 .hidden MccsReplyTimer
+a10024c0 g     O .bss	00000004 .hidden MccsRequestTimer
+a10024c4 g     O .bss	00000004 .hidden VcpReplyTimer
+a10024c8 g     O .bss	00000004 .hidden DDCCIRetryTimer
+a10024cc g     O .bss	00000004 .hidden TimingReplyTimer
+a10024d0 g     O .bss	00000004 .hidden VideoStartTimer
+a10024d4 g     O .bss	00000004 .hidden MCCSRetryTimer
+a10024d8 g     O .bss	00000004 .hidden ComplianceTimer
+a10024dc g     O .bss	00000004 .hidden NewControlTimer
+a10024e0 g     O .bss	00000004 .hidden VcpSetTimer
+a10024e4 g     O .bss	00000004 .hidden vcpTableSize
+a10024e8 g     O .bss	00000264 .hidden mccsCache.lto_priv.226
+a100274c g     O .bss	00000264 .hidden mccsCopy.lto_priv.619
+a10029b0 g     O .bss	000001fc .hidden rexPmInitContext.lto_priv.605
+a1002bac g     O .bss	00000004 .hidden dp_source.lto_priv.209
+a1002bb0 g     O .bss	00000030 .hidden rexCompliance.lto_priv.603
+a1002be0 g     O .bss	00000004 .hidden tico_dec.lto_priv.663
+a1002be4 g     O .bss	00000004 .hidden dp_source
+a1002be8 g     O .bss	00000004 .hidden twicePakcetLength.lto_priv.612
+a1002bec g     O .bss	00000004 .hidden isrCallback.lto_priv.207
+a1002bf0 g     O .bss	00000004 .hidden dpstreamConfigPtr
+a1002bf4 g     O .bss	00000004 .hidden tico_enc.lto_priv.602
+a1002bf8 g     O .bss	00000004 .hidden dpConfigPtrStream.lto_priv.598
+a1002bfc g     O .bss	00000004 .hidden isrCallback.lto_priv.208
+a1002c00 g     O .bss	00000004 .hidden dp_sink.lto_priv.583
+a1002c04 g     O .bss	00000004 .hidden lexStreamIrqBackup.lto_priv.582
+a1002c08 g     O .bss	0000002c .hidden lexEncoderParams.lto_priv.599
+a1002c34 g     O .bss	00000004 .hidden auxHandler.lto_priv.581
+a1002c38 g     O .bss	00000004 .hidden auxRexIsrCtx.lto_priv.595
+a1002c3c g     O .bss	00000030 .hidden rexCtx.lto_priv.585
+a1002c6c g     O .bss	00000004 .hidden errHandler.lto_priv.593
+a1002c70 g     O .bss	00000254 .hidden localRequest.lto_priv.586
+a1002ec4 g     O .bss	00000004 .hidden hpd.lto_priv.623
+a1002ec8 g     O .bss	00000004 .hidden aux.lto_priv.579
+a1002ecc g     O .bss	00000004 .hidden auxInterrupts.lto_priv.639
+a1002ed0 g     O .bss	00000004 .hidden auxLexIsrCtx.lto_priv.576
+a1002ed4 g     O .bss	00000004 .hidden enterTime.16141.lto_priv.575
+a1002ed8 g     O .bss	00000004 .hidden preExitTime.16142.lto_priv.577
+a1002edc g     O .bss	00000004 .hidden postExitTime.16143.lto_priv.578
+a1002ee0 g     O .bss	00000010 .hidden comLinkContext.lto_priv.548
+a1002ef0 g     O .bss	00000008 .hidden _XAUI.lto_priv.490
+a1002ef8 g     O .bss	00000014 .hidden XauiStatU32data.lto_priv.505
+a1002f0c g     O .bss	00000010 .hidden idtClk.lto_priv.565
+a1002f1c g     O .bss	00000010 .hidden statsCallbacks.lto_priv.190
+a1002f2c g     O .bss	00000018 .hidden sfpFinisarContext.lto_priv.558
+a1002f44 g     O .bss	0000000c .hidden FiberStatStatU32data.lto_priv.560
+a1002f50 g     O .bss	00000024 .hidden sl_5Gvars.lto_priv.557
+a1002f74 g     O .bss	00000014 .hidden ledContext.lto_priv.549
+a1002f88 g     O .bss	00000008 .hidden geSWVersion.lto_priv.547
+a1002f90 g     O .bss	0000000c .hidden bbGeContext.lto_priv.546
+a1002f9c g     O .bss	0000000c .hidden msgHandlers.lto_priv.544
+a1002fa8 g     O .bss	00000088 .hidden gpioIrqHandler.lto_priv.539
+a1003030 g     O .bss	00000004 .hidden gpio_registers
+a1003034 g     O .bss	0000002c .hidden eeprom_descriptor.lto_priv.535
+a1003060 g     O .bss	00000020 .hidden writeDataSlotBuffer.lto_priv.534
+a1003080 g     O .bss	00000004 .hidden checkValidationHandler
+a1003084 g     O .bss	000000c0 .hidden encryptState
+a1003144 g     O .bss	000000d0 .hidden atmelEncrypt.lto_priv.528
+a1003214 g     O .bss	0000002c .hidden macState.lto_priv.523
+a1003240 g     O .bss	00000094 .hidden atmel_i2c.lto_priv.522
+a10032d4 g     O .bss	00000008 .hidden i2cIcmdData.lto_priv.519
+a10032dc g     O .bss	00000020 .hidden i2cContext
+a10032fc g     O .bss	00000004 .hidden i2c_registers
+a1003300 g     O .bss	00000004 .hidden i2c_blockCallback.lto_priv.514
+a1003304 g     O .bss	00000058 .hidden i2c.lto_priv.513
+a100335c g     O .bss	00000004 .hidden i2c_slave_registers
+a1003360 g     O .bss	00000034 .hidden phyContext.lto_priv.509
+a1003394 g     O .bss	00000048 .hidden aquantiaContext
+a10033dc g     O .bss	00000004 .hidden isrDone_.lto_priv.487
+a10033e0 g     O .bss	00000010 .hidden AquantiaStatU32data.lto_priv.499
+a10033f0 g     O .bss	00000018 .hidden statsCallbacks.lto_priv.191
+a1003408 g     O .bss	0000000c .hidden aquantiaStatContext.lto_priv.483
+a1003414 g     O .bss	00000018 .hidden mdioContext.lto_priv.378
+a100342c g     O .bss	00000068 .hidden mdio.lto_priv.379
+a1003494 g     O .bss	00000004 .hidden mcaFifoPrintIcmdTimer
+a1003498 g     O .bss	00000004 .hidden latencyPrintValueTimer.lto_priv.376
+a100349c g     O .bss	00000094 .hidden mcaContext.lto_priv.352
+a1003530 g     O .bss	00000508 .hidden txFifo.lto_priv.351
+a1003a38 g     O .bss	00000594 .hidden cpuContext.lto_priv.350
+a1003fcc g     O .bss	00000004 .hidden bb_core_registers.lto_priv.169
+a1003fd0 g     O .bss	00000004 .hidden diagnosticTimer
+a1003fd4 g     O .bss	00000004 .hidden randomSeed.lto_priv.354
+a1003fd8 g     O .bss	00000008 .hidden usbExtendedConfig.lto_priv.358
+a1003fe0 g     O .bss	00000004 .hidden devIpAddress.lto_priv.360
+a1003fe4 g     O .bss	00000004 .hidden subNetMask.lto_priv.362
+a1003fe8 g     O .bss	00000004 .hidden defaultGateway.lto_priv.363
+a1003fec g     O .bss	00000004 .hidden ipAcquisitionMode.lto_priv.364
+a1003ff0 g     O .bss	00000004 .hidden dhcpServerIp.lto_priv.365
+a1003ff4 g     O .bss	00000010 .hidden ulpUsb3ResetParams.lto_priv.368
+a1004004 g     O .bss	00000010 .hidden fiberParams.lto_priv.369
+a1004014 g     O .bss	00000004 .hidden featureByte
+a1004018 g     O .bss	00000004 .hidden _callback
+a100401c g     O .bss	00000008 .hidden flashVars.lto_priv.333
+a1004024 g     O .bss	00000028 .hidden blockInfo.lto_priv.334
+a100404c g     O .bss	00000218 .hidden statsContext
+a1004264 g     O .bss	00000200 .hidden timingArr.lto_priv.278
+a1004464 g     O .bss	00000004 .hidden watchdogTimer.lto_priv.324
+a1004468 g     O .bss	00000004 .hidden watchdogStart.lto_priv.322
+a100446c g     O .bss	00000004 .hidden watchdogTimeout.lto_priv.323
+a1004470 g     O .bss	00000390 .hidden _TIMING_handlers
+a1004800 g     O .bss	00000008 .hidden _TIMING.lto_priv.321
+a1004808 g     O .bss	000013ec .hidden callbackArray.lto_priv.315
+a1005bf4 g     O .bss	0000000c .hidden callbackList.lto_priv.319
+a1005c00 g     O .bss	00000030 .hidden eventArray.lto_priv.308
+a1005c30 g     O .bss	00000600 .hidden handlerArray.lto_priv.309
+a1006230 g     O .bss	00000100 .hidden triggerArray.lto_priv.307
+a1006330 g     O .bss	00000004 .hidden linkLayerRx
+a1006334 g     O .bss	00000004 .hidden linkLayerTx
+a1006338 g     O .bss	00000004 .hidden layer3Tx
+a100633c g     O .bss	00000004 .hidden layer3Rx
+a1006340 g     O .bss	0000000c .hidden MacStatStatU32data.lto_priv.572
+a100634c g     O .bss	00000004 .hidden macContext.lto_priv.305
+a1006350 g     O .bss	00000018 .hidden iCmdArgs.lto_priv.304
+a1006368 g     O .bss	00000004 .hidden bb_top_registers.lto_priv.171
+a100636c g     O .bss	00000004 .hidden gtp.lto_priv.288
+a1006370 g     O .bss	00000018 .hidden bbTopDpCtx.lto_priv.291
+a1006388 g     O .bss	00000004 .hidden bb_top_registers.lto_priv.173
+a100638c g     O .bss	00000004 .hidden drp.lto_priv.290
+a1006390 g     O .bss	00000004 .hidden bb_top_registers.lto_priv.174
+a1006394 g     O .bss	00000014 .hidden bbTopGeContext.lto_priv.289
+a10063a8 g     O .bss	00000004 .hidden pAssertHookEndFunction
+a10063ac g     O .bss	00000004 .hidden pAssertHookStartFunction
+a10063b0 g     O .bss	00000014 .hidden assertInfo
+a10063c4 g     O .bss	00000004 .hidden timeStampOffset.lto_priv.282
+a10063c8 g     O .bss	00000004 .hidden sfi_registers
+a10063cc g     O .bss	00000400 .hidden crcTable
+a10067cc g     O .bss	00000004 .hidden timeSpentInRx
+a10067d0 g     O .bss	00000004 .hidden maxTimeSpentInRx
+a10067d4 g     O .bss	00000004 .hidden sumOfTime
+a10067d8 g     O .bss	00000004 .hidden intCount
+a10067dc g     O .bss	00000004 .hidden geTimeSpentInRx
+a10067e0 g     O .bss	00000004 .hidden geMaxTimeSpentInRx
+a10067e4 g     O .bss	00000004 .hidden geSumOfTime
+a10067e8 g     O .bss	00000004 .hidden geIntCount
+a10067ec g     O .bss	00000068 .hidden uartCtrl.lto_priv.274
+a1006854 g     O .bss	00000008 .hidden receivePacketTimer.lto_priv.275
+a100685c g     O .bss	00000050 .hidden bbRxPacketHandler
+a10068ac g     O .bss	00000058 .hidden geRxPacketHandler
+a1006904 g     O .bss	000000a8 .hidden ResponseHandler
+a10069ac g     O .bss	00000004 .hidden bb_core_registers.lto_priv.170
+a10069b0 g     O .bss	00000022 .hidden UlpCoreStatU16data.lto_priv.743
+a10069d2 g     O .bss	00000008 .hidden UlpPhyStat0U16data.lto_priv.737
+a10069da g     O .bss	00000180 .hidden localVcpTable
+a1006b5a g     O .bss	00000180 .hidden vcpTable
+a1006cda g     O .bss	00000002 .hidden cs_packet_interval.lto_priv.614
+a1006cdc g     O .bss	0000000a .hidden I2cStatU16data.lto_priv.562
+a1006ce6 g     O .bss	00000006 .hidden I2cSpeedPrescaler
+a1006cec g     O .bss	0000001c .hidden AquantiaStatU16data.lto_priv.501
+a1006d08 g     O .bss	00000004 .hidden AquantiaStatLinkDropdata.lto_priv.516
+a1006d0c g     O .bss	00000004 .hidden aquantiaGeneralRegister.lto_priv.380
+a1006d10 l     O .bss	00000004 McaStatStatChannel0U16data
+a1006d14 l     O .bss	00000004 McaStatStatChannel1U16data
+a1006d18 l     O .bss	00000004 McaStatStatChannel2U16data
+a1006d1c l     O .bss	00000004 McaStatStatChannel3U16data
+a1006d20 l     O .bss	00000004 McaStatStatChannel4U16data
+a1006d24 l     O .bss	00000004 McaStatStatChannel5U16data
+a1006d28 g     O .bss	00000002 .hidden devPortNumber.lto_priv.361
+a1006d2a g     O .bss	00000006 .hidden USB2vhubSetup.lto_priv.367
+a1006d30 g     O .bss	00000008 .hidden temperatureParams.lto_priv.371
+a1006d38 g     O .bss	00000002 .hidden freeListCount.lto_priv.317
+a1006d3a g     O .bss	00000022 .hidden MacStatStatU16data.lto_priv.570
+a1006d5c g     O .bss	00000200 .hidden crc16Table
+a1006f5c g     O .bss	00000010 .hidden rxPacket
+a1006f6c g     O .bss	00000001 .hidden i2cGpioPinSet.lto_priv.897
+a1006f6d g     O .bss	00000001 .hidden currentRegPage.lto_priv.760
+a1006f6e g     O .bss	00000001 .hidden underAssert.lto_priv.721
+a1006f6f g     O .bss	00000001 .hidden startUpDone.lto_priv.754
+a1006f70 g     O .bss	00000001 .hidden atmelErrorCnt.lto_priv.756
+a1006f71 g     O .bss	00000002 .hidden lexUsb2Ulp.lto_priv.723
+a1006f73 g     O .bss	00000002 .hidden rexUsb2Ulp.lto_priv.729
+a1006f75 g     O .bss	00000002 .hidden rs232Context.lto_priv.719
+a1006f77 g     O .bss	00000001 .hidden commandContext
+a1006f78 g     O .bss	00000001 .hidden currCmdRespID.lto_priv.718
+a1006f79 g     O .bss	00000001 .hidden flashNeedsProtection.lto_priv.717
+a1006f7a g     O .bss	00000004 .hidden lanPort.lto_priv.704
+a1006f7e g     O .bss	00000001 .hidden activeControlFifoIdx
+a1006f7f g     O .bss	00000001 .hidden mccsFrameCount
+a1006f80 g     O .bss	00000001 .hidden vcpOpcode
+a1006f81 g     O .bss	00000041 .hidden rexTransInitCtx.lto_priv.615
+a1006fc2 g     O .bss	00000001 .hidden capCrcPosition
+a1006fc3 g     O .bss	00000001 .hidden endFrame
+a1006fc4 g     O .bss	00000193 .hidden lexPmInitContext.lto_priv.643
+a1007157 g     O .bss	00000001 .hidden ReadReqCounter
+a1007158 g     O .bss	00000001 .hidden vcpTableIndex
+a1007159 g     O .bss	00000001 .hidden mccsReadRequired.lto_priv.610
+a100715a g     O .bss	00000001 .hidden mccsSuccessCounter.lto_priv.617
+a100715b g     O .bss	00000001 .hidden mccsFailureCounter.lto_priv.618
+a100715c g     O .bss	0000000b .hidden rexAudio.lto_priv.611
+a1007167 g     O .bss	00000001 .hidden frqOutofRangCount.lto_priv.600
+a1007168 g     O .bss	00000028 .hidden lexCtx.lto_priv.580
+a1007190 g     O .bss	00000001 .hidden enableAuxTrans.lto_priv.584
+a1007191 g     O .bss	00000001 .hidden ulmLinkState.lto_priv.545
+a1007192 g     O .bss	00000001 .hidden displayReadAsWords
+a1007193 g     O .bss	00000001 .hidden atmelAsyncICmdRespId.lto_priv.533
+a1007194 g     O .bss	00000001 .hidden uppContext.lto_priv.521
+a1007195 g     O .bss	00000003 .hidden i2cDeviceIcmd.lto_priv.520
+a1007198 g     O .bss	00000001 .hidden i2c_hw_fifo_size
+a1007199 g     O .bss	00000001 .hidden isrStep.lto_priv.486
+a100719a g     O .bss	00000001 .hidden previousDriverState.4402.lto_priv.492
+a100719b g     O .bss	00000001 .hidden counter.16470.lto_priv.377
+a100719c g     O .bss	00000001 .hidden enableDiagnostic.lto_priv.346
+a100719d g     O .bss	00000001 .hidden errorState.lto_priv.347
+a100719e g     O .bss	00000003 .hidden featureControl.lto_priv.343
+a10071a1 g     O .bss	00000003 .hidden featureMask.lto_priv.345
+a10071a4 g     O .bss	00000003 .hidden featureEnable.lto_priv.344
+a10071a7 g     O .bss	0000001f .hidden brandName.lto_priv.353
+a10071c6 g     O .bss	00000010 .hidden dpConfig.lto_priv.355
+a10071d6 g     O .bss	00000001 .hidden idtClkConfig.lto_priv.356
+a10071d7 g     O .bss	00000002 .hidden usbConfig.lto_priv.357
+a10071d9 g     O .bss	00000001 .hidden phyParams.lto_priv.370
+a10071da g     O .bss	00000006 .hidden diagConfig.lto_priv.372
+a10071e0 g     O .bss	0000002e .hidden configVarStatus
+a100720e g     O .bss	00000001 .hidden blockSwapInProgress.lto_priv.342
+a100720f g     O .bss	00000001 .hidden flashSaveInProgress.lto_priv.341
+a1007210 g     O .bss	00000001 .hidden referencePointer.1690.lto_priv.329
+a1007211 g     O .bss	00000004 .hidden xadcContext.lto_priv.326
+a1007215 g     O .bss	00000001 .hidden timersInUse.1438.lto_priv.320
+a1007216 g     O .bss	00000002 .hidden callbackFreeList.lto_priv.316
+a1007218 g     O .bss	00000001 .hidden iCmdResponseId.lto_priv.302
+a1007219 g     O .bss	00000001 .hidden TxDiffCtrl
+a100721a g     O .bss	00000001 .hidden TxPostCursor
+a100721b g     O .bss	00000001 .hidden blockingLogMode
+a100721c g     O .bss	00000001 .hidden newUart.lto_priv.279
+a100721d g     O .bss	00000001 .hidden freeResponses
+a100721e g     O .bss	00000001 .hidden activeResponses
+a100721f g       .bss	00000000 __rex_lex_bss_overlay_start
+a100721f l    d  .lexbss	00000000 .lexbss
+a100721f l    d  .rexbss	00000000 .rexbss
+a1007220 g     O .lexbss	0000001c .hidden DP159Api.lto_priv.651
+a1007220 l     O .rexbss	00000018 dp130ApiCtx
+a1007238 g     O .rexbss	00000020 .hidden dp130Ctx.lto_priv.641
+a100723c g     O .lexbss	00000014 .hidden _DP159.lto_priv.894
+a1007250 g       .bss	00000000 __load_stop_lexbss
+a1007250 g       .data	00000000 __data_dst
+a1007250 g     O .data	00000002 .hidden crPhaseStep5.lto_priv.689
+a1007250 l    d  .data	00000000 .data
+a1007258 g       .bss	00000000 __load_stop_rexbss
+a1007258 g       .data	00000000 __bss_end
+a1007258 g       .data	00000000 __rex_lex_bss_overlay_end
+a1007258 g     O .data	00000005 .hidden mccsCapReply
+a1007260 g     O .data	0000000b .hidden vcpTableGetReply
+a1007270 g     O .data	00000007 .hidden mccsCapReq
+a1007278 g     O .data	00000006 .hidden vcpGetReq
+a1007280 g     O .data	00000008 .hidden vcpSetReq
+a1007288 g     O .data	00000005 .hidden timingReportReq
+a1007290 g     O .data	0000000a .hidden newControlFifo
+a10072a0 g     O .data	00000005 .hidden saveSettingReq
+a10072a8 g     O .data	0000006a .hidden idtConfiguration
+a1007318 g     O .data	000000a8 .hidden geStorageVars.lto_priv.542
+a10073c0 g     O .data	00000080 .hidden secondaryIrqHandlers.lto_priv.313
+a1007440 g     O .data	00000008 .hidden coreIrqHandlers.lto_priv.893
+a1007448 g     O .data	00000080 .hidden topIrqHandlers.lto_priv.892
+a10074c8 g     O .data	00000004 .hidden unlockedExecutionTime.lto_priv.870
+a10074cc g     O .data	00000034 .hidden lexTransCtx.lto_priv.665
+a1007500 g     O .data	00000004 .hidden edidBlock0.lto_priv.644
+a1007504 g     O .data	00000004 .hidden edidBlock1.lto_priv.645
+a1007508 g     O .data	00000014 .hidden rexTransCtx.lto_priv.662
+a100751c g     O .data	0000006c .hidden lexPmContext.lto_priv.349
+a1007588 g     O .data	0000002c .hidden rexPmContext.lto_priv.348
+a10075b4 g     O .data	00000004 .hidden bb_chip.lto_priv.176
+a10075b8 g     O .data	00000004 .hidden bb_chip.lto_priv.177
+a10075bc g     O .data	00000018 .hidden linkMgr.lto_priv.566
+a10075d4 g     O .data	00000004 .hidden top_rxaui
+a10075d8 g     O .data	00000018 .hidden mca8BitChannelStats
+a10075f0 g     O .data	00000018 .hidden mca16bitChannelStats
+a1007608 g     O .data	0000002c .hidden cpuCommRxHandlers
+a1007634 g     O .data	00000004 .hidden bb_top_registers.lto_priv.172
+a1007638 g     O .data	00000004 .hidden bb_chip.lto_priv.178
+a100763c g     O .data	00000004 .hidden bb_chip.lto_priv.179
+a1007640 g     O .data	00000004 .hidden leon2Registers.lto_priv.314
+a1007644 g     O .data	00000004 .hidden bb_chip.lto_priv.180
+a1007648 g     O .data	00000020 .hidden sha256_h0
+a1007668 g     O .data	00000100 .hidden sha256_k
+a1007768 g     O .data	00000001 .hidden i2cGpioPin.lto_priv.898
+a1007769 g     O .data	00000009 .hidden availableVsPeCombination.lto_priv.650
+a1007772 g     O .data	00000008 .hidden divider1Fraction
+a100777a g     O .data	00000003 .hidden i2cDeviceEeprom
+a100777d g     O .data	00000001 .hidden candidatePhyAddr.4062.lto_priv.510
+a100777e g     O .data	00000001 .hidden freeHandlerStack.lto_priv.887
+a100777f g     O .data	00000002 .hidden activeQueue.lto_priv.306
+a1007781 g     O .data	00000001 .hidden freeTriggerStack.lto_priv.310
+a1007784 g     O .data	000000b0 _LEON_isrs
+a1007834 g       .data	00000000 __rex_lex_data_overlay_start
+a1007834 g     O .lexdata	00000093 .hidden regData
+a1007834 l       .data	00000000 _LEON_isrs_end
+a1007834 l    d  .lexdata	00000000 .lexdata
+a10078c8 g     O .lexdata	00000400 .hidden dpcdRegisters.lto_priv.649
+a1007cd0 l    d  .stack	00000000 .stack
+a1008150 g       .stack	00000000 __stack_end
+../blackbird_a7_debug_bin/target.elf:     file format elf32-sparc
+c0a00000 g       .start_text	00000000 __bin_table_start
+c0a00000 l    d  .start_text	00000000 .start_text
+c0a00000 l     O .start_text	000000a0 flash_bin_table
+c0a00100 g       .start_text	00000000 __bb_fw_start
+c0a00100 g       .start_text	00000000 start
+c0a00118 g       .start_text	00000000 LEON_CPUInitStackAndCall
+c0a00144 l       .start_text	00000000 start2
+c0a00200 l       .start_text	00000000 call_C_forever
+c0a00210 g       *ABS*	00000000 __ftext_src
+c0a16408 g       *ABS*	00000000 __load_start_rexftext
+c0a1d84c g       *ABS*	00000000 __load_start_lexftext
+c0a26d74 g       *ABS*	00000000 __load_start_rexstext
+c0a26d74 g     F .flashcode	00000060 flashmemcpy
+c0a26d74 l       *ABS*	00000000 __flashcode_src
+c0a26d74 l       *ABS*	00000000 __stext_src
+c0a26d74 l    d  .flashcode	00000000 .flashcode
+c0a26dd4 g     F .flashcode	0000008c flashmemset
+c0a26e60 g     F .flashcode	00000040 ilog_icmdGetLevel
+c0a26ea0 g     F .flashcode	00000010 testStackOverFlow
+c0a26eb0 g     F .flashcode	00000104 UART_ShowStats
+c0a26fb4 g     F .flashcode	0000005c UART_BBChangeBaudRate
+c0a27010 g     F .flashcode	00000020 ilog_setBlockingMode
+c0a27030 g     F .flashcode	0000001c ilog_clearBlockingMode
+c0a2704c g     F .flashcode	00000068 assertStatus
+c0a270b4 g     F .flashcode	0000005c ilog_SetLevel
+c0a27110 g     F .flashcode	00000008 ResetStats
+c0a27118 g     F .flashcode	00000048 readMemory
+c0a27160 g     F .flashcode	00000020 writeMemory
+c0a27180 g     F .flashcode	00000048 readModifyWriteMemory
+c0a271c8 g     F .flashcode	0000006c modifyBitfield
+c0a27234 g     F .flashcode	0000005c dumpMemory32
+c0a27290 g     F .flashcode	00000024 callFunction
+c0a272b4 g     F .flashcode	00000024 readMemory16
+c0a272d8 g     F .flashcode	00000020 writeMemory16
+c0a272f8 g     F .flashcode	00000058 readModifyWriteMemory16
+c0a27350 g     F .flashcode	0000001c readMemory8
+c0a2736c g     F .flashcode	00000020 writeMemory8
+c0a2738c g     F .flashcode	000000d4 UTIL_printTimingEntriesTable
+c0a27460 g     F .flashcode	00000074 UTIL_timingProfileWatchdogEnable
+c0a274d4 g     F .flashcode	00000014 UTIL_timingProfileWatchdogDisable
+c0a274e8 g     F .flashcode	00000060 showTimers
+c0a27548 g     F .flashcode	00000028 startTimer
+c0a27570 g     F .flashcode	00000028 stopTimer
+c0a27598 g     F .flashcode	0000002c changeTimeout
+c0a275c4 g     F .flashcode	00000144 XADC_getVoltageIcmd
+c0a27708 g     F .flashcode	00000058 XADC_getFpgaTempIcmd
+c0a27760 g     F .flashcode	00000054 XADC_setFpgaWarningTemperature_2
+c0a277b4 g     F .flashcode	00000054 XADC_setFpgaWarningTemperature_3
+c0a27808 g     F .flashcode	00000054 XADC_setFpgaShutdownTemperature_2
+c0a2785c g     F .flashcode	00000054 XADC_setFpgaShutdownTemperature_3
+c0a278b0 g     F .flashcode	0000001c MDIOD_aquantiaTestPatternForceError
+c0a278cc g     F .flashcode	0000001c MDIOD_aquantiaTestPatternMode7ForceError
+c0a278e8 g     F .flashcode	0000001c MDIOD_aquantiaXAUIRxLocalFaultInjection
+c0a27904 g     F .flashcode	0000001c MDIOD_aquantiaTestPatternExtendedSelect
+c0a27920 g     F .flashcode	0000001c MDIOD_aquantiaTestPatternCheckEnable
+c0a2793c g     F .flashcode	0000001c MDIOD_aquantiaTestPatternCheckPoint
+c0a27958 g     F .flashcode	0000001c MDIOD_aquantiaTestPatternInsertExtraIdles
+c0a27974 g     F .flashcode	0000001c MDIOD_aquantiaTestPatternCheckSelect
+c0a27990 g     F .flashcode	0000001c MDIOD_aquantiaTestPatternChannelSelect
+c0a279ac g     F .flashcode	0000001c MDIOD_aquantiaChannel0TestPatternErrorCounter
+c0a279c8 g     F .flashcode	0000001c MDIOD_aquantiaChannel1TestPatternErrorCounter
+c0a279e4 g     F .flashcode	0000001c MDIOD_aquantiaChannel2TestPatternErrorCounter
+c0a27a00 g     F .flashcode	0000001c MDIOD_aquantiaChannel3TestPatternErrorCounter
+c0a27a1c g     F .flashcode	0000001c MDIOD_aquantiaTestPatternMode7ErrorCounter
+c0a27a38 g     F .flashcode	0000001c MDIOD_aquantiaXauiTxErrorInjectionLaneSelect
+c0a27a54 g     F .flashcode	0000001c MDIOD_aquantiaXauiTxInjectSynchronizationError
+c0a27a70 g     F .flashcode	0000001c MDIOD_aquantiaXauiTxInjectAlignmentError
+c0a27a8c g     F .flashcode	0000001c MDIOD_aquantiaXauiTxInjectCodeViolation
+c0a27aa8 g     F .flashcode	0000001c MDIOD_aquantiaXauiTx10BViolationCodeword
+c0a27ac4 g     F .flashcode	0000001c MDIOD_aquantiaPhyXsSystemLoopbackPassThrough
+c0a27ae0 g     F .flashcode	0000001c MDIOD_aquantiaPhyXsSystemLoopbackEnable
+c0a27afc g     F .flashcode	0000001c MDIOD_aquantiaXauiTxLocalFaultInjection
+c0a27b18 g     F .flashcode	0000001c MDIOD_aquantiaRestartAutonegotiation
+c0a27b34 g     F .flashcode	0000001c MDIOD_aquantiaSerdesStartUpMode
+c0a27b50 g     F .flashcode	0000001c MDIOD_aquantiaAutonegotiationTimeout
+c0a27b6c g     F .flashcode	0000001c MDIOD_aquantiaAutonegotiationTimeoutMod
+c0a27b88 g     F .flashcode	0000001c MDIOD_aquantiaLinkPartner1000BaseTFullDuplexAbility
+c0a27ba4 g     F .flashcode	0000001c MDIOD_aquantiaLinkPartner1000BaseTHalfDuplexAbility
+c0a27bc0 g     F .flashcode	0000001c MDIOD_aquantiaLinkPartnerShortReach
+c0a27bdc g     F .flashcode	0000001c MDIOD_aquantialLinkPartnerAqRateDownshiftCapability
+c0a27bf8 g     F .flashcode	0000001c MDIOD_aquantiaLinkPartner5G
+c0a27c14 g     F .flashcode	0000001c MDIOD_aquantiaLinkPartner2G
+c0a27c30 g     F .flashcode	0000001c MDIOD_aquantiaLinkPartner
+c0a27c4c g     F .flashcode	0000001c MDIOD_aquantiaAutonegotiationProtocolErrorState
+c0a27c68 g     F .flashcode	0000001c MDIOD_aquantiaFlpIdleErrorState
+c0a27c84 g     F .flashcode	0000001c MDIOD_aquantiaEnableDiagnostics
+c0a27ca0 g     F .flashcode	0000001c MDIOD_aquantiaHighTempFailureThreshold
+c0a27cbc g     F .flashcode	0000001c MDIOD_aquantiaLowTempFailureThreshold
+c0a27cd8 g     F .flashcode	0000001c MDIOD_aquantiaHighTempWarningThreshold
+c0a27cf4 g     F .flashcode	0000001c MDIOD_aquantiaLowTempWarningThreshold
+c0a27d10 g     F .flashcode	0000001c MDIOD_aquantiaDiagnosticsSelect
+c0a27d2c g     F .flashcode	0000001c MDIOD_aquantiaExtendedMdiDiagnosticsSelect
+c0a27d48 g     F .flashcode	0000001c MDIOD_aquantiaInitiateCableDiagnostics
+c0a27d64 g     F .flashcode	0000001c MDIOD_aquantiaEnableVddPowerSupplyTuning
+c0a27d80 g     F .flashcode	0000001c MDIOD_aquantiaTunableExternalVddPowerSupplyPresent
+c0a27d9c g     F .flashcode	0000001c MDIOD_aquantiaExternalVddChangeRequest
+c0a27db8 g     F .flashcode	0000001c MDIOD_aquantiaEnable5ChannelRfiCancellation
+c0a27dd4 g     F .flashcode	0000001c MDIOD_aquantiaRateTransitionRequest
+c0a27df0 g     F .flashcode	0000001c MDIOD_aquantiaTrainingSnr
+c0a27e0c g     F .flashcode	0000001c MDIOD_aquantiaGlbLoopbackControl
+c0a27e28 g     F .flashcode	0000001c MDIOD_aquantiaGlbMdiPacketGeneration
+c0a27e44 g     F .flashcode	0000001c MDIOD_aquantiaGlbSystemIFPacketGeneration
+c0a27e60 g     F .flashcode	0000001c MDIOD_aquantiaGlobalReservedProvisioningRate
+c0a27e7c g     F .flashcode	0000001c MDIOD_aquantiaPairAStatus
+c0a27e98 g     F .flashcode	0000001c MDIOD_aquantiaPairBStatus
+c0a27eb4 g     F .flashcode	0000001c MDIOD_aquantiaPairCStatus
+c0a27ed0 g     F .flashcode	0000001c MDIOD_aquantiaPairDStatus
+c0a27eec g     F .flashcode	0000001c MDIOD_aquantiaStatusPairAReflection1
+c0a27f08 g     F .flashcode	0000001c MDIOD_aquantiaStatusPairAReflection2
+c0a27f24 g     F .flashcode	0000001c MDIOD_aquantiaImpulseResponseMsw
+c0a27f40 g     F .flashcode	0000001c MDIOD_aquantiaStatusPairBReflection1
+c0a27f5c g     F .flashcode	0000001c MDIOD_aquantiaStatusPairBReflection2
+c0a27f78 g     F .flashcode	0000001c MDIOD_aquantiaImpulseResponseLsw
+c0a27f94 g     F .flashcode	0000001c MDIOD_aquantiaStatusPairCReflection1
+c0a27fb0 g     F .flashcode	0000001c MDIOD_aquantiaStatusPairCReflection2
+c0a27fcc g     F .flashcode	0000001c MDIOD_aquantiaStatusPairDReflection1
+c0a27fe8 g     F .flashcode	0000001c MDIOD_aquantiaStatusPairDReflection2
+c0a28004 g     F .flashcode	0000001c MDIOD_aquantiaProcessorIntensiveOperationInProgress
+c0a28020 g     F .flashcode	0000001c MDIOD_aquantiaCableLength
+c0a2803c g     F .flashcode	0000001c MDIOD_aquantiaGlbLoopbackStatus
+c0a28058 g     F .flashcode	0000001c MDIOD_aquantiaMdiPacketGenerationStatus
+c0a28074 g     F .flashcode	0000001c MDIOD_aquantiaGlbSystemIFPacketGenerationStatus
+c0a28090 g     F .flashcode	0000001c MDIOD_aquantiaGlobalReservedStatusRate
+c0a280ac g     F .flashcode	0000000c AquantiaInNomalOperationIcmd
+c0a280b8 g     F .flashcode	00000024 AQUANTIA_GeneralRead
+c0a280dc g     F .flashcode	00000038 AQUANTIA_GeneralWrite
+c0a28114 g     F .flashcode	00000094 mdioStatus
+c0a281a8 g     F .flashcode	0000000c MDIOD_aquantiaReadJunctionTempIcmd
+c0a281b4 g     F .flashcode	00000040 MDIOD_aquantiaDblRdTest
+c0a281f4 g     F .flashcode	0000001c MDIOD_AquantiaStopTestPackets
+c0a28210 g     F .flashcode	0000001c MDIOD_aquantiaShortReachMode
+c0a2822c g     F .flashcode	0000001c MDIOD_aquantiaTestModeControl
+c0a28248 g     F .flashcode	0000001c MDIOD_aquantiaTransmitterTestFrequencies
+c0a28264 g     F .flashcode	0000001c MDIOD_aquantiaFastRetrainAbility
+c0a28280 g     F .flashcode	0000001c MDIOD_aquantiaFastRetrainEnable
+c0a2829c g     F .flashcode	0000001c MDIOD_aquantiaTestModeRate
+c0a282b8 g     F .flashcode	0000001c MDIOD_aquantiaPmaDigitalSystemLoopback
+c0a282d4 g     F .flashcode	0000001c MDIOD_aquantiaExternalPhyLoopback
+c0a282f0 g     F .flashcode	0000001c MDIOD_aquantiaEnableFastRetrain
+c0a2830c g     F .flashcode	0000001c MDIOD_aquantiaForceMdiConfiguration
+c0a28328 g     F .flashcode	0000001c MDIOD_aquantiaMdiConfiguration
+c0a28344 g     F .flashcode	0000001c MDIOD_aquantiaPcsLoopback
+c0a28360 g     F .flashcode	0000001c MDIOD_aquantia10GSpeedSelection
+c0a2837c g     F .flashcode	0000001c MDIOD_aquantiaTxScramblerDisable
+c0a28398 g     F .flashcode	0000001c MDIOD_aquantiaTxInjectCrcError
+c0a283b4 g     F .flashcode	0000001c MDIOD_aquantiaTxInjectFrameError
+c0a283d0 g     F .flashcode	0000001c MDIOD_aquantiaRxErrorLdpcFrameEnable
+c0a283ec g     F .flashcode	0000001c MDIOD_aquantiaRxLdpcDecoderControl
+c0a28408 g     F .flashcode	0000001c MDIOD_aquantiaXsLoopback
+c0a28424 g     F .flashcode	0000001c MDIOD_aquantiaReceiveTestPatternEnable
+c0a28440 g     F .flashcode	0000001c MDIOD_aquantiaPhyOperatingMode
+c0a2845c g     F .flashcode	0000001c MDIOD_aquantiaTestPatternSelect
+c0a28478 g     F .flashcode	0000001c MDIOD_aquantiaLoopbackControl
+c0a28494 g     F .flashcode	0000001c MDIOD_aquantiaMdiPacketGeneration
+c0a284b0 g     F .flashcode	0000001c MDIOD_aquantiaXsSystemIFPacketGeneration
+c0a284cc g     F .flashcode	0000001c MDIOD_aquantiaRate
+c0a284e8 g     F .flashcode	00000034 i2cWakeIcmd
+c0a2851c g     F .flashcode	00000080 i2cReadIcmd
+c0a2859c g     F .flashcode	00000068 i2cWriteIcmd
+c0a28604 g     F .flashcode	0000006c i2cWriteReadIcmd
+c0a28670 g     F .flashcode	00000070 i2cWriteReadBlockIcmd
+c0a286e0 g     F .flashcode	00000098 i2cStatus
+c0a28778 g     F .flashcode	00000078 atmel_icmdSend
+c0a287f0 g     F .flashcode	00000084 atmel_icmdWithDataWordSend
+c0a28874 g     F .flashcode	00000064 atmel_setICmdWriteDataBuffer
+c0a288d8 g     F .flashcode	00000080 atmel_writeDataSlotFromBuffer
+c0a28958 g     F .flashcode	00000030 atmel_encryptedWriteDataSlotFromBuffer
+c0a28988 g     F .flashcode	00000080 atmel_writeOtpBlockFromBuffer
+c0a28a08 g     F .flashcode	00000084 atmel_readConfigWordIcmd
+c0a28a8c g     F .flashcode	00000094 atmel_writeConfigWordIcmd
+c0a28b20 g     F .flashcode	00000014 atmel_isChipLockedIcmd
+c0a28b34 g     F .flashcode	00000064 atmel_lockConfigZoneIcmd
+c0a28b98 g     F .flashcode	00000064 atmel_lockDataAndOtpZonesIcmd
+c0a28bfc g     F .flashcode	0000001c atmel_encryptedReadDataSlotIcmd
+c0a28c18 l     F .flashcode	00000014 atmel_lockConfigZoneIcmd.part.6
+c0a28c18 l     F .flashcode	00000014 atmel_lockDataAndOtpZonesIcmd.part.7
+c0a28c18 l     F .flashcode	00000014 atmel_readConfigWordIcmd.part.4
+c0a28c18 l     F .flashcode	00000014 atmel_writeConfigWordIcmd.part.5
+c0a28c18 l     F .flashcode	00000014 atmel_writeDataSlotFromBuffer.part.2
+c0a28c18 l     F .flashcode	00000014 atmel_writeOtpBlockFromBuffer.part.3
+c0a28c2c g     F .flashcode	00000018 ledOnOff
+c0a28c44 g     F .flashcode	0000000c ledSetMode
+c0a28c50 g     F .flashcode	00000038 I2CD_icmdIdtGeneralRead
+c0a28c88 g     F .flashcode	0000003c I2CD_icmdIdtGeneralWrite
+c0a28cc4 g     F .flashcode	0000000c IDT_CLK_icmdSscControl
+c0a28cd0 g     F .flashcode	0000004c IDT_CLK_SetRexSscSupport
+c0a28d1c g     F .flashcode	00000018 I2CD_icmdSfpFinisarStartStatsMonitor
+c0a28d34 g     F .flashcode	00000018 I2CD_icmdSftFinisarStopStatsMonitor
+c0a28d4c g     F .flashcode	00000014 I2CD_icmdSfpFinisarSetRxPowerThresholds
+c0a28d60 g     F .flashcode	0000000c I2CD_icmdSfpFinisarSetRxPowerPollingPeriod
+c0a28d6c g     F .flashcode	00000034 DP_STREAM_LexResetIdlePatternCnt
+c0a28da0 g     F .flashcode	00000288 DP_STREAM_GetVideoInfoIcmd
+c0a29028 g     F .flashcode	000002a0 DP_STREAM_SdpStatsIcmd
+c0a292c8 g     F .flashcode	00000070 DP_STREAM_freqMeasureIcmd
+c0a29338 g     F .flashcode	00000028 DP_STREAM_RexEnableAudioIcmd
+c0a29360 g     F .flashcode	000000b8 DP_STREAM_LexPrintErrCount
+c0a29418 g     F .flashcode	00000040 DP_STREAM_RexSetAdjustWidthOffset
+c0a29458 g     F .flashcode	00000058 DP_LEX_SetEdidTypeIcmd
+c0a294b0 g     F .flashcode	00000058 DP_LEX_SetBpcModeIcmd
+c0a29508 g     F .flashcode	00000064 DP_LEX_ReadEdidValues
+c0a2956c g     F .flashcode	00000058 DP_LEX_SscAdvertiseEnable
+c0a295c4 g     F .flashcode	00000058 DP_LEX_YCbCrDisableIcmd
+c0a2961c g     F .flashcode	0000000c DP_LEX_ReLinkTrainIcmd
+c0a29628 g     F .flashcode	00000048 DP_LEX_VS_PE_icmd
+c0a29670 g     F .flashcode	00000060 DP_LEX_SetPowerDownWaitTime
+c0a296d0 g     F .flashcode	0000005c DP_LEX_SetCompressionRatioIcmd
+c0a2972c g     F .flashcode	00000014 DP_REX_NativeAuxReadIcmd
+c0a29740 g     F .flashcode	00000014 DP_REX_NativeAuxWriteIcmd
+c0a29754 g     F .flashcode	00000020 DP_REX_I2cAuxReadIcmd
+c0a29774 g     F .flashcode	00000038 DP_REX_I2cAuxWriteIcmd
+c0a297ac g     F .flashcode	00000058 DP_REX_MccsRequest
+c0a29804 g     F .flashcode	00000094 DP_REX_ChangeMvidIcmd
+c0a29898 g     F .flashcode	00000058 DP_REX_SetNewAluCalculation
+c0a298f0 g     F .flashcode	00000058 DP_REX_MccsEnable
+c0a29948 g     F .flashcode	00000034 DP_AUX_RexErrorRecovery
+c0a2997c g     F .flashcode	00000058 DP_REX_SscAdvertiseEnable
+c0a299d4 g     F .flashcode	00000038 DP_REX_TestSync
+c0a29a0c g     F .flashcode	0000000c DP_REX_ProgramAlu
+c0a29a18 g     F .flashcode	0000000c DP_REX_MccsVcpRequestIcmd
+c0a29a24 g     F .flashcode	00000048 DP_REX_EdidReadIcmd
+c0a29a6c g     F .flashcode	00000040 DP_REX_ReadDpcdCap
+c0a29aac g     F .flashcode	00000460 DP_REX_ChangeLastTu
+c0a29f0c g     F .flashcode	00000060 DP_SetBwLc
+c0a29f6c g     F .flashcode	00000034 DP_PmLogState
+c0a29fa0 g     F .flashcode	00000054 DP_SetIsolateEnable
+c0a29ff4 g     F .flashcode	00000028 DP_PmPostEvent
+c0a2a01c g     F .flashcode	00000028 DP_LtPostEvent
+c0a2a044 g     F .flashcode	00000040 DP_enableDp
+c0a2a084 g     F .flashcode	00000040 DP_disableDp
+c0a2a0c4 g     F .flashcode	00000110 DP_DumpFlashVarsIcmd
+c0a2a1d4 g     F .flashcode	00000044 DP_MCAUpDnIcmd
+c0a2a218 g     F .flashcode	00000058 DP_SetAudioState
+c0a2a270 g     F .flashcode	00000034 DP_RestartDPStateMachine
+c0a2a2a4 g     F .flashcode	00000008 DP_EnableAuxTraffic
+c0a2a2ac g     F .flashcode	000002c4 DP_IcmdPrintAllStatusFlag
+c0a2a570 l     F .flashcode	00000060 NativeAuxReadIcmdReplyHandler
+c0a2a5d0 l     F .flashcode	00000038 NativeAuxWriteHandler
+c0a2a608 l     F .flashcode	00000060 I2cAuxReadIcmdReplyHandler
+c0a2a668 l     F .flashcode	0000000c I2cAuxWriteHandler
+c0a2a674 l     F .flashcode	0000001c CapReplyReplyTimerHandler
+c0a2a690 g     F .flashcode	00000040 I2CD_icmdsGpioExpClearPin
+c0a2a6d0 g     F .flashcode	00000040 I2CD_icmdsGpioExpSetPin
+c0a2a710 g     F .flashcode	0000005c I2CD_icmdsGpioExpReadPin
+c0a2a76c g     F .flashcode	00000070 I2CD_icmdsGpioExpTest
+c0a2a7dc g     F .flashcode	0000003c I2CD_dp130GeneralRead
+c0a2a818 g     F .flashcode	00000030 PrintSwVersion
+c0a2a848 g     F .flashcode	000000dc Badger_getDeviceInfo
+c0a2a924 g       *ABS*	00000000 __rodata_src
+c0a2cfe8 g       *ABS*	00000000 __load_start_rexrodata
+c0a2d008 g       *ABS*	00000000 __load_start_lexrodata
+c0a2d154 g       *ABS*	00000000 __data_src
+c0a2d154 g       *ABS*	00000000 __load_start_rexsrodata
+c0a2d154 l       *ABS*	00000000 __srodata_src
+c0a2d738 g       *ABS*	00000000 __load_start_lexdata
+c0a2d738 g       *ABS*	00000000 __load_start_rexdata
+c0a2dbcc l       *ABS*	00000000 __flashrodata_src
+c0a2dbcc l    d  .flashrodata	00000000 .flashrodata
+c0a2dbd0 g     O .flashrodata	00002784 .hidden cypressHx3FirmwareRex
+c0a30354 g     O .flashrodata	00000004 .hidden cypressHx3FwLenRex
+c0a30358 g     O .flashrodata	0000284c .hidden cypressHx3FirmwareLex
+c0a32ba4 g     O .flashrodata	00000004 .hidden cypressHx3FwLenLex
+c0a32ba8 l     O .flashrodata	00000004 keepBinTableVar
+c0a32bb0 g     O .flashrodata	0000000a .hidden generic_edid_pn_pid
+c0a32bc0 g     O .flashrodata	00000100 .hidden edid_640_480
+c0a32cc0 g     O .flashrodata	00000100 .hidden edid_800_600
+c0a32dc0 g     O .flashrodata	00000100 .hidden edid_1024_768
+c0a32ec0 g     O .flashrodata	00000100 .hidden edid_1280_720
+c0a32fc0 g     O .flashrodata	00000100 .hidden edid_1280_768
+c0a330c0 g     O .flashrodata	00000100 .hidden edid_1280_800
+c0a331c0 g     O .flashrodata	00000100 .hidden edid_1280_1024
+c0a332c0 g     O .flashrodata	00000100 .hidden edid_1360_768
+c0a333c0 g     O .flashrodata	00000100 .hidden edid_1440_900
+c0a334c0 g     O .flashrodata	00000100 .hidden edid_1600_900
+c0a335c0 g     O .flashrodata	00000100 .hidden edid_1680_1050
+c0a336c0 g     O .flashrodata	00000100 .hidden edid_1920_1080
+c0a337c0 g     O .flashrodata	00000100 .hidden edid_1920_1200
+c0a338c0 g     O .flashrodata	00000100 .hidden edid_2560_1600
+c0a339c0 g     O .flashrodata	00000100 .hidden edid_3840_2160
+c0a33ac0 g     O .flashrodata	00000008 .hidden aquantiaShortReachMode.lto_priv.482
+c0a33ac8 g     O .flashrodata	00000008 .hidden aquantiaTestModeControl.lto_priv.481
+c0a33ad0 g     O .flashrodata	00000008 .hidden aquantiaTransmitterTestFrequencies.lto_priv.480
+c0a33ad8 g     O .flashrodata	00000008 .hidden aquantiaFastRetrainAbility.lto_priv.479
+c0a33ae0 g     O .flashrodata	00000008 .hidden aquantiaFastRetrainEnable.lto_priv.478
+c0a33ae8 g     O .flashrodata	00000008 .hidden aquantiaTestModeRate.lto_priv.477
+c0a33af0 g     O .flashrodata	00000008 .hidden aquantiaPmaDigitalSystemLoopback.lto_priv.476
+c0a33af8 g     O .flashrodata	00000008 .hidden aquantiaExternalPhyLoopback.lto_priv.475
+c0a33b00 g     O .flashrodata	00000008 .hidden aquantiaEnableFastRetrain.lto_priv.474
+c0a33b08 g     O .flashrodata	00000008 .hidden aquantiaForceMdiConfiguration.lto_priv.473
+c0a33b10 g     O .flashrodata	00000008 .hidden aquantiaMdiConfiguration.lto_priv.472
+c0a33b18 g     O .flashrodata	00000008 .hidden aquantiaPcsLoopback.lto_priv.471
+c0a33b20 g     O .flashrodata	00000008 .hidden aquantia10GSpeedSelection.lto_priv.470
+c0a33b28 g     O .flashrodata	00000008 .hidden aquantiaTxScramblerDisable.lto_priv.469
+c0a33b30 g     O .flashrodata	00000008 .hidden aquantiaTxInjectCrcError.lto_priv.468
+c0a33b38 g     O .flashrodata	00000008 .hidden aquantiaTxInjectFrameError.lto_priv.467
+c0a33b40 g     O .flashrodata	00000008 .hidden aquantiaRxErrorLdpcFrameEnable.lto_priv.466
+c0a33b48 g     O .flashrodata	00000008 .hidden aquantiaRxLdpcDecoderControl.lto_priv.465
+c0a33b50 g     O .flashrodata	00000008 .hidden aquantiaXsLoopback.lto_priv.464
+c0a33b58 g     O .flashrodata	00000008 .hidden aquantiaReceiveTestPatternEnable.lto_priv.463
+c0a33b60 g     O .flashrodata	00000008 .hidden aquantiaPhyOperatingMode.lto_priv.462
+c0a33b68 g     O .flashrodata	00000008 .hidden aquantiaTestPatternSelect.lto_priv.461
+c0a33b70 g     O .flashrodata	00000008 .hidden aquantiaLoopbackControl.lto_priv.460
+c0a33b78 g     O .flashrodata	00000008 .hidden aquantiaMdiPacketGeneration.lto_priv.459
+c0a33b80 g     O .flashrodata	00000008 .hidden aquantiaXsSystemIFPacketGeneration.lto_priv.458
+c0a33b88 g     O .flashrodata	00000008 .hidden aquantiaRate.lto_priv.457
+c0a33b90 g     O .flashrodata	00000008 .hidden aquantiaTestPatternForceError.lto_priv.453
+c0a33b98 g     O .flashrodata	00000008 .hidden aquantiaTestPatternMode7ForceError.lto_priv.452
+c0a33ba0 g     O .flashrodata	00000008 .hidden aquantiaXAUIRxLocalFaultInjection.lto_priv.451
+c0a33ba8 g     O .flashrodata	00000008 .hidden aquantiaTestPatternExtendedSelect.lto_priv.450
+c0a33bb0 g     O .flashrodata	00000008 .hidden aquantiaTestPatternCheckEnable.lto_priv.449
+c0a33bb8 g     O .flashrodata	00000008 .hidden aquantiaTestPatternCheckPoint.lto_priv.448
+c0a33bc0 g     O .flashrodata	00000008 .hidden aquantiaTestPatternInsertExtraIdles.lto_priv.447
+c0a33bc8 g     O .flashrodata	00000008 .hidden aquantiaTestPatternCheckSelect.lto_priv.446
+c0a33bd0 g     O .flashrodata	00000008 .hidden aquantiaTestPatternChannelSelect.lto_priv.445
+c0a33bd8 g     O .flashrodata	00000008 .hidden aquantiaChannel0TestPatternErrorCounter.lto_priv.444
+c0a33be0 g     O .flashrodata	00000008 .hidden aquantiaChannel1TestPatternErrorCounter.lto_priv.443
+c0a33be8 g     O .flashrodata	00000008 .hidden aquantiaChannel2TestPatternErrorCounter.lto_priv.442
+c0a33bf0 g     O .flashrodata	00000008 .hidden aquantiaChannel3TestPatternErrorCounter.lto_priv.441
+c0a33bf8 g     O .flashrodata	00000008 .hidden aquantiaTestPatternMode7ErrorCounter.lto_priv.440
+c0a33c00 g     O .flashrodata	00000008 .hidden aquantiaXauiTxErrorInjectionLaneSelect.lto_priv.439
+c0a33c08 g     O .flashrodata	00000008 .hidden aquantiaXauiTxInjectSynchronizationError.lto_priv.438
+c0a33c10 g     O .flashrodata	00000008 .hidden aquantiaXauiTxInjectAlignmentError.lto_priv.437
+c0a33c18 g     O .flashrodata	00000008 .hidden aquantiaXauiTxInjectCodeViolation.lto_priv.436
+c0a33c20 g     O .flashrodata	00000008 .hidden aquantiaXauiTx10BViolationCodeword.lto_priv.435
+c0a33c28 g     O .flashrodata	00000008 .hidden aquantiaPhyXsSystemLoopbackPassThrough.lto_priv.434
+c0a33c30 g     O .flashrodata	00000008 .hidden aquantiaPhyXsSystemLoopbackEnable.lto_priv.433
+c0a33c38 g     O .flashrodata	00000008 .hidden aquantiaXauiTxLocalFaultInjection.lto_priv.432
+c0a33c40 g     O .flashrodata	00000008 .hidden aquantiaRestartAutonegotiation.lto_priv.431
+c0a33c48 g     O .flashrodata	00000008 .hidden aquantiaSerdesStartUpMode.lto_priv.430
+c0a33c50 g     O .flashrodata	00000008 .hidden aquantiaAutonegotiationTimeout.lto_priv.429
+c0a33c58 g     O .flashrodata	00000008 .hidden aquantiaAutonegotiationTimeoutMod.lto_priv.428
+c0a33c60 g     O .flashrodata	00000008 .hidden aquantiaLinkPartner1000BaseTFullDuplexAbility.lto_priv.427
+c0a33c68 g     O .flashrodata	00000008 .hidden aquantiaLinkPartner1000BaseTHalfDuplexAbility.lto_priv.426
+c0a33c70 g     O .flashrodata	00000008 .hidden aquantiaLinkPartnerShortReach.lto_priv.425
+c0a33c78 g     O .flashrodata	00000008 .hidden aquantiaLinkPartnerAqRateDownshiftCapability.lto_priv.424
+c0a33c80 g     O .flashrodata	00000008 .hidden aquantiaLinkPartner5G.lto_priv.423
+c0a33c88 g     O .flashrodata	00000008 .hidden aquantiaLinkPartner2G.lto_priv.422
+c0a33c90 g     O .flashrodata	00000008 .hidden aquantiaLinkPartner.lto_priv.421
+c0a33c98 g     O .flashrodata	00000008 .hidden aquantiaAutonegotiationProtocolErrorState.lto_priv.420
+c0a33ca0 g     O .flashrodata	00000008 .hidden aquantiaFlpIdleErrorState.lto_priv.419
+c0a33ca8 g     O .flashrodata	00000008 .hidden aquantiaEnableDiagnostics.lto_priv.418
+c0a33cb0 g     O .flashrodata	00000008 .hidden aquantiaHighTempFailureThreshold.lto_priv.417
+c0a33cb8 g     O .flashrodata	00000008 .hidden aquantiaLowTempFailureThreshold.lto_priv.416
+c0a33cc0 g     O .flashrodata	00000008 .hidden aquantiaHighTempWarningThreshold.lto_priv.415
+c0a33cc8 g     O .flashrodata	00000008 .hidden aquantiaLowTempWarningThreshold.lto_priv.414
+c0a33cd0 g     O .flashrodata	00000008 .hidden aquantiaDiagnosticsSelect.lto_priv.413
+c0a33cd8 g     O .flashrodata	00000008 .hidden aquantiaExtendedMdiDiagnosticsSelect.lto_priv.412
+c0a33ce0 g     O .flashrodata	00000008 .hidden aquantiaInitiateCableDiagnostics.lto_priv.411
+c0a33ce8 g     O .flashrodata	00000008 .hidden aquantiaEnableVddPowerSupplyTuning.lto_priv.410
+c0a33cf0 g     O .flashrodata	00000008 .hidden aquantiaTunableExternalVddPowerSupplyPresent.lto_priv.409
+c0a33cf8 g     O .flashrodata	00000008 .hidden aquantiaExternalVddChangeRequest.lto_priv.408
+c0a33d00 g     O .flashrodata	00000008 .hidden aquantiaEnable5ChannelRfiCancellation.lto_priv.407
+c0a33d08 g     O .flashrodata	00000008 .hidden aquantiaRateTransitionRequest.lto_priv.406
+c0a33d10 g     O .flashrodata	00000008 .hidden aquantiaTrainingSnr.lto_priv.405
+c0a33d18 g     O .flashrodata	00000008 .hidden aquantiaGlbLoopbackControl.lto_priv.404
+c0a33d20 g     O .flashrodata	00000008 .hidden aquantiaGlbMdiPacketGeneration.lto_priv.403
+c0a33d28 g     O .flashrodata	00000008 .hidden aquantiaGlbSystemIFPacketGeneration.lto_priv.402
+c0a33d30 g     O .flashrodata	00000008 .hidden aquantiaGlobalReservedProvisioningRate.lto_priv.401
+c0a33d38 g     O .flashrodata	00000008 .hidden aquantiaPairAStatus.lto_priv.400
+c0a33d40 g     O .flashrodata	00000008 .hidden aquantiaPairBStatus.lto_priv.399
+c0a33d48 g     O .flashrodata	00000008 .hidden aquantiaPairCStatus.lto_priv.398
+c0a33d50 g     O .flashrodata	00000008 .hidden aquantiaPairDStatus.lto_priv.397
+c0a33d58 g     O .flashrodata	00000008 .hidden aquantiaStatusPairAReflection1.lto_priv.396
+c0a33d60 g     O .flashrodata	00000008 .hidden aquantiaStatusPairAReflection2.lto_priv.395
+c0a33d68 g     O .flashrodata	00000008 .hidden aquantiaImpulseResponseMsw.lto_priv.394
+c0a33d70 g     O .flashrodata	00000008 .hidden aquantiaStatusPairBReflection1.lto_priv.393
+c0a33d78 g     O .flashrodata	00000008 .hidden aquantiaStatusPairBReflection2.lto_priv.392
+c0a33d80 g     O .flashrodata	00000008 .hidden aquantiaImpulseResponseLsw.lto_priv.391
+c0a33d88 g     O .flashrodata	00000008 .hidden aquantiaStatusPairCReflection1.lto_priv.390
+c0a33d90 g     O .flashrodata	00000008 .hidden aquantiaStatusPairCReflection2.lto_priv.389
+c0a33d98 g     O .flashrodata	00000008 .hidden aquantiaStatusPairDReflection1.lto_priv.388
+c0a33da0 g     O .flashrodata	00000008 .hidden aquantiaStatusPairDReflection2.lto_priv.387
+c0a33da8 g     O .flashrodata	00000008 .hidden aquantiaProcessorIntensiveOperationInProgress.lto_priv.386
+c0a33db0 g     O .flashrodata	00000008 .hidden aquantiaCableLength.lto_priv.385
+c0a33db8 g     O .flashrodata	00000008 .hidden aquantiaGlbLoopbackStatus.lto_priv.384
+c0a33dc0 g     O .flashrodata	00000008 .hidden aquantiaMdiPacketGenerationStatus.lto_priv.383
+c0a33dc8 g     O .flashrodata	00000008 .hidden aquantiaGlbSystemIFPacketGenerationStatus.lto_priv.382
+c0a33dd0 g     O .flashrodata	00000008 .hidden aquantiaGlobalReservedStatusRate.lto_priv.381
+c0a33dd8 g       *ABS*	00000000 __pgmbb_start
+c0a33dd8 g       .pgmbb	00000000 _binary____program_programBB_bin_programBB_bin_start
+c0a33dd8 g       .pgmbb	00000000 __pgmbb_dst
+c0a33dd8 l       *ABS*	00000000 __bb_fw_end
+c0a33dd8 l    d  .pgmbb	00000000 .pgmbb
+c0a3ef1c g       *ABS*	00000000 __ge_flshwtr_start
+c0a3ef1c g       .ge_flshwtr	00000000 _binary____bb_ge_ge_asic_bb_companion_debug_bin_flash_writer_bin_start
+c0a3ef1c g       .pgmbb	00000000 _binary____program_programBB_bin_programBB_bin_end
+c0a3ef1c l       *ABS*	00000000 __pgmbb_end
+c0a3ef1c l    d  .ge_flshwtr	00000000 .ge_flshwtr
+c0a40454 g       *ABS*	00000000 __ge_fw_start
+c0a40454 g       .ge_flshwtr	00000000 _binary____bb_ge_ge_asic_bb_companion_debug_bin_flash_writer_bin_end
+c0a40454 g       .ge_fw	00000000 _binary____bb_ge_ge_asic_bb_companion_debug_bin_ge_asic_bb_companion_debug_bin_start
+c0a40454 l       *ABS*	00000000 __ge_flshwtr_end
+c0a40454 l    d  .ge_fw	00000000 .ge_fw
+c0a5ca28 g       *ABS*	00000000 curr_flash_pos
+c0a5ca28 g       .ge_fw	00000000 _binary____bb_ge_ge_asic_bb_companion_debug_bin_ge_asic_bb_companion_debug_bin_end
+c0a5ca28 l       *ABS*	00000000 __ge_fw_end
+SYMBOL TABLE:

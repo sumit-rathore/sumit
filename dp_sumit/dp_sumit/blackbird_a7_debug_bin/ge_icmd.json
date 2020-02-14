@@ -1,0 +1,1078 @@
+{
+    "TOPLEVEL_COMPONENT": {
+        "xmodem_new_image": {
+            "function_index": 0,
+            "icmd_help_string": "Send a new image over xmodem and then run it",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "PrintSwVersion": {
+            "function_index": 1,
+            "icmd_help_string": "Print out the current software version and build date/time",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "TOPLEVEL_printDeviceType": {
+            "function_index": 2,
+            "icmd_help_string": "Prints whether this device is a LEX or a REX.",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "TOPLEVEL_getEcoStatus": {
+            "function_index": 3,
+            "icmd_help_string": "Prints the status of ECO Flag, (1 = ECO detected).",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "TOPLEVEL_DEBUG_ASSERT": {
+            "function_index": 4,
+            "icmd_help_string": "CAUSE AN ASSERT IN GE FOR DEBUGGING",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        }
+    },
+    "LINKMGR_COMPONENT": {
+        "icmdGetPhyStatus": {
+            "function_index": 0,
+            "icmd_help_string": "Read and decode the PHY control and status registers",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "showLinkState": {
+            "function_index": 1,
+            "icmd_help_string": "Show the states of the link managers",
+            "icmd_argument_type": [
+                "void"
+            ]
+        }
+    },
+    "SYS_CTRL_Q_COMPONENT": {
+        "showExpectedPacket": {
+            "function_index": 0,
+            "icmd_help_string": "Show the expected packet for a particular USB address that has BCO/BCI set",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        }
+    },
+    "DESCPARSER_COMPONENT": {
+        "enableMsaParsing": {
+            "function_index": 0,
+            "icmd_help_string": "Enable MSA Parsing",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "disableMsaParsing": {
+            "function_index": 1,
+            "icmd_help_string": "Disable MSA Parsing",
+            "icmd_argument_type": [
+                "void"
+            ]
+        }
+    },
+    "VHUB_COMPONENT": {
+        "vhubReadState": {
+            "function_index": 0,
+            "icmd_help_string": "Read the vhub state variables",
+            "icmd_argument_type": [
+                "void"
+            ]
+        }
+    },
+    "REXULM_COMPONENT": {
+        "REXULM_showCurrentState": {
+            "function_index": 0,
+            "icmd_help_string": "Show the current Rex ULM states",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "REXULM_adjustPrefetchTimer": {
+            "function_index": 1,
+            "icmd_help_string": "Changes the prefetch timer timeout value",
+            "icmd_argument_type": [
+                "uint32"
+            ]
+        },
+        "REXULM_adjustConnectTimer": {
+            "function_index": 2,
+            "icmd_help_string": "Changes the connect timer timeout value",
+            "icmd_argument_type": [
+                "uint32"
+            ]
+        }
+    },
+    "NETCFG_COMPONENT": {},
+    "NET_COMPONENT": {
+        "NET_icmdSetIPv4Configuration": {
+            "function_index": 0,
+            "icmd_help_string": "Set the IPv4 configuration (IP Address, Subnet Mask, Default Gateway)",
+            "icmd_argument_type": [
+                "uint32",
+                "uint32",
+                "uint32"
+            ]
+        },
+        "NET_icmdViewIPv4Configuration": {
+            "function_index": 1,
+            "icmd_help_string": "View the IPv4 configuration",
+            "icmd_argument_type": [
+                "void"
+            ]
+        }
+    },
+    "TOPOLOGY_COMPONENT": {
+        "_DTT_showDeviceXSST": {
+            "function_index": 0,
+            "icmd_help_string": "Show the XSST entry for a single device: Argument is the logical address",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        },
+        "_DTT_showAllDeviceXSST": {
+            "function_index": 1,
+            "icmd_help_string": "Show the XSST entry for all devices in-sys",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "DEPRECATED_ShowTopologyByUsb": {
+            "function_index": 2,
+            "icmd_help_string": "DEPRECATED",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "_DTT_showAllDeviceTopologyByLA": {
+            "function_index": 3,
+            "icmd_help_string": "Show the topology information for all devices ordered by logical address.  Args: (view <0=compact, 1=verbose>)",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        },
+        "WriteXSSTCmd": {
+            "function_index": 4,
+            "icmd_help_string": "Do a rmw of a word to the XSST: Args USB Address, endpoint, XSST value MSW, mask MSW, XSST value LSW, mask LSW",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8",
+                "uint32",
+                "uint32",
+                "uint32",
+                "uint32"
+            ]
+        },
+        "ShowLat": {
+            "function_index": 5,
+            "icmd_help_string": "Show the LAT entry for a USB address: Argument is the usb address",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        },
+        "ShowXsst": {
+            "function_index": 6,
+            "icmd_help_string": "Show the XSST entry for a Logical address: Arg1 logical address, Arg2 endpoint",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8"
+            ]
+        },
+        "_DTT_XSSTMonStop": {
+            "function_index": 7,
+            "icmd_help_string": "Stop the XSST Monitor",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "_DTT_XSSTMonStart": {
+            "function_index": 8,
+            "icmd_help_string": "Start the XSST Monitor",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "_DTT_showSingleDeviceTopology": {
+            "function_index": 9,
+            "icmd_help_string": "Show the topology information associated with the provided logical address.  Args: (LA, view <0=compact, 1=verbose>)",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8"
+            ]
+        },
+        "_DTT_showAllDeviceTopologyByUSB": {
+            "function_index": 10,
+            "icmd_help_string": "Show the topology information for all devices ordered by USB address.  Args: (view <0=compact, 1=verbose>)",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        }
+    },
+    "REXSCH_COMPONENT": {
+        "REXSCH_Enable": {
+            "function_index": 0,
+            "icmd_help_string": "Enables rex scheduler. Argument: 0 for high speed, 1 for full speed, 2 for low speed",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        },
+        "REXSCH_Disable": {
+            "function_index": 1,
+            "icmd_help_string": "Disables rex scheduler",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "REXMSA_Disp_Stat": {
+            "function_index": 2,
+            "icmd_help_string": "Display the Msa Status",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "ICMD_deprecatedIcmdFunction": {
+            "function_index": 3,
+            "icmd_help_string": "Set the max msa pkt count per microframe",
+            "icmd_argument_type": [
+                "uint32"
+            ]
+        }
+    },
+    "STORAGE_COMPONENT": {
+        "STORAGE_icmdReadVar": {
+            "function_index": 0,
+            "icmd_help_string": "Reads the specified variable. Args: varToRead",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        },
+        "STORAGE_icmdWriteVar": {
+            "function_index": 1,
+            "icmd_help_string": "Writes the specified variable. Args: varToWrite, MSWData, LSWData",
+            "icmd_argument_type": [
+                "uint8",
+                "uint32",
+                "uint32"
+            ]
+        },
+        "STORAGE_icmdRemoveVar": {
+            "function_index": 2,
+            "icmd_help_string": "Removes the specified variable. Args: varToRemove",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        },
+        "STORAGE_icmdDumpAllVars": {
+            "function_index": 3,
+            "icmd_help_string": "Show all persistent variables",
+            "icmd_argument_type": [
+                "void"
+            ]
+        }
+    },
+    "EEPROM_COMPONENT": {
+        "EEPROM_icmdReadPage": {
+            "function_index": 0,
+            "icmd_help_string": "Reads the specified page. Args: Page to read, display as words as boolean",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8"
+            ]
+        },
+        "EEPROM_icmdWritePage": {
+            "function_index": 1,
+            "icmd_help_string": "Writes the specified page. Args: page to write, msw0, lsw0, msw1, lsw1",
+            "icmd_argument_type": [
+                "uint8",
+                "uint32",
+                "uint32",
+                "uint32",
+                "uint32"
+            ]
+        }
+    },
+    "ATMEL_CRYPTO_COMPONENT": {
+        "atmel_icmdSend": {
+            "function_index": 0,
+            "ICMDRESP": {
+                "icmdresp_name": "sendAtmelCmd",
+                "ilog_name": "READ_BYTE",
+                "icmdresp_argument_index_list": [
+                    0
+                ]
+            },
+            "icmd_help_string": "Do an I2C transaction to the Atmel Chip. Args: opcode, param1, param2, resultReadSize, operationExecutionTime",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8",
+                "uint16",
+                "uint8",
+                "uint32"
+            ]
+        },
+        "atmel_icmdWithDataWordSend": {
+            "function_index": 1,
+            "ICMDRESP": {
+                "icmdresp_name": "sendAtmelCmdWithData",
+                "ilog_name": "READ_BYTE",
+                "icmdresp_argument_index_list": [
+                    0
+                ]
+            },
+            "icmd_help_string": "Do an I2C transaction to the Atmel Chip. Args: opcode, param1, param2, data, resultReadSize, operationExecutionTime",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8",
+                "uint16",
+                "uint32",
+                "uint8",
+                "uint32"
+            ]
+        },
+        "atmel_setSpeed": {
+            "function_index": 2,
+            "icmd_help_string": "Set the speed for i2c transactions to the Atmel chip: 0 is slow, 1 is fast, 2 is fast+",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        },
+        "atmel_setICmdWriteDataBuffer": {
+            "function_index": 3,
+            "icmd_help_string": "Writes one word into the 8 word wide data slot write buffer. Args: wordOffset, word",
+            "icmd_argument_type": [
+                "uint8",
+                "uint32"
+            ]
+        },
+        "atmel_writeDataSlotFromBuffer": {
+            "function_index": 4,
+            "icmd_help_string": "Writes the incrementally constructed data slot buffer to the given slot. Args: slotNumber",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        },
+        "atmel_readConfigWordIcmd": {
+            "function_index": 5,
+            "icmd_help_string": "Reads a single 32bit word from the configuration settings. Args: byteOffset - must be divisible by 4",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        },
+        "atmel_writeConfigWordIcmd": {
+            "function_index": 6,
+            "icmd_help_string": "Writes a single 32bit word to the configuration settings. Args: byteOffset - must be divisible by 4, data",
+            "icmd_argument_type": [
+                "uint8",
+                "uint32"
+            ]
+        },
+        "atmel_isChipLockedIcmd": {
+            "function_index": 7,
+            "icmd_help_string": "Checks to see if the config and data+otp zones are locked. Args:",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "atmel_lockConfigZoneIcmd": {
+            "function_index": 8,
+            "icmd_help_string": "Locks the config zone of the authentication chip. Args: configuration zone CRC",
+            "icmd_argument_type": [
+                "uint16"
+            ]
+        },
+        "atmel_lockDataAndOtpZonesIcmd": {
+            "function_index": 9,
+            "icmd_help_string": "Locks the data and OTP zones of the authentication chip. Args: data and OTP zone CRC",
+            "icmd_argument_type": [
+                "uint16"
+            ]
+        }
+    },
+    "XCSR_COMPONENT": {
+        "icmdReadQueueStats": {
+            "function_index": 0,
+            "icmd_help_string": "Read queue statistics (frame count, word count etc), arg is qid",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        },
+        "icmdReadCacheStats": {
+            "function_index": 1,
+            "icmd_help_string": "Read cache statistics",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "icmdReadQueueFrame": {
+            "function_index": 2,
+            "icmd_help_string": "Read a frame or 32 words from qid",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        },
+        "icmdXSSTWriteLat": {
+            "function_index": 3,
+            "icmd_help_string": "Write to the XSST LAT, args: usbAddress, endPoint, value",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8",
+                "uint32"
+            ]
+        },
+        "icmdXSSTWriteSST": {
+            "function_index": 4,
+            "icmd_help_string": "Write to the XSST, args: usbAddress, endPoint, valueMSW, valueLSW",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8",
+                "uint32",
+                "uint32"
+            ]
+        },
+        "icmdXSSTReadAll": {
+            "function_index": 5,
+            "icmd_help_string": "Read the XSST, args: usbAddress, endPoint",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8"
+            ]
+        },
+        "icmdWriteQueueFrame": {
+            "function_index": 6,
+            "icmd_help_string": "Write a frame (arg1 frameheader 0:generic 1:cpuTocpu 3:downstream 4:upstream 5:other; arg2 number of bytes)",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8"
+            ]
+        },
+        "icmdSendMessage": {
+            "function_index": 7,
+            "icmd_help_string": "Send a message over the link by CPU TX Q: args (msgType, msg, Vport)",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8",
+                "uint8"
+            ]
+        },
+        "icmdSendMessageWithData": {
+            "function_index": 8,
+            "icmd_help_string": "Send a message over the link by CPU TX Q: args (msgType, msg, Vport, Data)",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint32"
+            ]
+        },
+        "icmdSendMessageWithExtraData": {
+            "function_index": 9,
+            "icmd_help_string": "Send a message over the link by CPU TX Q: args (msgType, msg, Vport, Data, ExtraDataMSW, ExtraDataLSW)",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint32",
+                "uint32",
+                "uint32"
+            ]
+        },
+        "XSSTConfigureMSA": {
+            "function_index": 10,
+            "icmd_help_string": "Configure the XSST table for MSA, args: usbAddr, inEndpoint, outEndpoint",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8",
+                "uint8"
+            ]
+        },
+        "icmdXSSTReadModifyWriteSST": {
+            "function_index": 11,
+            "icmd_help_string": "Read-Modify-Write to the XSST, args: usbAddress, endPoint, valueMSW, valueLSW, maskMSW, maskLSW",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8",
+                "uint32",
+                "uint32",
+                "uint32",
+                "uint32"
+            ]
+        }
+    },
+    "XLR_COMPONENT": {
+        "msaReadLat": {
+            "function_index": 0,
+            "icmd_help_string": "Read the MSA LAT, arg is usb address",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        },
+        "msaWriteLat": {
+            "function_index": 1,
+            "icmd_help_string": "Write the MSA LAT, args are usbAddress, MSA LA, valid",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8",
+                "uint8"
+            ]
+        },
+        "msaReadPtrTableICmd": {
+            "function_index": 2,
+            "icmd_help_string": "Read the MSA pointer table, args are usb address, endpoint",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8"
+            ]
+        },
+        "msaWritePtrTable": {
+            "function_index": 3,
+            "icmd_help_string": "Write the MSA pointer table, arges are usb Address, endpoint, pointer",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8",
+                "uint8"
+            ]
+        },
+        "msaAllocatePtr": {
+            "function_index": 4,
+            "icmd_help_string": "Allocate a new MSA status table pointer",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "XLR_msaFreePtr": {
+            "function_index": 5,
+            "icmd_help_string": "Free an MSA status table pointer",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        },
+        "msaClearStatusTable": {
+            "function_index": 6,
+            "icmd_help_string": "Clear the status table entry, args are usbAddr, endpoint",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8"
+            ]
+        }
+    },
+    "XRR_COMPONENT": {
+        "XRR_SOFEnable": {
+            "function_index": 0,
+            "icmd_help_string": "Enable SOFs on the Rex",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "XRR_SOFDisable": {
+            "function_index": 1,
+            "icmd_help_string": "Disable SOFs on the Rex",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "XRR_EnableInterruptSOF": {
+            "function_index": 2,
+            "icmd_help_string": "Enable SOF interrupt",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "XRR_DisableInterruptSOF": {
+            "function_index": 3,
+            "icmd_help_string": "Disable SOF interrupt",
+            "icmd_argument_type": [
+                "void"
+            ]
+        }
+    },
+    "CLM_COMPONENT": {
+        "CLM_LogRxStats": {
+            "function_index": 0,
+            "icmd_help_string": "Log the RX Stats register",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "CLM_LogTxStats": {
+            "function_index": 1,
+            "icmd_help_string": "Log the TX Stats register",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "CLM_AdjustTxWaitForRespLimit": {
+            "function_index": 2,
+            "icmd_help_string": "Adjust TX wait for response limit, args: limit, CntThresh",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8"
+            ]
+        },
+        "CLM_AdjustTxQidThresh": {
+            "function_index": 3,
+            "icmd_help_string": "Adjust TX QID Threshold. IE # of packets in flight (1-15)",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        }
+    },
+    "ULM_COMPONENT": {
+        "ULM_ConnectRexUsbPort": {
+            "function_index": 0,
+            "icmd_help_string": "Connect the USB port on the Rex",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "ULM_ConnectLexUsbPort": {
+            "function_index": 1,
+            "icmd_help_string": "Connect the USB port on the Lex. Arg: connection speed; 0 for HS, 1 for FS, 2 for LS",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        },
+        "ULM_DisconnectUsbPort": {
+            "function_index": 2,
+            "icmd_help_string": "Disconnect the USB port",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "ULM_GenerateRexUsbReset": {
+            "function_index": 3,
+            "icmd_help_string": "Generate a USB reset on the Rex. Arg: ULM speed; 0 for HS, 1 for FS, 2 for LS",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        },
+        "ULM_GenerateRexUsbResume": {
+            "function_index": 4,
+            "icmd_help_string": "Generate a USB resume on the Rex",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "ULM_GenerateLexUsbRemoteWakeup": {
+            "function_index": 5,
+            "icmd_help_string": "Generate a Lex USB remote wakeup",
+            "icmd_argument_type": [
+                "void"
+            ]
+        }
+    },
+    "GRG_COMPONENT": {
+        "icmdMdioWrite": {
+            "function_index": 0,
+            "icmd_help_string": "Write to MDIO: 1st arg device, 2nd arg address, 3rd arg data",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8",
+                "uint16"
+            ]
+        },
+        "icmdMdioRead": {
+            "function_index": 1,
+            "icmd_help_string": "Read from MDIO: 1st arg device, 2nd arg address",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8"
+            ]
+        },
+        "icmdPLLMeasure": {
+            "function_index": 2,
+            "icmd_help_string": "Measure the PLL: arg is spectareg pll selection",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        },
+        "GRG_ResetChip": {
+            "function_index": 3,
+            "icmd_help_string": "Reset the Chip",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "mdioI2cStatus": {
+            "function_index": 4,
+            "icmd_help_string": "Check the MDIO/I2C state of where it is in processing ASync operations",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "i2cWrite": {
+            "function_index": 5,
+            "icmd_help_string": "Write to i2c, args: bus, device, speed, dataMSW, dataLSW, byteCount",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint32",
+                "uint32",
+                "uint8"
+            ]
+        },
+        "i2cRead": {
+            "function_index": 6,
+            "icmd_help_string": "Write to i2c, args: bus, device, speed, byteCount",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8"
+            ]
+        },
+        "i2cWake": {
+            "function_index": 7,
+            "icmd_help_string": "Write to i2c, args: bus",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        },
+        "i2cWriteRead": {
+            "function_index": 8,
+            "icmd_help_string": "Write then read i2c.  SMBus read, args: bus, device, speed, writeByteCount, dataWrite, readByteCount",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint32",
+                "uint8"
+            ]
+        },
+        "i2cWriteReadBlock": {
+            "function_index": 9,
+            "icmd_help_string": "Write then read i2c.  SMBus read block, args: bus, device, speed, writeByteCount, dataWrite",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint8",
+                "uint32"
+            ]
+        },
+        "icmdDivide": {
+            "function_index": 10,
+            "ICMDRESP": {
+                "icmdresp_name": "divide16bit",
+                "ilog_name": "INT16_DIVIDE",
+                "icmdresp_argument_index_list": [
+                    0,
+                    1
+                ]
+            },
+            "icmd_help_string": "16 bit integer division: 1st arg numerator, 2nd arg denominator",
+            "icmd_argument_type": [
+                "uint16",
+                "uint16"
+            ]
+        },
+        "icmdMultiply": {
+            "function_index": 11,
+            "ICMDRESP": {
+                "icmdresp_name": "multiply16bit",
+                "ilog_name": "INT16_MULTIPLY",
+                "icmdresp_argument_index_list": [
+                    0
+                ]
+            },
+            "icmd_help_string": "16 bit multiplication with 32 bit result. Multiplies arg1 by arg 2",
+            "icmd_argument_type": [
+                "uint16",
+                "uint16"
+            ]
+        },
+        "icmdPLLFreq": {
+            "function_index": 12,
+            "icmd_help_string": "Measure the PLL and see its frequency in MHz. Arg is the spectareg pll selection",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        },
+        "icmdMdioWriteSync": {
+            "function_index": 13,
+            "icmd_help_string": "Synchronously write to MDIO: 1st arg device, 2nd arg address, 3rd arg data",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8",
+                "uint16"
+            ]
+        },
+        "icmdMdioReadSync": {
+            "function_index": 14,
+            "icmd_help_string": "Synchronously read from MDIO: 1st arg device, 2nd arg address",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8"
+            ]
+        },
+        "GRG_PrintPlatformAndVariantId": {
+            "function_index": 15,
+            "icmd_help_string": "Prints the platform and variant id",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "ledSetLocatorLedsPattern": {
+            "function_index": 16,
+            "icmd_help_string": "Set LED locator pattern",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "ledClearLocatorLedsPattern": {
+            "function_index": 17,
+            "icmd_help_string": "Clear LED locator pattern",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "ledTurnOn": {
+            "function_index": 18,
+            "icmd_help_string": "Turn on LED id: Activity=0, Host=1, Link=2",
+            "icmd_argument_type": [
+                "uint16"
+            ]
+        },
+        "ledTurnOff": {
+            "function_index": 19,
+            "icmd_help_string": "Turn off LED id: Activity=0, Host=1, Link=2",
+            "icmd_argument_type": [
+                "uint16"
+            ]
+        },
+        "ledToggle": {
+            "function_index": 20,
+            "icmd_help_string": "Arg1:id: Activity=0, Host=1, Link=2;    Arg2: Rate: Fast=0, Slow=1",
+            "icmd_argument_type": [
+                "uint16",
+                "uint16"
+            ]
+        }
+    },
+    "TIMING_COMPONENT": {
+        "showTimers": {
+            "function_index": 0,
+            "icmd_help_string": "Show all timers",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "startTimer": {
+            "function_index": 1,
+            "icmd_help_string": "Start a timer",
+            "icmd_argument_type": [
+                "uint32"
+            ]
+        },
+        "stopTimer": {
+            "function_index": 2,
+            "icmd_help_string": "Stop a timer",
+            "icmd_argument_type": [
+                "uint32"
+            ]
+        },
+        "changeTimeout": {
+            "function_index": 3,
+            "icmd_help_string": "Change a timer timeout value.  Args: timer, newTimeoutValue",
+            "icmd_argument_type": [
+                "uint32",
+                "uint32"
+            ]
+        }
+    },
+    "TASKSCH_COMPONENT": {
+        "viewTasks": {
+            "function_index": 0,
+            "icmd_help_string": "View all the current tasks",
+            "icmd_argument_type": [
+                "void"
+            ]
+        }
+    },
+    "RANDOM_COMPONENT": {
+        "RANDOM_AddEntropy": {
+            "function_index": 0,
+            "icmd_help_string": "Add Entropy to random number generator",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        },
+        "getQuickPseudoRandom": {
+            "function_index": 1,
+            "icmd_help_string": "Get a quick pseudo random number",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "RANDOM_QuickPseudoRandomNewSeed": {
+            "function_index": 2,
+            "icmd_help_string": "Write a new seed into the quick pseudo random # generator",
+            "icmd_argument_type": [
+                "uint32"
+            ]
+        }
+    },
+    "ILOG_COMPONENT": {
+        "ilog_SetLevel": {
+            "function_index": 0,
+            "icmd_help_string": "Set the ilog logging level of any component: 1st arg level, 2nd arg component",
+            "icmd_argument_type": [
+                "uint8",
+                "component_t"
+            ]
+        },
+        "ilog_icmdGetLevel": {
+            "function_index": 1,
+            "icmd_help_string": "Get the ilog logging level of any component",
+            "icmd_argument_type": [
+                "component_t"
+            ]
+        },
+        "ilog_setBlockingMode": {
+            "function_index": 2,
+            "icmd_help_string": "Put ilog into a blocking logging mode",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "ilog_clearBlockingMode": {
+            "function_index": 3,
+            "icmd_help_string": "Put ilog into normal logging mode",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "testAssert3": {
+            "function_index": 4,
+            "icmd_help_string": "Test the assert function with 3 args",
+            "icmd_argument_type": [
+                "uint32",
+                "uint32",
+                "uint32"
+            ]
+        },
+        "testStackOverFlow": {
+            "function_index": 5,
+            "icmd_help_string": "Test the assert function by creating a stack overflow (Creates a SPARC register window overflow)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "assertStatus": {
+            "function_index": 6,
+            "icmd_help_string": "Check the status of the assert module",
+            "icmd_argument_type": [
+                "void"
+            ]
+        }
+    },
+    "ICMD_COMPONENT": {
+        "readMemory": {
+            "function_index": 0,
+            "ICMDRESP": {
+                "icmdresp_name": "read32",
+                "ilog_name": "BASE_READ_MEM",
+                "icmdresp_argument_index_list": [
+                    1
+                ]
+            },
+            "icmd_help_string": "Read any memory address. Argument: full 32 bit address",
+            "icmd_argument_type": [
+                "uint32"
+            ]
+        },
+        "writeMemory": {
+            "function_index": 1,
+            "icmd_help_string": "Write any memory address. Arguments: full 32 bit address, 32 bit value to write",
+            "icmd_argument_type": [
+                "uint32",
+                "uint32"
+            ]
+        },
+        "readModifyWriteMemory": {
+            "function_index": 2,
+            "icmd_help_string": "Read-Modify-Write any memory address. Arguments: full 32 bit address, 32 bit set mask, 32 bit clear mask",
+            "icmd_argument_type": [
+                "uint32",
+                "uint32",
+                "uint32"
+            ]
+        },
+        "modifyBitfield": {
+            "function_index": 3,
+            "icmd_help_string": "Write data from a given position within any memory address. Arguments: full 32 bit address, 8 bit position to start modifying, 8 bit width to modify, 32 bit value to write",
+            "icmd_argument_type": [
+                "uint32",
+                "uint8",
+                "uint8",
+                "uint32"
+            ]
+        },
+        "dumpMemory32": {
+            "function_index": 4,
+            "icmd_help_string": "Dump data from any number of sequential memory locations. Arguments: full 32 bit address, number of 32bit words to read",
+            "icmd_argument_type": [
+                "uint32",
+                "uint8"
+            ]
+        },
+        "callFunction": {
+            "function_index": 5,
+            "icmd_help_string": "Call any function. Arguments: full 32 bit address, arguments for function(if not needed enter 0)",
+            "icmd_argument_type": [
+                "uint32",
+                "uint32",
+                "uint32",
+                "uint32",
+                "uint32",
+                "uint32"
+            ]
+        },
+        "readMemory16": {
+            "function_index": 6,
+            "icmd_help_string": "Read any memory address. Argument: full 16 bit address",
+            "icmd_argument_type": [
+                "uint32"
+            ]
+        },
+        "writeMemory16": {
+            "function_index": 7,
+            "icmd_help_string": "Write any memory address. Arguments: full 16 bit address, 16 bit value to write",
+            "icmd_argument_type": [
+                "uint32",
+                "uint16"
+            ]
+        },
+        "readModifyWriteMemory16": {
+            "function_index": 8,
+            "icmd_help_string": "Read-Modify-Write any memory address. Arguments: full 16 bit address, 16 bit set mask, 16 bit clear mask",
+            "icmd_argument_type": [
+                "uint32",
+                "uint16",
+                "uint16"
+            ]
+        },
+        "readMemory8": {
+            "function_index": 9,
+            "icmd_help_string": "Read any memory address. Argument: full 32 bit address",
+            "icmd_argument_type": [
+                "uint32"
+            ]
+        },
+        "writeMemory8": {
+            "function_index": 10,
+            "icmd_help_string": "Write any memory address. Arguments: full 32 bit address, 8 bit value to write",
+            "icmd_argument_type": [
+                "uint32",
+                "uint8"
+            ]
+        }
+    }
+}

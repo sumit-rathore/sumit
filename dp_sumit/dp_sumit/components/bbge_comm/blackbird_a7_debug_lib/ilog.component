@@ -1,0 +1,11 @@
+component:BBGE_COMM_COMPONENT
+L:BBGE_COMM_ERROR_BB S:Error: GE communicating BB\n
+L:BBGE_COMM_ERROR_GE S:Error: BB communicating GE\n
+L:BBGE_COMM_GE_ASSERTED S:** GE Asserted!\n
+L:BBGE_COMM_GE_ASSERT_INFO S:GE Assert Info[%d]: 0x%x\n
+L:BBGE_COMM_GE_CRC S:Got Running GE CRC: %x \n
+L:BBGE_COMM_GE_VERSION_MISMATCH S:BB Flash's GE ver[%x] or CRC[%x] doesn't match with Running GE. Start GE automatic update\n
+L:BBGE_COMM_GE_VERSION_MATCH S:Checked BB Flash's GE ver[%x] and CRC[%x] match with Running GE.\n
+L:BBGE_COMM_GE_VERSION S:Got Running GE ver: %d.%d.%d\n
+L:BBGE_COMM_GE_WRONG_INDEX S:storage write to wrong index %d\n
+L:BBGE_COMM_GE_STORAGE_FAIL S:storage send to GE failed\n

@@ -1,0 +1,1159 @@
+component:TOPLEVEL_COMPONENT
+L:SW_VERSION S:----> ICRON Technologies Extreme USB Goldenears Project - Software version v%d.%d.%d <----\n
+L:CHIP_REV S:Chip ID is Major 0x%x, Minor 0x%x, Debug 0x%x\n
+L:THIS_IS_LEX S:This is the Lex\n
+L:THIS_IS_REX S:This is the Rex\n
+L:USB_1_1_SPEED S:Running at USB 1.1 speed\n
+L:USB_2_0_SPEED S:Running at USB 2.0 speed\n
+L:KINTEX_PLATFORM S:This is a Kintex Platform\n
+L:SPARTAN_PLATFORM S:This is a Spartan Platform\n
+L:LINK_INIT_COMPLETE S:----> Link Initialization Complete <----\n
+L:APP_INIT_COMPLETE S:----> App Initialization Complete <----\n
+L:BUILD_DATE S:SW build was done on %04d/%02d/%02d\n
+L:BUILD_TIME S:SW build was done at %02d:%02d:%02d\n
+L:RECEIVED_SOMETHING_ON_CPU_RXQ S:Received control link sub type %d msg %d and data 0x%x on CPU RX Q\n
+L:UNEXPECTED_TRAP S:Unexpected trap occured, PC was 0x%x, nPC was 0x%x\n
+L:UNEXPECTED_TRAP_WITHOUT_WINDOWS S:Unexpected trap occured without spare windows, last i7 is 0x%x, previous was 0x%x, previous to that was 0x%x\n
+L:UNKNOWN_LINK_TYPE_MSG S:Received a link message of unknown type %d.  Message value: %d.\n
+L:GOT_MSG_FOR_LEXULM_OR_VHUB_ON_REX S:Got msg %d for Lexulm or VHub on the Rex\n
+L:GOT_MSG_FOR_REXULM_ON_LEX S:Got msg %d for Rexulm on the Lex\n
+L:CPU_RX_ERR S:CPU RX Q err %d at line %d\n
+L:UNEXPECTED_Q_OPERATION_STATE S:Unexpected queue operation state (%d)\n
+L:ENTERED_CPU_RX_ISR S:Entered the CPU RX ISR\n
+L:RUNNING_CPU_RX_TASK S:Running the CPU RX task in state %d\n
+L:MAC_FAILED S:MAC challenge failed\n
+L:MAC_PASSED S:MAC challenge passed\n
+L:MAC_HAS_INVALID_INDEX S:MAC has invalid index %d\n
+L:INVALID_NETWORK_MODE S:VHub without layer 2 networking is not a supported configuration\n
+L:DISABLING_SYS S:Disabling System\n
+L:UART_BOOT_IN_GE_CORE S:UART boot is not supported by GE core\n
+L:TOPLEVEL_DEVICE_IS_LEX S:This device is a LEX\n
+L:TOPLEVEL_DEVICE_IS_REX S:This device is a REX\n
+L:NO_CFG_VAR_EXISTS S:NO CONFIGURATION VARIABLE EXISTS, USING A DEFAULT SETTING\n
+L:UNKNOWN_PLATFORM S:Unknown platform %d\n
+L:SPARTAN_UON_VARIANT S:Spartan UoN Variant\n
+L:SPARTAN_CORE2300_VARIANT S:Spartan Core2300 Variant\n
+L:ASIC_PLATFORM S:GE ASIC platform\n
+L:UNKNOWN_VARIANT S:Unknown Variant %d\n
+L:I2C_FAILURE S:i2c failure at line %d\n
+L:PENDING_IRQ S:Pending Leon Interrupts: 0x%x\n
+L:ENABLED_IRQ S:Enabled Leon Interrupts: 0x%x\n
+L:DEBUG_BUILD S:This is a debug build\n
+L:UNSUPPORTED_VID S:Unsupported variant ID %d\n
+L:VARIANT_ID S:Variant ID is %d\n
+L:L2_ENABLED_BUT_NO_MAC_ADDR S:Layer 2 framing is enabled but no MAC address is stored! Falling back to direct-link mode.\n
+L:CYPRESS_HX3_PROGRAMMING_FAILURE S:Failed while programming the Cypress HX3 hub firmware.\n
+L:CYPRESS_HX3_PROGRAMMING_SUCCESS S:Cypress HX3 hub firmware successfully programmed.\n
+L:CYPRESS_HX3_NOT_FOUND S:Cypress HX3 hub not found.\n
+L:CYPRESS_HX3_RETRY S:Cypress HX3 NAKed while receiving firmware at offset=%d.  Retry count=%d\n
+L:EEPROM_INSTALLED S:EEPROM is installed\n
+L:EEPROM_NOT_INSTALLED S:EEPROM is not installed\n
+L:ILLEGAL_LINK_TYPE_WITH_2053 S:It is not valid to use link type %d with the ITC2053 ASIC.\n
+L:ECO1_FLAG_VALUE S:ECO flag is %d (1 = ECO detected)\n
+L:DEBUG_ASSERT S:CAUSE AN ASSERT IN GE FOR DEBUGGING\n %x, %x, %x
+component:GEBB_COMM_COMPONENT
+L:GEBB_COMM_ERROR S:Error: GE communication error with BB\n
+component:XMODEM_COMPONENT
+L:XMODEM_INTERRUPT_INIT S:Initializing Xmodem for interrupt driven mode\n
+L:XMODEM_POLLED_INIT S:Initializing Xmodem for polling mode\n
+L:PACKET_RECEIVED_BEFORE_READY S:A packet was received, before xmodem library was ready to receive the packet\n
+component:LINKMGR_COMPONENT
+L:INVALID_MESSAGE S:Invalid message %d at line %d\n
+L:ICMD_DECODE_PHY_CONTROL_REG S:PHY control reg 0x%x\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE1 S:  PHY in reset\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE2 S:  PHY in loopback mode\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE3 S:  PHY auto-negotiate enabled\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE4 S:  PHY auto-negotiate NOT enabled\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE5 S:  PHY in power down mode\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE6 S:  PHY is electrically isolated from GMII\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE7 S:  PHY auto-negotiate restarting\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE8 S:  PHY auto-negotiate restart complete\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE9 S:  PHY full duplex\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE10 S:  PHY half duplex\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE11 S:  PHY collision test enabled\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE12 S:  PHY speed selected 1000Mbps\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE13 S:  PHY speed selected 100Mbps\n
+L:ICMD_DECODE_PHY_CONTROL_REG_DECODE14 S:  PHY speed selected 10Mbps\n
+L:ICMD_DECODE_PHY_STATUS_REG S:PHY status reg 0x%x\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE1 S:  PHY 100BASE-T4 capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE2 S:  PHY 100BASE-TX full duplex capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE3 S:  PHY 100BASE-X half duplex capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE4 S:  PHY 10BASE-T full duplex capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE5 S:  PHY 10BASE-T half duplex capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE6 S:  PHY 100BASE-T2 full duplex capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE7 S:  PHY 100BASE-T2 half duplex capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE8 S:  PHY extended status information in reg 0x0F\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE9 S:  PHY auto-negotiation complete\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE10 S:  PHY remote fault detected\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE11 S:  PHY auto-negotiate capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE12 S:  PHY auto-negotiate NOT capable\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE13 S:  PHY link up\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE14 S:  PHY link down\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE15 S:  PHY jabber condition detected\n
+L:ICMD_DECODE_PHY_STATUS_REG_DECODE16 S:  PHY extended register capabilities\n
+L:PHY_MGR_UNEXPECTED_STATE S:PhyMgr: unexpected state %d at line %d\n
+L:PHY_MGR_LINK_UP S:PhyMgr: link up\n
+L:PHY_MGR_LINK_DOWN S:PhyMgr: link down\n
+L:XUSB_VPORT_LINK_UP S:XUSB Link up on vport %d\n
+L:XUSB_VPORT_LINK_DOWN S:XUSB Link down on vport %d\n
+L:XUSB_SET_STATE S:XUSB Link Manager setting Vport %d to state %d at line %d\n
+L:UNKNOWN_LINK_MODE S:Link manager initialization received an unexpected link mode (%d)\n
+L:MESSAGE_HANDLER_UNDEFINED S:The link manager's message handler is undefined\n
+L:LINKMGR_RECEIVED_MSG S:Received a message (%d) on vport %d\n
+L:LINKMGR_LEX_BROADCAST S:Broadcasted an XUSB announcement message\n
+L:LINKMGR_UNEXPECTED_LINK_MODE S:Execution reached code not intended for this link mode (%d) at line %d\n
+L:LINKMGR_INITIALIZING S:Link manager initializing with link mode = %d\n
+L:LINKMGR_PAIR_BUTTON_EVENT S:Pairing button pressed: %d.  Button state at interrupt: %d\n
+L:LINKMGR_REMOVE_ALL_LINKS S:Removing all stored link pairings.\n
+L:LINKMGR_INVALID_VP_NEG_TIMEOUT S:Reached the vport negotiation timeout in an unexpected state. linkState=%d\n
+L:LINKMGR_EXPECTING_NULL_CALLBACK S:Found an existing callback when trying to set the callbacks to begin=0x%x, end=0x%x\n
+L:LINKMGR_ADD_PAIRING_CALLBACK_EXISTS S:Found an existing callback 0x%x when trying to set the add pairing callback to 0x%x\n
+L:LINKMGR_MLP_ACQUISITION_TIMEOUT S:Timed out while trying to acquire an MLP link.\n
+L:LINKMGR_REX_VP_NEGOTIATION_TIMEOUT S:Timed out while waiting to be assigned a vport.\n
+L:LINKMGR_PAIR_INCOMPATIBLE S:The paired USB extender on vport %d is not compatible with this device.\n
+L:LINKMGR_CHECK_COMPATIBILITY_PAIR S:Checking compatibility against pair with firmware version %d.%d.%d.\n
+L:LINKMGR_CHECK_COMPATIBILITY_LOCAL S:The local firmware version is %d.%d.%d.\n
+L:ICMD_NOT_SUPPORTED_IN_THIS_BUILD S:ICMD is not supported in this build\n
+L:LEX_INVALID_STATE S:LEX state is invalid. Current LEX state is %d\n
+L:LINKMGR_CHECK_CONFIGURATION S:Comparing configuration of LEX: 0x%x, with configuration of REX: 0x%x\n
+L:UNHANDLED_LINK_TYPE S:Unhandled link type %d\n
+L:CRM_PLL_LOSS_OF_LOCK S:CRM PLL loss of lock\n
+L:CTM_PLL_LOSS_OF_LOCK S:CTM PLL loss of lock\n
+L:USELESS_PHY_SETTING S:Useless phy setting\n
+L:PHY_ID2 S:Phy ID 2 is 0x%.4x\n
+L:PHY_ID3 S:Phy ID 3 is 0x%.4x\n
+L:LINK_STATE S:PhyMgr is in state 0x%x, link type is %d, XUSB link manger is in state 0x%x\n
+L:INIT_LINK_TYPE S:PhyMgr Initialization for link type %d\n
+L:LINKMGR_MDIO_OPERATION_ALREADY_ACTIVE S:Submitted an ethernet PHY MDIO operation, when one is active.  Submitted Callback=0x%x, Active Callback=0x%x, Line=%d\n
+L:LINKMGR_INVALID_BUTTON_STATE S:Invalid button state %d on line %d\n
+L:LINKMGR_FOUND_PHY_AT_MDIO_ADDR S:Found a PHY at MDIO address %d\n
+L:LINKMGR_NULL_COMPLETION_HANDLER S:Null completion handler passed, line %d\n
+L:DEPRECATED_LINKMGR_DEBUGX S:__#### DEBUG 0x%x ####__\n
+L:LINKMGR_DEBUG_CLM_FLUSH_Q S:Flushing CLM Queues\n
+L:LINKMGR_VETOING_INCOMPATIBLE_VIDS S:Vetoing connection due to incompatible variant IDs; LexVID = %d, RexVID = %d\n
+L:LINKMGR_PHY_HAS_INVALID_IDENTIFIER S:The ethernet PHY ID2=0x%x and PHY ID3=0x%x are invalid for the ITC2053.\n
+component:PLL_COMPONENT
+L:TBI_125 S:TBI 125MHz\n
+L:GMII_125 S:GMII 125MHz\n
+L:MII_25 S:MII 25MHz\n
+L:RGMII_25 S:RGMII 25MHz\n
+L:RGMII_125 S:RGMII 125MHz\n
+L:NO_IRQ_HANDLER S:No IRQ handler at line %d\n
+L:RMII_50 S:RMII 50MHz\n
+L:CLEI_LOG S:CLEI\n
+L:NO_LOCK_AT_LINE S:Unable to lock PLL %d at line %d\n
+L:EXTERNAL_CLK_ENABLED S:External clock enabled\n
+L:UNHANDLED_CLK_RANGE S:Unhandled ASIC clock range %d\n
+L:CLEI_UNSUPPORTED_ON_KINTEX S:The CLEI link type is unsupported on the Kintex platform\n
+L:RGMII25_UNSUPPORTED_ON_KINTEX S:The RGMII25 link type is unsupported on the Kintex platform\n
+L:CLEI_CTM_INPUT_CLK S:The CLEI operating clock is %d\n
+component:SYS_CTRL_Q_COMPONENT
+L:INIT S:System Control Queue initialiation\n
+L:READ_Q_FRAME_ERR S:Got read Q frame error %d\n
+L:SYS_CTRL_Q_ADDR_NOT_IN_SYS S:Received packet for usb address %d, which isn't in sys\n
+L:NOT_XUSB_UPSTREAM_OR_DOWNSTREAM_PACKET S:Received packet that is not a XUSB upstream or downstream packet\n
+L:ISR_GOT_DOWNSTREAM_PACKET S:Received a downstream packet for usb address %d\n
+L:ISR_GOT_UPSTREAM_PACKET S:Received a upstream packet for usb address %d\n
+L:CLEAR_BCO S:Clearing BCO for USB address %d\n
+L:VF_CTRL_OUT_PACKET_FCN S:Recevied a VF Ctrl Out Packet, calling function 0x%x\n
+L:VF_CTRL_IN_ACK_PACKET_FCN S:Recevied a VF Ctrl In Ack Packet, calling function 0x%x\n
+L:INVALID_SETUP_PACKET S:Got invalid setup packet size %d\n
+L:HANDLE_DESC_REQ S:HandleDescReq:Got Desc request, USB address %d, length %d\n
+L:HANDLE_CLR_FTR_PORT S:HandleClearFeaturePort: Port %d on usbA %d\n
+L:SYS_CTRLQ_TEST_MODE_NOT_ROOT_DEV S:CtrlQ test mode is not for the root dev, usb %d, logical %d, test %d\n
+L:SYS_CTRLQ_TEST_MODE_INVALID_TEST S:CtrlQ test mode is invalid, usb %d, logical %d, test %d\n
+L:SYS_CTRLQ_TEST_MODE_TEST S:CtrlQ test mode, usb %d, logical %d, test %d\n
+L:SETUP_NOT_EP_ZERO S:Received setup packet for non-zero endpoint for usb %d, logical %d, ep %d\n
+L:DOWNSTREAM_PACKET_IS_IN_AND_NOT_VF S:Downstream packet is an IN packet, this isn't a Virtual Function\n
+L:VF_CTRL_OUT_PACKET_NO_FCN S:Recevied a VF Ctrl Out Packet, but no handler exists\n
+L:VF_CTRL_IN_ACK_PACKET_NO_FCN S:Recevied a VF Ctrl In Ack Packet, but no handler exists\n
+L:VF_CTRL_IN_PACKET_NO_FCN S:Recevied a VF Ctrl In Packet, but no handler exists\n
+L:VF_PING_PACKET S:Recevied a VF Ping Packet for ep %d\n
+L:VF_SETUP_BUT_NO_SETUP S:Received a VF Setup Packet, but there is no VF->Setup, on USB=%d, LA=%d, InSys=%d\n
+L:VF_SETUP_PACKET S:Recevied a VF Setup Packet, calling function 0x%x\n
+L:UPSTREAM_PACKET_RECEIVED S:Received an upstream packet for USB address %d, action %d, responseId %d\n
+L:GOT_NONACK_UPSTREAM_PKT_FOR_VF S:Got a NON_TERRY_HACK_ACK upstream packet for a Virtual Function??? Logical address %d, USB address %d\n
+L:UPSTREAM_PKT_NOT_USB_IN S:The upstream packet is not a USB IN packet, instead got action %d\n
+L:INVALID_XUSB_UPSTREAM_RESPONSE S:Invalid upstream response %d received\n
+L:DATA0_BUT_NOT_EXPECTING_GET_DESC_DATA0 S:Got Data0, but not expecting GetDescData0, instead expecting %d\n
+L:DATA1_BUT_UNHANDLED_BCI_TRANSACTION S:Got Data1, but unhandled BCI transaction %d\n
+L:DATA1_BUT_UNHANDLED_BCO_TRANSACTION S:Got Data1, but unhandled BCO transaction %d\n
+L:DATA1_BUT_NOT_EXPECTING_PACKET S:Got Data1, but not expecting a packet\n
+L:VF_SET_ADDR_HANDLER_IN_PACKET S:Got a Set address in request, sending a zero length packet\n
+L:GOT_SET_CFG_IN_PACKET S:Got a Set Cfg IN packet\n
+L:GOT_SET_INTF_IN_PACKET S:Got a Set Intf IN packet\n
+L:GOT_CLEAR_PORT_FEATURE_ENABLE_IN_PACKET S:Got a Clear Port Feature Enable In Packet\n
+L:GOT_SET_PORT_FEATURE_RESET_IN_PACKET S:Got a Set Port Feature Reset In Packet\n
+L:TEST_MODE_HANDLING_INVALID S:While handling the Test mode packets, got an invalid test mode\n
+L:GET_EXPECTED_UPSTREAM_PACKET S:Get the expected upstream packet for USB address %d, expected packet type %d\n
+L:SET_EXPECTED_UPSTREAM_PACKET S:Set the expected upstream packet for USB address %d, expected packet type %d, previous setting was %d\n
+L:VF_SET_ADDR_PACKET S:Recevied a VF Set Address Packet, NEW: Logical address %d, USB address %d\n
+L:VF_IN_PACKET_EP S:Recevied a VF Ctrl In Packet, calling function 0x%x, for ep: %d\n
+L:SET_ADDRESS_DEV_MGR_FAILED_FOR_VF S:Set address to USB %d, logical %d failed when processing dev manager for a virtual function\n
+L:RECEIVED_STALL S:Received stall for USB address %d, transaction type %d\n
+L:GOT_SET_CLR_TT_BUFFER_IN_PACKET S:Got a Clear TT Buffer In Packet\n
+L:INVALID_EP_ACK_FOR_VF S:At address logical %d, usb %d, Invalid virtual function endpoint %d\n
+L:ICMD_NOT_IN_SYS S:icommand: usb address %d is not in-sys\n
+L:DEV_X_EXPECTING_PACKET_Y S:Usb Address %d is expecting packet %d\n
+L:THIS_IS_THE_REX S:This is the rex\n
+L:RE_USE_USB_ZERO S:Resetting USB due to re-use of USB address 0.\n
+L:STARTING_TEST S:Starting test\n
+component:DEVMGR_COMPONENT
+L:REX_HUB_PORT_STATUS_HANDLER S:RexHubPortStatusHandler: LA=%d port=%d\n
+L:REX_HUB_PORT_STATUS_HANDLER_PORT_EN_LS S:RexHubPortStatusHandler: Port%d enabled LA%d, speed=LS\n
+L:REX_HUB_PORT_STATUS_HANDLER_PORT_EN_HS S:RexHubPortStatusHandler: Port%d enabled LA%d, speed=HS\n
+L:REX_HUB_PORT_STATUS_HANDLER_PORT_EN_FS S:RexHubPortStatusHandler: Port%d enabled LA%d, speed=FS\n
+L:PORT_RESET_HUB_DETAILS S:Reset port%d on Hub LA%d, USB Addr %d\n
+L:SET_ADDR_ADD_DEV S:Set Address: new USB Address %d, LA %d\n
+L:SET_ADDR_RESPONSE S:Got set address response\n
+L:CLR_FEATURE_DISABLE_PORT S:Disabling port %d on parent logical address %d\n
+L:PORT_RESET_FAILED S:DEVMGR_ProcessPortReset: reset failed on port %d, on hub logical addr %d, usb addr %d\n
+component:DESCPARSER_COMPONENT
+L:INIT_PARSE_RESPONSE_PACKET S:ParsePktInit(%d, %d)\n
+L:PARSE_PACKET S:ParsePkt(%d, %d, %2x)\n
+L:PARSE_PACKET_IGNORED_BYTE S:ParsePkt(%d) Ignoring %2x at %d)\n
+L:PARSE_DEV_DESC S:ParsePktDescriptor\n
+L:PARSE_CFG_DESC S:ParsePktConfiguration\n
+L:PARSE_CFG_DESC_LENGTHS S:ParsePktConfiguration(%d, %d)\n
+L:PARSE_INTF_DESC S:ParsePktInterface\n
+L:PARSE_EP_DESC S:ParsePktEndpoint\n
+L:PARSE_EP_DESC_UPDATING S:ParsePktEndpoint: Updating Endpoint\n
+L:PARSE_UNKNOWN_DESC S:ParsePktUnknown\n
+L:PARSE_UNKOWN_DESC_TYPE S:ParsePktUnknown: type is %d\n
+L:PROCESS_PACKET_DONE_BYTES S:ProcPkt: end of function: now processed %d\n
+L:SHORT_PACKET S:ProcPkt: Short packet received\n
+L:ALL_DATA_SENT S:ProcPkt: Send back all requested data to end of frame\n
+L:EOF_MORE_DATA_EXPECTED S:ProcPkt: End of Frame: more data expected\n
+L:EXTRA_DATA S:ProcPkt: Device%d sent back more data(%d) than requested(%d)\n
+L:MASS_STORAGE_BULK_ONLY_INTF_FOUND S:Found a mass storage bulk only intf on usb logical address %d\n
+L:MSA_REJ_EP_SAME_DIR S:MSA rejected as the 2 endpoints are the same direction, logical %d ep1 %d, ep2 %d\n
+L:MSA_GOOD_TO_GO S:MSA Good to go, on logical %d, with endpoints %d IN and %d OUT\n
+L:MSA_PARSING_ENABLED S:MSA parsing enabled\n
+L:MSA_PARSING_DISABLED S:MSA parsing disabled\n
+L:ICMD_NO_WORK_ON_REX S:This icmd is only for a Lex, this is a Rex\n
+L:USB_VERSION S:USB Version is %d.%d.%d\n
+L:PACKET_INFO S:Sending packet to parser. Size of frame is %d. Data parsed so far is %d. Expected transfer size is %d\n
+component:LEXULM_COMPONENT
+L:ULM_INTERRUPTS_LOG S:i=0x%x\n
+L:ULM_CONNECT_LOG S:iCONNECT\n
+L:ULM_DISCONNECT_LOG S:iDISCONNECT\n
+L:ULM_SUSPEND_LOG S:iSUSPENDDETECT\n
+L:ULM_HOST_RESUME_LOG S:iHOSTRESUMESTART\n
+L:ULM_BUS_RESET_LOG S:iBUSRESETDETECTED\n
+L:ULM_NEG_DONE_LOG S:iNEGDONE\n
+L:ULM_BUS_RESET_DONE_LOG S:iBUSRESETDONE\n
+L:ULM_RESPONSE_TIMEOUT_LOG S:iRESPONSETIMEOUT\n
+L:LEX_USB_PORT_CONNECT_LOG S:rootDev connected:%d\n
+L:LEX_DEVICE_DISCONNECT_LOG S:got a device disconnect event\n
+L:LEX_REMOTE_WAKEUP_LOG S:got remote wakeup\n
+L:LEX_UNKNOWN_EVENT_LOG S:unknown event:%d\n
+L:INVALID_SPEED S:Invalid speed %d detected\n
+L:FORCE_LINK_DOWN S:Bringing the USB link down\n
+L:REX_IRQ_ULM_SUSPEND_DONE S:Got a Rex only interrupt, ULM Suspend Done\n
+L:REX_IRQ_ULM_REMOTE_WAKEUP S:Got a Rex only interrupt, remote wakeup\n
+L:BIT_STUFF_ERR S:Got a ULM bitstuff error\n
+L:LONG_PACKET_ERR S:Got a ULM long packet error\n
+L:ULM_RESUME_DONE S:Resume done\n
+L:ULM_NEG_HS S:ULM negotiated high speed\n
+L:ULM_NEG_FS S:ULM negotiated full speed\n
+L:ULM_NEG_LS S:ULM negotiated low speed\n
+L:TIME_MARKER_IRQ S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing USB Interrupt\n
+L:TIME_MARKER_MSG S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing Rex Message\n
+L:TIME_MARKER_LINK_DOWN S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing CLM Link Down\n
+L:TIME_MARKER_FORCE_LINK_DOWN S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing Force Link Down\n
+L:RESUME_AND_SUSPEND S:Resume and suspend interrupts received together.  Host did not accept the device resume request.\n
+L:TIME_MARKER_LINK_UP S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing CLM Link Up\n
+L:USB3_NO_SS_CONNECT S:USB3 No SuperSpeed connect\n
+L:USB3_SS_CONNECT S:USB3 SuperSpeed connect\n
+L:CLM_LINK_UP S:CLM link up\n
+L:CLM_LINK_DOWN S:CLM link down\n
+component:VHUB_COMPONENT
+L:HOST_SUSPEND S:Message from host: Going into suspend\n
+L:HOST_RESUME S:Message from host: Going to resume \n
+L:HOST_CONNECT_HS S:Host Connected at high speed!\n
+L:HOST_CONNECT_FS S:Host Connected at full speed!\n
+L:HOST_DISCONNECT_MSG S:Host Disconnected\n
+L:HOST_OTHER S:Invalid message from host: %d\n
+L:VHUB_DEVICE_CONNECT S:Device Connection request on vPort %d\n
+L:VHUB_DEVICE_DISCONNECT S:Device Disconnection request on vPort %d\n
+L:VHUB_DEVICE_WAKEUP S:Device Remote Wakeup request on vPort %d\n
+L:VHUB_CONNECT_DEV S:Device Connected on Port %d, speed %d\n
+L:VHUB_DISCONNECT_DEV S:Device Disconnected on Port %d\n
+L:VHUB_SUSPEND_DEV S:Port %d Suspended\n
+L:VHUB_RESUME_DEV S:Port %d Resumed\n
+L:VHUB_SETUP_HANDLER S:Received setup packet bRequestType 0x%x, bRequest 0x%x, wValue 0x%x\n
+L:VHUB_SETUP_STALL S:Going to stall setup packet bRequestType 0x%x, bRequest 0x%x, wValue 0x%x\n
+L:VHUB_IN_DESC_HANDLER S:Received in desc. Sending %d bytes from mem address 0x%x\n
+L:VHUB_OUT_HANDLER S:Received out packet for ep %d, with PID 0x%x, %d data bytes\n
+L:VHUB_IN_ACK_DESC_HANDLER S:Descriptor handler got an Ack!\n
+L:VHUB_INT_IN_REQUEST S:IN request on INTERRUPT endpoint\n
+L:VHUB_INT_IN_REQUEST_SERV S:IN request on INTERRUPT endpoint - SERVICED\n
+L:VHUB_STD_REQ_GET_DESC S:STD REQ: Get Descriptor: 0x%x\n
+L:VHUB_STD_REQ_GET_DESC_DEV S:STD REQ: Get Descriptor - DEVICE\n
+L:VHUB_STD_REQ_GET_DESC_CONF S:STD REQ: Get Descriptor - CONFIGURATION\n
+L:VHUB_STD_REQ_GET_DESC_DEV_QUAL S:STD REQ: Get Descriptor - DEVICE QUALIFIER\n
+L:VHUB_STD_REQ_GET_DESC_OTHER_SPEED S:STD REQ: Get Descriptor - OTHER SPEED CONFIG\n
+L:VHUB_STD_REQ_GET_DEV_CONFIG S:STD REQ: Get Device Configuration\n
+L:VHUB_STD_REQ_SET_DEV_CONFIG S:STD REQ: Set Device Configuration\n
+L:VHUB_STD_REQ_SET_FEATURE S:STD REQ: Set Feature\n
+L:VHUB_STD_REQ_CLEAR_FEATURE S:STD REQ: Clear Feature\n
+L:VHUB_STD_REQ_GET_STATUS S:STD REQ: Get Status\n
+L:VHUB_STD_REQ_GET_STATUS_DEV S:STD REQ: Get Status - DEVICE\n
+L:VHUB_STD_REQ_GET_STATUS_INT S:STD REQ: Get Status - INTERFACE\n
+L:VHUB_STD_REQ_GET_STATUS_EP S:STD REQ: Get Status - ENDPOINT\n
+L:VHUB_HUB_REQ_GET_STATUS S:HUB REQ: Get Status\n
+L:VHUB_HUB_REQ_GET_STATUS_HUB S:HUB REQ: Get Status - HUB\n
+L:VHUB_HUB_REQ_GET_STATUS_PORT S:HUB REQ: Get Status - PORT %d\n
+L:VHUB_HUB_REQ_CLEAR_FEATURE S:HUB REQ: Clear Feature\n
+L:VHUB_HUB_REQ_CLEAR_FEATURE_HUB S:HUB REQ: Clear Feature - HUB\n
+L:VHUB_HUB_REQ_CLEAR_FEATURE_PORT S:HUB REQ: Clear Feature - PORT %d\n
+L:VHUB_HUB_REQ_SET_FEATURE_HUB S:HUB REQ: Set Feature - HUB - brequest=0x%x, wValue=0x%x\n
+L:VHUB_HUB_REQ_SET_FEATURE_PORT S:HUB REQ: Set Feature - PORT %d - brequest=0x%x, wValue=0x%x\n
+L:VHUB_HUB_REQ_GET_DESCRIPTOR S:HUB REQ: Get Descriptor\n
+L:VHUB_HUB_REQ_SET_FEATURE_PORT_RESET S:HUB REQ: PORT RESET, port %d\n
+L:VHUB_UNKNOWN_MSG_FROM_DOWNSTREAM S:Received an unknown message from downstream.  Message code=%d.\n
+L:UNEXPECTED_EVENT_IN_STATE S:Unexpected event %d in state %d at line %d\n
+L:VHUB_STATE1 S:Vhub is in linkState %d, operating at speed %d, with remoteWakeupEnabled=%d\n
+L:VHUB_STATE3 S:Vhub portInReset=%d, controlRequestReplyScratchArea.hword=0x%x, intEp1.hubAndPortStatusChangeMap=0x%x\n
+L:VHUB_PORT_STATE S:VHub port %d, has state/speed (msh/lsh) 0x%x, & port status response is 0x%x\n
+L:ADDR_NOT_IN_SYS S:Hub USB Addr: %d is not in sys\n
+L:PUSH_STATUS_WITH_NO_STATUS S:Pushing status interrupt endpoint, but there is no status\n
+L:VHUB_STATE2 S:Vhub intEp1.halted=%d\n
+component:REXULM_COMPONENT
+L:RECEIVED_HOST_DISONNECT S:RX eTxHostDisconnect\n
+L:RECEIVED_GEN_SUSPEND S:RX eTxGenSuspend\n
+L:RECEIVED_UNKOWN_MESSAGE S:RX unknown msg: 0x%x\n
+L:LINK_TO_LEX_ACQUIRED S:Link to Lex acquired\n
+L:DISCONNECT_STATE_IDEV_CONNECTED S:DisconnectState - iCONNECT\n
+L:PREFETCH_HS S:PreFetch - HighSpeed, (may operate slower if HS isn't allowed)\n
+L:PREFETCH_FS S:PreFetch - FullSpeed\n
+L:PREFETCH_LS S:PreFetch - LowSpeed\n
+L:PREFETCH_INVALID_SPEED S:PreFetchState - Invalid speed\n
+L:BUS_RESET_STATE_SPD_NEG_FAILED S:rexfsm_BusResetState: speed negotiate failed! (%d,%d)\n
+L:BUS_RESET_STATE_HOST_BUS_RESET_DONE S:BusResetState - mBUSRESETDONE\n
+L:BUS_RESET_STATE_IBUS_RESET_DONE_EN_REX S:rexfsm_BusResetState - rex busReset done, enabling REX\n
+L:BUS_RESET_STATE_IBUS_RESET_DONE_BEFORE_HOST S:Uh-oh, Rex's busResetDone finished before HostReset!!\n
+L:SUSPEND_STATE_MGEN_RESUME S:SuspendState - mGEN_RESUME\n
+L:SUSPEND_STATE_MHOST_RESUME_DONE S:SuspendState - mHOST_RESUME_DONE\n
+L:SUSPEND_STATE_IREMOTE_WAKEUP S:SuspendState - iREMOTE_WAKEUP\n
+L:INVALID_USB_SPEED S:Invalid USB speed at line %d\n
+L:ULM_ISR S:In ULM ISR 0x%x\n
+L:ULM_RESPONSE_TIMEOUT S:iRESPONSETMOUT\n
+L:ILINK_DOWN S:CLM Link is down!!!\n
+L:START_SUSPEND_STATE_ISUSPEND_DONE S:StartSuspendState: iSuspend Done\n
+L:START_SUSPEND_STATE_INVALID_OPSPEED S:StartSuspendState: Entering with an invalid opSpeed\n
+L:IDEV_REMOVED S:Device removed\n
+L:REX_GOT_INVALID_HOST_SPEED S:Host sent an invalid bus reset speed %d, when device can only do %d\n
+L:UNEXPECTED_ISUSPEND_DONE S:Unexpectedly received iSuspendDone when rex in %d\n
+L:LEX_REX_LINK_UP S:CurrentState: Lex-Rex link is UP\n
+L:LEX_REX_LINK_DOWN S:CurrentState: Lex-Rex link is DOWN\n
+L:REX_SPEED S:CurrentState: Dev is capable of speed %d, and is operating at speed %d\n
+L:REX_DEV_HOST_STATE S:CurrentState: Dev is in state %d, and host is in state %d, everEnumerated %d\n
+L:THIS_IS_LEX S:This is a Lex, not a Rex, what were you expecting?\n
+L:INVALID_STATE_W_LINE S:Invalid state %d, found at line %d\n
+L:UNEXPECTED_HOST_RESET_DONE_MSG S:Unexpected host reset done message when dev in state %d\n
+L:UNEXPECTED_HOST_WAKEUP_DONE_MSG S:Unexpectedly received host remote wakeup done message when in state %d\n
+L:UNEXPECTED_HOST_RESUME_MSG S:Unexpectedly received host resume message when in state %d\n
+L:GOT_EARLY_HOST_RESUME_MSG S:Got host resume message early (ie we are still suspendING, and not suspendED)\n
+L:HOST_BUS_RESET_MSG S:Got a host bus reset msg for speed %d\n
+L:RECVD_LINK_UP_WHEN_LINK_IS_UP S:Received a link up message, when the link is already up\n
+L:DEVICE_NOT_DISCONNECTED_WHEN_TIMER_EXP S:The Rexulm timer went off when the device isn't disconnected\n
+L:DEVICE_CONNECTED_AND_NOW_PREFETCHING_SPEED S:Device connected and now starting to prefetch the speed\n
+L:BUS_RESET_DONE_TO_SUSPEND S:Bus Reset Done, & host is gone to suspend\n
+L:BUS_RESET_PRE_FETCH_DONE S:Bus Reset Prefetch Done\n
+L:UNEXPECTED_BUS_RESET_DONE_WHILE_HOST_RESUMING S:Unexpectedly got a bus reset done, while the host is resuming\n
+L:RESUME_DONE S:Resume done\n
+L:RESUME_DONE_HOST_STILL_RESUMING S:Resume done but the host is still resuming\n
+L:RESUME_DONE_GO_BACK_TO_SUSPEND S:Resume done, now going back into suspend\n
+L:RESUME_DONE_BUT_HOST_BUS_RESETTING S:resume done, but the host is bus resetting\n
+L:BITSTUFF_ERR S:Bitstuff error from the ULM\n
+L:LONG_PACKET_ERR S:Long packet error from the ULM\n
+L:LEX_IRQ_HOST_RESUME_DET S:Lex only irq host resume detect occured\n
+L:LEX_IRQ_BUS_RESET_DET S:Lex only irq bus reset detect occured\n
+L:LEX_IRQ_SUSPEND_DET S:Lex only irq suspend detect occured\n
+L:REQ_START_SUSPEND_BUT_IN_STATE S:Call to RequestStartSuspend, but ignoring since rex.downstreamPort is in state %d\n
+L:START_HOST_BUS_RESET S:Starting a host bus reset\n
+L:HOST_MSG_WHEN_NO_DEV_CONNECTED S:Received host message %d, when there is no device connected\n
+L:UNEXPECTED_CONNECT_INTERRUPT S:Unexpectedly got a connect interrupt\n
+L:GOT_SUSPEND_DONE_ISR_WHILE_UPSTREAM_IS_RESUMING S:Got a suspend done interrupt while the upstream is resuming, very odd\n
+L:GOT_SUSPEND_DONE_ISR_WHILE_UPSTREAM_IS_OPERATING S:Got a suspend done interrupt while the upstream is operating, very odd\n
+L:RESTART_USB_LINK S:Restarting the USB link\n
+L:TIME_MARKER_LEX_MSGS S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing Lex message\n
+L:TIME_MARKER_USB_IRQ S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing USB Interrupt\n
+L:TIME_MARKER_CLM_LINK_DOWN S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing CLM Link Down\n
+L:TIME_MARKER_CLM_LINK_UP S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing CLM Link Up\n
+L:TIME_MARKER_TIMER_PREFETCH S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing Connect Debounce Timer\n
+L:HOST_MSG_WHEN_NO_LEX_LINK S:Received host message %d, when there is no declared link to Lex\n
+L:TIME_MARKER_TIMER_CONNECT S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing Disconnect/Connnect Timer\n
+L:ENABLING_USB_PORT S:Enabling the USB port\n
+L:TIME_MARKER_SOF_PACKET_RX S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing SOF packet received idle task\n
+L:IDLE_TASK_UPSTREAM_INVALID_STATE S:IdleTask: Upstream is in an invalid state %d\n
+L:IDLE_TASK_DOWNSTREAM_INVALID_STATE S:IdleTask: Downstream is in an invalid state %d\n
+L:IDLE_TASK_SOF_RX S:IdleTask: Received an SOF packet\n
+L:START_VERY_DELAYED_BUS_RESET S:Start very delayed bus reset\n
+L:TIME_MARKER_IDLE_TASK_TO_START_SUSPEND S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing suspending idle task\n
+L:IDLE_TASK_TO_START_SUSPEND S:IdleTask: Ready to start suspend sequence\n
+L:NO_SOF_GOING_FROM_OP_TO_SUSPEND S:No SOF going from operating to suspend\n
+L:LOST_LINK_REQUEST_START_SUSPENDING S:Lost link request start suspending\n
+L:CHANGING_PREFETCH_TIMER S:Changing prefetch timer from %dms to %dms\n
+L:CHANGING_CONNECT_TIMER S:Changing connect timer from %dms to %dms\n
+L:REMOTE_WAKEUP_ISR_BUT S:Remote wakeup ISR, but Rex is in state %d\n
+L:REX_PORTDISCHARGECOMPLETE S:Current DFP discharge state: %d\n
+L:START_REX_DFP_DISCHARGE_TIMER S:Starting REX Hub Downstream Port Discharge Timer\n
+L:EXPIRE_REX_DFP_DISCHARGE_TIMER S:REX Hub Downstream Port Discharge Timer expired\n
+L:UNSUPPORTED_ICMD S:Unsupported icmd\n
+L:REXULM_RESET_INIT_STATE S:*** REXULM Reset rex struct to initial state ***\n
+L:REXULM_DEBUGX S:__#### DEBUG 0x%x ####__\n
+L:IDLE_TASK_TO_START_BUS_RST S:IdleTask: Ready to start bus reset sequence\n
+L:TIME_MARKER_IDLE_TASK_TO_START_BUS_RST S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing bus resetting idle task\n
+L:LINESTATE_TIMEOUT S:Waiting for line state to be %d timed out! Current line state is %d\n
+L:BUS_RST_USP_DSP S:BUS RESET IDLE TASK PORT STATES: USP %d, DSP %d\n
+L:DEBOUNCE_LINESTATE_WAIT S:Debounce line state stability wait for linestate %d starting now\n
+L:DEBOUNCE_LINESTATE_WAIT_TIME S:Debounce line state waited %d usec, %d usec for 100 stable read counts\n
+L:SOFT_DISCONNECT S:Soft disconnect is performed\n
+L:REMOTE_WAKEUP_ISR_IGNORED S:Remote wakeup ISR but ignored during link down\n
+L:HANDLE_LINK_MSG S:Handle link message %d, while rex upstreamPort state = %d, rex downstreamPort state = %d\n
+L:USB_MSG_SENT S:Rex sent a USB msg %d upstream\n
+L:SUSPEND_DONE_UPSTREAM_STATE S:USB suspend done and rex upstream port state = %d, line = %d\n
+L:DISABLE_USB_LINK S:Disabling the USB link\n
+component:NETCFG_COMPONENT
+L:NETCFG_COULD_NOT_BIND_TO_PORT S:Could not bind the network based configuration listener to port %d.\n
+L:DEPRECATED_NETCFG_FLASH_VAR_WRONG_SIZE S:The flash variable read was %d bytes instead of %d.\n
+L:NETCFG_READ_INVALID_VPORT_PAIRING S:Tried to read the MAC address pairing for the invalid vport %d.\n
+L:DEPRECATED_NETCFG_FAILED_TO_WRITE_FLASH S:Failed to write flash variable %d.\n
+L:DEPRECATED_NETCFG_PRODUCT_VARIANT_NOT_DEFINED S:Product variant is not set in persistent data storage\n
+L:XUSBCFG_ICRON S:XUSB Configuration Protocol is Icron\n
+L:XUSBCFG_CRESTRON S:XUSB Configuration Protocol is Crestron\n
+L:NETCFG_RECEIVED_REQUEST S:Received netcfg command %d\n
+L:UDPpacket S:UDP transmission packet handled good and sender IP = %d\n
+component:NET_COMPONENT
+L:NET_INITIALIZED S:Networking component initialization complete\n
+L:NET_NOT_INITIALIZED S:Networking component has not been initialized\n
+L:NET_BUFFER_ALLOCATION_FAILURE S:Could not allocate a network buffer. Memory pool exhausted\n
+L:NET_BUFFER_SIZE_EXCEEDS_BUFFER_CAPACITY S:The network buffer claims to contain more data than it is capable of holding. Contains: %d, Max: %d\n
+L:NET_FRAME_SIZE_EXCEEDS_FRAME_CAPACITY S:The frame claims to contain more data than it is capable of holding. Contains: %d, Max: %d\n
+L:NET_ARP_INVALID_OPERATION S:An ARP packet was received with an invalid operation flag value of 0x%x\n
+L:NET_ARP_UNEXPECTED_PACKET_SIZE S:An ARP packet was received that was of size %d (expected size %d)\n
+L:NET_ARP_UNEXPECTED_REQUEST_TIMEOUT S:Received an ARP request timeout signal when there was no pending ARP request\n
+L:NET_IPV4_HEADER_CHECKSUM_RX_MISMATCH S:The IPv4 checksum 0x%x did not match the expected value of 0x%x\n
+L:NET_IPV4_RECEIVED_FRAGMENTED_PACKET S:Received a fragmented IPv4 packet.  We do not support fragmented packets\n
+L:NET_IPV4_ARP_LOOKUP_FAILURE S:Transmission of an IPv4 packet was aborted due to an ARP lookup failure\n
+L:NET_IPV4_PACKET_LARGER_THAN_DATA S:Received a IPv4 packet that claimed to be %d bytes, but there are  only %d bytes in the buffer\n
+L:NET_UDP_COULD_NOT_BIND_TO_PORT S:Could not bind to UDP port %d.\n
+L:NET_UDP_PACKET_SIZE_DOES_NOT_MATCH_DATA S:Received a UDP packet claiming to be length %d, but there are %d bytes of data in the buffer.\n
+L:NET_ICMD_SHOW_IP_CONFIGURATION S:IPv4 configuration - IP Address=0x%x, Subnet Mask=0x%x, Default Gateway=0x%x\n
+L:NET_DHCP_COULD_NOT_BIND_TO_PORT S:Could not bind the network based configuration listener to port %d.\n
+L:NET_DHCP_ALREADY_ENABLED S:DHCP Client already enabled!\n
+L:NET_DHCP_LINK_ALREADY_UP S:DHCP network link already up!\n
+L:NET_DHCP_LINK_ALREADY_DOWN S:DHCP network link already down!\n
+L:NET_DHCP_OFFER_RECEIVED S:DHCP Offer received from IP=0x%x\n
+L:NET_DHCP_OFFER_INVALID_OPT_COOKIE S:DHCP Offer received with invalid option cookie=0x%x\n
+L:NET_DHCP_ACK_RECEIVED S:DHCP ACK received from IP=0x%x\n
+L:NET_DHCP_NAK_RECEIVED S:DHCP NAK received from IP=0x%x\n
+L:NET_DHCP_DISCOVER_SENT S:DHCP Discover sent\n
+L:NET_DHCP_REQUEST_SENT S:DHCP Request sent\n
+L:NET_DHCP_HDR0 S:DHCP: payLoad[0]=%d\n
+L:NET_DHCP_HDR1 S:DHCP: payLoad[1]=%d\n
+L:NET_DHCP_HDR2 S:DHCP: payLoad[2]=%d\n
+L:NET_DHCP_HDR3 S:DHCP: payLoad[3]=%d\n
+L:NET_DHCP_FIND_OPT S:DHCP: Searching for option=%d\n
+L:NET_DHCP_FOUND_OPT S:DHCP: Found option=%d\n
+L:NET_DHCP_OPT_NOT_FOUND S:DHCP: Could not find option=%d\n
+L:NET_DHCP_OPT_CODE_OPT_VALUE S:DHCP: option code = %d, option value=0x%x\n
+L:NET_DHCP_CONF_VALUES1 S:DHCP Config: clientIp=0x%x, leaseTime=%d\n
+L:NET_DHCP_CONF_VALUES2 S:DHCP Config: gatewayIp=0x%x, subnetMask=0x%x\n
+L:MEMSET_TASK_IN_USE S:Memset Task is already running\n
+L:ALLOCATE_FRAME S:Allocated a new frame; Number Allocated: %d, Return address: 0x%x\n
+L:FREE_FRAME S:Freed a new frame; Number Allocated: %d, Line %d\n
+L:NET_FIFO_EMPTY S:Net FIFO is empty; entries used: %d\n
+L:NET_FIFO_FULL S:Net FIFO is full; entries used: %d\n
+L:NET_FIFO_USED S:Number of Net Fifo entries used: %d; Line: %d\n
+L:STOP_TRANSMIT_TASK S:Stopping Transmit task\n
+L:START_TRANSMIT_TASK S:Starting Transmit task\n
+L:NET_PING_CHECKSUM_INVALID S:Received an echo request with checksum=0x%x, but computed checksum=0x%x\n
+L:NET_DCHP_UNEXPECTED_STATE S:DHCP unexpected state at line %d\n
+L:NET_DHCP_ASSERT1 S:DHCP state %d, enabled %d, leaseActive %d\n
+L:NET_DHCP_ASSERT2 S:DHCP linkup %d, yourIp 0x%x, serverIp 0x%x\n
+L:LINK_LOCAL_ENABLE S:Enabling link local addresses\n
+L:LINK_LOCAL_DISABLE S:Disabling link local addresses\n
+L:LINK_LOCAL_TEST_ADDR S:Testing link local address 0x%x\n
+L:LINK_LOCAL_NEW_ADDR S:Enabling link local address 0x%x\n
+L:LINK_LOCAL_ENABLED_WITH_VALID_IP S:Link local addresses are enabled with a valid IP 0x%x already set\n
+L:LINK_LOCAL_SENDING_ARP S:Link local address sending ARP for IP 0x%x, with timeout %d ms\n
+L:NET_IPV4_UNHANDLED_PROTOCOL S:Received IPv4, unhandled protocol %.2x, SRC IP 0x%x, DST IP 0x%x\n
+L:NET_DHCP_PACKET_IGNORED S:Ignored an irrelevant DHCP packet\n
+L:NET_DHCP_UNSUPPORTED_MSG_TYPE S:Received a DHCP packet with an unsupported message type: %d\n
+component:TOPOLOGY_COMPONENT
+L:TOPOLOGY_INVALID_LOGICAL_ADDRESS_ARG S:Invalid logical address received %d @ line %d\n
+L:TOPOLOGY_INVALID_ENDPOINT_ARG S:Invalid endpoint received %d @ line %d\n
+L:TOPOLOGY_ICMD_NOT_LEX S:Duh, this is REX!!!!\n
+L:TOPOLOGY_ICMD_SHOW_DEVICE S:ShowDevice\n
+L:TOPOLOGY_ICMD_SHOW_DEVICE_ALL S:ShowDeviceAll\n
+L:TOPOLOGY_ICMD_SHOW_TOPOLOGY_BY_USB S:Device Topology Ordered By USB Address:\n
+L:TOPOLOGY_ICMD_SHOW_TOPOLOGY_BY_LA S:Device Topology Ordered By Logical Address:\n
+L:TOPOLOGY_ICMD_WRITE_XSST S:ShowTopologyByLogical\n
+L:TOPOLOGY_ICMD_WRITING_XSST1 S:Writing (0x%x, 0x%x) to XSST\n
+L:TOPOLOGY_ICMD_WRITING_XSST2 S:at address %d, endpoint %d\n
+L:TOPOLOGY_DEVICE_ADDING_DEVICE S:DEVICE_Add: adding device LA=%d, pLA=%d, portOnParent=%d\n
+L:TOPOLOGY_PORT_NOT_FOUND S:DEVICE_FindPort: port %d on parent %d not found\n
+L:TOPOLOGY_DISCONNECT S:Disconnecting node (LA %d) from parent %d @ port %d\n
+L:TOPOLOGY_INVALID_LA_IN_ICMD S:Invalid logical address %d received in ShowDevice iCmd\n
+L:TOPOLOGY_ICMD_VIEWING_ADDRESS_NOT_IN_SYS2 S:Using unused USB address to view logical address %d\n
+L:TOPOLOGY_SHOW_XSST_RETRY_USAGE S:XSST Monitor: USB %d, endpoint %d has rtyUsage as 0x%x\n
+L:GET_ADDR_FROM_LOGICAL_MISMATCH S:Get address from logical had a mismatch.  Logical arg is %d, USB address from logical is %d, Logical address from USB is %d\n
+L:DISPLAY_XSST S:LA(upper bits), endpoint(lower bits) 0x%x, XSST: 0x%x 0x%x\n
+L:TOPOLOGY_ICMD_SHOW_XSST S:ShowXSST\n
+L:TOPOLOGY_SET_ADDRESS_ON_EXISTING S:Logical address %d has moved from USB address %d to USB address %d\n
+L:XSSTMON_LEX_SPECIFIC_ICMD S:The command executed is only valid on a device configured as a LEX\n
+L:HOST_REUSING_USB_ADDR S:The host is re-using USB address %d\n
+L:MSA_MISCONFIGURED_PTRS1 S:MSA detected misconfigured ptrs on USB address %d, inEp is %d, inPtr is %d\n
+L:MSA_MISCONFIGURED_PTRS2 S:MSA detected misconfigured ptrs on USB address %d, outEp is %d, outPtr is %d\n
+L:MSA_FREE_LAT_FAILURE S:MSA Free LAT failure, MSA USB address %d, MSA LA address %d, msaLogicalAddressAllocatedBitField 0x%x\n
+L:MSA_FREE_INVALID S:MSA Free was given an invalid address, usb is %d, MSA LA is %d\n
+L:NEW_MSA_INTERFACE S:New MSA interface configured on USB %d, epIn %d, epOut %d\n
+L:MSA_OUT_OF_PTRS S:MSA HW is out of pointers\n
+L:RESET_XSST S:ResetXsst: LA %d, USB %d\n
+L:TOPOLOGY_INVALID_WHEN_GET_ADDR_FROM_USB S:Tried to get an XUSB address from a USB address (%d) without valid topology data at line %d\n
+L:TOPOLOGY_INVALID_TREE_STRUCTURE S:A topology tree invariant has been violated at line %d.\n
+L:MSA_TOPOLOGY_MISMATCH S:An MSA topology mismatch occured on USB address %d at line %d\n
+L:TOPOLOGY_EXPECTED_DEVICE_REQUIRING_CLEANUP S:Device with USB address %d should have required cleanup at line %d\n
+L:TOPOLOGY_INVALID_DEVICE_CONNECTED S:Found a connected device with LA %d that is not valid, but is connected at line %d\n
+L:TRAVERSE_TOPOLOGY S:Traverse: processing logical address %d\n
+L:LOGITECH_C910_FOUND S:Logitech C910 device found at usb address %d, configuring endpoint 2 as ISO\n
+L:FOUND_NEW_PRODUCT S:Found New Product. Usb Address: %d, Old Product ID: %d, New Product ID: %d\n
+L:FOUND_NEW_VENDOR S:Found New Vendor. Usb Address: %d, Old Vendor ID: %d, New Vendor ID: %d\n
+L:MSA_FREE_ADDR S: MSA freeing MSA LA %d, USB %d\n
+L:TOPOLOGY_ASSERT_XSST S:--- XSST for Devices in the Device Topology ---\n
+L:ADD_ENDPOINT1 S:Adding Endpoint. Interface: %d, Endpoint Number: %d, Endpoint type: %d ...\n
+L:ADD_ENDPOINT2 S:... Adding Endpoint. Alternate Setting: %d\n
+L:TOPOLOGY_SET_INTERFACE S:Setting Interface for LA: %d to Interface: %d, Alternate setting: %d\n
+L:DESC_DONE S:Descriptor has been parsed\n
+L:CLEAR_ENDPOINTS S:Cleared Endpoints for LA: %d\n
+L:TOPOLOGY_SET_CONFIGURATION S:Setting Configuration for LA: %d to value: %d\n
+L:ENDPOINT_INFO S:    Interface: %d, Endpoint: %d, Type: %d\n
+L:MEMPOOL_ALLOC_FAILED S:Memory pool in topology is full and data will not be saved\n
+L:SET_INTERFACE_MEM S:Endpoints for device with LA: %d were deleted; Set Interface will not work\n
+L:DELETE_DISCONNECTEDDEVICES S:Removing endpoints for disconnected devices\n
+L:DELETE_CONFIGURED S:Deleting configured devices to free some space in the memory pool\n
+L:TOPOLOGY_MEMPOOL S:Number of used slots in topology memory pool: %d; number of free slots: %d\n
+L:NEW_DEVICE S:New device at USB %d, Vendor ID 0x%.4x, Product ID 0x%.4x\n
+L:DTT_GET_DEV_NODE_INVALID_ARG S:DTT get dev node invalid arg\n
+L:DISCONNECT_SUBTREE S:Disconnecting subtree rooted at logical address %d\n
+L:CONFIGURATION_VALUE S:    Configuration value: %d\n
+L:ENDPOINT_INFO2 S:    Endpoint Direction: %d, MSA Paired Endpoint Number: %d, Alternate Setting: %d\n
+L:MSA_ENDPOINT_NONEXISTENT S:MSA Pair Endpoint does not exist\n
+L:BCI_BCO_SET S:Both BCI and BCO are set for LA: %d\n
+L:CLEAR_MSA_ENDPOINT S:Clearing MSA Overlay and Acceleration field for LA: %d, Endpoint %d, Direction %d\n
+L:SET_INTERFACE_UNCONFIGURED S:Setting Interface called on unconfigured device for LA: %d to Interface: %d, Alternate setting: %d\n
+L:IS_EP_SET_EQ_WITH_NULL_ARG S:_DTT_isEndpointSetEqualAndNoMsa: called with NULL arg\n
+L:SHOW_VIRT_FN S:  Virtual function at address 0x%x\n
+L:SHOW_VIRT_FN_1 S:    ep: %d, epType: %d\n
+L:SHOW_VIRT_FN_2 S:    inFn: 0x%x, inAckFn: 0x%x\n
+L:SHOW_VIRT_FN_3 S:    outFn: 0x%x, setupFn: 0x%x\n
+L:TOPOLOGY_SHOW_TOPOLOGY_1 S:Logical Address=%d, USB Address=%d\n
+L:TOPOLOGY_SHOW_TOPOLOGY_2 S:  Parent LA=%d, Child LA=%d, Sibling LA=%d\n
+L:TOPOLOGY_SHOW_TOPOLOGY_5 S:  Requires Cleanup=%d, Max Packet Size Ep0=%d, System Control Q State=%d\n
+L:TOPOLOGY_SHOW_ENDPOINTS_INFO S:  Stored Endpoint Information:\n
+L:INPUT_STUCK_ENDPOINT S:Input Endpoint at LA: %d, Endpoint: %d is stuck.\n
+L:OUTPUT_STUCK_ENDPOINT S:Output Endpoint at LA: %d, Endpoint: %d is stuck\n
+L:TOPOLOGY_HOST_RESET_SHOULD_NEVER_FAIL S:Host reset should never fail, but it did\n
+L:ENDPOINT_SHARED_INTF S:In Configuration %d, Endpoint %d is being shared by two distinct interfaces\n
+L:EXISTING_ENDPOINT_TYPE S:In Configuration %d, adding existing endpoint with endpoint number %d, endpoint direction %d but with different endpoint type\n
+L:DISCONNECT_DEVICE S:Disconnecting device USB %d, logical %d\n
+L:RELEASE_RETRY S:In XSST Monitor, releasing Retry Buffers for USB Addr: %d, Endpoint: %d\n
+L:START_XSST S:XSST Monitor has been started\n
+L:STOP_XSST S:XSST Monitor has been stopped\n
+L:FLUSH_IN_QUEUE S:Flushing Input Queue for device at LA: %d, Endpoint: %d\n
+L:FLUSH_OUT_QUEUE S:Flushing Output Queue for device at LA: %d, Endpoint: %d\n
+L:XSST_MONITOR_STILL_PROCESSING S:XSST Monitor is still processing the last address\n
+L:TOPOLOGY_WRITING_IN_ENDPOINT S:Writing IN endpoint: usbA=%d, EP=%d, EPType=%d\n
+L:TOPOLOGY_WRITING_OUT_ENDPOINT S:Writing OUT endpoint: usbA=%d, EP=%d, EPType=%d\n
+L:TOPOLOGY_SHOW_TOPOLOGY_7 S:  VID is 0x%04x, PID is 0x%04x, device Change is %d\n
+L:TOPOLOGY_SHOW_TOPOLOGY_4 S:  Is Hub=%d, Is Connected=%d\n
+L:TOPOLOGY_TOO_MANY_CONFIGURATIONS S:Device with LA %d has %d configurations but only %d are supported.\n
+L:TOPOLOGY_OPTIMIZING_ENDPOINT_SET S:Removing tracking of LA %d, EP number %d, EP direction %d because the type does not vary.\n
+L:TOPOLOGY_SET_CONFIG_UNKNOWN S:Host performed set configuration, but descparser hasn't seen the full config descriptor. \n
+L:TOPOLOGY_INVALID_ADDRESS_REQUIRES_CLEANUP S:Invalid address %d requires cleanup @ line %d\n
+L:TOPOLOGY_INVALID_DIRECTION_ARG S:Invalid transfer direction received %d @ line %d\n
+L:TOPOLOGY_LA_REQUIRES_CLEANUP S:Device at LA %d requires cleanup\n
+L:TOPOLOGY_DEVICE_REQUIRING_CLEANUP_INSYS_CLEARED S:Device at LA %d requiring cleanup was removed from sys. Timeout counter = %d\n
+L:TOPOLOGY_SENT_CSPLIT_TO_REX S:Device requiring cleanup had CSPLIT sent to REX. LA = %d, ep = %d, direction = %d\n
+L:TOPOLOGY_XSST_WRITE_CONDITIONAL_FAILED S:XSST WriteConditional failed for device requiring cleanup. Addr = %d, ep = %d, (epType << 8) | epDir  = 0x%x\n
+L:TOPOLOGY_SPLIT_BLK_NO_SPLIT_PACKET S:i/oSplit and i/oBlk are set but there is no s/cSplit packet in queue\n
+L:TOPOLOGY_SPLIT_DEVICE_HAS_NO_UPSTREAM_HS_HUB S:Split device at LA %d has no upstream high-speed hub!\n
+L:TOPOLOGY_SET_SPEED_MISSING_NODE S:Tried to set the speed of device with parent LA %d and port %d to %d, but couldn't find it in the topology!\n
+L:TOPOLOGY_SET_SPEED S:Set the speed of device with LA %d to %d\n
+L:TOPOLOGY_SHOW_TOPOLOGY_3 S:  Port On Parent=%d, Speed=%d, High Endpoint=%d\n
+L:TOPOLOGY_SHOW_TOPOLOGY_6 S:  MSA LA=%d, Configuration Value=%d\n
+L:TOPOLOGY_SENT_MSA_FREED_TO_REX S:Sent CPU message LEX_FREED_MSA_PAIR @ USBAddr %d to Rex on Vport %d\n
+L:TOPOLOGY_UPDATING_XSST_MSA S:Updating XSST MSA info for USBAddr %d endpoint %d line %d\n
+component:REXSCH_COMPONENT
+L:ENABLE S:REXSCH_Enable()\n
+L:DISABLE S:REXSCH_Disable()\n
+L:MSA_NOT_CBW_PKT_IN_IDLE S:Received a non-CBW packet in the Idle state, accel is %d, action is %d\n
+L:MSA_GOT_DNS_PKT_IN_CBW S:Received a Downstream packet in the CBW state, should not get any, accel is %d, action is %d\n
+L:MSA_RESP_IDLE S:Received a response in the Idle state\n
+L:MSA_RESP_CBW_INVALID S:Received an invalid response %d in the CBW state\n
+L:MSA_RESP_OUT_DATA_INVALID S:Addr %d: Received an invalid response %d in the Out Data state\n
+L:MSA_RESP_IN_DATA_INVALID S:Received an invalid response in the In Data state = %d\n
+L:MSA_RESP_STALL_SETUP_INVALID S:Received an invalid response in the Stall Setup state\n
+L:MSA_RESP_STALL_IN_INVALID S:Received an invalid response in the Stall In state\n
+L:MSA_ALLOCATE_NO_FREE_REF S:No Free Msa refs to allocate\n
+L:MSA_DISP_STAT S:     state %d save queue %d cnt %d\n
+L:MSA_DISP_STAT_HDR S:Msa Stat\n
+L:MSA_DISP_STAT_ADDR S:   addr %d, endp %d\n
+L:MSA_DISP_STAT_CNT S:     clr halt cnt %d cbw %d csw %d\n
+L:MSA_DISP_STAT_CNT2 S:     in stall cnt %d out stall cnt %d flc in cnt %d\n
+L:MSA_DISP_STAT_NAK_CNT S:     nak cnt %d\n
+L:MSA_RESP_CSW_INVALID S:Addr %d: Received an invalid response %d in the CSW state\n
+L:MSA_RESP_CSW_ERROR S:Received an errored response in the CSW state\n
+L:MSA_RESP_IN_ERROR S:Received an errored response in the In Data state: resp = %d\n
+L:MSA_RESP_IN_NAK_CNT S:USB addr %d, In Nak Cnt == %d\n
+L:MSA_CSW_RESP_IN_NAK_CNT S:USB addr %d, CSW In Nak Cnt == %d\n
+L:MSA_RESP_OUT_NAK_CNT S:USB addr %d, Out Ping Nak Cnt == %d\n
+L:REXSCH_DEVRESP_UNKNOWN_SCHTYPE S:RexSch DevResp Received an unknown schtype %d\n
+L:MSA_INIT S:Rex Mass Storage Initialization, allocate %d devices\n
+L:MSA_SOF_FLC S:MSA SOF Flow Control Count %d\n
+L:REXSCH_SPLIT_DROPPED S:Split packet dropped, frame %d current rx packet frame %d set frame %d\n
+L:REXSCH_SPLIT_FULL S:All endpoints full frame %d\n
+L:REXSCH_SPLIT_ENTRY S:Split entry %d:%d match\n
+L:REXSCH_BAD_PING_RESPONSE S:Bad ping response: 0x%x\n
+L:MSA_FLUSH_QUEUE_ERROR S:Error: Flush Queue is not empty %d\n
+L:MSA_OUT_SAVE_QUEUE_EMPTY S:Out Save Queue Empty\n
+L:MSA_DBG_OUT_TIMEOUT S:Msa got Out Timeout\n
+L:MSA_DBG_PING_ACK_CSW_IN S:Error: Ping Ack expected in for csw Addr:%d, sent len %d,expect len %d\n
+L:MSA_DISP_STAT_DATA S:     data len %d data cnt %d\n
+L:MSA_DBG_BAD_NYET_PKT_LEN S:  Error: Addr %d Out Nyet pkt len is %d\n
+L:MSA_DBG_CBW_OUT_DATA S:  Error: Got CBW: Out data phase\n
+L:MSA_DBG_CBW_IN_CSW S:  Error: Got CBW: In CSW phase\n
+L:MSA_DNS_BAD_STATE S:Illegal Dns State\n
+L:MSA_TOO_MANY_NAKS S:Got too many Naks, now terminating\n
+L:MSA_IN_TOO_MUCH_DATA S:Device returned more data than was specified in CBW\n
+L:MSA_OUT_TOO_MUCH_DATA S:Host sent more data than was specified in CBW\n
+L:SETUP_TRANSACTION_PENDING S:REX Scheduler is waiting to send Setup to the REX. LEX should not sent another packet downstream.\n
+L:TOO_MANY_SIMULTANEOUS_TRAN S:There are too many simultaneous MSA transactions\n
+L:DOWNSTREAM_CSW S:REXSCH got downstream CSW data\n
+L:MSA_DNS_IN_INCORRECT_ACCEL S:Got packet with incorrect Accel value: %d in In-phase\n
+L:MULTIPLE_IN_IN_PHASE S:Got multiple IN's in IN-phase\n
+L:INVALID_SEND_DOWNSTREAM_MODE S:Invalid mode for sending a packet downstream\n
+L:RECEIVED_INVALID_CLR_HLTEP_RESPONSE S:Received invalid response when clearing halted endpoint for USB Addr: %d, line: %d\n
+L:REXMSA_RESET_DEVICE S:REXMSA Reset device usb %d\n
+L:NUM_PACKETS_IN_QUEUE_NOT_ZERO S:numPacketsInQueue is not zero, and is %d\n
+L:MSA_IN_RECOVERY_FLUSHING_DATA_QID S:In MSA recovery usb %d, flushing and de-allocating data QID %d\n
+L:UNEXPECTED_MSA_RESPONSE S:Unexpected MSA response for usb addr %d\n
+L:RECEIVED_INVALID_CLR_HLTEP_SCHTYPE S:Received invalid schedule type when clearing halted endpoint for USB Addr: %d, schedule type: %d\n
+L:DUPLICATED_OUT_TOGGLE S:Received duplicated OUT packet toggle\n
+L:INVALID_STATE S:Invalid state at line %d, info is 0x%x\n
+L:DUPLICATED_IN_TOGGLE S:Received duplicated IN packet toggle\n
+L:INVALID_DNS_IN_INPHASE S:Received a downstream packet with invalid action %d in the IN data phase\n
+L:INVALID_SETUP_PACKET_SCHEDULING S:The Setup packet has an invalid scheduling type: %d.\n
+L:RECEIVED_SW_MESSAGE S:Received software message %d with data %d\n
+L:INVALID_MSA_USB_ADDRESS S:Requested to reset MSA status on invalid USB address %d\n
+L:RECEIVED_UNKNOWN_SW_MESSAGE S:Received unknown software message %d with data %d\n
+L:REXSCH_DEBUGX S:__#### DEBUG 0x%x ####__\n
+L:REXSCH_DEBUG_MSA_FLUSH_Q S:__#### DEBUG - MSA FLUSH QUEUE ####__\n
+component:STORAGE_COMPONENT
+L:STORAGE_VAR_TOO_BIG S:Storage variable %d is too big at %d bytes to be read\n
+L:FLASH_ACCESS_INVALID_VARIABLE S:Tried to access flash variable %d, but there are only %d variables\n
+L:STORAGE_GET_VAR_NOT_EXIST S:Tried to get a persistent variable %d that does not exist\n
+L:STORAGE_CREATE_VAR_ALREADY_EXISTS S:Tried to create a persistent variable %d that already exists\n
+L:FLASH_REMOVE_VAR_NOT_EXISTS S:Tried to remove a persistent variable %d that doesn't exist\n
+L:STORAGE_ICMD_READ_VAR S:Variable %d has MSW=0x%x and LSW=0x%x.\n
+L:STORAGE_ICMD_WRITE_VAR S:Wrote variable %d with MSW=0x%x and LSW=0x%x.\n
+L:STORAGE_ICMD_DUMP_VARS S:Dumping all persistent variables:\n
+L:STORAGE_SAVING_VAR S:Saving persistent var %d\n
+L:STORAGE_ASSERT_HOOK_TITLE S:Persistent data assert hook:\n
+L:STORAGE_ASSERT_HOOK_PENDING_WRITE S:  Pending write to variable %d\n
+L:STORAGE_INVALID_STORAGE_BACKEND S:The storage backend value of %d is invalid.\n
+L:READ_VAR_FAIL S:Unable to read var %d\n
+L:WROTE_VAR_FAIL S:Unable to write var %d\n
+L:CANT_READ_VAR S:Tried to read variable %d, but it doesn't exist\n
+L:ERASE_VAR S:Erasing variable %d\n
+L:ERASE_VAR_FOR_VAR_THAT_DOESNT_EXIST S:Trying to erase variable %d, but it doesn't exist in storage\n
+L:DEPRECATED_EEPROM_READ_FAIL S:Could not read eeprom page %d\n
+L:DEPRECATED_EEPROM_WRITE_FAIL S:Could not write to I2C EEPROM chip\n
+L:EEPROM_PAGE_READ_FAILED S:EEPROM read failed while reading page %d\n
+L:EEPROM_INVALID_READ_SIZE S:EEPROM page read size %d is invalid while reading page %d\n
+L:EEPROM_WRITE_BACKUP_FAILED S:Failed to write to EEPROM backup page for variable %d\n
+L:EEPROM_WRITE_PRIMARY_FAILED S:Failed to write to EEPROM primary page for variable %d\n
+L:EEPROM_PRIMARY_PAGE_DATA_CORRUPTED S:Primary location for variable %d is corrupted, but backup is intact. Restoring from backup.\n
+L:EEPROM_PRIMARY_PAGE_BAD_CRC S:Primary location has a bad CRC, and backup is for a different variable. Probable corruption of variable %d.\n
+L:EEPROM_BACKUP_PAGE_BAD_CRC S:Primary and backup both failed CRC check for variable %d. Assuming primary is valid.\n
+L:EEPROM_RESTORE_BACKUP_FAILED S:Write to EEPROM backup page %d failed for restoring primary page %d\n
+L:EEPROM_RESTORE_PRRIMARY_FAILED S:Restore EEPROM primary page %d failed\n
+component:FLASH_DATA_COMPONENT
+L:FLASH_INIT S:Flash driver initialization\n
+L:MULTIPLE_ACTIVE_SECTIONS S:Multiple sections of flash were marked active\n
+L:INIT_SECTION1_MARKED_AS_ACTIVE S:Initialization: Marking section1 as the active section\n
+L:INIT_FOUND_GARBAGE_HEADER S:Initialization found a garbage flash header in section %d\n
+L:UNEXPECTED_HEADER_WHEN_SETTING S:Unexpectedly read header %d, when going to write %d\n
+L:WRITE_VAR_SIZE_TOO_BIG S:Error Writing variable %d.  Size %d is too big\n
+L:WRITE_VAR S:Writing variable %d, with size %d\n
+L:WRITE_VAR_IS_REPLACEMENT S:Wrote variable %d, & now erasing previous setting\n
+L:ERASE_VAR S:Erasing var %d\n
+L:ERASE_VAR_FOR_VAR_THAT_DOESNT_EXIST S:Trying to erase var %d, but it doesn't exist in flash\n
+L:READ_VAR S:Read variable %d\n
+L:CANT_READ_VAR S:Tried to read variable %d, but it doesn't exist\n
+L:UNABLE_TO_FIND_ACTIVE_DATA_SECTION S:Unable to find active data section\n
+L:FLASH_VAR_TOO_BIG S:Flash variable %d is too big at %d bytes to be read\n
+component:EEPROM_COMPONENT
+L:EEPROM_BUSY S:There is already an EEPROM access in progress.\n
+L:EEPROM_ADDRESS_EXCEEDS_CAPACITY S:An attempt was made to access EEPROM page %d which exceeds capacity %d.\n
+L:ICMD_EEPROM_READ_FAILED S:Failed reading external eeprom\n
+L:ICMD_EEPROM_WRITE_FAILED S:Failed writing to external eeprom\n
+L:ICMD_EEPROM_WRITE_SUCCESSFUL S:Write to EEPROM is complete\n
+L:ICMD_EEPROM_WRONG_READ_LENGTH S:Expected %d bytes, read %d bytes instead\n
+L:ICMD_PAGE_VALUES S:Byte %d: Value: 0x%x\n
+L:ICMD_WORD_VALUES S:Word %d: Value: 0x%x\n
+L:ICMD_INVALID_PAGE S:Page %d is outside the valid range of 0 to %d\n
+L:EEPROM_INITIALIZATION_STARTING S:Beginning EEPROM initialization\n
+L:EEPROM_READ_SUBMIT S:Submitting an EEPROM read of page %d with pageData pointing at 0x%x\n
+L:EEPROM_WRITE_SUBMIT S:Submitting an EEPROM write of page %d with pageData pointing at 0x%x\n
+component:ATMEL_CRYPTO_COMPONENT
+L:READ_FAILED S:Atmel chip read failed\n
+L:READ_SUCCESS S:Successfully read %d bytes from Atmel chip\n
+L:READ_BYTE S:Read byte 0x%x\n
+L:INVALID_COND S:Invalid condition at line %d\n
+L:WRITE_FAILED S:Atmel chip write failed\n
+L:CRC_FAIL S:CRC failure: expecting 0x%x, got 0x%x\n
+L:LONG_PACKET S:Read more bytes (%d) than the size of the packet (%d)\n
+L:SHORT_PACKET S:Read less bytes (%d) than the size of the packet (%d)\n
+L:INVALID_SHORT_PACKET S:Packet of length %d is less than the minimum 4 byte size\n
+L:SYS_BUSY_ABORTING_ICMD S:Sorry, system is busy, please try icommand later\n
+L:INVALID_LARGE_READ_REQUEST S:Invalid read request of %d bytes\n
+L:ICMD_FAILED S:icommand failed\n
+L:INVALID_ATMEL_SLOT S:Invalid Atmel slot %d\n
+L:READ_SLOT_FAILED S:Read slot failed, read %d bytes instead of 32 bytes\n
+L:WRITE_SLOT_FAILED S:Write slot failed, read %d status bytes, data[0] is 0x%x\n
+L:INVALID_BYTE_ADDR S:Invalid byte address %d\n
+L:READ_CONFIG_WORD_FAILED S:Read config word failed, read %d bytes instead of 4 bytes\n
+L:WRITE_CONFIG_WORD_FAILED S:Write config word failed, read %d status bytes, data[0] is 0x%x\n
+L:LOCK_FAILED S:Lock failed, read %d status bytes, data[0] is 0x%x\n
+L:ATMEL_SUBMIT_I2C_SYS_BUSY S:Submit i2c op, but system is busy\n
+L:ATMEL_SUBMIT_I2C_1 S:Submit i2c op, opcode:0x%.2x, param1:0x%.2x, param2:0x%.4x\n
+L:ATMEL_SUBMIT_I2C_2 S:Submit i2c op, writeDataSize:%d, readDataSize:%d, completionHandler:0x%x\n
+L:SENDING_ATMEL_I2C_WAKEUP S:Sending Atmel i2c wakeup\n
+L:IDLE_FAILED S:Atmel idle command failed\n
+L:ICMD_SEND S:Atmel icmd sending opCode 0x%02x, param1 0x%02x, param2 0x%04x\n
+L:CRC_WRITE_PACKET_DONE S:Calculated SW CRC for write in %dus\n
+L:CRC_READ_PACKET_DONE S:Calculated SW CRC for read in %dus\n
+L:SW_MAC_DONE S:SW MAC done! digestsMatch=%d. It took %dus\n
+L:RUN_MAC_CALLED_WHILE_IN_PROGRESS S:run mac called while in progress\n
+L:RUN_MAC_CALLED S:Run MAC called, secretKey is at 0x%x, challenge is at 0x%x, completionHandler is at 0x%x\n
+L:HW_MAC_DONE S:HW MAC operation done, returned data at 0x%x, dataSize %d, userPtr 0x%x\n
+L:HW_MAC_DONE_INVALID_ARGS S:HW MAC done got invalid args. Got data at 0x%x, dataSize %d, userPtr 0x%x\n
+L:CHIP_STATE1 S:Atmel chip state is %d, completionHandler is 0x%x, userPtr is 0x%x\n
+L:CHIP_STATE2 S:Atmel chip state readReqSize is %d, simpleCmd is 0x%x, writeBuffer[0-3] in Big endian is 0x%x\n
+L:SET_SPEED S:Atmel chip speed changing from speed %d to speed %d\n
+L:CHIP_STATE3 S:Atmel chip state readBuffer[0-3] in Big endian is 0x%x\n
+L:MAX_I2C_RETRY_EXCEEDED S:Maximum # of i2c retries exceeded\n
+L:I2C_RECOVERY_START S:i2c recovery start attempt %d\n
+L:I2C_RECOVERY_WOKEUP S:i2c recovery did wakeup\n
+L:I2C_RECOVERY_DONE S:i2c recovery done, info is %d\n
+L:ATMEL_WRITE_BUFFER_BOUNDS S:Tried to write outside the bounds of the buffer at wordOffset %d\n
+L:ATMEL_WRITE_DATA_SLOT_ICMD_COMPLETE S:ICMD write of data slot completed\n
+L:ATMEL_READ_CONFIG_WORD_ICMD_COMPLETE S:ICMD read of config word returned data: 0x%x\n
+L:ATMEL_WRITE_CONFIG_WORD_ICMD_COMPLETE S:ICMD write of config word completed\n
+L:ATMEL_LOCK_ZONE_ICMD_COMPLETE S:Lock authentication zone ICMD completed.\n
+L:ATMEL_LOCK_STATUS S:Atmel authentication chip lock status: Data+OTP=%d, Config=%d.\n
+L:ATMEL_WRITE_DATA_BUFFER_DONE S:Atmel data buffer written at word offset %d with value 0x%x.\n
+L:ATMEL_INIT_STEP1 S:Starting initialization sequence\n
+L:ATMEL_INIT_STEP2 S:Atmel chip has woken up\n
+L:ATMEL_INIT_STEP3 S:Initialization is done, success flag is: %d\n
+component:KC705_COMPONENT
+L:DE_JITTER_WRITE_FAILED S:Setting De-jitter chip failed at line: %d\n
+L:DEJITTER_CHIP_CONFIGURED S:De-jitter chip was configured to 1 ppm\n
+L:I2C_WRITE_FAILED S:I2C Write failed\n
+L:I2C_READ_FAILED S:I2C Read failed\n
+L:I2C_RANDOM_READ_1BYTE_RESP S:I2C Random 1 Byte Read: Register: 0x%x; Value: 0x%x\n
+component:XCSR_COMPONENT
+L:XCSR_Q_ALLOCATE_ERROR_LOG S:Queue allocate error @ line %d\n
+L:XCSR_INVALID_QID_ERROR S:Invalid QID received during static Q allocation for Q %d, expecting %d @ line %d\n
+L:XCSR_Q_FLUSH_ERROR_LOG S:Invalid QID %d received in XCSR queue flush @ line %d\n
+L:XCSR_Q_WRITE_ERROR_LOG S:Queue write error @ line %d\n
+L:XCSR_Q_STATUS_ERROR_LOG S:Invalid QID %d received in XCSR queue get empty status @ line %d\n
+L:XCSR_READ_LOOKUP_TABLE_INVALID_ARG_ERROR_LOG S:Invalid argument received in XCSR_ReadDeviceStatus @ line %d\n
+L:XCSR_INVALID_XUSB_CHIP_ID_ERROR_LOG S:Invalid XUSB chip ID, expecting 0x%x, read 0x%x\n
+L:XCSR_INVALID_ENDPOINT_NUMBER S:Invalid endpoint number %d @ line %d\n
+L:XCSR_INVALID_ENDPOINT_TYPE S:Invalid endpoint type %d @ line %d\n
+L:XCSR_WRITE_FRAME S:XCSR_XICSWriteFrame writing qid %d, with header 0x%x 0x%x\n
+L:XCSR_XSST_WRITE_MASK_LSW S:XCSR_XSSTWriteMask LSW value is 0x%x, mask is 0x%x, old value is 0x%x\n
+L:XCSR_XSST_WRITE_MASK_MSW S:XCSR_XSSTWriteMask MSW value is 0x%x, mask is 0x%x, old value is 0x%x\n
+L:XICSQ_ICMD_GET_Q_STATS1 S:Qid %d: frame count 0x%x, word count 0x%x\n
+L:XICSQ_ICMD_GET_Q_STATS2 S:empty status %d, data0 0x%x, data1 0x%x\n
+L:CLR_BCO S:Clearing BCO for usb %d, logical %d, valid(msb) / insys(lsb) as 2 bits 0x%x\n
+L:CLR_BCI S:Clearing BCI for usb %d, logical %d, valid(msb) / insys(lsb) as 2 bits 0x%x\n
+L:XCSR_INVALID_XUSB_CHIP_MINOR_REVISION_ERROR_LOG S:Invalid minor XUSB chip revision, expecting 0x%x, read 0x%x\n
+L:XCSR_INVALID_XUSB_CHIP_MAJOR_REVISION_ERROR_LOG S:Invalid major XUSB chip revision, expecting 0x%x, read 0x%x\n
+L:XCSR_Q_STATUS_ERROR_CONTAIN_COMPLT_FRAME S:Invalid QID %d in XCSR_XICSQueueContainsCompleteFrame\n
+L:XCSR_XICS_WRITE_FRAME_NULL_ARG S:XCSR_XICSWriteFrame passed a null arg\n
+L:ICMD_INVALID_QID S:Invalid qid %d\n
+L:XICSQ_ICMD_GET_Q_STATS3 S:empty status %d\n
+L:ICMD_CACHE_STATS_QID_SID_FREE_COUNT S:Free QIDs %d, free SIDs %d\n
+L:ICMD_READ_FRAME_SHOW_ERROR S:Reading from Q %d, Error %d\n
+L:ICMD_READ_FRAME_SHOW_Q S:Reading from Q %d\n
+L:ICMD_READ_FRAME_SHOW_HEADER S:Frame header: 0x%x 0x%x\n
+L:ICMD_READ_FRAME_SHOW_HEADER2 S:              0x%x 0x%x\n
+L:ICMD_READ_FRAME_SHOW_DATA S:Frame data: 0x%x 0x%x\n
+L:WRITE_FRAME_TOO_MUCH_DATA S:Write Frame was called with too much data, %d bytes to be exact\n
+L:IRQ2XICSSIDEMPTY S:XICS SIDs are exhausted\n
+L:IRQ2XICSSIDAEMPTYLTHRESH S:Above XICS SID almost empty low threshold\n
+L:IRQ2XICSSIDAEMPTYMTHRESH S:Above XICS SID almost empty medium threshold\n
+L:IRQ2XICSSIDAEMPTYHTHRESH S:Above XICS SID almost empty high threshold\n
+L:IRQ2XICSQIDEMPTY S:IRQ2XICSQIDEMPTY\n
+L:IRQ2XICSQIDAEMPTY S:IRQ2XICSQIDAEMPTY\n
+L:DUMP_FRAME_NULL_ARG S:XCSR_XICSDumpFrame: got null arg\n
+L:DUMP_FRAME_HEADER_1 S:XCSR_XICSDumpFrame: 1st header cache word 0x%x 0x%x\n
+L:DUMP_FRAME_HEADER_2 S:XCSR_XICSDumpFrame: 2nd header cache word 0x%x 0x%x\n
+L:DUMP_FRAME_SIZE S:XCSR_XICSDumpFrame: Frame size is %d bytes\n
+L:DUMP_FRAME_RAW_BYTE S:XCSR_XICSDumpFrame: raw dump %.02x\n
+L:LOG_XSST_WRITE_LAT S:XSST Write LAT addr %d endPoint %d, Data 0x%x\n
+L:LOG_XSST_WRITE_SST S:XSST Write addr(MSW)/endPoint(LSW) 0x%x, Data 0x%x 0x%x\n
+L:LOG_XSST_READ S:XSST Read addr(MSW)/endPoint(LSW) 0x%x, Data 0x%x 0x%x\n
+L:LOG_LAT_READ S:LAT Read addr %d endPoint %d, Data 0x%x\n
+L:WRITING_ENDPOINT_DATA1 S:writing XSST LA %d, endpoint number %d, endpoint type %d\n
+L:WRITING_ENDPOINT_DATA2 S:value: 0x%x 0x%x\n
+L:WRITING_ENDPOINT_DATA3 S:mask:  0x%x 0x%x\n
+L:FLUSHED_AND_DEALLOCATED_QID S:QID %d flushed and deallocated\n
+L:SHOW_XSST_NOT_IN_SYS S:USB %d, Not in-sys\n
+L:SHOW_XSST_IN_SYS S:USB %d, LA %d\n
+L:SHOW_XSST_ENDPOINT_ENTRY S:  XSST(%d,%d) = 0x%x\n
+L:SHOW_XSST_ENDPOINT_ENTRY2 S:              0x%x\n
+L:SHOW_XSST_ALL_ZEROES S:  XSST is all zeros\n
+L:DECODE_XSST_IN_BLOCKING S:  IN Blocking set\n
+L:DECODE_XSST_OUT_BLOCKING S:  OUT Blocking set\n
+L:DECODE_XSST_IN_ERRORS S:  In Errors = %d\n
+L:DECODE_XSST_OUT_ERRORS S:  Out Errors = %d\n
+L:DECODE_XSST_RETRY_USAGE S:  Retry usage = %d\n
+L:DECODE_XSST_BCO S:  BCO set\n
+L:DECODE_XSST_BCI S:  BCI set\n
+L:DECODE_XSST_EP_INSYS_OVERRIDE S:  Endpoint in-sys override set\n
+L:DECODE_XSST_SETUP_RESP_TOGGLE S:  Setup response toggle set\n
+L:DECODE_XSST_SETUP_RESP_PENDING S:  Setup response pending set\n
+L:DECODE_XSST_SETUP_RESP_STALL S:  Setup response stall set\n
+L:DECODE_XSST_INVALID_ENDPOINT_TYPE S:  Invalid Endpoint type %d in XSST entry\n
+L:DECODE_XSST_IN_CLEAR S:  IN Clear set\n
+L:DECODE_XSST_OUT_CLEAR S:  OUT Clear set\n
+L:DECODE_XSST_IN_DETECT S:  IN Detect set\n
+L:DECODE_XSST_OUT_DETECT S:  OUT Detect set\n
+L:DECODE_XSST_OUT_QID S:  Out QID = %d\n
+L:DECODE_XSST_IN_QID S:  In QID = %d\n
+L:DECODE_XSST_ALTERNATE_RESPONSE S:  Alternate response set\n
+L:DECODE_XSST_ACCELERATION S:  Acceleration set\n
+L:DECODE_LAT_LA_INSYS_VAL S:LA %d: in-sys %d, valid %d\n
+L:DECODE_LAT_VPORT S:  Vport ID %d\n
+L:DECODE_LAT_SPLIT S:  Split device\n
+L:DECODE_LAT_VFEN S:  Virtual function enabled\n
+L:XCSR_NON_ZERO_IN_QID_BEFORE_WRITE S:Nonzero in endpoint QID seen before upstream frame: qid %d @ line %d\n
+L:XCSR_NON_ZERO_OUT_QID_BEFORE_WRITE S:Nonzero out endpoint QID seen before upstream frame: qid %d @ line %d\n
+L:ICMD_WRITING_QUEUE S:Write Queue iCmd: Writing a queue with %d bytes of arbitrary data\n
+L:UPDATE_ADDRESS S:Updating Address USB:%d,LA:%d,VPORT:%d\n
+L:DECODE_XSST_INOTIFY_COUNT S:  iNotify Count = %d\n
+L:DECODE_XSST_ONOTIFY_COUNT S:  oNotify Count = %d\n
+L:XCSR_NON_ZERO_INTFYCNT_BEFORE_WRITE S:Nonzero iNotify count seen before upstream frame: count %d @ line %d\n
+L:XCSR_NON_ZERO_ONTFYCNT_BEFORE_WRITE S:Nonzero oNotify count seen before upstream frame: count %d @ line %d\n
+L:XSST_BITFIELD_CHECK_FAILURE S:XSST bitfield check failed at line %d\n
+L:XCSR_SHOW_XUSB_ADDRESS_1 S:XUSB Address - Logical Address: %d, USB Address: %d, VPort: %d\n
+L:XCSR_SHOW_XUSB_ADDRESS_2 S:               USB Valid: %d, In System: %d, Virtual Function: 0x%x\n
+L:LAT_BITFIELD_CHECK_FAILURE S:LAT bitfield check failed at line %d\n
+L:XSST_CONDITIONAL_WRITE_FAILURE S:XSST conditional write failed! LA%d: USB address %d, endpoint %d\n
+L:DECODE_XSST_IHOST_ACCESS S:  In Host Access set\n
+L:DECODE_XSST_OHOST_ACCESS S:  Out Host Access set\n
+L:Q_UNDERFLOW_ERROR_DETAILS S:A queue underflow occurred while performing operation %d (0=READ,1=WRITE) on Q ID %d from interface %d\n
+L:Q_OVERFLOW_ERROR_DETAILS S:A queue overflow occurred while performing operation %d (0=READ,1=WRITE) on Q ID %d from interface %d\n
+L:XCSR_READ_EMPTY_Q S:Tried to read an empty queue (%d) at line %d\n
+L:INVALID_QID S:Received an invalid qid (%d) at line %d\n
+L:XCSR_ASSERT_Q_STATS S:--- XCSR Non-Empty Queue Stats: ---\n
+L:XCSR_ASSERT_Q_STATS_1 S:Qid %d: frame count 0x%x, word count 0x%x\n
+L:XCSR_ASSERT_Q_STATS_2 S:    data0 0x%x, data1 0x%x\n
+L:XICSSTATUS S:Xics Status : Qid %d Sid %d\n
+L:XUSBIRQ_XCRMNOTINSYS S:We got an upstream packet for an endpoint that is not in sys\n
+L:XUSBIRQ_XCRMAFIFOUFLOW S:The xcrm fifo has underflowed, damn fifo!!\n
+L:XUSBIRQ_XCRMAFIFOOFLOW S:The xcrm fifo has overflowed, who designed this thing!!\n
+L:XUSBIRQ_XCRMAFIFOSYNC S:The xcrm fifo synced?? what is that, a disease?\n
+L:XUSBIRQ_XCRMDROPFRM S:The xcrm has dropped a frame, why?\n
+L:XUSBIRQ_XCRMFRAMING S:xcrm framing error, how lame!\n
+L:XUSBIRQ_XCRMFRMCRC S:xcrm frame crc error, how scary\n
+L:XUSBIRQ_XCRMPLDCRC S:xcrm payload error, ouch\n
+L:XUSBIRQ_XCRMTOUT S:xcrm time out, canucks suck!!\n
+L:XUSBIRQ_XCTMAFIFOUFLOW S:The xctm fifo has underflowed, stupid fifo\n
+L:XUSBIRQ_XCTMAFIFOOFLOW S:The xctm fifo has overflowed, Ken is this your??\n
+L:XUSBIRQ_XCTMPKT S:xctm packet framing error, boring!\n
+L:IRQ2XICSSIDAEMPTYNTHRESH S:Below XICS SID almost empty low threshold\n
+L:FLC_EVENT_LOCAL_INTERRUPT S:Received local flow control event interrupt\n
+L:FLC_EVENT_REMOTE_INTERRUPT S:Received remote flow control event interrupt\n
+L:DECODE_XSST_ENDPOINT_CTRL_IN S:  Endpoint type: CTRL IN\n
+L:DECODE_XSST_ENDPOINT_ISO_IN S:  Endpoint type: ISO IN\n
+L:DECODE_XSST_ENDPOINT_BULK_IN S:  Endpoint type: BULK IN\n
+L:DECODE_XSST_ENDPOINT_INT_IN S:  Endpoint type: INT IN\n
+L:DECODE_XSST_ENDPOINT_CTRL_OUT S:  Endpoint type: CTRL OUT\n
+L:DECODE_XSST_ENDPOINT_ISO_OUT S:  Endpoint type: ISO OUT\n
+L:DECODE_XSST_ENDPOINT_BULK_OUT S:  Endpoint type: BULK OUT\n
+L:DECODE_XSST_ENDPOINT_INT_OUT S:  Endpoint type: INT OUT\n
+L:DECODE_XSST_MSAPAIREP S:  MSA Paired Endpoint: %d\n
+L:DECODE_XSST_INT_COPYTOCPU S:  Copy IN response data to CPU\n
+L:DECODE_XSST_INT_FULLHALFRATE S:  Standard forwarding to maximize effective polling rate\n
+L:XCSR_VP_LINK_DOWN S:Vport %d down.  Cleaning up flow control rules.\n
+L:RELEASE_RETRY S:In XSST Reset, releasing Retry Buffers for USB Addr: %d, Endpoint: %d\n
+L:XCSR_SPECTAREG_READ S:Read XCSR Register: 0x%x, Value: 0x%x\n
+L:XCTM_DISABLE_FAILURE S:Unable to disable the XCTM\n
+L:XICS_READ_Q_SNOOP_ERR S:Unable to snoop queue: %d\n
+L:IRQ2XURMPKTLIMIT S:IRQ2XURMPKTLIMIT\n
+L:XICS_SENDING_CSPLIT_TOWARDS_HS_DEVICE S:Sending a CSPLIT towards a high speed device?! Device address = %d\n
+L:XCSR_DEALLOCATED_STATIC_QUEUE S:Attempted to deallocate a static queue: qid %d\n
+L:XCSR_MSA_OUT_INT_IN_DISABLED_OPTIMIZED_NAK S:Disabled optimized NAK for endpoint %d at USB address %d\n
+component:XLR_COMPONENT
+L:INVALID_ID S:There is an invalid ID in the ID register\n
+L:INVALID_CVS_MAJOR S:Invalid register CVS Major value, read %d, expecting %d\n
+L:INVALID_CVS_MINOR S:Invalid register CVS Minor value, read %d, expecting %d\n
+L:FLOW_CONTROL_CTRL_OUT S:ctrl out flow control dropped %d packets\n
+L:FLOW_CONTROL_CTRL_OUT_OVERFLOW S:ctrl out flow control dropped counter overflowed\n
+L:FLOW_CONTROL_INTRP_OUT S:interrupt out flow control dropped %d packets\n
+L:FLOW_CONTROL_INTRP_OUT_OVERFLOW S:interrupt out flow control dropped counter overflowed\n
+L:FLOW_CONTROL_ISO_OUT S:iso out flow control dropped %d packets\n
+L:FLOW_CONTROL_ISO_OUT_OVERFLOW S:iso out flow control dropped counter overflowed\n
+L:FLOW_CONTROL_BULK_OUT S:bulk out flow control dropped %d packets\n
+L:FLOW_CONTROL_BULK_OUT_OVERFLOW S:bulk out flow control dropped counter overflowed\n
+L:FLOW_CONTROL_CTRL_IN S:ctrl in flow control dropped %d packets\n
+L:FLOW_CONTROL_CTRL_IN_OVERFLOW S:ctrl in flow control dropped counter overflowed\n
+L:FLOW_CONTROL_INTRP_IN S:interrupt in flow control dropped %d packets\n
+L:FLOW_CONTROL_INTRP_IN_OVERFLOW S:interrupt in flow control dropped counter overflowed\n
+L:FLOW_CONTROL_ISO_IN S:iso in flow control dropped %d packets\n
+L:FLOW_CONTROL_ISO_IN_OVERFLOW S:iso in flow control dropped counter overflowed\n
+L:FLOW_CONTROL_BULK_IN S:bulk in flow control dropped %d packets\n
+L:FLOW_CONTROL_BULK_IN_OVERFLOW S:bulk in flow control dropped counter overflowed\n
+L:LEX_FATAL_INTERRUPT S:Fatal Lex interrupt, interrupt flag register is 0x%x\n
+L:MSA_READ_LAT S:Read MSA LAT: usbAddr %d, logicalAddr %d, valid %d\n
+L:MSA_READ_PTR_TABLE S:Read MSA Pointer Table: usbAddr %d, endpoint %d, pointer %d\n
+L:MSA_ALLOCATE_PTR S:MSA Allocated pointer %d\n
+L:MSA_READ_MST S:Read MSA MST: usbAddr %d, endpoint %d, value 0x%x\n
+L:MSA_INIT_BAD_PTR S:MSA initialization got ptr %d instead of 0\n
+L:MSA_FREE_BAD_PTR S:MSA Free Pointer is trying to free a null pointer\n
+L:MSA_FREE_FAILED S:MSA Free Pointer failed\n
+L:MSA_ALLOCATE_PTR_FAILED S:MSA Allocate Pointer failed.  Out of pointers?\n
+L:RELEASE_RETRY_BUF S:Releasing retry buffer %d\n
+L:RELEASE_RETRY_BUF_INVALID S:Releasing retry buffer %d is invalid\n
+L:MSA_CLR_STS_TABLE S:MSA Clear Status Table for usbAddr %d, endpoint %d\n
+L:XLR_SPECTAREG_READ S:Read XLR Register: 0x%x, Value: 0x%x\n
+L:XLR_NOTIFY_MAX S:Maximum notify counts - In: %d, Out: %d\n
+component:XRR_COMPONENT
+L:XREX_ENABLE S:Enable Rex, RexCtrl is going from 0x%x to 0x%x\n
+L:XREX_DISABLE S:Disabling Rex, RexCtrl is going from 0x%x to 0x%x\n
+L:INVALID_ID S:There is an invalid ID in the ID register\n
+L:INVALID_CVS_MAJOR S:Invalid register CVS Major value, read %d, expecting %d\n
+L:INVALID_CVS_MINOR S:Invalid register CVS Minor value, read %d, expecting %d\n
+L:XRR_SPECTAREG_READ S:Read XRR Register: 0x%x, Value: 0x%x\n
+L:XRR_BITFIELD_CHECK_FAILURE S:Checking XRR bitfields failed at line: %d\n
+L:XRR_XRT_DEBUG_DUMP_1 S:XrtDebug  LastSentAddress=%d, LastSentEndpoint=%d\n
+L:XRR_XRT_DEBUG_DUMP_2 S:          LastSentAction=%d, LastSentDataQid=%d, LastResponse=%d\n
+component:CLM_COMPONENT
+L:REG_FAILURE S:Failure verifying registers\n
+L:CLM_INVALID_XUSB_CHIP_MINOR_REVISION_ERROR_LOG S:Invalid minor XUSB chip revision, expecting 0x%x, read 0x%x\n
+L:CLM_INVALID_XUSB_CHIP_MAJOR_REVISION_ERROR_LOG S:Invalid major XUSB chip revision, expecting 0x%x, read 0x%x\n
+L:INVALID_CFG S:Invalid configuration %d selected\n
+L:CFG_TBI S:Configuring CLM for TBI\n
+L:CFG_GMII S:Configuring CLM for GMII\n
+L:CFG_MII S:Configuring CLM for MII\n
+L:CFG_CLEI8 S:Configuring CLM for CLEI8\n
+L:CFG_CLEI1 S:Configuring CLM for CLEI1\n
+L:CFG_CLEI2 S:Configuring CLM for CLEI2\n
+L:CFG_CLEI4 S:Configuring CLM for CLEI4\n
+L:VPORT_ENABLE S:VPort Enable %d\n
+L:VPORT_DISABLE S:VPort Disable %d\n
+L:VPORT_POSTPONE_ENABLE S:VPort Enable %d is being postponed\n
+L:RX_STATS_REG S:RX Stats reg is 0x%x\n
+L:TX_STATS_REG S:TX Stats reg is 0x%x\n
+L:INVALID_VPORT_STATE_TRANSITION S:Invalid vport state transition for vport %d from state %d to state %d\n
+L:ENABLE_DEFAULT_INTERRUPTS S:Enabling default interrupts\n
+L:CLM_LEX_VPORT_DST S:Setting LEX vport %d destination MAC address: MSW=0x%x LSW=0x%x\n
+L:CLM_VPORT_ALREADY_ENABLED S:Trying to enable VPort %d, but it is already enabled\n
+L:ADJUST_TX_WAIT_4_RESP_THRES_OLD S:Adjust TX wait for response threshold FROM GMII=%d, MII=%d\n
+L:ADJUST_TX_WAIT_4_RESP_THRES_NEW S:Adjust TX wait for response threshold TO GMII=%d, MII=%d\n
+L:CLM_SPECTAREG_READ S:Read CLM Register: 0x%x, Value: 0x%x\n
+L:ADJUST_TX_WAIT_4_RESP_LIMIT_OLD S:Adjust TX wait for response limit FROM limit=%d, CntThresh=%d\n
+L:ADJUST_TX_WAIT_4_RESP_LIMIT_NEW S:Adjust TX wait for response limit TO limit=%d, CntThresh=%d\n
+L:INVALID_ICMD_SETTING S:Invalid icmd setting %d\n
+L:ADJUST_TX_QID_THRESH S:Adjust TX QID THRESH from %d to %d\n
+L:CLM_SETTING_SRC_MAC_ADDR S:Setting the source MAC address to MSW=0x%x, LSW=0x%x\n
+L:REDUCED_PIN_COUNT S:Setting reduced pin count mode\n
+L:CFG_LTBI S:Configuring CLM for LTBI\n
+L:PHY_SPEED S:Measured PHY speed is: %dMHz, Timeout value is: %dus, Register=%d\n
+L:ETHERTYPE_LOG S:Wrote CLM.EtherType with value 0x%x\n
+L:READ_UNINITIALIZED_LINK_TYPE S:Tried to use uninitialized link type %d\n
+L:CLM_UNEXPECTED_CTM_INPUT_CLK_FREQ S:CTM input clock frequency is unexpected, frequency in MHz = %d\n
+L:CTM_INPUT_CLK_FREQ S:The CTM input reference clock frequency is %d MHz\n
+component:ULM_COMPONENT
+L:ULM_SPEED_INVALID_ERROR_LOG S:Speed is invalid\n
+L:ULM_INVALID_REV S:Invalid ULM revision\n
+L:ULM_INVALID_CVS_REV S:Invalid ULM CVS revision\n
+L:ULM_INIT_LEX S:LEX - ULM Init\n
+L:ULM_INIT_REX S:REX - ULM Init\n
+L:ULM_INTERRUPT S:ULM interrupt triggered by 0x%x\n
+L:CTRL_BITS_LEFT_SET S:Ctrl bits were left set. ctrlReg is 0x%x\n
+L:WRITING_CTRL_REG S:Writing control reg as 0x%x\n
+L:ULM_SPECTAREG_READ S:Read ULM Register: 0x%x, Value: 0x%x\n
+L:ULM_DISCON_USBPORT_DC S:ULM_DISCON - ULM OFF\n
+L:ULM_DISCON_USBPORT_CON S:ULM_DISCON - ULM ON\n
+component:GRG_COMPONENT
+L:GPIO_INIT S:Initializing GPIO, direction reg 0x%x, output bits 0x%x\n
+L:GPIO_PULSE_TIMER S:Pulsing GPIOs, mask 0x%x, read 0x%x, writing 0x%x\n
+L:GPIO_READ S:GPIO_READ pin %d, bool val 0x%x\n
+L:GPIO_SET S:GPIO_SET pin %d\n
+L:GPIO_CLEAR S:GPIO_CLEAR pin %d\n
+L:GPIO_PULSE S:GPIO_PULSE pin %d\n
+L:FREQ_MEASURE S:Measuring PLL %d, XUSB is %d, CXM is %d\n
+L:MDIO_ICMD_WRITE S:Writing to MDIO device %d, address 0x%x, with data 0x%x\n
+L:INVALID_ICMD_ARG S:Invalid icmd arg 0x%x received\n
+L:PLL_MEASUREMENT S:Measured %d difference in clock ticks, xusb %d, cxm %d\n
+L:INVALID_MODULE S:Invalid module used at line %d\n
+L:REG_FAILURE S:Invalid register ID/Rev at line %d\n
+L:INVALID_GRG_CHIP_MINOR_REVISION_ERROR_LOG S:Invalid minor GRG chip revision, expecting 0x%x, read 0x%x\n
+L:INVALID_GRG_CHIP_MAJOR_REVISION_ERROR_LOG S:Invalid major GRG chip revision, expecting 0x%x, read 0x%x\n
+L:INVALID_PIN S:Invalid Pin number %d\n
+L:UNSUPPORTED_VARIANT_ID S:Unsupported variant ID = %d\n
+L:MDIO_ICMD_READ_START S:Reading MDIO device %d, address %d\n
+L:MDIO_ICMD_READ_DONE S:Read MDIO, returned data 0x%x\n
+L:MDIO_I2C_FIFO_OVER_FLOW S:MDIO/I2C fifo overflow\n
+L:MDIO_I2C_OPERATIONS S:MDIO/I2C: %d operations in progress, current operation: header 0x%x, mdio/i2c op 0x%x\n
+L:MDIO_I2C_NO_OPERATIONS S:MDIO/I2C: no operations in progress\n
+L:I2C_WAKE_LOG S:i2c: performing wake on bus %d\n
+L:I2C_WAKE_DONE S:i2c: wake done\n
+L:I2C_READ S:i2c: read of bus %d, device %d, for %d bytes\n
+L:I2C_READ_DONE S:i2c: done read %d bytes, contents 0x%x 0x%x\n
+L:I2C_READ_FAILED S:i2c: read failed\n
+L:I2C_WRITE S:i2c: write bus %d, device %d, byteCount %d\n
+L:I2C_WRITE_DONE S:i2c: write complete\n
+L:I2C_WRITE_FAILED S:i2c: write failed\n
+L:I2C_TRN_ERROR S:i2c: TRN ERR\n
+L:TIME_MARKER_MDIO_START S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing mdioStart\n
+L:TIME_MARKER_I2C_START S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing i2cStart\n
+L:TIME_MARKER_I2C_WAKE_START S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing i2c wake start\n
+L:TIME_MARKER_I2C_WAKE_STOP S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing \n
+L:TIME_MARKER_FINALIZE_OP S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing finalize operation\n
+L:TIME_MARKER_SUBMIT_OP S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing submit operation\n
+L:MDIO_I2C_INVALID_TASK_STATE S:mdio/i2c: invalid state at line %d, header 0x%x, mdio/i2c op 0x%x\n
+L:I2C_READ_TOO_MANY_BYTES S:i2c read too many bytes. Expected %d\n
+L:GRG_IRQ_LOG S:Interrupts 0x%x triggered\n
+L:GRG_IRQ_UNSERVICED S:Interrupts 0x%x were unserviced\n
+L:IRQ_HANDLER_NOT_SET S:Interrupt Handler is not set for pin %d\n
+L:REGISTERING_IRQ S:Registering Interrrupt handler for pin %d\n
+L:SERVICING_IRQ S:Servicing Interrupt for pin %d\n
+L:DISABLING_IRQ S:Disabling Interrupt for pin %d\n
+L:ENABLING_IRQ S:Enabling Interrupt for pin %d\n
+L:MDIO_START_READ S:MDIO start read: dev %d, addr %d\n
+L:MDIO_START_WRITE S:MDIO start write: dev %d, addr %d, data 0x%x\n
+L:MDIO_FINISH S:MDIO finished, data is 0x%x\n
+L:I2C_START_READ S:I2C read started for %d bytes\n
+L:I2C_START_WRITE S:I2C write started\n
+L:I2C_READ_FINISH S:I2C read finished\n
+L:I2C_WRITE_FINISH S:I2C write finished\n
+L:I2C_DO_WAKE_OP S:I2C do wake op %d\n
+L:I2C_WAKE_COMPLETE S:I2C wake complete\n
+L:I2C_WRITE2 S:i2c write data is 0x%x 0x%x\n
+L:I2C_MDIO_CONTROLREG_READ S:I2C/MDIO Control Reg is 0x%x\n
+L:I2C_START_WRITE_READ S:I2C writeRead started for %d bytes to write, %d bytes to read\n
+L:MDIO_I2C_OPERATIONS_QUEUED S:MDIO/I2C: %d operations queued, nothing in progress\n
+L:I2C_START_WRITE_READ_BLOCK S:I2C writeReadBlock started for %d bytes to write, sizeof(read buffer) = %d bytes\n
+L:GRG_SPECTAREG_READ S:Read GRG Register: 0x%x, Value: 0x%x\n
+L:INVALID_PLL S:Invalid PLL %d\n
+L:FREQ_MEASURE_CLM S:Measured CLM PLL: %d\n
+L:FREQ_MEASURE_CTM S:Measured CTM PLL: %d\n
+L:FREQ_MEASURE_CRM S:Measured CRM PLL: %d\n
+L:MDIO_I2C_OPERATIONS_FINALIZE S:MDIO/I2C: %d operations in progress, finalizing operation: arg1 0x%x, arg2 0x%x\n
+L:MDIO_I2C_QUEUED_OPERATION S:MDIO/I2C: queued operation: header 0x%x, mdio/i2c op 0x%x\n
+L:PLL2_READ S:PLL Read config 2 0x%x\n
+L:PLL2_WRITE S:PLL Write config2 0x%x\n
+L:INT16_DIVIDE S:Quotient is: %d, Remainder is: %d\n
+L:DIVIDE_BY_ZERO S:Fatal: divide by zero\n
+L:INT16_MULTIPLY S:Result of multiply is %d\n
+L:MEAS_PLL_FREQ S:Measured frequency of PLL %d is %dMHz\n
+L:SYNC_MDIO_READ_FIFO_NOT_EMPTY S:Requested to do a synchronous MDIO read while other jobs pending\n
+L:SYNC_MDIO_WRITE_FIFO_NOT_EMPTY S:Requested to do a synchronous MDIO write while other jobs pending\n
+L:MDIO_SYNC_WRITE S:Wrote data 0x%x to MDIO address %d register %d\n
+L:MDIO_SYNC_READ S:Read data 0x%x from MDIO address %d register %d\n
+L:INVALID_CLMTX_DRIVE_STR S:Invalid CLM TX drive strength GPIO setting %d\n
+L:GRG_PLATFORM_AND_VARIANT_ID S:Chip platform id=%d, variant id=%d.\n
+L:DRIVE_STRENGTH S:Drive strength read from GPIO = %d, drive strength written to register = %d\n
+L:GRG_READ_UNSUPPORTED_PIN S:Reading hardware pin is not supported on this platform/variant.  Line %d\n
+L:LED_SET_LOCATOR S:Set LED locator pattern: lockMode = %d\n
+L:LED_CLEAR_LOCATOR S:Clear LED locator pattern: lockMode = %d\n
+L:LED_SET S:Set LED: id = %d\n
+L:LED_CLEAR S:Clear LED: id = %d\n
+L:LED_PULSE S:Pulse LED: id = %d and rate = %d\n
+L:LED_UPDATE S:Update LED: id = %d, state = %d, lockMode = %d\n
+L:LED_UNKNOWN_ID S:Unknow LED: id = %d\n
+component:TIMING_COMPONENT
+L:TIMING_MAXIMUM_HANDLERS_REGISTERED S:The maximum number of timers are already registered\n
+L:SHOW_TIMERS1 S:Timer 0x%x has callback 0x%x, and is set for %d ms\n
+L:START_TIMER S:Starting timer 0x%x\n
+L:STOP_TIMER S:Stopping timer 0x%x\n
+L:CHANGE_TIMEOUT S:Changing timer 0x%x timeout to %d ms\n
+L:NULL_TIMER_ARG_LINE S:Called with a NULL timer arg, at line %d\n
+L:TIMING_INTERNAL_STATE S:Internal state: lastIteration = %d, tickCounter = %d\n
+L:SHOW_TIMERS3 S:         is enabled %d, is periodic %d, set to expire at tick %d\n
+component:TASKSCH_COMPONENT
+L:INIT_TASK S:Initializing task 0x%x, with task function 0x%x and with arg 0x%x\n
+L:INIT_TASK2 S:Setting task 0x%x to allowInterrupts %d, and priority %d\n
+L:TOO_MANY_TASKS S:Too many tasks are being allocated\n
+L:INVALID_PRIORITY_INIT S:Invalid priority %d in initialization\n
+L:INVALID_PRIORITY_SETTING S:Invalid priority %d\n
+L:START S:Starting task 0x%x\n
+L:STOP S:Stopping task 0x%x\n
+L:CHANGE_TASK_ARG S:Changing task 0x%x arg to 0x%x\n
+L:CHANGE_TASK_PRIORITY S:Changing task 0x%x priority to 0x%x\n
+L:VIEW_TASK1 S:Task 0x%x: runs task function 0x%x, with arg 0x%x\n
+L:VIEW_TASK2 S:Task 0x%x: runs at priority %d, with allowInterrupts %d\n
+L:VIEW_TASK4 S:Task 0x%x: is at index %d, & has onRunQueue set to %d\n
+component:RANDOM_COMPONENT
+L:ADD_ENTROPY S:Add random number 0x%.2x\n
+L:GET_ASYNCRAND S:Get random number asynchronously
+L:CANT_ADD_ANOTHER_CALLBACK S:Can't add another callback\n
+L:GET_QUICK_PSEUDO_RANDOM S:Got pseudo random number 0x%x\n
+L:INVALID_SEED S:Invalid seed\n
+component:ILOG_COMPONENT
+L:INVALID_COMPONENT S:ILOG Received an invalid component %d from line %d\n
+L:INVALID_LEVEL S:ILOG Received an invalid logging level %d from line %d\n
+L:TOO_MANY_ARGS S:ILOG Received too many args, %d to be exact\n
+L:GET_LEVEL S:Component %d is at logging level %d\n
+L:COPROC_REG_DUMP S:Sparc reg dump:           TBR = 0x%x, PSR = 0x%x, WIM = 0x%x\n
+L:GLOBAL_REG_DUMP S:Sparc reg dump:           %%g5 = 0x%x, %%g6 = 0x%x, %%g7 = 0x%x\n
+L:GEN_REG_DUMP0 S:Sparc reg dump for win %2d:%%l0 = 0x%x, %%l1 = 0x%x\n
+L:GEN_REG_DUMP1 S:Sparc reg dump:           %%l2 = 0x%x, %%l3 = 0x%x, %%l4 = 0x%x\n
+L:GEN_REG_DUMP2 S:Sparc reg dump:           %%l5 = 0x%x, %%l6 = 0x%x, %%l7 = 0x%x\n
+L:GEN_REG_DUMP3 S:Sparc reg dump for win %2d:%%i0 = 0x%x, %%i1 = 0x%x\n
+L:GEN_REG_DUMP4 S:Sparc reg dump:           %%i2 = 0x%x, %%i3 = 0x%x, %%i4 = 0x%x\n
+L:GEN_REG_DUMP5 S:Sparc reg dump:           %%i5 = 0x%x, %%i6 = 0x%x, %%i7 = 0x%x\n
+L:SET_BLOCKING_MODE S:Setting ilog blocking mode\n
+L:CLEAR_BLOCKING_MODE S:Clearing ilog blocking mode\n
+L:TEST_ASSERT S:Icmd run for testing asserts.  Args are %d, %d, %d\n
+L:LOG_LEVEL_CHANGED S:Changing logging level for component %d to level %d\n
+L:INVALID_COMPONENT_ILOG_MAIN S:ILOG main logging function received an invalid component %d\n
+L:INVALID_LEVEL_ILOG_MAIN S:ILOG main logging function received an invalid logging level %d\n
+L:ILOG_MSG_DROPPED S:ILOG message dropped\n
+L:ASSERT_STATUS1 S:Assert status: preAssertHookFunction is 0x%x, postAssertHookFunction is 0x%x\n
+L:ASSERT_STATUS2 S:Assert status: no asserts have occured\n
+L:ASSERT_STATUS3 S:Assert status: %d asserts have occured, last assert message was:\n
+component:ICMD_COMPONENT
+L:INVALID_HEADER S:Received 0x%x, when expecting an icmd header\n
+L:INVALID_COMPONENT S:Received %d, when expecting a component\n
+L:TOO_MANY_ARGS S:Too many args %d in icmd request\n
+L:CUROFFSET_CORRUPTED S:curOffset with value %d, is corrupt at line %d\n
+L:CALLING_HANDLER S:Calling function 0x%x, with 1st two args 0x%x, 0x%x\n
+L:RECVD_ICMD S:Received icmd for component %d, function %d, with %d arguments\n
+L:NO_ICMD_FCN_PTR_ARRAY S:No icmd function pointer array found for component %d\n
+L:ICMD_TIMEOUT S:icmd message timed out. Resetting receive buffer\n
+L:BASE_READ_MEM S:Read address 0x%x: value 0x%x\n
+L:BASE_WRITE_MEM S:Wrote address 0x%x: value 0x%x\n
+L:DEPRECATED_ICMD_TIMER_REGISTER_FAILURE S:Unable to register icmd timer\n
+L:ICMD_TIMER_NOT_REGISTERED S:ICmd timer is not register, did no one call ICMD_Init()?\n
+L:BASE_READ_MODIFY_WRITE S:Read-Modify-Write address 0x%x: Read value 0x%x, Write value 0x%x\n
+L:BASE_READ_MODIFY_WRITE_CONFLICT_MASKS S:Read-Modify-Write for address 0x%x has conflicting bits in set bitfields 0x%x and clear bitfields0x%x\n
+L:BASE_MODIFY_BITFIELD S:Modify bitfield for address 0x%x starting at position %i for width %i bits\n
+L:MODIFY_BITFIELD_RESULT S:Write value: 0x%x, Read value: 0x%x, New value 0x%x\n
+L:DUMP_MEMORY_ADDR_INVALID S:Address 0x%x is not a valid 32bit memory location\n
+L:DEPRECATED_ICMD S:This iCommand is no longer available\n
+L:BASE_READ_MEM16 S:Read address 0x%x: value 0x%x\n
+L:BASE_WRITE_MEM16 S:Wrote address 0x%x: value 0x%x\n
+L:BASE_READ_MODIFY_WRITE16 S:Read-Modify-Write address 0x%x: Read value 0x%x, Write value 0x%x\n
+L:BASE_READ_MODIFY_WRITE_CONFLICT_MASKS16 S:Read-Modify-Write for address 0x%x has conflicting bits in set bitfields 0x%x and clear bitfields0x%x\n
+L:JUNK_TIMER_EXPIRED_REENABLING_PROCESSING S:Junk timer expired.  Re-enabling processing of icmds\n

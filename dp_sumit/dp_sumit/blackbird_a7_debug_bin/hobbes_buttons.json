@@ -1,0 +1,14 @@
+{
+    "hobbes_gui_button1": {
+        "Reset": "['GRG_COMPONENT']['GRG_ResetChip']()"
+    },
+    "hobbes_gui_button2": {
+        "SwVersion": "['TOPLEVEL_COMPONENT']['PrintSwVersion']()"
+    },
+    "hobbes_gui_button3": {
+        "Topology": "['TOPOLOGY_COMPONENT']['_DTT_showAllDeviceXSST']()"
+    },
+    "hobbes_gui_button4": {
+        "DumpAllFlashVars": "['STORAGE_COMPONENT']['STORAGE_icmdDumpAllVars']()"
+    }
+}

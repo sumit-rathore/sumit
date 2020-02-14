@@ -1,0 +1,5 @@
+component:XRR_COMPONENT
+F:XRR_SOFEnable H:"Enable SOFs on the Rex" A:void
+F:XRR_SOFDisable H:"Disable SOFs on the Rex" A:void
+F:XRR_EnableInterruptSOF H:"Enable SOF interrupt" A:void
+F:XRR_DisableInterruptSOF H:"Disable SOF interrupt" A:void

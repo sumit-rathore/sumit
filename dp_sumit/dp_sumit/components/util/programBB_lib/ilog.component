@@ -1,0 +1,6 @@
+component:UTIL_COMPONENT
+L:UTIL_IMUTEX_HELD_ACQUIRE S:Attempted to acquire a held iMutex\n
+L:UTIL_IMUTEX_UNHELD_RELEASE S:Attempted to release an unheld iMutex\n
+L:UTIL_IMUTEX_BAD_TOKEN S:Attempted to release a held iMutex with an invalid token\n
+L:UTIL_IMUTEX_BAD_PARAM S:Bad parameter passed to UTIL_IMutexWait; mutex = 0x%x, f = 0x%x\n
+L:UTIL_IMUTEX_NO_FREE_CALLBACK_SLOTS S:Ran out of callback slots! Mutex addr = 0x%x, function addr = 0x%x\n

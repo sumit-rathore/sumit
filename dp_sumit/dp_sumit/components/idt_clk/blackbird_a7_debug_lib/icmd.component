@@ -1,0 +1,5 @@
+component:IDT_CLK_COMPONENT
+F:I2CD_icmdIdtGeneralRead H:"IDT read register. arg: read register address" A:uint8_t
+F:I2CD_icmdIdtGeneralWrite H:"IDT write register. arg1: write register address, arg2: value to write" A:uint8_t, uint8_t
+F:IDT_CLK_icmdSscControl H:"IDT write register. arg1: 1 enable, 0 disable" A:bool
+F:IDT_CLK_SetRexSscSupport H:"Arg0 = 0: Disable SSC support on Rex, Other: Enable SSC support on Rex" A:bool

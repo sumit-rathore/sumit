@@ -1,0 +1,13 @@
+component:XCSR_COMPONENT
+F:icmdReadQueueStats H:"Read queue statistics (frame count, word count etc), arg is qid" A:uint8
+F:icmdReadCacheStats H:"Read cache statistics" A:void
+F:icmdReadQueueFrame H:"Read a frame or 32 words from qid" A:uint8
+F:icmdXSSTWriteLat H:"Write to the XSST LAT, args: usbAddress, endPoint, value" A:uint8, uint8, uint32
+F:icmdXSSTWriteSST H:"Write to the XSST, args: usbAddress, endPoint, valueMSW, valueLSW" A:uint8, uint8, uint32, uint32
+F:icmdXSSTReadAll H:"Read the XSST, args: usbAddress, endPoint" A:uint8, uint8
+F:icmdWriteQueueFrame H:"Write a frame (arg1 frameheader 0:generic 1:cpuTocpu 3:downstream 4:upstream 5:other; arg2 number of bytes)" A:uint8, uint8
+F:icmdSendMessage H:"Send a message over the link by CPU TX Q: args (msgType, msg, Vport)" A:uint8, uint8, uint8
+F:icmdSendMessageWithData H:"Send a message over the link by CPU TX Q: args (msgType, msg, Vport, Data)" A:uint8, uint8, uint8, uint32
+F:icmdSendMessageWithExtraData H:"Send a message over the link by CPU TX Q: args (msgType, msg, Vport, Data, ExtraDataMSW, ExtraDataLSW)" A:uint8, uint8, uint8, uint32, uint32, uint32
+F:XSSTConfigureMSA H:"Configure the XSST table for MSA, args: usbAddr, inEndpoint, outEndpoint" A:uint8, uint8, uint8
+F:icmdXSSTReadModifyWriteSST H:"Read-Modify-Write to the XSST, args: usbAddress, endPoint, valueMSW, valueLSW, maskMSW, maskLSW" A:uint8, uint8, uint32, uint32, uint32, uint32

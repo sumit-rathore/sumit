@@ -1,0 +1,63 @@
+Virtual Hub (VHub)
+==================
+
+Overview
+--------
+The virtual hub provides a complete USB hub in software on the Lex.  Each Rex connected to the Lex will be treated as a port on this virtual hub.  HW will now keep track of the virtual hub address, and forward all hub requests to SW instead of to the Rex.
+
+
+
+Changes to existing SW
+----------------------
+
+1) RexULM.  There is no longer a need for a prefetch state.
+
+
+Future Potential Work:
+1)	LEDs (Port Indicators).  If the Virtual Hub is contained fully in the LEX, it is easiest to provide the LEDs in the LEX, however that may not make any sense from a user point of view, as those LEDs could be on a motherboard in a computer.  It may make more sense to forward the LED states to the REXes.
+
+
+Power
+-----
+Most Icron units are bus powered Lex's and even the units that have the option of being self powered, can also be bus powered.  It is fairly safe to assume that any Icron Lex is bus powered, so VHub should report itself as bus powered.
+
+Bus powered hubs must support downstream power switching.  Which makes sense for a normal USB hub, as enable power on all ports could overload the host.  This isn't really applicable to VHub, as the downstream ports are known to all be self-powered.
+
+VHub must process each port power request to know when it should alert the host for a connected device.
+
+
+Breakdown of the Setup transactions that the Virtual Hub would have to implement + a few comments
+-------------------------------------------------------------------------------------------------
+
+Standard device requests:
+Clear Feature: 
+Get Configuration: 
+Get Descriptor: 
+Get Interface: Undefined for a hub, we will send a stall to the in packet
+Get Status: 
+Set Address: 
+Set Configuration: 
+Set Descriptor: Optional, we will send a stall to the out packet
+Set Feature: 
+Set Interface: Undefined for a hub, we will send a stall to the in packet
+Synch Frame: Undefined for a hub, we will send a stall to the in packet
+
+Hub Requests:
+ClearHubFeature: Resets a value in hub status
+ClearPortFeature: Disables ports, resumes after suspend, etc.  Needs to inform Rex & update Topology.
+ClearTTBuffer: Read & Chuck
+GetHubDescriptor:
+GetHubStatus: Reports power and overcurrent information
+GetPortStatus: Returns port status and port change bits
+ResetTT: Read & Chuck
+SetHubDescriptor: Optional, we will send a stall to the out packet
+SetHubFeature:
+SetPortFeature:
+GetTTState: The USB spec. notes that this is for debugging, and should return a vendor specific format.  We could just return a zero length packet.
+StopTT: Read & Chuck
+
+
+Other Requests:
+: We will send a stall to the following in or out packet
+
+

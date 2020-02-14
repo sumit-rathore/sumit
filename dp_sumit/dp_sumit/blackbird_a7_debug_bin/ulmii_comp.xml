@@ -1,0 +1,2156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:pdt="PDT" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1.4"><!--Component named ULMII--><spirit:vendor>vendor</spirit:vendor>
+   <spirit:library>lib</spirit:library>
+   <spirit:name>ULMII</spirit:name>
+   <spirit:version>1.1</spirit:version>
+   <spirit:memoryMaps>
+      <spirit:memoryMap><!--MemoryMap named ULMIICpuMemMap--><spirit:name>ULMIICpuMemMap</spirit:name>
+         <spirit:addressBlock><!--AddressBlock named ULMII--><spirit:name>ULMII</spirit:name>
+            <spirit:description/>
+            <spirit:baseAddress>0x0</spirit:baseAddress>
+            <spirit:range spirit:format="long">0x100</spirit:range>
+            <spirit:width>32</spirit:width>
+            <spirit:register><!--Register named Id--><spirit:name>Id</spirit:name>
+               <spirit:description/>
+               <spirit:dim>1</spirit:dim>
+               <spirit:addressOffset>0x0</spirit:addressOffset>
+               <spirit:size>32</spirit:size>
+               <spirit:reset>
+                  <spirit:value>0x554c4d32</spirit:value>
+                  <spirit:mask>0xffffffff</spirit:mask>
+               </spirit:reset>
+               <spirit:field><!--BitField named Id--><spirit:name>Id</spirit:name>
+                  <spirit:description>Chip ID set to ASCII "ULM2"</spirit:description>
+                  <spirit:bitOffset>0</spirit:bitOffset>
+                  <spirit:bitWidth>32</spirit:bitWidth>
+                  <spirit:access>read-only</spirit:access>
+                  <!--BitField named Id--><spirit:vendorExtensions>
+                     <pdt:valueType>ascii</pdt:valueType>
+                     <pdt:resetValue>0x554c4d32</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ConstantBitField</pdt:instanceClass>
+                     <pdt:briefDescription>Chip ID set to ASCII "ULM2"</pdt:briefDescription>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named Id--></spirit:field>
+               <spirit:vendorExtensions><!--	spirit:dim and spirit:reset are not parsed by Spectareg.
+			refer to pdt:dimensions and spirit:field/spirit:vendorExtensions/pdt:resetValue instead.
+		--><!--Register named Id--><pdt:dimensions>
+                     <pdt:dimension pdt:signif="0">
+                        <pdt:index>i</pdt:index>
+                        <pdt:increment>4</pdt:increment>
+                        <pdt:numElements>1</pdt:numElements>
+                        <pdt:numElemParams/>
+                     </pdt:dimension>
+                  </pdt:dimensions>
+                  <pdt:instanceClass>Register</pdt:instanceClass>
+                  <pdt:briefDescription>Module Name</pdt:briefDescription>
+                  <pdt:developerComments/>
+                  <pdt:indexTags/>
+                  <pdt:related/>
+                  <pdt:visibleToRoles/>
+               </spirit:vendorExtensions>
+               <!--Register named Id--></spirit:register>
+            <spirit:register><!--Register named Rev--><spirit:name>Rev</spirit:name>
+               <spirit:description>This register contains 4 types of revision information.</spirit:description>
+               <spirit:dim>1</spirit:dim>
+               <spirit:addressOffset>0x4</spirit:addressOffset>
+               <spirit:size>32</spirit:size>
+               <spirit:reset>
+                  <spirit:value>0x10d</spirit:value>
+                  <spirit:mask>0xffff</spirit:mask>
+               </spirit:reset>
+               <spirit:field><!--BitField named CvsMinor--><spirit:name>CvsMinor</spirit:name>
+                  <spirit:description/>
+                  <spirit:bitOffset>0</spirit:bitOffset>
+                  <spirit:bitWidth>8</spirit:bitWidth>
+                  <spirit:access>read-only</spirit:access>
+                  <!--BitField named CvsMinor--><spirit:vendorExtensions>
+                     <pdt:valueType>unsigned</pdt:valueType>
+                     <pdt:resetValue>0xd</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ConstantBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named CvsMinor--></spirit:field>
+               <spirit:field><!--BitField named CvsMajor--><spirit:name>CvsMajor</spirit:name>
+                  <spirit:description/>
+                  <spirit:bitOffset>8</spirit:bitOffset>
+                  <spirit:bitWidth>8</spirit:bitWidth>
+                  <spirit:access>read-only</spirit:access>
+                  <!--BitField named CvsMajor--><spirit:vendorExtensions>
+                     <pdt:valueType>unsigned</pdt:valueType>
+                     <pdt:resetValue>0x1</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ConstantBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named CvsMajor--></spirit:field>
+               <spirit:vendorExtensions><!--	spirit:dim and spirit:reset are not parsed by Spectareg.
+			refer to pdt:dimensions and spirit:field/spirit:vendorExtensions/pdt:resetValue instead.
+		--><!--Register named Rev--><pdt:dimensions>
+                     <pdt:dimension pdt:signif="0">
+                        <pdt:index>i</pdt:index>
+                        <pdt:increment>4</pdt:increment>
+                        <pdt:numElements>1</pdt:numElements>
+                        <pdt:numElemParams/>
+                     </pdt:dimension>
+                  </pdt:dimensions>
+                  <pdt:instanceClass>Register</pdt:instanceClass>
+                  <pdt:briefDescription>Module Revision ID</pdt:briefDescription>
+                  <pdt:developerComments/>
+                  <pdt:indexTags/>
+                  <pdt:related/>
+                  <pdt:visibleToRoles/>
+               </spirit:vendorExtensions>
+               <!--Register named Rev--></spirit:register>
+            <spirit:register><!--Register named CnfgSts--><spirit:name>CnfgSts</spirit:name>
+               <spirit:description>This register is used to control behavior and read statistics associated with reset.</spirit:description>
+               <spirit:dim>1</spirit:dim>
+               <spirit:addressOffset>0x8</spirit:addressOffset>
+               <spirit:size>32</spirit:size>
+               <spirit:reset>
+                  <spirit:value>0x1308c</spirit:value>
+                  <spirit:mask>0x80033fdf</spirit:mask>
+               </spirit:reset>
+               <spirit:field><!--BitField named DfpUfp--><spirit:name>DfpUfp</spirit:name>
+                  <spirit:description>Enables the ULM to behave in host or device (peripheral) mode.
+
+0 = Upstream Facing Port
+1 = Downstream Facing Port</spirit:description>
+                  <spirit:bitOffset>0</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named DfpUfp--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription>Downstream Facing Port or Upstream Facing Port</pdt:briefDescription>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named DfpUfp--></spirit:field>
+               <spirit:field><!--BitField named ConDis--><spirit:name>ConDis</spirit:name>
+                  <spirit:description>This register is used in both DFP and UFP modes.
+
+1 = Connect
+0 = Disconnect</spirit:description>
+                  <spirit:bitOffset>1</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named ConDis--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription>Allows the port start managing the USB events.</pdt:briefDescription>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named ConDis--></spirit:field>
+               <spirit:field><!--BitField named SpdSel--><spirit:name>SpdSel</spirit:name>
+                  <spirit:description>This register sets the speed to negotiate to.
+
+00 = HS, Try to negotiate to a maximum speed of HS
+01 = FS, Only negotiate to a maximum speed of FS
+10 = LS, Only allow LS operation
+11 = Automatically negotiate to the highest USB speed allowed.</spirit:description>
+                  <spirit:bitOffset>2</spirit:bitOffset>
+                  <spirit:bitWidth>2</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named SpdSel--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x3</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named SpdSel--></spirit:field>
+               <spirit:field><!--BitField named RsmMinEn--><spirit:name>RsmMinEn</spirit:name>
+                  <spirit:description>Valid in DFP mode only.  If this bit is set it will force the DFP to generate resume timing for a minimum of 20ms (as defined by USB specification).  If it is cleared then the resume sequence is ended by disabling the ExtRsm bit in the Ctrl register.  If this is the case it is important to realize that the ExtRsm bit must be set at the same time or prior to setting the GenRsm bit.</spirit:description>
+                  <spirit:bitOffset>4</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named RsmMinEn--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named RsmMinEn--></spirit:field>
+               <spirit:field><!--BitField named AsyncXcvrTxActState--><spirit:name>AsyncXcvrTxActState</spirit:name>
+                  <spirit:description>Sets the asynchronous transceivers active transmitter enable state.  Some USB PHY's require active low, others require active high.  The operational setting of this bit needs to be determined and configured before any USB action can be started.</spirit:description>
+                  <spirit:bitOffset>6</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named AsyncXcvrTxActState--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named AsyncXcvrTxActState--></spirit:field>
+               <spirit:field><!--BitField named HwSwSel--><spirit:name>HwSwSel</spirit:name>
+                  <spirit:description>Allows Software to override all automatic functions of the UED and manage the events on the USB directly.
+
+0 = Software will use the UtmiPhyCtrlSts register to manage the port.
+1 = Port management is done by the hardware.</spirit:description>
+                  <spirit:bitOffset>7</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named HwSwSel--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x1</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription>Software is given overide controls on the UTMI/ULPI</pdt:briefDescription>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named HwSwSel--></spirit:field>
+               <spirit:field><!--BitField named PhySelSts--><spirit:name>PhySelSts</spirit:name>
+                  <spirit:description>This register is read by software to configure the appropriate PHY settings (ULPI/UTMI, Asynchronous XCVR support etc).  Software will read this register and write the value into the PhyMode register.  Encoding is as follows:
+
+00 - UTMI parallel support only
+01 - UTMI parallel and asynchronous support
+10 - ULPI parallel support only
+11 - ULPI parallel and asynchronous support</spirit:description>
+                  <spirit:bitOffset>8</spirit:bitOffset>
+                  <spirit:bitWidth>2</spirit:bitWidth>
+                  <spirit:access>read-only</spirit:access>
+                  <!--BitField named PhySelSts--><spirit:vendorExtensions>
+                     <pdt:valueType>unsigned</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>true</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExtDrivenBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named PhySelSts--></spirit:field>
+               <spirit:field><!--BitField named LowPwrEn--><spirit:name>LowPwrEn</spirit:name>
+                  <spirit:description>This bit allows the ULM to drive the UTMI SUSPEND pin which will disable the PHY's internal PLL's.  This must only be used in systems where the internal PHY PLLs will not affect operation of the SOC.
+
+0 - Low power mode not supported
+1 - Low power mode supported</spirit:description>
+                  <spirit:bitOffset>10</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named LowPwrEn--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named LowPwrEn--></spirit:field>
+               <spirit:field><!--BitField named DrvExtVbus--><spirit:name>DrvExtVbus</spirit:name>
+                  <spirit:description>In UTMI mode this signal changes the state of a top level output register which can be used to enable or disable an external Vbus power switch.  In ULPI mode this pin still functions but also allows the ULPI register update to enable the Vbus as per ULPI specification.</spirit:description>
+                  <spirit:bitOffset>11</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named DrvExtVbus--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named DrvExtVbus--></spirit:field>
+               <spirit:field><!--BitField named SpdDet--><spirit:name>SpdDet</spirit:name>
+                  <spirit:description>This register holds the speed that was negotiated to during hardware controlled operations.  Only valid when NegDone status is = 1.
+
+00 = HS
+01 = FS
+10 = LS
+11 = No speed negotiated</spirit:description>
+                  <spirit:bitOffset>12</spirit:bitOffset>
+                  <spirit:bitWidth>2</spirit:bitWidth>
+                  <spirit:access>read-only</spirit:access>
+                  <!--BitField named SpdDet--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x3</pdt:resetValue>
+                     <pdt:doNotTestReset>true</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExtDrivenBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named SpdDet--></spirit:field>
+               <spirit:field><!--BitField named Eco1PreTimeoutClearFix--><spirit:name>Eco1PreTimeoutClearFix</spirit:name>
+                  <spirit:description>Clear hub_setup_timeout in ulmii_rxs when in WAIT_SYNC state.
+
+NOTE: Write Only for GE ASIC</spirit:description>
+                  <spirit:bitOffset>16</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named Eco1PreTimeoutClearFix--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x1</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named Eco1PreTimeoutClearFix--></spirit:field>
+               <spirit:field><!--BitField named Eco1IgnorePreTimeout--><spirit:name>Eco1IgnorePreTimeout</spirit:name>
+                  <spirit:description>Ignore hub_setup_timeout in ulmii_rxs.
+
+NOTE: Write Only for GE ASIC</spirit:description>
+                  <spirit:bitOffset>17</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named Eco1IgnorePreTimeout--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named Eco1IgnorePreTimeout--></spirit:field>
+               <spirit:field><!--BitField named Irq--><spirit:name>Irq</spirit:name>
+                  <spirit:description>Indicates that there is an unserviced interrupt in the ULM component.  Use the InterruptSrc to determine the source of interrupt and clear it.</spirit:description>
+                  <spirit:bitOffset>31</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-only</spirit:access>
+                  <!--BitField named Irq--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>InterruptStatusBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named Irq--></spirit:field>
+               <spirit:vendorExtensions><!--	spirit:dim and spirit:reset are not parsed by Spectareg.
+			refer to pdt:dimensions and spirit:field/spirit:vendorExtensions/pdt:resetValue instead.
+		--><!--Register named CnfgSts--><pdt:dimensions>
+                     <pdt:dimension pdt:signif="0">
+                        <pdt:index>i</pdt:index>
+                        <pdt:increment>4</pdt:increment>
+                        <pdt:numElements>1</pdt:numElements>
+                        <pdt:numElemParams/>
+                     </pdt:dimension>
+                  </pdt:dimensions>
+                  <pdt:instanceClass>Register</pdt:instanceClass>
+                  <pdt:briefDescription>USB control register</pdt:briefDescription>
+                  <pdt:developerComments/>
+                  <pdt:indexTags/>
+                  <pdt:related/>
+                  <pdt:visibleToRoles/>
+               </spirit:vendorExtensions>
+               <!--Register named CnfgSts--></spirit:register>
+            <spirit:register><!--Register named Ctrl--><spirit:name>Ctrl</spirit:name>
+               <spirit:description>This register is used to separate controls from the status and configuration registers.</spirit:description>
+               <spirit:dim>1</spirit:dim>
+               <spirit:addressOffset>0xc</spirit:addressOffset>
+               <spirit:size>32</spirit:size>
+               <spirit:reset>
+                  <spirit:value>0x0</spirit:value>
+                  <spirit:mask>0x73f</spirit:mask>
+               </spirit:reset>
+               <spirit:field><!--BitField named GenRst--><spirit:name>GenRst</spirit:name>
+                  <spirit:description>Valid in host mode only.  When acting as a host, forces the host reset conditions onto the bus.  No meaning as a peripheral.  This bit is self clearing as soon as the event is serviced.
+
+Active high.</spirit:description>
+                  <spirit:bitOffset>0</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named GenRst--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>RemoteClearBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named GenRst--></spirit:field>
+               <spirit:field><!--BitField named ExtRst--><spirit:name>ExtRst</spirit:name>
+                  <spirit:description>Keeps the Reset sequence until either the Tdrst_max and Tdrst min timers expire</spirit:description>
+                  <spirit:bitOffset>1</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named ExtRst--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named ExtRst--></spirit:field>
+               <spirit:field><!--BitField named GenRsm--><spirit:name>GenRsm</spirit:name>
+                  <spirit:description>Valid only in host mode.  When acting as a host, generates the host resume conditioning on the bus.  This bit is self clearing as soon as the event is serviced.
+
+Active high.</spirit:description>
+                  <spirit:bitOffset>2</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named GenRsm--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>RemoteClearBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named GenRsm--></spirit:field>
+               <spirit:field><!--BitField named ExtRsm--><spirit:name>ExtRsm</spirit:name>
+                  <spirit:description>This register is used only in the REX mode.  When this bit is set to 1 the REX UED extends the resume signaling indefinitely on the REX port.  If this bit is clear the resume signaling will end after the Tdrsmdn timer expires.</spirit:description>
+                  <spirit:bitOffset>3</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named ExtRsm--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named ExtRsm--></spirit:field>
+               <spirit:field><!--BitField named GenSusp--><spirit:name>GenSusp</spirit:name>
+                  <spirit:description>Valid in DFP mode only.  If a packet is already being transmitted it will wait until the packet is complete then gate any further core transmissions.  If the port was in high speed operation then it will immediately revert to full speed mode.  If it was operating in full speed or low speed mode it will do nothing.  Upon completion of gating the core transmission and the return to IDLE state it will start the 3ms which when expires will indicate the bus has entered the suspended state.  Upon accepting the command the ULM will clear this bit field.</spirit:description>
+                  <spirit:bitOffset>4</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named GenSusp--><spirit:vendorExtensions>
+                     <pdt:valueType>unsigned</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>RemoteClearBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named GenSusp--></spirit:field>
+               <spirit:field><!--BitField named GenRmtWkp--><spirit:name>GenRmtWkp</spirit:name>
+                  <spirit:description>Valid only in peripheral mode.  When acting as a device generates the peripheral remote wakeup signaling on the bus.  This bit is self clearing as soon as the event is serviced.
+
+Active high.</spirit:description>
+                  <spirit:bitOffset>5</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named GenRmtWkp--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>RemoteClearBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named GenRmtWkp--></spirit:field>
+               <spirit:field><!--BitField named GenSe0--><spirit:name>GenSe0</spirit:name>
+                  <spirit:description>Valid only in host mode.  Allows software to generate an SE0 event on the bus.  Software is responsible for disabling this bit.
+
+Active high signal.</spirit:description>
+                  <spirit:bitOffset>8</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named GenSe0--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named GenSe0--></spirit:field>
+               <spirit:field><!--BitField named GenJ--><spirit:name>GenJ</spirit:name>
+                  <spirit:description>Valid in both peripheral and host mode.  Generates a Chirp J on the bus.  Software is responsible for disabling this bit when it has finished using its function.  ULM should be idle or the DisableUed bit set to 1 when this is being used.
+
+Active high.</spirit:description>
+                  <spirit:bitOffset>9</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named GenJ--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named GenJ--></spirit:field>
+               <spirit:field><!--BitField named GenK--><spirit:name>GenK</spirit:name>
+                  <spirit:description>Valid in both peripheral and host mode.  Generates a Chirp K on the bus.  Software is responsible for turning this bit off when it is done using this function.  ULM should be idle or the DisableUed bit set to 1 when this is being used.
+
+Active high.</spirit:description>
+                  <spirit:bitOffset>10</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named GenK--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named GenK--></spirit:field>
+               <spirit:vendorExtensions><!--	spirit:dim and spirit:reset are not parsed by Spectareg.
+			refer to pdt:dimensions and spirit:field/spirit:vendorExtensions/pdt:resetValue instead.
+		--><!--Register named Ctrl--><pdt:dimensions>
+                     <pdt:dimension pdt:signif="0">
+                        <pdt:index>i</pdt:index>
+                        <pdt:increment>4</pdt:increment>
+                        <pdt:numElements>1</pdt:numElements>
+                        <pdt:numElemParams/>
+                     </pdt:dimension>
+                  </pdt:dimensions>
+                  <pdt:instanceClass>Register</pdt:instanceClass>
+                  <pdt:briefDescription>Controls to manage the ULMII.</pdt:briefDescription>
+                  <pdt:developerComments/>
+                  <pdt:indexTags/>
+                  <pdt:related/>
+                  <pdt:visibleToRoles/>
+               </spirit:vendorExtensions>
+               <!--Register named Ctrl--></spirit:register>
+            <spirit:register><!--Register named IntSrc--><spirit:name>IntSrc</spirit:name>
+               <spirit:description>Interrupt Status Registers</spirit:description>
+               <spirit:dim>1</spirit:dim>
+               <spirit:addressOffset>0x10</spirit:addressOffset>
+               <spirit:size>32</spirit:size>
+               <spirit:reset>
+                  <spirit:value>0x0</spirit:value>
+                  <spirit:mask>0x33f7</spirit:mask>
+               </spirit:reset>
+               <spirit:field><!--BitField named BusRstDet--><spirit:name>BusRstDet</spirit:name>
+                  <spirit:description>This bit indicates that the internal hardware of the ULMII detected the start of the USB reset signaling.  Since this signal is valid only for one clock cycle software should not rely on being able to use this bit reliably.</spirit:description>
+                  <spirit:bitOffset>0</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-only</spirit:access>
+                  <!--BitField named BusRstDet--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>true</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExtDrivenBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named BusRstDet--></spirit:field>
+               <spirit:field><!--BitField named NegDone--><spirit:name>NegDone</spirit:name>
+                  <spirit:description>This bit is valid in both UFP and DFP modes.  This bit is used in conjunction with the enable bit to set the sticky flag bit in the IntFlag.NegDone register.  This bit indicates that the internal hardware of the ULMII has determined the final operating speed of the USB.  Since this signal is valid only for one clock cycle software should not rely on being able to use this bit reliably.</spirit:description>
+                  <spirit:bitOffset>1</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-only</spirit:access>
+                  <!--BitField named NegDone--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>true</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExtDrivenBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named NegDone--></spirit:field>
+               <spirit:field><!--BitField named BusRstDone--><spirit:name>BusRstDone</spirit:name>
+                  <spirit:description>This bit is valid in both UFP and DFP modes.  This bit is used in conjunction with the enable bit to set the sticky flag bit in the IntFlag.BusRstDone register.  This bit indicates that the internal hardware of the ULMII has determined the USB reset has completed.  Since this signal is valid only for one clock cycle software should not rely on being able to use this bit reliably.</spirit:description>
+                  <spirit:bitOffset>2</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-only</spirit:access>
+                  <!--BitField named BusRstDone--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>true</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExtDrivenBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named BusRstDone--></spirit:field>
+               <spirit:field><!--BitField named SusDet--><spirit:name>SusDet</spirit:name>
+                  <spirit:description>This bit is valid in both UFP and DFP modes.  This bit is used in conjunction with the enable bit to set the sticky flag bit in the IntFlag.SusDet register.  This bit indicates the ULMII has detected there has been no transitions from the USB idle state for a period of 3ms for FS/LS and 3.125ms for HS.  Since this signal is valid only for one clock cycle software should not rely on being able to use this bit reliably.</spirit:description>
+                  <spirit:bitOffset>4</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-only</spirit:access>
+                  <!--BitField named SusDet--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>true</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExtDrivenBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named SusDet--></spirit:field>
+               <spirit:field><!--BitField named HstRsmDet--><spirit:name>HstRsmDet</spirit:name>
+                  <spirit:description>This bit is used in conjunction with the enable bit to set the sticky flag bit in the IntFlag.HstRsmDet register.  This bit indicates the ULMII, while in the USB suspended state, has detected USB resume signaling from the host.  Since this signal is valid only for one clock cycle software should not rely on being able to use this bit reliably.</spirit:description>
+                  <spirit:bitOffset>5</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-only</spirit:access>
+                  <!--BitField named HstRsmDet--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>true</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExtDrivenBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named HstRsmDet--></spirit:field>
+               <spirit:field><!--BitField named RmtWkp--><spirit:name>RmtWkp</spirit:name>
+                  <spirit:description>This bit is valid in DFP mode only.  This bit indicates the ULMII, while in the USB suspended state, has detected USB resume signaling from a device connected downstream.  Since this signal is valid only for one clock cycle software should not rely on being able to use this bit reliably.</spirit:description>
+                  <spirit:bitOffset>6</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-only</spirit:access>
+                  <!--BitField named RmtWkp--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>true</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExtDrivenBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named RmtWkp--></spirit:field>
+               <spirit:field><!--BitField named RsmDone--><spirit:name>RsmDone</spirit:name>
+                  <spirit:description>This bit is valid in both DFP and UFP modes.  This bit indicates that the ULMII has detected (UFP) or generated (DFP) the end of the resume sequence (either an upstream port resume initiated resume, remote wakeup or a ULMII controlled resume).  Since this signal is valid only for one clock cycle software should not rely on being able to use this bit reliably.</spirit:description>
+                  <spirit:bitOffset>7</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-only</spirit:access>
+                  <!--BitField named RsmDone--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>true</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExtDrivenBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named RsmDone--></spirit:field>
+               <spirit:field><!--BitField named Conn--><spirit:name>Conn</spirit:name>
+                  <spirit:description>This bit is valid in both the DFP and UFP modes.  If the CnfgSts.ConDis bit is set this allows the ULMII to detect a valid connect/disconnect condition.  Since this signal is valid only for one clock cycle software should not rely on being able to use this bit reliably.</spirit:description>
+                  <spirit:bitOffset>8</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-only</spirit:access>
+                  <!--BitField named Conn--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>true</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExtDrivenBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named Conn--></spirit:field>
+               <spirit:field><!--BitField named Discon--><spirit:name>Discon</spirit:name>
+                  <spirit:description>This bit is valid in both the DFP and UFP modes.  If the CnfgSts.ConDis bit goes from set to clear or while the the CnfgSts.ConDis is set and the ULMII is removed from a downstream facing port (UFP mode) or a upstream facing port is removed from the ULMII (DFP mode) this bit will pulse for one clock cycle.  Since this signal is valid only for one clock cycle software should not rely on being able to use this bit reliably.</spirit:description>
+                  <spirit:bitOffset>9</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-only</spirit:access>
+                  <!--BitField named Discon--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>true</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExtDrivenBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named Discon--></spirit:field>
+               <spirit:field><!--BitField named BitStuffErr--><spirit:name>BitStuffErr</spirit:name>
+                  <spirit:description>This bit is valid in both the DFP and UFP modes.  If the ULMII detects a bitstuff error during reception it will pulse this for one clock cycle.  Since this signal is valid only for one clock cycle software should not rely on being able to use this bit reliably.</spirit:description>
+                  <spirit:bitOffset>12</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-only</spirit:access>
+                  <!--BitField named BitStuffErr--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>true</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExtDrivenBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named BitStuffErr--></spirit:field>
+               <spirit:field><!--BitField named LngPktErr--><spirit:name>LngPktErr</spirit:name>
+                  <spirit:description>This bit is valid in both the DFP and UFP modes.  If the ULMII detects a babbling packet error (a packet that exceeds the maximum length of a packet for the speed of ULMII operation) during reception the ULMII will pulse this signal for one clock cycle.  Because this signal is valid only for one clock cycle software will not necessarily be able to use this for anything useful.</spirit:description>
+                  <spirit:bitOffset>13</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-only</spirit:access>
+                  <!--BitField named LngPktErr--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>true</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExtDrivenBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named LngPktErr--></spirit:field>
+               <spirit:vendorExtensions><!--	spirit:dim and spirit:reset are not parsed by Spectareg.
+			refer to pdt:dimensions and spirit:field/spirit:vendorExtensions/pdt:resetValue instead.
+		--><!--Register named IntSrc--><pdt:dimensions>
+                     <pdt:dimension pdt:signif="0">
+                        <pdt:index>i</pdt:index>
+                        <pdt:increment>4</pdt:increment>
+                        <pdt:numElements>1</pdt:numElements>
+                        <pdt:numElemParams/>
+                     </pdt:dimension>
+                  </pdt:dimensions>
+                  <pdt:instanceClass>Register</pdt:instanceClass>
+                  <pdt:briefDescription/>
+                  <pdt:developerComments/>
+                  <pdt:indexTags/>
+                  <pdt:related/>
+                  <pdt:visibleToRoles/>
+               </spirit:vendorExtensions>
+               <!--Register named IntSrc--></spirit:register>
+            <spirit:register><!--Register named IntEn--><spirit:name>IntEn</spirit:name>
+               <spirit:description>Mask Register for ULM interrupt events</spirit:description>
+               <spirit:dim>1</spirit:dim>
+               <spirit:addressOffset>0x14</spirit:addressOffset>
+               <spirit:size>32</spirit:size>
+               <spirit:reset>
+                  <spirit:value>0x0</spirit:value>
+                  <spirit:mask>0x33f7</spirit:mask>
+               </spirit:reset>
+               <spirit:field><!--BitField named BusRstDet--><spirit:name>BusRstDet</spirit:name>
+                  <spirit:description>Setting this bit to 1 allows an interrupt to be generated when IntSrc.BusRstDet is set by the ULMII.</spirit:description>
+                  <spirit:bitOffset>0</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named BusRstDet--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>FlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named BusRstDet--></spirit:field>
+               <spirit:field><!--BitField named NegDone--><spirit:name>NegDone</spirit:name>
+                  <spirit:description>Setting this bit to 1 allows an interrupt to be generated when IntSrc.NegDone is set by the ULMII.</spirit:description>
+                  <spirit:bitOffset>1</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named NegDone--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>FlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named NegDone--></spirit:field>
+               <spirit:field><!--BitField named BusRstDone--><spirit:name>BusRstDone</spirit:name>
+                  <spirit:description>Setting this bit to 1 allows an interrupt to be generated when IntSrc.BusRstDone is set by the ULMII.</spirit:description>
+                  <spirit:bitOffset>2</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named BusRstDone--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>FlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named BusRstDone--></spirit:field>
+               <spirit:field><!--BitField named SusDet--><spirit:name>SusDet</spirit:name>
+                  <spirit:description>Setting this bit to 1 allows an interrupt to be generated when IntSrc.SusDet is set by the ULMII.</spirit:description>
+                  <spirit:bitOffset>4</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named SusDet--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>FlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named SusDet--></spirit:field>
+               <spirit:field><!--BitField named HstRsmDet--><spirit:name>HstRsmDet</spirit:name>
+                  <spirit:description>Setting this bit to 1 allows an interrupt to be generated when IntSrc.HstRsmDet is set by the ULMII.</spirit:description>
+                  <spirit:bitOffset>5</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named HstRsmDet--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>FlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named HstRsmDet--></spirit:field>
+               <spirit:field><!--BitField named RmtWkp--><spirit:name>RmtWkp</spirit:name>
+                  <spirit:description>Setting this bit to 1 allows an interrupt to be generated when IntSrc.RmtWkp is set by the ULMII.</spirit:description>
+                  <spirit:bitOffset>6</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named RmtWkp--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>FlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named RmtWkp--></spirit:field>
+               <spirit:field><!--BitField named RsmDone--><spirit:name>RsmDone</spirit:name>
+                  <spirit:description>Setting this bit to 1 allows an interrupt to be generated when IntSrc.RsmDone is set by the ULMII.</spirit:description>
+                  <spirit:bitOffset>7</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named RsmDone--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>FlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named RsmDone--></spirit:field>
+               <spirit:field><!--BitField named Conn--><spirit:name>Conn</spirit:name>
+                  <spirit:description>Setting this bit to 1 allows an interrupt to be generated when IntSrc.Conn is set by the ULMII.</spirit:description>
+                  <spirit:bitOffset>8</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named Conn--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>FlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named Conn--></spirit:field>
+               <spirit:field><!--BitField named Discon--><spirit:name>Discon</spirit:name>
+                  <spirit:description>Setting this bit to 1 allows an interrupt to be generated when IntSrc.DisCon is set by the ULMII.</spirit:description>
+                  <spirit:bitOffset>9</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named Discon--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>FlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named Discon--></spirit:field>
+               <spirit:field><!--BitField named BitStuffErr--><spirit:name>BitStuffErr</spirit:name>
+                  <spirit:description>Setting this bit to 1 allows an interrupt to be generated when IntSrc.BitStuffErr is set by the ULMII.</spirit:description>
+                  <spirit:bitOffset>12</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named BitStuffErr--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>FlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named BitStuffErr--></spirit:field>
+               <spirit:field><!--BitField named LngPktErr--><spirit:name>LngPktErr</spirit:name>
+                  <spirit:description>Setting this bit to 1 allows an interrupt to be generated when IntSrc. LngPktErr is set by the ULMII.</spirit:description>
+                  <spirit:bitOffset>13</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named LngPktErr--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>FlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named LngPktErr--></spirit:field>
+               <spirit:vendorExtensions><!--	spirit:dim and spirit:reset are not parsed by Spectareg.
+			refer to pdt:dimensions and spirit:field/spirit:vendorExtensions/pdt:resetValue instead.
+		--><!--Register named IntEn--><pdt:dimensions>
+                     <pdt:dimension pdt:signif="0">
+                        <pdt:index>i</pdt:index>
+                        <pdt:increment>4</pdt:increment>
+                        <pdt:numElements>1</pdt:numElements>
+                        <pdt:numElemParams/>
+                     </pdt:dimension>
+                  </pdt:dimensions>
+                  <pdt:instanceClass>Register</pdt:instanceClass>
+                  <pdt:briefDescription/>
+                  <pdt:developerComments/>
+                  <pdt:indexTags/>
+                  <pdt:related/>
+                  <pdt:visibleToRoles/>
+               </spirit:vendorExtensions>
+               <!--Register named IntEn--></spirit:register>
+            <spirit:register><!--Register named IntFlag--><spirit:name>IntFlag</spirit:name>
+               <spirit:description/>
+               <spirit:dim>1</spirit:dim>
+               <spirit:addressOffset>0x18</spirit:addressOffset>
+               <spirit:size>32</spirit:size>
+               <spirit:reset>
+                  <spirit:value>0x0</spirit:value>
+                  <spirit:mask>0x33f7</spirit:mask>
+               </spirit:reset>
+               <spirit:field><!--BitField named BusRstDet--><spirit:name>BusRstDet</spirit:name>
+                  <spirit:description>This bit is only valid when operating in UFP mode.  This bit indicates that the ULMII detected valid bus reset signaling.  When the IntEn.BusRstDet bit and the IntSrc.BusRstDet are set this bit will trigger an interrupt and remain set until software clears it.  Write 1 to clear.</spirit:description>
+                  <spirit:bitOffset>0</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named BusRstDet--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>InterruptBitField</pdt:instanceClass>
+                     <pdt:instanceArg pdt:name="intEnRefStr">'ULMII.ULMII.IntEn.BusRstDet'</pdt:instanceArg>
+                     <pdt:instanceArg pdt:name="statusRefStr">'ULMII.ULMII.IntSrc.BusRstDet'</pdt:instanceArg>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named BusRstDet--></spirit:field>
+               <spirit:field><!--BitField named NegDone--><spirit:name>NegDone</spirit:name>
+                  <spirit:description>This bit is valid in both UFP and DFP modes.  This bit indicates the ULMII has met all the necessary conditions to determine the final speed of the USB operation.  When the IntEn.NegDone bit and the IntSrc.NegDone are set this bit will trigger an interrupt and remain set until software clears it.  Write 1 to clear.</spirit:description>
+                  <spirit:bitOffset>1</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named NegDone--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>InterruptBitField</pdt:instanceClass>
+                     <pdt:instanceArg pdt:name="intEnRefStr">'ULMII.ULMII.IntEn.NegDone'</pdt:instanceArg>
+                     <pdt:instanceArg pdt:name="statusRefStr">'ULMII.ULMII.IntSrc.NegDone'</pdt:instanceArg>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named NegDone--></spirit:field>
+               <spirit:field><!--BitField named BusRstDone--><spirit:name>BusRstDone</spirit:name>
+                  <spirit:description>This bit is valid in both UFP and DFP modes.  This bit indicates the ULMII has met all the necessary conditions to determine the bus reset signaling has completed.  When the IntEn.BusRstDone bit and the IntSrc.BusRstDone are set this bit will trigger an interrupt and remain set until software clears it.  Write 1 to clear.</spirit:description>
+                  <spirit:bitOffset>2</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named BusRstDone--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>InterruptBitField</pdt:instanceClass>
+                     <pdt:instanceArg pdt:name="intEnRefStr">'ULMII.ULMII.IntEn.BusRstDone'</pdt:instanceArg>
+                     <pdt:instanceArg pdt:name="statusRefStr">'ULMII.ULMII.IntSrc.BusRstDone'</pdt:instanceArg>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named BusRstDone--></spirit:field>
+               <spirit:field><!--BitField named SusDet--><spirit:name>SusDet</spirit:name>
+                  <spirit:description>This bit is valid in both UFP and DFP modes.  This bit indicates the ULMII has detected there has been no transitions from the USB idle state for a period of 3ms for FS/LS and 3.125ms for HS.  When the IntEn.SusDet bit and the IntSrc.SusDet are set this bit will trigger an interrupt and remain set until software clears it.  Write 1 to clear.</spirit:description>
+                  <spirit:bitOffset>4</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named SusDet--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>InterruptBitField</pdt:instanceClass>
+                     <pdt:instanceArg pdt:name="intEnRefStr">'ULMII.ULMII.IntEn.SusDet'</pdt:instanceArg>
+                     <pdt:instanceArg pdt:name="statusRefStr">'ULMII.ULMII.IntSrc.SusDet'</pdt:instanceArg>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named SusDet--></spirit:field>
+               <spirit:field><!--BitField named HstRsmDet--><spirit:name>HstRsmDet</spirit:name>
+                  <spirit:description>This bit is valid in UFP mode only.  This bit indicates the ULMII, while in the USB suspended state, has detected USB resume signaling from the downstream port connected to it (e.g. host port).  When the IntEn.HstRsmDet bit and the IntSrc.HstRsmDet are set this bit will trigger an interrupt and remain set until software clears it.  Write 1 to clear.</spirit:description>
+                  <spirit:bitOffset>5</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named HstRsmDet--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>InterruptBitField</pdt:instanceClass>
+                     <pdt:instanceArg pdt:name="intEnRefStr">'ULMII.ULMII.IntEn.HstRsmDet'</pdt:instanceArg>
+                     <pdt:instanceArg pdt:name="statusRefStr">'ULMII.ULMII.IntSrc.HstRsmDet'</pdt:instanceArg>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named HstRsmDet--></spirit:field>
+               <spirit:field><!--BitField named RmtWkp--><spirit:name>RmtWkp</spirit:name>
+                  <spirit:description>This bit is valid in DFP mode only.  This bit indicates the ULMII, while in the USB suspended state, has detected USB resume signaling from a device connected downstream.  When the IntEn.RmtWkp bit and the IntSrc.RmtWkp are set this bit will trigger an interrupt and remain set until software clears it.  Write 1 to clear.</spirit:description>
+                  <spirit:bitOffset>6</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named RmtWkp--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>InterruptBitField</pdt:instanceClass>
+                     <pdt:instanceArg pdt:name="intEnRefStr">'ULMII.ULMII.IntEn.RmtWkp'</pdt:instanceArg>
+                     <pdt:instanceArg pdt:name="statusRefStr">'ULMII.ULMII.IntSrc.RmtWkp'</pdt:instanceArg>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named RmtWkp--></spirit:field>
+               <spirit:field><!--BitField named RsmDone--><spirit:name>RsmDone</spirit:name>
+                  <spirit:description>This bit is valid in both DFP and UFP modes.  This bit indicates that the ULMII has detected (UFP) or generated (DFP) the end of the resume sequence (either an upstream port resume initiated resume, remote wakeup or a ULMII controlled resume).  When IntEn.RsmDone and the IntSrc.RsmDone are set this bit will trigger an interrupt and remain set until software clears it.  Write 1 to clear.</spirit:description>
+                  <spirit:bitOffset>7</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named RsmDone--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>InterruptBitField</pdt:instanceClass>
+                     <pdt:instanceArg pdt:name="intEnRefStr">'ULMII.ULMII.IntEn.RsmDone'</pdt:instanceArg>
+                     <pdt:instanceArg pdt:name="statusRefStr">'ULMII.ULMII.IntSrc.RsmDone'</pdt:instanceArg>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named RsmDone--></spirit:field>
+               <spirit:field><!--BitField named Conn--><spirit:name>Conn</spirit:name>
+                  <spirit:description>This bit is valid in both the DFP and UFP modes.  If the CnfgSts.ConDis bit is set and the IntEn.Conn and IntSrc.Conn bit are set this will trigger an interrupt and remain set until software clears it when a upstream facing port or a downstream facing port is connected to the ULMII.  Write 1 to clear.</spirit:description>
+                  <spirit:bitOffset>8</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named Conn--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>InterruptBitField</pdt:instanceClass>
+                     <pdt:instanceArg pdt:name="intEnRefStr">'ULMII.ULMII.IntEn.Conn'</pdt:instanceArg>
+                     <pdt:instanceArg pdt:name="statusRefStr">'ULMII.ULMII.IntSrc.Conn'</pdt:instanceArg>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named Conn--></spirit:field>
+               <spirit:field><!--BitField named Discon--><spirit:name>Discon</spirit:name>
+                  <spirit:description>This bit is valid in both the DFP and UFP modes.  If the CnfgSts.ConDis bit goes from set to clear or while the the CnfgSts.ConDis is set and the ULMII is removed from a downstream facing port (UFP mode) or a upstream facing port is removed from the ULMII (DFP mode) and the IntEn.DisCon and IntSrc.DisCon bits are set this will trigger an interrupt and remain set until software clears it.  Write 1 to clear.</spirit:description>
+                  <spirit:bitOffset>9</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named Discon--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>InterruptBitField</pdt:instanceClass>
+                     <pdt:instanceArg pdt:name="intEnRefStr">'ULMII.ULMII.IntEn.Discon'</pdt:instanceArg>
+                     <pdt:instanceArg pdt:name="statusRefStr">'ULMII.ULMII.IntSrc.Discon'</pdt:instanceArg>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named Discon--></spirit:field>
+               <spirit:field><!--BitField named BitStuffErr--><spirit:name>BitStuffErr</spirit:name>
+                  <spirit:description>This bit is valid in both the DFP and UFP modes.  If the ULMII detects a bitstuff error during reception and IntEn.BitStuffErr and IntSrc.BitStuffErr are set then this bit will be set and remain set until software clears it.  Write 1 to clear.</spirit:description>
+                  <spirit:bitOffset>12</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named BitStuffErr--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>InterruptBitField</pdt:instanceClass>
+                     <pdt:instanceArg pdt:name="intEnRefStr">'ULMII.ULMII.IntEn.BitStuffErr'</pdt:instanceArg>
+                     <pdt:instanceArg pdt:name="statusRefStr">'ULMII.ULMII.IntSrc.BitStuffErr'</pdt:instanceArg>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named BitStuffErr--></spirit:field>
+               <spirit:field><!--BitField named LngPktErr--><spirit:name>LngPktErr</spirit:name>
+                  <spirit:description>This bit is valid in both the DFP and UFP modes.  If the ULMII detects a babbling packet error (a packet that exceeds the maximum length of a packet for the speed of ULMII operation) during reception and IntEn.LngPktErr and IntSrc.LngPktErr are set then this bit will be set and remain set until software clears it.  Write 1 to clear.</spirit:description>
+                  <spirit:bitOffset>13</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named LngPktErr--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>InterruptBitField</pdt:instanceClass>
+                     <pdt:instanceArg pdt:name="intEnRefStr">'ULMII.ULMII.IntEn.LngPktErr'</pdt:instanceArg>
+                     <pdt:instanceArg pdt:name="statusRefStr">'ULMII.ULMII.IntSrc.LngPktErr'</pdt:instanceArg>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named LngPktErr--></spirit:field>
+               <spirit:vendorExtensions><!--	spirit:dim and spirit:reset are not parsed by Spectareg.
+			refer to pdt:dimensions and spirit:field/spirit:vendorExtensions/pdt:resetValue instead.
+		--><!--Register named IntFlag--><pdt:dimensions>
+                     <pdt:dimension pdt:signif="0">
+                        <pdt:index>i</pdt:index>
+                        <pdt:increment>4</pdt:increment>
+                        <pdt:numElements>1</pdt:numElements>
+                        <pdt:numElemParams/>
+                     </pdt:dimension>
+                  </pdt:dimensions>
+                  <pdt:instanceClass>Register</pdt:instanceClass>
+                  <pdt:briefDescription/>
+                  <pdt:developerComments/>
+                  <pdt:indexTags/>
+                  <pdt:related/>
+                  <pdt:visibleToRoles/>
+               </spirit:vendorExtensions>
+               <!--Register named IntFlag--></spirit:register>
+            <spirit:register><!--Register named PhySts--><spirit:name>PhySts</spirit:name>
+               <spirit:description>This register includes all information the PHY is able to present to the ULMII core.  This information is also information extracted from the ULPI RXCMD byte when operating in ULPI mode.</spirit:description>
+               <spirit:dim>1</spirit:dim>
+               <spirit:addressOffset>0x20</spirit:addressOffset>
+               <spirit:size>32</spirit:size>
+               <spirit:reset>
+                  <spirit:value>0x0</spirit:value>
+                  <spirit:mask>0x1ff</spirit:mask>
+               </spirit:reset>
+               <spirit:field><!--BitField named Vbus--><spirit:name>Vbus</spirit:name>
+                  <spirit:description>If a voltage divided Vbus is connected this bit indicates that.  Governed by the switching thresholds of the input pin.  This pin is to be used by software to detect connection to a host when in UFP mode.</spirit:description>
+                  <spirit:bitOffset>0</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-only</spirit:access>
+                  <!--BitField named Vbus--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>true</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExtDrivenBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named Vbus--></spirit:field>
+               <spirit:field><!--BitField named HostDisconnect--><spirit:name>HostDisconnect</spirit:name>
+                  <spirit:description>When the PHY Dppulldown and Dmpulldown are enabled this signal indicates the device has been removed.  When XCVR mode is set for HS (00b) this signal will only register a disconnect when a SOF is being sent.  Once it indicates a disconnect while in HS it is not valid for a minimum of 4ms.
+
+1 = Device Disconnected
+0 = Device Connected</spirit:description>
+                  <spirit:bitOffset>1</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-only</spirit:access>
+                  <!--BitField named HostDisconnect--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>true</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExtDrivenBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named HostDisconnect--></spirit:field>
+               <spirit:field><!--BitField named LineState--><spirit:name>LineState</spirit:name>
+                  <spirit:description>Unfiltered USB line state (after UTMI phy)</spirit:description>
+                  <spirit:bitOffset>2</spirit:bitOffset>
+                  <spirit:bitWidth>2</spirit:bitWidth>
+                  <spirit:access>read-only</spirit:access>
+                  <!--BitField named LineState--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>true</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExtDrivenBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named LineState--></spirit:field>
+               <spirit:field><!--BitField named VbusValid--><spirit:name>VbusValid</spirit:name>
+                  <spirit:description/>
+                  <spirit:bitOffset>4</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-only</spirit:access>
+                  <!--BitField named VbusValid--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>true</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExtDrivenBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named VbusValid--></spirit:field>
+               <spirit:field><!--BitField named SessEnd--><spirit:name>SessEnd</spirit:name>
+                  <spirit:description>OTG</spirit:description>
+                  <spirit:bitOffset>5</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-only</spirit:access>
+                  <!--BitField named SessEnd--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>true</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExtDrivenBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named SessEnd--></spirit:field>
+               <spirit:field><!--BitField named SessAvalid--><spirit:name>SessAvalid</spirit:name>
+                  <spirit:description/>
+                  <spirit:bitOffset>6</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-only</spirit:access>
+                  <!--BitField named SessAvalid--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>true</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExtDrivenBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named SessAvalid--></spirit:field>
+               <spirit:field><!--BitField named SessBvalid--><spirit:name>SessBvalid</spirit:name>
+                  <spirit:description/>
+                  <spirit:bitOffset>7</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-only</spirit:access>
+                  <!--BitField named SessBvalid--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>true</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExtDrivenBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named SessBvalid--></spirit:field>
+               <spirit:field><!--BitField named Id--><spirit:name>Id</spirit:name>
+                  <spirit:description/>
+                  <spirit:bitOffset>8</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-only</spirit:access>
+                  <!--BitField named Id--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>true</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExtDrivenBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named Id--></spirit:field>
+               <spirit:vendorExtensions><!--	spirit:dim and spirit:reset are not parsed by Spectareg.
+			refer to pdt:dimensions and spirit:field/spirit:vendorExtensions/pdt:resetValue instead.
+		--><!--Register named PhySts--><pdt:dimensions>
+                     <pdt:dimension pdt:signif="0">
+                        <pdt:index>i</pdt:index>
+                        <pdt:increment>4</pdt:increment>
+                        <pdt:numElements>1</pdt:numElements>
+                        <pdt:numElemParams/>
+                     </pdt:dimension>
+                  </pdt:dimensions>
+                  <pdt:instanceClass>Register</pdt:instanceClass>
+                  <pdt:briefDescription/>
+                  <pdt:developerComments/>
+                  <pdt:indexTags/>
+                  <pdt:related/>
+                  <pdt:visibleToRoles/>
+               </spirit:vendorExtensions>
+               <!--Register named PhySts--></spirit:register>
+            <spirit:register><!--Register named UlpiAccess--><spirit:name>UlpiAccess</spirit:name>
+               <spirit:description>All PHY controls are abstracted into ULPI control access regardless of PHY type (ULPI or UTMI).  The register mapping for both are described in the ULPI register specifications.</spirit:description>
+               <spirit:dim>1</spirit:dim>
+               <spirit:addressOffset>0x28</spirit:addressOffset>
+               <spirit:size>32</spirit:size>
+               <spirit:reset>
+                  <spirit:value>0x0</spirit:value>
+                  <spirit:mask>0xffffff07</spirit:mask>
+               </spirit:reset>
+               <spirit:field><!--BitField named Go--><spirit:name>Go</spirit:name>
+                  <spirit:description>Software will set this bit when a ULPI access is required.  Once this bit is cleared it can use the Rdata or assume the Wdata was written.  This depends on the access mode for the operation being performed.</spirit:description>
+                  <spirit:bitOffset>0</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named Go--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>RemoteClearBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named Go--></spirit:field>
+               <spirit:field><!--BitField named WrRdn--><spirit:name>WrRdn</spirit:name>
+                  <spirit:description>0 = Read Operation
+1 = Write Operation</spirit:description>
+                  <spirit:bitOffset>1</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named WrRdn--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named WrRdn--></spirit:field>
+               <spirit:field><!--BitField named Err--><spirit:name>Err</spirit:name>
+                  <spirit:description>When software is polling on the GO bit and has determined it to have cleared (indicating the end of the action) this bit is valid.  It is only valid at the falling edge of the GO bit.</spirit:description>
+                  <spirit:bitOffset>2</spirit:bitOffset>
+                  <spirit:bitWidth>1</spirit:bitWidth>
+                  <spirit:access>read-only</spirit:access>
+                  <!--BitField named Err--><spirit:vendorExtensions>
+                     <pdt:valueType>binary</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExtDrivenBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named Err--></spirit:field>
+               <spirit:field><!--BitField named Addr--><spirit:name>Addr</spirit:name>
+                  <spirit:description>ULPI internal register address.</spirit:description>
+                  <spirit:bitOffset>8</spirit:bitOffset>
+                  <spirit:bitWidth>8</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named Addr--><spirit:vendorExtensions>
+                     <pdt:valueType>hexadecimal</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named Addr--></spirit:field>
+               <spirit:field><!--BitField named Wdata--><spirit:name>Wdata</spirit:name>
+                  <spirit:description>This is the data byte to be written to the ULPI register.</spirit:description>
+                  <spirit:bitOffset>16</spirit:bitOffset>
+                  <spirit:bitWidth>8</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named Wdata--><spirit:vendorExtensions>
+                     <pdt:valueType>hexadecimal</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named Wdata--></spirit:field>
+               <spirit:field><!--BitField named Rdata--><spirit:name>Rdata</spirit:name>
+                  <spirit:description>When the UlpiAccess.Go bit is cleared at the end of a read transaction this bit field contains that registers value.</spirit:description>
+                  <spirit:bitOffset>24</spirit:bitOffset>
+                  <spirit:bitWidth>8</spirit:bitWidth>
+                  <spirit:access>read-only</spirit:access>
+                  <!--BitField named Rdata--><spirit:vendorExtensions>
+                     <pdt:valueType>hexadecimal</pdt:valueType>
+                     <pdt:resetValue>0x0</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExtDrivenBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named Rdata--></spirit:field>
+               <spirit:vendorExtensions><!--	spirit:dim and spirit:reset are not parsed by Spectareg.
+			refer to pdt:dimensions and spirit:field/spirit:vendorExtensions/pdt:resetValue instead.
+		--><!--Register named UlpiAccess--><pdt:dimensions>
+                     <pdt:dimension pdt:signif="0">
+                        <pdt:index>i</pdt:index>
+                        <pdt:increment>4</pdt:increment>
+                        <pdt:numElements>1</pdt:numElements>
+                        <pdt:numElemParams/>
+                     </pdt:dimension>
+                  </pdt:dimensions>
+                  <pdt:instanceClass>Register</pdt:instanceClass>
+                  <pdt:briefDescription/>
+                  <pdt:developerComments/>
+                  <pdt:indexTags/>
+                  <pdt:related/>
+                  <pdt:visibleToRoles/>
+               </spirit:vendorExtensions>
+               <!--Register named UlpiAccess--></spirit:register>
+
+
+
+
+
+            <spirit:register><!--Register named PhyDbg0--><spirit:name>PhyDbg0</spirit:name>
+               <spirit:description>   </spirit:description>
+               <spirit:dim>1</spirit:dim>
+               <spirit:addressOffset>0x2C</spirit:addressOffset>
+               <spirit:size>32</spirit:size>
+               <spirit:reset>
+                  <spirit:value>0x00000104</spirit:value>
+                  <spirit:mask>0xffffffff</spirit:mask>
+               </spirit:reset>
+               <spirit:field><!--BitField named dbg--><spirit:name>dbg</spirit:name>
+                  <spirit:description> </spirit:description>
+                  <spirit:bitOffset>0</spirit:bitOffset>
+                  <spirit:bitWidth>32</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named dbg--><spirit:vendorExtensions>
+                     <pdt:valueType>hexadecimal</pdt:valueType>
+                     <pdt:resetValue>0x00000104</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>true</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named dbg--></spirit:field>
+               <spirit:vendorExtensions><!--	spirit:dim and spirit:reset are not parsed by Spectareg.
+			refer to pdt:dimensions and spirit:field/spirit:vendorExtensions/pdt:resetValue instead.
+		--><!--Register named PhyDbg0--><pdt:dimensions>
+                     <pdt:dimension pdt:signif="0">
+                        <pdt:index>i</pdt:index>
+                        <pdt:increment>4</pdt:increment>
+                        <pdt:numElements>1</pdt:numElements>
+                        <pdt:numElemParams/>
+                     </pdt:dimension>
+                  </pdt:dimensions>
+                  <pdt:instanceClass>Register</pdt:instanceClass>
+                  <pdt:briefDescription/>
+                  <pdt:developerComments/>
+                  <pdt:indexTags/>
+                  <pdt:related/>
+                  <pdt:visibleToRoles/>
+               </spirit:vendorExtensions>
+               <!--Register named PhyDbg0--></spirit:register>
+            <spirit:register><!--Register named IpgTmrLs--><spirit:name>IpgTmrLs</spirit:name>
+               <spirit:description>   </spirit:description>
+               <spirit:dim>1</spirit:dim>
+               <spirit:addressOffset>0x30</spirit:addressOffset>
+               <spirit:size>32</spirit:size>
+               <spirit:reset>
+                  <spirit:value>0x92BF3F3F</spirit:value>
+                  <spirit:mask>0xffffffff</spirit:mask>
+               </spirit:reset>
+               <spirit:field><!--BitField named rx2tx--><spirit:name>rx2tx</spirit:name>
+                  <spirit:description> </spirit:description>
+                  <spirit:bitOffset>0</spirit:bitOffset>
+                  <spirit:bitWidth>8</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named rx2tx--><spirit:vendorExtensions>
+                     <pdt:valueType>hexadecimal</pdt:valueType>
+                     <pdt:resetValue>0x3f</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named rx2tx--></spirit:field>
+               <spirit:field><!--BitField named tx2tx--><spirit:name>tx2tx</spirit:name>
+                  <spirit:description> </spirit:description>
+                  <spirit:bitOffset>8</spirit:bitOffset>
+                  <spirit:bitWidth>8</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named tx2tx--><spirit:vendorExtensions>
+                     <pdt:valueType>hexadecimal</pdt:valueType>
+                     <pdt:resetValue>0x3f</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named tx2tx--></spirit:field>
+               <spirit:field><!--BitField named rxtimeout--><spirit:name>rxtimeout</spirit:name>
+                  <spirit:description> </spirit:description>
+                  <spirit:bitOffset>16</spirit:bitOffset>
+                  <spirit:bitWidth>12</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named rxtimeout--><spirit:vendorExtensions>
+                     <pdt:valueType>hexadecimal</pdt:valueType>
+                     <pdt:resetValue>0x2bf</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named rxtimeout--></spirit:field>
+               <spirit:field><!--BitField named linestatefilter--><spirit:name>linestatefilter</spirit:name>
+                  <spirit:description> </spirit:description>
+                  <spirit:bitOffset>28</spirit:bitOffset>
+                  <spirit:bitWidth>4</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named linestatefilter--><spirit:vendorExtensions>
+                     <pdt:valueType>hexadecimal</pdt:valueType>
+                     <pdt:resetValue>0x9</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named linestatefilter--></spirit:field>
+               <spirit:vendorExtensions><!--	spirit:dim and spirit:reset are not parsed by Spectareg.
+			refer to pdt:dimensions and spirit:field/spirit:vendorExtensions/pdt:resetValue instead.
+		--><!--Register named IpgTmrLs--><pdt:dimensions>
+                     <pdt:dimension pdt:signif="0">
+                        <pdt:index>i</pdt:index>
+                        <pdt:increment>4</pdt:increment>
+                        <pdt:numElements>1</pdt:numElements>
+                        <pdt:numElemParams/>
+                     </pdt:dimension>
+                  </pdt:dimensions>
+                  <pdt:instanceClass>Register</pdt:instanceClass>
+                  <pdt:briefDescription/>
+                  <pdt:developerComments/>
+                  <pdt:indexTags/>
+                  <pdt:related/>
+                  <pdt:visibleToRoles/>
+               </spirit:vendorExtensions>
+               <!--Register named IpgTmrLs--></spirit:register>
+            <spirit:register><!--Register named IpgTmrFs--><spirit:name>IpgTmrFs</spirit:name>
+               <spirit:description>   </spirit:description>
+               <spirit:dim>1</spirit:dim>
+               <spirit:addressOffset>0x34</spirit:addressOffset>
+               <spirit:size>32</spirit:size>
+               <spirit:reset>
+                  <spirit:value>0x30550A0E</spirit:value>
+                  <spirit:mask>0xffffffff</spirit:mask>
+               </spirit:reset>
+               <spirit:field><!--BitField named rx2tx--><spirit:name>rx2tx</spirit:name>
+                  <spirit:description> </spirit:description>
+                  <spirit:bitOffset>0</spirit:bitOffset>
+                  <spirit:bitWidth>8</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named rx2tx--><spirit:vendorExtensions>
+                     <pdt:valueType>hexadecimal</pdt:valueType>
+                     <pdt:resetValue>0x0e</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named rx2tx--></spirit:field>
+               <spirit:field><!--BitField named tx2tx--><spirit:name>tx2tx</spirit:name>
+                  <spirit:description> </spirit:description>
+                  <spirit:bitOffset>8</spirit:bitOffset>
+                  <spirit:bitWidth>8</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named tx2tx--><spirit:vendorExtensions>
+                     <pdt:valueType>hexadecimal</pdt:valueType>
+                     <pdt:resetValue>0x0a</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named tx2tx--></spirit:field>
+               <spirit:field><!--BitField named rxtimeout--><spirit:name>rxtimeout</spirit:name>
+                  <spirit:description> </spirit:description>
+                  <spirit:bitOffset>16</spirit:bitOffset>
+                  <spirit:bitWidth>12</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named rxtimeout--><spirit:vendorExtensions>
+                     <pdt:valueType>hexadecimal</pdt:valueType>
+                     <pdt:resetValue>0x055</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named rxtimeout--></spirit:field>
+               <spirit:field><!--BitField named linestatefilter--><spirit:name>linestatefilter</spirit:name>
+                  <spirit:description> </spirit:description>
+                  <spirit:bitOffset>28</spirit:bitOffset>
+                  <spirit:bitWidth>4</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named linestatefilter--><spirit:vendorExtensions>
+                     <pdt:valueType>hexadecimal</pdt:valueType>
+                     <pdt:resetValue>0x3</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named linestatefilter--></spirit:field>
+               <spirit:vendorExtensions><!--	spirit:dim and spirit:reset are not parsed by Spectareg.
+			refer to pdt:dimensions and spirit:field/spirit:vendorExtensions/pdt:resetValue instead.
+		--><!--Register named IpgTmrFs--><pdt:dimensions>
+                     <pdt:dimension pdt:signif="0">
+                        <pdt:index>i</pdt:index>
+                        <pdt:increment>4</pdt:increment>
+                        <pdt:numElements>1</pdt:numElements>
+                        <pdt:numElemParams/>
+                     </pdt:dimension>
+                  </pdt:dimensions>
+                  <pdt:instanceClass>Register</pdt:instanceClass>
+                  <pdt:briefDescription/>
+                  <pdt:developerComments/>
+                  <pdt:indexTags/>
+                  <pdt:related/>
+                  <pdt:visibleToRoles/>
+               </spirit:vendorExtensions>
+               <!--Register named IpgTmrFs--></spirit:register>
+            <spirit:register><!--Register named IpgTmrHs--><spirit:name>IpgTmrHs</spirit:name>
+               <spirit:description>   </spirit:description>
+               <spirit:dim>1</spirit:dim>
+               <spirit:addressOffset>0x38</spirit:addressOffset>
+               <spirit:size>32</spirit:size>
+               <spirit:reset>
+                  <spirit:value>0x00670C01</spirit:value>
+                  <spirit:mask>0xffffffff</spirit:mask>
+               </spirit:reset>
+               <spirit:field><!--BitField named rx2tx--><spirit:name>rx2tx</spirit:name>
+                  <spirit:description> </spirit:description>
+                  <spirit:bitOffset>0</spirit:bitOffset>
+                  <spirit:bitWidth>8</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named rx2tx--><spirit:vendorExtensions>
+                     <pdt:valueType>hexadecimal</pdt:valueType>
+                     <pdt:resetValue>0x01</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named rx2tx--></spirit:field>
+               <spirit:field><!--BitField named tx2tx--><spirit:name>tx2tx</spirit:name>
+                  <spirit:description> </spirit:description>
+                  <spirit:bitOffset>8</spirit:bitOffset>
+                  <spirit:bitWidth>8</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named tx2tx--><spirit:vendorExtensions>
+                     <pdt:valueType>hexadecimal</pdt:valueType>
+                     <pdt:resetValue>0x0c</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named tx2tx--></spirit:field>
+               <spirit:field><!--BitField named rxtimeout--><spirit:name>rxtimeout</spirit:name>
+                  <spirit:description> </spirit:description>
+                  <spirit:bitOffset>16</spirit:bitOffset>
+                  <spirit:bitWidth>12</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named rxtimeout--><spirit:vendorExtensions>
+                     <pdt:valueType>hexadecimal</pdt:valueType>
+                     <pdt:resetValue>0x067</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named rxtimeout--></spirit:field>
+               <spirit:vendorExtensions><!--	spirit:dim and spirit:reset are not parsed by Spectareg.
+			refer to pdt:dimensions and spirit:field/spirit:vendorExtensions/pdt:resetValue instead.
+		--><!--Register named IpgTmrHs--><pdt:dimensions>
+                     <pdt:dimension pdt:signif="0">
+                        <pdt:index>i</pdt:index>
+                        <pdt:increment>4</pdt:increment>
+                        <pdt:numElements>1</pdt:numElements>
+                        <pdt:numElemParams/>
+                     </pdt:dimension>
+                  </pdt:dimensions>
+                  <pdt:instanceClass>Register</pdt:instanceClass>
+                  <pdt:briefDescription/>
+                  <pdt:developerComments/>
+                  <pdt:indexTags/>
+                  <pdt:related/>
+                  <pdt:visibleToRoles/>
+               </spirit:vendorExtensions>
+               <!--Register named IpgTmrHs--></spirit:register>
+            <spirit:register><!--Register named PhyPipeLineDelays--><spirit:name>PhyPipeLineDelays</spirit:name>
+               <spirit:description>   </spirit:description>
+               <spirit:dim>1</spirit:dim>
+               <spirit:addressOffset>0x3C</spirit:addressOffset>
+               <spirit:size>32</spirit:size>
+               <spirit:reset>
+                  <spirit:value>0x00000000</spirit:value>
+                  <spirit:mask>0xffffffff</spirit:mask>
+               </spirit:reset>
+               <spirit:field><!--BitField named TxSopDly--><spirit:name>TxSopDly</spirit:name>
+                  <spirit:description> Indicates the maximum time to wait until the SOP is guarenteed to be on the USB after TXVAL is sampled HI the PHY</spirit:description>
+                  <spirit:bitOffset>0</spirit:bitOffset>
+                  <spirit:bitWidth>8</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named TxSopDly--><spirit:vendorExtensions>
+                     <pdt:valueType>hexadecimal</pdt:valueType>
+                     <pdt:resetValue>0x00</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named TxSopDly--></spirit:field>
+               <spirit:field><!--BitField named TxSofEopDly--><spirit:name>TxSofEopDly</spirit:name>
+                  <spirit:description> The Maximum time to wait until the SOF EOP is gaurenteed to be on the bus after TXVAL is sampled LO by the PHY</spirit:description>
+                  <spirit:bitOffset>8</spirit:bitOffset>
+                  <spirit:bitWidth>8</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named TxSofEopDly--><spirit:vendorExtensions>
+                     <pdt:valueType>hexadecimal</pdt:valueType>
+                     <pdt:resetValue>0x00</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named TxSofEopDly--></spirit:field>
+               <spirit:field><!--BitField named TxDataEopDly--><spirit:name>TxDataEopDly</spirit:name>
+                  <spirit:description> The Maximum time to wait until the DATA EOP is gaurenteed to be on the bus after TXVAL is sampled LO by the PHY </spirit:description>
+                  <spirit:bitOffset>16</spirit:bitOffset>
+                  <spirit:bitWidth>8</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named TxDataEopDly--><spirit:vendorExtensions>
+                     <pdt:valueType>hexadecimal</pdt:valueType>
+                     <pdt:resetValue>0x00</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named TxDataEopDly--></spirit:field>
+               <spirit:field><!--BitField named RxCmdDly--><spirit:name>RxCmdDly</spirit:name>
+                  <spirit:description> The maximum delay time it takes to update the linestate after TX EOP</spirit:description>
+                  <spirit:bitOffset>24</spirit:bitOffset>
+                  <spirit:bitWidth>8</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named RxCmdDly--><spirit:vendorExtensions>
+                     <pdt:valueType>hexadecimal</pdt:valueType>
+                     <pdt:resetValue>0x00</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named RxCmdDly--></spirit:field>
+               <spirit:vendorExtensions><!--	spirit:dim and spirit:reset are not parsed by Spectareg.
+			refer to pdt:dimensions and spirit:field/spirit:vendorExtensions/pdt:resetValue instead.
+		--><!--Register named PhyPipeLineDelays--><pdt:dimensions>
+                     <pdt:dimension pdt:signif="0">
+                        <pdt:index>i</pdt:index>
+                        <pdt:increment>4</pdt:increment>
+                        <pdt:numElements>1</pdt:numElements>
+                        <pdt:numElemParams/>
+                     </pdt:dimension>
+                  </pdt:dimensions>
+                  <pdt:instanceClass>Register</pdt:instanceClass>
+                  <pdt:briefDescription/>
+                  <pdt:developerComments/>
+                  <pdt:indexTags/>
+                  <pdt:related/>
+                  <pdt:visibleToRoles/>
+               </spirit:vendorExtensions>
+               <!--Register named PhyPipeLineDelays--></spirit:register>
+            <spirit:register><!--Register named IpgTmrSof2Dat--><spirit:name>IpgTmrSof2Dat</spirit:name>
+               <spirit:description>   </spirit:description>
+               <spirit:dim>1</spirit:dim>
+               <spirit:addressOffset>0x40</spirit:addressOffset>
+               <spirit:size>32</spirit:size>
+               <spirit:reset>
+                  <spirit:value>0x003F0A0C</spirit:value>
+                  <spirit:mask>0xffffffff</spirit:mask>
+               </spirit:reset>
+               <spirit:field><!--BitField named hs--><spirit:name>hs</spirit:name>
+                  <spirit:description> </spirit:description>
+                  <spirit:bitOffset>0</spirit:bitOffset>
+                  <spirit:bitWidth>8</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named hs--><spirit:vendorExtensions>
+                     <pdt:valueType>hexadecimal</pdt:valueType>
+                     <pdt:resetValue>0x01</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named hs--></spirit:field>
+               <spirit:field><!--BitField named fs--><spirit:name>fs</spirit:name>
+                  <spirit:description> </spirit:description>
+                  <spirit:bitOffset>8</spirit:bitOffset>
+                  <spirit:bitWidth>8</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named fs--><spirit:vendorExtensions>
+                     <pdt:valueType>hexadecimal</pdt:valueType>
+                     <pdt:resetValue>0x0c</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named fs--></spirit:field>
+               <spirit:field><!--BitField named ls--><spirit:name>ls</spirit:name>
+                  <spirit:description> </spirit:description>
+                  <spirit:bitOffset>16</spirit:bitOffset>
+                  <spirit:bitWidth>8</spirit:bitWidth>
+                  <spirit:access>read-write</spirit:access>
+                  <!--BitField named ls--><spirit:vendorExtensions>
+                     <pdt:valueType>hexadecimal</pdt:valueType>
+                     <pdt:resetValue>0x3f</pdt:resetValue>
+                     <pdt:doNotTestReset>false</pdt:doNotTestReset>
+                     <pdt:doNotTestWrite>false</pdt:doNotTestWrite>
+                     <pdt:instanceClass>ExportedFlopBitField</pdt:instanceClass>
+                     <pdt:briefDescription/>
+                     <pdt:developerComments/>
+                     <pdt:indexTags/>
+                     <pdt:related/>
+                     <pdt:visibleToRoles/>
+                  </spirit:vendorExtensions>
+                  <!--BitField named ls--></spirit:field>
+               <spirit:vendorExtensions><!--	spirit:dim and spirit:reset are not parsed by Spectareg.
+			refer to pdt:dimensions and spirit:field/spirit:vendorExtensions/pdt:resetValue instead.
+		--><!--Register named IpgTmrSof2Dat--><pdt:dimensions>
+                     <pdt:dimension pdt:signif="0">
+                        <pdt:index>i</pdt:index>
+                        <pdt:increment>4</pdt:increment>
+                        <pdt:numElements>1</pdt:numElements>
+                        <pdt:numElemParams/>
+                     </pdt:dimension>
+                  </pdt:dimensions>
+                  <pdt:instanceClass>Register</pdt:instanceClass>
+                  <pdt:briefDescription/>
+                  <pdt:developerComments/>
+                  <pdt:indexTags/>
+                  <pdt:related/>
+                  <pdt:visibleToRoles/>
+               </spirit:vendorExtensions>
+               <!--Register named IpgTmrSof2Dat--></spirit:register>
+            <spirit:vendorExtensions><!--AddressBlock named ULMII--><pdt:title/>
+               <pdt:instanceClass>AddressBlock</pdt:instanceClass>
+               <pdt:briefDescription/>
+               <pdt:developerComments/>
+               <pdt:indexTags/>
+               <pdt:related/>
+               <pdt:visibleToRoles/>
+            </spirit:vendorExtensions>
+            <!--AddressBlock named ULMII--></spirit:addressBlock>
+         <!--
+					 Bits in least addressable unit.  This defines how the address increments.
+					 If this changes be sure to change the range of the AddressBlock and also
+					 the addresses.
+	--><spirit:addressUnitBits>8</spirit:addressUnitBits>
+         <!--MemoryMap named ULMIICpuMemMap--></spirit:memoryMap>
+   </spirit:memoryMaps>
+   <spirit:parameters/>
+   <spirit:vendorExtensions><!--Component named ULMII--><pdt:sysLevelOffset>0x20000100</pdt:sysLevelOffset>
+      <pdt:description>This is the register set of the ULMII module.</pdt:description>
+      <pdt:instanceClass>Component</pdt:instanceClass>
+      <pdt:briefDescription/>
+      <pdt:developerComments/>
+      <pdt:indexTags/>
+      <pdt:related/>
+      <pdt:visibleToRoles/>
+   </spirit:vendorExtensions>
+   <!--Component named ULMII--></spirit:component>

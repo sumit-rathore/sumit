@@ -1,0 +1,2295 @@
+
+
+Blackbird Software v0.0.68
+=========================
+
+Summary:
+
+IMPORTANT:
+•	See the known issues section below
+•	This release has FW for Maverick and Raven
+•	Make sure both Lex and Rex are running the same software
+•	Please make sure the software versions match those given in these release notes, for Blackbird FW and FPGA, and for Goldenears
+•	Clear all FLASH variables after loading this software, to ensure the correct default values are loaded
+•	When testing MCCS if the application software does not come up with MCCS please press the rescan button in the application.
+•	EVERY SINGLE TEST should be performed with Audio. If there is no audio playing in the system, the test can be considered as invalid
+Blackbird Maverick SW Date: 2019 06 26 11:39:16
+Blackbird Raven SW Date: 2019 06 26 11:41:24
+Goldenears SW Date: 2019 06 26 11:38:54
+FPGA Date: 2019 06 07 09:23:56
+
+Blackbird Changes since last build (BBSW_v00_00_67)
+1.	New Features:
+•	Golden image doesn’t support link, USB, DP, RS232, and Lanport
+•	Allows 3.5 minutes full feature operation if all Atmel feature is disabled and system has a default feature: Preparation for Flex production with pre-programmed Atmel
+•	STATUS and LINK LEDs blink at 1Hz when Aquantia goes to error state
+•	Program error recovery
+o	In case of programming failure, unit can detect it and be ready to receive user command again
+o	After seeing the failure pop-up message in cobs, please click program (or program FPGA) button again
+•	
+2.	Improvements
+•	The main issue that this build is addressing is where connected USB devices will disconnect and reconnect on their own
+•	Moved Aquantia state machine to new state machine architecture
+•	Aquantia now has error state
+•	Rex used to stay stuck trying to Aux communication when monitor replies with NACK or defer. Added maximum tries and goes to error state after fails maximum tries.
+•	Changed bypass iso flash variable to enable iso. This flash variable is not used in Maverick.
+•	TEST_SystemDiagnosticIcmd now returns 0 when there are no link training errors instead of 1.
+•	Removed redundant printing of Aquantia Link speed while bringup
+•	Improved assert log messages
+•	Improved MDIO phy driver reset control (Expecting better LAN port operation)
+•	Improved IRQ enable sequence and cpu module reset control (Expecting system recovery without “Called with a NULL timer arg” assert if software abnormal reset occurs)
+•	Using a new bootstrap register to set temperature values for -2 and -3 boards
+•	DP video blinking when the system is fully loaded is improved now resolved. The following changes were made to achieve that:
+o	LEX -> layer3Tx->eth_framer.s.config0.s.mtu_size.bf.mtu_size                  = 800;
+o	REX -> layer3Tx->eth_framer.s.config0.s.mtu_size.bf.mtu_size                  = 576;
+o	mcaChannel[1]->tx.s.control0.s.dp.bf.mcup_pld_max_cycles                    = 0xa;
+o	mcaChannel[2]->tx.s.control0.s.dp.bf.mcup_pld_max_cycles                    = 0xa;
+o	LEX -> mcaChannel[3]->tx.s.control0.s.dp.bf.mcup_pld_max_cycles      = 0x3;
+o	LEX -> mcaChannel[4]->tx.s.control0.s.dp.bf.mcup_pld_max_cycles      = 0x3;
+o	LEX -> mcaChannel[5]->tx.s.control0.s.dp.bf.mcup_pld_max_cycles      = 0x3;
+o	REX -> xusb3Ptr->rx_partner_fifo.s.write_engine.s.config0.s.notify_limit.bf.ntfy_lmt = 640;
+o	dp_source->stream_generator.s.fifo_pix_control0.bf.aet0                             = 16;
+o	dp_source->stream_generator.s.fifo_pix_control0.bf.aft0                              = 16;
+o	dp_source->stream_generator.s.fifo_pix_control1.bf.aet1                             = 32;
+o	dp_source->stream_generator.s.fifo_pix_control1.bf.aft1                              = 32;
+3.	Bug fixes:
+Number	Bug #	Description
+1	5541	SW67;Luigi-Viper1;All usb drops and reconnects frequently on longterm test
+2	5489	SW 0.66; Luigi; Win 10; Intel Z370 Intel 630; Intel RealSense camera and
+Sandisk SSD burn in test fails after several minutes
+3	5399	SW 0.0.60; Luigi Win 10 USB failure with Startech USB 3.0 To Gigabit adapter and Razer Stargazer
+4	5353	SW 0.0.58; Kirk AMD Vega 11; No output at 10 BPC
+Fails with multiple setups
+A bunch of those setups are working now. Please close this bug and file a new one with only pending failure cases
+5	5400	SW 0.60; Kirk (AMD Vega 11 Win 10), Can't see BIOS during Restart/Shut Down cycle
+6	5425	SW 0.0.63; all hosts; messages missing from ExCOM
+7	5452	BBSW v00_00_64; Luke Nvidia 750ti; Win 8.1;
+LEX error state after Restart or Shutdown_Startup cycle
+8	5482	Monitor turns black with side channel running UDP test on separate host
+9	5488	Leia Win 10 (Intel 4600) and Maverick 15; LEX DP cycles cause no audio output
+10	5491	Franklin Roosevelt (AMD Vega 16) and Maverick 15; Bring up/LEX DP cycles cause no audio output
+11	5512	Maggie Win 7; Nvidia 970; no video output after REX power cycle and Link cable cycle
+12	5513	Maggie Win 7; Nvidia 970; REX assert after REX power cycle on Maverick 13 and 15
+13	5531	DP_PWR_OC_B Digital/Firmware Implementation is Missing
+14	5534	SW 0.67; Schneider; Win 8.1; Intel 2000; No audio output on DP Maverick 13
+15	5538	SW67;Maggie(Win 7)-Maverick 13;Monitor blinks frequently
+16	5544	SW67 - Aquantia AQR105 PHY 5G/2.5G/1G/100M Linking Should Be Disabled
+17	5549	Aquantia Stat/Log for LDPC Errored Frame Counter is missing
+18	5550	Writing to a "read-only" register makes the unit unresponsive
+19	5551	SW 0.67; GlaDOS; Win 10; Monitor flashing white line at the bottom of screen
+20	5555	SW67;Armadillo-Maverick 11; REX assert after LEX power cycle
+21	5557	 SW 67; Franklin Roosevelt; Maverick 4; Audio drops after LEX DP cycles
+22	5564	SW67 - HP Prodesk 600 (Intel HD Graphics 630) & ASUS MG28UQ - LEX gets stuck in DP Error State when system powered-up with monitor powered off
+23	5568	SW 0.0.67; Kirk; Maverick 12; LEX error state Stream Extractor Overflow at 6 BPC
+24	5572	Restore Geometry Default fails while MCCS compliance in some monitors
+25	5474	Reptile Win 7 (AMD FireGL V7700); no output at certain resolutions
+4.	Request Retry (USB bugs):
+Number	Bug #	Description
+1	5266	SW 0.0.54; Henrik; Win 7; Intel H77; Failed Weekend Bulk Test 4 (long term PTZ camera)
+2	5428	SW 0.63; Mario; Maverick 15; Win 10; Nvidia Quadro P600;
+ASMEDIA 3142; USB3 devices fail in ethernet/layer 2 side channel test
+3	5501	Leia & Maverick 18; Failed longterm test; packet out-of-order on iperf3
+4	5542	SW67;Luigi-Viper1;Vaddio cam freezes longterm test
+5	5553	SW67; Luke - Maverick 2; USB 3 drops and reconnects through maverick
+6	5556	SW 0.67; GlaDOS; Win 10; Telycam dropped in long term test
+7	5565	SW67; Mario - Maverick 2; USB 3.0 devices drops and does not re-enumerate during overnight test
+8	5566	SW 0.0.67; Kirk Win 10 Long Term; Iperf3 traffic causes cobs to print MCS/XUSB errors 
+9	5567	SW67; Armadillo - Maverick 1; MS 720P camera/Seagate Backup Plus SSD does not enumerate after performing device cycle on Seagate SSD
+5.	Known issues:
+•	TPS2 generates more lane alignment errors; Lex always advertises TPS3 to work around this – Hitting DP debug will print the TPS used (Unless the Lex is in error state, in which case it will always show TPS2)
+•	Fedora doesn’t support bpc 10 completely (Fedora bug)
+•	Bug #5429 is still there. Maverick 5 Does not recover from I2C defer once there is a power cycle while the monitor is deferring.
+•	BPC 10 is not yet fully supported (If Valid symbols are more than 60 in the stream)
+•	Video on Maverick 18 with 3840x2160 @6BPC blinks
+
+
+Goldenears Changes since last build (BBGESW_v00_01_03)
+1.	New features:
+•     None
+
+1.	Bug fixes:
+•	Bug #5169 – Revolabs 500 Conference Phone produces static/pops/clicks
+•	Bug #5175 - ThinkLogical Host- Wacom Intuous Pro fails to operate and causes constant bus Resets
+•	Bug #5592 -  Cobs prints too many Goldenears logs when writing to a 2.0 flash drive
+
+2.	Known issues:
+•	None
+
+COBS Changes since last build(1.1.2)
+•	Icron file can be downloaded from network
+•	Program and Program FPGA button freezes once the programming starts and is frozen till end of it. It can’t be pressed twice
+•	Both units can be programmed at same time
+•	Cobs can detect if unit is running at baud rate 115200 
+•	Added functionality for programming error recovery 
+
+Locations for release:
+Blackbird SW: U:\Projects\Blackbird\Firmware\Sandbox\maverick\BLACKBIRD_20190626T113916\
+
+Cobs: U:\Projects\Blackbird\Firmware\Sandbox\maverick\BLACKBIRD_20190626T113916\cobs\
+
+ExCom: U:\Projects\Blackbird\Firmware\Sandbox\maverick\BLACKBIRD_20190626T113916\excom\
+
+FPGA Raven: Z:\designs\blackbird\released\dd\BLACKBIRD_20190607T092356\build\f_blackbird_a7_core\bit\
+
+FPGA Mav Lex: Z:\designs\blackbird\released\dd\BLACKBIRD_20190607T092356\build\f_blackbird_a7_core\bit_lex\
+
+FPGA Mav Rex: Z:\designs\blackbird\released\dd\BLACKBIRD_20190607T092356\build\f_blackbird_a7_core\bit_rex\
+
+FPGA Fallback: Z:\designs\blackbird\released\dd\BLACKBIRD_20190607T092356\build\f_blackbird_a7_core \bit_fallback\
+
+
+EndOfSummary
+
+
+Blackbird Software v0.0.67
+=========================
+
+Summary:
+
+Blackbird Changes since last build (BBSW_v00_00_66)
+1.	New Features:
+•	Golden image is protected
+2.	Improvements
+•	UART now runs at 460800 baud
+•	New video bring up and recovery on REX (faster by 1 second)
+•	Rex now outputs 640x480 @ 6bpc as its fallback dummy video
+•	Rex outputs black as dummy video instead of white
+•	Adjust mvid not to over utilization 100%
+•	New settings for better throughput performance:
+o	mcaChannel[1]->tx.s.control0.s.dp.bf.mcup_pld_max_cycles = 9
+o	mcaChannel[2]->tx.s.control0.s.dp.bf.mcup_pld_max_cycles = 8
+o	REX-> xusb3Ptr->rx_partner_fifo.s.write_engine.s.config0.s.notify_limit.bf.ntfy_lmt = 576
+3.	Bug fixes:
+Number	Bug #	Description
+1	5334	SW 0.0.57; Luke Win 10; Nvidia 750 TI; Monitor Swapping 
+from LG Ultrawide to Lenovo P24h-10 results in distorted output
+2	5415	SW 0.61; Franklin Roosevelt; Mac OSX; AMD Vega 16;
+LEX DP cycle results in no output
+3	5425	SW 0.0.63; all hosts; messages missing from ExCOM
+4	5439	SW 63; Spock; Win 10; nvidia RTX 2070;
+BIOS screen not visible on reboot/shutdown
+5	5447	Thomas Jefferson; Intel Iris Plus 640; ENG Viper 1; No output after REX DP Cycle
+6	5451	BBSW v00_00_63; Thomas Jefferson; Intel Iris Plus 640;
+DP Maverick 8; No output on LEX/REX bringup
+7	5468	SW 0.0.65; Luke Win 8.1; Nvidia 750 TI; Monitor displays black image
+8	5479	LEX Assert / Audio Mute / AUX Defer
+9	5480	REX Assert / Source is not out of reset / Invalid bandwidth setting 0 at line 112 
+10	5481	Rex link training error
+11	5482	Monitor turns black with side channel running UDP test on separate host
+12	5483	Multiple Hosts; Maverick 8 DP Cycle causes white screen
+13	5485	Multiple Hosts; Rex fails to successfully link train the monitor; Viper 1
+14	5488	Leia Win 10 (Intel 4600) and Maverick 15; LEX DP cycles cause no audio output
+15	5491	Franklin Roosevelt (AMD Vega 16) and Maverick 15; Bring up/LEX DP cycles cause no audio output
+16	5492	LEX became unresponsive after LEX DP cycle
+17	5294	Mario; Maverick 15; Ubuntu; Nvidia Quadro P600; REX DP cycle cause display
+to show white screen
+18	5496	Thomas Jefferson; OSX; USB 2.0 devices dropped after LEX/REX power cycle;
+Link Cycling then caused Lex assert
+19	5497	SW 0.66; Luke Win 10; Intel H87; LEX assert "ILLEGAL INSTRUCTION ERROR"
+20	5502	Benjamin Franklin; Maverick 6; Mac OSX; Intel HD 4000; 
+White screen link trained at 2 lanes after Lex DP cycle
+21	5503	SW 0.66; Benjamin Franklin; Maverick 6; Mac OSX; Intel HD 4000; 
+Lex Assert DP Retimer chip transaction already in progress
+state 2, line 191! after Lex DP cycle
+22	5504	Benjamin Franklin; Maverick 6; Mac OSX; Intel HD 4000;
+23	5505	SW 0.0.66; Lab 4; Win 10; REX Power cycle causes data access exception
+24	5508	Elaine; Win 10; AMD R9 380; MCCS DDC/CI not supported after going from
+direct connection to Maverick
+25	5510	Elaine; Win 10; AMD R9 380; MCCS DDC/CI not supported after Lex Power Cycle
+26	5512	Maggie Win 7; Nvidia 970; no video output after REX power cycle and Link cable cycle
+27	5513	Maggie Win 7; Nvidia 970; REX assert after REX power cycle on Maverick 13 and 15
+28	5515	Spock; Nvidia RTX 2070; MCCS New Control Values Test fails after Rex DP cycle
+29	5518	Spock; Maverick 3; Win10; Nvidia RTX 2070; Atmel_crypto_component error
+during MCCS test
+30	5521	Mario; Ubuntu; LEX Power cycle causes MCCS log spammin
+31	5522	Mario; Ubuntu; LEX power cycle causes white screen 
+32	5526	SW66; Armadillo - Maverick 5; No video output after performing REX power cycle
+33	5520	SW 0.66; Elaine; Win 10; AMD R9 380; Maverick causes the brightness setting monitor menu to randomly disappear
+34	5532	SW 0.66; Lab 1; Win 10 Pro; No video output after Rex Power cycle
+4.	Request Retry:
+Number	Bug #	Description
+1	5378	0.0.60; Leia; Windows 10; Intel H87; Lumens camera freezes on long term test
+2	5382	BBSW v00_00_60; Elaine; Fedora; AMD Radeon R9 380;
+Maverick 12 Weekend test fail
+3	5402	SW 0.60; Lisa; Win 7; Intel HD 530; Intel Z170;
+Mushkin SSD does not work after LEX power cycle
+4	5403	SW 0.60; Lisa; Win 7; Intel HD 530; 
+LEX Power Cycle degrades Zoom UAC-2 sound quality
+5	5410	BBSW v00_00_60; Luke; Intel H87;
+Certified Data 3.0 Hub with HuddleCam black output after LEX USB/REX Power cycle
+6	5441	SW 0.63;  Lisa(Intel HD 530 Win 7),
+Mushkin SSD Fails to Enumerate and Zoom UAC DAC
+Audio is Distorted after LEX Power Cycle
+7	5511	Maggie Win 7; Intel H110; USB 3.0 Transcend Jetflash fails to enumerate after 
+LEX power cycle
+8	5516	 Lisa & Maverick 4; LEX USB Cycle causes all DUTs failed to enumerate
+9	5517	Lisa & Maverick 4; LEX USB Cycle causes distorted audio output
+10	5524	SW66; Lab 1 - Maverick 4; No video output
+5.	Throughput bugs to be retry:
+Number	Bug #	Description
+1	5266	SW 0.0.54; Henrik; Win 7; Intel H77; Failed Weekend Bulk Test 4 (long term PTZ camera)
+2	5399	SW 0.0.60; Luigi Win 10 USB failure with Startech USB 3.0 To Gigabit adapter
+3	5406	BBSW v00_00_60; Kramer; AMD X370;
+j5create USB to HDMI adapter does not work when video is flowing through Maverick
+4	5409	BBSW v00_00_60; Luke; Intel H87;
+5	5418	BBSW v00_00_60; Luke; Intel H87;
+USB 2 devices not operating after performing cycles with Hub Upstream
+6	5428	SW 0.63; Mario; Maverick 15; Win 10; Nvidia Quadro P600;
+ASMEDIA 3142; USB3 devices fail in ethernet/layer 2 side channel test
+7	5489	SW 0.66; Luigi; Win 10; Intel Z370 Intel 630; Intel RealSense camera and
+Sandisk SSD burn in test fails after several minutes
+8	5500	Luke Win 10 (Nvidia 750 TI/Intel H87); Using high bandwidth during
+long term test causes mouse to lag/freeze
+9	5501	Leia & Maverick 18; Failed longterm test; packet out-of-order on iperf3
+10	5507	SW 0.66; Kirk - HuddleCam Drops Frames occasionally during BurnIn Read Cycle
+11	5514	Multiple Failures in longterm test; Iperf bandwidth reduced to 95Mbits/s, 
+RS232 throughout reduced to 2000 Bytes/s, SONY0243 flashdrive failed enumeration
+6.	Known issues:
+•	TPS2 generates more lane alignment errors; Lex always advertises TPS3 to work around this – Hitting DP debug will print the TPS used (Unless the Lex is in error state, in which case it will always show TPS2)
+•	Fedora doesn’t support bpc 10 completely (Fedora bug)
+•	Bug #5429 is still there. Maverick 5 Does not recover from I2C defer once there is a power cycle while the monitor is deferring.
+•	BPC 10 is not yet fully supported (If Valid symbols are more than 60 in the stream)
+•	Video on Maverick 18 with 3840x2160 @6BPC blinks
+
+
+No Goldenears Changes since last build (BBGESW_v00_01_03)
+Cobs Changes since last build (1.1.1)
+•	Program FPGA sequence change:
+o	Program FPGA button erases FPGA first, then erases FW, then programs FW and then programs FPGA
+•	Default baud rate is 460k
+•	Programming lex and rex together is not recommended
+•	Not compatible with old FW releases
+	Pre-V63 Golden	V63-66 Golden	V67 and greater Golden	Old COBS	New COBS
+Pre-V63 Current	Yes	No	No	Yes	No
+V63-66 Current	Yes	Yes	Yes	Yes	No
+V67 and greater Current	Yes	Yes	Yes	No	Yes
+Old COBS	Yes	Yes	No	X	X
+New COBS	No	No	Yes	X	X
+
+Excomm Changes since last build(1.0.6)
+•	Program sequence change:
+o	Program button erases FPGA first, then erases FW, then programs FW and then programs FPGA
+•	Default baud rate is 460k
+•	Not compatible with old FW releases
+
+
+EndOfSummary
+
+
+Blackbird Software v0.0.66
+=========================
+
+Summary:
+
+1.  New Features:
+•   Added device information for Badger: Flash lock status, Factory test result 
+2.  Improvements
+•   Added better ALU values manipulation when last TU = 0
+•   Added New Control Value check for better synchronization between source and sink changes (MCCS)
+    •   Changes to MAC, MCA and Xusb register values to support the new MCA
+    •   Audio is now working without any distortions
+3.  Bug fixes:
+    •   5457 – Maverick 12 was having MCCS read fail sometimes
+    •   5431 – LEX power cycle sometimes causes failure to resend MCCS to LEX
+    •   5471 – Lex Asserts after changing resolution Aux defer over the maximum amount 12. Restart
+    link training
+    •   5472 -- Maverick 4 emits static sound when resolution switched to 640x480
+    •   5374 -- Kirk (AMD Vega 11 Win10); Bring-up failure no output on Maverick 12
+    •   5437 -- Kirk (AMD Vega 11 Win 10) and Maverick 18 (Lenovo P27u-10); No output at 2560x1600
+    •   5439 -- BIOS screen not visible on reboot/shutdown
+    •   5451 -- DP Maverick 8; No output on LEX/REX bring up
+    •   5468 -- Luke Win 8.1; Nvidia 750 TI; Monitor displays black image
+    •   5406 -- j5create USB to HDMI adapter does not work when video is flowing through Maverick
+    •   5425 -- all hosts; messages missing from ExCOM
+4.  Known issues:
+    •   Any BPC above BPC 10 is not supported
+    •   TPS2 generates more lane alignment errors; Lex always advertises TPS3 to work around this –
+    Hitting DP debug will print the TPS used (Unless the Lex is in error state, in which case it
+                                              will always show TPS2)
+    •   If Last Tu value is smaller than 4, Rex shows fifo overflow and Video doesn’t come up
+    •   Fedora doesn’t support bpc 10 completely (Fedora bug)
+    •   Bug #5429 is still there. Maverick 5 Does not recover from I2C defer once there is a power
+    cycle while the monitor is deferring.
+    •   Audio does not work.
+
+EndOfSummary
+
+
+Blackbird Software v0.0.65
+=========================
+
+Summary:
+
+Blackbird Changes since last build (BBSW_v00_00_64)
+    1.  New Features:
+    •   SDP is now enabled. (Audio) 
+    o   SDP is enabled by default and can be disabled using ICMD DP_SetAudioState. (Should be
+                                                                                    disabled on
+                                                                                    both Lex and
+                                                                                    Rex)
+    2.  Improvements
+    •   Improved LEX 2nd link-training not to advertise the same voltage and pre-emphasis
+    combination which was failed before.
+    •   Improved LEX link-training EQ phase to be tested all EQ level for a voltage level
+    •   Prevent LEX from assert when firmware restarts without RTL reset: Recovery is available on
+    bug #5363: 
+    •   Requests from Product management
+    o   Added LED status blink while checking the Current FPGA image CRC
+    o   Moved the ISTATUS message for backup image past the CRC check
+    o   Added ISTATUS message for verifying the Current FPGA image CRC
+    •   Added the concept of grace value when adjusting the dp_width
+    •   Switched to improved method (method 2) for rate distribution
+    •   Fixed REX RTL auto reset case: Wait GTP lock before writing values on DP source register
+    when REX change lane count or bandwidth
+    •   Changed MCCS flash variable to a positive logic. ICMD name changed to DP_REX_MccsEnable.
+    Enabled by default
+    •   Fixed align error counter error and made LEX retry link-training when VBD majority fail is
+    detected more than 5 times.  Can be applied bug#5415  
+    3.  Bug fixes:
+    •   Prevent REX from assert due to frequency measurement time out. (Bug #5427)
+    •   Work-around on YCbCr422 case: Restart link-training with modified EDID when it detects
+    YCbCr422 (Bug#5440, 5444)
+    •   Fixed MCCS fail on LEX power cycle (Bug #5431)
+    •   Fixed TX FIFO overflow bug by moving entire MCCS operation to Video Flowing so that there
+    is no conflict while sending MCCS and Sink Parameters (Bug #5450)
+    •   Bug #5434 has been closed since the performance is same directly connected
+    •   Fixed bug 5424 and 5430 – Monitor display was blinking during video flowing
+    •   Fixed bug 5415 – LEX DP cycle would cause invalid MSA detection
+    •   Fixed bug 5448 – Rex DP cycle failure
+    •   Fixed bug 5443 – Changed video LED operations, it doesn’t blink anymore to indicated link
+    training is done.
+    •   Fixed bug 5422 – Reboot cycle failure on osX
+    •   Fixed bug 5436 – Maverick 12, Rex power cycle failure
+    •   Fixed bug 5453 -- Reptile Win 7 (AMD FireGL V7700), Output distortion after 30 seconds
+    •   Fixed Color code change between RGB and YCbCr444 issue while video is flowing
+    •   Fixed bug 5445 – Fixed calculation overflow case when mvid, nvid value is bigger than
+    normal host
+    •   Fixed bug 5454 – Removed Wait MSA timer. Reptile host doesn’t send MSA value over 5sec and
+    restart link-training.
+    4.  Known issues:
+    •   Any BPC above BPC 10 is not supported
+    •   TPS2 generates more lane alignment errors; Lex always advertises TPS3 to work around this –
+    Hitting DP debug will print the TPS used (Unless the Lex is in error state, in which case it
+                                              will always show TPS2)
+    •   If Last Tu value is smaller than 4, Rex shows fifo overflow and Video doesn’t come up
+    •   Fedora doesn’t support bpc 10 completely (Fedora bug)
+    •   Bug #5429 is still there. Maverick 5 Does not recover from I2C defer once there is a power
+    cycle while the monitor is deferring.
+    •   Audio dose not work.
+
+
+EndOfSummary
+
+
+Blackbird Software v0.0.64
+=========================
+
+Summary:
+
+1.  New Features:
+•   Added diagnostic feature for production line
+2.  Improvements
+•   For the better stability of video, changed dp_width_total_feedback_ctrl_debug value from 0 to 6
+(dp_source-> stream_generator.s.cfg3.bf.dp_width_total_feedback_ctrl_debug = 6)
+    •   Improved MCA control to ensure MCA down timing
+    •   Prevented phy-link from double restart
+    •   Modifying DPCD addr 0x0004 to not advertise support of higher voltage cap to host
+    •   Improved Lex link-training not to advertise the same voltage or pre-emphasis level if we
+    have recovered clock and symbol lock
+    •   Prevented invalid interrupts when shutdown detected (frequency is out of range)
+    •   Added logs when Aux Tx assert happens (For debugging #5419, #5364)
+    •   The units will not report USB overcurrent when the Link is up and USB devices are connected
+    for the first time
+    •   Units now start from the GOLDEN boot image
+    •   MCCS is enabled by default in Flash. It can be disabled when required using the ICMD
+    •   MSA wait time has been increased from 1 sec to 5 sec
+    •   You can use bootloader mode on previous versions of Maverick, as the new programBB firmware
+    will work on older versions of the FPGA for Maverick
+3.  Bug fixes:
+    •   Fixed issues where Mvid is greater than Nvid (Maverick8 column in monitor Compatibility
+                                                      grid) : Bug #534
+                                                            • Fixed 1 lane issues : Bug #5354
+                                                              (Except 1440 x900 case), 5355, 5386
+                                                              • Fixed DRP locked up issue : Bug
+#5377
+                                                              • Fixed EMI, Recovery issues (Since
+                                                                                            v61) :
+                                                                  Bug #5370, 5383
+                                                                  • Fixed Monitor Swap issues: Bug
+                                                                  #5334, 5335, 5379
+                                                                  • Fixed Rex power cycle: Bug
+#5385, 5387, 5392, 5419
+                                                                  • Fixed Shutdown: Bug #5304,
+                                                                  5352, 5380, 5408
+                                                                  • Fixed MCCS: Bug #5364, 5365,
+                                                                  5371, 5366
+                                                                  • Lex DP cycle issues: Bug #5395,
+                                                                  5415
+                                                                  • Re-test issues : Bug #5339,
+                                                                  5349, 5389, 5363
+                                                                  • Fixed checking link quality
+                                                                  error count: Bug#5373
+                                                                  4.    Known issues:
+                                                                  • Any BPC above BPC 10 is not
+                                                                  supported
+                                                                  • YCbcr 4.2.2 is not supported
+                                                                  for this build
+                                                                  • TPS2 generates more lane
+                                                                  alignment errors; Lex always
+                                                                  advertises TPS3 to work around
+                                                                  this – Hitting DP debug will
+                                                                  print the TPS used (Unless the
+                                                                                      Lex is in
+                                                                                      error state,
+                                                                                      in which case
+                                                                                      it will
+                                                                                      always show
+                                                                                      TPS2)
+                                                                  • If Last Tu value is smaller
+                                                                  than 4, Rex shows fifo overflow
+                                                                  and Video doesn’t come up
+                                                                  • Fedora doesn’t support bpc 10
+                                                                  completely (Fedora bug)
+
+
+EndOfSummary
+
+
+Blackbird Software v0.0.63
+=========================
+
+Summary:
+
+Blackbird Changes since last build (BBSW_v00_00_61)
+    1.  New Features:
+    •   Added diagnostic feature for production line
+    2.  Improvements
+    •   For the better stability of video, changed dp_width_total_feedback_ctrl_debug value from 0
+    to 2  (dp_source-> stream_generator.s.cfg3.bf.dp_width_total_feedback_ctrl_debug = 2)
+    •   Improved MCA control to ensure MCA down timing
+    •   Prevented phy-link from double restart
+    •   Modifying DPCD addr 0x0004 to not advertise support of higher voltage cap to host
+    •   Improved Lex link-training not to advertise the same voltage or pre-emphasis level if we
+    have recovered clock and symbol lock
+    •   Prevented invalid interrupts when shutdown detected (frequency is out of range)
+    •   Added logs when Aux Tx assert happens (For debugging #5419, #5364)
+    •   The units will not report USB overcurrent when the Link is up and USB devices are connected
+    for the first time
+    •   Units now start from the GOLDEN boot image
+    •   MCCS is enabled by default in Flash. It can be disabled when required using the ICMD
+    3.  Bug fixes:
+    •   Fixed issues where Mvid is greater than Nvid (Maverick8 column in monitor Compatibility
+                                                      grid) : Bug #5341
+                                                              • Fixed 1 lane issues : Bug #5354
+                                                              (Except 1440 x900 case), 5355, 5386
+                                                              • Fixed DRP locked up issue : Bug
+#5377
+                                                              • Fixed EMI, Recovery issues (Since
+                                                                                            v61) :
+                                                                  Bug #5370, 5383
+                                                                  • Fixed Monitor Swap issues: Bug
+                                                                  #5334, 5335, 5379
+                                                                  • Fixed Rex power cycle: Bug
+#5385, 5387, 5392, 5419
+                                                                  • Fixed Shutdown: Bug #5304,
+                                                                  5352, 5380, 5408
+                                                                  • Fixed MCCS: Bug #5364, 5365,
+                                                                  5371, 5366
+                                                                  • Lex DP cycle issues: Bug #5395,
+                                                                  5415
+                                                                  • Re-test issues : Bug #5339,
+                                                                  5349, 5389, 5363
+                                                                  • Fixed checking link quality
+                                                                  error count: Bug#5373
+                                                                  4.    Known issues:
+                                                                  • Any BPC above BPC 10 is not
+                                                                  supported
+                                                                  • YCbcr 4.2.2 is not supported
+                                                                  for this build
+                                                                  • TPS2 generates more lane
+                                                                  alignment errors; Lex always
+                                                                  advertises TPS3 to work around
+                                                                  this – Hitting DP debug will
+                                                                  print the TPS used (Unless the
+                                                                                      Lex is in
+                                                                                      error state,
+                                                                                      in which case
+                                                                                      it will
+                                                                                      always show
+                                                                                      TPS2)
+                                                                  • If Last Tu value is smaller
+                                                                  than 4, Rex shows fifo overflow
+                                                                  and Video doesn’t come up
+                                                                  • Fedora doesn’t support bpc 10
+                                                                  completely (Fedora bug)
+
+    No Goldenears Changes since last build (BBGESW_v00_01_03)
+
+
+EndOfSummary
+
+
+Blackbird Software v0.0.60
+=========================
+
+Summary:
+
+IMPORTANT:
+•   This sandbox replaces Build 59. It supports all the changes and fixes meant for build 59.
+•   This release has FW for Maverick and Raven.
+•   Audio is disabled for this build
+•   Make sure both Lex and Rex are running the same software
+•   Please make sure the software versions match those given in these release notes, for Blackbird
+FW and FPGA, and for Goldenears
+•   Clear all FLASH variables after loading this software, to ensure the correct default values are
+loaded
+•   See the known issues sections below
+
+FPGA Date: 2019 03 04 14:51:37
+
+Blackbird Changes since last build (BBSW_v00_00_58)
+    1.  New Features:
+    •   MCCS: 
+    o   MCCS is supported for this sandbox and is disabled by default(set to 1). Use the icmd to
+    enable reading MCCS (DP > DP_REX_NoReadMccs, set to 0 to enable reading MCCS)
+    o   MCCS now supports Timing Report command (0x07) and all restore default commands for
+    compliance
+    •   New FPGA: 
+    o   MCA and XUSB3 modules are updated
+    o   IRAM is increased to 160 KB, DRAM to 56 KB and AHB RAM is removed
+    2.  Improvements
+    •   Updated Lex recovery and prevented Cx fifo from overflow: It improves lex dp cycles, rex dp
+    cycles, link cycles and resolution change cases
+    •   Updated DP policy maker state machine so that it minimizes state change and decrease number
+    of link training cycles on both sides
+    •   Added host power off detection: It could fix Lex interrupt assert issue when using host
+    Lab1
+    •   Updated com-link error recovery from UPP code: It will ensure com-link recovery when a Lex
+    or Rex couldn’t get response from the other side
+    •   Updated DP policy maker state machine to minimize EDID, MCCS data traffic 
+    •   Updated DP policy maker state machine to deal with Lex and Rex link parameter mismatch
+    case, such as lane count and bandwidth don’t match causing distorted video.
+    •   Register changes for USB3 improvements for EMI testing (flw_ctrl_en = 0, drp_on_pkt_err =
+                                                                0, ltssm_rec_tmr.idl = 0xE4E1C)
+    •   Improved ALU calculation on small valid symbol case (e.g. 640 x 480 with HBR2 4 Lane). New
+    ALU calculations are used by default, use an ICMD  DP > DP_REX_SetNewAluCalculation set to 0 to
+    use old ALU calculations if required. 
+    3.  Bug fixes:
+    •   #5324: Paul McCartney; Sleep/Wakeup cycle on 3840 x 2160 monitors fail
+    •   #5328: Paul McCartney; Swapping monitors keeps previous monitor's resolution
+    •   #5338: Paul McCartney; Swapping monitors keeps previous monitor's resolution
+    •   #5303: Lab1; Win 10; Nvidia 1060; Video does not recover after host shut down/reboot cycle
+    •   #5322: Spock; Win 10; Nvidia RTX 2070; No output on reboot and cold boot with Maverick 12
+    •   #5316: Mario Win 10 Long Term REX DP failed
+    •   #5321: Spock; Win10; Nvidia RTX 2070; No output on link cycle with Maverick 12
+    •   #5309: Resolution Test; Many Non-Native Resolutions not working
+    •   #5333: Luigi with Maverick 13; Blank screen after resolution changed 
+    •   #5358: Lab 4 Nvidia 1060, Maverick 7; LEX+REX Power Cycle causes distortion
+    •   #5359: Thomas Jefferson; Mac OSX; REX power cycle stops output and all USB devices
+    •   Fixed MSA validation error: It fixed Maverick9/10 with Armadillo, Kramer, and Spock in
+    matrix test
+    •   Fixed missing stream parameter update which caused having default parameters and showed
+    image scrolling
+    •   Fixed com-link up event error: prevent phy-link from off-on recovery due to  sending
+    comm-link message before com-link available 
+    •   Fixed FPS calculation error case: There was a case we restart calculation but didn’t reset
+    frame count: It could fix scrolling case due to wrong ALU value by wrong FPS
+    •   Fixed missing policy maker state machine update: It could fix Rex error recovery failure
+    case
+    •   #5345: Luke Win 10 LEX Power Cycle on Dell P2310H, Monitor displays "input out of range"
+    •   #5301: Thomas Jefferson; REX asserts after reboot cycle
+    •   DATA STORE ERROR TRAP issue resolved while reading MCCS
+    •   Reading MCCS is much more stable on REX now; all monitors supporting MCCS should work now
+    •   NVM Variable storage issue is fixed. Changing flash variables should work
+    4.  Known issues:
+    •   Sometimes the Lex or Rex will assert with an I2C fifo overflow. A LOG message was added to
+    help trace back the I2C write request causing the assert.  If this assert happens, please save
+    the logs and let a SW team member know
+    •   Any BPC above BPC 10 is not supported
+    •   YCbcr 4.2.2 is not supported for this build
+    •   TPS2 generates more lane alignment errors; Lex always advertises TPS3 to work around this –
+    Hitting DP debug will print the TPS used (Unless the Lex is in error state, in which case it
+                                              will always show TPS2)
+    •   The display on the monitor might scroll
+    •   If Last Tu value is smaller than 4, Rex shows fifo overflow and Video doesn’t come up
+    •   Elaine (Fedora) doesn’t work with Maverick 3/7/16
+    •   Maverick 8 is not expected to work with this build.
+    •   Sometimes flash variables don’t work – under investigation
+    •   EMC and EMI testing still fails intermittently 
+
+No Goldenears Changes since last build (BBGESW_v00_01_03)
+
+
+EndOfSummary
+
+
+ROM Software v11.0
+=========================
+
+Summary:
+
+Major change:
+
+Added releasing GPIO, SpiFlash, and BBUart software reset which default values are changed from
+non-reset to on-reset.
+
+
+EndOfSummary
+
+
+Blackbird Software v0.0.53
+=========================
+
+Summary:
+
+Blackbird Changes since last build (BBSW_v00_00_52) 
+    1.    New Features:
+    •   Created DP Error state (indicated when the power LED and DP LED blinks together every 1
+                                sec) 
+    •   Entered if link training fails on either the Lex or Rex
+    •   Also entered if recovery failed on either Lex or Rex
+    •   DP is able to recover from ESD induced errors
+    DP error state is exited on the Lex if the host is removed, or on the Rex if the monitor is
+    removed
+    •   SSC detection -- Non debug build upon detection SSC will indicate DP Error (Both Status and
+                                                                                    DP Led will
+                                                                                    blink once
+                                                                                    every second to
+                                                                                    indicate error)
+    •   Video error recovery added on LEX and REX on following errors:
+    o   REX:
+       MCA rx_fifo_full error
+       CS fifo overflow and underflow
+    o   LEX:
+       Invalid color code
+       Divide by zero error due to invalid NVID value 
+       MCA rx_fifo_full error
+    •   Added a hardware_info cmd for ExCom to know if the hardware is Raven or Maverick.
+    •   Host Sleep/Wake cycle now supported
+    •   Code reduction: Atmel verification code is modified not to use tasks 
+    •   Code reduction: Used common utility code for DP state machines
+    •   Maverick software doesn’t work on Raven units, if programmed by mistake on raven, power led
+    should be blinking to indicate that it is a maverick FW.
+    •   More error detection added on LEX:
+    Error detection Meaning
+    VBD Majority fail   Any values indicated in table 2-6 on DP spec can be corrupted
+    MSA Majority fail   MSA parameters will be invalid leading to invalid color code and divide by
+    zero errors
+    Lanes not aligned no video  Alignment errors during link training
+    Lanes not aligned video present Alignment errors during video playback
+    Lanes with 8b10b errors no video    8b10b errors during link training
+    Lanes with 8b10b errors video present   8b10b errors during video playback
+    DP rx byte realign  GTP attempted re-alignment error
+
+
+    2.    Bug fixes:
+    •   Resolution change bug has been resolved; all resolutions should be supported
+    •   DP159 Re-timer no longer asserts if link training is restarted
+    •   Improved stability on DP and Phy link cycles due to:
+    •   DP MCA channel is only active when the Phy link is up and the DP cable is plugged in
+    •   State machine changes and recovery
+    •   Both LEX and REX no longer need to be powered up at the same time for initial bring up.
+    •   Fixed taking too much time (over 2min) to bring up DP case on a host (defer count maximum
+                                                                              over)
+    •   Removed some logs to prevent from Uart fifo-overflow.
+    •   Modified MCA configuration due to link disconnect by using Raven value. 
+    •   ltssm_u0_tmr.pnd.lmt: set to 0x3D09 (default: approx. 100us) from 0x0C35 (Raven: approx.
+                                                                                  20us)
+    •   ltssm_u0_tmr.u0rectimeout.lmt: set to 0x1312D (default: approx.500us) from 0xf43 (Raven:
+                                                                                          approx.
+                                                                                          25us)
+    •   Fixed merge error which caused blank Atmel system’s Display Port test error.
+    •   Fixed divide by zero assert case. 
+    3.    Known issues:
+    •   DP Audio does not work
+    •   DP Video on an SSC host does not work
+    •   Maverick LAN port channel does not work
+    •   Maverick RS232 channel does not work
+    •   Host reboot/shutdown cycle is not supported
+    •   Download fails sometimes (If you disconnect phy-link between Lex and Rex, it doesn’t fail)
+    •   Sometimes the Lex or Rex will assert with an I2C fifo overflow. A LOG message was added to
+    help trace back the I2C write request causing the assert.  If this assert happens, please save
+    the logs and let a SW team member know.
+    •   Plugging in DP cable sometimes brings the phy link down – the system recovers itself
+    •   Cx fifo overflows sometimes during lex dp cycles
+    •   Cx fifo overflows during sleep/wakeup in Intel host
+    •   Compliance testing is not stable because of REX reading wrong EDID values sometimes
+    •   Only 2 and 4 lane operation is supported; 1 lane is not
+    •   LG ultrawide monitor doesn’t work with this sandbox
+    Goldenears Changes since last build (BBGESW_v00_01_03)
+    1.   New features:
+    •   None
+     
+    2.    Bug fixes:
+    •   None
+     
+    3.    Known issues:
+    •   None 
+
+
+EndOfSummary
+
+
+Blackbird Software v0.0.51
+=========================
+
+Summary:
+
+Blackbird Changes since last build (BBSW_v00_00_50) 
+    1.    Functionality:  
+    •   Video cards supported:
+    o   Intel UHD Graphics 630 (LUIGI)
+    o   Intel HD Graphics 530 (LISA, BART, LAB2, 
+                                  ENG HW EMC LENOVO M900 TING 10FM001GCA)
+
+    •   Monitors Supported:
+    o   Except for HW Engr Lab1 (Samsung 4k monitor), this build is expected work with all the
+    monitors in house.
+
+    2.    New Features:
+    •   Video should come up without any scrolling
+    •   After video is flowing, removing LEX DP link will display white to the monitor
+    •   Normal video should resume after LEX DP cable is plugged back in
+    •   Phy link cycles are supported
+    •   Resolution change using the host’s dropdown menu is supported
+    •   Set value for max_count register due to register type change  need to check lan port, usb2
+    functionality
+
+    3.    Bug fixes:
+    •   None
+
+    4.    Known issues:
+    •   SSC is not supported
+    •   Compliance test support is broken
+    •   Both LEX and REX must be plugged in for initial bring up. Power cycle REX after phy link is
+    up is not supported yet.
+    •   REX DP cycle is not supported
+    •   Host reboot/shutdown cycle is not supported yet
+
+    Goldenears Changes since last build (BBGESW_v00_01_02)
+    1.   New features:
+    •   None
+     
+    2.    Bug fixes:
+    •   None
+     
+    3.    Known issues:
+    •   None 
+
+EndOfSummary
+
+
+Blackbird Software v0.0.50
+=========================
+
+Summary:
+
+Important: 
+•   This is a Maverick release, based on BBSW_v00_00_32.
+•   Make sure both Lex and Rex are running the same software
+•   Please make sure the software versions match those given in these release notes, for Blackbird
+FW and FPGA, and for Goldenears
+•   Clear all FLASH variables after loading this software, to ensure the correct default values are
+loaded
+•   See the known issues sections below
+
+Blackbird Changes since last build (BBSW_v00_00_32) 
+    1.    Functionality:  
+    •   Video cards supported:
+    o   Intel UHD Graphics 630 (LUIGI)
+    o   Intel HD Graphics 530 (LISA, BART, LAB2, 
+                                  ENG HW EMC LENOVO M900 TING 10FM001GCA)
+
+    •   Monitors Supported:
+    o   ASUS MG24UQ          (23.4”)
+    o   AOC U2879VF            (27.8”)
+    o   LG 27UD88                 (27.8”)
+
+    2.    New Features:
+    •   Added Icmds under dp component to enable/disable DP
+    •   Added Icmds to change GTP tx diff ctrl and pre cursor values
+
+    3.    Bug fixes:
+    •   None
+
+    4.    Known issues:
+    •   USB 3 and DP doesn’t work together
+    •   SSC is not supported
+    •   Compliance test support is broken
+
+
+    Goldenears Changes since last build (BBGESW_v00_01_02)
+    1.   New features:
+    •   None
+     
+    2.    Bug fixes:
+    •   None
+     
+    3.    Known issues:
+    •   None 
+
+    Cobs Changes since last build :
+
+    Note: This cobs is for Dp debug purpose only. This is known as Dp_Cobs.
+
+    1.     Added new buttons: Dp debug and Dp stats
+    2.     Changed reload_icron button to load icron file for both BB and GE, and removed it from
+    GE window
+    3.     Changed suspend button functionality to not collect logs if supend checkbox is checked
+    4.     New ‘superman’ gif 
+
+EndOfSummary
+
+
+Blackbird Software v0.0.32
+=========================
+
+Summary:
+
+Important: 
+•   This is a Raven only release; DP does not work for this software
+•   This software is not compatible with builds previous to build 30.  Please disconnect the
+Lex/Rex link when programming to avoid spam.
+•   Make sure both Lex and Rex are running the same software
+•   Please make sure the software versions match those given in these release notes, for Blackbird
+FW and FPGA, and for Goldenears.
+•   Please make sure only build 22 or higher are used as the golden image on a programmed
+blackbird, to fix a serious stack issue present in build 21 and lower
+•   Clear all FLASH variables after loading this software, to ensure the correct default values are
+loaded
+•   Use this build only if the Atmel chip is programmed.  If the Atmel chip is not programmed, the
+board will only work for 3 ½ minutes (to allow for manufacturing testing).  To get your Atmel chip
+programmed, please see Jordy.
+ 
+Blackbird Changes since last build (BBSW_v00_00_31) 
+    1.    New features:  
+    •   Rex only - detect USB over current and show via ISTATUS message to the user
+    •   Added Aquantia temperature alarm bits to temperature monitoring routine. (Check both read
+                                                                                  temperature and
+                                                                                  alarm bits)
+    •   Aquantia stats are scanned one last time before bringing the link down
+    •   Aquantia code has been moved to its own component
+    •   A new file ‘module_addresses_regs.h” has been added, which includes base address of all
+    modules. This is used instead of bb_chip.h
+    •   Created new components (idt_clk, fiber5g)
+    •   Modified IDT configuration to write all values at once; configuration is determined by the
+    FPGA bb_core feature information register
+    •   Removed IDT configuration in programBB
+    •   After IDT is configured, wait 10ms, check for IDT clock lock and disable IDT VCO monitoring
+    when clock is locked
+    •   General read/write iCMD to access IDT and Aquantia registers
+    •   HW feature check: Stop working if HW doesn’t support a feature which is enabled by SW
+    •   Added a new iCMD to reset the RXAUI Rx elasticity buffers; this command is under the XAUI
+    component
+     
+    2.    Bug fixes:
+    •   Modified Aquantia stats for Latched value (Bug# 5080)
+    •   Both fiber and CATx should be functional in this build
+    •   Added ISTATUS messages for EXCOM (Bug# 5085)
+    •   Link correctly shut down on an over temperature condition
+    •   Link bring up procedure improved, supporting local/remote fault signalling (Bug #4970, #5072)
+    o   Register 4.EC01 removed from stats monitoring, now used to re-initialize the link if a
+    Rx/Tx link fault occurs 
+    •   Separate lane stats value (Bug #5080) 
+    •   5G fiber link up modified to track errors before the system is declared up.  Fix for bug #5094
+    •   Turn off DP 135Mhz clock for Rex
+    •   Block the first Aquantia temperature warning information which is not valid
+    •   Fixed “Stat group xx still being processed when interval expired”
+    •   Fixed stat “Aquantia PCS Rx CRC Frame error (3.EC00.F)”
+    •   Fixed Fiber not linking after link cycling
+    •   Fixed #5099, ‘CatX; LEX and REX fail to link on REX power cycle’
+    •   Moved fpga module reset from programBB to main part that loads programBB; FPGA leon_reset
+    moved back to bit 31.  Fix for bug #5119
+    •   Check Aquantia auto-reset to prevent system from shutting down by false temperature fault
+    information, and do link recycle when it’s detected. Fix for bug #5107
+    •   In case of FPGA & Firmware version non-matching, non-debug version doesn’t keep asserting
+    but stay w/o link to download new SW. Fix for bug #5126 
+
+     
+    3.    Known issues:
+    •   All LEDs turn on temporarily by boot Rom after finishing GE automatic download
+    •   Configuration by Badger could fail by timeout occasionally (due to Atmel’s NACK), but
+    retrial is available and successful
+     
+
+EndOfSummary
+
+
+Blackbird Software v0.0.32
+=========================
+
+Summary:
+
+IMPORTANT:
+•   This is a Raven only release; DP does not work for this software
+•   This software is not compatible with builds previous to build 30.  Please disconnect the
+Lex/Rex link when programming to avoid spam.
+•   Make sure both Lex and Rex are running the same software
+•   Please make sure the software versions match those given in these release notes, for Blackbird
+FW and FPGA, and for Goldenears.
+•   Please make sure only build 22 or higher are used as the golden image on a programmed
+blackbird, to fix a serious stack issue present in build 21 and lower
+•   Clear all FLASH variables after loading this software, to ensure the correct default values are
+loaded
+•   Use this build only if the Atmel chip is programmed.  If the Atmel chip is not programmed, the
+board will only work for 3 ½ minutes (to allow for manufacturing testing).  To get your Atmel chip
+programmed, please see Jordy.
+•   See the known issues sections below
+Debug Blackbird SW Date: 2018 02 14 16:12:46
+Blackbird SW Date: 2018 02 14 16:13:14 
+Goldenears SW Date: 2018 01 09 14:14:42
+FPGA Date: 2018 02 13 13:28:24
+
+ 
+Blackbird Changes since last build (BBSW_v00_00_31) 
+    1.    New features:  
+    •   Rex only - detect USB over current and show via ISTATUS message to the user
+    •   Added Aquantia temperature alarm bits to temperature monitoring routine. (Check both read
+                                                                                  temperature and
+                                                                                  alarm bits)
+    •   Aquantia stats are scanned one last time before bringing the link down
+    •   Aquantia code has been moved to its own component
+    •   A new file ‘module_addresses_regs.h” has been added, which includes base address of all
+    modules. This is used instead of bb_chip.h
+    •   Created new components (idt_clk, fiber5g)
+    •   Modified IDT configuration to write all values at once; configuration is determined by the
+    FPGA bb_core feature information register
+    •   Removed IDT configuration in programBB
+    •   After IDT is configured, wait 10ms, check for IDT clock lock and disable IDT VCO monitoring
+    when clock is locked
+    •   General read/write iCMD to access IDT and Aquantia registers
+    •   HW feature check: Stop working if HW doesn’t support a feature which is enabled by SW
+    •   Added a new iCMD to reset the RXAUI Rx elasticity buffers; this command is under the XAUI
+    component
+     
+    2.    Bug fixes:
+    •   Modified Aquantia stats for Latched value (Bug# 5080)
+    •   Both fiber and CATx should be functional in this build
+    •   Added ISTATUS messages for EXCOM (Bug# 5085)
+    •   Link correctly shut down on an over temperature condition
+    •   Link bring up procedure improved, supporting local/remote fault signalling (Bug #4970, #5072)
+    o   Register 4.EC01 removed from stats monitoring, now used to re-initialize the link if a
+    Rx/Tx link fault occurs 
+    •   Separate lane stats value (Bug #5080) 
+    •   5G fiber link up modified to track errors before the system is declared up.  Fix for bug #5094
+    •   Turn off DP 135Mhz clock for Rex
+    •   Block the first Aquantia temperature warning information which is not valid
+    •   Fixed “Stat group xx still being processed when interval expired”
+    •   Fixed stat “Aquantia PCS Rx CRC Frame error (3.EC00.F)”
+    •   Fixed Fiber not linking after link cycling
+    •   Fixed #5099, ‘CatX; LEX and REX fail to link on REX power cycle’
+    •   Moved fpga module reset from programBB to main part that loads programBB; FPGA leon_reset
+    moved back to bit 31.  Fix for bug #5119
+    •   Check Aquantia auto-reset to prevent system from shutting down by false temperature fault
+    information, and do link recycle when it’s detected. Fix for bug #5107
+    •   In case of FPGA & Firmware version non-matching, non-debug version doesn’t keep asserting
+    but stay w/o link to download new SW. Fix for bug #5126 
+
+     
+    3.    Known issues:
+    •   All LEDs turn on temporarily by boot Rom after finishing GE automatic download
+    •   Configuration by Badger could fail by timeout occasionally (due to Atmel’s NACK), but
+    retrial is available and successful
+
+EndOfSummary
+
+
+Blackbird Software v0.0.31
+=========================
+
+Summary:
+
+Important: 
+•   This is a Raven only release; DP does not work for this software
+•   This software is not compatible with previous releases.  Please disconnect the Lex/Rex link
+when programming to avoid spam.
+•   This release includes new cobs (Cobs 1.0.9 Dec 22, 2017)
+•   Make sure both Lex and Rex are running the same software
+•   Please make sure the software versions match those given in these release notes, for
+    Blackbird FW and FPGA, and for Goldenears.
+•   Please make sure only build 22 or higher are used as the golden image on a programmed
+    blackbird, to fix a serious stack issue present in build 21 and lower
+•   Clear all FLASH variables after loading this software, to ensure the correct default values
+    are loaded
+•   Use this build only if the Atmel chip is programmed.  If the Atmel chip is not programmed,
+    the board will only work for 3 ½ minutes (to allow for manufacturing testing).  To get your
+    Atmel chip programmed, please see Jordy.
+•   See the known issues sections below
+
+
+Blackbird Changes since last build (BBSW_v00_00_30) 
+1.    New features:  
+    •   Added a log message to show the offset required when the timestamps are synched after the
+    link comes up; this allows correlating the log messages before the link is up
+    •   Reset the timestamp every time the comlink comes up, rather then only when the link is
+    valid, to help in tracing events
+
+2.    Bug fixes:
+    •   Restart the Fiber Rx FSM training if it takes more then 10ms, so there is a better chance
+    of getting the fiber link to work; partial fix for bug #4970
+    •   Once MCA Channel 0 (CPU comm channel) is active, retrain the link once more.  Partial fix
+    for bug #4970
+    •   Added ULP communication to make sure Lex and Rex’s link up sequence is correct
+    •   Fixed endless link retrial case (side effect of link-up twice for #4970)
+    •   Restructured the Aquantia initialization to make it more asynchronous
+
+3.    Known issues:
+    •   All LEDs turn on temporarily by boot Rom after finishing GE automatic download
+    •   Configuration by Badger could fail by timeout occasionally (due to Atmel’s NACK), but
+    retrial is available and successful
+
+Goldenears Changes since last build (BBGESW_v00_01_01)
+1.   New features:
+    •   Converted some messages to ilogs
+
+2.    Bug fixes:
+    •   None
+
+3.    Known issues:
+    •   None
+
+
+
+EndOfSummary
+
+
+Blackbird Software v0.0.30
+=========================
+
+Summary:
+
+Important: 
+•   This is a Raven only release; DP does not work for this software
+•   Make sure both Lex and Rex are running the same software
+•   Please make sure the software versions match those given in these release notes, for Blackbird
+FW and FPGA, and for Goldenears.
+•   Please make sure only build 22 or higher are used as the golden image on a programmed
+blackbird, to fix a serious stack issue present in build 21 and lower
+•   Clear all FLASH variables after loading this software, to ensure the correct default values are
+loaded
+•   Use this build only if the Atmel chip is programmed.  If the Atmel chip is not programmed, the
+board will only work for 3 ½ minutes (to allow for manufacturing testing).  To get your Atmel chip
+programmed, please see Jordy.
+•   See the known issues sections below
+
+Blackbird Changes since last build (BBSW_v00_00_29) 
+    1.     New features:  
+    •   Set rd2clear_config registers for mac, mca and ulp components
+    •   Updated stats to access the registers from their respective rtl submodules instead of
+    bb_chip
+    •   Temperature monitoring on FPGA and Aquantia
+    -   Software warning, shutdown temperature threshold can be set by icmd in XADC_COMPONENT
+    (FPGA) or AQUANTIA_STAT_COMPONENT(Aquantia)
+    •   Checking FPGA version (only for non-debug build) and assert if the FPGA version is not
+    matched
+    •   An Icmd added to print the latency value of MCA_CHANNEL[0], if the value is not zero
+    •   Implement Led pattern for download, Atmel validation fail, temperature waring, and
+    temperature fault cases.
+    •   Check Atmel validation retry 3 times from the initial stage and change validation period
+    from 20sec to 40sec.
+    •   Added a Variant ID check on GE that only allows blackbird companion GE_ASIC_2051 and
+    GE_ASIC_2054 to link with each other. Any other blackbird companion GE_ASIC variant ID will
+    fail to link.
+    •   Added RXAUI Not In Table and Disparity stats for GT0 and GT1
+    •   Removed the GE firmware version checks that were causing GE to drop link
+
+    2.    Bug fixes:
+    •   If a problem still exists after a Lex only reset, do a full reset on the Lex and Rex – fix
+    for 5048
+    •   If the Lex gets stuck in inactive state, do a full reset – partial fix for 5053
+    •   Reset h/w phy link and start again if the link has an issue after stable connection – fix
+    for 4970
+    •   Re-enabled status timeout for LTSSM register, to ensure we go to U0 in a reasonable time.
+    Partial fix for #5057
+    •   Aquantia doesn't give a link down indication - relies on XAUI and MCA to indicate when the
+    link is down
+    •   Fixed name for an Icmd “PrintLatencyValueIcmd”
+    •   Added Comlink timer reset if Comlink doesn’t come up within 4 seconds – fix for 4970
+    •   Fixed Led bugs (5013, 4997, 4811)
+    •   Fixed bug (5068)
+    •   Fixed wrong FPGA temperature cut and warning threshold initial value (It was the same as
+                                                                              the Aquantia’s
+                                                                              threshold value).
+    Correct setting for the FPGA is 85C for shutdown and 80C for warming threshold.
+
+    3.    Known issues:
+    •   All LEDs turn on temporarily by boot Rom after finishing GE automatic download
+    •   Configuration by Badger could fail by timeout occasionally (due to Atmel’s NACK), but
+    retrial is available and successful
+
+    Goldenears Changes since last build (BBGESW_v00_01_01)
+    1.   New features:
+    •   Added ECO B check and printout for GE
+
+    2.    Bug fixes:
+    •   Ported over the latest changes from GE 1.9.4 (MSA fixes)
+
+    3.    Known issues:
+    •   None
+
+
+EndOfSummary
+
+
+Blackbird Software v0.0.28
+=========================
+
+Summary:
+
+Important: 
+
+•   This is a Raven only release; DP does not work for this software
+•   Make sure both Lex and Rex are running the same software
+•   Please make sure the software versions match those given in these release notes, for Blackbird
+FW and FPGA, and for Goldenears.
+•   Please make sure only build 22 or higher are used as the golden image on a programmed
+blackbird, to fix a serious stack issue present in build 21 and lower
+•   Clear all FLASH variables after loading this software, to ensure the correct default values are
+loaded
+•   See the known issues sections below
+
+Blackbird Changes since last build (BBSW_v00_00_27) 
+    1.     New features:  
+    •   Update Aquantia stat monitor & icmd/ilog (implementation status
+                                                  S:\AlanLee\AquantiaStat\Aquantia-List-of-Registers-for-SW-v02.xlsx)
+    •   Modified RS232 for new MCA
+    •   Modified link steps to ensure stable link up between RXAUI core and Aquantia before MAC &
+    MCA are enabled.
+    •   Add stats for all guard errors 
+    •   Updated components to get register addresses from their respective RTL submodule header
+    files instead of bb_chip
+
+    2.    Bug fixes:
+    •   Any pending ULP interrupts now cleared when they are disabled
+    •   Added a Lex only reset state, partial fix for bug #4852
+    •   Hubless Lex and Rex better supported
+
+    3.    Known issues:
+    •   All LEDs turn on temporarily by boot Rom after finishing GE automatic download.
+    •   Configuration by Badger could fail by timeout occasionally (due to Atmel’s NACK), but
+    retrial is available and successful. 
+
+Goldenears Changes since last build (BBGESW_v00_01_00)
+    1.   New features:
+    •   None
+
+    2.    Bug fixes:
+    •   GE now restarts on link down, and does not go to suspend. Fix for bug #5011
+
+    3.    Known issues:
+    •   None
+
+
+EndOfSummary
+
+
+Blackbird Software v0.0.27
+=========================
+
+Summary:
+IMPORTANT:
+•   This is a Raven only release; DP does not work for this software
+•   Make sure both Lex and Rex are running the same software
+•   Please make sure the software versions match those given in these release notes, for Blackbird
+FW and FPGA, and for Goldenears.
+•   Please make sure only build 22 or higher are used as the golden image on a programmed
+blackbird, to fix a serious stack issue present in build 21 and lower
+•   Clear all FLASH variables after loading this software, to ensure the correct default values are
+loaded
+•   See the known issues sections below
+
+
+Blackbird Changes since last build (BBSW_v00_00_26) 
+    1.     New features:  
+    •   Implement GE watchdog timer. 
+    -   Check GE’s periodic message and call a handling routine if GE’s message stops for 3 sec. 
+    •   System now detects GE asserts and hangs, and will automatically restart USB2 when this
+    occurs
+
+    2.    Bug fixes:
+    •   Restructured USB2, USB3, and Lex Host state machines to handle GE asserts .  Workaround for
+    bug #4822 . 
+    •   Fixed GE automatic download side effect
+    -   Can’t download when flash variable is erased (including all flash is erased case)
+    -   Start GE download even GE version is the same when BB fails to get GE’s first message. 
+    -   Added supplementary UART processing while blocking I2C, MDIOD is working not to lost any GE
+    message.
+    •   Increased snoop timeout to 250ms to give USB3 more of a chance to come up after host
+    restart 
+    •   Added status messages for USB3 only, and USB 3/2 messages
+    •   ** Host port supports USB3 **
+    •   ** Host port supports USB3/2 **
+    •   Minimum vBus off time is enforced on the Rex (500ms), to make sure that connected devices
+    see the disconnect
+    •   Minimum off time (200ms) for Rx terminations on the Rex is enforced, so connected devices
+    will be better able to see USB3 go away and come back
+    •   GE enable/disable now works correctly when issued back-to-back; GE hang and asserts will
+    now trigger a USB2 restart
+
+    3.    Known issues:
+    •   All LEDs turn on temporarily by boot Rom after finishing GE automatic download.
+    •   Configuration by Badger could fail by timeout occasionally (due to Atmel’s NACK), but
+    retrial is available and successful. 
+
+      Goldenears Changes since last build (BBGESW_v00_01_00)
+    1.   New features:
+    •   None
+
+      2.    Bug fixes:
+      • None
+
+      3.    Known issues:
+      • None
+
+
+
+EndOfSummary
+
+
+Blackbird Software v0.0.27
+=========================
+
+Summary:
+
+IMPORTANT:
+•   This is a Raven only release; DP does not work for this software
+•   Make sure both Lex and Rex are running the same software
+•   Please make sure the software versions match those given in these release notes, for Blackbird
+FW and FPGA, and for Goldenears.
+•   Please make sure only build 22 or higher are used as the golden image on a programmed
+blackbird, to fix a serious stack issue present in build 21 and lower
+•   Clear all FLASH variables after loading this software, to ensure the correct default values are
+loaded
+•   See the known issues sections below
+
+Blackbird Changes since last build (BBSW_v00_00_26) 
+    1.     New features:  
+    •   Implement GE watchdog timer. 
+    -   Check GE’s periodic message and call a handling routine if GE’s message stops for 3 sec. 
+    •   System now detects GE asserts and hangs, and will automatically restart USB2 when this
+    occurs
+
+    2.    Bug fixes:
+    •   Restructured USB2, USB3, and Lex Host state machines to handle GE asserts .  Workaround for
+    bug #4822 . 
+    •   Fixed GE automatic download side effect
+    -   Can’t download when flash variable is erased (including all flash is erased case)
+    -   Start GE download even GE version is the same when BB fails to get GE’s first message. 
+    -   Added supplementary UART processing while blocking I2C, MDIOD is working not to lost any GE
+    message.
+    •   Increased snoop timeout to 250ms to give USB3 more of a chance to come up after host
+    restart 
+    •   Added status messages for USB3 only, and USB 3/2 messages
+    •   ** Host port supports USB3 **
+    •   ** Host port supports USB3/2 **
+    •   Minimum vBus off time is enforced on the Rex (500ms), to make sure that connected devices
+    see the disconnect
+    •   Minimum off time (200ms) for Rx terminations on the Rex is enforced, so connected devices
+    will be better able to see USB3 go away and come back
+    •   GE enable/disable now works correctly when issued back-to-back; GE hang and asserts will
+    now trigger a USB2 restart
+
+    3.    Known issues:
+    •   All LEDs turn on temporarily by boot Rom after finishing GE automatic download.
+    •   Configuration by Badger could fail by timeout occasionally (due to Atmel’s NACK), but
+    retrial is available and successful. 
+
+Goldenears Changes since last build (BBGESW_v00_01_00)
+    1.   New features:
+    •   None
+
+    2.    Bug fixes:
+      • None
+
+    3.    Known issues:
+      • None
+
+
+
+EndOfSummary
+
+
+Blackbird Software v0.0.24
+=========================
+
+Summary:
+
+Blackbird Changes since last build (BBSW_v00_00_23) 
+1.  New features:  
+    • Ids name changes for the components: ULP, Link layer, SPI Flash, MDIO Master, I2C, DP, AUX,
+    MCA, MAC
+    • Block system disable when Atmel validation has failed for non-programmed Atmel test
+    systems. (Although validation process keeps running)
+    • It uses recent ROM release, BBROMSW_v10_00
+
+2.  Bug fixes:
+    • Feature enable bits in the NVM have been moved for DP, USB2, USB3, and Lanport.  After
+    programming the unit, please clear the FLASH NVM area by executing the FlashDataEraseFlashVars
+    iCommand, under FLASH_DATA_COMPONENT.  After the erase is complete, reset the system so the
+    correct values are loaded.
+
+3.  Known issues:
+    • Configuration by Badger could fail by timeout occasionally (due to Atmel’s NACK), but
+    retrial is available and successful. 
+    • USB2 is not functional under some situations.  See bug #4796 and related
+    • After DP is plugged in for the first time, REX might assert with “GTP took too long to come
+    out of reset” error. Do a LEX and REX power cycle to recover from this. After the power cycle,
+    the assert should not happen again
+
+4.  Notes:
+    • This software is not compatible with build 21 and lower; make sure both Lex and Rex are
+    running the same software
+    • When updating from software before build 19, please program twice (once with ‘Program
+    FPGA’, and a 2nd time with just ‘Program’), to ensure the GE image is correctly updated
+    • Please make sure the software versions match those given in these release notes, for
+    Blackbird FW and FPGA, and for Goldenears.
+    • Please make sure only build 22 or higher are used as the golden image on a programmed
+    blackbird, to fix the serious stack issue present in build 21 and lower
+    • Version 24 is not compatible with previous FPGA’s
+    • Execute iCommand “FLASH_DATA_COMPONENT > flashDAtaEraseFlashVars” through Cobs after
+    downloading the new firmware, and reset the system.  This needs to be done when upgrading to
+    B24, or downgrading to an earlier build.
+
+Goldenears Changes since last build (BBGESW_v00_00_08)
+1.  New features:
+    • None
+
+2.  Bug fixes:
+    • None
+
+3.  Known issues:
+    • None
+
+EndOfSummary
+
+
+ROM Software v10.0
+=========================
+
+Summary:
+
+Important:
+* The rom version numbering has changed. Frimware only considers the major revision number
+now. The minor revision number has been removed.
+
+Major Changes:
+* Major revision number has been changed from uint8 to uint16
+
+Known Issues:
+* Cobs will still display the minor revision number as zero. Cobs code has to be modified to
+resolve that
+* The build script still accepts major and minor revision numbers but firmware disregards the minor
+number. A change to build scripts will resolve this
+
+
+EndOfSummary
+
+
+ROM Software v9.0
+=========================
+
+Summary:
+
+Important: 
+* It should be identical to rom v8.0
+
+Major Changes: 
+
+Known Issues:
+
+
+EndOfSummary
+
+
+Blackbird Software v0.0.23
+=========================
+
+Summary:
+IMPORTANT – see the known issues and notes sections below!
+ 
+Blackbird SW Date: 2017 09 11 17:28:32
+Goldenears SW Date: 2017 09 11 17:28:11
+FPGA Date: 2017 08 28 12:10:47
+
+Blackbird Changes since last build (BBSW_v00_00_22) 
+    1.     New features:  
+    •      Atmel feature bits and validation
+
+    -   Load feature bits which are configured from Badger and set firmware’s feature
+    •   Feature bits are stored and read by encrypted cipher text
+    •   Random value is generated using A/D temperature seed. Doesn’t need to wait until link is
+    setup.
+
+    -   Initialization steps has changed
+    -   Do system validation with Atmel and control system with the validation result.
+    •   No Atmel chipset case: System stops working
+    •   Atmel isn’t programmed: System runs 1 minutes with full feature and disables all feature. 
+    •   Validation pass: System runs with configured features and keeps validating every 20
+    seconds.
+
+    2.     Bug fixes:
+    •   Fix I2C driver’s 63 bytes send limitation. (changed up to 255 bytes)
+    •   Fix I2C driver mother board / core switch bug: when multiple I2C messages (which use the
+                                                                                   different board)
+    are waiting in FIFO, it couldn’t select correct board when it runs after FIFO read. 
+
+          3.     Known issues:
+
+          • Configuration by Badger could fail by timeout occasionally (due to Atmel’s NACK), but
+          retrial is available and successful. 
+          • USB2 is not functional under some situations.  See bug #4796 and related
+          • DP is not functional
+
+          4.   Notes:
+
+          • Lan port feature and Phy link parameters are separated in Flash area. 
+          • DP should be disabled on the A02 and newer motherboards; these boards do not contain
+          any of the support circuitry and could cause errors if it is enabled
+          • This software is not compatible with build 21 and lower; make sure both Lex and Rex are
+          running the same software
+          • When updating from software before build 19, please program twice (once with ‘Program
+                                                                               FPGA’, and a 2nd
+                                                                               time with just
+                                                                               ‘Program’), to
+          ensure the GE image is correctly updated
+          • Please make sure the software versions match those given in these release notes, for
+          Blackbird FW and FPGA, and for Goldenears.
+
+
+          Goldenears Changes since last build (BBGESW_v00_00_08)
+    1.   New features:
+    •   None
+
+    2.    Bug fixes:
+    •   None
+
+    3.    Known issues:
+    •   None
+
+EndOfSummary
+
+
+    Blackbird Software v0.0.22
+==ckbird Changes since last build (BBSW_v00_00_21)
+1.      New features:
+·          A03 Core board support:
+- IDT 6914 Configuration
+· Supports new clock generation profiles depends on feature bits.
+· Implement TUSB1310A’s new configuration strap in accordance with IDT6914’s 40Mhz support
+-DP changes
+· Modified the implementation of dp_gtp_tx and dp_gtp_rx polarity control functions
+
+· Store USB3 reset and fiber link parameter variables into flash
+·
+Created
+function
+bb_top_getCoreBoardRev()
+    to return the revision number of the core board
+    ·          Changed the polarity of dp_gtp_tx lanes to “set”
+    ·          Added support for strapping pin with the TI Phy on USB3
+    ·          Added an Icmd at top component to toggle between current image and golden image
+
+    2.      Bug fixes:
+    ·          Added hot reset mirroring on Rex – fix for #4775
+    ·          Fiber link now resets if the link is down for longer than 3 seconds.  Partial fix
+    for #4771
+    ·          Added support for Tx Compliance and Loopback for USB3
+    ·          Changed fix_ptp_violations register field name to “active” which is set to be
+    activated by default
+    ·          New BootROM (v08) – added support for the new MT25QL256ABA FLASH; current image no
+    longer loads from golden, correctly jumps to the current image
+    ·          USB3 Hot reset on the Lex waits for the Rex to get back to U0 before exiting hot
+    reset, to prevent the case where the Lex gets to U0 before the Rex
+    ·          Fiber Tx Lane polarity correctly set for the A03+ core boards
+    ·          USB3 Tx Compliance and Loopback modes now supported
+    ·          USB3 Phy stats enabled for Loopback mode
+    ·          USB3 Credit HP timer now disabled on Lex and Rex – workaround fix for bug #4724,
+#4808
+
+    3.      Known issues:
+    ·          USB2 is not functional under some situations.  See bug #4796 and related
+    ·          DP is not functional
+
+    4.      Notes:
+    ·          DP should be disabled on the A02 and newer motherboards; these boards do not contain
+    any of the support circuitry and could cause errors if it is enabled
+    ·          This software is not compatible with build 21 and lower; make sure both Lex and Rex
+    are running the same software
+    ·          When updating from software before build 19, please program twice (once with
+                                                                                  ‘Program FPGA’,
+                                                                                  and a 2nd time
+                                                                                  with just
+                                                                                  ‘Program’), to
+    ensure the GE image is correctly updated.
+    ·          Please make sure the software versions match those given in these release notes, for
+    Blackbird FW and FPGA, and for Goldenears.
+
+Goldenears Changes since last build (BBGESW_v00_00_08)
+    1.      New features:
+    ·          Added support for vid ITC2054
+    ·          Changed the slew rate to slow for BOM_23_00200_A03
+
+    2.      Bug fixes:
+    ·          None
+
+    3.      Known issues:
+    ·          None
+EndOfSummary
+
+
+ROM Software v8.0
+=========================
+
+Summary:
+
+Important: 
+
+Major Changes:
+* Added support for the new MT25QL256ABA FLASH
+* current image no longer loads from golden, correctly jumps to the current image
+
+Known Issues:
+
+
+EndOfSummary
+
+
+Blackbird Software v0.0.21
+=========================
+
+Summary:
+
+Important: See the known issues and notes sections below!
+
+Blackbird SW Date: 2017 07 10 – 19:21:14
+Goldenears SW Date: 2017 05 23 – 12:39:20
+FPGA Date: 2017 07 06 – 12:18:30
+
+
+Major Changes:
+
+* Fixed Cypress hub programming so it can be called anytime, not just at startup.  Fixed an issue where
+    it couldn’t reprogram successfully.
+* Reset the USB system (hub, ULP core, ULP phy on Lex and Rex) whenever an invalid state is
+    detected on the USB3 side. Possible fix for 4796, 4794, 4791, 4788, 4780, 4779, 4766, 4754, 4753,
+    4743, 4720, 4681, and other related bugs
+* Ported over Travis’s changes to work with the latest DP RTL code
+* Initialized the PTP guard code and stats for the Link layer 3 module
+* MAC stats and layer 3 stats now correctly cleared when read
+* Put ULP core in reset on the Lex and Rex whenever the link goes down
+* Only enable ULP Phy stats when in U0 on USB3; other states are not valid
+* In stats monitor, when clearing FPGA stats, read the FPGA registers to clear them as well
+
+Known Issues:
+* USB2 is not functional under some situations. See Bug#4796 and related
+
+Notes:
+* DP should be disabled on the A02 and newer motherboards; these boards do not contain any of the
+    support circuitry and could cause errors if it is enabled
+* This software is not compatible with build 20 and lower; make sure both Lex and Rex and running
+    the same software
+* When updating from software before build 19, please program twice (once with ‘Program FPGA’,
+    and a 2nd time with just ‘Program’), to ensure the GE image is correctly updated.
+* Please make sure the software versions match those given in these release notes, for Blackbird
+    FW and FPGA, and for Goldenears.
+
+EndOfSummary
+
+
+Blackbird Software v0.0.20
+=========================
+
+Summary:
+GoldenEars SW Date: 2017 05 23 - 12:39:20
+FPGA Date: 2017 05 19 - 10:08:36 (Rev 10.0.0)
+
+Important:
+
+*   DP should be disabled on the A02 and newer motherboards;
+    these boards do not contain any of the support circuitry
+    and could cause errors if it is enabled
+*   This software is not compatible with build 18 and lower;
+    if your board is running a golden image with those versions,
+    you should update them
+*   When updating from software before build 19, please program
+    twice (once with ‘Program FPGA’, and a 2nd time with just
+    ‘Program’), to ensure the GE image is correctly updated.
+*   Please make sure the software versions match those given in
+    these release notes, for Blackbird FW and FPGA, and for Goldenears.
+
+Major Changes:
+
+*   This software will work with the new Lex motherboards from HW that have the
+    Cypress hub, as well as the old motherboards that don’t.
+*   RS232 extension is now available.  Requires special hardware to use, and a
+    special version of Cobs.
+*   #4752: XMII has been redesigned to support 1G and 100M speeds, including
+    reconfiguring for the lowest common speed. It works on both CatX and 5G Fiber,
+    albeit 100M for 5G Fiber
+*   #4754, 4755: LED’s have been corrected to function properly
+*   Checked for divide by zero in stats printout, fix for #4757
+*   Ask to exit standby every 100ms if stuck in U3, fix for #4740, and possibly #4713, #4714
+*   Switches to USB3 if the port now supports it – fix for #4746, #4750
+*   Removed unused 5G fiber code
+
+Known Issues:
+*   With the new motherboard (hub on the LEX board), when the LEX is disconnected from the Host,
+    the USB2 Led blinks instead of turning off
+
+EndOfSummary
+
+
+Blackbird Software v0.0.19
+=========================
+
+Summary:
+1.  New features:
+•   Stats are now only printed when they change; additional stats available for the MCA module
+•   Added stats for SFP modules, printing Vcc, TX Bias, TX Power, RX Power and Temperature upon a
+2%change
+•   Added SFP Rx Power reading to remove need for waiting on 5G Fiber boards link up
+
+2.  Bug fixes:
+•   5G Fiber bring up and take down greatly improved.  Link cycling supported.  Rx link training
+now done after signal is detected and validated, rather than right away. Fix for bug #4722, #4726 ,
+#4731, and #4748
+•   USB3 – correctly deals when a device goes into the inactive state on the Rex; will now put the
+Lex into the inactive state as well, causing a warm reset to occur.  The application on the host
+may stop when this happens, but can be restarted.  Partial fix for bug #4724
+•   USB3 – warm reset is now better synched on the Lex, so the Lex will only get to U0 after the
+Rex gets to U0.  Partial fix for bug # 4720
+•   Code cleanup and refactoring in the following areas:
+1.   USB2, USB3 
+2.  Link management and monitoring 
+3.  Com channels between USB2, USB3,  and ULP are now independent.  Makes this software
+incompatible with previous versions
+4.  SYS LED has been updated to not remain blinking when the error is no longer preset – fix for
+bug #4733
+•   Cypress Hub now programmed correctly on the Rex; fix for bug #4735
+•   USB2, USB3 now turns off more modules when disabled.  GE is held in reset when USB2 is disabled
+•   ProgramBB updated to reset the MMU offset (reading from flash) when programming GE, this will
+prevent always programming fallback GE onto both fallback GE an multiboot GE.  When updating from
+software before build 19, please program twice (once with ‘Program FPGA’, and a 2nd time with just
+‘Program’), to make sure the GE image is correctly updated.
+•   Fiber readings for Tx, Rx power, Tx bias, Vcc and temperature readings have an increased
+tolerance of 4% to decrease log spamming.  Fix for bug #4742
+•   - expanded variable size to 32 bits to prevent overflow when reading fiber stats (Tx, Rx power,
+Tx bias, Vcc and temperature readings)
+•   - USB3 now goes to inactive, instead of disabled.  Partial fix for #4724
+•   -Added MII support to LAN port, please see known issue below
+•   Previous release had multiboot images in place of the fallback images in the cobs_golden.icron
+files, this has been fixed.
+•   Added changes to better handle the host restarting, going to standby, or going to sleep. Fix
+for bug #4713, #4714, #4729, #4732, and #4740.
+
+3.  Known issues:
+•   DP is not supported with this FPGA release
+•   LAN port functionality is severely limited with fiber modules and should only be used if
+devices are always connected, and only at the same speed for both sides. LAN should not be used
+with Aquantia at this time
+•   
+
+4.  Notes:
+•   DP should be disabled on the A02 motherboards; these boards do not contain any of the support
+circuitry and could cause errors if it is enabled
+•   This software is not compatible with previous versions; both Lex and Rex need to have the same
+software to work correctly (Golden and Current images)
+•   Please make sure the software versions match those given in these release notes, for Blackbird
+FW and FPGA, and for Goldenears.
+
+Important: 
+
+Major Changes: 
+
+Known Issues:
+
+
+EndOfSummary
+
+
+ROM Software v7.0
+=========================
+
+Summary:
+
+Important: 
+
+Major Changes: 
+-Revised to support Multiboot and Fallback FPGA
+-Also supports case of ASIC with fallback for FW
+-Uses ICAP to determine if image running is Multiboot or Fallback
+-Configures AHB flash read access for FW to run (same value as ProgramBB and mainFW set)
+-Configures AHB addr_offset to ensure correct FW is CRCd
+Known Issues:
+
+
+EndOfSummary
+
+
+ROM Software v8.0
+=========================
+
+Summary:
+- Udpate to build script to use shell script to build ROM, as ROM binary needs post-build updating
+Important: 
+
+Major Changes: 
+
+Known Issues:
+
+
+EndOfSummary
+
+
+ROM Software v7.0
+=========================
+
+Summary:
+
+Important: 
+- Multiboot and Fallback images required - same ROM though
+
+Major Changes: 
+- Supports both Fallback and Multiboot images
+- Configures FPGA AHB SPI Flash reads ahead of FW, includes 4byte addressing
+- Adjusts the offset automatically based on ICAP read of BOOTSTS fallback bit1
+
+Known Issues:
+- Can be problematic to replace - requires new Cobs 1.0.4 for programming (except:
+-   if run ProgramBB from flash with v17 FW and FPGA, NOT bootloader, it could work
+
+EndOfSummary
+
+
+Blackbird Software v0.0.16
+=========================
+
+Summary:
+
+Important: 
+- Added new Istatus messages
+- Updated to support new SFI (SPI Flash Control) module in FPGA
+
+Major Changes: 
+
+Known Issues:
+- DP is not supported with this FPGA release
+
+EndOfSummary
+
+
+Blackbird Software v0.0.15
+=========================
+
+Summary:
+
+Important: 
+- Uses LEX fpga on both Lex and Rex
+Major Changes: 
+- No other changes
+Known Issues:
+- FPGA does not support DP on REX because it is a LEX FPGA
+
+EndOfSummary
+
+
+Blackbird Software v0.0.14
+=========================
+
+Summary:
+
+Important:
+1.  New Features:
+•   LED meaning changes – now matches PRD – see below for more info
+•   Stats for Aquantia PHY
+•   Added time stamp synchronization on link up, to better correlate Lex and Rex events
+•   Support for USB3 suspend (U3 low power state)
+
+2.  Bug fixes:
+•   Updated ROM for error handling
+•   Minor MCA changes to hopefully decrease link errors
+•   Fix a bug where ProgramBB failed to send out device info, which led to the failure of device
+programming
+•   Enable/Disable works for USB3, USB2 and LAN port (note that a power cycle is needed for new
+settings to take effect)
+•   LAN port link up/down recovery improved
+•   Comlink error detection improved
+•   LED operation fixed
+•   USB 3 warm reset improved
+
+
+Major Changes: 
+
+Known Issues:
+•   GE on the Rex sometimes locks up, preventing the Lex from booting up as well.  Only seems to
+occur when the Rex is power cycled.
+•   Only  1 FPGA is created for both Lex and Rex and it does not support DP.
+
+
+EndOfSummary
+
+
+ROM Software v6.0
+=========================
+
+Summary:
+- Added better error handling
+- Added 16 ATMEL Secret Keys
+
+Important:
+
+Major Changes:
+- Improved error handling
+- 16 Secret keys added
+
+Known Issues:
+
+
+EndOfSummary
+
+
+Blackbird Software v0.0.13
+=========================
+
+Summary:
+
+Important:
+- Update your Cobs please!!!!
+
+Major Changes:
+- ULP Stats now printed when errors detected
+- Updates for stability with Cobs/FW interaction
+
+Known Issues:
+- DP stability - coming soon
+
+EndOfSummary
+
+
+Blackbird Software v0.0.12
+=========================
+
+Summary:
+
+Important:
+- Hobbes is not longer used, please use Cobs
+- New programming method using Cobs (GE is automatically programmed)
+-> Use JTAG to program FPGA (released/dd/BLACKBIRD_20170120T150545)
+-> Be sure to use ProgB and the pairing button to enter Bootloader mode
+-> With Cobs, add Cobs.icron from released folder using Open then Add Device after selecting COM
+port for lex and rex
+-> You should see strange ascii characters in red (after Cobs is done loading)
+-> Ensuring your Device Window says Blackbird, press the Program FW button -- do one board at a time
+-> It will automatically restart
+
+Major Changes:
+- Hobbes (Cobs) Phase 1
+- BB GE Programming support (device side)
+- BB Boot ROM (UART only)
+- USB 3.0 , link connect/disconnect support
+- DP functional
+- 5G/10G switchable (I Command)
+- GMII port functional
+- Support for loopback mode
+
+Known Issues:
+- You must erase Flash Storage Vars and then reinitialize them on both Lex and Rex
+- ICMD: FLASH_DATA_COMPONENT -> flashDataEraseFlashVars
+- Power cycle boards
+- ICMD: ULP_COMPONENT -> Enable USB3 reset on disconnect
+- Reduced stability with DP, fix in progress
+
+EndOfSummary
+
+
+ROM Software v5.0
+=========================
+
+Summary:
+- Updated CRC to create table for reflection data
+- Updated CRC to read words instad of bytes
+- CRC updated for speed improvement
+Important:
+
+Major Changes:
+
+Known Issues:
+
+
+EndOfSummary
+
+
+ROM Software v4.0
+=========================
+
+Summary:
+- Complete overhaul
+- Packetized
+- Removed Xmodem
+- BAUD 460800
+- Supports Command protocol
+
+Important: 
+- Requires Cobs
+
+Major Changes: 
+- See summary
+
+Known Issues:
+- Only speaks with Cobs
+
+EndOfSummary
+
+
+Blackbird Software v0.0.11
+=========================
+
+Summary:
+- Intended to be a USB benchmark build, to see how well this build compares to past and future
+  builds
+
+Important:
+
+Major Changes:
+- USB3 warm reset, suspend supported
+- USB2 should be comparable to GE when USB3 is disabled (or when Lex is plugged into a USB2 only
+  host port)
+- Device cycling on the Rex Hub should work correctly
+
+Known Issues:
+- Cypress Hub programming may fail, causing USB to not work
+- USB3 does not support U1, U2 power states
+- With USB3 enabled, SW only supports a single plug in to host. A host and Lex/Rex restart is
+  required after that for consistent results (not a problem when working with USB2 host ports)
+- Link cycling between Lex and Rex is not supported yet with USB3 enabled. Should work with USB2
+  host ports though
+- Enabling/disabling GMII, setting link speeds does not work for this build
+
+
+EndOfSummary
+
+
+Blackbird Software v0.0.10
+=========================
+
+Summary:
+* Intended to be used with FPGA blackbird/released/dd/BLACKBIRD_20161017T140822/
+
+Important:
+* Ensure that you have your FPGAs updated correctly; remember that there are Lex and Rex images.
+* Ensure that you are not running an older GE; the required GE version is v00_00_03.
+* Boards should not have Cypress Hub programming MOD on them. Cypress hub programming does not work
+  on this build
+* Ensure that USB suspend is disabled on Windows and on the HUB(through device manager)
+
+Major Changes:
+
+Goldenears:
+* REXULM disable was added via UART packetize from BB
+
+BlackBird:
+* When DP is disabled, disable the DP159/130 MHz clock output from the IDT clock generator, and DP
+  connector power output
+* Added an iCommand to allow the Rex to link train DP independent of the Lex
+* Added an iCommand to enable/disable DP pixel generator output, and persist the setting in NVM
+* XADC support enhanced for accuracy
+* Updated build script and memroy calculations
+* Added Lex/Rex overlays and move some code to AHBRAM and save IRAM
+* Added GE as a submodule under Blackbird
+* Added NVM based link initialization allowing enabling/disabling GMII and PHY and setting of the
+  link speed to 5G and 10G
+* Changed MAC FrameRate to zero as the default value
+* Changed DELAY_TRANSFER_FW_BYTE_OFFSET from 0xC80 to 1
+
+Known Issues:
+* Dynamically programming Cypress USB 3 HUB fails
+* USB3 H/W module does not support suspend
+* USB3 SW does not support warm and hot reset, or U1, U2 modes
+
+
+EndOfSummary
+
+
+Blackbird Software v0.0.9
+=========================
+
+Summary: 
+* Intended to be used with FPGA blackbird/released/dd/BLACKBIRD_20161017T140822/
+
+Important: 
+* Ensure that you have your FPGAs updated correctly; remember that there are Lex and Rex images.
+* Ensure that you are not running an older GE; the required GE version is v00_00_02 (BBSW_v00_00_06).
+
+Major Changes: 
+* Extender configuration is now loadable from non-volatile memory (currently flash).
+* XADC temperature and voltage monitoring have been enabled; set the ilog level of
+  the TOPLEVEL component to 1 via the ilog_SetLevel iCommand to see the readings.
+
+Known Issues: 
+* Programming GE will fail unless a link has been (at least temporarily) established
+  between the extender intended to be programmed, and another extender.
+* DisplayPort cable cycles at the Lex are not currently handled.
+
+EndOfSummary
+
+
+Blackbird Software v0.0.8
+=========================
+
+Summary:
+* Applies to FPGA blackbird/released/dd/BLACKBIRD_20161006T103135
+* NVM-based initialization added - use ICMDs to set or clear the features and restart
+* Added NVM region in flash to store initialization values
+* Supported ICMDs:
+*   enableUsb2
+*   disableUsb2
+*   enableUsb3
+*   disableUsb3
+*   enableDisplayPort
+*   disableDisplayPort
+* ILOGs will display status changes
+* XADC code added however not supported yet in DD release
+* FW attempts to program Rex USB Hub, simply fails if hub is configured for internal ROM
+
+Important:
+* Ensure you have your FPGAs updated correctly, remember there are Lex and Rex images
+* Ensure you are not running an older GE, GE required version v00_00_02 (BBSW_v00_00_06)
+
+Major Changes:
+* Support of NVM
+
+Known Issues:
+* Changes to NVM must be applied to BOTH Lex and Rex units and both must be restarted
+
+
+EndOfSummary
+
+
+Blackbird Software v0.0.7
+=========================
+
+Summary:
+* ULP DD redesign and SW updated accordingly
+
+Important:
+* K7 not supported in this release, as there is no FPGA image to update SW for
+
+Major Changes:
+* ULP updated
+* ISR for 1Gb PHY to determine a link up and down - MCA CH updated accordingly
+
+Known Issues:
+* MDIO ISR currently disabled - ISR handling needs to be redesigned for Aquantia and RealTek PHYs
+
+
+EndOfSummary
+
+
+Blackbird Software v0.0.6
+=========================
+
+Summary:
+* DP - Added ICMD enable and disable
+* Added Link Manager - now supporting link cycling and power cycling
+* ICMDs to perform PHY_LINK up and down
+* ICMDs to perform COM_LINK up and down - COM_LINK is for DP/USB/1GbPHY with heartbeat
+
+Important:
+* Do not repteatedly hit the same enable or disable ICMD
+
+Major Changes:
+* Link Manager implemented
+
+Known Issues:
+* DP Doesn't enable after being disabled
+
+
+EndOfSummary
+
+
+Blackbird Software v0.0.5
+=========================
+
+Summary:
+* ULP State machine redesign and sequence redesign
+* DP Improved handling of module reset events
+* DP Improved host compatibility
+* Added ICMDs for enable and disable of USB2, USB3, and 1Gb Ethernet features
+
+Important:
+
+Major Changes:
+* DP Now 4k, no longer HD
+
+Known Issues:
+* ICMDs for enable/disable cannot be repeatedly issued (ie: do not repeat disable or enable)
+
+
+EndOfSummary
+
+
+Blackbird Software v0.0.5
+=========================
+
+Summary:
+* ICMDs to enable/disable USB2, USB3, 1Gb Ethernet
+* ULP modified for currently proper sequencing of USB2 and USB3
+* Init modified for USB2 only or USB2 and USB3 or USB3 only, however all come up by default
+* SSC via IDT on REX supported
+* Improved handling of DP module reset events (e.g. monitor power toggling)
+* Improved DP host compatibility
+
+Important:
+
+Major Changes:
+* DP is now 4k, not HD
+
+Known Issues:
+* Same enable/disable ICMDs cannot be run multiple times, ie: do not disable twice
+* USB3 device-hub hotplugging and sometimes USB3 LEX-HOST hot plugging results in missing USB3
+* devices - - fix, try again or switch to USB2 LEX-HOST connection then back to USB3 - expected to
+* be fixed in future release
+
+
+
+EndOfSummary
+
+
+Blackbird Software v0.0.5
+=========================
+
+Summary:
+// DP
+* Improved handling of DP module reset events (e.g. monitor power toggling)
+* Improved host compatibility
+// ULP
+* Redesigned state machines and expanded states and events
+* Sequential control over USB2 and USB3 bringup, giving USB3 priority
+* Added ICMDs to bring up and take down USB2, USB3, 1G Ethernet channels
+* Added ICMD to change Aquantia rate from 10G to 5G and back, however this does restart link
+* training and should require bring down of each client (USB2, USB3, etc..) via disabling ICMDs or
+* power off the monitor
+* Ideally, Aquantia has 5+ seconds of link training, this is the optimum time to change the rate
+* from 10G to 5G, note that Aquantia always comes up in 10G mode from a power cycle/reset
+
+Important:
+* All devices come up powered, as a debug means one can disable features (e.g. USB2,3 etc..)
+
+Major Changes:
+* Redesign of ULP
+* Push from HD to 4K for DP
+
+Known Issues:
+* ICMDs for enable/disable of features, see TOPLEVEL in Hobbes, are not re-entrant - do not run
+* multiple times, you will crash the system
+* USB3 does not fully support device, not hub, hot-plugging - simply connect to USB2 host port then
+* back to USB3 host port should USB3 devices not show up as USB3
+* There are no ICMDs for DP, turn off or on monitor to enable/disable DP module
+
+
+EndOfSummary
+
+
+Blackbird Software v0.0.4
+=========================
+
+Summary: 
+    * Updated to latest FPGA
+    * Added BB-GE Communication via UART
+    * GE UART no longer directed, under normal operation, out to motherboard
+    * GE/BB share USB port on motherboard
+Important: 
+    * This release supports A7 platforms only, K7 is not supported at this time.
+    * This release only supports USB2, USB3 is not supported at this time.
+    * Hobbes v4_1 is required
+Major Changes: 
+    * BB-GE communication is packetized
+    * Updated Hobbes, V4_1 is required
+    * Single Icron file, firmware for BB, but ICMDS/ILOGS for BB and GE creating using script
+    * --> ge_bb_icron.sh <path to bb icron file> <path to ge_asic_bb_companion_debug icron file>
+    * Callback module created for tasks
+    * Event module created
+Known Issues: 
+    * USB3 does not come up reliably when USB2 devices are connected
+    * USB3 does not recover link cycling
+    * --> Hence no USB3 support in this release
+
+
+EndOfSummary
+
+
+Blackbird Software v0.0.3
+=========================
+
+Summary:
+This is the first BBSW release with working DP @ 1080p60, USB3, and USB2.
+It is by no means production-ready, but is suitable for development work
+and very basic controlled demos.
+
+Important:
+This software release targets the BLACKBIRD_20160413T162643 FPGA release.
+Boards that are to be flashed with this software release must have
+the matching FPGA release already flashed on them.
+
+Major Changes:
+* Merged Inrevium branch for DP159 and DP130 drivers (Retimer and Redriver chips) in i2cd
+* Added ATMEL encryption chip support
+* Added RXAUI driver
+* Updated Hobbes - extending functionality
+* Revised ROM and FlashWriter to read destination Flash address from FPGA Register
+* Updated ROM for both Artix and KC705 support (ROM V3)
+* Separated BB_TOP and BB_CORE into own submodules and updated other modules to call those
+* Introduced support for IDT clock, Cypress hub and Cypress hub
+* Added EDID snooping functionality and DP calculations for TU configuration
+* Separated the AUX component into AUX and DP components
+* Integrated the DP159 and DP130 retimer/redriver into the DP and AUX components
+
+Known Issues:
+* Monitor and host compatibility is very limited. This will be fixed in the coming releases.
+
+EndOfSummary
+
+
+Blackbird Software v0.0.2
+=========================
+
+Summary:
+This is the first BBSW release with working DP @ 1080p60, USB3, and USB2.
+It is by no means production-ready, but is suitable for development work
+and very basic controlled demos.
+
+Important:
+This software release targets the BLACKBIRD_20160127T133212 FPGA release.
+Boards that are to be flashed with this software release must have
+the matching FPGA release already flashed on them.
+
+Major Changes:
+Pretty much everything has changed since v0.0.1.
+
+Known Issues:
+Too many to list! Most importantly, DP monitor and host compatibility
+is currently extremely limited. This will be fixed in the coming releases.
+
+EndOfSummary
+
+
+Blackbird Software v0.0.1
+=========================
+
+Summary:
+This release supports GE CORE connection between Lex and Rex
+
+Target FPGA: fpga_build_2013_04_18_v00_00_01
+
+Important:
+* GE will not start on its own.  An iCommand startGE from TopLevel will do the startup
+
+Major Changes:
+* First Release
+
+Known Issues:
+* Sometimes GE CORE MLP can't acquire a link
+
+
+EndOfSummary
+

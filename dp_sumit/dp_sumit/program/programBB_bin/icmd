@@ -1,0 +1,93 @@
+component:COMMAND_COMPONENT
+F:CMD_programGE H:"Program GE - for testing" A:void
+component:GE_PROGRAM_COMPONENT
+F:GE_PROGRAM_geEnterReset H:"GE Enter Reset" A:void
+F:GE_PROGRAM_geEnterBootloaderMode H:"GE Enter Bootloader Mode" A:void
+component:I2CD_COMPONENT
+F:I2CD_icmdsGpioExpClearPin H:"I2C GPIO Expander clear pin" A:uint8_t
+F:I2CD_icmdsGpioExpSetPin H:"I2C GPIO Expander set pin" A:uint8_t
+F:I2CD_icmdsGpioExpReadPin H:"I2C GPIO Expander read pin" A:uint8_t
+F:I2CD_icmdsGpioExpTest H:"Enable I2C GPIO LED pattern to run" A:uint32_t
+F:I2CD_dp130GeneralRead H:"Read DP130 Register" A:uint8_t
+component:LED_COMPONENT
+F:ledOnOff H:"id: SYS=0 LINK=2 USB2=4 USB3=5 VIDEO=6, On=1 Off=0 " A:uint8_t, bool
+F:ledSetMode H:"LS_USER=0, LS_TEMP_FAULT=1, LS_DOWNLOAD=2, LS_VERI_FAULT=3, LS_TEMP_WARN_FPGA=4, LS_TEMP_WARN_AQUANTIA=5, LS_BOOTING=6, LS_OPERATION=7" A:uint8_t, bool
+component:GPIO_COMPONENT
+component:EEPROM_COMPONENT
+F:EEPROM_icmdReadPage H:"Reads the specified page. Args: Page to read, display as words as boolean" A:uint8_t, uint8_t
+F:EEPROM_icmdWritePage H:"Writes the specified page. Args: page to write, msw0, lsw0, msw1, lsw1" A:uint8_t, uint32_t, uint32_t, uint32_t, uint32_t
+component:I2C_COMPONENT
+F:i2cStatus H:"Check the I2C state of where it is in processing ASync operations" A:void
+F:i2cWakeIcmd H:"Wake the i2c bus,    arg0(device Addr), arg1(speed - 0:Slow 100khz, 1:Fast 400kHz, 2:Fast plus 1Mhz),    arg2(port - 8:core, 9:Motherboard, 0~7:Ti Switch)" A:uint8_t, uint8_t, uint8_t
+F:i2cReadIcmd H:"Read from i2c,    arg0(device Addr), arg1(speed 0:Slow 100khz, 1:Fast 400kHz, 2:Fast plus 1Mhz),    arg2(port - 8:core, 9:Motherboard, 0~7:Ti Switch), arg3(number of bytes to read)" A:uint8_t, uint8_t, uint8_t, uint8_t
+F:i2cWriteIcmd H:"Write to i2c Max 8 bytes,    arg0(device Addr), arg1(speed 0:Slow 100khz, 1:Fast 400kHz, 2:Fast plus 1Mhz),    arg2(port - 8:core, 9:Motherboard, 0~7:Ti Switch), arg3(data to write 4bytes)    arg4(data to write 4bytes), arg5(number of bytes to write)" A:uint8_t, uint8_t, uint8_t, uint32_t, uint32_t, uint8_t
+F:i2cWriteReadIcmd H:"Write then read i2c.  SMBus read,    arg0(device Addr), arg1(speed 0:Slow 100khz, 1:Fast 400kHz, 2:Fast plus 1Mhz),    arg2(port - 8:core, 9:Motherboard, 0~7:Ti Switch), arg3(data to write 4bytes),    arg4(number of bytes to write), arg5(number of bytes to read)" A:uint8_t, uint8_t, uint8_t, uint32_t, uint8_t, uint8_t
+F:i2cWriteReadBlockIcmd H:"Write then read i2c. SMBus read block,    arg0(device Addr), arg1(speed 0:Slow 100khz, 1:Fast 400kHz, 2:Fast plus 1Mhz),    arg2(port - 8:core, 9:Motherboard, 0~7:Ti Switch), arg3(data to write 4bytes)    arg4(number of bytes to write)" A:uint8_t, uint8_t, uint8_t, uint32_t, uint8_t
+component:MDIO_COMPONENT
+F:icmdMdioWrite H:"Write to MDIO: 1st arg device, 2nd arg address, 3rd arg data, 4th arg mux port" A:uint8_t, uint8_t, uint16_t, uint8_t
+F:icmdMdioRead H:"Read from MDIO: 1st arg device, 2nd arg address, 3rd arg mux port" A:uint8_t, uint8_t, uint8_t
+F:mdioStatus H:"Check the MDIO state of where it is in processing ASync operations" A:void
+F:icmdMdioIndirectWrite H:"Indirect write to MDIO: 1st arg device, 2nd arg devtype, 3rd arg address, 4th arg data, 5th arg mux port" A:uint8_t, uint8_t, uint16_t, uint16_t, uint8_t
+F:icmdMdioIndirectRead H:"Indirect read from MDIO: 1st arg device, 2nd arg devtype, 3rd arg address, 4th arg mux port" A:uint8_t, uint8_t, uint16_t, uint8_t
+component:CONFIG_COMPONENT
+F:Configuration_ShowFeaturebits H:"Show Feature status" A:void
+component:FLASH_DATA_COMPONENT
+F:flashDataWriteByte H:"arg1 = address, arg2 = 1 byte value" A:uint32_t, uint8_t
+F:flashDataEraseFlashVars H:"Erases all the storage vars" A:void
+F:setMmuAddressOffsetIcmd H:"Set Read Address Offset" A:uint32_t
+F:flashDataEraseBlockIcmd H:"Erase block, arg0 = address" A:uint32_t
+F:flashProtectGoldenIcmd H:"Protect Golden Image Area" A:void
+F:FLASHRAW_Unprotect H:"Flash unprotected" A:void
+F:flashReadChipSectorProtectionIcmd H:"Display chip protection" A:void
+F:flashDeviceIcmd H:"Display chip ID" A:void
+F:flashEraseCurrentIcmd H:"Erase the Current Image" A:void
+F:flashFillCurrentIcmd H:"Fill the Current Image image area arg1 = val" A:uint8_t
+component:TIMING_COMPONENT
+F:showTimers H:"Show all timers" A:void
+F:startTimer H:"Start a timer" A:uint32_t
+F:stopTimer H:"Stop a timer" A:uint32_t
+F:changeTimeout H:"Change a timer timeout value.  Args: timer, newTimeoutValue" A:uint32_t, uint32_t
+component:STATS_MON_COMPONENT
+F:STATSMON_PrintStatsCmd H:"Print all non zero stats" A:void
+F:STATSMON_ClearAllStatsCmd H:"Clear all stats" A:void
+component:MAIN_LOOP_COMPONENT
+F:ResetStats H:"" A:void
+component:ICMD_COMPONENT
+F:readMemory H:"Read any memory address. Argument: full 32 bit address" A:uint32_t
+F:writeMemory H:"Write any memory address. Arguments: full 32 bit address, 32 bit value to write" A:uint32_t, uint32_t
+F:readModifyWriteMemory H:"Read-Modify-Write any memory address. Arguments: full 32 bit address, 32 bit set mask, 32 bit clear mask" A:uint32_t, uint32_t, uint32_t
+F:modifyBitfield H:"Write data from a given position within any memory address. Arguments: full 32 bit address, 8 bit position to start modifying, 8 bit width to modify, 32 bit value to write" A:uint32_t, uint8_t, uint8_t, uint32_t
+F:dumpMemory32 H:"Dump data from any number of sequential memory locations. Arguments: full 32 bit address, number of 32bit words to read" A:uint32_t, uint8_t
+F:callFunction H:"Call any function. Arguments: full 32 bit address, arguments for function(if not needed enter 0)" A:uint32_t, uint32_t, uint32_t, uint32_t, uint32_t, uint32_t
+F:readMemory16 H:"Read any memory address. Argument: full 16 bit address" A:uint32_t
+F:writeMemory16 H:"Write any memory address. Arguments: full 16 bit address, 16 bit value to write" A:uint32_t, uint16_t
+F:readModifyWriteMemory16 H:"Read-Modify-Write any memory address. Arguments: full 16 bit address, 16 bit set mask, 16 bit clear mask" A:uint32_t, uint16_t, uint16_t
+F:readMemory8 H:"Read any memory address. Argument: full 32 bit address" A:uint32_t
+F:writeMemory8 H:"Write any memory address. Arguments: full 32 bit address, 8 bit value to write" A:uint32_t, uint8_t
+component:TOP_COMPONENT
+F:bb_top_systemReset H:"Perform system restart" A:void
+F:bb_top_triggerFallbackFpgaIcmd H:"Trigger the fallback" A:void
+F:bb_top_ApplyGEReset H:"Reset GE, 1 to put GE in reset and 0 to put GE in run" A:bool
+F:bb_top_GtpResetIcmd H:"Resets the GTP tranceivers and take them out of reset after configuration" A:void
+F:bb_top_ConfigureDpTransceiverLexIcmd H:"Configure DP transreceivers on LEX" A:void
+F:bb_top_IcmddpSetTxDiffCtrl H:"Sets a value for txdiffctrl, Arg 2 = 1 to presist Arg 1, 0 to keep Arg 1 only for one link training" A:uint8_t, bool
+F:bb_top_IcmddpSetTxPostCursor H:"Sets a value for txpostcursor, Arg 2 = 1 to presist Arg 1, 0 to keep Arg 1 only for one link training" A:uint8_t, bool
+F:bb_top_switchFpgaImage H:"Change the running image. NOTE does not set the fallback bit" A:void
+F:bb_top_CalcFpgaImageCrc H:"Calculate the FPGA 64bit CRC" A:void
+F:bb_top_CalcTargetImageCrc H:"Calculate the Target image CRC" A:void
+F:bb_top_writeUserReg H:"Write the FPGA user register" A:uint32_t
+F:bb_top_readUserReg H:"Read the FPGA user register" A:void
+F:bb_top_coreTypeIcmd H:"This icmd states if the core type is -2 or -3" A:void
+component:UTIL_COMPONENT
+component:ILOG_COMPONENT
+F:ilog_SetLevel H:"Set the ilog logging level of any component: 1st arg level, 2nd arg component" A:uint8_t, component_t
+F:ilog_icmdGetLevel H:"Get the ilog logging level of any component" A:component_t
+F:ilog_setBlockingMode H:"Put ilog into a blocking logging mode" A:void
+F:ilog_clearBlockingMode H:"Put ilog into normal logging mode" A:void
+F:testStackOverFlow H:"Test the assert function by creating a stack overflow (Creates a SPARC register window overflow)" A:void
+F:assertStatus H:"Check the status of the assert module" A:void
+component:UART_COMPONENT
+F:UART_ShowStats H:"Show Uart stats" A:void
+F:UART_BBChangeBaudRate H:"Change Baud Rate" A:uint32_t
+component:CORE_COMPONENT
+F:BBCORE_printHWModuleVersion H:"Show FPAGE modules' version" A:void

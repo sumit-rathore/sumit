@@ -1,0 +1,55 @@
+Blackbird ROM v3.0
+--------------------
+
+Released 2016-04-12
+
+ROM has been upgraded to support KC705 and Artix platforms
+
+Highlights:
+* Changed boot select for program, IRAM, Flash, and I2C Slave
+* Changed UART and LEON timers to refer to bb_core's cpu frequency function
+* Added bb_top and bb_core functionality to improve flexibility
+* Flash address to boot from is function call reading into FPGA
+
+
+* commit 223784c13a0905ed2e91887eeb5dadc123bf4d32
+| Author: Robert Chan Russell <robert.chanrussell@icron.com>
+| Date:   Tue Apr 12 15:16:52 2016 -0700
+| 
+|     Updated for new RTL snapshot
+|  
+* commit ec4e1b13e73e7174b640de278ea8c7d014b8b7d1
+| Author: Robert Chan Russell <robert.chanrussell@icron.com>
+| Date:   Tue Apr 12 14:42:13 2016 -0700
+| 
+|     Updated to read address to boot from
+|  
+* commit 3851a628770e996644d3c532fc811f9ae25f3f65
+| Author: Robert Chan Russell <robert.chanrussell@icron.com>
+| Date:   Tue Apr 12 10:57:21 2016 -0700
+| 
+|     Updated datatypes to reflect changes in FW
+|  
+* commit ad29a648e0b48c6c9224a903f41b024825f10659
+| Author: Robert Chan Russell <robert.chanrussell@icron.com>
+| Date:   Mon Apr 11 11:48:14 2016 -0700
+| 
+|     Major revisions, updated modules, updated ROM to prepare for k7 and a7 boards
+|  
+* commit e4a71f88733ed2700ad4cb2fa38b95ba4a824f51
+| Author: Robert Chan Russell <robert.chanrussell@icron.com>
+| Date:   Wed Mar 30 07:44:17 2016 -0700
+| 
+|     Changed CPU Frequency to 75
+|  
+* commit f51b90f8cdd18fc1163d43c9beb19ad315b7dd81
+| Author: Robert Chan Russell <robert.chanrussell@icron.com>
+| Date:   Wed Mar 2 16:28:59 2016 -0800
+| 
+|     Updated to latest code and pointing to recent sandbox of dd
+|  
+* commit 18def6180efc0507ddb16a5c788c24f990608067
+  Author: Robert Chan Russell <robert.chanrussell@icron.com>
+  Date:   Thu Sep 24 10:07:46 2015 -0700
+  
+      Moved RTL_DIR to project.mak to improve portability of reg_def

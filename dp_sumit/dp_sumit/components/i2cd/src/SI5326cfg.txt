@@ -1,0 +1,174 @@
+#HEADER
+# Date: October-09-15 11:36 AM
+# File Version: 3
+# Software Name: Precision Clock EVB Software
+# Software Version: 5.1
+# Software Date: July 23, 2014
+# Part number: Si5326
+#END_HEADER
+#PROFILE
+# Name: Si5326
+#INPUT
+# Name: CKIN
+# Channel: 1
+# Frequency (MHz): 19.440000
+# N3: 79
+# Maximum (MHz): 157.500000
+# Minimum (MHz): 134.722222
+#END_INPUT
+#INPUT
+# Name: CKIN
+# Channel: 2
+# Frequency (MHz): 19.440000
+# N3: 79
+# CKIN2 to CKIN1 Ratio: 1 / 1
+# Maximum (MHz): 157.500000
+# Minimum (MHz): 134.722222
+#END_INPUT
+#PLL
+# Name: PLL
+# Frequency (MHz): 699.840000
+# f3 (MHz): 0.246076
+# N1_HS: 6
+# N2_HS: 9
+# N2_LS: 316
+# Phase Offset Resolution (ns): 8.57339
+# BWSEL_REG Option: Frequency (Hz)
+# 10:  336
+#  9:  673
+#  8: 1348
+#  7: 2706
+#  6: 5450
+#  5: 11060
+#  4: 22794
+#END_PLL
+#OUTPUT
+# Name: CKOUT
+# Channel: 1
+# Frequency (MHz): 19.440000
+# NC1_LS: 6
+# CKOUT1 to CKIN1 Ratio: 1 / 1
+# Maximum (MHz): 157.500000
+# Minimum (MHz): 134.722222
+#END_OUTPUT
+#OUTPUT
+# Name: CKOUT
+# Channel: 2
+# Frequency (MHz): 19.440000
+# NC_LS: 6
+# CKOUT2 to CKOUT1 Ratio: 1 / 1
+# Maximum (MHz): 157.500000
+# Minimum (MHz): 134.722222
+#END_OUTPUT
+#CONTROL_FIELD
+# Register-based Controls
+#        FREE_RUN_EN: 0x0
+#    CKOUT_ALWAYS_ON: 0x0
+#         BYPASS_REG: 0x0
+#          CK_PRIOR2: 0x1
+#          CK_PRIOR1: 0x0
+#          CKSEL_REG: 0x0
+#              DHOLD: 0x0
+#            SQ_ICAL: 0x1
+#          BWSEL_REG: 0xA
+#        AUTOSEL_REG: 0x2
+#           HIST_DEL: 0x12
+#              ICMOS: 0x3
+#         SFOUT2_REG: 0x5
+#         SFOUT1_REG: 0x5
+#          FOSREFSEL: 0x2
+#             HLOG_2: 0x0
+#             HLOG_1: 0x0
+#           HIST_AVG: 0x18
+#          DSBL2_REG: 0x1
+#          DSBL1_REG: 0x0
+#             PD_CK2: 0x1
+#             PD_CK1: 0x0
+#               CLAT: 0x0
+#               FLAT: 0x0
+#         FLAT_VALID: 0x0
+#             FOS_EN: 0x0
+#            FOS_THR: 0x1
+#            VALTIME: 0x1
+#              LOCKT: 0x1
+#        CK2_BAD_PIN: 0x1
+#        CK1_BAD_PIN: 0x1
+#            LOL_PIN: 0x1
+#            INT_PIN: 0x1
+#         INCDEC_PIN: 0x1
+#       CK1_ACTV_PIN: 0x1
+#          CKSEL_PIN: 0x1
+#        CK_ACTV_POL: 0x1
+#         CK_BAD_POL: 0x1
+#            LOL_POL: 0x1
+#            INT_POL: 0x1
+#           LOS2_MSK: 0x1
+#           LOS1_MSK: 0x0
+#           LOSX_MSK: 0x0
+#           FOS2_MSK: 0x1
+#           FOS1_MSK: 0x0
+#            LOL_MSK: 0x1
+#              N1_HS: 0x2
+#             NC1_LS: 0x5
+#             NC2_LS: 0x5
+#              N2_LS: 0x13B
+#              N2_HS: 0x5
+#                N31: 0x4E
+#                N32: 0x4E
+#         CLKIN2RATE: 0x0
+#         CLKIN1RATE: 0x3
+#            LOS1_EN: 0x3
+#            LOS2_EN: 0x0
+#            FOS1_EN: 0x1
+#            FOS2_EN: 0x0
+#   INDEPENDENTSKEW1: 0x0
+#   INDEPENDENTSKEW2: 0x0
+#END_CONTROL_FIELD
+#REGISTER_MAP
+  0, 14h
+  1, E4h
+  2, A2h
+  3, 15h
+  4, 92h
+  5, EDh
+  6, 2Dh
+  7, 2Ah
+  8, 00h
+  9, C0h
+ 10, 08h
+ 11, 42h
+ 16, 00h
+ 17, 00h
+ 18, 00h
+ 19, 29h
+ 20, 3Fh
+ 21, FFh
+ 22, DFh
+ 23, 1Ch
+ 24, 3Dh
+ 25, 40h
+ 31, 00h
+ 32, 00h
+ 33, 05h
+ 34, 00h
+ 35, 00h
+ 36, 05h
+ 40, A0h
+ 41, 01h
+ 42, 3Bh
+ 43, 00h
+ 44, 00h
+ 45, 4Eh
+ 46, 00h
+ 47, 00h
+ 48, 4Eh
+ 55, 03h
+131, 18h
+132, 00h
+138, 0Dh
+139, DDh
+142, 00h
+143, 00h
+136, 40h
+#END_REGISTER_MAP
+#END_PROFILE

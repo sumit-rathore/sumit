@@ -1,0 +1,7 @@
+component:TEST_COMPONENT
+F:TEST_SystemDiagnosticIcmd H:"Sets system diagnostic flash variable and performs diagnostic" A:void
+F:TEST_ProtectFlashIcmd H:"Protects the production fpga and micro firmware" A:void
+F:TEST_ReadFlashProtectIcmd H:"Reads the protected and unprotected area of the flash" A:void
+F:TEST_SetTestStatusFlashVariableIcmd H:"Arg0 : 0 (Clear Test Status in Flash), 1 (Sets Test Status in Flash)" A:uint8_t
+F:TEST_GetTestStatusFlashVariableIcmd H:"Reads Test Status bit from Flash" A:void
+F:TEST_GetFpgaOCStatusIcmd H:"Reads DP Over current status pin" A:void

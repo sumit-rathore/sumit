@@ -1,0 +1,19 @@
+version:4
+project:goldenears
+icomponent:icomponent
+ilog:ilog
+icmd:icmd
+icmdresp:icmdresp
+spectareg_xml: grg_comp.xml ulmii_comp.xml clm_comp.xml xlr_comp.xml xrr_comp.xml xcsr_comp.xml
+spectareg_grg_comp_offset: 0x20000000
+spectareg_ulmii_comp_offset: 0x20000100
+spectareg_clm_comp_offset: 0x20000200
+spectareg_xrr_comp_offset: 0x20000300
+spectareg_xlr_comp_offset: 0x20000400
+spectareg_xcsr_comp_offset: 0x20000500
+flash_writer:flash_writer.bin
+main_firmware:ge_asic_bb_companion.bin
+hobbes_default_icmd_button1: Reset: iCmds['GRG_COMPONENT']['GRG_ResetChip']()
+hobbes_default_icmd_button2: SwVersion: iCmds['TOPLEVEL_COMPONENT']['PrintSwVersion']()
+hobbes_default_icmd_button3: Topology: iCmds['TOPOLOGY_COMPONENT']['_DTT_showAllDeviceXSST']()
+hobbes_default_icmd_button4: DumpAllFlashVars: iCmds['STORAGE_COMPONENT']['STORAGE_icmdDumpAllVars']()

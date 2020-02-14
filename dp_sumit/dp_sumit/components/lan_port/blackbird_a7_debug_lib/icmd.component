@@ -1,0 +1,3 @@
+component:LAN_PORT_COMPONENT
+F:LANPORT_enable H:"Enable  LAN Port" A:void
+F:LANPORT_disable H:"Disable LAN Port" A:void

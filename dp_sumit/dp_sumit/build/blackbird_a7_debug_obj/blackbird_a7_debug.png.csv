@@ -1,0 +1,48 @@
+ulp	: bbge_comm cpu_comm mca i2cd i2c stats_mon configuration event callback uart core led util top gpio icmd ilog timing leon register_definitions ibase
+rs232	: configuration cpu_comm event mca gpio icmd ilog top core leon ibase register_definitions
+rom	: ilog ibase
+command	: rs232 ge_program flash_data sfi linkmgr timing callback uart crc top configuration core i2c i2cd gpio register_definitions icmd ilog leon ibase
+ge_program	: configuration command crc linkmgr bbge_comm led uart cpu_comm top core util gpio icmd ilog timing leon register_definitions ibase
+lan_port	: cpu_comm mca mdiod mdio event configuration callback uart util top core gpio icmd ilog timing leon register_definitions ibase
+dp	: dp_stream dp_aux cpu_comm mca i2cd i2c test configuration callback event util top core uart idt_clk gpio icmd ilog timing leon register_definitions ibase
+dp_stream	: top gpio test timing icmd ilog uart core leon configuration register_definitions ibase
+dp_aux	: cpu_comm callback top gpio dp timing icmd ilog uart leon register_definitions ibase configuration
+linkmgr	: stats_mon ulp event aquantia xaui mdiod fiber5g led uart cpu_comm mca mac pcs_pma top core util gpio icmd ilog configuration callback timing random i2cd i2c leon register_definitions ibase
+xaui	: configuration stats_mon util top gpio leon register_definitions icmd ilog ibase
+idt_clk	: i2c top gpio core icmd ilog register_definitions ibase leon configuration
+fiber5g	: stats_mon configuration i2c gpio top core timing icmd ilog register_definitions ibase leon
+i2cd	: stats_mon ulp configuration uart icmd util callback top timing core ilog i2c gpio register_definitions ibase leon
+led	: event uart gpio timing core icmd ilog ibase register_definitions
+bbge_comm	: configuration linkmgr command event ilog timing  ge_program led configuration uart top gpio register_definitions core leon ibase
+gpio	: uart i2cd i2c icmd ilog timing top leon  register_definitions ibase
+eeprom	: i2c timing icmd ilog leon ibase
+pcs_pma	: mdio top gpio register_definitions ibase
+atmel_crypto	: random i2c timing callback icmd uart ilog leon sha2 crc register_definitions ibase
+upp	: ulp cpu_comm stats_mon configuration event callback uart util core top gpio icmd ilog timing leon register_definitions ibase
+i2c_slave	: callback i2c uart icmd ilog timing leon top util gpio core register_definitions ibase
+mdiod	: stats_mon event uart mdio icmd ilog timing top gpio core util configuration leon register_definitions ibase
+aquantia	: stats_mon xaui mdio configuration top led gpio core icmd ilog uart timing register_definitions ibase
+mdio	: callback icmd ilog timing top gpio core leon register_definitions ibase
+xmodem	: timing ilog leon  uart ibase
+mca	: stats_mon uart top gpio core icmd ilog timing leon register_definitions ibase
+cpu_comm	: event timing ilog icmd top leon register_definitions uart ibase
+test	: dp flash_data configuration timing icmd ilog ibase leon  gpio
+configuration	: flash_data i2c event callback core uart timing icmd ilog leon register_definitions ibase
+flash_data	:  core top gpio util sfi configuration uart timing icmd ilog register_definitions leon ibase
+random	: atmel_crypto configuration xadc timing icmd ilog sha2 ibase
+xadc	: stats_mon configuration top led icmd ilog gpio core ibase register_definitions
+stats_mon	: callback icmd ilog timing leon register_definitions ibase
+callback	: event timing ilog leon ibase
+event	: callback ilog ibase
+main_loop	: timing callback uart event leon core icmd ilog ibase register_definitions
+mac	: configuration stats_mon timing top core gpio ilog leon register_definitions ibase
+top	: crc timing callback event cpu_comm icmd ilog ibase mca led util uart gpio leon core register_definitions
+util	: icmd ilog leon ibase uart
+sfi	: top gpio core uart leon register_definitions ibase
+crc	: uart ibase
+bbge_comm	: configuration linkmgr command event ilog timing  ge_program led configuration uart top gpio register_definitions core leon ibase
+uart	: callback led top gpio timing leon util icmd ilog core register_definitions ibase
+core	: icmd ilog ibase leon register_definitions
+sha2	: ibase
+register_definitions	: 
+crc	: uart ibase

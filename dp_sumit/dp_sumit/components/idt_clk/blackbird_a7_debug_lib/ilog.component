@@ -1,0 +1,11 @@
+component:IDT_CLK_COMPONENT
+L:IDT_CLK_CFG_RETRY S:IDT clk NAKed at index = %d, retryCount = %d\n
+L:IDT_CLK_CFG_6914_RETRY S:IDT6914 clk NAKed retryCount = %d\n
+L:IDT_CLK_CONFIGURE_REGISTERS S:IDT clk is being configured at index = %d, regOffset = 0x%x, value = 0x%x\n
+L:IDT_CLK_CFG_DONE S:IDT clk configuration done, type=%d\n
+L:IDT_CLK_CFG_FAIL S:IDT clk configuration fail, result=%d\n
+L:IDT_CLK_UNLOCKED S:IDT clk is not locked\n
+L:IDT_CLK_GENERAL_READWRITE S:IDT General read and write for register (0x%x) result: 0x%x\n
+L:IDT_CLK_INVALID_TYPE S:IDT6914 Invalid Type: %d\n
+L:IDT_CLK_SSC_MODE S:Rex SSC Mode = %d\n
+L:IDT_CLK_DP_SSC_MODE S:Rex DP SSC Mode = %d\n

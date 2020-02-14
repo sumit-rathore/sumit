@@ -1,0 +1,12 @@
+This a very basic test to ensure that the XModem library works in interrupt mode
+
+It does the following
+
+1) starts up & prints out an XModem message, letting the user know it has started
+2) waits 15 seconds.  This is in case Tigger doesn't support XModem, or to allow
+another uart program to be tested, there will be enough time to disconnect Tigger
+from the uart and connect another program
+3) Does an XModem transfer.  Please send a text file for readability
+4) waits 15 seconds
+5) prints back whatever was received
+

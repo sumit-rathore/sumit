@@ -1,0 +1,10 @@
+C:ATMEL_CRYPTO_COMPONENT
+R:sendAtmelCmd C:atmel_icmdSend L:READ_BYTE A:0
+R:sendAtmelCmdWithData C:atmel_icmdWithDataWordSend L:READ_BYTE A:0
+R:readConfigWord C:atmel_readConfigWordIcmd L:ATMEL_READ_CONFIG_WORD_ICMD_COMPLETE A:0
+R:writeConfigWord C:atmel_writeConfigWordIcmd L:ATMEL_WRITE_CONFIG_WORD_ICMD_COMPLETE A:0
+R:lockConfigZone C:atmel_lockConfigZoneIcmd L:ATMEL_LOCK_ZONE_ICMD_COMPLETE A:0
+R:setICmdWriteDataBuffer C:atmel_setICmdWriteDataBuffer L:ATMEL_WRITE_DATA_BUFFER_DONE A:0
+R:writeDataSlotFromBuffer C:atmel_writeDataSlotFromBuffer L:ATMEL_WRITE_DATA_SLOT_OTP_BLOCK_ICMD_COMPLETE A:0
+R:writeOtpBlockFromBuffer C:atmel_writeOtpBlockFromBuffer L:ATMEL_WRITE_DATA_SLOT_OTP_BLOCK_ICMD_COMPLETE A:0
+R:lockDataAndOtpZonesIcmd C:atmel_lockDataAndOtpZonesIcmd L:ATMEL_LOCK_ZONE_ICMD_COMPLETE A:0

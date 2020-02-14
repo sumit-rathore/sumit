@@ -1,0 +1,8 @@
+component:LINKMGR_COMPONENT
+F:LINKMGR_comLinkEnableIcmd H:"COM Link Disable (0) or Enable (>0)" A:uint8_t
+F:LINKMGR_comLinkTxPacketIcmd H:"COM Link test packet send" A:void
+F:LINKMGR_phyEnableIcmd H:"PHY link Disable (0) or Enable (>0)" A:uint8_t
+F:LINKMGR_phyToggleIcmd H:"PHY link toggle" A:void
+F:LinkMgrSetLinkTo5GIcmd H:"Set link to 5G" A:void
+F:LinkMgrSetLinkTo10GIcmd H:"Set link to 10G" A:void
+F:LINKMGR_phyLinkDownErrorDetected H:"Disable MAC/MCA and Restart Aquantia/Fiber link" A:void

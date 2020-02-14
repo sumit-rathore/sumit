@@ -1,0 +1,4 @@
+component:RANDOM_COMPONENT
+F:RANDOM_AddEntropy H:"Add Entropy to random number generator" A:uint8
+F:getQuickPseudoRandom H:"Get a quick pseudo random number" A:void
+F:RANDOM_QuickPseudoRandomNewSeed H:"Write a new seed into the quick pseudo random # generator" A:uint32

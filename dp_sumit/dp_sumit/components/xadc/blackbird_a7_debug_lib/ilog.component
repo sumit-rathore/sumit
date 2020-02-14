@@ -1,0 +1,10 @@
+component:XADC_COMPONENT
+L:XADC_READ_TEMP S:XADC Read Temp %d.%.2d C\n
+L:XADC_SET_TEMP_WARNING_2 S:FPGA warning temperature for -2 board set to %d C.\n
+L:XADC_SET_TEMP_WARNING_3 S:FPGA warning temperature for -3 board set to %d C.\n
+L:XADC_SET_TEMP_SHUTDOWN_2 S:FPGA shutdown temperature for -2 board set to %d C.\n
+L:XADC_SET_TEMP_SHUTDOWN_3 S:FPGA shutdown temperature for -3 board set to %d C.\n
+L:XADC_FPGA_THRESHOLD S:FPGA temperature threshold: Warning %d C, Shutdown %d C.\n
+L:XADC_READ_VCC_INT S:XADC Read VCC INT %d.%.3d V\n
+L:XADC_READ_VCC_AUX S:XADC Read VCC AUX %d.%.3d V\n
+L:XADC_READ_VCC_BRAM S:XADC Read VCC BRAM %d.%.3d V\n

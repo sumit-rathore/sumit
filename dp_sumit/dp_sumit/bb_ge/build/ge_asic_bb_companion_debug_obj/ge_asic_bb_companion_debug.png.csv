@@ -1,0 +1,30 @@
+flash_writer	: crc grg xmodem flash_data leon ibase
+gebb_comm	: crc linkmgr clm lexulm rexulm xcsr grg icmd ilog timing leon   ibase
+xmodem	: timing ilog leon ibase
+linkmgr	: net vhub rexulm lexulm pll_xusb clm xcsr xlr flash_data storage grg ilog tasksch timing leon icmd ibase
+pll_xusb	: grg icmd ilog leon ibase flash_data storage atmel_crypto
+sys_ctrl_q	: lexulm descparser devmgr topology xcsr xlr ulm grg random ilog icmd leon ibase
+devmgr	: topology xcsr ulm ilog leon ibase
+descparser	: linkmgr clm flash_data storage topology xcsr grg icmd ilog leon ibase
+lexulm	: gebb_comm devmgr ilog icmd ibase topology xcsr grg ulm clm leon timing storage  xlr flash_data  
+vhub	: lexulm devmgr topology flash_data storage xcsr ulm timing ilog icmd leon ibase  xlr
+rexulm	: rexsch ulm xcsr clm grg storage tasksch ilog icmd timing leon ibase  xrr flash_data
+netcfg	: net linkmgr clm topology xcsr flash_data storage timing ilog icmd leon ibase grg
+net	: linkmgr clm xcsr flash_data storage tasksch random ilog icmd timing leon ibase grg
+topology	: xcsr flash_data storage xlr grg icmd ilog timing tasksch spectareg leon ibase
+rexsch	: flash_data storage xcsr xrr ulm ilog icmd leon ibase
+storage	: atmel_crypto eeprom grg tasksch timing flash_data icmd ilog leon crc ibase
+flash_data	:  grg timing icmd ilog leon ibase
+eeprom	: grg timing icmd ilog leon ibase
+atmel_crypto	: grg timing tasksch icmd ilog leon crc sha2 ibase
+kc705	:  grg tasksch icmd ilog timing leon ibase
+xcsr	: gebb_comm xlr grg flash_data storage icmd ilog spectareg timing leon ibase
+xlr	: icmd ilog spectareg timing leon ibase
+xrr	: icmd ilog spectareg timing leon ibase
+clm	: flash_data storage icmd grg xcsr ilog spectareg timing random leon ibase
+ulm	: grg icmd flash_data storage ilog random spectareg leon ibase
+grg	: tasksch icmd ilog spectareg timing leon ibase
+random	: flash_data storage timing icmd ilog ibase
+spectareg	: ibase leon
+crc	: ibase
+sha2	: ibase

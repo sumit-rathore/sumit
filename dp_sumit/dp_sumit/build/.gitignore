@@ -1,0 +1,4 @@
+*.o
+*.elf
+/components/ilog/inc/istatus.h
+__pycache__

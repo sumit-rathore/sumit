@@ -1,0 +1,8 @@
+component:ROM_COMPONENT
+L:ROM_PLATFORM_LEX S:Blackbird LEX, Platform ID: %d\n
+L:ROM_PLATFORM_REX S:Blackbird REX, Platform ID: %d\n
+L:ROM_FPGA_VERSION S:Version: %d.%d.%d\n
+L:ROM_FPGA_DATE S:Date: %d/%d/%d\n
+L:ROM_FPGA_TIME S:Time: %d:%d:%d\n
+L:ROM_VERSION S:Bootloader Version: %d.%d\n
+L:ROM_DBGXX S:ROMDBG 0x%x, 0x%x\n

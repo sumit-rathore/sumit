@@ -1,0 +1,8 @@
+This test Sends:
+1) A startup message announcing that it will print out a source string
+2) A string which it has stored at a particular source location, char by char
+3) A messge announcing that it has set each character in the string to 'a', and that new modified string will be printed
+4) The value stored at the source destination after memset has set each character to an 'a' (char by char)
+5) A test finished message
+
+

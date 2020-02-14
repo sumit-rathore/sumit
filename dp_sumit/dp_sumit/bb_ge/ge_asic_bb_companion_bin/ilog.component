@@ -1,0 +1,53 @@
+component:TOPLEVEL_COMPONENT
+L:SW_VERSION S:----> ICRON Technologies Extreme USB Goldenears Project - Software version v%d.%d.%d <----\n
+L:CHIP_REV S:Chip ID is Major 0x%x, Minor 0x%x, Debug 0x%x\n
+L:THIS_IS_LEX S:This is the Lex\n
+L:THIS_IS_REX S:This is the Rex\n
+L:USB_1_1_SPEED S:Running at USB 1.1 speed\n
+L:USB_2_0_SPEED S:Running at USB 2.0 speed\n
+L:KINTEX_PLATFORM S:This is a Kintex Platform\n
+L:SPARTAN_PLATFORM S:This is a Spartan Platform\n
+L:LINK_INIT_COMPLETE S:----> Link Initialization Complete <----\n
+L:APP_INIT_COMPLETE S:----> App Initialization Complete <----\n
+L:BUILD_DATE S:SW build was done on %04d/%02d/%02d\n
+L:BUILD_TIME S:SW build was done at %02d:%02d:%02d\n
+L:RECEIVED_SOMETHING_ON_CPU_RXQ S:Received control link sub type %d msg %d and data 0x%x on CPU RX Q\n
+L:UNEXPECTED_TRAP S:Unexpected trap occured, PC was 0x%x, nPC was 0x%x\n
+L:UNEXPECTED_TRAP_WITHOUT_WINDOWS S:Unexpected trap occured without spare windows, last i7 is 0x%x, previous was 0x%x, previous to that was 0x%x\n
+L:UNKNOWN_LINK_TYPE_MSG S:Received a link message of unknown type %d.  Message value: %d.\n
+L:GOT_MSG_FOR_LEXULM_OR_VHUB_ON_REX S:Got msg %d for Lexulm or VHub on the Rex\n
+L:GOT_MSG_FOR_REXULM_ON_LEX S:Got msg %d for Rexulm on the Lex\n
+L:CPU_RX_ERR S:CPU RX Q err %d at line %d\n
+L:UNEXPECTED_Q_OPERATION_STATE S:Unexpected queue operation state (%d)\n
+L:ENTERED_CPU_RX_ISR S:Entered the CPU RX ISR\n
+L:RUNNING_CPU_RX_TASK S:Running the CPU RX task in state %d\n
+L:MAC_FAILED S:MAC challenge failed\n
+L:MAC_PASSED S:MAC challenge passed\n
+L:MAC_HAS_INVALID_INDEX S:MAC has invalid index %d\n
+L:INVALID_NETWORK_MODE S:VHub without layer 2 networking is not a supported configuration\n
+L:DISABLING_SYS S:Disabling System\n
+L:UART_BOOT_IN_GE_CORE S:UART boot is not supported by GE core\n
+L:TOPLEVEL_DEVICE_IS_LEX S:This device is a LEX\n
+L:TOPLEVEL_DEVICE_IS_REX S:This device is a REX\n
+L:NO_CFG_VAR_EXISTS S:NO CONFIGURATION VARIABLE EXISTS, USING A DEFAULT SETTING\n
+L:UNKNOWN_PLATFORM S:Unknown platform %d\n
+L:SPARTAN_UON_VARIANT S:Spartan UoN Variant\n
+L:SPARTAN_CORE2300_VARIANT S:Spartan Core2300 Variant\n
+L:ASIC_PLATFORM S:GE ASIC platform\n
+L:UNKNOWN_VARIANT S:Unknown Variant %d\n
+L:I2C_FAILURE S:i2c failure at line %d\n
+L:PENDING_IRQ S:Pending Leon Interrupts: 0x%x\n
+L:ENABLED_IRQ S:Enabled Leon Interrupts: 0x%x\n
+L:DEBUG_BUILD S:This is a debug build\n
+L:UNSUPPORTED_VID S:Unsupported variant ID %d\n
+L:VARIANT_ID S:Variant ID is %d\n
+L:L2_ENABLED_BUT_NO_MAC_ADDR S:Layer 2 framing is enabled but no MAC address is stored! Falling back to direct-link mode.\n
+L:CYPRESS_HX3_PROGRAMMING_FAILURE S:Failed while programming the Cypress HX3 hub firmware.\n
+L:CYPRESS_HX3_PROGRAMMING_SUCCESS S:Cypress HX3 hub firmware successfully programmed.\n
+L:CYPRESS_HX3_NOT_FOUND S:Cypress HX3 hub not found.\n
+L:CYPRESS_HX3_RETRY S:Cypress HX3 NAKed while receiving firmware at offset=%d.  Retry count=%d\n
+L:EEPROM_INSTALLED S:EEPROM is installed\n
+L:EEPROM_NOT_INSTALLED S:EEPROM is not installed\n
+L:ILLEGAL_LINK_TYPE_WITH_2053 S:It is not valid to use link type %d with the ITC2053 ASIC.\n
+L:ECO1_FLAG_VALUE S:ECO flag is %d (1 = ECO detected)\n
+L:DEBUG_ASSERT S:CAUSE AN ASSERT IN GE FOR DEBUGGING\n %x, %x, %x

@@ -1,0 +1,2 @@
+component:CONFIG_COMPONENT
+F:Configuration_ShowFeaturebits H:"Show Feature status" A:void

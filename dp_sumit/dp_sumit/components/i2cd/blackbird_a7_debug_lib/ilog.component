@@ -1,0 +1,47 @@
+component:I2CD_COMPONENT
+L:DE_JITTER_WRITE_FAILED S:Setting De-jitter chip failed at line: %d\n
+L:DEJITTER_CHIP_CONFIGURED S:De-jitter chip was configured to 1 ppm\n
+L:I2C_WRITE_FAILED S:I2C Write failed\n
+L:READ_WITH_NULL_CALLBACK S:Tried to read I2C GPIO expander pin, but specified a NULL callback\n
+L:DEJITTER_CHIP_FAILED_CALIBRATION S:Polled the dejitter chip %d times without achieving calibration.\n
+L:DEJITTER_CHIP_IRQ_LOS2 S:CLKIN 2 Loss Of Signal Int Alarm Flag set.\n
+L:DEJITTER_CHIP_IRQ_LOS1 S:CLKIN 1 Loss Of Signal Int Alarm Flag set.\n
+L:DEJITTER_CHIP_IRQ_LOSX S:External Reference Loss Of Signal Int Alarm Flag set.\n
+L:DEJITTER_CHIP_IRQ_FOS2 S:CLKIN 2 Frequency Offset Int Alarm Flag set.\n
+L:DEJITTER_CHIP_IRQ_FOS1 S:CLKIN 1 Frequency Offset Int Alarm Flag set.\n
+L:DEJITTER_CHIP_IRQ_LOL S:PLL Loss Of Lock Int Alarm Flag set.\n
+L:DEJITTER_CHIP_FAILED_IRQ_WRITE S:Failure writing to clear all Int Alarm IRQ Flags.\n
+L:DEJITTER_CHIP_FAILED_IRQ_READ S:Failure reading IRQ flag registers\n
+L:I2CD_SET_GPIO_PIN S:Setting I2C Expander GPIO pin %d\n
+L:I2CD_SET_GPIO_PIN_DONE S:Setting I2C Expander GPIO pin completed\n
+L:I2CD_CLEAR_GPIO_PIN S:Clearing I2C Expander GPIO pin %d\n
+L:I2CD_CLEAR_GPIO_PIN_DONE S:Clearing I2C Expander GPIO pin completed\n
+L:I2CD_READ_GPIO_PIN S:Reading I2C Expander GPIO pin %d\n
+L:I2CD_READ_GPIO_PIN_SET S:Read I2C Expander GPIO pin set\n
+L:I2CD_READ_GPIO_PIN_CLEARED S:Read I2C Expander GPIO pin cleared\n
+L:DP159_TRANS_IN_PROGRESS S:DP Retimer chip transaction already in progress state %d, line %d!\n
+L:DP159_WRITE_FAILED S:DP Retimer chip write failed!\n
+L:DP159_READ_FAILED S:DP Retimer chip read failed!\n
+L:DP159_REINITIALIZE S:DP Retimer Re-initialize start\n
+L:DP159_CONFIG_FAIL S:DP Retimer config can't start.(L:%d) Current opState = %d\n
+L:DP159_CANCEL_CONFIG S:DP Retimer canceled config while configuring state %d, for new state is %d\n
+L:DP159_CR_CONFIG S:DP Retimer CR configuration phase %d\n
+L:DP159_CONFIGURATION S:DP Retimer configuration table: 0x%x, mode: %d, step: %d\n
+L:DP159_CONFIG_DATA S:DP Retimer configuration reg: 0x%x, data: 0x%x\n
+L:DP130_GENERAL_READ S:DP Redriver chip read value is 0x%x\n
+L:DP130_TRANS_IN_PROGRESS S:DP Redriver chip transaction already in progress, line %d!\n
+L:DP130_WRITE_FAILED S:DP Redriver chip write failed!\n
+L:DP130_READ_FAILED S:DP Redriver chip read failed!\n
+L:CYPRESS_HX3_RETRY S:Cypress HX3 failed writing firmware at offset=%d, retryCount=%d\n
+L:CYPRESS_UPGRADING_FIRMWARE S:Cypress downloading firmware, FW size = %d\n
+L:CYPRESS_FIRMWARE_UPGRADE_IN_PROGRESS S:Cypress firmware download already in progress\n
+L:CYPRESS_HUB_TIMER_STATE S:Cypress Hx3 Hub timer state = %d\n
+L:CYPRESS_HUB_NOT_FOUND S:Cypress Hx3 Hub not found\n
+L:CYPRESS_HUB_FAILED_PROGRAMMING S:Cypress Hx3 Hub programming failed\n
+L:CYPRESS_HUB_PROGRAMMING_SUCCESS S:Cypress Hx3 Hub programming succeeded!\n
+L:DP159_READ_RETRY S:DP Retimer chip read retried retryRdCount = %d\n
+L:DP159_WRITE_RETRY S:DP Retimer chip write retried retryWtCount = %d\n
+L:CYPRESS_HX3_PROGAMMING_STATUS S:Cypress HX3 USB3 hub programming status = %d\n
+L:DP130_DETECT_READ S:DP Redriver chip read byteCount 0x%x\n
+L:DP159_DETECT_READ S:DP Retimer chip read byteCount 0x%x\n
+L:DP159_RESET_RX S:Disable and enable Rx lane\n

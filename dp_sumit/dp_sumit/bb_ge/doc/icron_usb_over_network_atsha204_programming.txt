@@ -1,0 +1,105 @@
+Icron USB over Network ATSHA204 Programming Information
+=======================================================
+
+The following document describes how the Icron USB over Network device expects
+the Atmel ATSHA204 chip to be pre-programmed.
+
+
+GPG Encryption
+--------------
+
+An Icron secret is always sent by e-mail encrypted with GPG in passphrase
+(symmetric) mode.  The passphrase is only to be sent over the phone.  In the
+.txt unencrypted form, it contents are a byte array of the secret key.
+
+Files are encrypted by running the following:
+gpg --passphrase-file icron_uon_secret_key.passphrase_NO_EMAIL.txt --cipher-algo aes256 --output icron_uon_secret_key.gpg --symmetric icron_uon_secret_key.txt
+
+Decrypting a file with a passphrase:
+gpg --output icron_uon_secret_key.txt --decrypt icron_uon_secret_key.gpg
+
+Note: GPG for Windows can be downloaded here -> http://files.gpg4win.org/gpg4win-2.1.0.exe
+
+
+ATSHA204 Configuration Values
+----------------------------
+
+The following bytes must be written to the ATSHA204 configuration zone, where
+writeCfgByte() takes a byte address argument, and a data byte to write 2nd
+argument.  Bytes 0 to 15 are readonly and left at their defaults settings.
+Bytes 52 to 87 should also be left at their default settings.
+
+writeCfgByte(16, 0xc8)
+writeCfgByte(17, 0x00)
+writeCfgByte(18, 0xAA)
+writeCfgByte(19, 0x00)
+writeCfgByte(20, 0x8F)
+writeCfgByte(21, 0x80)
+writeCfgByte(22, 0x0F)
+writeCfgByte(23, 0x00)
+writeCfgByte(24, 0x0F)
+writeCfgByte(25, 0x00)
+writeCfgByte(26, 0x0F)
+writeCfgByte(27, 0x00)
+writeCfgByte(28, 0x0F)
+writeCfgByte(29, 0x00)
+writeCfgByte(30, 0x0F)
+writeCfgByte(31, 0x00)
+writeCfgByte(32, 0x0F)
+writeCfgByte(33, 0x00)
+writeCfgByte(34, 0x0F)
+writeCfgByte(35, 0x00)
+writeCfgByte(36, 0x0F)
+writeCfgByte(37, 0x00)
+writeCfgByte(38, 0x0F)
+writeCfgByte(39, 0x00)
+writeCfgByte(40, 0x0F)
+writeCfgByte(41, 0x00)
+writeCfgByte(42, 0x0F)
+writeCfgByte(43, 0x00)
+writeCfgByte(44, 0x0F)
+writeCfgByte(45, 0x00)
+writeCfgByte(46, 0x0F)
+writeCfgByte(47, 0x00)
+writeCfgByte(48, 0x0F)
+writeCfgByte(49, 0x00)
+writeCfgByte(50, 0x0F)
+writeCfgByte(51, 0x00)
+
+
+ATSHA204 Configuration Locking
+------------------------------
+
+Once the configuration has been written to, it must be locked, with the LOCK
+instruction.  The lock instruction must take the CRC of the entire
+configuration section.  This means the configuration bytes that were not
+written, must be read, to calculate the CRC.  The CRC will vary as each chip
+has a unique serial number.
+
+
+ATSHA204 Data/OTP Sections
+--------------------------
+
+Data Slot 0:
+The icron_uon_secret_key.txt must be written to data slot 0
+
+Data Slot 1:
+Byte 0, must contain the value 0x01
+Bytes 1-6, must contain the MAC address in big endian order
+Bytes 7-31, must contains the bytes 0x00
+
+Data Slots 2-15:
+Must be written with all 0x00
+
+OTP Zone:
+Can be left as the default 0xFF for all bytes
+
+
+ATSHA204 DATA/OTP Locking
+-------------------------
+
+Once the data section has been written to, it must be locked with the LOCK
+instruction.  The lock instruction must take the CRC of the entire data and OTP
+sections, so this must be calculated first.  The CRC will vary as each chip
+will be pre-programmed with a unique MAC address.
+

@@ -1,0 +1,15 @@
+component:FLASH_DATA_COMPONENT
+L:FLASH_INIT S:Flash driver initialization\n
+L:MULTIPLE_ACTIVE_SECTIONS S:Multiple sections of flash were marked active\n
+L:INIT_SECTION1_MARKED_AS_ACTIVE S:Initialization: Marking section1 as the active section\n
+L:INIT_FOUND_GARBAGE_HEADER S:Initialization found a garbage flash header in section %d\n
+L:UNEXPECTED_HEADER_WHEN_SETTING S:Unexpectedly read header %d, when going to write %d\n
+L:WRITE_VAR_SIZE_TOO_BIG S:Error Writing variable %d.  Size %d is too big\n
+L:WRITE_VAR S:Writing variable %d, with size %d\n
+L:WRITE_VAR_IS_REPLACEMENT S:Wrote variable %d, & now erasing previous setting\n
+L:ERASE_VAR S:Erasing var %d\n
+L:ERASE_VAR_FOR_VAR_THAT_DOESNT_EXIST S:Trying to erase var %d, but it doesn't exist in flash\n
+L:READ_VAR S:Read variable %d\n
+L:CANT_READ_VAR S:Tried to read variable %d, but it doesn't exist\n
+L:UNABLE_TO_FIND_ACTIVE_DATA_SECTION S:Unable to find active data section\n
+L:FLASH_VAR_TOO_BIG S:Flash variable %d is too big at %d bytes to be read\n

@@ -1,0 +1,3 @@
+component:LINKMGR_COMPONENT
+F:icmdGetPhyStatus H:"Read and decode the PHY control and status registers" A:void
+F:showLinkState H:"Show the states of the link managers" A:void

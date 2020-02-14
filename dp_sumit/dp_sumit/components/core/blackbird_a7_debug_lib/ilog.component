@@ -1,0 +1,24 @@
+component:CORE_COMPONENT
+L:BB_UART_VERSION S:BB UART Version: %d.%d.%d\n
+L:I2C_MASTER_VERSION S:I2C MASTER Version: %d.%d.%d\n
+L:I2C_SLAVE_VERSION S:I2C SLAVE Version: %d.%d.%d\n
+L:MDIO_MASTER_VERSION S:MDIO MASTER Version: %d.%d.%d\n
+L:SPI_FLASH_VERSION S:SPI FLASH Version: %d.%d.%d\n
+L:GPIO_VERSION S:GPIO Version: %d.%d.%d\n
+L:LINK_LAYER_TX_VERSION S:LINK LAYER TX Version: %d.%d.%d\n
+L:LINK_LAYER_RX_VERSION S:LINK LAYER RX Version: %d.%d.%d\n
+L:LAYER3_TX_VERSION S:LAYER3 TX Version: %d.%d.%d\n
+L:LAYER3_RX_VERSION S:LAYER3 RX Version: %d.%d.%d\n
+L:MCA_VERSION S:MCA Version: %d.%d.%d\n
+L:ULP_CORE_VERSION S:ULP CORE Version: %d.%d.%d\n
+L:ULP_PHY_VERSION S:ULP PHY Version: %d.%d.%d\n
+L:DP_SINK_MAIN_VERSION S:DP SINK MAIN Version: %d.%d.%d\n
+L:DP_SINK_HPD_VERSION S:DP SINK HPD Version: %d.%d.%d\n
+L:DP_SOURCE_MAIN_VERSION S:DP SOURCE MAIN Version: %d.%d.%d\n
+L:DP_SOURCE_HPD_VERSION S:DP SOURCE HPD Version: %d.%d.%d\n
+L:XMII_ADAPTER_VERSION S:XMII ADAPTER Version: %d.%d.%d\n
+L:GE_ADAPTER_VERSION S:GE ADAPTER Version: %d.%d.%d\n
+L:GE_UART_VERSION S:GE UART Version: %d.%d.%d\n
+L:RS232_EXTENDER_VERSION S:RS232 EXTENDER Version: %d.%d.%d\n
+L:TOP_VERSION S:TOP Version: %d.%d.%d\n
+L:CORE_VERSION S:CORE Version: %d.%d.%d\n

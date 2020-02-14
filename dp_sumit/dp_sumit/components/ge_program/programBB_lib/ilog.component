@@ -1,0 +1,11 @@
+component:GE_PROGRAM_COMPONENT
+L:GE_PROGRAM_RCV_EVENT S:In state %d, received event %d\n
+L:GE_PROGRAM_COMPLETED S:Ge programming completed, restart GE\n
+L:GE_PGM_BLK S:Programming GE blk %d of %d sent\n
+L:GE_PGM_ADDR S:Programming GE addr 0x%x\n
+L:GE_PGM_PKT_END S:Programming GE cannot send - reached end\n
+L:GE_PGM_START S:GE Automatic download start \n
+L:GE_PGM_RESP_FAIL S:GE ProgramStart rejected\n
+L:GE_PGM_ERASE_BLOCK_FAIL S:GE Program Erasing block 0x%x failed\n
+L:GE_PGM_SIZE_DIFF S:GE Program InfoMsg size 0x%x, expected 0x%x\n
+L:GE_PGM_NAK S:GE Program NAK\n

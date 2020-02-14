@@ -1,0 +1,307 @@
+[
+    {
+        "istatus_name": "ISTATUS_COMLINK_STATE_UP",
+        "istatus_string": "ISTATUS Data Link Operational\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_COMLINK_STATE_DN",
+        "istatus_string": "ISTATUS Data Link Disconnected\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_ULP_LEX_HOST_USB2",
+        "istatus_string": "ISTATUS ** Host port supports USB2 **\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_ULP_LEX_HOST_USB3",
+        "istatus_string": "ISTATUS ** Host port supports USB3 **\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_ULP_LEX_HOST_USB321",
+        "istatus_string": "ISTATUS ** Host port supports USB3/2 **\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_ULP_LEX_HOST_CONNECTED",
+        "istatus_string": "ISTATUS ** Host USB connected **\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_ULP_LEX_HOST_REMOVED",
+        "istatus_string": "ISTATUS ** Host USB removed **\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_ULP_LEX_USB2_SUSPENDED",
+        "istatus_string": "ISTATUS USB2 suspended\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_ULP_LEX_USB2_BUS_RESET",
+        "istatus_string": "ISTATUS USB2 bus reset\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_ULP_LEX_USB2_ULM_NEG_SPEED_LOW",
+        "istatus_string": "ISTATUS USB2 negotiated Low speed\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_ULP_LEX_USB2_ULM_NEG_SPEED_FULL",
+        "istatus_string": "ISTATUS USB2 negotiated Full speed\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_ULP_LEX_USB2_ULM_NEG_SPEED_HIGH",
+        "istatus_string": "ISTATUS USB2 negotiated High speed\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_ULP_LEX_USB2_DEV_CONN",
+        "istatus_string": "ISTATUS USB2 device connected\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_ULP_LEX_USB2_DEV_DISCONN",
+        "istatus_string": "ISTATUS USB2 device disconnected\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_BOOTUP_FW_VERSION_CHIP_ID",
+        "istatus_string": "ISTATUS Chip ID is Major 0x%x, Minor 0x%x, Debug 0x%x\n",
+        "istatus_num_args": 3
+    },
+    {
+        "istatus_name": "ISTATUS_BOOTUP_FW_VERSION_CHIP_BUILD_DATE",
+        "istatus_string": "ISTATUS Chip build date %04x/%02x/%02x\n",
+        "istatus_num_args": 3
+    },
+    {
+        "istatus_name": "ISTATUS_BOOTUP_FW_VERSION_CHIP_BUILD_TIME",
+        "istatus_string": "ISTATUS Chip build time %02x:%02x:%02x\n",
+        "istatus_num_args": 3
+    },
+    {
+        "istatus_name": "ISTATUS_BOOTUP_FW_VERSION_SW_VERSION",
+        "istatus_string": "ISTATUS ICRON Technologies Software Version v%d.%d.%d\n",
+        "istatus_num_args": 3
+    },
+    {
+        "istatus_name": "ISTATUS_BOOTUP_PROGRAMBB_SW_VERSION",
+        "istatus_string": "ISTATUS ICRON Technologies ProgramBB Software Version v%d.%d.%d\n",
+        "istatus_num_args": 3
+    },
+    {
+        "istatus_name": "ISTATUS_BOOTUP_FW_VERSION_SW_BUILD_DATE",
+        "istatus_string": "ISTATUS SW build was done on %04d/%02d/%02d\n",
+        "istatus_num_args": 3
+    },
+    {
+        "istatus_name": "ISTATUS_BOOTUP_FW_VERSION_SW_BUILD_TIME",
+        "istatus_string": "ISTATUS SW build was done at %02d:%02d:%02d\n",
+        "istatus_num_args": 3
+    },
+    {
+        "istatus_name": "ISTATUS_BOOTUP_FW_VERSION_LEX",
+        "istatus_string": "ISTATUS This device is a Lex\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_BOOTUP_FW_VERSION_REX",
+        "istatus_string": "ISTATUS This device is a Rex\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_BOOTUP_FW_VERSION_FALLBACK_IMAGE",
+        "istatus_string": "ISTATUS WARNING, you are in the backup image\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_ULP_USB2_BITSTUFF_ERROR",
+        "istatus_string": "ISTATUS USB2 got a ULM bitstuff error\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_ULP_USB2_CRC_ERROR",
+        "istatus_string": "ISTATUS USB2 got a xcrm frame crc error\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_AQUANTIA_CRC8_ERROR_COUNT",
+        "istatus_string": "ISTATUS Aquantia PCS Receive Vendor CRC-8 Error Counter (3.E811:E810): %d\n",
+        "istatus_num_args": 1
+    },
+    {
+        "istatus_name": "ISTATUS_AQUANTIA_10G_ERROR_FRAME_COUNT",
+        "istatus_string": "ISTATUS Aquantia PCS Receive Vendor 10G BASE-T Bad Frame Counter (3.E815:E814): %d\n",
+        "istatus_num_args": 1
+    },
+    {
+        "istatus_name": "ISTATUS_AQUANTIA_UNCORRECTED_FRAME_COUNT",
+        "istatus_string": "ISTATUS Aquantia PCS Receive Vendor Uncorrected Frame Counter (3.E821:E820): %d\n",
+        "istatus_num_args": 1
+    },
+    {
+        "istatus_name": "ISTATUS_ULP_CRC5_CHK_FAILED",
+        "istatus_string": "ISTATUS ULP PHY CRC5 Check Failed %d\n",
+        "istatus_num_args": 1
+    },
+    {
+        "istatus_name": "ISTATUS_ULP_CRC16_CHK_FAILED",
+        "istatus_string": "ISTATUS ULP PHY CRC16 Check Failed %d\n",
+        "istatus_num_args": 1
+    },
+    {
+        "istatus_name": "ISTATUS_ULP_8B_10B_DECODER_ERROR",
+        "istatus_string": "ISTATUS ULP PHY 8/10Bit Decoder Error %d\n",
+        "istatus_num_args": 1
+    },
+    {
+        "istatus_name": "ISTATUS_MAC_CRC_ERROR",
+        "istatus_string": "ISTATUS MAC link layer rx CRC_ERR: %d\n",
+        "istatus_num_args": 1
+    },
+    {
+        "istatus_name": "ISTATUS_FPGA_TEMP_WARNING",
+        "istatus_string": "ISTATUS FPGA Temperature warning %d C\n",
+        "istatus_num_args": 1
+    },
+    {
+        "istatus_name": "ISTATUS_FPGA_TEMP_FAULT",
+        "istatus_string": "ISTATUS FPGA temperature over its shutdown threshold (%d C). System shut down\n",
+        "istatus_num_args": 1
+    },
+    {
+        "istatus_name": "ISTATUS_AQUANTIA_TEMP_WARNING",
+        "istatus_string": "ISTATUS Aquantia Temperature warning %d C\n",
+        "istatus_num_args": 1
+    },
+    {
+        "istatus_name": "ISTATUS_AQUANTIA_TEMP_FAULT",
+        "istatus_string": "ISTATUS Aquantia temperature over its shutdown threshold (%d C). System shut down\n",
+        "istatus_num_args": 1
+    },
+    {
+        "istatus_name": "ISTATUS_ULP_OVERCURRENT_DETECTED",
+        "istatus_string": "ISTATUS Over current detected on downstream USB port\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_ULP_OVERCURRENT_NORMAL",
+        "istatus_string": "ISTATUS Downstream USB port not in over current state\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_BOOTUP_FW_CHECK_CURRENT_IMAGE",
+        "istatus_string": "ISTATUS Verifying current image\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_ULP_LEX_USB3_SUSPENDED",
+        "istatus_string": "ISTATUS USB3 suspended\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_ULP_LEX_USB3_ACTIVE",
+        "istatus_string": "ISTATUS USB3 active\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_DP_LEX_HOST_CONNECTED",
+        "istatus_string": "ISTATUS ** Host DP connected **\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_DP_LEX_HOST_REMOVED",
+        "istatus_string": "ISTATUS ** Host DP removed **\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_DP_REX_MONITOR_CONNECTED",
+        "istatus_string": "ISTATUS ** Monitor connected **\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_DP_REX_MONITOR_REMOVED",
+        "istatus_string": "ISTATUS ** Monitor removed **\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_10G_COMLINK_STATE_UP",
+        "istatus_string": "ISTATUS Data Link Operational, CATx at 10Gbps\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_5G_COMLINK_STATE_UP",
+        "istatus_string": "ISTATUS Data Link Operational, CATx at 5Gbps\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_FIBRE_COMLINK_STATE_UP",
+        "istatus_string": "ISTATUS Data Link Operational, Fiber at 6.25Gbps\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_VIDEO_RESOLUTION",
+        "istatus_string": "ISTATUS Video Operational, %d*%d, %d.%d  Hz, %d bits per component, color code 0x%x\n ",
+        "istatus_num_args": 6
+    },
+    {
+        "istatus_name": "ISTATUS_DP_OVER_CURRENT_WARNING",
+        "istatus_string": "ISTATUS Over current detected in DP\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_DP_OVER_CURRENT_RECOVER",
+        "istatus_string": "ISTATUS DP not in over current state\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISTATUS_AQUANTIA_NOT_EXPECTED_SPEED_5G",
+        "istatus_string": "ISTATUS Error: Link quality not sufficient for %dG link, fallback to 5G\n",
+        "istatus_num_args": 1
+    },
+    {
+        "istatus_name": "ISTATUS_AQUANTIA_NOT_EXPECTED_SPEED_2_5G",
+        "istatus_string": "ISTATUS Error: Link quality not sufficient for %dG link, fallback to 2.5G\n",
+        "istatus_num_args": 1
+    },
+    {
+        "istatus_name": "ISTATUS_AQUANTIA_NOT_EXPECTED_SPEED_1G",
+        "istatus_string": "ISTATUS Error: Link quality not sufficient for %dG link, fallback to 1000BASE-T\n",
+        "istatus_num_args": 1
+    },
+    {
+        "istatus_name": "ISTATUS_AQUANTIA_NOT_EXPECTED_SPEED_0_1G",
+        "istatus_string": "ISTATUS Error: Link quality not sufficient for %dG link, fallback to 100BASE-TX\n",
+        "istatus_num_args": 1
+    },
+    {
+        "istatus_name": "ISTATUS_AQUANTIA_NOT_EXPECTED_SPEED_0_01G",
+        "istatus_string": "ISTATUS Error: Link quality not sufficient for %dG link, fallback to 10BASE-T\n",
+        "istatus_num_args": 1
+    },
+    {
+        "istatus_name": "ISTATUS_AQUANTIA_NOT_EXPECTED_SPEED",
+        "istatus_string": "ISTATUS Error: Link speed not supported\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISO_ENABLED",
+        "istatus_string": "ISTATUS ISO is enabled\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "ISO_DISABLED",
+        "istatus_string": "ISTATUS ISO is disabled\n",
+        "istatus_num_args": 0
+    },
+    {
+        "istatus_name": "RESET_UNIT",
+        "istatus_string": "ISTATUS Please reset unit for the change to take affect\n",
+        "istatus_num_args": 0
+    }
+]

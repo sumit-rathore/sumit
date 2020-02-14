@@ -1,0 +1,3 @@
+component:NET_COMPONENT
+F:NET_icmdSetIPv4Configuration H:"Set the IPv4 configuration (IP Address, Subnet Mask, Default Gateway)" A:uint32, uint32, uint32
+F:NET_icmdViewIPv4Configuration H:"View the IPv4 configuration" A:void

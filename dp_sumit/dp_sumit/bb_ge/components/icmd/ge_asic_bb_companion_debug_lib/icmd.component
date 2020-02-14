@@ -1,0 +1,12 @@
+component:ICMD_COMPONENT
+F:readMemory H:"Read any memory address. Argument: full 32 bit address" A:uint32
+F:writeMemory H:"Write any memory address. Arguments: full 32 bit address, 32 bit value to write" A:uint32, uint32
+F:readModifyWriteMemory H:"Read-Modify-Write any memory address. Arguments: full 32 bit address, 32 bit set mask, 32 bit clear mask" A:uint32, uint32, uint32
+F:modifyBitfield H:"Write data from a given position within any memory address. Arguments: full 32 bit address, 8 bit position to start modifying, 8 bit width to modify, 32 bit value to write" A:uint32, uint8, uint8, uint32
+F:dumpMemory32 H:"Dump data from any number of sequential memory locations. Arguments: full 32 bit address, number of 32bit words to read" A:uint32, uint8
+F:callFunction H:"Call any function. Arguments: full 32 bit address, arguments for function(if not needed enter 0)" A:uint32, uint32, uint32, uint32, uint32, uint32
+F:readMemory16 H:"Read any memory address. Argument: full 16 bit address" A:uint32
+F:writeMemory16 H:"Write any memory address. Arguments: full 16 bit address, 16 bit value to write" A:uint32, uint16
+F:readModifyWriteMemory16 H:"Read-Modify-Write any memory address. Arguments: full 16 bit address, 16 bit set mask, 16 bit clear mask" A:uint32, uint16, uint16
+F:readMemory8 H:"Read any memory address. Argument: full 32 bit address" A:uint32
+F:writeMemory8 H:"Write any memory address. Arguments: full 32 bit address, 8 bit value to write" A:uint32, uint8

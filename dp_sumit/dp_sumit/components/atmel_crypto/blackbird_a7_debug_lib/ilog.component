@@ -1,0 +1,63 @@
+component:ATMEL_CRYPTO_COMPONENT
+L:READ_FAILED S:Atmel chip read failed\n
+L:READ_SUCCESS S:Successfully read %d bytes from Atmel chip\n
+L:READ_BYTE S:Read byte 0x%x\n
+L:INVALID_COND S:Invalid condition at line %d\n
+L:WRITE_FAILED S:Atmel chip write failed\n
+L:CRC_FAIL S:CRC failure: expecting 0x%x, got 0x%x\n
+L:LONG_PACKET S:Read more bytes (%d) than the size of the packet (%d)\n
+L:SHORT_PACKET S:Read less bytes (%d) than the size of the packet (%d)\n
+L:INVALID_SHORT_PACKET S:Packet of length %d is less than the minimum 4 byte size\n
+L:SYS_BUSY_ABORTING_ICMD S:Sorry, system is busy, please try icommand later\n
+L:INVALID_LARGE_READ_REQUEST S:Invalid read request of %d bytes\n
+L:ICMD_FAILED S:icommand failed\n
+L:INVALID_ATMEL_SLOT S:Invalid Atmel slot %d\n
+L:INVALID_ATMEL_BLOCK S:Invalid Atmel OTP block %d\n
+L:READ_SLOT_FAILED S:Read slot failed, read %d bytes instead of 32 bytes\n
+L:WRITE_SLOT_FAILED S:Write slot/block failed, read %d status bytes, data[0] is 0x%x\n
+L:INVALID_BYTE_ADDR S:Invalid byte address %d\n
+L:READ_CONFIG_WORD_FAILED S:Read config word failed, read %d bytes instead of 4 bytes\n
+L:WRITE_CONFIG_WORD_FAILED S:Write config word failed, read %d status bytes, data[0] is 0x%x\n
+L:LOCK_FAILED S:Lock failed, read %d status bytes, data[0] is 0x%x\n
+L:ATMEL_SUBMIT_I2C_SYS_BUSY S:Submit i2c op, but system is busy at step:%d\n
+L:ATMEL_SUBMIT_I2C_1 S:Submit i2c op, opcode:0x%.2x, param1:0x%.2x, param2:0x%.4x\n
+L:ATMEL_SUBMIT_I2C_2 S:Submit i2c op, writeDataSize:%d, readDataSize:%d, completionHandler:0x%x\n
+L:SENDING_ATMEL_I2C_WAKEUP S:Sending Atmel i2c wakeup\n
+L:IDLE_FAILED S:Atmel idle command failed\n
+L:ICMD_SEND S:Atmel icmd sending opCode 0x%02x, param1 0x%02x, param2 0x%04x\n
+L:CRC_WRITE_PACKET_DONE S:Calculated SW CRC for write in %dus\n
+L:CRC_READ_PACKET_DONE S:Calculated SW CRC for read in %dus\n
+L:SW_MAC_DONE S:SW MAC done! digestsMatch=%d. It took %dus\n
+L:RUN_MAC_CALLED_WHILE_IN_PROGRESS S:run mac called while in progress\n
+L:RUN_MAC_CALLED S:Run MAC called, secretKey is at 0x%x, challenge is at 0x%x, completionHandler is at 0x%x\n
+L:HW_MAC_DONE S:HW MAC operation done, returned data at 0x%x, dataSize %d, userPtr 0x%x\n
+L:HW_MAC_DONE_INVALID_ARGS S:HW MAC done got invalid args. Got data at 0x%x, dataSize %d, userPtr 0x%x\n
+L:CHIP_STATE1 S:Atmel chip state is %d, completionHandler is 0x%x, userPtr is 0x%x\n
+L:CHIP_STATE2 S:Atmel chip state readReqSize is %d, simpleCmd is 0x%x, writeBuffer[0-3] in Big endian is 0x%x\n
+L:SET_SPEED S:Atmel chip speed changing from speed %d to speed %d\n
+L:CHIP_STATE3 S:Atmel chip state readBuffer[0-3] in Big endian is 0x%x\n
+L:MAX_I2C_RETRY_EXCEEDED S:Maximum # of i2c retries exceeded\n
+L:I2C_RECOVERY_START S:i2c recovery start attempt %d\n
+L:I2C_RECOVERY_WOKEUP S:i2c recovery did wakeup\n
+L:I2C_RECOVERY_DONE S:i2c recovery done, info is %d\n
+L:ATMEL_WRITE_BUFFER_BOUNDS S:Tried to write outside the bounds of the buffer at wordOffset %d\n
+L:ATMEL_WRITE_DATA_SLOT_OR_OTP_BLOCK_ICMD_COMPLETE S:ICMD write of data slot / OTP block completed\n
+L:ATMEL_READ_CONFIG_WORD_ICMD_COMPLETE S:ICMD read of config word returned data: 0x%x\n
+L:ATMEL_WRITE_CONFIG_WORD_ICMD_COMPLETE S:ICMD write of config word completed\n
+L:ATMEL_LOCK_ZONE_ICMD_COMPLETE S:Lock authentication zone ICMD completed.\n
+L:ATMEL_LOCK_STATUS S:Atmel authentication chip lock status: Data+OTP=%d, Config=%d.\n
+L:ATMEL_WRITE_DATA_BUFFER_DONE S:Atmel data buffer written at word offset %d with value 0x%x.\n
+L:ATMEL_INIT_STEP1 S:Starting initialization sequence\n
+L:ATMEL_INIT_STEP2 S:Atmel chip has woken up\n
+L:ATMEL_INIT_STEP3 S:Initialization is done, success flag is: %d\n
+L:RUN_NONCE_CALLED_WHILE_IN_PROGRESS S:run Nonce called while in progress\n
+L:RUN_NONCE_CALLED S:Run Nonce called, secretKey is at 0x%x, challenge is at 0x%x, completionHandler is at 0x%x\n
+L:ENCRYPT_STEP S:Current Encrypt Step is %d\n
+L:READ_32BYTES S:ATMEL READ 32 BYTES: 0x%04x, 0x%04x, 0x%04x\n
+L:ATMEL_FIFO_FULL S:ATMEL FIFO TASK FULL \n
+L:MAC_FAILED S:MAC challenge failed\n
+L:MAC_PASSED S:MAC challenge passed\n
+L:ATMEL_NOT_EXIST S:Atmel ATSHA204 does not exist\n
+L:ATMEL_TASK_TIME S:Atmel Task current tick is = %d\n
+L:ATMEL_VALIDATION S:Atmel Validation Start\n
+L:ATMEL_INVALID_STATE S:Atmel invalid state\n

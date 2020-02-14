@@ -1,0 +1,9 @@
+This test Sends:
+1) test start message & guarantees buffer is sent out
+2) 1024 iteration ilog messages in a row.  If ilog & the uart driver's are properly working, this should result in a guarantee of the first few messages getting through, but then no guarantee's after that
+3) Guarnatees buffer is sent out, and then sends a test finished message + a guarantee of buffer transmission
+
+Depending on the current Leon driver implementation (2) above could differ in operation
+
+In the implemenation when the test harness was written, the first few ilog's will get through, but then nothing more, as the messages won't get transmitted as no uart interrupts are enabled.
+

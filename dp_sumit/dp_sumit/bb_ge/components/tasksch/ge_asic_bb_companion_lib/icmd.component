@@ -1,0 +1,2 @@
+component:TASKSCH_COMPONENT
+F:viewTasks H:"View all the current tasks" A:void

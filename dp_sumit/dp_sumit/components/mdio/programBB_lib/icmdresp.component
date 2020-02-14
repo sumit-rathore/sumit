@@ -1,0 +1,3 @@
+C:MDIO_COMPONENT
+R:mdioRead C:icmdMdioRead L:MDIO_ICMD_READ_DONE A:0
+R:mdioIndirectRead C:icmdMdioIndirectRead L:MDIO_ICMD_READ_DONE A:0

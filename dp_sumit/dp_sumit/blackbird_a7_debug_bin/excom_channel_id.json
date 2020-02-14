@@ -1,0 +1,9 @@
+{ 
+    "raven":
+    {
+        "istatus_channel": 64,
+        "program_command_channel": 192,
+        "program_status_channel":  193,
+        "program_data_channel": 194
+    }
+}

@@ -1,0 +1,2 @@
+component:VHUB_COMPONENT
+F:vhubReadState H:"Read the vhub state variables" A:void

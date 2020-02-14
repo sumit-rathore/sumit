@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<settings>
+  <broadcastAddress>169.254.0.255</broadcastAddress>
+  <units>
+    <unit>
+      <mac>00:00:00:00:00:04</mac>
+      <name>Demo Lex 1</name>
+    </unit>
+    <unit>
+      <mac>00:00:00:00:00:02</mac>
+      <name>Demo Rex 1</name>
+    </unit>
+    <unit>
+      <mac>00:00:00:00:00:03</mac>
+      <name>Demo Rex 2</name>
+    </unit>
+    <unit>
+      <mac>00:00:00:00:00:01</mac>
+      <name>Test</name>
+    </unit>
+    <unit>
+      <mac>00:00:00:00:00:05</mac>
+      <name>Long Awkward Name</name>
+    </unit>
+    <unit>
+      <mac>00:00:00:00:00:06</mac>
+      <name>Demo Lex 2</name>
+    </unit>
+  </units>
+</settings>

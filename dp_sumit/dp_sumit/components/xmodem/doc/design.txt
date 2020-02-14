@@ -1,0 +1,76 @@
+The Xmodem library implements the xmodem protocol for applications to use
+
+
+Protocol
+--------
+The protocol is fairly straight forward
+
+The receiver indicates it is ready to start receiving by sending NAK's once
+per second.
+
+The sender will then send each block in the following format
+
+<ASCII SOH><block #><255 - block #>
+128 bytes of data
+<1 byte checksum>
+
+Before sending the next block, the sender will wait for the receiver to respond
+with a NAK or ACK.  If the response is a NAK the sender will re-transmit the
+previous block
+
+To end the transfer, sender sends <ASCII EOT>, and the receiver must reply with an ACK
+
+Note that the data getting transfered is always padded to the next 128 byte
+block.
+
+
+API
+---
+void XMODEM_InterruptModeInit(void); //registers timer
+boolT XMODEM_InterruptModeReceive(uint32 * (*rxDataHandlerFunction)(uint32 * buf, uint32 bufSize), uint32 * buffer1, uint32 * buffer2);
+boolT XMODEM_PolledModeReceive(uint32 * (*rxDataHandlerFunction)(uint32 * buf, uint32 bufSize), uint32 * buffer);
+
+
+Both of the receive functions take a function pointer argument which will
+handle the valid data buffers as they come in.  The receive functions should
+return the next buffer for the xmodem library to use.
+
+At any time the receive function could return NULL, upon which time the XMODEM
+transfer will stop, and the receiver will return FALSE.  If the XMODEM transfer
+fails, the receiver will also return FALSE. 
+
+
+Basic Design
+------------
+In polled mode the caller provides a buffer for the xmodem library to store
+the received data in.  Once the buffer is full and the checksum is verified
+the xmodem library will call the provided callback function.  The callback
+function returns the address of the next buffer to use, which could be a new
+address, or could be the same buffer as before.
+
+In interrupt mode the caller provides 2 buffers.  This allows the xmodem
+library to always fill up one buffer with xmodem data in the interrupt
+context, while the other buffer is processed by the callback function.  As
+with polling mode the callback function returns the address of the next buffer
+to use.
+
+Both modes use xmodem_common.c which handles all uart traffic in the transmit
+direction.  The common code doesn't know what type of timers are used, or what
+type of uart receiving mode is used, so it needs to be called when a timer
+event or byte receive event occurs.  Buffers are not managed by the common
+code, so once a block is complete the common code needs to know if the block
+should be accepted or rejected, depending on the current buffering state of
+the caller.
+
+Intended Users
+--------------
+ROM - This would be polling mode, and with the ilog logging messages disabled.
+The ROM would load either a test harness or the flash writer into IRAM and
+then run that image.
+
+FlashWriter - This would be in interrupt mode, to handle the flash getting
+written at the same time.
+
+Normal App - For the upgrade process.  It could also just reboot to the ROM in
+a mode that would boot over XModem, instead of booting to the flash
+

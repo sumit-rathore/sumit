@@ -1,0 +1,22 @@
+component:GRG_COMPONENT
+F:icmdMdioWrite H:"Write to MDIO: 1st arg device, 2nd arg address, 3rd arg data" A:uint8, uint8, uint16
+F:icmdMdioRead H:"Read from MDIO: 1st arg device, 2nd arg address" A:uint8, uint8
+F:icmdPLLMeasure H:"Measure the PLL: arg is spectareg pll selection" A:uint8
+F:GRG_ResetChip H:"Reset the Chip" A:void
+F:mdioI2cStatus H:"Check the MDIO/I2C state of where it is in processing ASync operations" A:void
+F:i2cWrite H:"Write to i2c, args: bus, device, speed, dataMSW, dataLSW, byteCount" A:uint8, uint8, uint8, uint32, uint32, uint8
+F:i2cRead H:"Write to i2c, args: bus, device, speed, byteCount" A:uint8, uint8, uint8, uint8
+F:i2cWake H:"Write to i2c, args: bus" A:uint8
+F:i2cWriteRead H:"Write then read i2c.  SMBus read, args: bus, device, speed, writeByteCount, dataWrite, readByteCount" A:uint8, uint8, uint8, uint8, uint32, uint8
+F:i2cWriteReadBlock H:"Write then read i2c.  SMBus read block, args: bus, device, speed, writeByteCount, dataWrite" A:uint8, uint8, uint8, uint8, uint32
+F:icmdDivide H:"16 bit integer division: 1st arg numerator, 2nd arg denominator" A:uint16, uint16
+F:icmdMultiply H:"16 bit multiplication with 32 bit result. Multiplies arg1 by arg 2" A:uint16, uint16
+F:icmdPLLFreq H:"Measure the PLL and see its frequency in MHz. Arg is the spectareg pll selection" A:uint8
+F:icmdMdioWriteSync H:"Synchronously write to MDIO: 1st arg device, 2nd arg address, 3rd arg data" A:uint8, uint8, uint16
+F:icmdMdioReadSync H:"Synchronously read from MDIO: 1st arg device, 2nd arg address" A:uint8, uint8
+F:GRG_PrintPlatformAndVariantId H:"Prints the platform and variant id" A:void
+F:ledSetLocatorLedsPattern H:"Set LED locator pattern" A:void
+F:ledClearLocatorLedsPattern H:"Clear LED locator pattern" A:void
+F:ledTurnOn H:"Turn on LED id: Activity=0, Host=1, Link=2" A:uint16
+F:ledTurnOff H:"Turn off LED id: Activity=0, Host=1, Link=2" A:uint16
+F:ledToggle H:"Arg1:id: Activity=0, Host=1, Link=2;    Arg2: Rate: Fast=0, Slow=1" A:uint16, uint16

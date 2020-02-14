@@ -1,0 +1,8 @@
+component:XLR_COMPONENT
+F:msaReadLat H:"Read the MSA LAT, arg is usb address" A:uint8
+F:msaWriteLat H:"Write the MSA LAT, args are usbAddress, MSA LA, valid" A:uint8, uint8, uint8
+F:msaReadPtrTableICmd H:"Read the MSA pointer table, args are usb address, endpoint" A:uint8, uint8
+F:msaWritePtrTable H:"Write the MSA pointer table, arges are usb Address, endpoint, pointer" A:uint8, uint8, uint8
+F:msaAllocatePtr H:"Allocate a new MSA status table pointer" A:void
+F:XLR_msaFreePtr H:"Free an MSA status table pointer" A:uint8
+F:msaClearStatusTable H:"Clear the status table entry, args are usbAddr, endpoint" A:uint8, uint8

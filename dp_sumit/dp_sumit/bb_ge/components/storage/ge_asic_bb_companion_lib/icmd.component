@@ -1,0 +1,5 @@
+component:STORAGE_COMPONENT
+F:STORAGE_icmdReadVar H:"Reads the specified variable. Args: varToRead" A:uint8
+F:STORAGE_icmdWriteVar H:"Writes the specified variable. Args: varToWrite, MSWData, LSWData" A:uint8, uint32, uint32
+F:STORAGE_icmdRemoveVar H:"Removes the specified variable. Args: varToRemove" A:uint8
+F:STORAGE_icmdDumpAllVars H:"Show all persistent variables" A:void

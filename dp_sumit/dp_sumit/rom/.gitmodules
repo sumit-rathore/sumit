@@ -1,0 +1,33 @@
+[submodule "components/ibuild"]
+	path = components/ibuild
+	url = icron_git_uri:s_ibuild
+[submodule "components/ibase"]
+	path = components/ibase
+	url = icron_git_uri:s_ibase
+[submodule "components/ilog"]
+	path = components/ilog
+	url = icron_git_uri:s_ilog
+[submodule "components/leon"]
+	path = components/leon
+	url = icron_git_uri:s_leon
+[submodule "components/spectareg"]
+	path = components/spectareg
+	url = icron_git_uri:s_spectareg_ge
+[submodule "components/xmodem"]
+	path = components/xmodem
+	url = icron_git_uri:s_xmodem
+[submodule "components/icmd"]
+	path = components/icmd
+	url = icron_git_uri:s_icmd
+[submodule "components/timing"]
+	path = components/timing
+	url = icron_git_uri:s_timing
+[submodule "components/register_definitions"]
+	path = components/register_definitions
+	url = /data/engdev/.gitrepos/s_bb_register_definitions/
+[submodule "components/uart"]
+	path = components/uart
+	url = /data/engdev/.gitrepos/s_uart/
+[submodule "components/util"]
+	path = components/util
+	url = shamrock:s_util

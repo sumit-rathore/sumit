@@ -1,0 +1,57 @@
+component:MAC_COMPONENT
+L:LL_TX_MAC_ENABLED S:MAC Tx Enabled\n
+L:LL_RX_MAC_ENABLED S:MAC Rx Enabled\n
+L:LL_TX_MAC_DISABLED S:MAC Tx Disabled\n
+L:LL_RX_MAC_DISABLED S:MAC Rx Disabled\n
+L:LL_TX_LINK_LAYER3_ENABLED S:Link Layer 3 Tx Enabled\n
+L:LL_RX_LINK_LAYER3_ENABLED S:Link Layer 3 Rx Enabled\n
+L:LL_TX_LINK_LAYER3_DISABLED S:Link Layer 3 Tx Disabled\n
+L:LL_RX_LINK_LAYER3_DISABLED S:Link Layer 3 Rx Disabled\n
+L:LL_RX_LINK_LAYER_IRQ S:Link Layer Rx IRQ pending:%x link ok:%d remote fault:%d\n
+L:LL_TX_MAC_STATS0_PAUSE_FRAME_COUNT S:STAT:MAC link_layer_tx->mac->stats0->pause_frame: %d\n
+L:LL_TX_MAC_STATS0_FSM_BEYOND_PTP_COUNT S:STAT:MAC link_layer_tx->mac->stats0->fsm_count_beyond_ptp: %d\n
+L:LL_TX_MAC_STATS0_FSM_ROLLOVER_COUNT S:STAT:MAC link_layer_tx->mac->stats0->fsm_rollover: %d\n
+L:LL_TX_MEDIARS_PFIFO_WRENG_STATS0_PKT_MAX_BYTE_CNT_ERR S:STAT:MAC link_layer_tx->media_rs->pfifo->write_engine->stats0->pkt_max_byte_cnt_err: %d\n
+L:LL_TX_MEDIARS_PFIFO_WRENG_STATS0_FIFO_FULL_ERR S:STAT:MAC link_layer_tx->media_rs->pfifo->write_engine->stats0->fifo_full_err: %d\n
+L:LL_TX_MEDIARS_PFIFO_WRENG_STATS0_PKT_ERR S:STAT:MAC link_layer_tx->media_rs->pfifo->write_engine->stats0->pkt_err: %d\n
+L:LL_TX_MEDIARS_PFIFO_WRENG_STATS0_PKT_SOP_ERR S:STAT:MAC link_layer_tx->media_rs->pfifo->write_engine->stats0->pkt_sop_err: %d\n
+L:LL_TX_MEDIARS_PFIFO_WRENG_STATS0_DRP_PKT_RD S:STAT:MAC link_layer_tx->media_rs->pfifo->write_engine->stats0->drp_pkt_rd: %d\n
+L:LL_TX_MEDIARS_PFIFO_WRENG_STATS0_DRP_PKT_WR S:STAT:MAC link_layer_tx->media_rs->pfifo->write_engine->stats0->drp_pkt_wr: %d\n
+L:LL_TX_MEDIARS_PFIFO_WRENG_STATS0_DRP_PKT S:STAT:MAC link_layer_tx->media_rs->pfifo->read_engine->stats0->drp_pkt: %d\n
+L:LL_TX_PTP_GUARD_STATS0_SOP_ERROR S:STAT:MAC link_layer_tx->ptp_guard->stats0->missing_sop_err: %d\n
+L:LL_TX_PTP_GUARD_STATS0_EOP_ERROR S:STAT:MAC link_layer_tx->ptp_guard->stats0->missing_eop_err:  %d\n
+L:LL_TX_PTP_GUARD_STATS0_MAX_CYCLE_ERROR S:STAT:MAC link_layer_tx->ptp_guard->stats0->max_cycle_err: %d\n
+L:LL_RX_MEDIARS_STATS1_XGMII_DATA_ERROR_COUNT S:STAT:MAC link_layer_rx->media_rs->stats1->xgmii_data_error: %d\n
+L:LL_RX_MEDIARS_STATS1_XGMII_MISSING_SFD_COUNT S:STAT:MAC link_layer_rx->media_rs->stats1->xgmii_missing_sfd: %d\n
+L:LL_RX_MEDIARS_STATS1_XGMII_WRONG_LANE_START_COUNT S:STAT:MAC link_layer_rx->media_rs->stats1->xgmii_wrong_lane_start: %d\n
+L:LL_RX_MAC_STATS0_PAUSE_FRAME_COUNT S:STAT:MAC link_layer_rx->mac->stats0->pause_frame: %d\n
+L:LL_RX_MAC_STATS0_OUT_FSM_ROLLOVER_COUNT S:STAT:MAC link_layer_rx->mac->stats0->out_fsm_rollover: %d\n
+L:LL_RX_MAC_STATS0_IN_FSM_ROLLOVER_COUNT S:STAT:MAC link_layer_rx->mac->stats0->in_fsm_rollover: %d\n
+L:LL_RX_MAC_STATS0_DBG_SEQ_NUM_IN_ERR S:STAT:MAC link_layer_rx->mac->stats0->dbg_seq_num_in_err: %d\n
+L:LL_RX_MCI_STATS0_FILTER_FIFO_OVERFLOW S:STAT:MAC link_layer_rx->mac_client_interface->client_array->stats0->filter_fifo_overflow: %d\n
+L:LL_RX_MCI_STATS0_ONE_CYCLE_PKT S:STAT:MAC link_layer_rx->mac_client_interface->client_array->stats0->one_cycle_pkt: %d\n
+L:LL_RX_MCI_STATS0_IN_FSM_ROLLOVER S:STAT:MAC link_layer_rx->mac_client_interface->client_array->stats0->in_fsm_rollover: %d\n
+L:LL_RX_MAC_PFIFO_WRENG_STATS0_PKT_MAX_BYTE_CNT_ERR S:STAT:MAC link_layer_rx->mac->pfifo->write_engine->stats0->pkt_max_byte_cnt_err: %d\n
+L:LL_RX_MAC_PFIFO_WRENG_STATS0_FIFO_FULL_ERR S:STAT:MAC link_layer_rx->mac->pfifo->write_engine->stats0->fifo_full_err: %d\n
+L:LL_RX_MAC_PFIFO_WRENG_STATS0_PKT_ERR S:STAT:MAC link_layer_rx->mac->pfifo->write_engine->stats0->pkt_err: %d\n
+L:LL_RX_MAC_PFIFO_WRENG_STATS0_PKT_SOP_ERR S:STAT:MAC link_layer_rx->mac->pfifo->write_engine->stats0->pkt_sop_err: %d\n
+L:LL_RX_MAC_PFIFO_WRENG_STATS0_DRP_PKT_RD S:STAT:MAC link_layer_rx->mac->pfifo->write_engine->stats0->drp_pkt_rd: %d\n
+L:LL_RX_MAC_PFIFO_WRENG_STATS0_DRP_PKT_WR S:STAT:MAC link_layer_rx->mac->pfifo->write_engine->stats0->drp_pkt_wr: %d\n
+L:LL_RX_MAC_PFIFO_RDENG_STATS0_DRP_PKT S:STAT:MAC link_layer_rx->mac->pfifo->read_engine->stats0->drp_pkt: %d\n
+L:LL_RX_PTP_GUARD_STATS0_SOP_ERROR S:STAT:MAC link_layer_rx->ptp_guard->stats0->missing_sop_err: %d\n
+L:LL_RX_PTP_GUARD_STATS0_EOP_ERROR S:STAT:MAC link_layer_rx->ptp_guard->stats0->missing_eop_err:  %d\n
+L:LL_RX_PTP_GUARD_STATS0_MAX_CYCLE_ERROR S:STAT:MAC link_layer_rx->ptp_guard->stats0->max_cycle_err: %d\n
+L:L3_TX_ETH_FRAMER_PFIFO_WRENG_STATS0_PKT_MAX_BYTE_CNT_ERR S:STAT:MAC layer3_tx->eth_framer->pfifo->write_engine->stats0->pkt_max_byte_cnt_err: %d\n
+L:L3_TX_ETH_FRAMER_PFIFO_WRENG_STATS0_FIFO_FULL_ERR S:STAT:MAC layer3_tx->eth_framer->pfifo->write_engine->stats0->fifo_full_err: %d\n
+L:L3_TX_ETH_FRAMER_PFIFO_WRENG_STATS0_PKT_ERR S:STAT:MAC layer3_tx->eth_framer->pfifo->write_engine->stats0->pkt_err: %d\n
+L:L3_TX_ETH_FRAMER_PFIFO_WRENG_STATS0_PKT_SOP_ERR S:STAT:MAC layer3_tx->eth_framer->pfifo->write_engine->stats0->pkt_sop_err: %d\n
+L:L3_TX_ETH_FRAMER_PFIFO_WRENG_STATS0_DRP_PKT_RD S:STAT:MAC layer3_tx->eth_framer->pfifo->write_engine->stats0->drp_pkt_rd: %d\n
+L:L3_TX_ETH_FRAMER_PFIFO_WRENG_STATS0_DRP_PKT_WR S:STAT:MAC layer3_tx->eth_framer->pfifo->write_engine->stats0->drp_pkt_wr: %d\n
+L:L3_TX_ETH_FRAMER_PFIFO_RDENG_STATS0_DRP_PKT S:STAT:MAC layer3_tx->eth_framer->pfifo->read_engine->Stats0->drp_pkt: %d\n
+L:L3_TX_ETH_FRAMER_PTP_GUARD_STATS0_SOP_ERROR S:STAT:MAC layer3_tx->eth_framer->ptp_guard->stats0->missing_sop_err: %d\n
+L:L3_TX_ETH_FRAMER_PTP_GUARD_STATS0_EOP_ERROR S:STAT:MAC layer3_tx->eth_framer->ptp_guard->stats0->missing_eop_err:  %d\n
+L:L3_TX_ETH_FRAMER_PTP_GUARD_STATS0_MAX_CYCLE_ERROR S:STAT:MAC layer3_tx->eth_framer->ptp_guard->stats0->max_cycle_err: %d\n
+L:L3_RX_ETH_DE_FRAMER_STATS0_NON_ETH_PKT S:STAT:MAC layer3_rx->eth_de_framer->stats0->non_eth_pkt: %d\n
+L:L3_RX_PTP_GUARD_STATS0_SOP_ERROR S:STAT:MAC layer3_rx->ptp_guard->stats0->missing_sop_err: %d\n
+L:L3_RX_PTP_GUARD_STATS0_EOP_ERROR S:STAT:MAC layer3_rx->ptp_guard->stats0->missing_eop_err:  %d\n
+L:L3_RX_PTP_GUARD_STATS0_MAX_CYCLE_ERROR S:STAT:MAC layer3_rx->ptp_guard->stats0->max_cycle_err: %d\n

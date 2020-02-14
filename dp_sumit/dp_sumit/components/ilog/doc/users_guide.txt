@@ -1,0 +1,195 @@
+ilog User's Guide
+=================
+
+Summary
+-------
+
+ilog provides a very low overhead method of logging simple messages with limited arguments.  It does this by outputting codes for string messages which are translated into strings by a runtime external debugger.  Strings use the printf format but can not dereference pointers as the strings are parsed by the debugger, for example logging "0x%x", (int32)&myVar works fine, but "buffer is \"%s\"", (char *)str would fail as the debugging host only knows the pointer value and not what string is at that location.
+
+Each component using ilog creates its own ilog file which contains a set of identifiers and strings.  The strings are printf style strings.  Calling code may refer the identifiers instead of the strings to simplify the runtime code path, and arguments will be sent to the runtime debugger.
+
+
+iassert
+-------
+iassert is a feature of the ilog component which wraps an assert handler with ilog.  The format is almost the same except instead of a logging level, an expression is used instead.  On an assert this message will be logged, and then the backend assert handler will be called.  See the next section for details on settup up a backend output.
+
+iassert can also take 2 hook functions, one to call before assert processing, and one to call after.  The intent is that the first hook will bring down the device (ie USB disconnect), which should let external components know that this system has gone down.  The second hook can either restart the system or go into a debug loop, such as ICMD_PollingLoop().
+
+
+Setting up backend output
+-------------------------
+ilog is designed to be independant of its backend transportation bus.  Initially it would be used by a serial port where a debug computer would parse the binary messages.  This could be changed to a socket/file/memory buffer/etc.
+
+Since this is a binary transmission protocol, it is important that a message gets through or not at all.  This way the parser doesn't need to constantly recover from missing headers and not knowing the length of any particular message.  So the backend function needs to guarantee an atomic transmission or nothing transmitted.
+
+The backend function must of the format:
+boolT (*)(uint32 * msg, uint32 bytes_to_print);
+where TRUE is returned if the entire message is printed, and FALSE if no part of the message is printed.  Also to allow optimizations at the backend the buffer given is 32 bit aligned, and there will always be a multiple of 32bits to print
+
+The backend support also includes support for iassert.  The Leon currently dumps the stack in its iassert function
+
+Currently only the Leon backend is supported, which requires a project.mak file to export ILOG_BACKEND as LEON
+
+
+Setting up the components
+-------------------------
+project_components.h must be in the include path for ilog to get the component_t type defined.  See the component ibase for information about project_components.h files
+
+
+Endian Specific Setup
+---------------------
+IENDIAN must be defined as 1 for big endian, and 0 for little endian
+
+
+Creating ilog files
+-------------------
+Each component that uses ilog should copy ilog/inc/component_ilog.h.example into its src/ directory with representive name (instead of the template name).  Then the file should be modified for unique strings messages
+
+The ilog file contains a block that looks like the following:
+ILOG_CREATE(_component_code_)              
+ILOG_ENTRY(_identifier_, _string_)
+ILOG_ENTRY(_identifier_, _string_)
+ILOG_ENTRY(_identifier_, _string_)
+ILOG_END(_component_code_, _compile_level_)
+
+_component_code_ is the code for this component as defined in project_components.h
+
+_identifier_, _string_ pairs are the logging messages to be used
+_compile_level_ is the default logging level at which to compile messages out at.
+
+
+Here is a sample
+
+//Sample
+ILOG_CREATE(VHUB_COMPONENT)
+    ILOG_ENTRY(HOST_CONNECT, "Detected a host connect to virtual hub event")
+    ILOG_ENTRY(HOST_DISCONNECT, "Detected a host disconnect to virtual hub event")
+ILOG_END(VHUB_COMPONENT,ILOG_MINOR_EVENT)
+
+
+Using ilog messages
+-------------------
+ilog creates a set of API's when the ilog file for this component is included by C code.  This component will receive a unique set of API's which provide logging for different numbers of arguments, and can provide asserts with log messages.
+
+The API's defined are:
+void ilog_COMPONENTNAME_0(ilogLevelT, ilogCodeT);
+void ilog_COMPONENTNAME_1(ilogLevelT, ilogCodeT, uint32 arg1);
+void ilog_COMPONENTNAME_2(ilogLevelT, ilogCodeT, uint32 arg1, uint32 arg2);
+void ilog_COMPONENTNAME_3(ilogLevelT, ilogCodeT, uint32 arg1, uint32 arg2, uint32 arg3);
+void iassert_COMPONENTNAME_0(expr, ilogCodeT);
+void iassert_COMPONENTNAME_1(expr, ilogCodeT, uint32 arg1);
+void iassert_COMPONENTNAME_2(expr, ilogCodeT, uint32 arg1, uint32 arg2);
+void iassert_COMPONENTNAME_3(expr, ilogCodeT, uint32 arg1, uint32 arg2, uint32 arg3);
+
+where the number at the end of the name indicates the number of arguments, and
+
+where ilogLevelT is priority of the message, and defined as
+typedef enum
+{
+   ILOG_DEBUG,          // Normally only used when developing a component
+   ILOG_MINOR_EVENT,    // 
+   ILOG_MAJOR_EVENT,    // 
+   ILOG_WARNING,        // 
+   ILOG_MINOR_ERROR,    // 
+   ILOG_MAJOR_ERROR,    // 
+   ILOG_FATAL_ERROR,    //
+   ILOG_NUMBER_OF_LOGGING_LEVELS
+} ilogLevelT;
+
+
+Setting Logging Levels
+----------------------
+The logging level can be set at runtime to decide which logging messages to ignore and which messages to output, and is controlled by the following 2 functions.
+
+// Setting the logging level
+void ilog_SetLevel(ilogLevelT level, component_t component);
+
+// Getting the logging level
+ilogLevelT ilog_GetLevel(component_t component);
+
+Note that if the compile time logging level was set to high then the lower level logging messages are not even available and runtime regardless of the runtime setting.
+
+Example
+-------
+For the component Linked_Lists, the following could be its src/linked_list_ilog.h file
+ILOG_CREATE(Linked_Lists)
+    ILOG_ENTRY(SLL_Init, "Single Linked List initializing list 0x%x, from component %d")
+    ILOG_ENTRY(SLL_Append, "For Single Linked List 0x%x, appending item 0x%x")
+    ILOG_ENTRY(SLL_Prepend, "For Single Linked List 0x%x, prepending item 0x%x")
+    ILOG_ENTRY(SLL_Remove, "For Single Linked List 0x%x, removing item 0x%x")
+    ILOG_ENTRY(SLL_Pop, "For Single Linked List 0x%x, popping item 0x%x")
+    ILOG_ENTRY(SLL_Push, "For Single Linked List 0x%x, pushing item 0x%x")
+    ILOG_ENTRY(SLL_Corrupted_Memory, "For Single Linked List 0x%x, Memory is corrupted")
+ILOG_END(Linked_Lists,ILOG_MINOR_EVENT)
+
+Now in C code the user can call
+
+    ilog_Linked_Lists_2(ILOG_MAJOR_EVENT, SLL_Init, newListNumber, callingComponent);
+or
+    ilog_Linked_Lists_2(ILOG_MINOR_EVENT, SLL_Pop, listNum, item);
+or
+    iassert_Linked_Lists_1(ptr < upperBound, SLL_Corrupted_Memory, listNum)
+
+
+Binary Protocol
+---------------
+All ilog messages start with an 1 byte header defined in binary as the following with the 1st bit being the most significant:
+ 1111_<Endian Setting, 1 for big, 0 for little><Previous log printed, 1 for true, 0 for false><number of args upper bit><number of args lower bit>
+
+Following that the next bytes are
+2) the component number
+3) the message code number
+4) the severity level of this message
+
+If there are 1 or more arguments, the next 4 bytes are the first argument in target endian format
+If there are 2 or more arguments, the next 4 bytes are the second argument in target endian format
+If there are 3 arguments, the next 4 bytes are the third argument in target endian format
+
+So an ilog message can be 4 bytes, 8 bytes, 12 bytes, or 16 bytes depending on the number of arguments
+
+
+Custom Parsing of Component ilog Files and ibuild Processing
+------------------------------------------------------------
+By defining the following 3 macros before including <component>_log.h the parsing of the the log file can be done in any custom manner.
+
+ILOG_PARSER_PREFIX(_component_)
+ILOG_PARSER(_ilog_id_, _ilog_string_)
+ILOG_PARSER_POSTFIX(_component_, _compile_level_)
+
+ibuild uses this to parse the log files to produces a file format suitable for Tigger to process
+
+For example in normal C code from the single linked list example above an enum is created
+typedef enum {
+    SLL_Init,
+    SLL_Append,
+    SLL_Prepend,
+    SLL_Remove,
+    SLL_Pop,
+    SLL_Push,
+    SLL_Corrupted_Memory,
+} Linked_Lists_ilogCodeT;
+
+and when ibuild processes the file it would create the following
+
+component:Linked_Lists
+L:SLL_Init S:Single Linked List initializing list 0x%x, from component %d
+L:SLL_Append S:For Single Linked List 0x%x, appending item 0x%x
+L:SLL_Prepend S:For Single Linked List 0x%x, prepending item 0x%x
+L:SLL_Remove S:For Single Linked List 0x%x, removing item 0x%x
+L:SLL_Pop S:For Single Linked List 0x%x, popping item 0x%x
+L:SLL_Push S:For Single Linked List 0x%x, pushing item 0x%x
+L:SLL_Corrupted_Memory S:For Single Linked List 0x%x, Memory is corrupted
+
+where L: stands for the log message, and S: stands for the string.
+
+ibuild notes:
+1) ibuild will also will strip leading and trailing spaces, empty lines, and the C style quotes representing strings, as everything after the S: is a string.
+2) ibuild will create ilog.component files which would contain just the logs for this component, and ilog files which contain the logs of all the dependent components and will contain the project_components.h information in textual form as well.
+
+
+Testing
+-------
+There is currently a unit test in the test harness directory.  This test just uses printf to output a series of messages.  It was originally used to help develop ilog, and can now be used as a reference.
+
+There are also numerous leon test harnesses that use ilog to test the backend for ilog
+

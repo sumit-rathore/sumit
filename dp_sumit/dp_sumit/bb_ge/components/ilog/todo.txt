@@ -1,0 +1,30 @@
+The compile time logging level doesn't seem to always work.  Can GCC just not figured out the constants??
+
+There are some magic numbers that need cleaning up
+
+Future asserts add a logging bit to indicate that this message is an assert and automatically include line number and file name
+
+file name could be added as a pointer to __FILE__ which is in a section that is stripped from the elf file before converting to binary, but exists in the original elf file for Tigger to parse.  This method could also allow and %s string to work
+
+The interface isn't in a nice document.  Especially the backend of how the raw bytes are printed out
+
+m4 could be used for more advanced compile time features
+Ex:
+    define(`func',`$1 and $2')
+    
+    func(asdf, qwert, zxcv)
+    
+    define(`ILOG_COMPONENT_COMPILE_LOG_LEVEL',`#define $1_compile_time_level $2')
+    
+    ILOG_COMPONENT_COMPILE_LOG_LEVEL(xusb, high)
+    
+    dnl #define ILOG_ENTRY(_identifier_, _string_, _num_of_args_) (_identifier_)
+     
+    define(`ILOG_ENTRY',`($1)
+    #define $1_args $3')
+    
+    ILOG_ENTRY(msg, "asdfdsf", 6)
+    
+    dnl using the above I could also going and create a build rule to convert .ilog files to _log.h files
+    dnl a compile time assert would ensure the correct number of arguments are used
+ 

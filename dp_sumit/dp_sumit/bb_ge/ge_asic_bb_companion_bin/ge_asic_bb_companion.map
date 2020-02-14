@@ -1,0 +1,956 @@
+
+
+
+
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    df *ABS*	00000000 
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans0.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans10.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans11.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans12.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans13.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans14.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans15.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans16.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans17.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans18.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans19.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans1.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans20.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans21.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans22.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans23.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans24.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans25.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans26.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans27.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans28.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans29.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans2.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans30.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans3.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans4.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans5.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans6.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans7.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans8.o
+00000000 l    df *ABS*	00000000 ccqU6Dnk.ltrans9.o
+00000000 l    df *ABS*	00000000 ./ge_asic_bb_companion_obj/traps.o
+00000000 l    df *ABS*	00000000 ./ge_asic_bb_companion_obj/uninit_isr.o
+00000000 l    df *ABS*	00000000 libgcc2.c
+00000000 l    df *ABS*	00000000 libgcc2.c
+00000000 l    df *ABS*	00000000 start.o
+000001f0 g     F *ABS*	00000048 ROM_uartBoot
+00000464 g     F *ABS*	00000014 LEON_UartSetBaudRate115200
+000004e8 g     F *ABS*	00000040 LEON_TimerInit
+30000000 g       .start_text	00000000 start
+30000000 l    d  .start_text	00000000 .start_text
+30000018 g       .start_text	00000000 LEON_CPUInitStackAndCall
+3000003c l       .start_text	00000000 start2
+300000c0 l       .start_text	00000000 call_C_forever
+300000d0 g       *ABS*	00000000 __load_start_ftext
+30000154 g     F *ABS*	0000008c startup_memset
+300001e0 g     F *ABS*	00000060 startup_memcpy
+300064b4 g       *ABS*	00000000 __load_start_rextext
+300064b4 g       *ABS*	00000000 __load_stop_ftext
+3000967c g       *ABS*	00000000 __load_start_lextext
+3000967c g       *ABS*	00000000 __load_stop_rextext
+3000ca5c g       *ABS*	00000000 __load_start_icron_xusbcfg_text
+3000ca5c g       *ABS*	00000000 __load_stop_lextext
+3000d414 g       *ABS*	00000000 __load_start_crestron_xusbcfg_text
+3000d414 g       *ABS*	00000000 __load_stop_icron_xusbcfg_text
+3000dab0 g       *ABS*	00000000 __load_stop_crestron_xusbcfg_text
+3000dab0 l    d  .text	00000000 .text
+3000dab0 l     F .text	00000158 ICMD_ProcessByte.16069.1618
+3000dc08 g     F .text	00000068 readMemory
+3000dc70 g     F .text	00000024 writeMemory
+3000dc94 g     F .text	00000050 readModifyWriteMemory
+3000dce4 g     F .text	00000068 modifyBitfield
+3000dd4c g     F .text	00000060 dumpMemory32
+3000ddac g     F .text	00000024 callFunction
+3000ddd0 g     F .text	00000014 ICMD_deprecatedIcmdFunction
+3000dde4 g     F .text	00000024 readMemory16
+3000de08 g     F .text	00000024 writeMemory16
+3000de2c g     F .text	00000060 readModifyWriteMemory16
+3000de8c g     F .text	0000001c readMemory8
+3000dea8 g     F .text	00000024 writeMemory8
+3000decc g     F .text	0000001c .hidden LEON_EnableIrq
+3000dee8 g     F .text	00000050 .hidden _UART_initPort.16421
+3000df38 g     F .text	00000160 .hidden UART_packetizeSendDataImmediate
+3000e098 g     F .text	000000b0 .hidden PacketizeTask.16515
+3000e148 g     F .text	00000048 .hidden _GRG_IrqRegisterHandler
+3000e190 g     F .text	0000005c .hidden _GRG_IrqEnable
+3000e1ec g     F .text	0000003c .hidden GRG_int16Multiply
+3000e228 g     F .text	000000e0 .hidden GRG_int16Divide
+3000e308 g     F .text	00000054 icmdDivide
+3000e35c g     F .text	00000020 icmdMultiply
+3000e37c g     F .text	00000064 .hidden GRG_SetLocatorLedsPattern
+3000e3e0 g     F .text	00000058 .hidden GRG_ClearLocatorLedsPattern
+3000e438 g     F .text	00000038 .hidden GRG_ToggleLed
+3000e470 g     F .text	00000024 .hidden GRG_TurnOnLed
+3000e494 g     F .text	00000020 .hidden GRG_TurnOffLed
+3000e4b4 l     F .text	0000009c GRG_UpdateLed.15410.1524
+3000e550 l     F .text	00000040 GRG_IsLedLogicInverted.15403.1519
+3000e590 g     F .text	0000000c ledSetLocatorLedsPattern
+3000e59c g     F .text	0000000c ledClearLocatorLedsPattern
+3000e5a8 g     F .text	00000010 ledTurnOn
+3000e5b8 g     F .text	00000010 ledTurnOff
+3000e5c8 g     F .text	00000014 ledToggle
+3000e5dc g     F .text	00000054 .hidden TIMING_TimerRegisterHandler
+3000e630 g     F .text	00000018 .hidden _TIMING_AssertNullPointer.15520
+3000e648 g     F .text	00000060 showTimers
+3000e6a8 g     F .text	00000028 startTimer
+3000e6d0 g     F .text	00000028 stopTimer
+3000e6f8 g     F .text	0000002c changeTimeout
+3000e724 g     F .text	0000007c viewTasks
+3000e7a0 g     F .text	00000038 RANDOM_QuickPseudoRandomNewSeed
+3000e7d8 g     F .text	00000018 getQuickPseudoRandom
+3000e7f0 g     F .text	00000020 ilog_setBlockingMode
+3000e810 g     F .text	0000001c ilog_clearBlockingMode
+3000e82c g     F .text	00000270 .hidden _iassert
+3000ea9c l     F .text	0000001c goToAssertHookEnd.15843.1389
+3000eab8 g     F .text	00000068 assertStatus
+3000eb20 g     F .text	0000005c ilog_SetLevel
+3000eb7c g     F .text	00000040 ilog_icmdGetLevel
+3000ebbc g     F .text	00000020 testAssert3
+3000ebdc g     F .text	00000010 testStackOverFlow
+3000ebec g     F .text	0000005c .hidden PacketizeSendData.16537
+3000ec48 g     F .text	00000028 .hidden PacketizeResetRxState.16524
+3000ec70 g     F .text	00000028 .hidden PacketizeRxPacketTimeout.16513
+3000ec98 g     F .text	00000014 .hidden PacketizeRxHandlerTimeout.16511
+3000ecac g     F .text	00000098 .hidden crc16Slow.constprop.12
+3000ed44 g     F .text	000000b4 .hidden DTT_GetAddressFromVF.constprop.34
+3000edf8 g     F .text	000001d4 .hidden GRG_GpioInit.constprop.57
+3000efcc g     F .text	000000bc .hidden LEX_Init.constprop.83
+3000f088 g     F .text	00000070 .hidden TASKSCH_InitTask.constprop.87
+3000f0f8 g     F .text	0000000c .hidden GRG_GetPlatformID
+3000f104 g     F .text	0000000c .hidden GRG_GetVariantID
+3000f110 g     F .text	00000058 .hidden GRG_VariantSupportsDcf
+3000f168 g     F .text	00000034 .hidden GRG_VariantSupportsNetCfg
+3000f19c g     F .text	00000018 .hidden getResetBitMask.part.0.14519
+3000f1b4 g     F .text	0000003c .hidden GRG_GpioSet
+3000f1f0 g     F .text	0000003c .hidden GRG_GpioClear
+3000f22c g     F .text	00000050 .hidden GRG_GpioPulse
+3000f27c g     F .text	00000010 .hidden GRG_GpioFastPulse
+3000f28c g     F .text	00000010 .hidden GRG_GpioSlowPulse
+3000f29c g     F .text	00000040 .hidden getPllIrqNum.14720
+3000f2dc g     F .text	00000068 .hidden GRG_PllDisableIrq
+3000f344 g     F .text	00000044 .hidden GRG_PllIsLocked
+3000f388 g     F .text	00000018 .hidden GRG_PllResetCrmClock
+3000f3a0 g     F .text	00000018 .hidden GRG_PllResetCtmClock
+3000f3b8 g     F .text	0000003c icmdMdioWrite
+3000f3f4 g     F .text	00000024 icmdMdioRead
+3000f418 l     F .text	00000018 icmdMdioReadHelper.14814.1565
+3000f430 g     F .text	0000007c icmdMdioWriteSync
+3000f4ac g     F .text	00000080 icmdMdioReadSync
+3000f52c g     F .text	00000064 .hidden GRG_MeasurePllInMHz
+3000f590 g     F .text	000000d8 .hidden _GRG_PLLMeasureFreq.14874
+3000f668 g     F .text	00000058 icmdPLLMeasure
+3000f6c0 g     F .text	00000040 icmdPLLFreq
+3000f700 g     F .text	000000e0 mdioI2cStatus
+3000f7e0 g     F .text	00000028 .hidden mdioI2cAssertInvalidState.14978
+3000f808 g     F .text	00000038 i2cWake
+3000f840 l     F .text	00000014 wakeComplete.15216.1363
+3000f854 g     F .text	000000a4 i2cRead
+3000f8f8 l     F .text	00000044 readComplete.15218.1359
+3000f93c g     F .text	00000054 i2cWrite
+3000f990 l     F .text	00000028 writeComplete.15222.1410
+3000f9b8 g     F .text	000000b8 i2cWriteRead
+3000fa70 l     F .text	00000044 i2cWriteReadComplete.15225.1355
+3000fab4 g     F .text	000000b4 i2cWriteReadBlock
+3000fb68 g     F .text	00000020 .hidden XLR_msaReadPtrTable
+3000fb88 g     F .text	0000004c msaWritePtrTable
+3000fbd4 g     F .text	00000018 msaAllocatePtr
+3000fbec g     F .text	00000044 .hidden XLR_msaAllocatePtr
+3000fc30 g     F .text	00000054 XLR_msaFreePtr
+3000fc84 g     F .text	0000003c msaClearStatusTable
+3000fcc0 g     F .text	0000003c .hidden readMsaAll.13620
+3000fcfc g     F .text	00000014 .hidden XRR_SOFSync
+3000fd10 g     F .text	00000014 XRR_SOFEnable
+3000fd24 g     F .text	00000014 XRR_SOFDisable
+3000fd38 g     F .text	00000048 .hidden CLM_VPortDisable
+3000fd80 g     F .text	0000004c .hidden _CLM_VPortDisable.14109
+3000fdcc g     F .text	000000a4 .hidden CLM_VPortEnable
+3000fe70 g     F .text	00000074 .hidden vportDisableVPortTimerHandler.14103
+3000fee4 g     F .text	00000158 .hidden CLM_onPhyLinkUp
+3001003c g     F .text	00000068 .hidden CLM_configureVportMacDst
+300100a4 g     F .text	000000c4 .hidden CLM_SetUSBDefaultSpeed
+300100a4 g     F .text	000000c4 .hidden CLM_SetUSBFullSpeed
+300100a4 g     F .text	000000c4 .hidden CLM_SetUSBHighSpeed
+300100a4 g     F .text	000000c4 .hidden CLM_SetUSBLowSpeed
+30010168 g     F .text	00000040 CLM_AdjustTxWaitForRespLimit
+300101a8 g     F .text	0000005c CLM_AdjustTxQidThresh
+30010204 g     F .text	00000018 CLM_LogRxStats
+3001021c g     F .text	00000018 CLM_LogTxStats
+30010234 g     F .text	00000024 .hidden ULM_GetAndClearInterrupts
+30010258 g     F .text	00000048 ULM_ConnectLexUsbPort
+300102a0 g     F .text	00000034 .hidden ULM_ReadDetectedSpeed
+300102d4 g     F .text	00000018 .hidden ULM_EnableDisconnectInterrupt
+300102ec g     F .text	00000018 .hidden ULM_EnableConnectInterrupt
+30010304 g     F .text	00000014 .hidden ULM_DisableSuspendDetect
+30010318 g     F .text	00000050 ULM_DisconnectUsbPort
+30010368 g     F .text	00000030 .hidden ULM_SelectSpeed.14366
+30010398 g     F .text	00000010 ULM_GenerateLexUsbRemoteWakeup
+300103a8 g     F .text	0000002c .hidden setUlmCtrlReg.14369
+300103d4 g     F .text	0000001c .hidden ULM_usb2HighSpeedEnabled
+300103f0 g     F .text	00000034 .hidden GRG_Reset
+30010424 g     F .text	00000044 GRG_ResetChip
+30010468 g     F .text	00000020 GRG_PrintPlatformAndVariantId
+30010488 g     F .text	00000040 .hidden GRG_IsHSJumperSelected
+300104c8 g     F .text	0000004c .hidden GRG_IsLayer2JumperSelected
+30010514 g     F .text	00000044 icmdXSSTWriteLat
+30010558 g     F .text	0000004c icmdXSSTWriteSST
+300105a4 g     F .text	00000060 icmdXSSTReadModifyWriteSST
+30010604 g     F .text	0000005c icmdXSSTReadAll
+30010660 g     F .text	0000001c .hidden XCSR_XSSTAddr0SetInsys
+3001067c g     F .text	00000078 icmdReadQueueStats
+300106f4 g     F .text	00000090 icmdReadCacheStats
+30010784 g     F .text	000000e4 icmdReadQueueFrame
+30010868 g     F .text	0000028c icmdWriteQueueFrame
+30010af4 g     F .text	00000074 .hidden DecodeLatEntry.13212
+30010b68 g     F .text	0000055c .hidden XCSR_XSSTShowEntry
+300110c4 g     F .text	0000002c icmdSendMessage
+300110f0 g     F .text	0000002c icmdSendMessageWithData
+3001111c g     F .text	00000050 icmdSendMessageWithExtraData
+3001116c g     F .text	00000018 .hidden XLR_lexEnable
+30011184 g     F .text	00000018 .hidden XLR_lexDisable
+3001119c g     F .text	00000024 .hidden XLR_controlSofForwarding
+300111c0 g     F .text	00000018 .hidden _XLR_fatalInterruptHandler
+300111d8 g     F .text	00000060 .hidden XLR_releaseRetryBuffer
+30011238 g     F .text	00000028 msaReadLat
+30011260 g     F .text	00000048 msaWriteLat
+300112a8 g     F .text	00000034 .hidden XLR_msaGetAddrFromMsaLat
+300112dc g     F .text	0000001c .hidden XLR_msaUpdateAddress
+300112f8 g     F .text	00000048 msaReadPtrTableICmd
+30011340 g     F .text	00000064 .hidden XCSR_XICSQueueGetStats
+300113a4 g     F .text	000000ac .hidden XCSR_XICSDumpFrame
+30011450 g     F .text	00000010 .hidden XCSR_XICSQQueueFlush
+30011460 g     F .text	0000007c .hidden XCSR_XSSTUpdateAddress
+300114dc g     F .text	00000024 .hidden XCSR_XSSTClearInsys
+30011500 g     F .text	0000001c .hidden XCSR_XSSTClearLAT
+3001151c g     F .text	0000003c .hidden XCSR_XSSTReadLogicalAddressTable
+30011558 g     F .text	00000060 .hidden XCSR_XSSTReadConditional
+300115b8 g     F .text	00000078 .hidden XCSR_XSSTWriteConditional
+30011630 g     F .text	00000044 XSSTConfigureMSA
+30011674 g     F .text	00000174 .hidden XCSR_XSSTResetEndpoints
+300117e8 g     F .text	00000078 EEPROM_icmdReadPage
+30011860 l     F .text	000000d0 _EEPROM_icmdReadDone.11480.1708
+30011930 g     F .text	000000d4 EEPROM_icmdWritePage
+30011a04 l     F .text	00000024 _EEPROM_icmdWriteDone.11486.1691
+30011a28 g     F .text	0000002c atmel_setSpeed
+30011a54 l     F .text	00000018 atmel_assertHelper.11581.1685
+30011a6c l     F .text	0000002c atmel_readConfigWordDone.11699.1617
+30011a98 l     F .text	00000040 atmel_writeConfigWordDone.11704.1604
+30011ad8 l     F .text	00000040 atmel_isChipLockedDone.11709.1589
+30011b18 g     F .text	00000074 atmel_icmdSend
+30011b8c g     F .text	00000078 atmel_icmdWithDataWordSend
+30011c04 g     F .text	00000040 atmel_setICmdWriteDataBuffer
+30011c44 g     F .text	00000054 atmel_writeDataSlotFromBuffer
+30011c98 g     F .text	0000007c atmel_readConfigWordIcmd
+30011d14 g     F .text	0000007c atmel_writeConfigWordIcmd
+30011d90 g     F .text	00000044 atmel_isChipLockedIcmd
+30011dd4 g     F .text	00000044 atmel_lockConfigZoneIcmd
+30011e18 g     F .text	00000044 atmel_lockDataAndOtpZonesIcmd
+30011e5c l     F .text	00000060 atmel_i2cIcmdDone.11845.1561
+30011ebc l     F .text	00000014 _atmel_onWriteDataSlotDone.11850.1559
+30011ed0 l     F .text	0000003c _atmel_onReadConfigWordIcmdDone.11852.1364
+30011f0c l     F .text	00000014 _atmel_onWriteConfigWordIcmdDone.11855.1362
+30011f20 l     F .text	00000020 _atmel_onIsChipLockedDone.11857.1358
+30011f40 l     F .text	00000014 _atmel_onLockDone.11861.1355
+30011f54 l     F .text	00000040 atmel_lockDone.11957.1553
+30011f94 g     F .text	0000007c .hidden XCSR_XUSBAllocateStaticQueues.12089
+30012010 g     F .text	00000030 .hidden _XCSR_SetUSBLowFullSpeed
+30012040 g     F .text	00000050 .hidden XCSR_SetUSBHighSpeed
+30012090 g     F .text	00000014 .hidden XCSR_XUSBXctmEnableUsbTx
+300120a4 g     F .text	00000014 .hidden XCSR_XUSBXurmXutmEnable
+300120b8 g     F .text	00000014 .hidden XCSR_XUSBXurmXutmDisable
+300120cc g     F .text	00000020 .hidden XCSR_XUSBEnableSystemQueueInterrupts
+300120ec g     F .text	00000070 .hidden STORAGE_logAllVars
+3001215c g     F .text	00000044 .hidden _STORAGE_BBGetCurrentVariable.10937
+300121a0 l     F .text	00000094 _STORAGE_BBrxCurrentVariable.10885.1456
+30012234 l     F .text	00000024 STORAGE_logVar.part.8.10959.1446
+30012258 g     F .text	0000003c STORAGE_icmdReadVar
+30012294 g     F .text	00000060 STORAGE_icmdWriteVar
+300122f4 g     F .text	00000044 STORAGE_icmdRemoveVar
+30012338 g     F .text	00000010 STORAGE_icmdDumpAllVars
+30012348 g     F .text	00000058 .hidden _FLASH_readHeader
+300123a0 l     F .text	00000048 _FLASH_getActiveDataSection.1413
+300123e8 g     F .text	000000ac .hidden findVarStart.11214
+30012494 g     F .text	00000018 _DTT_showDeviceXSST
+300124ac g     F .text	00000088 _DTT_showAllDeviceXSST
+30012534 g     F .text	0000021c _DTT_showSingleDeviceTopology
+30012750 g     F .text	00000084 _DTT_showAllDeviceTopologyByLA
+300127d4 g     F .text	00000078 _DTT_showAllDeviceTopologyByUSB
+3001284c g     F .text	00000094 WriteXSSTCmd
+300128e0 g     F .text	00000070 ShowXsst
+30012950 g     F .text	0000000c DEPRECATED_ShowTopologyByUsb
+3001295c g     F .text	0000002c ShowLat
+30012988 g     F .text	00000014 .hidden DTT_GetSystemControlQueueState
+3001299c g     F .text	0000003c .hidden DTT_CheckAndSetProductId
+300129d8 l     F .text	000000e0 handleNewDevice.9391.1664
+30012ab8 g     F .text	00000020 .hidden DTT_GetVirtualFunction
+30012ad8 g     F .text	000000f4 .hidden DTT_VFSendCtrlStallIn
+30012bcc g     F .text	00000108 .hidden DTT_VFSendCtrlStallOut
+30012cd4 l     F .text	0000001c _DTT_GetAddressAssertHelper.9837.1517
+30012cf0 g     F .text	00000014 REXSCH_Enable
+30012d04 g     F .text	00000050 .hidden ForceCleanupUsbAddr.8436
+30012d54 g     F .text	000003e8 .hidden _DTT_WriteEndpointData.8547
+3001313c g     F .text	00000048 .hidden DTT_SetOperatingSpeed
+30013184 g     F .text	00000030 .hidden DTT_describeTopology
+300131b4 g     F .text	000000b8 .hidden _DTT_ClearEndpoints
+3001326c g     F .text	00000044 .hidden _DTT_FindMsaEndpoint.8299
+300132b0 l     F .text	0000008c _DTT_FindEndpoint.8292.1669
+3001333c l     F .text	00000058 describeTopologyHelper.8271.1609
+30013394 g     F .text	00000088 .hidden FindFirstHighSpeedAncestor.8306
+3001341c g     F .text	00000040 .hidden isSplitDevice
+3001345c g     F .text	00000034 _DTT_XSSTMonStop
+30013490 g     F .text	00000034 _DTT_XSSTMonStart
+300134c4 g     F .text	00000048 .hidden _DTT_XSSTMonXsstBlockingMonitor.8808
+3001350c g     F .text	00000320 .hidden _DTT_XSSTMonXsstBlockingMonitorTask.8804
+3001382c g     F .text	000000e8 .hidden DTT_showSingleDeviceXSST
+30013914 l     F .text	0000006c _NET_createPairTo.8086.1639
+30013980 g     F .text	00000098 .hidden _NET_pairingBroadcastTimeoutHandler.8070
+30013a18 g     F .text	00000028 .hidden _NET_pairingAddedNotification.8060
+30013a40 g     F .text	000000e4 .hidden _DTT_Reset
+30013b24 g     F .text	00000068 .hidden FindNode.8322
+30013b8c g     F .text	00000084 .hidden DTT_FinalizeSetAddress
+30013c10 l     F .text	00000030 _DTT_CleanupNowHelper.8264.1520
+30013c40 g     F .text	0000007c .hidden DTT_PortDisconnect
+30013cbc g     F .text	00000118 .hidden _DTT_CleanupHelper.8259
+30013dd4 g     F .text	000002fc .hidden ResetXsstEntries.8269
+300140d0 l     F .text	0000017c GetSplitRaceType.8417.1350
+3001424c g     F .text	00000020 .hidden _NET_ipv4ResetNetworkParameters
+3001426c g     F .text	0000007c .hidden NET_udpBindPortHandler
+300142e8 g     F .text	000000c8 .hidden NET_dhcpInitialize
+300143b0 g     F .text	000000a4 .hidden Icron_topologyDescriptionCallback.6818
+30014454 g     F .text	00000024 NET_icmdSetIPv4Configuration
+30014478 g     F .text	00000028 NET_icmdViewIPv4Configuration
+300144a0 g     F .text	000000a4 .hidden Crestron_topologyDescriptionCallback.6624
+30014544 g     F .text	0000002c .hidden REXULM_assertHook
+30014544 g     F .text	0000002c REXULM_showCurrentState
+30014570 g     F .text	00000048 .hidden _REXULM_SendHostDeviceConnect
+300145b8 g     F .text	00000028 .hidden _REXULM_SendUsbMsg
+300145e0 g     F .text	00000160 .hidden NETCFG_Initialize
+30014740 g     F .text	00000080 .hidden VHUB_DisConnectDev
+300147c0 g     F .text	00000098 .hidden VHUB_FinishResumePort
+30014858 g     F .text	00000048 .hidden VHUB_StartResumePort
+300148a0 g     F .text	00000050 .hidden VHUB_RemoteWakeup
+300148f0 g     F .text	0000008c vhubReadState
+3001497c g     F .text	00000064 .hidden _REXULM_logCurrentState
+300149e0 l     F .text	00000054 _REXULM_UlmDisconnectIsr.5866.1513
+30014a34 g     F .text	00000078 .hidden _REXULM_UlmConnect
+30014aac g     F .text	00000084 .hidden _REXULM_ConnectDebounceTimerHandler
+30014b30 g     F .text	0000002c .hidden _REXULM_ConnectUsbPortTimerHandler
+30014b5c g     F .text	00000028 .hidden _REXULM_DevConnDebounceTimerHandler
+30014b84 l     F .text	00000044 _REXULM_HostDisconnectMsg.6084.1447
+30014bc8 g     F .text	000000a8 .hidden _REXULM_idleTaskSuspending
+30014c70 g     F .text	000000e4 .hidden _REXULM_idleTaskBusResetting
+30014d54 g     F .text	00000044 REXULM_adjustPrefetchTimer
+30014d98 g     F .text	00000040 REXULM_adjustConnectTimer
+30014dec g     F .text	0000016c .hidden VHUB_DevicePortMessage
+30014f58 g     F .text	00000110 .hidden VhubPortResetTimerComplete.5075
+30015068 g     F .text	00000048 .hidden VhubPortResumeTimerComplete.5073
+300150b0 g     F .text	000000e0 .hidden VHUB_Reset
+30015190 l     F .text	00000154 writeData.5219.1581
+300153b4 g     F .text	00000ce0 .hidden vhubSetupHandler.5233
+30016094 l     F .text	0000000c vhubInTransaction_DataPhase_InHandler_EP0.5225.1545
+300160a0 l     F .text	0000011c vhubInTransaction_StatusPhase_ZeroLengthOutHandler.5210.1536
+300161bc l     F .text	00000100 vhubOutTransaction_StatusPhase_InHandler.5204.1530
+300162bc g     F .text	00000010 .hidden vhubInAckHandler.5192
+300162cc l     F .text	00000020 vhubOutTransaction_StatusPhase_InAckHandler.5197.1504
+300162ec g     F .text	00000204 .hidden DEVMGR_ProcessPortResetRequest
+300164f0 g     F .text	0000008c .hidden DEVMGR_ProcessSetAddress
+3001657c g     F .text	000002f0 .hidden PARSER_FinalizeParsing
+3001686c g     F .text	00000030 .hidden PARSER_PrepareForDescriptor
+3001689c g     F .text	00000034 enableMsaParsing
+300168d0 g     F .text	00000030 disableMsaParsing
+30016900 g     F .text	0000004c .hidden markTime.4710
+3001694c l     F .text	0000001c LEX_SendMessageToRootDev.1551
+30016968 g     F .text	0000030c .hidden LEX_UlmGeneralIsr.4703
+30016c88 g     F .text	00000114 .hidden LEX_UlmMessageHandler
+30016d9c g     F .text	00000018 .hidden LEX_ForceUSBLinkDown
+30016db4 g     F .text	00000078 .hidden linkDown.4720
+30016e2c l     F .text	0000003c takeUSBLinkDown.4731.1435
+30016e68 g     F .text	0000002c .hidden LEX_UlmReconnectTimeout.4700
+30016e94 l     F .text	00000064 handleRootDeviceConnect.4713.1423
+30016ef8 g     F .text	00000064 .hidden LEXULM_SendLexUlmMsgToRex
+30016f7c g     F .text	000002a0 .hidden VHUB_HostPortMessage
+3001721c g     F .text	000000e4 .hidden _SYSCTRLQ_VFSetAddressInHandler
+30017300 g     F .text	0000003c .hidden _SYSCTRLQ_VFSetAddressInAckHandler
+3001733c g     F .text	0000005c showExpectedPacket
+30017398 g     F .text	00000048 .hidden _PLL_FpgaCfgMII.3442
+300173e0 g     F .text	0000003c .hidden _PLL_FpgaCfgGMII.3439
+3001741c g     F .text	00000020 .hidden _PLL_FpgaCfgTbi.3445
+3001743c g     F .text	00000140 .hidden _PLL_FpgaCfgClei.3437
+3001757c g     F .text	00000044 .hidden _PLL_AsicCfgMII.3429
+300175c0 g     F .text	00000040 .hidden _PLL_AsicCfgGMII.3426
+30017600 g     F .text	00000028 .hidden _PLL_AsicCfgTbi.3432
+30017628 g     F .text	00000080 .hidden _PLL_AsicCfgClei.3424
+300176a8 g     F .text	00000030 .hidden _PLL_reinitializeCrm.3458
+300176d8 g     F .text	00000030 .hidden _PLL_reinitializeCtm.3456
+30017708 g     F .text	00000048 .hidden _PLL_crmPllLossIrq.3417
+30017750 g     F .text	0000004c .hidden _PLL_ctmPllLossIrq.3415
+3001779c g     F .text	000000b0 .hidden _PLL_WriteGrgPllConfig2.3448
+3001784c g     F .text	00000040 .hidden _PLL_CheckLockAndEnableIrq.part.2.3474
+3001788c g     F .text	000000b8 .hidden _LINKMGR_lexAllPairsActive.2868
+30017944 g     F .text	00000094 .hidden _LINKMGR_mlpIrqRex.3101
+300179d8 g     F .text	00000048 .hidden _LINKMGR_onPhyLinkUpRex.3103
+30017a20 g     F .text	0000001c .hidden _LINKMGR_onPhyLinkDownRex.3064
+30017a3c g     F .text	0000004c .hidden _LINKMGR_removeAllDeviceLinksRex.3084
+30017a88 g     F .text	00000034 .hidden _LINKMGR_vportNegotiationTimeoutHandler.3057
+30017abc g     F .text	00000010 .hidden _LINKMGR_rexMlpLinkAcquisitionTimeoutHandler.3055
+30017acc l     F .text	00000080 _LINKMGR_takeDownLinkRex.3061.1429
+30017b4c g     F .text	000000a4 .hidden _LINKMGR_rexSendTxProbe.3053
+30017bf0 g     F .text	00000188 .hidden _PLL_FpgaConfigureLinkClocks.3465
+30017d78 g     F .text	00000168 .hidden _PLL_AsicConfigureLinkClocks.3460
+30017ee0 g     F .text	00000104 .hidden _LINKMGR_phyMgrLinkDown
+30017fe4 g     F .text	0000004c .hidden _LINKMGR_onPhyLinkUpLex.2831
+30018030 g     F .text	000000c0 .hidden _LINKMGR_onPhyLinkDownLex.2847
+300180f0 g     F .text	00000068 .hidden _LINKMGR_removeAllDeviceLinksLex.2860
+30018158 g     F .text	0000009c .hidden LINKMGR_isDevicePairedWith
+300181f4 g     F .text	0000003c .hidden LINKMGR_assertHook
+300181f4 g     F .text	0000003c showLinkState
+30018230 g     F .text	00000040 .hidden _LINKMGR_phyMgrStartFreqMeasure
+30018270 g     F .text	000000cc .hidden _LINKMGR_phyMgrFreqMeasureTask.2612
+3001837c g     F .text	00000280 .hidden _LINKMGR_phyMgrCtmPllLockCheckTask.2618
+300185fc g     F .text	000000b4 .hidden _LINKMGR_phyMgrCrmPllLockCheckTask.2622
+300186b0 g     F .text	000001c8 .hidden _LINKMGR_phyMgrCrmDebounceDone.2616
+30018878 g     F .text	00000238 .hidden phyMgrLeaveLinkUp.2643
+30018ab0 g     F .text	0000006c .hidden phyMgrPllLossOfLockIrqCrm.2628
+30018b1c g     F .text	0000003c .hidden phyMgrPllLossOfLockIrqCtm.2626
+30018b58 g     F .text	0000001c LEON_UninitializedISR_C_helper1
+30018b74 g     F .text	00000034 LEON_UninitializedISR_C_helper2
+30018ba8 g     F .text	000000e0 .hidden sendStatsToBB
+30018c88 g     F .text	00000034 .hidden sendDevConnectionStatusMsgToBB
+30018cbc g     F .text	0000002c .hidden sendUlmNegotiatedSpeedMsgToBB
+30018ce8 g     F .text	0000003c .hidden GEBB_COMM_icmdRxHandler
+30018d24 g     F .text	00000020 icmdGetPhyStatus
+30018d44 l     F .text	00000140 _LINKMGR_phyStatusDecodeControl.2261.1462
+30018e84 l     F .text	00000020 _LINKMGR_phyStatusReadStatus.2184.1459
+30018ea4 l     F .text	00000190 _LINKMGR_phyStatusDecodeStatus.2181.1456
+30019034 g     F .text	00000040 .hidden _LINKMGR_phyMgrReset
+30019074 l     F .text	00000018 _LINKMGR_phyMgrReset1.2259.1450
+3001908c l     F .text	0000003c phyCheckForResetClear.2232.1445
+300190c8 l     F .text	00000018 phyCtrlSetup1.2235.1443
+300190e0 l     F .text	00000060 phyStatusCheckCapabilities.2237.1438
+30019140 l     F .text	00000028 phyExtendedStatusCheckCapabilities.2252.1435
+30019168 l     F .text	00000034 phyCheckExtendedCapabilities.2289.1431
+3001919c l     F .text	00000020 phyReadId2.2249.1428
+300191bc l     F .text	000000ac phyReadId3.2240.1423
+30019268 l     F .text	00000020 phyConfigureRealtekDisableEEE0.2257.1421
+30019288 l     F .text	0000001c phyConfigureRealtekDisableEEE1.2192.1419
+300192a4 l     F .text	0000001c phyConfigureRealtekDisableEEE2.2194.1417
+300192c0 l     F .text	0000001c phyConfigureRealtekDisableEEE3.2196.1415
+300192dc l     F .text	0000001c phyConfigureRealtekLeds1.2198.1413
+300192f8 l     F .text	0000001c phyConfigureRealtekLeds2.2200.1411
+30019314 l     F .text	0000001c phyConfigureRealtekLeds3.2202.1409
+30019330 l     F .text	0000001c phyConfigureRealtekLeds4.2204.1407
+3001934c l     F .text	00000038 phyDisableEee0.2206.1403
+30019384 l     F .text	0000001c phyDisableEee1.2255.1401
+300193a0 l     F .text	00000020 phyDisableEee2.2208.1399
+300193c0 l     F .text	0000001c phyDisableEee3.2210.1397
+300193dc l     F .text	00000054 phyEeeDisabled.2212.1395
+30019430 l     F .text	00000058 phy100AdvertiseDone.2214.1389
+30019488 l     F .text	0000009c phyWriteFinalControlSetting.2223.1385
+30019524 l     F .text	00000030 setupForLRE1.2246.1382
+30019554 l     F .text	0000001c setupForLRE2.2227.1380
+30019570 l     F .text	00000018 setupForLRE3.2216.1378
+30019588 l     F .text	00000044 setupForLRE4.2218.1373
+300195cc l     F .text	0000001c setupForLRE5.2225.1371
+300195e8 l     F .text	00000014 phyResetDone.2221.1369
+300195fc g     F .text	0000000c .hidden _LINKMGR_updatePhyLinkLedDone
+30019608 g     F .text	00000050 .hidden logBuildInfo.1415
+30019658 g     F .text	00000010 PrintSwVersion
+30019668 g     F .text	0000002c TOPLEVEL_DEBUG_ASSERT
+30019694 g     F .text	00000030 TOPLEVEL_printDeviceType
+300196c4 g     F .text	0000001c TOPLEVEL_getEcoStatus
+300196e0 g     F .text	00000030 .hidden checkUartRx.1392
+30019710 g     F .text	00000034 xmodem_new_image
+30019744 g     F .text	000018e4 .hidden imainPart2.1387
+3001b028 l     F .text	00000048 assertPreHook.1396.1377
+3001b070 l     F .text	00000570 assertPostHook.1398.1379
+3001b5e0 g     F .text	000005f0 imain
+3001bbd0 l     F .text	00000058 _TOP_i2cInitDone.1389.1374
+3001bc28 g     F .text	00000038 .hidden _TOP_killSystemTimerHandler.1385
+3001bc60 g     F .text	00000034 .hidden __popcountsi2
+3001bc94 g       .text	00000000 uninitializedISR
+3001bce8 l       .text	00000000 lotsOfWindows
+3001bcf8 l    d  .atext	00000000 .atext
+3001bcf8 l     F .atext	000000e0 ICMD_PacketizeHandler.16048.1608
+3001bdd8 l    d  .rodata	00000000 .rodata
+3001be18 g     O .rodata	00000011 .hidden CSWTCH.14.6722.6722
+3001be30 g     O .rodata	0000000e .hidden CSWTCH.13.6954.6954
+3001be40 g     O .rodata	00000013 .hidden NET_dhcpVendocClassId.7919
+3001bed8 g     O .rodata	00000100 .hidden __popcount_tab
+3001bfd8 g     O .rodata	00000010 .hidden CSWTCH.3.11190.11190
+3001bfe8 g     O .rodata	00000010 .hidden CSWTCH.12.11254.11254
+3001bff8 g     O .rodata	00000010 .hidden CSWTCH.14.11256.11256
+3001c008 g     O .rodata	00000010 .hidden CSWTCH.2.11322.11322
+3001c018 g     O .rodata	00000010 .hidden ledControlTable.15448
+3001c028 g     O .rodata	00000088 .hidden icmd_callbacks.16109
+3001c0ec g       .rodata	00000000 icmd_TOPLEVEL_COMPONENT
+3001c100 g       .rodata	00000000 icmd_LINKMGR_COMPONENT
+3001c108 g       .rodata	00000000 icmd_SYS_CTRL_Q_COMPONENT
+3001c10c g       .rodata	00000000 icmd_DESCPARSER_COMPONENT
+3001c114 g       .rodata	00000000 icmd_VHUB_COMPONENT
+3001c118 g       .rodata	00000000 icmd_REXULM_COMPONENT
+3001c124 g       .rodata	00000000 icmd_NETCFG_COMPONENT
+3001c124 g       .rodata	00000000 icmd_NET_COMPONENT
+3001c12c g       .rodata	00000000 icmd_TOPOLOGY_COMPONENT
+3001c158 g       .rodata	00000000 icmd_REXSCH_COMPONENT
+3001c168 g       .rodata	00000000 icmd_STORAGE_COMPONENT
+3001c178 g       .rodata	00000000 icmd_EEPROM_COMPONENT
+3001c180 g       .rodata	00000000 icmd_ATMEL_CRYPTO_COMPONENT
+3001c1a8 g       .rodata	00000000 icmd_XCSR_COMPONENT
+3001c1d8 g       .rodata	00000000 icmd_XLR_COMPONENT
+3001c1f4 g       .rodata	00000000 icmd_XRR_COMPONENT
+3001c204 g       .rodata	00000000 icmd_CLM_COMPONENT
+3001c214 g       .rodata	00000000 icmd_ULM_COMPONENT
+3001c22c g       .rodata	00000000 icmd_GRG_COMPONENT
+3001c280 g       .rodata	00000000 icmd_TIMING_COMPONENT
+3001c290 g       .rodata	00000000 icmd_TASKSCH_COMPONENT
+3001c294 g       .rodata	00000000 icmd_RANDOM_COMPONENT
+3001c2a0 g       .rodata	00000000 icmd_ILOG_COMPONENT
+3001c2bc g       .rodata	00000000 icmd_ICMD_COMPONENT
+3001c2e8 g     O .rodata	00000048 .hidden initLexFlowControlCfg.12348
+3001c330 g     O .rodata	00000048 .hidden initRexFlowControlCfg.12353
+3001c378 g     O .rodata	0000001e .hidden lexStaticQueues.12347
+3001c396 g     O .rodata	0000004a .hidden rexStaticQueues.12346
+3001c3e0 g       *ABS*	00000000 __load_start_data
+3001c3e0 l       .rodata	00000000 curr_flash_pos
+3001c5b8 g       *ABS*	00000000 __load_stop_data
+60000000 g       .ftext	00000000 __ftext_start
+60000000 g       .ftext	00000000 _LEON_TrapHandler
+60000000 l    d  .ftext	00000000 .ftext
+60000084 g     F .ftext	0000008c memset
+60000084 l       .ftext	00000000 __addr_memset
+60000110 g     F .ftext	00000060 memcpy
+60000110 l       .ftext	00000000 __addr_memcpy
+60000188 g     F .ftext	00000014 .hidden _icmd_enableProcessing.16055
+6000019c g     F .ftext	00000064 .hidden ICMD_ProcessByte_Starter.16059
+60000200 g     F .ftext	00000020 .hidden LEON_TimerGetClockTicksLSB
+60000220 g     F .ftext	0000003c .hidden LEON_TimerWaitMicroSec
+6000025c g     F .ftext	0000001c .hidden waitForSFICompleteBit.16341
+60000278 g     F .ftext	000000a8 .hidden LEON_SFISendWrite
+60000320 g     F .ftext	00000054 .hidden LEON_packPointer
+60000374 g     F .ftext	00000054 .hidden LEON_unpackPointer
+600003c8 g     F .ftext	00000094 .hidden LEON_UartByteTx
+6000045c g     F .ftext	00000050 .hidden LEON_UartWaitForTx
+600004ac g     F .ftext	00000058 .hidden LEON_UartPollingModeDoWork
+600004ac g     F .ftext	00000058 LEON_UartInterruptHandlerTx
+60000504 g     F .ftext	00000098 LEON_UartInterruptHandlerRx
+6000059c g     F .ftext	00000048 .hidden UART_ProcessRxByte
+600005e4 g     F .ftext	00000240 .hidden UART_printf
+60000824 g     F .ftext	00000408 .hidden UART_packetizeDecodeRxData
+60000c2c g     F .ftext	000003d0 GRG_InterruptHandler
+60000ffc g     F .ftext	00000038 .hidden TIMING_TimerStart
+60001034 g     F .ftext	00000020 .hidden TIMING_TimerStop
+60001054 g     F .ftext	00000020 .hidden TIMING_TimerResetTimeout
+60001074 g     F .ftext	00000020 .hidden TIMING_TimerEnabled
+60001094 g     F .ftext	000000c0 TIMING_TimerInterruptHandler
+60001154 g     F .ftext	00000110 .hidden TASKSCH_MainLoop
+60001264 g     F .ftext	0000002c RANDOM_AddEntropy
+60001290 g     F .ftext	00000044 .hidden RANDOM_QuickPseudoRandom32
+600012d4 g     F .ftext	00000020 .hidden _RANDOM_saveSeed
+600012f4 g     F .ftext	000000e8 .hidden _ilog
+600013dc g     F .ftext	0000001c .hidden _icmd_timeout.16057
+600013f8 g     F .ftext	00000038 .hidden UartfifoSpaceAvail
+60001430 g     F .ftext	00000028 .hidden UartfifoRead
+60001458 g     F .ftext	000000b0 .hidden EEPROM_ReadPage.constprop.61
+60001508 g     F .ftext	000000b0 .hidden FLASHRAW_write.constprop.75
+600015b8 g     F .ftext	00000050 .hidden pulseGPIOs.14636
+60001608 g     F .ftext	00000010 .hidden GRG_GpioRead
+60001618 l     F .ftext	00000044 i2cWakeOp.14967.1508
+6000165c g     F .ftext	000003c8 .hidden mdioI2cIdleTask.14947
+60001a24 g     F .ftext	00000154 .hidden i2cReadHwFifo.14983
+60001b78 g     F .ftext	00000038 .hidden finalizeASyncOperation.14974
+60001bb0 g     F .ftext	000000b8 .hidden submitASyncOperation.14988
+60001c68 g     F .ftext	0000001c .hidden GRG_MdioReadASync
+60001c84 g     F .ftext	0000004c .hidden GRG_I2cWriteASync
+60001cd0 g     F .ftext	00000020 .hidden clmNoFloodIrqRestart.13978
+60001cd0 g     F .ftext	00000020 .hidden CLM_StartPre
+60001cf0 g     F .ftext	00000048 .hidden errorCountCheck
+60001d38 g     F .ftext	0000000c .hidden GRG_IsDeviceRex
+60001d44 g     F .ftext	00000048 .hidden XCSR_XICSQQueueAllocate
+60001d8c g     F .ftext	00000120 .hidden XCSR_XICSQueueCleanup
+60001eac l     F .ftext	00000094 XCSR_XICSQReadWord.12608.1603
+60001f40 l     F .ftext	00000044 XCSR_XICSQDropRemainderOfFrame.12605.1600
+60001f84 g     F .ftext	00000040 .hidden XCSR_XICSQueueReadPartialFrameHeader
+60001fc4 g     F .ftext	00000130 .hidden XCSR_XICSQueueReadPartialFrame
+600020f4 g     F .ftext	00000030 .hidden XCSR_XICSQueueReadFrame
+60002124 g     F .ftext	00000140 .hidden XCSR_QueueWriteRawData
+60002264 g     F .ftext	00000030 .hidden XCSR_XICSWriteFrame
+60002294 g     F .ftext	0000008c .hidden XCSR_XICSWritePartialFrameHeader
+60002320 g     F .ftext	00000070 .hidden XCSR_XICSWritePartialFrame
+60002390 g     F .ftext	00000090 .hidden _XCSR_XICSSendMessage
+60002420 g     F .ftext	00000058 .hidden XCSR_XICSQueueSnoopHeadGetControlReg
+60002478 g     F .ftext	00000020 .hidden writeControlAndBlock.12824
+60002498 g     F .ftext	00000074 .hidden __EEPROM_At24cxxReadCompleteHandler.11399
+6000250c g     F .ftext	00000064 .hidden __EEPROM_At24cxxWriteCompleteHandler.11404
+60002570 g     F .ftext	000000b0 .hidden __ATMEL_submitI2cOperation
+60002620 g     F .ftext	00000054 .hidden ATMEL_writeSlot
+60002674 l     F .ftext	00000040 atmel_writeSlotDone.11693.1644
+600026b4 g     F .ftext	00000014 .hidden XCSR_XUSBXctmEnable
+600026c8 g     F .ftext	00000074 .hidden XCSR_XUSBXctmDisable
+6000273c g     F .ftext	00000018 .hidden XCSR_vportLinkDown
+60002754 l     F .ftext	00000074 checkLogClearIrqBit.12098.1381
+600027c8 g     F .ftext	00000140 XCSR_XUSBHandleIrq2
+60002908 g     F .ftext	000001b0 XCSR_XUSBHandleIrq3
+60002ab8 g     F .ftext	0000001c .hidden enableFlowControlIrq.12068
+60002ad4 g     F .ftext	00000020 .hidden writeXICSCControlAndBlock.12601
+60002af4 g     F .ftext	000001b4 .hidden STORAGE_varSave
+60002ca8 l     F .ftext	00000298 _STORAGE_varSaveFlashStorage.10910.1569
+60002f40 g     F .ftext	0000003c .hidden STORAGE_varGet
+60002f7c g     F .ftext	00000050 .hidden STORAGE_varCreate
+60002fcc g     F .ftext	00000050 .hidden STORAGE_varRemove
+6000301c l     F .ftext	0000010c _STORAGE_tryWriteToAtmel.10904.1545
+60003128 l     F .ftext	00000048 _STORAGE_eepromWriteBackupCompletionHandler.10855.1533
+60003170 g     F .ftext	0000005c .hidden _STORAGE_atmelWriteCompletionAndTimeoutHandler.10864
+600031cc l     F .ftext	00000024 _STORAGE_eepromWritePrimaryCompletionHandler.10860.1537
+600031f0 g     F .ftext	000000e8 .hidden _STORAGE_eepromWriteTask.10891
+600032d8 g     F .ftext	00000080 .hidden _FLASHRAW_erase
+60003358 g     F .ftext	0000001c .hidden _FLASHRAW_writeByte
+60003374 g     F .ftext	00000034 .hidden __EEPROM_At24cxxAcquireLock.11422
+600033a8 g     F .ftext	00000078 .hidden EEPROM_WritePage
+60003420 g     F .ftext	000001a4 .hidden NET_sendDHCPRequest.7817
+600035c4 g     F .ftext	00000070 .hidden _NET_linkLocalDisable
+60003634 g     F .ftext	00000028 .hidden __NET_linkLocalStart.7985
+6000365c l     F .ftext	0000007c __NET_linkLocalArpCallback.7978.1668
+600036d8 l     F .ftext	00000078 __NET_linkLocalDoArpCheck.7987.1665
+60003750 g     F .ftext	00000324 .hidden _NET_pairPacketHandler.8052
+60003a74 g     F .ftext	00000034 .hidden _NET_waitForResponseTimeoutHandler.8066
+60003aa8 g     F .ftext	00000034 .hidden _NET_legacyAdvertiseReceiveTimeoutHandler.8068
+60003adc g     F .ftext	0000004c .hidden _NET_beginPairingDiscovery.8062
+60003b28 g     F .ftext	00000048 .hidden _NET_endPairingDiscovery.8064
+60003b70 l     F .ftext	000000d0 _NET_sendPairingMessage.8072.1607
+60003c40 l     F .ftext	00000088 _NET_canContinuePairing.8096.1585
+60003cc8 g     F .ftext	00000100 .hidden _NET_arpTableLookupDetailed
+60003dc8 g     F .ftext	000000b8 .hidden _NET_transmitARPPacket.7418
+60003e80 g     F .ftext	000000a0 .hidden _NET_arpRequestTimeoutHandler.7403
+60003f20 g     F .ftext	0000003c .hidden _NET_arpFreshnessTimerHandler.7400
+60003f5c g     F .ftext	0000001c .hidden _NET_arpClearPendingRequest.7428
+60003f78 g     F .ftext	00000038 .hidden NET_ipv4IsNetworkConfigured
+60003fb0 g     F .ftext	00000018 .hidden NET_ipv4GetIPAddress
+60003fc8 g     F .ftext	00000018 .hidden NET_ipv4SetIPAddress
+60003fe0 g     F .ftext	00000018 .hidden NET_ipv4GetSubnetMask
+60003ff8 g     F .ftext	00000018 .hidden NET_ipv4SetSubnetMask
+60004010 g     F .ftext	00000018 .hidden NET_ipv4GetDefaultGateway
+60004028 g     F .ftext	00000018 .hidden NET_ipv4SetDefaultGateway
+60004040 g     F .ftext	00000128 .hidden _NET_ipv4TransmitPacket
+60004168 g     F .ftext	00000064 .hidden _NET_computeIPv4HeaderChecksum.7535
+600041cc l     F .ftext	00000080 _NET_onMACAddrResolvedCallback.7528.1365
+6000424c g     F .ftext	0000007c .hidden _NET_icmpComputeChecksum.7651
+600042c8 g     F .ftext	00000054 .hidden NET_udpTransmitPacket
+6000431c g     F .ftext	0000006c .hidden NET_dhcpEnable
+60004388 g     F .ftext	00000074 .hidden __NET_dhcpGatewayArpReachabilityTestCallback.7787
+600043fc g     F .ftext	00000084 .hidden __NET_dhcpStart.7852
+60004480 l     F .ftext	00000054 dhcpOptionFindCode.7808.1474
+600044d4 l     F .ftext	0000033c NET_handleDHCPPacket.7793.1426
+60004810 l     F .ftext	00000080 NET_dhcpRetryHandler.7806.1413
+60004890 l     F .ftext	00000068 NET_dhcpLeaseRenewalHandler.7804.1409
+600048f8 l     F .ftext	00000054 NET_dhcpLeaseExpiryHandler.7802.1405
+6000494c l     F .ftext	00000078 NET_dhcpLinkLocalAddrStart.7800.1398
+600049c4 l     F .ftext	00000130 NET_sendDHCPDiscover.7819.1375
+60004af4 g     F .ftext	00000020 .hidden NET_pack32Bits
+60004b14 g     F .ftext	0000002c .hidden NET_unpack32Bits
+60004b40 g     F .ftext	0000002c .hidden NET_pack48Bits
+60004b6c g     F .ftext	0000006c .hidden NET_unpack48Bits
+60004bd8 g     F .ftext	0000005c .hidden _NET_allocateBuffer
+60004c34 g     F .ftext	00000050 .hidden _NET_freeBuffer
+60004c84 g     F .ftext	00000078 .hidden _NET_memsetTask.7166
+60004cfc g     F .ftext	00000150 .hidden _NET_transmitTask.7161
+60004e4c g     F .ftext	00000170 .hidden _NET_ethernetTransmitFrame
+60004fd0 g     F .ftext	00000044 .hidden LINKMGR_completeButtonPairing
+60005014 g     F .ftext	0000000c .hidden _LINKMGR_timeoutHandler.3276
+60005020 g     F .ftext	0000012c .hidden _LINKMGR_buttonPressTimeoutHandler.3274
+6000514c g     F .ftext	000000e0 .hidden _LINKMGR_pairButtonIrq.3272
+6000522c g     F .ftext	00000010 .hidden _LINKMGR_buttonPressTimeoutTestHandler.3270
+6000523c g     F .ftext	00000068 .hidden _LINKMGR_pairButtonTestIrq.3267
+600052a4 g     F .ftext	00000198 LINKMGR_ClmIrqHandler
+6000543c g     F .ftext	00000070 .hidden _LINKMGR_phyRegWrite.2268
+600054ac g     F .ftext	0000003c .hidden _LINKMGR_mdioReadAsyncCompletionFunction.2229
+600054e8 l     F .ftext	0000003c _LINKMGR_mdioWriteAsyncCompletionFunction.2187.1601
+60005524 g     F .ftext	00000114 .hidden _LINKMGR_updateLinkLed
+60005638 g     F .ftext	00000064 .hidden _LINKMGR_deviceHasPair
+6000569c g     F .ftext	00000048 .hidden LINKMGR_addDeviceLink
+600056e4 g     F .ftext	00000074 .hidden LINKMGR_getVPortBounds
+60005758 g     F .ftext	0000004c .hidden _TOP_completedCpuRxFrameRead.isra.0.1723
+600057a4 l     F .ftext	00000044 TOPLEVEL_hasBrand.1846.1554
+600057e8 g     F .ftext	00000098 .hidden TOPLEVEL_copyBrandName
+60005880 g     F .ftext	00000034 .hidden TOPLEVEL_getBrandNumber
+600058b4 g     F .ftext	00000180 .hidden GEBB_COMM_GeControlHandler
+60005a34 l     F .ftext	0000005c _LINKMGR_phyRegRead.2277.1354
+60005a90 g     F .ftext	0000002c TOP_ProcessRxMessage
+60005abc g     F .ftext	00000904 .hidden _TOP_readCpuRxQTask.1612
+600063c0 g       .ftext	00000000 _LEON_softTrap
+600063e4 g     F .lextext	000000ec .hidden _XLR_flowControlCheck
+600063e4 g       .ftext	00000000 __rex_lex_overlay_start
+600063e4 l    d  .lextext	00000000 .lextext
+600063e4 l    d  .rextext	00000000 .rextext
+600063fc g     F .rextext	00000100 .hidden _REXMSA_SendDownstream.10448.constprop.13
+600064d0 g     F .lextext	0000002c .hidden _XLR_errorCountCheck
+600064fc g     F .lextext	00000060 .hidden XCSR_XSSTClearBCO
+600064fc g     F .rextext	0000002c .hidden XRR_UpdateSchPacketNewAction.constprop.14
+60006528 g     F .rextext	0000003c .hidden XRR_UpdateSchPacketNewResponse.constprop.17
+6000655c g     F .lextext	00000050 .hidden XCSR_XSSTClearBCI
+60006564 g     F .rextext	00000028 .hidden XRR_rexDisable
+6000658c g     F .rextext	00000030 .hidden XRR_WriteSchPacket
+600065ac g     F .lextext	0000006c .hidden XCSR_XSSTWriteMask
+600065bc g     F .rextext	00000020 .hidden XRR_UpdateSchPacket
+600065dc g     F .rextext	0000003c .hidden XRR_ReadQueue
+60006618 g     F .lextext	000000fc .hidden XCSR_XUSBSendUpstreamUSBFrame
+60006618 g     F .rextext	00000014 XRR_EnableInterruptSOF
+6000662c g     F .rextext	00000014 XRR_DisableInterruptSOF
+60006640 g     F .rextext	00000024 .hidden XRR_SetSOFGenHighSpeed
+60006664 g     F .rextext	00000024 .hidden XRR_SetSOFGenFullLowSpeed
+60006688 g     F .rextext	00000024 .hidden XRR_SetSOFGenDefaultSpeed
+600066ac g     F .rextext	00000028 .hidden XRR_Get_Q_Stat
+600066d4 g     F .rextext	0000005c .hidden _XRR_TransferPacket.13835
+60006714 g     F .lextext	00000034 .hidden _DTT_GetDeviceNode
+60006730 g     F .rextext	0000002c .hidden _XRR_FlowControlCheck
+60006748 g     F .lextext	000000f8 .hidden DTT_GetAddressFromUSB
+6000675c g     F .rextext	0000002c .hidden _XRR_ErrorCountCheck
+60006788 g     F .rextext	00000040 ULM_ConnectRexUsbPort
+600067c8 g     F .rextext	00000018 ULM_GenerateRexUsbReset
+600067e0 g     F .rextext	00000010 .hidden ULM_CheckRexConnect
+600067f0 g     F .rextext	00000010 ULM_GenerateRexUsbResume
+60006800 g     F .rextext	00000010 .hidden ULM_SetRexExtendedResume
+60006810 g     F .rextext	00000014 .hidden ULM_ClearRexExtendedReset
+60006824 g     F .rextext	00000014 .hidden ULM_ClearRexExtendedResume
+60006838 g     F .rextext	0000003c .hidden ULM_UlpAccessRegWrite
+60006840 g     F .lextext	0000008c .hidden _DTT_GetAddressFromLogical
+60006874 g     F .rextext	000000e4 REXMSA_Disp_Stat
+600068cc g     F .lextext	00000190 .hidden _DTT_freeMsa
+60006958 g     F .rextext	0000002c .hidden _REXMSA_ResetMsaStatusAndDeallocateQueue.10438
+60006984 g     F .rextext	000000e4 .hidden _REXMSA_FlushQueue.10444
+60006a5c g     F .lextext	00000074 .hidden _DTT_clearMsaPair.part.0.9889
+60006a68 g     F .rextext	00000014 .hidden _REXMSA_SendUpstream.10454
+60006a7c g     F .rextext	00000070 .hidden REXMSA_ResetMsaStatus
+60006ad0 g     F .lextext	0000042c .hidden _DTT_WriteEndpointToXsst.isra.7.8540
+60006aec g     F .rextext	000000f8 .hidden REXMSA_ResetDevice
+60006cb4 g     F .rextext	0000114c .hidden REXSCH_HandleIrq
+60006efc g     F .lextext	00000078 .hidden TraverseTopology.8311
+60006f74 g     F .lextext	00000040 .hidden ResetXsst.8426
+60006fb4 g     F .lextext	0000018c .hidden vhubInTransaction_DataPhase_InHandler_EP1.5249
+60007140 g     F .lextext	00000690 .hidden callParser.4167
+600077d0 g     F .lextext	00000bfc .hidden downStreamSetupPacket.3932
+60007e00 g     F .rextext	0000003c .hidden _REXSCH_Enable.10138
+60007e3c g     F .rextext	00000030 REXSCH_Disable
+60007e6c g     F .rextext	000000e0 .hidden _REXULM_DebounceLineState
+60007f4c g     F .rextext	000000fc .hidden _REXULM_RequestStartSuspend
+60008048 g     F .rextext	000000d4 .hidden _REXULM_StartHostBusReset
+6000811c g     F .rextext	00000088 .hidden _REXULM_flushQueues
+600081a4 g     F .rextext	00000094 .hidden _REXULM_SoftDisconnectULMDisable
+60008238 g     F .rextext	00000214 .hidden _REXULM_RestartUSBLink
+600083cc g     F .lextext	000007a8 .hidden _SYSCTRLQ_ISR
+6000844c g     F .rextext	00000024 .hidden _REXULM_startIdleSofChecker
+60008470 g     F .rextext	00000050 .hidden _REXULM_MarkTime
+60008528 g     F .rextext	000000f8 .hidden _REXULM_UpdateSystemState
+60008620 g     F .rextext	000005e4 .hidden _REXULM_UsbIsr
+60008b74 g     F .lextext	00000018 .hidden _LINKMGR_getState
+60008b8c g     F .lextext	0000004c .hidden _LINKMGR_checkStopMlpAcquisitionTimer.2870
+60008bd8 g     F .lextext	00000054 .hidden _LINKMGR_setLexLinkUp.2837
+60008c04 g     F .rextext	000002b8 .hidden REXULM_LinkMessageHandler
+60008c2c g     F .lextext	00000030 .hidden _LINKMGR_setState_.isra.0.2833
+60008c5c g     F .lextext	00000090 .hidden LINKMGR_getRexLinkOptions
+60008cec g     F .lextext	000004c0 .hidden _LINKMGR_rexToLexMsgHandler.2851
+60008ebc g     F .rextext	000000c0 .hidden _REXULM_idleTaskSofIncomingCheck
+60008f98 g     F .rextext	000004b0 .hidden _LINKMGR_lexToRexMsgHandler.3076
+600091ac g     F .lextext	000001fc .hidden _LINKMGR_mlpIrqLex.2849
+600093a8 g     F .lextext	00000138 .hidden _LINKMGR_addDeviceLinkLex.2827
+60009448 l     F .rextext	0000006c _LINKMGR_sendRexPairResponse.3068.1477
+600094b4 g     F .rextext	0000007c .hidden _LINKMGR_addDeviceLinkRex.3094
+600094e0 g     F .lextext	00000118 .hidden _LINKMGR_removeDeviceLinkLex.2857
+60009530 g     F .rextext	0000007c .hidden _LINKMGR_removeDeviceLinkRex.3088
+600095f8 l     F .lextext	00000084 _LINKMGR_takeDownLinkLex.2865.1365
+6000967c g     F .lextext	00000060 .hidden _LINKMGR_seekLinkTimeoutHandler.2814
+600096dc g     F .lextext	00000068 .hidden _LINKMGR_lexMlpLinkAcquisitionTimeoutHandler.2812
+60009744 g     F .lextext	00000080 .hidden _LINKMGR_lexSendLinkProbe.2809
+600097c4 g     F .icron_xusbcfg_text	000000a4 .hidden Icron_completeSettingIP.6844
+600097c4 g       .lextext	00000000 __xusbcfg_protocol_overlay_start
+600097c4 l    d  .crestron_xusbcfg_text	00000000 .crestron_xusbcfg_text
+600097c4 l    d  .icron_xusbcfg_text	00000000 .icron_xusbcfg_text
+6000981c l     F .crestron_xusbcfg_text	00000644 NETCFG_Crestron_handleUDPPacket.1353
+60009868 g     F .icron_xusbcfg_text	00000030 .hidden Icron_completeSettingDHCP.6835
+60009898 l     F .icron_xusbcfg_text	00000040 Icron_setNetworkAcquisitionModeInFlash.6846.1427
+60009924 g     F .icron_xusbcfg_text	00000058 .hidden NETCFG_Icron_getNetworkAcquisitionModeFromFlash
+6000997c g     F .icron_xusbcfg_text	00000800 .hidden NETCFG_Icron_handleUDPPacket
+61000000 l    d  .stack	00000000 .stack
+61000570 g       .bss	00000000 __bss_start
+61000570 g     O .bss	00000010 .hidden GPIO_LOOKUP_TABLE
+61000570 g       .stack	00000000 __stack_end
+61000570 l    d  .bss	00000000 .bss
+61000580 g     O .bss	00000018 .hidden _cpuRxQFrame.1765
+61000808 g     O .bss	00000070 .hidden linkState
+61000878 g     O .bss	00000001 .hidden HubAndPortStatusChangeMap_BeingServed.2997.5281
+61000880 g     O .bss	00000001 .hidden bbMsg.5923
+61000888 g     O .bss	00000008 .hidden localMAC.7371
+61000890 g     O .bss	00000088 .hidden arpTable.7488
+61000918 g     O .bss	00000008 .hidden _NET_gatewayMAC.7622
+61000920 g     O .bss	00000030 .hidden dhcpClientConfig.7920
+61000950 g     O .bss	00000018 .hidden _pairDiscoveryGlobals.8137
+61000968 g     O .bss	00000020 .hidden deviceRequiresCleanupCounter.8628
+61000988 g     O .bss	000000a8 .hidden _userData.11024
+61000a30 g     O .bss	00000015 .hidden _metadata.11015
+61000a48 g     O .bss	000000a8 .hidden _persistentData.11021
+61000af0 g     O .bss	00000010 .hidden _BBvariableAccess.11014
+61000b00 g     O .bss	00000010 .hidden pageBuffer.11515
+61000b10 g     O .bss	00000018 .hidden mdioI2c
+61000b28 g     O .bss	00000030 .hidden mdio_i2c.15134
+61000b58 g     O .bss	00000006 .hidden ledsStateTable.15446
+61000b60 g     O .bss	00000022 .hidden component_logging_level
+61000b88 g     O .bss	00000200 .hidden txBuffer.16484
+61000d88 g     O .bss	00000200 .hidden rxBuffer.16483
+61000f88 g     O .bss	00000100 .hidden printf_msg.16485
+61001088 g     O .bss	00000100 .hidden rxPacketBuffer
+61001188 g     O .bss	00000004 .hidden checkUartRxTask.1549
+6100118c g     O .bss	00000004 .hidden statusTimer.1550
+61001190 g     O .bss	00000004 .hidden lexDownStreamStateChangeMsgHandler.1764
+61001194 g     O .bss	00000004 .hidden _TOP_readCpuRxTaskHandle
+61001198 g     O .bss	00000004 .hidden _mdioCompletionFunction.2386
+6100119c g     O .bss	00000004 .hidden txProbeTimer.3144
+610011a0 g     O .bss	00000004 .hidden _timeoutTimer.3325
+610011a4 g     O .bss	00000004 .hidden _pressTimer.3323
+610011a8 g     O .bss	00000004 .hidden _beginButtonPairingCallback.3324
+610011ac g     O .bss	00000004 .hidden _endButtonPairingCallback.3326
+610011b0 g     O .bss	00000010 .hidden pllInterface.3544
+610011c0 g     O .bss	00000010 .hidden pllState.3550
+610011d0 g     O .bss	00000004 .hidden sendDevConStatusToBB.4428
+610011d4 g     O .bss	00000004 .hidden sendUlmSpeedToBB.4811
+610011d8 g     O .bss	00000058 .hidden vhub
+61001230 g     O .bss	00000004 .hidden NETCFG_udpPacketHandler
+61001234 g     O .bss	00000004 .hidden responseTimer.6599
+61001238 g     O .bss	00000010 .hidden onCompletionData.6723
+61001248 g     O .bss	00000010 .hidden onCompletionData.6955
+61001258 g     O .bss	00000018 .hidden _NET_base.7234
+61001270 g     O .bss	00000004 .hidden _NET_free_list_head.7232
+61001274 g     O .bss	00000a20 .hidden _NET_pool.7231
+61001c94 g     O .bss	00000004 .hidden _NET_ipoolNumOfUsedElements.7233
+61001c98 g     O .bss	0000001c .hidden _NET.7248
+61001cb4 g     O .bss	00000010 .hidden pendingRequest.7489
+61001cc4 g     O .bss	00000004 .hidden arpRetryTimer.7496
+61001cc8 g     O .bss	00000004 .hidden arpFreshnessTimer.7497
+61001ccc g     O .bss	00000020 .hidden receivePortHandlers
+61001cec g     O .bss	0000000c .hidden __NET_linkLocalState.8018
+61001cf8 g     O .bss	00000004 .hidden _DTT_free_list_head.8626
+61001cfc g     O .bss	00000400 .hidden _DTT_pool.8625
+610020fc g     O .bss	00000004 .hidden _DTT_ipoolNumOfUsedElements.8627
+61002100 g     O .bss	00000004 .hidden XSSTBlockingTimer.8894
+61002104 g     O .bss	00000004 .hidden XSSTBlockingTask.8893
+61002108 g     O .bss	00000004 .hidden _systemInitializationContinuationFunction.11025
+6100210c g     O .bss	00000004 .hidden _writeRetryTimer.11022
+61002110 g     O .bss	00000028 .hidden _eeprom.11013
+61002138 l     O .bss	00000004 _callback.1841
+6100213c g     O .bss	0000002c .hidden eeprom_descriptor.11461
+61002168 g     O .bss	00000090 .hidden atmel_i2c.11635
+610021f8 g     O .bss	00000020 .hidden writeDataSlotBuffer.11911
+61002218 g     O .bss	00000008 .hidden xcsrXusbState.12354
+61002220 g     O .bss	00000014 .hidden assertData.14455
+61002234 g     O .bss	00000008 .hidden i2cIcmdData.15275
+6100223c g     O .bss	0000004c .hidden _GRG_IrqHandler.15323
+61002288 g     O .bss	00000004 .hidden ledsPatternTimer.15451
+6100228c g     O .bss	00000250 .hidden _TIMING_handlers
+610024dc g     O .bss	00000008 .hidden _TIMING.15556
+610024e4 g     O .bss	000000ac .hidden _TASKSCH_State
+61002590 g     O .bss	00000004 .hidden _RANDOM_savedCallback.15798
+61002594 g     O .bss	00000004 .hidden _RANDOM_timer.15797
+61002598 g     O .bss	00000004 .hidden pAssertHookEndFunction
+6100259c g     O .bss	00000004 .hidden pAssertHookStartFunction
+610025a0 g     O .bss	00000014 .hidden assertInfo
+610025b4 g     O .bss	0000002c .hidden icmd.16103
+610025e0 g     O .bss	00000018 .hidden iCmdArgs.16102
+610025f8 g     O .bss	00000020 .hidden uartCtrl
+61002618 g     O .bss	00000004 .hidden receivePacketTimer.16655
+6100261c g     O .bss	00000004 .hidden receiveHandlerTimer.16656
+61002620 g     O .bss	00000044 .hidden rxPacketHandler
+61002664 g     O .bss	00000088 .hidden ResponseHandler
+610026ec g     O .bss	00000004 .hidden packetizeTask
+610026f0 g     O .bss	00000118 .hidden packetize.16659
+61002808 g     O .bss	00000400 .hidden crcTable
+61002c08 g     O .bss	00000002 .hidden phyId2.2387
+61002c0a g     O .bss	00000002 .hidden phyId3.2388
+61002c0c g     O .bss	00000002 .hidden ethPhyLedSetting.2389
+61002c0e g     O .bss	00000002 .hidden identificationCounter.7623
+61002c10 g     O .bss	00000002 .hidden msaLogicalAddressAllocatedBitField.9987
+61002c12 g     O .bss	00000002 .hidden gpioSlowPulseMask.14696
+61002c14 g     O .bss	00000002 .hidden gpioFastPulseMask.14694
+61002c16 g     O .bss	00000008 .hidden rxPacket
+61002c1e g     O .bss	00000001 .hidden ecoStatus
+61002c1f g     O .bss	00000001 .hidden _resetRequired.2398
+61002c20 g     O .bss	00000001 .hidden phyCapabilities.2390
+61002c21 g     O .bss	00000001 .hidden ethPhyLedNeedUpdate.2334
+61002c22 g     O .bss	00000001 .hidden rexVidStored.2961
+61002c23 g     O .bss	00000001 .hidden lexVidStored
+61002c24 g     O .bss	00000001 .hidden _buttonState.3321
+61002c25 g     O .bss	00000001 .hidden msaEnabled
+61002c26 g     O .bss	00000001 .hidden lexUlmLinkState.4812
+61002c27 g     O .bss	00000001 .hidden initialized.7372
+61002c28 g     O .bss	00000001 .hidden numPortsBound
+61002c29 g     O .bss	00000001 .hidden prevFrame.2772.10288
+61002c2a g     O .bss	00000001 .hidden _storageType.11027
+61002c2b g     O .bss	00000001 .hidden _storageVarReadRowIndex.11023
+61002c2c g     O .bss	00000001 .hidden _resetOnWriteComplete.11026
+61002c2d g     O .bss	00000001 .hidden displayReadAsWords.11516
+61002c2e g     O .bss	00000001 .hidden rexSupportsSwMessagesBitfield.12756
+61002c2f g     O .bss	00000001 .hidden fastPulseCount.14693
+61002c30 g     O .bss	00000001 .hidden lockMode.15450
+61002c31 g     O .bss	00000001 .hidden timersInUse.1291.15553
+61002c32 g     O .bss	00000001 .hidden blockingLogMode
+61002c33 g     O .bss	00000001 .hidden iCmdResponseId.16144
+61002c34 g     O .bss	00000001 .hidden freeResponses
+61002c35 g     O .bss	00000001 .hidden activeResponses
+61002c36 g     O .bss	00000001 .hidden unusedResponseId.1396.16658
+61002c37 l       .bss	00000000 __rex_lex_bss_overlay_start
+61002c37 l    d  .lexbss	00000000 .lexbss
+61002c37 l    d  .rexbss	00000000 .rexbss
+61002c38 g     O .lexbss	00000004 .hidden msgHandler.4816
+61002c38 g     O .rexbss	00000034 .hidden rex
+61002c3c g     O .lexbss	00000004 .hidden lastTimeMarker.4808
+61002c40 g     O .lexbss	00000004 .hidden enableXctmUsbTxTimer.4818
+61002c44 g     O .lexbss	00000001 .hidden downStreamConnectReceived.4815
+61002c48 g     O .lexbss	00000004 .hidden connectUlmTimer.4817
+61002c4c g     O .lexbss	00000001 .hidden connectionSpeed.4814
+61002c50 g     O .lexbss	00000004 .hidden topologyState.8629
+61002c54 g     O .lexbss	00000600 .hidden deviceTree
+61002c6c g     O .rexbss	00000080 .hidden IsoSplitScheduling
+61002cec g     O .rexbss	00000001 .hidden _REXSCH_UsbSpeed
+61002ced g     O .rexbss	00000001 .hidden _REXSCH_sofTxCount
+61002cf0 g     O .rexbss	00000168 .hidden msaStatus
+61002e58 g     O .rexbss	00000018 .hidden msaStatCounter
+61002e70 g     O .rexbss	00000001 .hidden inDirectionFlowControlEnabled
+61002e74 g     O .rexbss	00000004 .hidden sof_cnt
+61002e78 g     O .rexbss	00000001 .hidden _REXSCH_SetupDataQid
+61003254 g       .data	00000000 __bss_end
+61003254 l       .data	00000000 __rex_lex_bss_overlay_end
+61003258 g       .data	00000000 __data_start
+61003258 g     O .data	00000011 .hidden product.2850.6716
+61003258 l    d  .data	00000000 .data
+61003270 g     O .data	0000000c .hidden revision.2851.6715
+61003280 g     O .data	00000011 .hidden product.2866.6721
+61003298 g     O .data	0000000c .hidden revision.2867.6717
+610032a8 g     O .data	00000011 .hidden product.2900.6948
+610032c0 g     O .data	0000000c .hidden revision.2901.6947
+610032d0 g     O .data	00000011 .hidden product.2908.6953
+610032e8 g     O .data	0000000c .hidden revision.2909.6949
+610032f8 g     O .data	00000008 .hidden _TOP_readCpuRxQState.1766
+61003300 g     O .data	00000004 .hidden vhub_vf
+61003344 g     O .data	00000024 .hidden clmStruct
+61003368 g     O .data	00000004 .hidden _RANDOM_lfsr.15796
+6100336c g     O .data	00000009 .hidden vhubHubDescriptor.5341
+61003375 g     O .data	0000000a .hidden vhubDeviceQualifier.5330
+6100337f g     O .data	00000012 .hidden vhubDeviceDescriptor.5283
+61003391 g     O .data	00000019 .hidden vhubConfigDescriptor.5299
+610033aa g     O .data	00000001 .hidden sendLegacy.2586.8152
+610033ab g     O .data	00000001 .hidden ulmDetectedSpeed.14454
+610033ac g     O .data	00000001 .hidden previousLogPrinted.1441.15972
+610033b0 g     O .data	00000080 _LEON_isrs
+61003430 l       .data	00000000 _LEON_isrs_end
+../ge_asic_bb_companion_bin/ge_asic_bb_companion.elf:     file format elf32-sparc
+SYMBOL TABLE:

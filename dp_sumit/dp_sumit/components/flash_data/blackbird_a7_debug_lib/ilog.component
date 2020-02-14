@@ -1,0 +1,30 @@
+component:FLASH_DATA_COMPONENT
+L:FLASH_STORAGE_INIT S:Flash storage initialization - status %d active block %d used space = 0x%x\n
+L:NO_BLOCK_TO_SWAP_TO S:No erased block to swap to\n
+L:LOAD_VARIABLE_FROM_FLASH S:load variable %d from FLASH, data end at: 0x%x\n
+L:FOUND_VARIABLE_FROM_FLASH S:Found variable %d from FLASH, size = %d data = 0x%x\n
+L:FOUND_VARIABLE_MORE_INFO S:Variable at address 0x%08x\n
+L:LOAD_VAR_INVALID_SIZE S:Variable has wrong size: expected: %d actual %d key:%d\n
+L:LOAD_VAR_INVALID_HEADER_ADDRESS S:Variable has wrong header: address 0x%x\n
+L:LOAD_VAR_INVALID_HEADER S:Variable has wrong header: [0]: 0x%x [1] 0x%x data[0] 0x%x\n
+L:FLASH_ERASE_SIZE_WRONG S:Erase region should be a multiple of 4, instead is 0x%x\n
+L:CLEAR_VAR_AREA S:clear region should be a multiple of 4, instead is address % bytes 0x%x\n
+L:FLASH_GET_BLOCK_INFO S:Block number %d address 0x%x status %d\n
+L:FLASH_STORAGE_ERASE S:Flash Vars successfully erased\n
+L:FLASH_STORAGE_HEADER_ZEROED S:*** Flash Vars zeroed header data found, from address %x, %d bytes\n
+L:FLASH_STORAGE_HEADER_ERASED S:*** Flash Vars erased header data found, from address %x, %d bytes\n
+L:FLASH_STORAGE_HEADER_INVALID S:*** Flash Vars invalid header data found, from address %x, %d bytes\n
+L:FLASH_ERASE_COMPLETE S:Chip Erase Complete\n
+L:FLASH_WRITE_BYTES S:Offset%d %x %d\n
+L:FLASH_DISPLAY_SECTOR_PROTECTED S:Protected:   %x to %x\n
+L:FLASH_DISPLAY_SECTOR_UNPROTECTED S:Unprotected: %x to %x\n
+L:FLASH_DEVICE_ID S:Flash ID: %x\n
+L:FLASH_WRITE_PROTECT_FAIL S:Address %x protected\n
+L:FLASH_GOLDEN_PROTECT S:Golden Area Protect\n
+L:FLASH_SECTORS_UNPROTECT S:Flash unprotected\n
+L:FLASH_SECTOR_ERASED S:Flash sector %x erased\n
+L:FLASH_GOLDEN_PROTECT_PASS S:Golden Protected %d\n
+L:FLASH_GLOBAL_FREEZE S:GLOBAL Freeze %d\n
+L:FLASH_LOCK_BITS S:Lock Bits %d\n
+L:FLASH_WRITE_TIMEOUT S:Flash write timeout at line :%d\n
+L:FLASH_WRITE_BIG S:Flash write too big number: %d\n

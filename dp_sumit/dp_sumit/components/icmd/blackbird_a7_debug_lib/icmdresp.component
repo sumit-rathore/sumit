@@ -1,0 +1,2 @@
+C:ICMD_COMPONENT
+R:read32 C:readMemory L:BASE_READ_MEM A:1

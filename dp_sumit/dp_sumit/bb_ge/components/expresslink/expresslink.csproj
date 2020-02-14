@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A9DD250F-02B9-4745-9A66-F871D6294886}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>expresslink</RootNamespace>
+    <AssemblyName>expresslink</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="src\AssemblyInfo.cs" />
+    <Compile Include="src\config.Designer.cs" />
+    <Compile Include="src\CustomExceptions.cs" />
+    <Compile Include="src\ExpressLinkMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\ExpressLinkMain.Designer.cs">
+      <DependentUpon>ExpressLinkMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\IProgrammer.cs" />
+    <Compile Include="src\Program.cs" />
+    <Compile Include="src\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="src\StewieFile.cs" />
+    <Compile Include="src\StewieFileSender.cs" />
+    <Compile Include="src\XmodemFile.cs" />
+    <Compile Include="src\XmodemSender.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="src\ExpressLinkMain.resx">
+      <DependentUpon>ExpressLinkMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\icron_fav.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="build\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\dummyPath\firmware_ge.bin" />
+    <None Include="src\dummyPath\firmware_ge_spartan_lex.bin" />
+    <None Include="src\dummyPath\firmware_ge_spartan_rex.bin" />
+    <None Include="src\dummyPath\firmware_lg.bin" />
+    <None Include="src\dummyPath\leon_boot_flash.bin" />
+    <None Include="src\dummyPath\leon_boot_flash.icr" />
+    <None Include="src\dummyPath\leon_boot_flash_w_recovery.bin" />
+    <None Include="src\dummyPath\flash_writer_ge.bin" />
+    <None Include="src\dummyPath\flash_writer_ge_spartan.bin" />
+    <None Include="src\dummyPath\flash_writer_lg.icr" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

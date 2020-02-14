@@ -1,0 +1,62 @@
+component:ISTATUS_COMPONENT
+L:ISTATUS_COMLINK_STATE_UP                  S:ISTATUS Data Link Operational\n
+L:ISTATUS_COMLINK_STATE_DN                  S:ISTATUS Data Link Disconnected\n
+L:ISTATUS_ULP_LEX_HOST_USB2                 S:ISTATUS ** Host port supports USB2 **\n
+L:ISTATUS_ULP_LEX_HOST_USB3                 S:ISTATUS ** Host port supports USB3 **\n
+L:ISTATUS_ULP_LEX_HOST_USB321               S:ISTATUS ** Host port supports USB3/2 **\n
+L:ISTATUS_ULP_LEX_HOST_CONNECTED            S:ISTATUS ** Host USB connected **\n
+L:ISTATUS_ULP_LEX_HOST_REMOVED              S:ISTATUS ** Host USB removed **\n
+L:ISTATUS_ULP_LEX_USB2_SUSPENDED            S:ISTATUS USB2 suspended\n
+L:ISTATUS_ULP_LEX_USB2_BUS_RESET            S:ISTATUS USB2 bus reset\n
+L:ISTATUS_ULP_LEX_USB2_ULM_NEG_SPEED_LOW    S:ISTATUS USB2 negotiated Low speed\n
+L:ISTATUS_ULP_LEX_USB2_ULM_NEG_SPEED_FULL   S:ISTATUS USB2 negotiated Full speed\n
+L:ISTATUS_ULP_LEX_USB2_ULM_NEG_SPEED_HIGH   S:ISTATUS USB2 negotiated High speed\n
+L:ISTATUS_ULP_LEX_USB2_DEV_CONN             S:ISTATUS USB2 device connected\n
+L:ISTATUS_ULP_LEX_USB2_DEV_DISCONN          S:ISTATUS USB2 device disconnected\n
+L:ISTATUS_BOOTUP_FW_VERSION_CHIP_ID         S:ISTATUS Chip ID is Major 0x%x, Minor 0x%x, Debug 0x%x\n
+L:ISTATUS_BOOTUP_FW_VERSION_CHIP_BUILD_DATE S:ISTATUS Chip build date %04x/%02x/%02x\n
+L:ISTATUS_BOOTUP_FW_VERSION_CHIP_BUILD_TIME S:ISTATUS Chip build time %02x:%02x:%02x\n
+L:ISTATUS_BOOTUP_FW_VERSION_SW_VERSION      S:ISTATUS ICRON Technologies Software Version v%d.%d.%d\n
+L:ISTATUS_BOOTUP_PROGRAMBB_SW_VERSION       S:ISTATUS ICRON Technologies ProgramBB Software Version v%d.%d.%d\n
+L:ISTATUS_BOOTUP_FW_VERSION_SW_BUILD_DATE   S:ISTATUS SW build was done on %04d/%02d/%02d\n
+L:ISTATUS_BOOTUP_FW_VERSION_SW_BUILD_TIME   S:ISTATUS SW build was done at %02d:%02d:%02d\n
+L:ISTATUS_BOOTUP_FW_VERSION_LEX             S:ISTATUS This device is a Lex\n
+L:ISTATUS_BOOTUP_FW_VERSION_REX             S:ISTATUS This device is a Rex\n
+L:ISTATUS_BOOTUP_FW_VERSION_FALLBACK_IMAGE  S:ISTATUS WARNING, you are in the backup image\n
+L:ISTATUS_ULP_USB2_BITSTUFF_ERROR           S:ISTATUS USB2 got a ULM bitstuff error\n
+L:ISTATUS_ULP_USB2_CRC_ERROR                S:ISTATUS USB2 got a xcrm frame crc error\n
+L:ISTATUS_AQUANTIA_CRC8_ERROR_COUNT         S:ISTATUS Aquantia PCS Receive Vendor CRC-8 Error Counter (3.E811:E810): %d\n
+L:ISTATUS_AQUANTIA_10G_ERROR_FRAME_COUNT    S:ISTATUS Aquantia PCS Receive Vendor 10G BASE-T Bad Frame Counter (3.E815:E814): %d\n
+L:ISTATUS_AQUANTIA_UNCORRECTED_FRAME_COUNT  S:ISTATUS Aquantia PCS Receive Vendor Uncorrected Frame Counter (3.E821:E820): %d\n
+L:ISTATUS_ULP_CRC5_CHK_FAILED               S:ISTATUS ULP PHY CRC5 Check Failed %d\n
+L:ISTATUS_ULP_CRC16_CHK_FAILED              S:ISTATUS ULP PHY CRC16 Check Failed %d\n
+L:ISTATUS_ULP_8B_10B_DECODER_ERROR          S:ISTATUS ULP PHY 8/10Bit Decoder Error %d\n
+L:ISTATUS_MAC_CRC_ERROR                     S:ISTATUS MAC link layer rx CRC_ERR: %d\n
+L:ISTATUS_FPGA_TEMP_WARNING                 S:ISTATUS FPGA Temperature warning %d C\n
+L:ISTATUS_FPGA_TEMP_FAULT                   S:ISTATUS FPGA temperature over its shutdown threshold (%d C). System shut down\n
+L:ISTATUS_AQUANTIA_TEMP_WARNING             S:ISTATUS Aquantia Temperature warning %d C\n
+L:ISTATUS_AQUANTIA_TEMP_FAULT               S:ISTATUS Aquantia temperature over its shutdown threshold (%d C). System shut down\n
+L:ISTATUS_ULP_OVERCURRENT_DETECTED          S:ISTATUS Over current detected on downstream USB port\n
+L:ISTATUS_ULP_OVERCURRENT_NORMAL            S:ISTATUS Downstream USB port not in over current state\n
+L:ISTATUS_BOOTUP_FW_CHECK_CURRENT_IMAGE     S:ISTATUS Verifying current image\n
+L:ISTATUS_ULP_LEX_USB3_SUSPENDED            S:ISTATUS USB3 suspended\n
+L:ISTATUS_ULP_LEX_USB3_ACTIVE               S:ISTATUS USB3 active\n
+L:ISTATUS_DP_LEX_HOST_CONNECTED             S:ISTATUS ** Host DP connected **\n
+L:ISTATUS_DP_LEX_HOST_REMOVED               S:ISTATUS ** Host DP removed **\n
+L:ISTATUS_DP_REX_MONITOR_CONNECTED          S:ISTATUS ** Monitor connected **\n
+L:ISTATUS_DP_REX_MONITOR_REMOVED            S:ISTATUS ** Monitor removed **\n
+L:ISTATUS_10G_COMLINK_STATE_UP              S:ISTATUS Data Link Operational, CATx at 10Gbps\n
+L:ISTATUS_5G_COMLINK_STATE_UP               S:ISTATUS Data Link Operational, CATx at 5Gbps\n
+L:ISTATUS_FIBRE_COMLINK_STATE_UP            S:ISTATUS Data Link Operational, Fiber at 6.25Gbps\n
+L:ISTATUS_VIDEO_RESOLUTION                  S:ISTATUS Video Operational, %d*%d, %d.%d  Hz, %d bits per component, color code 0x%x\n 
+L:ISTATUS_DP_OVER_CURRENT_WARNING           S:ISTATUS Over current detected in DP\n
+L:ISTATUS_DP_OVER_CURRENT_RECOVER           S:ISTATUS DP not in over current state\n
+L:ISTATUS_AQUANTIA_NOT_EXPECTED_SPEED_5G    S:ISTATUS Error: Link quality not sufficient for %dG link, fallback to 5G\n
+L:ISTATUS_AQUANTIA_NOT_EXPECTED_SPEED_2_5G  S:ISTATUS Error: Link quality not sufficient for %dG link, fallback to 2.5G\n
+L:ISTATUS_AQUANTIA_NOT_EXPECTED_SPEED_1G    S:ISTATUS Error: Link quality not sufficient for %dG link, fallback to 1000BASE-T\n
+L:ISTATUS_AQUANTIA_NOT_EXPECTED_SPEED_0_1G  S:ISTATUS Error: Link quality not sufficient for %dG link, fallback to 100BASE-TX\n
+L:ISTATUS_AQUANTIA_NOT_EXPECTED_SPEED_0_01G S:ISTATUS Error: Link quality not sufficient for %dG link, fallback to 10BASE-T\n
+L:ISTATUS_AQUANTIA_NOT_EXPECTED_SPEED       S:ISTATUS Error: Link speed not supported\n
+L:ISO_ENABLED                               S:ISTATUS ISO is enabled\n
+L:ISO_DISABLED                              S:ISTATUS ISO is disabled\n
+L:RESET_UNIT                                S:ISTATUS Please reset unit for the change to take affect\n

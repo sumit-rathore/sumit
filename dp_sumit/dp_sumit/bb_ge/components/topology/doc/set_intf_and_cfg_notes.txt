@@ -1,0 +1,45 @@
+Configuration vs interfaces
+
+* Only one configuration can be active at once
+* After a set config request all interfaces for that configuration with
+  alternate setting zero are activated
+* A set configuration 0, de-activates a device.  Configurations are numbered 1
+  to 255
+
+* A configuration may have many interfaces, which are all active at once
+* Each interface can have an alternate setting
+* the set interface command selects an interface #, and an alternate setting #
+  so it can switch a particular interface from one setting to another
+  while all other interfaces on this configuration are unchanged
+* Interfaces are numbered 0 to 255
+
+* Within a configuration each interface has its own set of endpoints
+* Endpoints can't be shared by interfaces in the same configuration
+* Alternate settings for the same interface can use the same endpoints as this
+  is the same interface
+
+
+
+Example device:
+
+configuration 1:
+interface 0: uses endpoints 1 IN and 2 OUT
+interface 0, alternate setting 0: mass storage with BULK endpoints 1 IN & 2 OUT
+
+configuration 2:
+
+interface 0: uses endpoint 1 IN
+interface 0, alternate setting 0: webcam with X bps ISO IN as endpoint 1
+interface 0, alternate setting 1: webcam with Y bps ISO IN as endpoint 1
+interface 0, alternate setting 2: webcam with BULK IN as endpoint 1
+
+interface 1: uses endpoint 2 IN
+interface 1, alternate setting 0: microphone with x bps ISO IN as endpoint 2
+interface 1, alternate setting 1: microphone with y bps ISO IN as endpoint 2
+
+Endpoint descriptors have a direction (in, out), a transfer type (iso, bulk,
+control, interrupt) a maximum packet size and other attributes.  When parsing
+the endpoint descriptor, we only store the endpoint number and the transfer
+type.  Because we only track a subset of the attributes of the endpoint
+descriptor, there are opportunities for saving space.
+

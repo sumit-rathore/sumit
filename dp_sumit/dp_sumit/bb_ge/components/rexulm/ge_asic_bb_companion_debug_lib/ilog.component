@@ -1,0 +1,97 @@
+component:REXULM_COMPONENT
+L:RECEIVED_HOST_DISONNECT S:RX eTxHostDisconnect\n
+L:RECEIVED_GEN_SUSPEND S:RX eTxGenSuspend\n
+L:RECEIVED_UNKOWN_MESSAGE S:RX unknown msg: 0x%x\n
+L:LINK_TO_LEX_ACQUIRED S:Link to Lex acquired\n
+L:DISCONNECT_STATE_IDEV_CONNECTED S:DisconnectState - iCONNECT\n
+L:PREFETCH_HS S:PreFetch - HighSpeed, (may operate slower if HS isn't allowed)\n
+L:PREFETCH_FS S:PreFetch - FullSpeed\n
+L:PREFETCH_LS S:PreFetch - LowSpeed\n
+L:PREFETCH_INVALID_SPEED S:PreFetchState - Invalid speed\n
+L:BUS_RESET_STATE_SPD_NEG_FAILED S:rexfsm_BusResetState: speed negotiate failed! (%d,%d)\n
+L:BUS_RESET_STATE_HOST_BUS_RESET_DONE S:BusResetState - mBUSRESETDONE\n
+L:BUS_RESET_STATE_IBUS_RESET_DONE_EN_REX S:rexfsm_BusResetState - rex busReset done, enabling REX\n
+L:BUS_RESET_STATE_IBUS_RESET_DONE_BEFORE_HOST S:Uh-oh, Rex's busResetDone finished before HostReset!!\n
+L:SUSPEND_STATE_MGEN_RESUME S:SuspendState - mGEN_RESUME\n
+L:SUSPEND_STATE_MHOST_RESUME_DONE S:SuspendState - mHOST_RESUME_DONE\n
+L:SUSPEND_STATE_IREMOTE_WAKEUP S:SuspendState - iREMOTE_WAKEUP\n
+L:INVALID_USB_SPEED S:Invalid USB speed at line %d\n
+L:ULM_ISR S:In ULM ISR 0x%x\n
+L:ULM_RESPONSE_TIMEOUT S:iRESPONSETMOUT\n
+L:ILINK_DOWN S:CLM Link is down!!!\n
+L:START_SUSPEND_STATE_ISUSPEND_DONE S:StartSuspendState: iSuspend Done\n
+L:START_SUSPEND_STATE_INVALID_OPSPEED S:StartSuspendState: Entering with an invalid opSpeed\n
+L:IDEV_REMOVED S:Device removed\n
+L:REX_GOT_INVALID_HOST_SPEED S:Host sent an invalid bus reset speed %d, when device can only do %d\n
+L:UNEXPECTED_ISUSPEND_DONE S:Unexpectedly received iSuspendDone when rex in %d\n
+L:LEX_REX_LINK_UP S:CurrentState: Lex-Rex link is UP\n
+L:LEX_REX_LINK_DOWN S:CurrentState: Lex-Rex link is DOWN\n
+L:REX_SPEED S:CurrentState: Dev is capable of speed %d, and is operating at speed %d\n
+L:REX_DEV_HOST_STATE S:CurrentState: Dev is in state %d, and host is in state %d, everEnumerated %d\n
+L:THIS_IS_LEX S:This is a Lex, not a Rex, what were you expecting?\n
+L:INVALID_STATE_W_LINE S:Invalid state %d, found at line %d\n
+L:UNEXPECTED_HOST_RESET_DONE_MSG S:Unexpected host reset done message when dev in state %d\n
+L:UNEXPECTED_HOST_WAKEUP_DONE_MSG S:Unexpectedly received host remote wakeup done message when in state %d\n
+L:UNEXPECTED_HOST_RESUME_MSG S:Unexpectedly received host resume message when in state %d\n
+L:GOT_EARLY_HOST_RESUME_MSG S:Got host resume message early (ie we are still suspendING, and not suspendED)\n
+L:HOST_BUS_RESET_MSG S:Got a host bus reset msg for speed %d\n
+L:RECVD_LINK_UP_WHEN_LINK_IS_UP S:Received a link up message, when the link is already up\n
+L:DEVICE_NOT_DISCONNECTED_WHEN_TIMER_EXP S:The Rexulm timer went off when the device isn't disconnected\n
+L:DEVICE_CONNECTED_AND_NOW_PREFETCHING_SPEED S:Device connected and now starting to prefetch the speed\n
+L:BUS_RESET_DONE_TO_SUSPEND S:Bus Reset Done, & host is gone to suspend\n
+L:BUS_RESET_PRE_FETCH_DONE S:Bus Reset Prefetch Done\n
+L:UNEXPECTED_BUS_RESET_DONE_WHILE_HOST_RESUMING S:Unexpectedly got a bus reset done, while the host is resuming\n
+L:RESUME_DONE S:Resume done\n
+L:RESUME_DONE_HOST_STILL_RESUMING S:Resume done but the host is still resuming\n
+L:RESUME_DONE_GO_BACK_TO_SUSPEND S:Resume done, now going back into suspend\n
+L:RESUME_DONE_BUT_HOST_BUS_RESETTING S:resume done, but the host is bus resetting\n
+L:BITSTUFF_ERR S:Bitstuff error from the ULM\n
+L:LONG_PACKET_ERR S:Long packet error from the ULM\n
+L:LEX_IRQ_HOST_RESUME_DET S:Lex only irq host resume detect occured\n
+L:LEX_IRQ_BUS_RESET_DET S:Lex only irq bus reset detect occured\n
+L:LEX_IRQ_SUSPEND_DET S:Lex only irq suspend detect occured\n
+L:REQ_START_SUSPEND_BUT_IN_STATE S:Call to RequestStartSuspend, but ignoring since rex.downstreamPort is in state %d\n
+L:START_HOST_BUS_RESET S:Starting a host bus reset\n
+L:HOST_MSG_WHEN_NO_DEV_CONNECTED S:Received host message %d, when there is no device connected\n
+L:UNEXPECTED_CONNECT_INTERRUPT S:Unexpectedly got a connect interrupt\n
+L:GOT_SUSPEND_DONE_ISR_WHILE_UPSTREAM_IS_RESUMING S:Got a suspend done interrupt while the upstream is resuming, very odd\n
+L:GOT_SUSPEND_DONE_ISR_WHILE_UPSTREAM_IS_OPERATING S:Got a suspend done interrupt while the upstream is operating, very odd\n
+L:RESTART_USB_LINK S:Restarting the USB link\n
+L:TIME_MARKER_LEX_MSGS S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing Lex message\n
+L:TIME_MARKER_USB_IRQ S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing USB Interrupt\n
+L:TIME_MARKER_CLM_LINK_DOWN S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing CLM Link Down\n
+L:TIME_MARKER_CLM_LINK_UP S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing CLM Link Up\n
+L:TIME_MARKER_TIMER_PREFETCH S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing Connect Debounce Timer\n
+L:HOST_MSG_WHEN_NO_LEX_LINK S:Received host message %d, when there is no declared link to Lex\n
+L:TIME_MARKER_TIMER_CONNECT S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing Disconnect/Connnect Timer\n
+L:ENABLING_USB_PORT S:Enabling the USB port\n
+L:TIME_MARKER_SOF_PACKET_RX S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing SOF packet received idle task\n
+L:IDLE_TASK_UPSTREAM_INVALID_STATE S:IdleTask: Upstream is in an invalid state %d\n
+L:IDLE_TASK_DOWNSTREAM_INVALID_STATE S:IdleTask: Downstream is in an invalid state %d\n
+L:IDLE_TASK_SOF_RX S:IdleTask: Received an SOF packet\n
+L:START_VERY_DELAYED_BUS_RESET S:Start very delayed bus reset\n
+L:TIME_MARKER_IDLE_TASK_TO_START_SUSPEND S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing suspending idle task\n
+L:IDLE_TASK_TO_START_SUSPEND S:IdleTask: Ready to start suspend sequence\n
+L:NO_SOF_GOING_FROM_OP_TO_SUSPEND S:No SOF going from operating to suspend\n
+L:LOST_LINK_REQUEST_START_SUSPENDING S:Lost link request start suspending\n
+L:CHANGING_PREFETCH_TIMER S:Changing prefetch timer from %dms to %dms\n
+L:CHANGING_CONNECT_TIMER S:Changing connect timer from %dms to %dms\n
+L:REMOTE_WAKEUP_ISR_BUT S:Remote wakeup ISR, but Rex is in state %d\n
+L:REX_PORTDISCHARGECOMPLETE S:Current DFP discharge state: %d\n
+L:START_REX_DFP_DISCHARGE_TIMER S:Starting REX Hub Downstream Port Discharge Timer\n
+L:EXPIRE_REX_DFP_DISCHARGE_TIMER S:REX Hub Downstream Port Discharge Timer expired\n
+L:UNSUPPORTED_ICMD S:Unsupported icmd\n
+L:REXULM_RESET_INIT_STATE S:*** REXULM Reset rex struct to initial state ***\n
+L:REXULM_DEBUGX S:__#### DEBUG 0x%x ####__\n
+L:IDLE_TASK_TO_START_BUS_RST S:IdleTask: Ready to start bus reset sequence\n
+L:TIME_MARKER_IDLE_TASK_TO_START_BUS_RST S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing bus resetting idle task\n
+L:LINESTATE_TIMEOUT S:Waiting for line state to be %d timed out! Current line state is %d\n
+L:BUS_RST_USP_DSP S:BUS RESET IDLE TASK PORT STATES: USP %d, DSP %d\n
+L:DEBOUNCE_LINESTATE_WAIT S:Debounce line state stability wait for linestate %d starting now\n
+L:DEBOUNCE_LINESTATE_WAIT_TIME S:Debounce line state waited %d usec, %d usec for 100 stable read counts\n
+L:SOFT_DISCONNECT S:Soft disconnect is performed\n
+L:REMOTE_WAKEUP_ISR_IGNORED S:Remote wakeup ISR but ignored during link down\n
+L:HANDLE_LINK_MSG S:Handle link message %d, while rex upstreamPort state = %d, rex downstreamPort state = %d\n
+L:USB_MSG_SENT S:Rex sent a USB msg %d upstream\n
+L:SUSPEND_DONE_UPSTREAM_STATE S:USB suspend done and rex upstream port state = %d, line = %d\n
+L:DISABLE_USB_LINK S:Disabling the USB link\n

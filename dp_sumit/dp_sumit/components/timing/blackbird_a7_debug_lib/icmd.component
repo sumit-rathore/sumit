@@ -1,0 +1,8 @@
+component:TIMING_COMPONENT
+F:showTimers H:"Show all timers" A:void
+F:startTimer H:"Start a timer" A:uint32_t
+F:stopTimer H:"Stop a timer" A:uint32_t
+F:changeTimeout H:"Change a timer timeout value.  Args: timer, newTimeoutValue" A:uint32_t, uint32_t
+F:UTIL_printTimingEntriesTable H:"Print Timing Entries Table" A:void
+F:UTIL_timingProfileWatchdogEnable H:"Enable Watchdog, arg: timeout in ms" A:uint32_t
+F:UTIL_timingProfileWatchdogDisable H:"Disable Watchdog" A:void

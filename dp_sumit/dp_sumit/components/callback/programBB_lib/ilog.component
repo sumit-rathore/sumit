@@ -1,0 +1,6 @@
+component:CALLBACK_COMPONENT
+L:CALLBACK_INVALID_TYPE S:Callback invalid type %d callback[index].type %d at line = %d\n
+L:CALLBACK_INVALID_HANDLE S:Callback invalid handle, tokens mismatched, at line = %d\n
+L:CALLBACK_INVALID_REMOVE S:Callback invalid remove at line = %d type %d index %d\n
+L:CALLBACK_FREE_LIST_EMPTY S:Callback free stack is empty\n
+L:CALLBACK_SINGLE_RUN_CANCELED S:New single run callback command canceled\n

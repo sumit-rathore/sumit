@@ -1,0 +1,3 @@
+component:UART_COMPONENT
+F:UART_ShowStats H:"Show Uart stats" A:void
+F:UART_BBChangeBaudRate H:"Change Baud Rate" A:uint32_t

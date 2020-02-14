@@ -1,0 +1,50 @@
+///////////////////////////////////////////////////////////////////////////////
+///
+///   Icron Technology Corporation - Copyright 2010
+///
+///
+///   This source file and the information contained in it are confidential and 
+///   proprietary to Icron Technology Corporation. The reproduction or disclosure, 
+///   in whole or in part, to anyone outside of Icron without the written approval 
+///   of a Icron officer under a Non-Disclosure Agreement, or to any employee of 
+///   Icron who has not previously obtained written authorization for access from 
+///   the individual responsible for the source code, will have a significant 
+///   detrimental effect on Icron and is expressly prohibited.
+///
+///////////////////////////////////////////////////////////////////////////////
+//
+//!   @file  -  project_components.h
+//          
+//!   @brief -  This file lists all the components in the project
+//
+//!   @note  -  This is used for asserts, logging messages, & iCmd
+//    
+///////////////////////////////////////////////////////////////////////////////
+
+// Check if this is used for standard component numbers, or a special parser
+// We need to ensure that the enum is only defined once
+// Special parsers can do their own checks
+#if defined(COMPONENT_PARSER) || !defined(PROJECT_COMPONENTS_H)
+#ifndef COMPONENT_PARSER
+#define PROJECT_COMPONENTS_H
+#endif
+
+#include <icomponent.h>
+
+// Sample
+//COMPONENT_LIST_CREATE()
+//    COMPONENT_CREATE(ILOG_COMPONENT)
+//    COMPONENT_CREATE(FLASH_WRITER_COMPONENT)
+//COMPONENT_LIST_END()
+
+//TODO: Template to be filled in with component names
+COMPONENT_LIST_CREATE()
+    COMPONENT_CREATE()
+    COMPONENT_CREATE()
+    COMPONENT_CREATE()
+    COMPONENT_CREATE()
+    COMPONENT_CREATE()
+COMPONENT_LIST_END()
+
+#endif // #if defined(COMPONENT_PARSER) || !defined(PROJECT_COMPONENTS_H)
+

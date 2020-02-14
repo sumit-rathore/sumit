@@ -1,0 +1,14 @@
+component:TOP_COMPONENT
+F:bb_top_systemReset H:"Perform system restart" A:void
+F:bb_top_triggerFallbackFpgaIcmd H:"Trigger the fallback" A:void
+F:bb_top_ApplyGEReset H:"Reset GE, 1 to put GE in reset and 0 to put GE in run" A:bool
+F:bb_top_GtpResetIcmd H:"Resets the GTP tranceivers and take them out of reset after configuration" A:void
+F:bb_top_ConfigureDpTransceiverLexIcmd H:"Configure DP transreceivers on LEX" A:void
+F:bb_top_IcmddpSetTxDiffCtrl H:"Sets a value for txdiffctrl, Arg 2 = 1 to presist Arg 1, 0 to keep Arg 1 only for one link training" A:uint8_t, bool
+F:bb_top_IcmddpSetTxPostCursor H:"Sets a value for txpostcursor, Arg 2 = 1 to presist Arg 1, 0 to keep Arg 1 only for one link training" A:uint8_t, bool
+F:bb_top_switchFpgaImage H:"Change the running image. NOTE does not set the fallback bit" A:void
+F:bb_top_CalcFpgaImageCrc H:"Calculate the FPGA 64bit CRC" A:void
+F:bb_top_CalcTargetImageCrc H:"Calculate the Target image CRC" A:void
+F:bb_top_writeUserReg H:"Write the FPGA user register" A:uint32_t
+F:bb_top_readUserReg H:"Read the FPGA user register" A:void
+F:bb_top_coreTypeIcmd H:"This icmd states if the core type is -2 or -3" A:void

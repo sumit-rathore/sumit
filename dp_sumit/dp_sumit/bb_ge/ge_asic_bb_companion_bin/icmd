@@ -1,0 +1,151 @@
+component:TOPLEVEL_COMPONENT
+F:xmodem_new_image H:"Send a new image over xmodem and then run it" A:void
+F:PrintSwVersion H:"Print out the current software version and build date/time" A:void
+F:TOPLEVEL_printDeviceType H:"Prints whether this device is a LEX or a REX." A:void
+F:TOPLEVEL_getEcoStatus H:"Prints the status of ECO Flag, (1 = ECO detected)." A:void
+F:TOPLEVEL_DEBUG_ASSERT H:"CAUSE AN ASSERT IN GE FOR DEBUGGING" A:uint8
+component:LINKMGR_COMPONENT
+F:icmdGetPhyStatus H:"Read and decode the PHY control and status registers" A:void
+F:showLinkState H:"Show the states of the link managers" A:void
+component:SYS_CTRL_Q_COMPONENT
+F:showExpectedPacket H:"Show the expected packet for a particular USB address that has BCO/BCI set" A:uint8
+component:DESCPARSER_COMPONENT
+F:enableMsaParsing H:"Enable MSA Parsing" A:void
+F:disableMsaParsing H:"Disable MSA Parsing" A:void
+component:VHUB_COMPONENT
+F:vhubReadState H:"Read the vhub state variables" A:void
+component:REXULM_COMPONENT
+F:REXULM_showCurrentState H:"Show the current Rex ULM states" A:void
+F:REXULM_adjustPrefetchTimer H:"Changes the prefetch timer timeout value" A:uint32
+F:REXULM_adjustConnectTimer H:"Changes the connect timer timeout value" A:uint32
+component:NETCFG_COMPONENT
+component:NET_COMPONENT
+F:NET_icmdSetIPv4Configuration H:"Set the IPv4 configuration (IP Address, Subnet Mask, Default Gateway)" A:uint32, uint32, uint32
+F:NET_icmdViewIPv4Configuration H:"View the IPv4 configuration" A:void
+component:TOPOLOGY_COMPONENT
+F:_DTT_showDeviceXSST H:"Show the XSST entry for a single device: Argument is the logical address" A:uint8
+F:_DTT_showAllDeviceXSST H:"Show the XSST entry for all devices in-sys" A:void
+F:DEPRECATED_ShowTopologyByUsb H:"DEPRECATED" A:void
+F:_DTT_showAllDeviceTopologyByLA H:"Show the topology information for all devices ordered by logical address.  Args: (view <0=compact, 1=verbose>)" A:uint8
+F:WriteXSSTCmd H:"Do a rmw of a word to the XSST: Args USB Address, endpoint, XSST value MSW, mask MSW, XSST value LSW, mask LSW" A:uint8, uint8, uint32, uint32, uint32, uint32
+F:ShowLat H:"Show the LAT entry for a USB address: Argument is the usb address" A:uint8
+F:ShowXsst H:"Show the XSST entry for a Logical address: Arg1 logical address, Arg2 endpoint" A:uint8, uint8
+F:_DTT_XSSTMonStop H:"Stop the XSST Monitor" A:void
+F:_DTT_XSSTMonStart H:"Start the XSST Monitor" A:void
+F:_DTT_showSingleDeviceTopology H:"Show the topology information associated with the provided logical address.  Args: (LA, view <0=compact, 1=verbose>)" A:uint8, uint8
+F:_DTT_showAllDeviceTopologyByUSB H:"Show the topology information for all devices ordered by USB address.  Args: (view <0=compact, 1=verbose>)" A:uint8
+component:REXSCH_COMPONENT
+F:REXSCH_Enable H:"Enables rex scheduler. Argument: 0 for high speed, 1 for full speed, 2 for low speed" A:uint8
+F:REXSCH_Disable H:"Disables rex scheduler" A:void
+F:REXMSA_Disp_Stat H:"Display the Msa Status" A:void
+F:ICMD_deprecatedIcmdFunction H:"Set the max msa pkt count per microframe" A:uint32
+component:STORAGE_COMPONENT
+F:STORAGE_icmdReadVar H:"Reads the specified variable. Args: varToRead" A:uint8
+F:STORAGE_icmdWriteVar H:"Writes the specified variable. Args: varToWrite, MSWData, LSWData" A:uint8, uint32, uint32
+F:STORAGE_icmdRemoveVar H:"Removes the specified variable. Args: varToRemove" A:uint8
+F:STORAGE_icmdDumpAllVars H:"Show all persistent variables" A:void
+component:EEPROM_COMPONENT
+F:EEPROM_icmdReadPage H:"Reads the specified page. Args: Page to read, display as words as boolean" A:uint8, uint8
+F:EEPROM_icmdWritePage H:"Writes the specified page. Args: page to write, msw0, lsw0, msw1, lsw1" A:uint8, uint32, uint32, uint32, uint32
+component:ATMEL_CRYPTO_COMPONENT
+F:atmel_icmdSend H:"Do an I2C transaction to the Atmel Chip. Args: opcode, param1, param2, resultReadSize, operationExecutionTime" A:uint8, uint8, uint16, uint8, uint32
+F:atmel_icmdWithDataWordSend H:"Do an I2C transaction to the Atmel Chip. Args: opcode, param1, param2, data, resultReadSize, operationExecutionTime" A:uint8, uint8, uint16, uint32, uint8, uint32
+F:atmel_setSpeed H:"Set the speed for i2c transactions to the Atmel chip: 0 is slow, 1 is fast, 2 is fast+" A:uint8
+F:atmel_setICmdWriteDataBuffer H:"Writes one word into the 8 word wide data slot write buffer. Args: wordOffset, word" A:uint8, uint32
+F:atmel_writeDataSlotFromBuffer H:"Writes the incrementally constructed data slot buffer to the given slot. Args: slotNumber" A:uint8
+F:atmel_readConfigWordIcmd H:"Reads a single 32bit word from the configuration settings. Args: byteOffset - must be divisible by 4" A:uint8
+F:atmel_writeConfigWordIcmd H:"Writes a single 32bit word to the configuration settings. Args: byteOffset - must be divisible by 4, data" A:uint8, uint32
+F:atmel_isChipLockedIcmd H:"Checks to see if the config and data+otp zones are locked. Args:" A:void
+F:atmel_lockConfigZoneIcmd H:"Locks the config zone of the authentication chip. Args: configuration zone CRC" A:uint16
+F:atmel_lockDataAndOtpZonesIcmd H:"Locks the data and OTP zones of the authentication chip. Args: data and OTP zone CRC" A:uint16
+component:XCSR_COMPONENT
+F:icmdReadQueueStats H:"Read queue statistics (frame count, word count etc), arg is qid" A:uint8
+F:icmdReadCacheStats H:"Read cache statistics" A:void
+F:icmdReadQueueFrame H:"Read a frame or 32 words from qid" A:uint8
+F:icmdXSSTWriteLat H:"Write to the XSST LAT, args: usbAddress, endPoint, value" A:uint8, uint8, uint32
+F:icmdXSSTWriteSST H:"Write to the XSST, args: usbAddress, endPoint, valueMSW, valueLSW" A:uint8, uint8, uint32, uint32
+F:icmdXSSTReadAll H:"Read the XSST, args: usbAddress, endPoint" A:uint8, uint8
+F:icmdWriteQueueFrame H:"Write a frame (arg1 frameheader 0:generic 1:cpuTocpu 3:downstream 4:upstream 5:other; arg2 number of bytes)" A:uint8, uint8
+F:icmdSendMessage H:"Send a message over the link by CPU TX Q: args (msgType, msg, Vport)" A:uint8, uint8, uint8
+F:icmdSendMessageWithData H:"Send a message over the link by CPU TX Q: args (msgType, msg, Vport, Data)" A:uint8, uint8, uint8, uint32
+F:icmdSendMessageWithExtraData H:"Send a message over the link by CPU TX Q: args (msgType, msg, Vport, Data, ExtraDataMSW, ExtraDataLSW)" A:uint8, uint8, uint8, uint32, uint32, uint32
+F:XSSTConfigureMSA H:"Configure the XSST table for MSA, args: usbAddr, inEndpoint, outEndpoint" A:uint8, uint8, uint8
+F:icmdXSSTReadModifyWriteSST H:"Read-Modify-Write to the XSST, args: usbAddress, endPoint, valueMSW, valueLSW, maskMSW, maskLSW" A:uint8, uint8, uint32, uint32, uint32, uint32
+component:XLR_COMPONENT
+F:msaReadLat H:"Read the MSA LAT, arg is usb address" A:uint8
+F:msaWriteLat H:"Write the MSA LAT, args are usbAddress, MSA LA, valid" A:uint8, uint8, uint8
+F:msaReadPtrTableICmd H:"Read the MSA pointer table, args are usb address, endpoint" A:uint8, uint8
+F:msaWritePtrTable H:"Write the MSA pointer table, arges are usb Address, endpoint, pointer" A:uint8, uint8, uint8
+F:msaAllocatePtr H:"Allocate a new MSA status table pointer" A:void
+F:XLR_msaFreePtr H:"Free an MSA status table pointer" A:uint8
+F:msaClearStatusTable H:"Clear the status table entry, args are usbAddr, endpoint" A:uint8, uint8
+component:XRR_COMPONENT
+F:XRR_SOFEnable H:"Enable SOFs on the Rex" A:void
+F:XRR_SOFDisable H:"Disable SOFs on the Rex" A:void
+F:XRR_EnableInterruptSOF H:"Enable SOF interrupt" A:void
+F:XRR_DisableInterruptSOF H:"Disable SOF interrupt" A:void
+component:CLM_COMPONENT
+F:CLM_LogRxStats H:"Log the RX Stats register" A:void
+F:CLM_LogTxStats H:"Log the TX Stats register" A:void
+F:CLM_AdjustTxWaitForRespLimit H:"Adjust TX wait for response limit, args: limit, CntThresh" A:uint8, uint8
+F:CLM_AdjustTxQidThresh H:"Adjust TX QID Threshold. IE # of packets in flight (1-15)" A:uint8
+component:ULM_COMPONENT
+F:ULM_ConnectRexUsbPort H:"Connect the USB port on the Rex" A:void
+F:ULM_ConnectLexUsbPort H:"Connect the USB port on the Lex. Arg: connection speed; 0 for HS, 1 for FS, 2 for LS" A:uint8
+F:ULM_DisconnectUsbPort H:"Disconnect the USB port" A:void
+F:ULM_GenerateRexUsbReset H:"Generate a USB reset on the Rex. Arg: ULM speed; 0 for HS, 1 for FS, 2 for LS" A:uint8
+F:ULM_GenerateRexUsbResume H:"Generate a USB resume on the Rex" A:void
+F:ULM_GenerateLexUsbRemoteWakeup H:"Generate a Lex USB remote wakeup" A:void
+component:GRG_COMPONENT
+F:icmdMdioWrite H:"Write to MDIO: 1st arg device, 2nd arg address, 3rd arg data" A:uint8, uint8, uint16
+F:icmdMdioRead H:"Read from MDIO: 1st arg device, 2nd arg address" A:uint8, uint8
+F:icmdPLLMeasure H:"Measure the PLL: arg is spectareg pll selection" A:uint8
+F:GRG_ResetChip H:"Reset the Chip" A:void
+F:mdioI2cStatus H:"Check the MDIO/I2C state of where it is in processing ASync operations" A:void
+F:i2cWrite H:"Write to i2c, args: bus, device, speed, dataMSW, dataLSW, byteCount" A:uint8, uint8, uint8, uint32, uint32, uint8
+F:i2cRead H:"Write to i2c, args: bus, device, speed, byteCount" A:uint8, uint8, uint8, uint8
+F:i2cWake H:"Write to i2c, args: bus" A:uint8
+F:i2cWriteRead H:"Write then read i2c.  SMBus read, args: bus, device, speed, writeByteCount, dataWrite, readByteCount" A:uint8, uint8, uint8, uint8, uint32, uint8
+F:i2cWriteReadBlock H:"Write then read i2c.  SMBus read block, args: bus, device, speed, writeByteCount, dataWrite" A:uint8, uint8, uint8, uint8, uint32
+F:icmdDivide H:"16 bit integer division: 1st arg numerator, 2nd arg denominator" A:uint16, uint16
+F:icmdMultiply H:"16 bit multiplication with 32 bit result. Multiplies arg1 by arg 2" A:uint16, uint16
+F:icmdPLLFreq H:"Measure the PLL and see its frequency in MHz. Arg is the spectareg pll selection" A:uint8
+F:icmdMdioWriteSync H:"Synchronously write to MDIO: 1st arg device, 2nd arg address, 3rd arg data" A:uint8, uint8, uint16
+F:icmdMdioReadSync H:"Synchronously read from MDIO: 1st arg device, 2nd arg address" A:uint8, uint8
+F:GRG_PrintPlatformAndVariantId H:"Prints the platform and variant id" A:void
+F:ledSetLocatorLedsPattern H:"Set LED locator pattern" A:void
+F:ledClearLocatorLedsPattern H:"Clear LED locator pattern" A:void
+F:ledTurnOn H:"Turn on LED id: Activity=0, Host=1, Link=2" A:uint16
+F:ledTurnOff H:"Turn off LED id: Activity=0, Host=1, Link=2" A:uint16
+F:ledToggle H:"Arg1:id: Activity=0, Host=1, Link=2;    Arg2: Rate: Fast=0, Slow=1" A:uint16, uint16
+component:TIMING_COMPONENT
+F:showTimers H:"Show all timers" A:void
+F:startTimer H:"Start a timer" A:uint32
+F:stopTimer H:"Stop a timer" A:uint32
+F:changeTimeout H:"Change a timer timeout value.  Args: timer, newTimeoutValue" A:uint32, uint32
+component:TASKSCH_COMPONENT
+F:viewTasks H:"View all the current tasks" A:void
+component:RANDOM_COMPONENT
+F:RANDOM_AddEntropy H:"Add Entropy to random number generator" A:uint8
+F:getQuickPseudoRandom H:"Get a quick pseudo random number" A:void
+F:RANDOM_QuickPseudoRandomNewSeed H:"Write a new seed into the quick pseudo random # generator" A:uint32
+component:ILOG_COMPONENT
+F:ilog_SetLevel H:"Set the ilog logging level of any component: 1st arg level, 2nd arg component" A:uint8, component_t
+F:ilog_icmdGetLevel H:"Get the ilog logging level of any component" A:component_t
+F:ilog_setBlockingMode H:"Put ilog into a blocking logging mode" A:void
+F:ilog_clearBlockingMode H:"Put ilog into normal logging mode" A:void
+F:testAssert3 H:"Test the assert function with 3 args" A:uint32, uint32, uint32
+F:testStackOverFlow H:"Test the assert function by creating a stack overflow (Creates a SPARC register window overflow)" A:void
+F:assertStatus H:"Check the status of the assert module" A:void
+component:ICMD_COMPONENT
+F:readMemory H:"Read any memory address. Argument: full 32 bit address" A:uint32
+F:writeMemory H:"Write any memory address. Arguments: full 32 bit address, 32 bit value to write" A:uint32, uint32
+F:readModifyWriteMemory H:"Read-Modify-Write any memory address. Arguments: full 32 bit address, 32 bit set mask, 32 bit clear mask" A:uint32, uint32, uint32
+F:modifyBitfield H:"Write data from a given position within any memory address. Arguments: full 32 bit address, 8 bit position to start modifying, 8 bit width to modify, 32 bit value to write" A:uint32, uint8, uint8, uint32
+F:dumpMemory32 H:"Dump data from any number of sequential memory locations. Arguments: full 32 bit address, number of 32bit words to read" A:uint32, uint8
+F:callFunction H:"Call any function. Arguments: full 32 bit address, arguments for function(if not needed enter 0)" A:uint32, uint32, uint32, uint32, uint32, uint32
+F:readMemory16 H:"Read any memory address. Argument: full 16 bit address" A:uint32
+F:writeMemory16 H:"Write any memory address. Arguments: full 16 bit address, 16 bit value to write" A:uint32, uint16
+F:readModifyWriteMemory16 H:"Read-Modify-Write any memory address. Arguments: full 16 bit address, 16 bit set mask, 16 bit clear mask" A:uint32, uint16, uint16
+F:readMemory8 H:"Read any memory address. Argument: full 32 bit address" A:uint32
+F:writeMemory8 H:"Write any memory address. Arguments: full 32 bit address, 8 bit value to write" A:uint32, uint8

@@ -1,0 +1,362 @@
+digraph {
+ulp [label="ulp"]
+rs232 [label="rs232"]
+rom [label="rom"]
+command [label="command"]
+ge_program [label="ge_program"]
+lan_port [label="lan_port"]
+dp [label="dp"]
+dp_stream [label="dp_stream"]
+dp_aux [label="dp_aux"]
+linkmgr [label="linkmgr"]
+xaui [label="xaui"]
+idt_clk [label="idt_clk"]
+fiber5g [label="fiber5g"]
+i2cd [label="i2cd"]
+led [label="led"]
+bbge_comm [label="bbge_comm"]
+gpio [label="gpio"]
+eeprom [label="eeprom"]
+pcs_pma [label="pcs_pma"]
+atmel_crypto [label="atmel_crypto"]
+upp [label="upp"]
+i2c_slave [label="i2c_slave"]
+mdiod [label="mdiod"]
+aquantia [label="aquantia"]
+mdio [label="mdio"]
+xmodem [label="xmodem"]
+mca [label="mca"]
+cpu_comm [label="cpu_comm"]
+test [label="test"]
+configuration [label="configuration"]
+flash_data [label="flash_data"]
+random [label="random"]
+xadc [label="xadc"]
+stats_mon [label="stats_mon"]
+callback [label="callback"]
+event [label="event"]
+main_loop [label="main_loop"]
+mac [label="mac"]
+top [label="top"]
+util [label="util"]
+sfi [label="sfi"]
+crc [label="crc"]
+bbge_comm [label="bbge_comm"]
+uart [label="uart"]
+core [label="core"]
+sha2 [label="sha2"]
+register_definitions [label="register_definitions"]
+crc [label="crc"]
+ulp -> bbge_comm
+ulp -> cpu_comm
+ulp -> mca
+ulp -> i2cd
+ulp -> stats_mon
+ulp -> configuration
+ulp -> event
+ulp -> callback
+ulp -> uart
+ulp -> core
+ulp -> led
+ulp -> util
+ulp -> top
+ulp -> gpio
+ulp -> register_definitions
+rs232 -> configuration
+rs232 -> cpu_comm
+rs232 -> event
+rs232 -> mca
+rs232 -> gpio
+rs232 -> top
+rs232 -> core
+rs232 -> register_definitions
+command -> rs232
+command -> ge_program
+command -> flash_data
+command -> sfi
+command -> linkmgr
+command -> callback
+command -> uart
+command -> crc
+command -> top
+command -> configuration
+command -> core
+command -> i2cd
+command -> gpio
+command -> register_definitions
+ge_program -> configuration
+ge_program -> command
+ge_program -> crc
+ge_program -> linkmgr
+ge_program -> bbge_comm
+ge_program -> led
+ge_program -> uart
+ge_program -> cpu_comm
+ge_program -> top
+ge_program -> core
+ge_program -> util
+ge_program -> gpio
+ge_program -> register_definitions
+lan_port -> cpu_comm
+lan_port -> mca
+lan_port -> mdiod
+lan_port -> mdio
+lan_port -> event
+lan_port -> configuration
+lan_port -> callback
+lan_port -> uart
+lan_port -> util
+lan_port -> top
+lan_port -> core
+lan_port -> gpio
+lan_port -> register_definitions
+dp -> dp_stream
+dp -> dp_aux
+dp -> cpu_comm
+dp -> mca
+dp -> i2cd
+dp -> test
+dp -> configuration
+dp -> callback
+dp -> event
+dp -> util
+dp -> top
+dp -> core
+dp -> uart
+dp -> idt_clk
+dp -> gpio
+dp -> register_definitions
+dp_stream -> top
+dp_stream -> gpio
+dp_stream -> test
+dp_stream -> uart
+dp_stream -> core
+dp_stream -> configuration
+dp_stream -> register_definitions
+dp_aux -> cpu_comm
+dp_aux -> callback
+dp_aux -> top
+dp_aux -> gpio
+dp_aux -> dp
+dp_aux -> uart
+dp_aux -> register_definitions
+dp_aux -> configuration
+linkmgr -> stats_mon
+linkmgr -> ulp
+linkmgr -> event
+linkmgr -> aquantia
+linkmgr -> xaui
+linkmgr -> mdiod
+linkmgr -> fiber5g
+linkmgr -> led
+linkmgr -> uart
+linkmgr -> cpu_comm
+linkmgr -> mca
+linkmgr -> mac
+linkmgr -> pcs_pma
+linkmgr -> top
+linkmgr -> core
+linkmgr -> util
+linkmgr -> gpio
+linkmgr -> configuration
+linkmgr -> callback
+linkmgr -> random
+linkmgr -> i2cd
+linkmgr -> register_definitions
+xaui -> configuration
+xaui -> stats_mon
+xaui -> util
+xaui -> top
+xaui -> gpio
+xaui -> register_definitions
+idt_clk -> top
+idt_clk -> gpio
+idt_clk -> core
+idt_clk -> register_definitions
+idt_clk -> configuration
+fiber5g -> stats_mon
+fiber5g -> configuration
+fiber5g -> gpio
+fiber5g -> top
+fiber5g -> core
+fiber5g -> register_definitions
+i2cd -> stats_mon
+i2cd -> ulp
+i2cd -> configuration
+i2cd -> uart
+i2cd -> util
+i2cd -> callback
+i2cd -> top
+i2cd -> core
+i2cd -> gpio
+i2cd -> register_definitions
+led -> event
+led -> uart
+led -> gpio
+led -> core
+led -> register_definitions
+bbge_comm -> configuration
+bbge_comm -> linkmgr
+bbge_comm -> command
+bbge_comm -> event
+bbge_comm -> ge_program
+bbge_comm -> led
+bbge_comm -> configuration
+bbge_comm -> uart
+bbge_comm -> top
+bbge_comm -> gpio
+bbge_comm -> register_definitions
+bbge_comm -> core
+gpio -> uart
+gpio -> i2cd
+gpio -> top
+gpio -> register_definitions
+pcs_pma -> mdio
+pcs_pma -> top
+pcs_pma -> gpio
+pcs_pma -> register_definitions
+atmel_crypto -> random
+atmel_crypto -> callback
+atmel_crypto -> uart
+atmel_crypto -> sha2
+atmel_crypto -> crc
+atmel_crypto -> register_definitions
+upp -> ulp
+upp -> cpu_comm
+upp -> stats_mon
+upp -> configuration
+upp -> event
+upp -> callback
+upp -> uart
+upp -> util
+upp -> core
+upp -> top
+upp -> gpio
+upp -> register_definitions
+i2c_slave -> callback
+i2c_slave -> uart
+i2c_slave -> top
+i2c_slave -> util
+i2c_slave -> gpio
+i2c_slave -> core
+i2c_slave -> register_definitions
+mdiod -> stats_mon
+mdiod -> event
+mdiod -> uart
+mdiod -> mdio
+mdiod -> top
+mdiod -> gpio
+mdiod -> core
+mdiod -> util
+mdiod -> configuration
+mdiod -> register_definitions
+aquantia -> stats_mon
+aquantia -> xaui
+aquantia -> mdio
+aquantia -> configuration
+aquantia -> top
+aquantia -> led
+aquantia -> gpio
+aquantia -> core
+aquantia -> uart
+aquantia -> register_definitions
+mdio -> callback
+mdio -> top
+mdio -> gpio
+mdio -> core
+mdio -> register_definitions
+xmodem -> uart
+mca -> stats_mon
+mca -> uart
+mca -> top
+mca -> gpio
+mca -> core
+mca -> register_definitions
+cpu_comm -> event
+cpu_comm -> top
+cpu_comm -> register_definitions
+cpu_comm -> uart
+test -> dp
+test -> flash_data
+test -> configuration
+test -> gpio
+configuration -> flash_data
+configuration -> event
+configuration -> callback
+configuration -> core
+configuration -> uart
+configuration -> register_definitions
+flash_data -> core
+flash_data -> top
+flash_data -> gpio
+flash_data -> util
+flash_data -> sfi
+flash_data -> configuration
+flash_data -> uart
+flash_data -> register_definitions
+random -> atmel_crypto
+random -> configuration
+random -> xadc
+random -> sha2
+xadc -> stats_mon
+xadc -> configuration
+xadc -> top
+xadc -> led
+xadc -> gpio
+xadc -> core
+xadc -> register_definitions
+stats_mon -> callback
+stats_mon -> register_definitions
+callback -> event
+event -> callback
+main_loop -> callback
+main_loop -> uart
+main_loop -> event
+main_loop -> core
+main_loop -> register_definitions
+mac -> configuration
+mac -> stats_mon
+mac -> top
+mac -> core
+mac -> gpio
+mac -> register_definitions
+top -> crc
+top -> callback
+top -> event
+top -> cpu_comm
+top -> mca
+top -> led
+top -> util
+top -> uart
+top -> gpio
+top -> core
+top -> register_definitions
+util -> uart
+sfi -> top
+sfi -> gpio
+sfi -> core
+sfi -> uart
+sfi -> register_definitions
+crc -> uart
+bbge_comm -> configuration
+bbge_comm -> linkmgr
+bbge_comm -> command
+bbge_comm -> event
+bbge_comm -> ge_program
+bbge_comm -> led
+bbge_comm -> configuration
+bbge_comm -> uart
+bbge_comm -> top
+bbge_comm -> gpio
+bbge_comm -> register_definitions
+bbge_comm -> core
+uart -> callback
+uart -> led
+uart -> top
+uart -> gpio
+uart -> util
+uart -> core
+uart -> register_definitions
+core -> register_definitions
+crc -> uart
+}

@@ -1,0 +1,7 @@
+component:I2C_COMPONENT
+F:i2cStatus H:"Check the I2C state of where it is in processing ASync operations" A:void
+F:i2cWakeIcmd H:"Wake the i2c bus,    arg0(device Addr), arg1(speed - 0:Slow 100khz, 1:Fast 400kHz, 2:Fast plus 1Mhz),    arg2(port - 8:core, 9:Motherboard, 0~7:Ti Switch)" A:uint8_t, uint8_t, uint8_t
+F:i2cReadIcmd H:"Read from i2c,    arg0(device Addr), arg1(speed 0:Slow 100khz, 1:Fast 400kHz, 2:Fast plus 1Mhz),    arg2(port - 8:core, 9:Motherboard, 0~7:Ti Switch), arg3(number of bytes to read)" A:uint8_t, uint8_t, uint8_t, uint8_t
+F:i2cWriteIcmd H:"Write to i2c Max 8 bytes,    arg0(device Addr), arg1(speed 0:Slow 100khz, 1:Fast 400kHz, 2:Fast plus 1Mhz),    arg2(port - 8:core, 9:Motherboard, 0~7:Ti Switch), arg3(data to write 4bytes)    arg4(data to write 4bytes), arg5(number of bytes to write)" A:uint8_t, uint8_t, uint8_t, uint32_t, uint32_t, uint8_t
+F:i2cWriteReadIcmd H:"Write then read i2c.  SMBus read,    arg0(device Addr), arg1(speed 0:Slow 100khz, 1:Fast 400kHz, 2:Fast plus 1Mhz),    arg2(port - 8:core, 9:Motherboard, 0~7:Ti Switch), arg3(data to write 4bytes),    arg4(number of bytes to write), arg5(number of bytes to read)" A:uint8_t, uint8_t, uint8_t, uint32_t, uint8_t, uint8_t
+F:i2cWriteReadBlockIcmd H:"Write then read i2c. SMBus read block,    arg0(device Addr), arg1(speed 0:Slow 100khz, 1:Fast 400kHz, 2:Fast plus 1Mhz),    arg2(port - 8:core, 9:Motherboard, 0~7:Ti Switch), arg3(data to write 4bytes)    arg4(number of bytes to write)" A:uint8_t, uint8_t, uint8_t, uint32_t, uint8_t

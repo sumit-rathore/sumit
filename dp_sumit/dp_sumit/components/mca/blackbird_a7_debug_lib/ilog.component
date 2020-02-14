@@ -1,0 +1,71 @@
+component:MCA_COMPONENT
+L:MCA_INVALID_CH_ASSERT S:Channel %d not valid!\n
+L:MCA_CORE_NOT_READY S:MCA core not ready, Rx =%d Tx = %d\n
+L:MCA_CORE_INTERRUPT S:Core IRQ pending interrupt 0x%08x, raw interrupt state 0x%08x\n
+L:MCA_CHANNEL_INTERRUPT S:Channel %d IRQ pending interrupt 0x%08x, raw interrupt state 0x%08x\n
+L:MCA_ENABLE_CORE_UP S:MCA Enable Core Up \n 
+L:MCA_ENABLE_TX S:MCA Tx Enabled\n 
+L:MCA_DISABLE_TX S:MCA Tx Disabled\n 
+L:MCA_ENABLE_RX S:MCA Rx Enabled\n 
+L:MCA_DISABLE_RX S:MCA Rx Disabled\n 
+L:MCA_CHANNEL_LINK_SETUP S:MCA Channel link setup channel %d\n
+L:MCA_CHANNEL_LINK_NOT_ENABLED S:MCA Channel Link Setup: Channel %d Not Enabled\n 
+L:MCA_CHANNEL_TX_RX_NOT_ENABLED S:MCA Channel Tx Rx Setup: Channel %d Not Enabled\n 
+L:MCA_CHANNEL_DISABLE_NOT_ENABLED S:MCA Channel Disable: Channel %d Not Enabled\n 
+L:MCA_DISABLE_TIMEOUT S:MCA CH[%d] Disable timeout, irq = 0x%x\n
+L:MCA_UP_FAILED S:MCA CH[%d] Up couldn't handled. status = 0x%x\n
+L:MCA_DN_FAILED S:MCA CH[%d] is down already. status = 0x%x, down processing = %d\n
+L:MCA_CHANNEL_LINKUP S:MCA Channel[%d] Link Up, Status: %d\n
+L:MCA_CHANNEL_LINKUP_REQ S:MCA Channel[%d] Link Up Requested while Link Dn processing\n
+L:MCA_CHANNEL_LINKDN S:MCA Channel[%d] Link Dn, Status: %d\n
+L:MCA_CHANNEL_LINKDN_REQ S:MCA Channel[%d] Link Down Requested while Link Up processing\n
+L:MCA_CHANNEL_LINKDN_DONE S:MCA Channel[%d] Link Down finished\n
+L:MCA_CHANNEL_RX_FIFO_FULL S:MCA Channel[%d] Rx fifo full (Pending Irq: 0x%x). Disable this channel\n
+L:MCA_CHANNEL_RX_GRD_MAX_ERR S:MCA Channel[%d] Rx Grd Max Error (Pending Irq: 0x%x). Disable this channel\n
+L:MCA_LINK_STAT_U0_TO_REC S:STAT:MCA mca_channel[%d]->link->stats0->u0_to_rec = 0x%x\n
+L:MCA_LINK_STAT_POL_FAIL S:STAT:MCA mca_channel[%d]->link->stats0->pol_fail = 0x%x\n
+L:MCA_LINK_STAT_TX_FRM S:STAT:MCA mca_channel[%d]->link->stats0->tx_frm = 0x%x\n
+L:MCA_LINK_STAT_TX_MCUP S:STAT:MCA mca_channel[%d]->link->stats0->tx_mcup = 0%x\n
+L:MCA_LINK_STAT_RX_FRM S:STAT:MCA mca_channel[%d]->link->stats0->rx_frm = 0x%x\n
+L:MCA_LINK_STAT_RX_MCUP S:STAT:MCA mca_channel[%d]->link->stats0->rx_mcup = 0x%x\n
+L:MCA_TX_STAT_CMD_FIFO S:STAT:MCA mca_channel[%d]->tx->stats0->cmd_fifo = 0x%x\n
+L:MCA_TX_STAT_DP_PFIFO S:STAT:MCA mca_channel[%d]->tx->stats0->dp_pfifo = 0x%x\n
+L:MCA_TX_STAT_DP_NFIFO S:STAT:MCA mca_channel[%d]->tx->stats0->dp_nfifo = 0x%x\n
+L:MCA_TX_STAT_DP_FIFO_RD_DRP_PKT S:STAT:MCA mca_channel[%d]->tx->stats0->dp_fifo_rd_drp_pkt = 0x%x\n
+L:MCA_TX_STAT_DP_FIFO_WR_DRP_PKT S:STAT:MCA mca_channel[%d]->tx->stats0->dp_fifo_wr_drp_pkt = 0x%x\n
+L:MCA_TX_STAT_DP_FIFO_WR_PKT_ERR S:STAT:MCA mca_channel[%d]->tx->stats0->dp_fifo_wr_pkt_err = 0x%x\n
+L:MCA_TX_STAT_DP_FIFO_FIFO_FULL_ERR S:STAT:MCA mca_channel[%d]->tx->stats0->dp_fifo_fifo_full_err = 0x%x\n
+L:MCA_TX_STAT_DP_FIFO_PKT_MAX_ERR S:STAT:MCA mca_channel[%d]->tx->stats0->dp_fifo_pkt_max_err = 0x%x\n
+L:MCA_TX_STAT_DP_GRD_NO_SOP_ERR S:STAT:MCA mca_channel[%d]->tx->stats0->dp_grd_no_sop_err = 0x%x\n
+L:MCA_TX_STAT_DP_GRD_NO_EOP_ERR S:STAT:MCA mca_channel[%d]->tx->stats0->dp_grd_no_eop_err = 0x%x\n
+L:MCA_TX_STAT_DP_GRD_MAX_ERR S:STAT:MCA mca_channel[%d]->tx->stats0->dp_grd_max_err = 0x%x\n
+L:MCA_RX_STAT_DP_PFIFO S:STAT:MCA mca_channel[%d]->rx->stats0->dp_pfifo = 0x%x\n
+L:MCA_RX_STAT_DP_NFIFO S:STAT:MCA mca_channel[%d]->rx->stats0->dp_nfifo = 0x%x\n
+L:MCA_RX_STAT_DP_FIFO_RD_DRP_PKT S:STAT:MCA mca_channel[%d]->rx->stats0->dp_fifo_rd_drp_pkt = 0x%x\n
+L:MCA_RX_STAT_DP_FIFO_WR_DRP_PKT S:STAT:MCA mca_channel[%d]->rx->stats0->dp_fifo_wr_drp_pkt = 0x%x\n
+L:MCA_RX_STAT_DP_FIFO_WR_PKT_ERR S:STAT:MCA mca_channel[%d]->rx->stats0->dp_fifo_wr_pkt_err = 0x%x\n
+L:MCA_RX_STAT_DP_FIFO_FIFO_FULL_ERR S:STAT:MCA mca_channel[%d]->rx->stats0->dp_fifo_fifo_full_err = 0x%x\n
+L:MCA_RX_STAT_DP_FIFO_PKT_MAX_ERR S:STAT:MCA mca_channel[%d]->rx->stats0->dp_fifo_pkt_max_err = 0x%x\n
+L:MCA_RX_STAT_DP_GRD_NO_SOP_ERR S:STAT:MCA mca_channel[%d]->rx->stats0->dp_grd_no_sop_err = 0x%x\n
+L:MCA_RX_STAT_DP_GRD_NO_EOP_ERR S:STAT:MCA mca_channel[%d]->rx->stats0->dp_grd_no_eop_err = 0x%x\n
+L:MCA_RX_STAT_DP_GRD_MAX_ERR S:STAT:MCA mca_channel[%d]->rx->stats0->dp_grd_max_err = 0x%x\n
+L:MCA_CORE_TX_PFIFO S:STAT:MCA mca_core->tx->stats0->pfifo = 0x%x\n
+L:MCA_CORE_TX_NFIFO S:STAT:MCA mca_core->tx->stats0->nfifo = 0x%x\n
+L:MCA_CORE_TX_CMD_FIFO_DCOUNT S:STAT:MCA mca_core->tx->stats0->cmd_fifo_dcount = 0x%x\n
+L:MCA_CORE_TX_LBAD S:STAT:MCA mca_core->tx->stats0->lbad = 0x%x\n
+L:MCA_CORE_TX_LRTRY S:STAT:MCA mca_core->tx->stats0->lrtry = 0x%x\n
+L:MCA_CORE_RX_CMD_FIFO_DCOUNT S:STAT:MCA mca_core->rx->stats0->cmd_fifo_dcount = 0x%x\n
+L:MCA_CORE_RX_LBAD S:STAT:MCA mca_core->rx->stats0->lbad = 0x%x\n
+L:MCA_CORE_RX_LRTRY S:STAT:MCA mca_core->rx->stats0->lrtry = 0x%x\n
+L:MCA_CORE_RX_LCRD S:STAT:MCA mca_core->rx->stats0->lcrd = 0x%x\n
+L:MCA_CORE_IRQ0_ENABLE S:STAT:MCA mca_core->irq0->enable = 0x%x\n
+L:MCA_INVALID_CHANNEL_INDEX S: 0x%x INVALID CHANNEL INDEX TO MONITOR \n
+L:MCA_RX_FIFO_FULL_ERROR S:Channel Rx FIFO full ERROR ASSERT !!\n
+L:MCA_GUARD_ERROR S:Channel GUARD ERROR ASSERT !!\n
+L:MCA_CORE_GUARD_ERROR S:Core GUARD ERROR ASSERT !!\n
+L:MCA_CHANNEL_0_LATENCY_VALUE S:Channel 0 latency value = 0x%x\n
+L:MCA_CHANNEL_0_LATENCY_ERROR S:Timed out waiting for MCA Channel 0 latency value to change from zero\n
+L:CORE_GUARD_ERROR S:Core Guard Error! IRQ = %d\n
+L:DEBUG_ASSERT_BB S:CAUSE AN ASSERT IN BB FOR DEBUGGING\n
+L:MCA_CHANNEL_NP_FIFO S:MCA Channel[%d] dp_pfifo = %04d dp_nfifo = %04d\n
+L:MCA_BANDWIDTH S:MCA Channel[%d] Bandwidth = %04d\n

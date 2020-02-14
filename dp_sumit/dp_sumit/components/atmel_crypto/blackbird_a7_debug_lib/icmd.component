@@ -1,0 +1,13 @@
+component:ATMEL_CRYPTO_COMPONENT
+F:atmel_icmdSend H:"Do an I2C transaction to the Atmel Chip. Args: opcode, param1, param2, resultReadSize, operationExecutionTime" A:uint8, uint8, uint16, uint8, uint32
+F:atmel_icmdWithDataWordSend H:"Do an I2C transaction to the Atmel Chip. Args: opcode, param1, param2, data, resultReadSize, operationExecutionTime" A:uint8, uint8, uint16, uint32, uint8, uint32
+F:atmel_setICmdWriteDataBuffer H:"Writes one word into the 8 word wide data slot or OTP block write buffer. Args: wordOffset, word" A:uint8, uint32
+F:atmel_writeDataSlotFromBuffer H:"Writes the incrementally constructed data slot buffer to the given slot. Args: slotNumber" A:uint8
+F:atmel_encryptedWriteDataSlotFromBuffer H:"Encrypted writes the incrementally constructed data slot buffer to the given slot. Args: slotNumber" A:uint8
+F:atmel_writeOtpBlockFromBuffer H:"Writes the incrementally constructed OTP block buffer to the given slot. Args: slotNumber" A:uint8
+F:atmel_readConfigWordIcmd H:"Reads a single 32bit word from the configuration settings. Args: byteOffset - must be divisible by 4" A:uint8
+F:atmel_writeConfigWordIcmd H:"Writes a single 32bit word to the configuration settings. Args: byteOffset - must be divisible by 4, data" A:uint8, uint32
+F:atmel_isChipLockedIcmd H:"Checks to see if the config and data+otp zones are locked. Args:" A:void
+F:atmel_lockConfigZoneIcmd H:"Locks the config zone of the authentication chip. Args: configuration zone CRC" A:uint16
+F:atmel_lockDataAndOtpZonesIcmd H:"Locks the data and OTP zones of the authentication chip. Args: data and OTP zone CRC" A:uint16
+F:atmel_encryptedReadDataSlotIcmd H:"Encrypted Reads a single 32 byte slot fromt the data zone" A:uint8

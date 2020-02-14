@@ -1,0 +1,24 @@
+component:ICMD_COMPONENT
+L:INVALID_HEADER S:Received 0x%x, when expecting an icmd header\n
+L:INVALID_COMPONENT S:Received %d, when expecting a component\n
+L:TOO_MANY_ARGS S:Too many args %d in icmd request\n
+L:CUROFFSET_CORRUPTED S:curOffset with value %d, is corrupt at line %d\n
+L:CALLING_HANDLER S:Calling function 0x%x, with 1st two args 0x%x, 0x%x\n
+L:RECVD_ICMD S:Received icmd for component %d, function %d, with %d arguments\n
+L:NO_ICMD_FCN_PTR_ARRAY S:No icmd function pointer array found for component %d\n
+L:ICMD_TIMEOUT S:icmd message timed out. Resetting receive buffer\n
+L:BASE_READ_MEM S:Read address 0x%x: value 0x%x\n
+L:BASE_WRITE_MEM S:Wrote address 0x%x: value 0x%x\n
+L:DEPRECATED_ICMD_TIMER_REGISTER_FAILURE S:Unable to register icmd timer\n
+L:ICMD_TIMER_NOT_REGISTERED S:ICmd timer is not register, did no one call ICMD_Init()?\n
+L:BASE_READ_MODIFY_WRITE S:Read-Modify-Write address 0x%x: Read value 0x%x, Write value 0x%x\n
+L:BASE_READ_MODIFY_WRITE_CONFLICT_MASKS S:Read-Modify-Write for address 0x%x has conflicting bits in set bitfields 0x%x and clear bitfields0x%x\n
+L:BASE_MODIFY_BITFIELD S:Modify bitfield for address 0x%x starting at position %i for width %i bits\n
+L:MODIFY_BITFIELD_RESULT S:Write value: 0x%x, Read value: 0x%x, New value 0x%x\n
+L:DUMP_MEMORY_ADDR_INVALID S:Address 0x%x is not a valid 32bit memory location\n
+L:DEPRECATED_ICMD S:This iCommand is no longer available\n
+L:BASE_READ_MEM16 S:Read address 0x%x: value 0x%x\n
+L:BASE_WRITE_MEM16 S:Wrote address 0x%x: value 0x%x\n
+L:BASE_READ_MODIFY_WRITE16 S:Read-Modify-Write address 0x%x: Read value 0x%x, Write value 0x%x\n
+L:BASE_READ_MODIFY_WRITE_CONFLICT_MASKS16 S:Read-Modify-Write for address 0x%x has conflicting bits in set bitfields 0x%x and clear bitfields0x%x\n
+L:JUNK_TIMER_EXPIRED_REENABLING_PROCESSING S:Junk timer expired.  Re-enabling processing of icmds\n

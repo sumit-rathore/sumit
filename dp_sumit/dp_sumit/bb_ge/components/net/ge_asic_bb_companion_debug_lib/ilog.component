@@ -1,0 +1,57 @@
+component:NET_COMPONENT
+L:NET_INITIALIZED S:Networking component initialization complete\n
+L:NET_NOT_INITIALIZED S:Networking component has not been initialized\n
+L:NET_BUFFER_ALLOCATION_FAILURE S:Could not allocate a network buffer. Memory pool exhausted\n
+L:NET_BUFFER_SIZE_EXCEEDS_BUFFER_CAPACITY S:The network buffer claims to contain more data than it is capable of holding. Contains: %d, Max: %d\n
+L:NET_FRAME_SIZE_EXCEEDS_FRAME_CAPACITY S:The frame claims to contain more data than it is capable of holding. Contains: %d, Max: %d\n
+L:NET_ARP_INVALID_OPERATION S:An ARP packet was received with an invalid operation flag value of 0x%x\n
+L:NET_ARP_UNEXPECTED_PACKET_SIZE S:An ARP packet was received that was of size %d (expected size %d)\n
+L:NET_ARP_UNEXPECTED_REQUEST_TIMEOUT S:Received an ARP request timeout signal when there was no pending ARP request\n
+L:NET_IPV4_HEADER_CHECKSUM_RX_MISMATCH S:The IPv4 checksum 0x%x did not match the expected value of 0x%x\n
+L:NET_IPV4_RECEIVED_FRAGMENTED_PACKET S:Received a fragmented IPv4 packet.  We do not support fragmented packets\n
+L:NET_IPV4_ARP_LOOKUP_FAILURE S:Transmission of an IPv4 packet was aborted due to an ARP lookup failure\n
+L:NET_IPV4_PACKET_LARGER_THAN_DATA S:Received a IPv4 packet that claimed to be %d bytes, but there are  only %d bytes in the buffer\n
+L:NET_UDP_COULD_NOT_BIND_TO_PORT S:Could not bind to UDP port %d.\n
+L:NET_UDP_PACKET_SIZE_DOES_NOT_MATCH_DATA S:Received a UDP packet claiming to be length %d, but there are %d bytes of data in the buffer.\n
+L:NET_ICMD_SHOW_IP_CONFIGURATION S:IPv4 configuration - IP Address=0x%x, Subnet Mask=0x%x, Default Gateway=0x%x\n
+L:NET_DHCP_COULD_NOT_BIND_TO_PORT S:Could not bind the network based configuration listener to port %d.\n
+L:NET_DHCP_ALREADY_ENABLED S:DHCP Client already enabled!\n
+L:NET_DHCP_LINK_ALREADY_UP S:DHCP network link already up!\n
+L:NET_DHCP_LINK_ALREADY_DOWN S:DHCP network link already down!\n
+L:NET_DHCP_OFFER_RECEIVED S:DHCP Offer received from IP=0x%x\n
+L:NET_DHCP_OFFER_INVALID_OPT_COOKIE S:DHCP Offer received with invalid option cookie=0x%x\n
+L:NET_DHCP_ACK_RECEIVED S:DHCP ACK received from IP=0x%x\n
+L:NET_DHCP_NAK_RECEIVED S:DHCP NAK received from IP=0x%x\n
+L:NET_DHCP_DISCOVER_SENT S:DHCP Discover sent\n
+L:NET_DHCP_REQUEST_SENT S:DHCP Request sent\n
+L:NET_DHCP_HDR0 S:DHCP: payLoad[0]=%d\n
+L:NET_DHCP_HDR1 S:DHCP: payLoad[1]=%d\n
+L:NET_DHCP_HDR2 S:DHCP: payLoad[2]=%d\n
+L:NET_DHCP_HDR3 S:DHCP: payLoad[3]=%d\n
+L:NET_DHCP_FIND_OPT S:DHCP: Searching for option=%d\n
+L:NET_DHCP_FOUND_OPT S:DHCP: Found option=%d\n
+L:NET_DHCP_OPT_NOT_FOUND S:DHCP: Could not find option=%d\n
+L:NET_DHCP_OPT_CODE_OPT_VALUE S:DHCP: option code = %d, option value=0x%x\n
+L:NET_DHCP_CONF_VALUES1 S:DHCP Config: clientIp=0x%x, leaseTime=%d\n
+L:NET_DHCP_CONF_VALUES2 S:DHCP Config: gatewayIp=0x%x, subnetMask=0x%x\n
+L:MEMSET_TASK_IN_USE S:Memset Task is already running\n
+L:ALLOCATE_FRAME S:Allocated a new frame; Number Allocated: %d, Return address: 0x%x\n
+L:FREE_FRAME S:Freed a new frame; Number Allocated: %d, Line %d\n
+L:NET_FIFO_EMPTY S:Net FIFO is empty; entries used: %d\n
+L:NET_FIFO_FULL S:Net FIFO is full; entries used: %d\n
+L:NET_FIFO_USED S:Number of Net Fifo entries used: %d; Line: %d\n
+L:STOP_TRANSMIT_TASK S:Stopping Transmit task\n
+L:START_TRANSMIT_TASK S:Starting Transmit task\n
+L:NET_PING_CHECKSUM_INVALID S:Received an echo request with checksum=0x%x, but computed checksum=0x%x\n
+L:NET_DCHP_UNEXPECTED_STATE S:DHCP unexpected state at line %d\n
+L:NET_DHCP_ASSERT1 S:DHCP state %d, enabled %d, leaseActive %d\n
+L:NET_DHCP_ASSERT2 S:DHCP linkup %d, yourIp 0x%x, serverIp 0x%x\n
+L:LINK_LOCAL_ENABLE S:Enabling link local addresses\n
+L:LINK_LOCAL_DISABLE S:Disabling link local addresses\n
+L:LINK_LOCAL_TEST_ADDR S:Testing link local address 0x%x\n
+L:LINK_LOCAL_NEW_ADDR S:Enabling link local address 0x%x\n
+L:LINK_LOCAL_ENABLED_WITH_VALID_IP S:Link local addresses are enabled with a valid IP 0x%x already set\n
+L:LINK_LOCAL_SENDING_ARP S:Link local address sending ARP for IP 0x%x, with timeout %d ms\n
+L:NET_IPV4_UNHANDLED_PROTOCOL S:Received IPv4, unhandled protocol %.2x, SRC IP 0x%x, DST IP 0x%x\n
+L:NET_DHCP_PACKET_IGNORED S:Ignored an irrelevant DHCP packet\n
+L:NET_DHCP_UNSUPPORTED_MSG_TYPE S:Received a DHCP packet with an unsupported message type: %d\n

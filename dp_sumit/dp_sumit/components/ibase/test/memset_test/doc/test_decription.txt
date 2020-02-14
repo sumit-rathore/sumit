@@ -1,0 +1,4 @@
+This test Sends:
+1) The hex value stored at a particular location
+2) The hex value stored at that location after memset has been used to set it to 0.
+

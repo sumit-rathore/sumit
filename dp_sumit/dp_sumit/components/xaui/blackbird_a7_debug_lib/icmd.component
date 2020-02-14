@@ -1,0 +1,2 @@
+component:XAUI_COMPONENT
+F:Xaui_ResetBuffers H:"Reset RXAUI elasticity buffers" A:void

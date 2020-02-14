@@ -1,0 +1,170 @@
+component:DP_STREAM_COMPONENT
+L:DP_INVALID_BANDWIDTH S:Invalid bandwidth setting %d at line %d\n
+L:DP_INVALID_LANE_COUNT S:Invalid lane count setting %d at line %d\n
+L:DP_SETTING_TRAINING_PATTERN S:Setting training pattern %d\n
+L:DP_SCRAMBLE_EN S:Scrambling enabled = %d\n
+L:DP_DESCRAMBLE_EN S:Descrambling enabled = %d\n
+L:DP_INVALID_VALUE S:DP Has Wrong Value. mvid = %d, nvid = %d, lc= %d\n
+L:DP_INVALID_VALUE2 S:DP Has Wrong Value. vs0 = %d, tu_size = %d, bpp = %d\n
+L:DP_LEX_TU_SIZE_RDY S:Got TU size ready interrupt: tu_size = %d\n
+L:DP_RESET_SINK S:Reset DP Sink = %d | (1:reset, 0:take out of reset)\n
+L:DP_RESET_ENC S:Reset TICO Encoder = %d | (1:reset, 0:take out of reset)\n
+L:DP_ENABLING_TICO_ENC S:Enabling TICO encoder\n
+L:DP_CONFIGURE_ENCODER_EXTRACTOR S:Configuring encoder extractor\n
+L:DP_COMMAND_MODE S:Put TICO encoder in command mode\n
+L:DP_ENABLING_TICO_DEC S:Enabling TICO decoder\n
+L:DP_MSA_PARAMS S:MSA MVID value =  %d and NVID value = %d at line = %d\n
+L:DP_MSA_TWIDTH S:MSA total_width = %d and line duration = %d at line = %d\n
+L:DP_COLOR_CODE S:Color Code = 0x%x\n
+L:DP_INVALID_MSA S:Invalid MSA, colorCode = 0x%x, tuSize = %d\n
+L:DP_MSA_ALIGN_ERROR S:MSA Align Error, height(b3),  width(b2), hSyncWidth(b1), vSyncWidth(b0) = 0x%x, nvid = %d\n
+L:DP_PIXEL_CLOCK_ERROR S:Invalid MSA, Pixel Clock1(%d) & Pixel Clock2(%d) are different by %d\n
+L:DP_LEX_RESET_LANE_ERR_CNT S:8b10b Error Count reset\n
+L:DP_LAST_TU_ZERO S:Last Tu is zero, manifulate Last Tu\n
+L:DP_SET_LANE S:Rex request to set lane count %d, RTL %d\n
+L:DP_ALIGNER_CONTROL S:Aligner En(1)/Disable(0): %d, TPS: %d\n
+L:DP_YCBCR422_DETECTED S:YCbCr422 is detected. Color code:0x%x\n
+L:DP_INVALID_COLOR S:Invalid color code: 0x%x\n
+L:DP_VBD_MAJORITY_FAIL S:DP VBD Majority Fail interrupt occurred\n
+L:DP_MSA_MAJORITY_FAIL S:DP MSA Majority Fail interrupt occurred\n
+L:DP_NO_VID_STREAM S:DP No Video Stream status = %d\n
+L:DP_AUDIO_MUTE S:DP Audio Mute status = %d\n
+L:DP_STREAM_CLEAR_CXFIFO S:Read Cx Fifo Overflow to clear it. C0:%d, C1:%d, C2:%d\n
+L:DP_STREAM_CXFIFO_OVERFLOW S:DP Stream Extractor Overflow detected by Cx Fifo Overflow\n
+L:DP_STREAM_EXTRACTOR_OVERFLOW S:DP Stream Extractor Overflow interrupt occurred: dpInt:0x%x\n
+L:DP_STREAM_EXTRACTOR_UNDERFLOW S:DP Stream Extractor Underflow interrupt occurred\n
+L:DP_BOND_ALIGN_DONE S:DP Bond Align Done interrupt occurred\n
+L:DP_LANES_WITH_8B10B_ERR S:DP Lanes with 8b10b error interrupt occurred\n
+L:DP_GT_RXBYTE_REALIGN S:DP GTP RX byte re-align interrupt occurred\n
+L:DP_ALIGNER_FIFO_OVERFLOW S:DP Aligner Fifo Overflow interrupt occurred\n
+L:DP_FIRST_IDLE_PATTERN S:DP First idle pattern interrupt occured \n
+L:DP_ALIGNER_FIFO_UNDERFLOW S:DP Aligner Fifo Underflow interrupt occurred\n
+L:DP_EDID_CHANGE S:Edid changed to %d due to Standard blanking\n
+L:DP_BER_ERR_CNT S:DP Link Quality management error Threshold = %d Error count = %d\n
+L:DP_LEX_SDP_FIFO_OF S:SDP fifo overflow = %d or Underflow occured = %d\n
+L:DP_LEX_FRQ_OOR S:DP freq out of range count = %d , Frq Count = %d\n
+L:DP_DECODER_ERR_FLAG S:DP Decoder Error Flag interrupt occurred\n
+L:DP_FIFO_PIX_0_UNDERFLOW S:DP FIFO PIX 0 Underflow interrupt occurred\n
+L:DP_FIFO_PIX_0_OVERFLOW S:DP FIFO PIX 0 Overflow interrupt occurred\n
+L:DP_FIFO_SDP_UNDERFLOW S:DP FIFO SDP Underflow interrupt occurred\n
+L:DP_FIFO_SDP_OVERFLOW S:DP FIFO SDP Overflow interrupt occurred\n
+L:DP_FIFO_CS_UNDERFLOW S:DP FIFO CS Underflow interrupt occurred\n
+L:DP_FIFO_CS_OVERFLOW S:DP FIFO CS Overflow interrupt occurred\n
+L:DP_VIDEO_STREAM_END S:DP Video Stream End interrupt occurred\n
+L:IDLE_PATTERN_INTERRUPT S:DP Idle pattern interrupt occurred\n
+L:DP_FIFO_SDP_TAG_UNDERFLOW S:DP FIFO SDP TAG UNDERFLOW interrupt occured\n running count = %d\n, associated frame number = %d\n
+L:DP_FIFO_SDP_TAG_OVERFLOW S:DP FIFO SDP TAG OVERFLOW interrupt occured\n running count = %d\n, associated frame number = %d\n
+L:DP_SDP_MAUD S:DP sdp AudioMute flag status = %d || Maud set value = %d || Maud method select = %d\n
+L:DP_SDP_VBID S:DP sdp vbid = 0x%x || Maud = %d || Mvid = %d\n
+L:DP_LC S:Lane Count                  = %d\n
+L:DP_BW S:Bandwidth                   = %d.%2d Gbps\n
+L:DP_ENHANCED_FRAMING S:Enhanced Framing            = %d\n
+L:DP_MSA_MVID S:Mvid                        = %d\n
+L:DP_MSA_NVID S:Nvid                        = %d\n
+L:DP_MSA_H_TOTAL S:H Total                     = %d\n
+L:DP_MSA_H_START S:H Start                     = %d\n
+L:DP_MSA_H_WIDTH S:H Width                     = %d\n
+L:DP_MSA_H_POLARITY S:H Polarity                  = %d\n
+L:DP_MSA_H_SYNC_WIDTH S:H Sync Width                = %d\n
+L:DP_MSA_V_TOTAL S:V Total                     = %d\n
+L:DP_MSA_V_START S:V Start                     = %d\n
+L:DP_MSA_V_HEIGHT S:V Height                    = %d\n
+L:DP_MSA_V_POLARITY S:V Polarity                  = %d\n
+L:DP_MSA_V_SYNC_WIDTH S:V Sync Width                = %d\n
+L:DP_MSA_Y_ONLY S:Misc Y Only                 = %d\n
+L:DP_MSA_STEREO S:Misc Stereo                 = %d\n
+L:DP_MSA_INT_TOTAL S:Misc Int Total              = %d\n
+L:DP_MSA_CLK_SYNC S:Misc Clock Sync             = %d\n
+L:DP_CS_PKT_LENGTH S:CS Packet Length            = %d\n
+L:DP_MSA_COLOR S:Color Code                  = 0x%x and BPP = %d\n
+L:DP_SINK_BOND_ALIGN_DEBUG_STATS4 S:bond_align_debug_stats      = 0x%x\n
+L:DP_SINK_BOND_ALIGN_DEBUG_STATS3 S:com_det_dbg                 = 0x%x\n
+L:DP_SINK_BOND_ALIGN_DEBUG_STATS2 S:fifo_rd_en_dbg              = 0x%x\n
+L:DP_SINK_BOND_ALIGN_DEBUG_STATS1 S:state_dbg                   = 0x%x\n
+L:DP_TPS_USE S:TPS pattern used            = %d\n
+L:DP_TU_SIZE S:Tu Size                     = %d\n
+L:DP_FPS S:Frames per second           = %d\n
+L:DP_COMPRESSION_RATIO S:TICO compression ratio      = %d.%d to 1\n
+L:DP_STATS_0 S:**** DP STATS ****\n
+L:DP_SINK_VID_C0_FIFO_OVERFLOW S:vid_c0_fifo_overflow        = %d\n
+L:DP_SINK_VID_C0_FIFO_UNDERFLOW S:vid_c0_fifo_underflow       = %d\n
+L:DP_SINK_VID_C0_FIFO_LEVEL S:vid_c0_fifo_level           = %d\n
+L:DP_SINK_VID_C0_FIFO_LEVEL_WATERMARK S:vid_c0_fifo_level_watermark = %d\n
+L:DP_SINK_VID_C0_SR_FULL S:vid_c0_sr_full              = %d\n
+L:DP_SINK_VID_C1_FIFO_OVERFLOW S:vid_c1_fifo_overflow        = %d\n
+L:DP_SINK_VID_C1_FIFO_UNDERFLOW S:vid_c1_fifo_underflow       = %d\n
+L:DP_SINK_VID_C1_FIFO_LEVEL S:vid_c1_fifo_level           = %d\n
+L:DP_SINK_VID_C1_FIFO_LEVEL_WATERMARK S:vid_c1_fifo_level_watermark = %d\n
+L:DP_SINK_VID_C1_SR_FULL S:vid_c1_sr_full              = %d\n
+L:DP_SINK_VID_C2_FIFO_OVERFLOW S:vid_c2_fifo_overflow        = %d\n
+L:DP_SINK_VID_C2_FIFO_UNDERFLOW S:vid_c2_fifo_underflow       = %d\n
+L:DP_SINK_VID_C2_FIFO_LEVEL S:vid_c2_fifo_level           = %d\n
+L:DP_SINK_VID_C2_FIFO_LEVEL_WATERMARK S:vid_c2_fifo_level_watermark = %d\n
+L:DP_SINK_VID_C2_SR_FULL S:vid_c2_sr_full              = %d\n
+L:DP_SOURCE_FIFO_PIX_0_OVERFLOW S:fifo_pix_0_overflow         = %d\n
+L:DP_SOURCE_FIFO_PIX_0_UNDERFLOW S:fifo_pix_0_underflow        = %d\n
+L:DP_SOURCE_PIX_0_SR_UNDERFLOW S:pix_0_sr_underflow          = %d\n
+L:DP_SOURCE_PIX_1_SR_UNDERFLOW S:pix_1_sr_underflow          = %d\n
+L:DP_SOURCE_PIX_2_SR_UNDERFLOW S:pix_2_sr_underflow          = %d\n
+L:DP_SOURCE_PIX_3_SR_UNDERFLOW S:pix_3_sr_underflow          = %d\n
+L:DP_SOURCE_FIFO_PIX_0_LEVEL_WATERMARK S:fifo_pix_0_level_watermark  = %d\n
+L:DP_SOURCE_FIFO_PIX_0_LEVEL S:fifo_pix_0_level            = %d\n
+L:DP_SOURCE_FIFO_CS_OVERFLOW S:fifo_cs_overflow            = %d\n
+L:DP_SOURCE_FIFO_CS_UNDERFLOW S:fifo_cs_underflow           = %d\n
+L:DP_SOURCE_FIFO_CS_LEVEL S:fifo_cs_level               = %d\n
+L:DP_SOURCE_FIFO_CS_LEVEL_WATERMARK S:fifo_cs_level_watermark     = %d\n
+L:DP_VS_VALUE S:Average Valid Symbol: Int %d: Fraction %d /1000\n
+L:DP_ALU_STATS S:**** DP_ALU_STATS ****\n
+L:DP_WIDTH_ACTIVE S:dp_width_active            = %d\n
+L:DP_WIDTH_TOTAL S:dp_width_total             = %d\n
+L:DP_FULL_TU_SIZE S:full_tu_size               = %d\n
+L:DP_LAST_TU_SIZE S:last_tu_size               = %d\n
+L:DP_FULL_TU_NUM S:full_tu_num                = %d\n
+L:DP_CPU_MATH_RESULT_READY S:cpu_math_result_rdy        = %d\n
+L:DP_VALID_BYTES_RPT_NUM S:valid_bytes_repeat_num     = %d\n
+L:DP_VALID_BYTES_PER_FULL_TU S:valid_bytes_per_full_tu    = %d\n
+L:DP_VALID_BYTES_NUM_PER_LANE S:valid_bytes_num_per_lane   = %d\n
+L:DP_GTP_STATS S:**** DP GTP STATS ****\n
+L:DP_GT3_RXBYTE_ALIGN_CNT S:dp_lane0_rxbyterealign_cnt          = %d\n
+L:DP_GT2_RXBYTE_ALIGN_CNT S:dp_lane2_rxbyterealign_cnt          = %d\n
+L:DP_GT1_RXBYTE_ALIGN_CNT S:dp_lane3_rxbyterealign_cnt          = %d\n
+L:DP_GT0_RXBYTE_ALIGN_CNT S:dp_lane1_rxbyterealign_cnt          = %d\n
+L:DP_8B10B_DISP_ERROR_STATS S:**** DP 8b10b DISP ERROR STATS ****\n
+L:DP_8B10B_NIT_ERROR_STATS S:**** DP 8b10b NIT ERROR STATS ****\n
+L:DP_LANE_0_WITH_8B10B_DIS_ERR_CNT S:lane_0_with_8b10b_dis_err_cnt      = %d\n
+L:DP_LANE_1_WITH_8B10B_DIS_ERR_CNT S:lane_1_with_8b10b_dis_err_cnt      = %d\n
+L:DP_LANE_2_WITH_8B10B_DIS_ERR_CNT S:lane_2_with_8b10b_dis_err_cnt      = %d\n
+L:DP_LANE_3_WITH_8B10B_DIS_ERR_CNT S:lane_3_with_8b10b_dis_err_cnt      = %d\n
+L:DP_LANE_0_WITH_8B10B_NIT_ERR_CNT S:lane_0_with_8b10b_nit_err_cnt      = %d\n
+L:DP_LANE_1_WITH_8B10B_NIT_ERR_CNT S:lane_1_with_8b10b_nit_err_cnt      = %d\n
+L:DP_LANE_2_WITH_8B10B_NIT_ERR_CNT S:lane_2_with_8b10b_nit_err_cnt      = %d\n
+L:DP_LANE_3_WITH_8B10B_NIT_ERR_CNT S:lane_3_with_8b10b_nit_err_cnt      = %d\n
+L:DP_FSM_STATS S:**** DP FSM STATS ****\n
+L:DP_FIFO_CS_STATUS_STATE_VID S:fsm_state_vid  = %d\n
+L:DP_FIFO_CS_STATUS_STATE_DP S:fsm_state_dp   = %d\n
+L:DP_SDP_STATS S:**** DP SDP FIFO STATS ****\n
+L:DP_SDP_FIFO_FULL S:sdp_fifo_status_full                = %d\n
+L:DP_SDP_FIFO_EMPTY S:sdp_fifo_status_empty               = %d\n
+L:DP_SDP_FIFO_OVERFLOW S:sdp_fifo_status_overflow            = %d\n
+L:DP_SDP_FIFO_UNDERFLOW S:sdp_fifo_status_underflow           = %d\n
+L:DP_SDP_FIFO_LEVEL S:sdp_fifo_status_level               = %d\n
+L:DP_SDP_FIFO_LEVEL_WATERMARK S:sdp_fifo_status_level_watermark     = %d\n
+L:DP_SDP_SS_SE_BYTE_NUM S:sdp_ss_se_same_cycle_byte_num       = 0x%x\n
+L:DP_SDP_PKT_SENT S:sdp_pkt_sent_cnt                    = %d\n
+L:DP_SDP_PK_SENT_WATERMARK S:sdp_pkt_sent_cnt_watermark          = %d\n
+L:DP_SDP_TAG_STATS S:**** DP SDP TAG FIFO STATS ****\n
+L:DP_SDP_TAG_FIFO_FULL S:sdp_tag_fifo_status_full            = %d\n
+L:DP_SDP_TAG_FIFO_EMPTY S:sdp_tag_fifo_status_empty           = %d\n
+L:DP_SDP_TAG_FIFO_OVERFLOW S:sdp_tag_fifo_status_overflow        = %d\n
+L:DP_SDP_TAG_FIFO_UNDERFLOW S:sdp_tag_fifo_status_underflow       = %d\n
+L:DP_SDP_TAG_FIFO_LEVEL S:sdp_tag_fifo_status_level           = %d\n
+L:DP_SDP_TAG_FIFO_LEVEL_WATERMARK S:sdp_tag_fifo_status_level_watermark = %d\n
+L:DP_SDP_MADU S:Maud value = %d\n
+L:DP_STANDARD_BLANKING S:STANDARD BLANKING DETECTED\n
+L:DP_LEX_IDLE_PATTERN_CNT_RESET S:Dp lex idle pattern counter has been reset\n
+L:DP_REX_IDLE_PATTERN_CNT_RESET S:Dp rex idle pattern counter has been reset\n
+L:DP_REX_TU_INVAID S:TU is not measure properly, substituting it with 64 for programming ALU\n
+L:DP_LEX_ERR_CNT_RESET S:DP 8b10b error counter set to 0x%x\n
+L:DEBUG_ASSERT_BB S:CAUSE AN ASSERT IN BB FOR DEBUGGING IRQ count %d\n
+L:DP_FRQ_DETC S:Measured frequency = %d\n
+L:DP_INVALID_COMP_RATIO S:Invalid compression ratio = %d\n

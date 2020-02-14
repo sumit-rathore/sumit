@@ -1,0 +1,8 @@
+component:DP_STREAM_COMPONENT
+F:DP_STREAM_GetVideoInfoIcmd H:"Prints out the video information" A:void
+F:DP_STREAM_SdpStatsIcmd H:"Prints out the DP SDP stats" A:void
+F:DP_STREAM_freqMeasureIcmd H:"Measure DP clock" A:void
+F:DP_STREAM_RexEnableAudioIcmd H:"Enables audio on REX" A:void
+F:DP_STREAM_LexPrintErrCount H:"Prints all the error count\n" A:void
+F:DP_STREAM_LexResetIdlePatternCnt H:"Resets idle pattern counter" A:void
+F:DP_STREAM_RexSetAdjustWidthOffset H:"Set dp_width_total_minus/plus_offset0/1. arg0:-off1, 1:+off1, 2:-off0, 3:+off0)" A:uint8_t, uint8_t, uint8_t, uint8_t

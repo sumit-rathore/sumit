@@ -1,0 +1,1 @@
+The test begins by intializing the timer and the uart.  It also registers an isr with timer 2.  It then starts the timer.  The isr increments an iteration variable which it outputs in a message each time it is called. Once the iteration variable reaches a certain value, 100, the isr stops incrementing it and stops outputting the message.

@@ -1,0 +1,147 @@
+This file is not intended as a design document of the internals of ibuild, but as a quick reference to anyone editing rules.mak
+
+Variables
+=========
+
+From user:
+----------
+Version info:
+IBUILD_PROJECT_MAK_CONFIGURED_VERSION
+
+Project name:
+PROJECT
+
+Target file to build:
+TARGET
+
+Type of file of the target:
+TARGET_TYPE
+
+Lists of files without paths, files should be in src/:
+ASMSOURCES
+CSOURCES
+
+List of components without paths:
+COMPONENT_DEPS
+
+Directory where components can be found:
+TOP_LEVEL_COMPONENTS_DIR
+
+Components that must be forced into the linker (ie -whole-archive option is passed to linker):
+FORCED_LINK_DEPS
+
+Ilog file for component that contains path:
+COMPONENT_ILOG_FILE
+
+Tools flags:
+CFLAGS
+LDFLAGS
+LDFLAGS_TEST_HARNESS
+
+Tools:
+AWK
+SED
+CC
+LD
+AR
+RM
+MKDIR
+RMDIR
+
+A convience for other components makefiles to quickly include ibuild, location of rules.mak:
+IBUILD_RULES
+
+Indication to not build dependant components (ie if unset treat as not equal to 0):
+BUILD_DEPS
+
+Created by ibuild:
+------------------
+Lists of files without paths:
+DEPENDS
+OBJECTS
+IFILES 
+SFILES 
+
+Lists of files with directories:
+OBJS_W_DIR
+DEPS_W_DIR
+I_W_DIR
+S_W_DIR
+
+Components to build with phony extension (this variable defines dependencies for components to be built)
+COMPONENT_DEPS_BUILD
+
+Tool flags after ibuild manipulates them:
+iLDFLAGS
+iCFLAGS
+
+ibuild's directories:
+obj_dir
+targ_dir
+
+dummy files used to indicate presence of their directory:
+targ_dir_stamp
+obj_dir_stamp
+
+make function to build a target:
+targ_build
+
+quiet rules, these vary in whether they are a function or a convience, consult the definition for each one:
+QUIET_CC
+QUIET_DEP
+QUIET_LD
+QUIET_AR
+QUIET_MKDIR
+QUIET_RM
+QUIET_RMDIR
+QUIET_MAKE_COMP
+QUIET_ILOG
+QUIET_ILOG_MAIN
+QUIET
+
+Variables that are only defined if that target is defined in TARGET_TYPE:
+itarget_elf
+itarget_lib_collector
+
+
+RULES
+=====
+
+$(TARGET):
+The default rule is $(TARGET).  This is a phony rule causes $(targ_dir)/$(TARGET) to be built, as well as accompanying ilog files
+
+$(targ_dir)/$(TARGET):
+This rule builds the target as a library or elf depending on the TARGET_TYPE specified, it will call the appriopriate function for this type
+
+ibuild_update_ilog:
+This builds the ilog files and if necessary combines them with the component ilog files
+
+test:
+Currently builds the test harnesses.  In the future should build unit tests as well.  For library targets no recursion will be done into component dependencies.
+
+%.component:
+builds a dependant component, when BUILD_DEPS is not equal to '0'
+
+$(obj_dir)/%.o:
+$(obj_dir)/%.d:
+$(obj_dir)/%.i:
+$(obj_dir)/%.s:
+builds object/dependency/preprocessed/assembly/etc files.  There are a few versions depending on the source (ie .c .s .S .i)
+
+obj_dir_stamp:
+targ_dir_stamp:
+Creates directories and an empty stamp file to indicate the directory exists
+
+clean_component:
+cleans all the files for this component, and may depend on the clean_deps
+
+clean_tests:
+cleans all the test harnesses.
+
+clean:
+clean_ibuild:
+clean depends on clean_ibuild, which depends on the other clean rules
+
+clean_deps:
+cleans all the dependencies
+

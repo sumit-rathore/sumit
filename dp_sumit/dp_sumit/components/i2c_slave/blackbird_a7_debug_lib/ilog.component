@@ -1,0 +1,6 @@
+component:I2C_SLAVE_COMPONENT
+L:I2C_VERSION1_DATA S:I2C Slave Version %d.%d.%d\n
+L:I2C_READ_DATA S:I2C Read data: %x, Fifo level: %x\n
+L:I2C_TRANSACTION_COMPLETE S:Transaction Complete\n
+L:I2C_READ_COMMAND S:I2C Read command: %02d\n
+L:I2C_BUSY S:Transaction Complete: %d\n

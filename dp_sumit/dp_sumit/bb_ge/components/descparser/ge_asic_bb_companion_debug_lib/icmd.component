@@ -1,0 +1,3 @@
+component:DESCPARSER_COMPONENT
+F:enableMsaParsing H:"Enable MSA Parsing" A:void
+F:disableMsaParsing H:"Disable MSA Parsing" A:void

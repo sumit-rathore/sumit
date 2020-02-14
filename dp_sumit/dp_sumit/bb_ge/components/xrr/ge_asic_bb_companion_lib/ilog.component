@@ -1,0 +1,10 @@
+component:XRR_COMPONENT
+L:XREX_ENABLE S:Enable Rex, RexCtrl is going from 0x%x to 0x%x\n
+L:XREX_DISABLE S:Disabling Rex, RexCtrl is going from 0x%x to 0x%x\n
+L:INVALID_ID S:There is an invalid ID in the ID register\n
+L:INVALID_CVS_MAJOR S:Invalid register CVS Major value, read %d, expecting %d\n
+L:INVALID_CVS_MINOR S:Invalid register CVS Minor value, read %d, expecting %d\n
+L:XRR_SPECTAREG_READ S:Read XRR Register: 0x%x, Value: 0x%x\n
+L:XRR_BITFIELD_CHECK_FAILURE S:Checking XRR bitfields failed at line: %d\n
+L:XRR_XRT_DEBUG_DUMP_1 S:XrtDebug  LastSentAddress=%d, LastSentEndpoint=%d\n
+L:XRR_XRT_DEBUG_DUMP_2 S:          LastSentAction=%d, LastSentDataQid=%d, LastResponse=%d\n

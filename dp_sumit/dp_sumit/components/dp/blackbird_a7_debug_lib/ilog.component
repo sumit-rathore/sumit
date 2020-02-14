@@ -1,0 +1,243 @@
+component:DP_COMPONENT
+L:AUX_SENT_CPU_MESSAGE S:Sent CPU message with header %d\n
+L:AUX_READ_CPU_MESSAGE S:Read CPU message type %d length %d\n
+L:AUX_UNHANDLED_CPU_MESSAGE S:Read CPU message(%d) which can't be handled\n
+L:AUX_GOT_HPD_IRQ S:Got HPD IRQ event\n
+L:AUX_GOT_HPD_UP S:Got HPD up event\n
+L:AUX_GOT_HPD_DOWN S:Got HPD down event\n
+L:AUX_LANE_COUNT_SET S:Got LANE_COUNT_SET = 0x%x, ENHANCED_FRAME_EN = 0x%d\n
+L:AUX_TRAINING_PATTERN_SET S:Got TRAINING_PATTERN_SET; value = 0x%x\n
+L:AUX_LANEX_Y_STATUS S:Got read LANEX_Y_STATUS: addr = 0x%x, response data = 0x%x\n
+L:AUX_LANE_ALIGN_STATUS_UPDATED S:Got LANE_ALIGN_STATUS_UPDATED: response = 0x%x\n
+L:AUX_TRAINING_LANEX_SET_REQUEST S:Got TRAINING_LANEX_SET write request: DPCD addr = 0x%x, value = 0x%x\n
+L:AUX_STARTING_LINK_TRAINING S:Beginning link training\n
+L:AUX_INVALID_LANE_INDEX S:Invalid lane index %d at line %d\n
+L:AUX_GOT_READ_ADJUST_REQUEST S:Got ADJUST_REQUEST_LANEX_Y read, reply data = 0x%x\n
+L:AUX_INVALID_BW S:Invalid bandwidth 0x%x at line %d\n
+L:AUX_MAX_BW_OVER S:We don't support max bandwidth 0x%x and changed to 0x%x\n
+L:AUX_INVALID_LC S:Invalid Lane Count = %x\n
+L:AUX_INVALID_BW_LC S:Invalid Bandwidth = 0x%x Lane count = %d at line %d\n
+L:AUX_INVALID_DPCD_REV S:Invalid DPCD Rev = 0x%x at line %d\n
+L:AUX_DPCD_REV S:DPCD Rev of Monitor = 0x%x & Monitor capability validated\n
+L:AUX_LINK_TRAINING_FAILED S:Link training failed at bw=%d, lc=%d, tps=%d\n
+L:AUX_INVALID_REQUEST S:Invalid request at line %d: got address=0x%x, dataLen=%d\n
+L:AUX_LINK_PARAMETERS S:Link training with parameters bw=0x%x, lc=0x%x, line=%d\n
+L:PM_LOG_STATE S:Policy maker: current state = %d\n
+L:PM_STATE_TRANSITION S:Policy maker: old state = %d, new state = %d on event = %d\n
+L:PM_UNHANDLED_EVENT S:Policy maker: unhandled event %d in state %d\n
+L:PM_INVALID_EVENT S:Policy maker: got invalid event %d in state %d\n
+L:LT_STATE_TRANSITION S:LinkTR: old state = %d, new state = %d on event = %d\n
+L:LT_UNHANDLED_EVENT S:LinkTR: unhandled event %d in state %d\n
+L:LT_INVALID_EVENT S:LinkTR: got invalid event %d in state %d\n
+L:PM_END_READ_RECEIVER_CAP S:Policy maker: finished reading receiver capability\n
+L:PM_END_READ_EDID S:Policy maker: finished reading EDID; nextFreeIndex = %d\n
+L:PM_DPCD_BYTE_VALUE S:Policy maker: DPCD byte Addr 0x%x = 0x%x\n
+L:PM_EDID_BYTE_VALUE S:Policy maker: EDID byte 0x%x = 0x%x\n
+L:PM_READING_EDID_BLOCK S:Policy maker: reading EDID block %d\n
+L:PM_EDID_ERROR S:Policy maker: EDID read error at line %d, Reason = %d\n
+L:PM_MULTIPLE_EDID_EXTENSION_BLOCKS S:Num EDID extenion blocks = %d; only processing 1 extension block\n
+L:PM_UPDATING_EDID_CACHE S:Policy maker: updating EDID cache; nextFreeIndex = %d\n
+L:PM_UPDATING_MCCS_CACHE S:Policy maker: updating MCCS cache; nextFreeIndex = %d\n
+L:PM_LOADED_FORWARDED_DPCD_TABLE_VALUE S:Policy maker: loaded forwarded DPCD table byte; tableIndex=%d, dpcdAddress=0x%x, value=0x%d\n
+L:PM_SENT_LINK_AND_STREAM_PARAMS S:Sent Link and Stream Parameters\n
+L:PM_SENT_MCCS_REQUEST S:Sent MCCS request string to REX\n
+L:PM_SENT_SINK_PARAMS S:Sent Sink Params (CAP, EDID)\n
+L:PM_SENT_CHANGED_LINK_PARAMS S:Sent Changed Link Params (BW: 0x%x, LC:0x%x)\n
+L:PM_SENT_MCCS_CAPS S:Sent MCCS Capabilities\n
+L:PM_SENT_VCP_TABLE S:Sent VCP Table\n
+L:PM_SENT_TIMING_REPORT S:Sent Timing Report\n
+L:PM_READ_IRQ_VECTOR S:IRQ Vector (0x%x) read result: 0x%x\n
+L:AUX_ISOLATED_LEX_ENABLED S:****** DP ISOLATED LEX ENABLED *******\n
+L:AUX_ISOLATED_LEX_DISABLED S:****** DP ISOLATED LEX DISABLED *******\n
+L:AUX_ISOLATED_REX_ENABLED S:****** DP ISOLATED REX ENABLED *******\n
+L:AUX_ISOLATED_REX_DISABLED S:****** DP ISOLATED REX DISABLED *******\n
+L:AUX_RESTART_CR S:RESTART CLOCK RECOVERY --> MAX VS = %d, laneXYStatusReadCount = %d, sameAdjustmentRequestCounter = %d\n
+L:AUX_CHANGE_BW S:Changing BandWidth from 0x%x to 0x%x\n
+L:AUX_CHANGE_LC S:Changing LaneCount from 0x%x to 0x%x\n
+L:AUX_CR_RBR S:Already at RBR, reducing Lane Count to lanes with clock recovery\n
+L:AUX_CR_LC_1 S:Already at RBR and no active lanes have clock recovery, ending Link Training\n
+L:AUX_CR_DATA S:CR Data 1 = 0x%x and Data 2 = 0x%x at line = %d\n
+L:AUX_EDID_TYPE S:AUX EDID type = %d\n
+L:AUX_BPC_MODE S:AUX BPC Mode = %d\n
+L:AUX_SSC_ADVERTISE_MODE S:SSC Advertise Mode = %d | 0=disable, 1=enable, 2=pass Monitor's value\n
+L:AUX_ISOLATED_STATUS S:AUX Isolated = %d\n
+L:AUX_CAP_WRONG_ADDR S:AUX CAP addr doesn't exist = 0x%x\n
+L:AUX_NATIVE_AUX_READ_ICMD S:NATIVE AUX READ ICMD ADDRESS = 0x%x   Value = 0x%x\n
+L:AUX_I2C_AUX_READ_ICMD S:I2C AUX READ ICMD ADDRESS = 0x%x   Value = 0x%x\n
+L:AUX_GOT_HOST_CONNECTION_MSG S:AUX Got Host Connection Msg = %d\n
+L:AUX_GOT_LINK_MSG S:AUX Got Phy Link Msg = %d \n
+L:AUX_GOT_FEATURE_MSG S:AUX Got Feature Control Msg = %d \n
+L:AUX_STATE_IDLE S:AUX IDLE state started\n
+L:AUX_STATE_DISABLE S:AUX DISABLE state started\n
+L:AUX_MONITOR_INFO_FAIL S:AUX monitor info failed at line %d\n
+L:AUX_SENT_MONITOR_INFO S:AUX sent monitor data to LEX\n
+L:AUX_GOT_OTHERS_REQ S:AUX got message of other request. AddressOnly: %d, Request Command: %d\n
+L:AUX_LINK_FAIL S:AUX link failed. Code: %d count = %d\n
+L:AUX_WRITE_ICMD S:NATIVE AUX WRITE ICMD ADDRESS = 0x%x   Value = 0x%x\n
+L:AUX_READ_TRAINING1 S:AUX read training 202:%x, 203:%x, 204:%x\n
+L:AUX_READ_TRAINING2 S:AUX read training 205:%x, 206:%x, 207:%x\n
+L:AUX_TU_TIMEOUT S:AUX Lex failed to link train within timeout \n
+L:AUX_DP_CONFIG S:BW: 0x%x, LC:%d, Enhanced:%d \n
+L:AUX_SEND_DEFER S:Aux sent DEFER by SW at line %d \n
+L:AUX_SAME_REQUEST S:Aux got same TPS request and ignored it TPS %d\n
+L:AUX_DEFER_OVER S:Aux defer over the maximum amount\n
+L:AUX_GOT_NEW_STREAM_INFO S:Got new host information: new streamParams = %d\n
+L:AUX_GOT_NEW_LINK_INFO S:Got new host information: new linkParams = %d\n
+L:AUX_GOT_NEW_MONITOR_INFO S:Got new monitor information. edidChanged: %d, capChanged: %d\n
+L:AUX_GOT_SAME_MSA S:Got the same msa value, ignore it\n
+L:AUX_INVALID_INTERVAL S:Training Aux interval value is not valid (%d)\n
+L:AUX_CAP_VALUE S:Aux CAP read value [0x%x] = 0x%x\n
+L:AUX_VS_PE S:********** LC = %d, VS = %d,  PE = %d\n
+L:AUX_GOT_DP_ISR S:Aux got DP ISR Type = 0x%0x\n
+L:NOT_LINk_OR_PHY_TEST_REQUEST S:This is not a link or phy test request\n
+L:WRONG_TEST_PATTERN S:Test pattern not available\n
+L:AUX_DP_CHANNEL_STATUS S:Aux DP Channel Status: %d\n
+L:AUX_DP_SSC_INFO S:Freq: %d, BW: %d, Detect SSC (0: disbled, 1:enabled): %d\n
+L:AUX_MONITOR_SSC_INFO S:Monitor support SSC (1: support, 0: no-support): %d\n
+L:LEX_VS S:Voltage Swing Advertised on LEX: %d\n
+L:LEX_PE S:Pre Emphasis Advertised on LEX: %d\n
+L:AUX_ACTIVE_INFO_REX S:Aux Generate Lex Active/Offline Phy:%d, dpEnable:%d, Host:%d\n
+L:AUX_ACTIVE_INFO_LEX S:Aux Generate Rex Active/Offline Phy:%d, dpEnable:%d, Monitor:%d\n
+L:AUX_MCA_DETECT_LINKDN S:Aux detect MCA link down or disabled.\n
+L:AUX_SET_BW_LC_STATUS S:BW = 0x%x; LC = 0x%x\n
+L:AUX_AUDIO_COPY_STATUS S:Copy Audio to current EDID status %d\n
+L:REX_READ_MONITOR_CAP S:RexReadMonitorCap \n
+L:DPCD_INVALID_ADDRESS S:Accessing invalid address 0x%x \n
+L:AUX_REX_AUDIO_FREQ S:Supported Audio Frequency %d\n
+L:AUX_EDID_SUPPS_AUDIO S:Extended block of the edid advertizes audio support, byte = 0x%x\n
+L:AUX_FPS S:Aux Frame period = %d, FPS on LEX = %d\n
+L:AUX_LINK_STATUS S:Aux current link is trained: %d, state: 0x%x\n
+L:AUX_DP_159_REINIT_ERROR S:Aux: DP159 Reinit not done!\n
+L:EDID_WRONG_INDEX S:Tried to access wrong edid index!\n
+L:EDID_TESTED S:Edid compared:%d, 1(New) 0(Same)\n
+L:DP_LEX_CAP_CHANGED S:BW/LC compared:%d, 1(New) 0(Same)\n
+L:AUX_NO_MSA S:Couldn't get MSA value within time.\n
+L:AUX_LINK_TRAINED S:Link Trained with VS:%d, EQ:%d\n
+L:AUX_LEX_LT_CR_STATUS S:Clock Recovery status %d\n
+L:AUX_LEX_LT_CE_STATUS S:Symbol Lock : %d; Lane Alignment : %d; BER Error : %d\n
+L:SOURCE_OUT_RESET S:Source is not out of reset, DP's StreamParameters not updated\n
+L:DP_LEX_LT_MODE S:Link Training Mode = %d\n
+L:YCBCR_STATUS S:yCbCr support disabled in Edid\n
+L:DP_10BPC_DISABLE S:10 BPC is disabled in Edid\n
+L:DP_10BPC_STREAM_FAIL S:Stream Extraction Failed due to 10BPC\n
+L:DP_VALID_SYMBOL_STREAM_FAIL S:Stream Extraction Failed due to invalid valid symbols = %d\n
+L:BPC_UPDATE S:Maximum bpc updated from 0x%x to BPC10 \n
+L:DP_NEW_ALU_CAL S:DP New ALU cal   = %d      * (0: Legacy,   1:New)\n
+L:DP_ISOLATE_VALUE S:DP ISOLATE       = %d      * (0 = disable, 1 = enable)\n
+L:DP_LEX_SSC_VALUE S:DP LEX SSC       = %d      * (0 = disable, 1 = advertise, 2 = pass monitor's value)\n
+L:DP_REX_SSC_VALUE S:DP REX SSC       = %d      * (0 = disable, 1 = advertise, 2 = pass monitor's value)\n
+L:DP_NO_READ_MCCS_VALUE S:DP No Read MCCS  = %d      * (0 = Don't read MCCS 1 = Read MCCS\n
+L:DP_VOLTAGE_SWING S:DP VS            = %d      * (255 = default, anything else = forced)\n
+L:DP_PRE_EMPHASIS S:DP PE            = %d      * (255 = default, anything else = forced)\n
+L:DP_BANDWIDTH S:DP BANDWIDTH     = 0x%x    * (0 = default, anything else = forced)\n
+L:DP_LANE_COUNT S:DP LANE COUNT    = 0x%x    * (0 = default, anything else = forced)\n
+L:DP_EDID_TYPE S:DP EDID TYPE     = %d      * (0 = monitor's edid, 1 = 4k, 2 = 1080p)\n
+L:DP_BPC_MODE S:DP BPC MODE      = %d      * (6 = 6bpc, 8 = 8bpc, 10 = 10bpc)\n
+L:DP_AUX_LT_MODE S:DP AUX LT Mode   = %d      * (0 = Normal Mode, 1 = Fast Mode)\n
+L:DP_AUDIO_SEND S:DP AUDIO Send    = %d      * (0 = Enable, 1 = Disable)\n
+L:DP_YCBCR_STATUS S:DP YCBCR Disable = %d      * (1 = disable, 0 = Pass through)\n
+L:DP_ERR_CNT_STATUS S:DP Error Counter = %d      * (0 = Return true error counter value, 1 = Return True always)\n
+L:DP_REX_PW_DN_TIMEOUT S:DP Rex PD Timeout= %d      * (Value in sec, Max 10 sec)\n
+L:DP_COMP_RATIO S:DP Comp Ratio    = %d      * (0 = default, 2 = 2.4, 4 = 4, 6 = 6)\n
+L:DP_LEX_ICMD S:***    This is a Rex only iCommand     ***\n
+L:DP_REX_ICMD S:***    This is a Lex only iCommand     ***\n
+L:AUX_LINK_TRAINING_STATS S:********LINK TRAINING STATS*******\n
+L:AUX_LEX_SYMBOL_ERROR_COUNT_LANEXY S:Got read SYMBOL_ERROR_COUNT_LANEX_Y: addr = 0x%x, resp = 0x%x\n
+L:FLASH_LC_UPDATED S:Flash value for Lane count updated in DPCD reg = 0x%x\n
+L:FLASH_BW_UPDATED S:Flash value for Bandwidth updated in DPCD reg = 0x%x\n
+L:DP_LEX_AUDIO_MSG S:Audio msg sent to Rex AudioMute = %d Maud = %d\n
+L:DP_LEX_CR_FAIL_STATUS S:Clock Recovery Fail status : %d\n
+L:DP_LEX_UNSUPP_SETTINGS S:Redundant Unsupported setting with VS = %d; PE = %d\n
+L:DP_LINK_TRAINING_STATE S:Link Training State : %d (1: Start of CLock Recovery, 2: Start Equalization, 3: Link Trained)\n
+L:LEX_SET_ERROR_COUNT_TRUE S:Error count function set to return : %d\n
+L:DP_REX_MIVD S:Rex Calculated Mvid:%d, Nvid:%d\n
+L:AUX_SET_PW_DN_TIMER S:Power down timer value set = %d sec\n
+L:DP_POWER_STATE S:Setting Monitor Power state = 0x%d\n
+L:AUX_REX_MCCS_CAP_READ_DONE S:MCCS capabilities string read done. String size : %d, VCP Table size : %d\n
+L:AUX_LEX_MCCS_RECEIVE_STATUS S:MCCS capabilities received. String size : %d\n
+L:AUX_LEX_VCP_RECEIVE_STATUS S:VCP Table received. Table size : %d\n
+L:AUX_REX_VCP_TABLE_HEADING S:****SUPPORTED VCP CODES****\n
+L:AUX_REX_VCP_TABLE_ENTRY S:Opcode 0x%x\n
+L:SET_VCP_FEATURE S:VCP feature set\n
+L:AUX_REX_VCP_READ_DONE S:VCP Table read done. Sending to LEX\n
+L:AUX_REX_MCCS_RETRY_COUNT S:MCCS capabilities retry counter : %d\n
+L:AUX_REX_VCP_RETRY_COUNT S:VCP Table retry counter : %d\n
+L:DP_MCA_DN S:Bringing MCA channel 1 down
+L:DP_MCA_UP S:Bringing MCA channel 1 up
+L:AUX_GOT_HPD_REPLUG S:Got HPD Replug event\n
+L:DP_ERR_CNT S:Lex error counts Extraction error = %d,  Stream error = %d\n
+L:DP_LEX_ERR S:Stream Error count = %d\n
+L:DP_READ_MCCS_STATUS S:No Read MCCS = %d\n
+L:DP_REX_READ_MCCS S:Start reading MCCS and VCP table\n
+L:DP_REX_MCCS_FAIL S:MCCS and VCP table read failed\n
+L:AUX_REX_MCCS_READ_FAIL S:MCCS read failed\n
+L:AUX_REX_VCP_READ_FAIL S:VCP table read failed\n
+L:DP_REX_MCCS_SUCESS S:MCCS and VCP table read successfully\n
+L:DP_LEX_HOST_SHUTDOWN S:DP Frequency Out of Range detected\n
+L:DP_REX_START_CR S:Rex Start CR with LC:%d, BW:%d\n
+L:DP_LEX_EQ_FAIL S:Lex EQ Fail with VS:%d, EQ:%d, Align:%d\n
+L:DP_LEX_REACHED_HIGHEST_LEVEL S:Current HOST's VS:%d, EQ:%d, Highest:%d\n
+L:DP_LEX_DISABLE_COMBINATION S:Failed. Disable VS:%d, EQ:%d Combination\n
+L:DP_LEX_VS0_PE S:[0][0]:%d, [0][1]:%d, [0][2]:%d\n
+L:DP_LEX_VS1_PE S:[1][0]:%d, [1][1]:%d, [1][2]:%d\n
+L:DP_LEX_VS2_PE S:[2][0]:%d, [2][1]:%d, [2][2]:%d\n
+L:DP_SEND_AUDIO_STATE S:Lex Audio status chnaged = %d\n
+L:AUX_REX_MCCS_READ_RETRY_COUNT S:Rex tried reading MCCS %d times\n
+L:AUX_REX_END_READ_MCCS S:Rex completed reading MCCS, VCP Table and Timing Report\n
+L:AUX_REX_START_SENDING_MCCS S:Rex start sending MCCS to LEX\n
+L:AUX_REX_SINK_PARAMS_SENT S:Sink Parameters sent to LEX\n
+L:AUX_AUDIO_ERR S:Exceeded audio error recovery Count = %d\n
+L:AUX_REX_NEW_CONTROL_REQUEST S:Sent New Control Request to Sink\n
+L:AUX_REX_NEW_CONTROL_CHANGED S:New Control Value changed to 0x%x\n
+L:AUX_REX_ACTIVE_CONTROL_REQUEST S:Sent Active Control Request to Sink\n
+L:AUX_REX_ACTIVE_CONTROL_CHANGED S:Active Control value is 0x%x\n
+L:AUX_REX_SEND_NEW_CONTROL S:Sending active control values to LEX over COMMLINK\n
+L:AUX_REX_RECEIVED_ACTIVE_CONTROL S:Received Active Control. Updating VCP Table\n
+L:DP_REX_MCCS_SUCCESS_COUNTER S:MCCS read success counter : %d\n
+L:AUX_REX_LINK_PARAM_RETRY S:Monitor not trained with Max BW and LC, retry LT counter: %d\n
+L:AUX_REX_MCCS_SEND_PENDING S:MCCS send to LEX is pending\n
+L:AUX_REX_MCCS_SEND_CRITERIA S:MCCS send criteria ReadyToSend : %d, SendCount: %d\n
+L:AUX_REX_MCCS_CAP_RX_FAIL S:MCCS Cap Rx failed Idx1 : %d, Idx2 : %d, line : %d\n
+L:AUX_REX_UTILIZATION S:Utilzation is (%d)\n
+L:AUX_ADJUST_SSC S:Utilzation is over 100%% adjust SSC %d\n
+L:AUX_ADJUST_FPS S:Utilzation is over 100%% adjust FPS from %d to %d\n
+L:AUX_REX_SEND_DUMMY S:Sending dummy video to the monitor\n
+L:DP_OVER_CURRENT_WARNING S:Over current detected in DP\n
+L:DP_EDID_INVALID S:REX is unable to get valid EDID values from the sink, passing the invalid EDID to LEX\n
+L:DP_CAP_INVALID S:REX is unable to read valid CAP values from the sink after Max tries\n
+L:AUX_REX_READ_EDID S:***  Monitor Edid read   ***\n
+L:AUX_EDID_READ_ICMD S:0x%x, //0x%x\n
+L:AUX_DPCD_DUMP S:DPCD Byte 0x%x = 0x%x\n
+L:DP_ENABLE_AUX_TRAFFIC_STATUS S:Enable AUX over UART = %d\n
+L:DP_RESTART_PM_STATE_MACHINE S:****** Restarting DP PM State Machine ******\n
+L:DP_LEX_REMOVE_RESOLUTION S:Removing unsupported standard timing edid = %d\n
+L:DP_LEX_DETAIL_TIME S:Removing unsupported detail timing from edid = %d\n
+L:DP_LEX_CVT S:Removing unsupported CVT 3 byte code timing from edid = %d\n
+L:DP_REX_EDID_BLOCK_NUM S:EDID received with block number: %d\n
+L:DP_REX_EDID_SIZE S:TOTAL EDID SIZE: %d\n
+L:DP_INVALID_CAP_EDID S:Failed to read Cap and Edid\n
+L:DP_PRINT_STATUS S:***       Status Flags        ***\n
+L:DP_PHYUP S:PhyUp                  = %d\n
+L:DP_REXACTV S:RexActive              = %d\n
+L:DP_VIDEORXRDY S:VideoRxReady           = %d\n
+L:DP_ISOLATE S:IsolateEnabled         = %d\n
+L:DP_REXWAITHOST S:RexWaitHostInfo        = %d\n
+L:DP_REXNEWMONI S:RexNewMonitor          = %d\n
+L:DP_REXNEWLNKPARA S:RexNewLinkParams       = %d\n
+L:DP_REXDPEN S:RexDpEnabled           = %d\n
+L:DP_MONCONN S:monitorConnected       = %d\n
+L:DP_LEXDPEN S:LexDpEnabled           = %d\n
+L:DP_HOSTCONN S:HostConnected          = %d\n
+L:DP_LEXRXREADY S:LexVideoTxReady        = %d\n
+L:DP_GOTSINKPARAM S:GotSinkParamters       = %d\n
+L:DP_GOTSTREAMPARAM S:GotStreamParamters     = %d\n
+L:DP_MONINFORDY S:MonitorInfoReady       = %d\n
+L:DP_LEXWAITMONINFO S:LexWaitMonitorInfo     = %d\n
+L:DP_GOTNEWSTRMPARAMS S:GotNewStreamParams     = %d\n
+L:DP_GOTNEWLINKPARAMS S:GotNewLinkParams       = %d\n
+L:DP_LEXACT S:LexActive              = %d\n
+L:DP_REXDRIVEINIT S:RedriverInitDone       = %d\n
+L:DP_CURNTSTATE S:CurrentState           = %d\n
+L:DP_PREVSTATE S:PrevState              = %d\n
+L:DP_EVENT S:Event                  = %d\n
+L:DP_CAPVALID S:CapIsValid             = %d\n

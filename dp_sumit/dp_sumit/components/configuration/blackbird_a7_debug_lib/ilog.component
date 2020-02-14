@@ -1,0 +1,24 @@
+component:CONFIG_COMPONENT
+L:CONFIG_SAVE_VARIABLE S:Config_ArbitrateSetVar Source = %d, variable = %d, data = 0x%x\n
+L:CONFIG_LOAD_VARIABLE S:Config_ArbitrateGetVar Variable = %d, data = 0x%x, result = %d\n
+L:NVM_CONFIG_STATUS_USB2_ON S:*** USB 2 Enabled ***\n
+L:NVM_CONFIG_STATUS_USB2_OFF S:*** USB 2 DISABLED ***\n
+L:NVM_CONFIG_STATUS_USB3_ON S:*** USB 3 Enabled ***\n
+L:NVM_CONFIG_STATUS_USB3_OFF S:*** USB 3 DISABLED ***\n
+L:NVM_CONFIG_STATUS_ISO_ON S:*** USB 3 ISO ENABLED ***\n
+L:NVM_CONFIG_STATUS_ISO_OFF S:*** USB 3 ISO Bypassed ***\n
+L:NVM_CONFIG_STATUS_ISO_CTRL_ON S:*** USB 3 ISO Control Transfer ENABLED ***\n
+L:NVM_CONFIG_STATUS_ISO_CTRL_OFF S:*** USB 3 ISO Control Transfer DISABLED ***\n
+L:NVM_CONFIG_STATUS_DP_ON S:*** Display Port Enabled ***\n
+L:NVM_CONFIG_STATUS_DP_OFF S:*** Display Port DISABLED ***\n
+L:NVM_CONFIG_STATUS_LANPORT_ON S:*** Lan Port Enabled ***\n
+L:NVM_CONFIG_STATUS_LANPORT_OFF S:*** Lan Port DISABLED ***\n
+L:NVM_CONFIG_STATUS_RS232_ON S:*** RS232 Enabled ***\n
+L:NVM_CONFIG_STATUS_RS232_OFF S:*** RS232 DISABLED ***\n
+L:CONFIG_LOAD_FAIL S:Atmel Featurebits load fail. All features are disabled\n
+L:CONFIG_EVENT S:Configuration Event [%d] Generated. \n
+L:CONFIG_FEATURE_CONTROL S:FeatureControl USB:[%x] DP:[%x] MISC:[%x]\n
+L:CONFIG_FEATURE_ENABLE S:FeatureEnable USB:[%x] DP:[%x] MISC:[%x]\n
+L:CONFIG_FEATURE_MASK S:FeatureMask USB:[%x] DP:[%x] MISC:[%x]\n
+L:CONFIG_HW_NOT_SUPPORTED S:HW doesn't support the SW features: [%x]\n
+L:CONFIG_GET_DATA_PTR_FAILED S:Config_GetDataPointer: No pointer for the given variabled\n

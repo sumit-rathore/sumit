@@ -1,0 +1,29 @@
+component:STORAGE_COMPONENT
+L:STORAGE_VAR_TOO_BIG S:Storage variable %d is too big at %d bytes to be read\n
+L:FLASH_ACCESS_INVALID_VARIABLE S:Tried to access flash variable %d, but there are only %d variables\n
+L:STORAGE_GET_VAR_NOT_EXIST S:Tried to get a persistent variable %d that does not exist\n
+L:STORAGE_CREATE_VAR_ALREADY_EXISTS S:Tried to create a persistent variable %d that already exists\n
+L:FLASH_REMOVE_VAR_NOT_EXISTS S:Tried to remove a persistent variable %d that doesn't exist\n
+L:STORAGE_ICMD_READ_VAR S:Variable %d has MSW=0x%x and LSW=0x%x.\n
+L:STORAGE_ICMD_WRITE_VAR S:Wrote variable %d with MSW=0x%x and LSW=0x%x.\n
+L:STORAGE_ICMD_DUMP_VARS S:Dumping all persistent variables:\n
+L:STORAGE_SAVING_VAR S:Saving persistent var %d\n
+L:STORAGE_ASSERT_HOOK_TITLE S:Persistent data assert hook:\n
+L:STORAGE_ASSERT_HOOK_PENDING_WRITE S:  Pending write to variable %d\n
+L:STORAGE_INVALID_STORAGE_BACKEND S:The storage backend value of %d is invalid.\n
+L:READ_VAR_FAIL S:Unable to read var %d\n
+L:WROTE_VAR_FAIL S:Unable to write var %d\n
+L:CANT_READ_VAR S:Tried to read variable %d, but it doesn't exist\n
+L:ERASE_VAR S:Erasing variable %d\n
+L:ERASE_VAR_FOR_VAR_THAT_DOESNT_EXIST S:Trying to erase variable %d, but it doesn't exist in storage\n
+L:DEPRECATED_EEPROM_READ_FAIL S:Could not read eeprom page %d\n
+L:DEPRECATED_EEPROM_WRITE_FAIL S:Could not write to I2C EEPROM chip\n
+L:EEPROM_PAGE_READ_FAILED S:EEPROM read failed while reading page %d\n
+L:EEPROM_INVALID_READ_SIZE S:EEPROM page read size %d is invalid while reading page %d\n
+L:EEPROM_WRITE_BACKUP_FAILED S:Failed to write to EEPROM backup page for variable %d\n
+L:EEPROM_WRITE_PRIMARY_FAILED S:Failed to write to EEPROM primary page for variable %d\n
+L:EEPROM_PRIMARY_PAGE_DATA_CORRUPTED S:Primary location for variable %d is corrupted, but backup is intact. Restoring from backup.\n
+L:EEPROM_PRIMARY_PAGE_BAD_CRC S:Primary location has a bad CRC, and backup is for a different variable. Probable corruption of variable %d.\n
+L:EEPROM_BACKUP_PAGE_BAD_CRC S:Primary and backup both failed CRC check for variable %d. Assuming primary is valid.\n
+L:EEPROM_RESTORE_BACKUP_FAILED S:Write to EEPROM backup page %d failed for restoring primary page %d\n
+L:EEPROM_RESTORE_PRRIMARY_FAILED S:Restore EEPROM primary page %d failed\n

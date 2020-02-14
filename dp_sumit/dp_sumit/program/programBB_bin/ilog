@@ -1,0 +1,493 @@
+component:TOPLEVEL_COMPONENT
+L:THIS_IS_LEX S:This is the Lex\n
+L:THIS_IS_REX S:This is the Rex\n
+L:BUILD_DATE S:SW build was done on %04d/%02d/%02d\n
+L:BUILD_TIME S:SW build was done at %02d:%02d:%02d\n
+L:UNEXPECTED_TRAP S:Unexpected trap occurred, PC was 0x%x, nPC was 0x%x\n
+L:UNEXPECTED_TRAP_WITHOUT_WINDOWS S:Unexpected trap occurred without spare windows, last i7 is 0x%x, previous was 0x%x, previous to that was 0x%x\n
+L:DATA_STORE_ERR_TRAP S:DATA STORE ERROR TRAP\n
+L:AHB_FAILURE_TRAP S:AHB FAILURE TRAP Status: 0x%x, Failure Addr: 0x%x\n
+L:INST_FETCH_ERR_TRAP S:INSTRUCTION FETCH ERROR\n
+L:ILLEGAL_INST_ERR_TRAP S:ILLEGAL INSTRUCTION ERROR\n
+L:PRIV_INST_ERR_TRAP S:PRIVILEGED INSTRUCTION ERROR\n
+L:INST_ACC_ERR_TRAP S:INSTRUCTION ACCESS ERROR\n
+L:UNIMPL_FLUSH_TRAP S:UNIMPLEMENTED FLUSH\n
+L:DATA_ACC_ERR_TRAP S:DATA ACCESS ERROR\n
+L:DIV_BY_ZERO_ERR_TRAP S:DIVIDE BY ZERO ERROR\n
+L:TRAP_END_POINT S:Trap Handler End Point. Sparc TBR=0x%x\n
+L:DATA_ACC_EXC_TRAP S:DATA ACCESS EXCEPTION\n
+L:TIMER1_ERROR S:Timer1 does not work !!\n
+L:TOPLEVEL_READ_INREVIUM_LMK_REG S:Readback from LMK reg %d: 0x%x\n
+component:COMMAND_COMPONENT
+L:CMD_PROGRAM_ERASE_BLOCK S:Erasing block %d of %d\n
+L:CMD_PROGRAM_ERASE_BLOCK_FAILED S:ERROR: Erasing block %d of %d failed\n
+L:CMD_PROGRAM_WRITE_FAILED S:ERROR: Write failed!\n
+L:CMD_PROGRAM_WRITE_SUCCESS S:Write success!\n
+L:CMD_PROGRAM_ADDRESS S:>>>   Programming to address 0%x\n
+L:CMD_SYSTEM_INVALID S:CMD Rx invalid Cmd: 0x%x, SubCmd: 0x%x\n
+L:CMD_RUN_PROGRAMBB S:### Rx RunPgmBB ### Start Addr: %x, Size: %d\n
+L:VERIFY_ERASE_FAILED S:Verify Erase Failed: Erased addr %x has data %x\n
+L:INVALID_RX_CMD S:CMD_processCommandProgramSubcommand: CMD Rx invalid, Cmd %x, SubCmd %x\n
+L:CMD_PROGRAM_BB_CALL S:Load and run PROGRAM_BB After 300ms\n
+component:GE_PROGRAM_COMPONENT
+L:GE_PROGRAM_RCV_EVENT S:In state %d, received event %d\n
+L:GE_PROGRAM_COMPLETED S:Ge programming completed, restart GE\n
+L:GE_PGM_BLK S:Programming GE blk %d of %d sent\n
+L:GE_PGM_ADDR S:Programming GE addr 0x%x\n
+L:GE_PGM_PKT_END S:Programming GE cannot send - reached end\n
+L:GE_PGM_START S:GE Automatic download start \n
+L:GE_PGM_RESP_FAIL S:GE ProgramStart rejected\n
+L:GE_PGM_ERASE_BLOCK_FAIL S:GE Program Erasing block 0x%x failed\n
+L:GE_PGM_SIZE_DIFF S:GE Program InfoMsg size 0x%x, expected 0x%x\n
+L:GE_PGM_NAK S:GE Program NAK\n
+component:I2CD_COMPONENT
+L:DE_JITTER_WRITE_FAILED S:Setting De-jitter chip failed at line: %d\n
+L:DEJITTER_CHIP_CONFIGURED S:De-jitter chip was configured to 1 ppm\n
+L:I2C_WRITE_FAILED S:I2C Write failed\n
+L:READ_WITH_NULL_CALLBACK S:Tried to read I2C GPIO expander pin, but specified a NULL callback\n
+L:DEJITTER_CHIP_FAILED_CALIBRATION S:Polled the dejitter chip %d times without achieving calibration.\n
+L:DEJITTER_CHIP_IRQ_LOS2 S:CLKIN 2 Loss Of Signal Int Alarm Flag set.\n
+L:DEJITTER_CHIP_IRQ_LOS1 S:CLKIN 1 Loss Of Signal Int Alarm Flag set.\n
+L:DEJITTER_CHIP_IRQ_LOSX S:External Reference Loss Of Signal Int Alarm Flag set.\n
+L:DEJITTER_CHIP_IRQ_FOS2 S:CLKIN 2 Frequency Offset Int Alarm Flag set.\n
+L:DEJITTER_CHIP_IRQ_FOS1 S:CLKIN 1 Frequency Offset Int Alarm Flag set.\n
+L:DEJITTER_CHIP_IRQ_LOL S:PLL Loss Of Lock Int Alarm Flag set.\n
+L:DEJITTER_CHIP_FAILED_IRQ_WRITE S:Failure writing to clear all Int Alarm IRQ Flags.\n
+L:DEJITTER_CHIP_FAILED_IRQ_READ S:Failure reading IRQ flag registers\n
+L:I2CD_SET_GPIO_PIN S:Setting I2C Expander GPIO pin %d\n
+L:I2CD_SET_GPIO_PIN_DONE S:Setting I2C Expander GPIO pin completed\n
+L:I2CD_CLEAR_GPIO_PIN S:Clearing I2C Expander GPIO pin %d\n
+L:I2CD_CLEAR_GPIO_PIN_DONE S:Clearing I2C Expander GPIO pin completed\n
+L:I2CD_READ_GPIO_PIN S:Reading I2C Expander GPIO pin %d\n
+L:I2CD_READ_GPIO_PIN_SET S:Read I2C Expander GPIO pin set\n
+L:I2CD_READ_GPIO_PIN_CLEARED S:Read I2C Expander GPIO pin cleared\n
+L:DP159_TRANS_IN_PROGRESS S:DP Retimer chip transaction already in progress state %d, line %d!\n
+L:DP159_WRITE_FAILED S:DP Retimer chip write failed!\n
+L:DP159_READ_FAILED S:DP Retimer chip read failed!\n
+L:DP159_REINITIALIZE S:DP Retimer Re-initialize start\n
+L:DP159_CONFIG_FAIL S:DP Retimer config can't start.(L:%d) Current opState = %d\n
+L:DP159_CANCEL_CONFIG S:DP Retimer canceled config while configuring state %d, for new state is %d\n
+L:DP159_CR_CONFIG S:DP Retimer CR configuration phase %d\n
+L:DP159_CONFIGURATION S:DP Retimer configuration table: 0x%x, mode: %d, step: %d\n
+L:DP159_CONFIG_DATA S:DP Retimer configuration reg: 0x%x, data: 0x%x\n
+L:DP130_GENERAL_READ S:DP Redriver chip read value is 0x%x\n
+L:DP130_TRANS_IN_PROGRESS S:DP Redriver chip transaction already in progress, line %d!\n
+L:DP130_WRITE_FAILED S:DP Redriver chip write failed!\n
+L:DP130_READ_FAILED S:DP Redriver chip read failed!\n
+L:CYPRESS_HX3_RETRY S:Cypress HX3 failed writing firmware at offset=%d, retryCount=%d\n
+L:CYPRESS_UPGRADING_FIRMWARE S:Cypress downloading firmware, FW size = %d\n
+L:CYPRESS_FIRMWARE_UPGRADE_IN_PROGRESS S:Cypress firmware download already in progress\n
+L:CYPRESS_HUB_TIMER_STATE S:Cypress Hx3 Hub timer state = %d\n
+L:CYPRESS_HUB_NOT_FOUND S:Cypress Hx3 Hub not found\n
+L:CYPRESS_HUB_FAILED_PROGRAMMING S:Cypress Hx3 Hub programming failed\n
+L:CYPRESS_HUB_PROGRAMMING_SUCCESS S:Cypress Hx3 Hub programming succeeded!\n
+L:DP159_READ_RETRY S:DP Retimer chip read retried retryRdCount = %d\n
+L:DP159_WRITE_RETRY S:DP Retimer chip write retried retryWtCount = %d\n
+L:CYPRESS_HX3_PROGAMMING_STATUS S:Cypress HX3 USB3 hub programming status = %d\n
+L:DP130_DETECT_READ S:DP Redriver chip read byteCount 0x%x\n
+L:DP159_DETECT_READ S:DP Retimer chip read byteCount 0x%x\n
+L:DP159_RESET_RX S:Disable and enable Rx lane\n
+component:LED_COMPONENT
+L:LED_INVALID_MODE S:Invalid LED mode %d\n
+L:LED_SET_MODE S:New LED mode set. Result = %x\n
+component:GPIO_COMPONENT
+L:GPIO_INIT S:Initializing GPIO, direction reg 0x%x, output bits 0x%x\n
+L:GPIO_READ S:GPIO_READ pin %d, bool val 0x%x\n
+L:GPIO_SET S:GPIO_SET pin %d\n
+L:GPIO_CLEAR S:GPIO_CLEAR pin %d\n
+L:GPIO_PULSE S:GPIO_PULSE pin %d\n
+L:FREQ_MEASURE S:Measuring PLL %d, XUSB is %d, CXM is %d\n
+L:INVALID_PIN S:Invalid Pin number %d\n
+L:BGRG_IRQ_LOG S:Interrupts 0x%x triggered\n
+L:BGRG_IRQ_UNSERVICED S:Interrupts 0x%x were unserviced\n
+L:BGRG_GPIO7_LOG S:Interrupt GPIO7 triggered\n
+L:IRQ_HANDLER_NOT_SET S:Interrupt Handler is not set for pin %d in line %d\n
+L:REGISTERING_IRQ S:Registering Interrrupt handler for pin %d\n
+L:SERVICING_IRQ S:Servicing Interrupt for pin %d\n
+L:DISABLING_IRQ S:Disabling Interrupt for pin %d\n
+L:ENABLING_IRQ S:Enabling Interrupt for pin %d\n
+L:BGRG_HW_DEFAULTS S:Power-on harware defaults from GPIOs are: 0x%x\n
+L:BGRG_INT_HANDLER_PRI S:BGRG Interrupt Handler Primary Reg: 0x%x\n
+L:BGRG_INT_HANDLER_SEC S:BGRG Interrupt Handler Secondary Reg: 0x%x\n
+L:BGRG_INT_HANDLER_PRI_POST S:BGRG Interrupt Handler POST Primary Reg: 0x%x\n
+L:BGRG_INT_HANDLER_SEC_POST S:BGRG Interrupt Handler POST Secondary Reg: 0x%x\n
+L:GPIO_IRQ_NOT_AVAIL S:GPIO has no more available interrupts for assignment\n
+component:EEPROM_COMPONENT
+L:EEPROM_BUSY S:There is already an EEPROM access in progress.\n
+L:EEPROM_ADDRESS_EXCEEDS_CAPACITY S:An attempt was made to access EEPROM page %d which exceeds capacity %d.\n
+L:ICMD_EEPROM_READ_FAILED S:Failed reading external eeprom\n
+L:ICMD_EEPROM_WRITE_FAILED S:Failed writing to external eeprom\n
+L:ICMD_EEPROM_WRITE_SUCCESSFUL S:Write to EEPROM is complete\n
+L:ICMD_EEPROM_WRONG_READ_LENGTH S:Expected %d bytes, read %d bytes instead\n
+L:ICMD_PAGE_VALUES S:Byte %d: Value: 0x%x\n
+L:ICMD_WORD_VALUES S:Word %d: Value: 0x%x\n
+L:ICMD_INVALID_PAGE S:Page %d is outside the valid range of 0 to %d\n
+L:EEPROM_INITIALIZATION_STARTING S:Beginning EEPROM initialization\n
+L:EEPROM_READ_SUBMIT S:Submitting an EEPROM read of page %d with pageData pointing at 0x%x\n
+L:EEPROM_WRITE_SUBMIT S:Submitting an EEPROM write of page %d with pageData pointing at 0x%x\n
+component:I2C_COMPONENT
+L:I2C_FIFO_OVER_FLOW S:I2C fifo overflow\n
+L:I2C_FIFO_UNDER_FLOW S:I2C fifo underflow\n
+L:I2C_OPERATIONS S:I2C: %d tasks in fifo, current task: device 0x%x, i2c op 0x%x\n
+L:I2C_NO_OPERATIONS S:I2C: no operations in progress\n
+L:I2C_WAKE_LOG S:i2c: performing wake\n
+L:I2C_WAKE_DONE S:i2c: wake done\n
+L:I2C_READ_LOG S:i2c: read of device %d, for %d bytes\n
+L:I2C_READ_DONE S:i2c: done read %d bytes, contents 0x%x\n
+L:I2C_WRITE_LOG S:i2c: write device %d, byteCount %d\n
+L:I2C_WRITE_DONE S:i2c: write complete\n
+L:I2C_WRITE_FAILED S:i2c: write failed\n
+L:I2C_TRN_ERROR S:i2c: TRN ERR (0x%x)\n
+L:TIME_MARKER_ S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing \n
+L:TIME_MARKER_I2C_START S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing i2cStartInterface\n
+L:TIME_MARKER_I2C_WAKE_START S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing i2c wake start\n
+L:TIME_MARKER_I2C_WAKE_STOP S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing \n
+L:TIME_MARKER_FINALIZE_OP S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing finalize operation\n
+L:TIME_MARKER_SUBMIT_OP S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing submit operation\n
+L:I2C_INVALID_TASK_STATE S:i2c: invalid state at line %d, device 0x%x, operation 0x%x\n
+L:I2C_READ_TOO_MANY_BYTES S:i2c read too many bytes at line %d. Expected %d\n
+L:I2C_IRQ_LOG S:Interrupts 0x%x triggered\n
+L:I2C_IRQ_UNSERVICED S:Interrupts 0x%x were unserviced\n
+L:IRQ_HANDLER_NOT_SET S:Interrupt Handler is not set for pin %d\n
+L:REGISTERING_IRQ S:Registering Interrrupt handler for pin %d\n
+L:SERVICING_IRQ S:Servicing Interrupt for pin %d\n
+L:DISABLING_IRQ S:Disabling Interrupt for pin %d\n
+L:ENABLING_IRQ S:Enabling Interrupt for pin %d\n
+L:I2C_START_READ S:I2C read started for %d bytes\n
+L:I2C_START_WRITE S:I2C write started\n
+L:I2C_READ_FINISH S:I2C read finished\n
+L:I2C_WRITE_FINISH S:I2C write finished\n
+L:I2C_DO_WAKE_OP S:I2C do wake op %d\n
+L:I2C_WAKE_COMPLETE S:I2C wake complete\n
+L:I2C_WRITE2 S:i2c write data is 0x%x 0x%x\n
+L:I2C_CONTROLREG_READ S:I2C Control Reg is 0x%x\n
+L:I2C_START_WRITE_READ S:I2C writeRead started for %d bytes to write, %d bytes to read\n
+L:I2C_OPERATIONS_QUEUED S:I2C: %d operations queued, nothing in progress\n
+L:I2C_START_WRITE_READ_BLOCK S:I2C writeReadBlock started for %d bytes to write, %d maximum bytes to read\n
+L:I2C_RANDOM_READ_1BYTE_RESP S:I2C Random 1 Byte Read: Register: 0x%x; Value: 0x%x\n
+L:I2C_ICMD_READ_ERR S:I2C icmd read error - max read of 8 bytes\n
+L:I2C_ICMD_WRITEREAD_ERR S:I2C icmd write read error - max read of 8 bytes\n
+L:I2C_ICMD_WRITEREAD_DONE S:I2C icmd write read %d bytes, data 0x%x 0x%x\n
+L:UNSUPPORTED_PORT S:i2cSwitchPort = %d is unsupported\n
+L:ADDRESS_PORT_ALREADY_EXIST S:i2cAddress = 0x%x, portNumber = 0x%x already exist in the i2cDeviceList\n
+L:ADDRESS_NOT_EXISTS_FOR_HANDLE S:i2cAddress = 0x%x is not registered to TI switch port %d\n
+L:SETUP_SWITCH_FOR_ACCESS S:Setting up I2C switch for access to address %d on port %d\n
+L:CTRLLR_I2C_CONTROLLER_FIFO_OVERFLOW S:I2C operation FIFO overflow at line %d\n
+L:CTRLLR_I2C_CONTROLLER_FIFO_UNDERFLOW S:I2C operation FIFO underflow at line %d\n
+L:CTRLLR_UNHANDLED_SWITCH_CASE S:Execution reached an unhandled case of a switch statement.\n
+L:CTRLLR_I2C_CTRL_WRITE_ICMD_0 S:I2C controller write - deviceAddress=0x%x, speed=%d, switchPort=%d\n
+L:CTRLLR_I2C_CTRL_WRITE_ICMD_1 S:    byteCount=%d, dataMSW=0x%x, dataLSW=0x%x\n
+L:CTRLLR_I2C_CTRL_READ_ICMD_0 S:I2C controller read - deviceAddress=0x%x, speed=%d, switchPort=%d\n
+L:CTRLLR_I2C_CTRL_READ_ICMD_1 S:    byteCount=%d\n
+L:CTRLLR_I2C_CTRL_WRITE_READ_ICMD_0 S:I2C controller write-read - deviceAddress=0x%x, speed=%d, switchPort=%d\n
+L:CTRLLR_I2C_CTRL_WRITE_READ_ICMD_1 S:    writeByteCount=%d, writeData=0x%x, readByteCount=%d\n
+L:CTRLLR_I2C_CTRL_BLOCK_WRITE_READ_ICMD_0 S:I2C controller block write-read - deviceAddress=0x%x, speed=%d, switchPort=%d\n
+L:CTRLLR_I2C_CTRL_BLOCK_WRITE_READ_ICMD_1 S:    writeByteCount=%d, writeData=0x%x\n
+L:CTRLLR_I2C_CTRL_WRITE_COMPLETE S:I2C controller write complete.  Success=%d.\n
+L:CTRLLR_I2C_CTRL_READ_COMPLETE S:I2C controller read complete.  byteCount=%d, dataMSW=0x%x, dataLSW=0x%x.\n
+L:CTRLLR_I2C_CTRL_WRITE_READ_COMPLETE S:I2C controller write-read complete.  byteCount=%d, dataMSW=0x%x, dataLSW=0x%x.\n
+L:CTRLLR_I2C_CTRL_BLOCK_WRITE_READ_COMPLETE S:I2C controller block write-read complete.  byteCount=%d, dataMSW=0x%x, dataLSW=0x%x.\n
+L:CTRLLR_INVALID_I2C_ADDRESS S:Invalid I2C address: 0x%x\n
+L:CTRLLR_INVALID_I2C_SPEED S:Invalid I2C speed: %d\n
+L:CTRLLR_INVALID_SWITCH_PORT S:Invalid I2C switch port: %d\n
+L:CTRLLR_INVALID_BYTE_COUNT S:Invalid byte count. Given: %d, Max: %d.\n
+L:CTRLLR_INVALID_MUX_PORT S:Invalid I2C rtl Mux port: %d, line: %d\n
+L:I2C_POOL_IS_FULL S:I2C memory pool is full with size = %d, can't allocate a new element\n
+L:I2C_WRITE_GO_TIMEOUT S:I2C Blocking write timeout on Go bit. i2c_control: %x\n
+L:I2C_READ_GO_TIMEOUT S:I2C Blocking read timeout on Go bit\n
+L:I2C_WRITE_READ_GO_TIMEOUT S:I2C Blocking write-read timeout on Go bit\n
+L:I2C_BLOCKING_OP_IN_PROGRESS S:I2C Blocking (device:0x%x) cancelled - op (device:0x%x) in progress at line %d\n
+L:I2C_BLOCKING_ERROR S:I2C Blocking error at line %d\n
+L:I2C_FIFO_OVERFLOW_CALLBACK S:I2C FIFO overflow. Callback address = 0x%x\n
+L:I2C_FIFO_PRINT_CALLBACK S:I2C fifo idx = %d; callback = 0x%x\n
+L:I2C_UNEXPECTED_INT_DONE S:Unexpected I2C Interrupt\n
+L:I2C_SWITCH_SELECT_PORTS S:Reconfiguring I2C switch.  New ports enabled=0x%x\n
+L:I2C_CONTROL_SWITCH_ERROR S:Tried control I2C switch during operation\n
+component:MDIO_COMPONENT
+L:MDIO_ICMD_WRITE S:Writing to MDIO device %d, address 0x%x, with data 0x%x\n
+L:MDIO_INDIRECT_ICMD_WRITE S:Writing to MDIO device %d, devType %d\n
+L:MDIO_INDIRECT_ICMD_WRITE2 S:                address 0x%x, with data 0x%x\n
+L:INVALID_ICMD_ARG S:Invalid icmd arg 0x%x received\n
+L:REG_FAILURE S:Invalid register ID/Rev at line %d\n
+L:INVALID_PIN S:Invalid Pin number %d\n
+L:SYNC_MDIO_READ_FIFO_NOT_EMPTY S:Requested to do a synchronous MDIO read while other jobs pending\n
+L:SYNC_MDIO_WRITE_FIFO_NOT_EMPTY S:Requested to do a synchronous MDIO write while other jobs pending\n
+L:MDIO_ICMD_READ_START S:Reading MDIO device %d, address %d\n
+L:MDIO_INDIRECT_ICMD_READ_START S:Reading MDIO device %d, devType %d, address %d\n
+L:MDIO_ICMD_READ_DONE S:Read MDIO, returned data 0x%x\n
+L:MDIO_FIFO_OVER_FLOW S:MDIO fifo overflow\n
+L:MDIO_FIFO_UNDER_FLOW S:MDIO fifo underflow\n
+L:MDIO_OPERATIONS S:MDIO: %d operations in progress, current operation: header 0x%x, mdio op 0x%x\n
+L:MDIO_NO_OPERATIONS S:MDIO: no operations in progress\n
+L:TIME_MARKER_ S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing \n
+L:TIME_MARKER_MDIO_START S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing mdioStart\n
+L:TIME_MARKER_FINALIZE_OP S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing finalize operation\n
+L:TIME_MARKER_SUBMIT_OP S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing submit operation\n
+L:MDIO_INVALID_TASK_STATE S:mdio/i2c: invalid state at line %d, header 0x%x, mdio op 0x%x\n
+L:MDIO_IRQ_LOG S:Interrupts 0x%x triggered\n
+L:MDIO_IRQ_UNSERVICED S:Interrupts 0x%x were unserviced\n
+L:MDIO_GPIO7_LOG S:Interrupt GPIO7 triggered\n
+L:IRQ_HANDLER_NOT_SET S:Interrupt Handler is not set for pin %d\n
+L:REGISTERING_IRQ S:Registering Interrrupt handler for pin %d\n
+L:SERVICING_IRQ S:Servicing Interrupt for pin %d\n
+L:DISABLING_IRQ S:Disabling Interrupt for pin %d\n
+L:ENABLING_IRQ S:Enabling Interrupt for pin %d\n
+L:MDIO_START_READ S:MDIO start read: dev %d, addr/devtype 0x%x\n
+L:MDIO_START_WRITE S:MDIO start write: dev %d, addr/devtype 0x%x, data 0x%x\n
+L:MDIO_START_ADDRESS S:MDIO start address: dev %d, devtype 0x%x, addr 0x%x\n
+L:MDIO_FINISH S:MDIO finished, data is 0x%x\n
+L:MDIO_CONTROLREG_READ S:MDIO Control Reg is 0x%x\n
+L:MDIO_OPERATIONS_QUEUED S:MDIO: %d operations queued, nothing in progress\n
+L:MDIO_SYNC_READ_TIMEOUT S:MDIO Sync Read timeout\n
+L:MDIO_SYNC_WRITE_TIMEOUT S:MDIO Sync Write timeout\n
+L:MDIO_INDIRECT_SYNC_READ_ADDRESS_TIMEOUT S:MDIO Indirect Sync Read address timeout\n
+L:MDIO_INDIRECT_SYNC_READ_DATA_TIMEOUT S:MDIO Indirect Sync Read data timeout\n
+L:MDIO_INDIRECT_SYNC_WRITE_ADDRESS_TIMEOUT S:MDIO Indirect Sync Write address timeout\n
+L:MDIO_INDIRECT_SYNC_WRITE_DATA_TIMEOUT S:MDIO Indirect Sync Write data timeout\n
+component:XMODEM_COMPONENT
+L:XMODEM_INTERRUPT_INIT S:Initializing Xmodem for interrupt driven mode\n
+L:XMODEM_POLLED_INIT S:Initializing Xmodem for polling mode\n
+L:PACKET_RECEIVED_BEFORE_READY S:A packet was received, before xmodem library was ready to receive the packet\n
+component:CONFIG_COMPONENT
+L:CONFIG_SAVE_VARIABLE S:Config_ArbitrateSetVar Source = %d, variable = %d, data = 0x%x\n
+L:CONFIG_LOAD_VARIABLE S:Config_ArbitrateGetVar Variable = %d, data = 0x%x, result = %d\n
+L:NVM_CONFIG_STATUS_USB2_ON S:*** USB 2 Enabled ***\n
+L:NVM_CONFIG_STATUS_USB2_OFF S:*** USB 2 DISABLED ***\n
+L:NVM_CONFIG_STATUS_USB3_ON S:*** USB 3 Enabled ***\n
+L:NVM_CONFIG_STATUS_USB3_OFF S:*** USB 3 DISABLED ***\n
+L:NVM_CONFIG_STATUS_ISO_ON S:*** USB 3 ISO ENABLED ***\n
+L:NVM_CONFIG_STATUS_ISO_OFF S:*** USB 3 ISO Bypassed ***\n
+L:NVM_CONFIG_STATUS_ISO_CTRL_ON S:*** USB 3 ISO Control Transfer ENABLED ***\n
+L:NVM_CONFIG_STATUS_ISO_CTRL_OFF S:*** USB 3 ISO Control Transfer DISABLED ***\n
+L:NVM_CONFIG_STATUS_DP_ON S:*** Display Port Enabled ***\n
+L:NVM_CONFIG_STATUS_DP_OFF S:*** Display Port DISABLED ***\n
+L:NVM_CONFIG_STATUS_LANPORT_ON S:*** Lan Port Enabled ***\n
+L:NVM_CONFIG_STATUS_LANPORT_OFF S:*** Lan Port DISABLED ***\n
+L:NVM_CONFIG_STATUS_RS232_ON S:*** RS232 Enabled ***\n
+L:NVM_CONFIG_STATUS_RS232_OFF S:*** RS232 DISABLED ***\n
+L:CONFIG_LOAD_FAIL S:Atmel Featurebits load fail. All features are disabled\n
+L:CONFIG_EVENT S:Configuration Event [%d] Generated. \n
+L:CONFIG_FEATURE_CONTROL S:FeatureControl USB:[%x] DP:[%x] MISC:[%x]\n
+L:CONFIG_FEATURE_ENABLE S:FeatureEnable USB:[%x] DP:[%x] MISC:[%x]\n
+L:CONFIG_FEATURE_MASK S:FeatureMask USB:[%x] DP:[%x] MISC:[%x]\n
+L:CONFIG_HW_NOT_SUPPORTED S:HW doesn't support the SW features: [%x]\n
+L:CONFIG_GET_DATA_PTR_FAILED S:Config_GetDataPointer: No pointer for the given variabled\n
+component:FLASH_DATA_COMPONENT
+L:FLASH_STORAGE_INIT S:Flash storage initialization - status %d active block %d used space = 0x%x\n
+L:NO_BLOCK_TO_SWAP_TO S:No erased block to swap to\n
+L:LOAD_VARIABLE_FROM_FLASH S:load variable %d from FLASH, data end at: 0x%x\n
+L:FOUND_VARIABLE_FROM_FLASH S:Found variable %d from FLASH, size = %d data = 0x%x\n
+L:FOUND_VARIABLE_MORE_INFO S:Variable at address 0x%08x\n
+L:LOAD_VAR_INVALID_SIZE S:Variable has wrong size: expected: %d actual %d key:%d\n
+L:LOAD_VAR_INVALID_HEADER_ADDRESS S:Variable has wrong header: address 0x%x\n
+L:LOAD_VAR_INVALID_HEADER S:Variable has wrong header: [0]: 0x%x [1] 0x%x data[0] 0x%x\n
+L:FLASH_ERASE_SIZE_WRONG S:Erase region should be a multiple of 4, instead is 0x%x\n
+L:CLEAR_VAR_AREA S:clear region should be a multiple of 4, instead is address % bytes 0x%x\n
+L:FLASH_GET_BLOCK_INFO S:Block number %d address 0x%x status %d\n
+L:FLASH_STORAGE_ERASE S:Flash Vars successfully erased\n
+L:FLASH_STORAGE_HEADER_ZEROED S:*** Flash Vars zeroed header data found, from address %x, %d bytes\n
+L:FLASH_STORAGE_HEADER_ERASED S:*** Flash Vars erased header data found, from address %x, %d bytes\n
+L:FLASH_STORAGE_HEADER_INVALID S:*** Flash Vars invalid header data found, from address %x, %d bytes\n
+L:FLASH_ERASE_COMPLETE S:Chip Erase Complete\n
+L:FLASH_WRITE_BYTES S:Offset%d %x %d\n
+L:FLASH_DISPLAY_SECTOR_PROTECTED S:Protected:   %x to %x\n
+L:FLASH_DISPLAY_SECTOR_UNPROTECTED S:Unprotected: %x to %x\n
+L:FLASH_DEVICE_ID S:Flash ID: %x\n
+L:FLASH_WRITE_PROTECT_FAIL S:Address %x protected\n
+L:FLASH_GOLDEN_PROTECT S:Golden Area Protect\n
+L:FLASH_SECTORS_UNPROTECT S:Flash unprotected\n
+L:FLASH_SECTOR_ERASED S:Flash sector %x erased\n
+L:FLASH_GOLDEN_PROTECT_PASS S:Golden Protected %d\n
+L:FLASH_GLOBAL_FREEZE S:GLOBAL Freeze %d\n
+L:FLASH_LOCK_BITS S:Lock Bits %d\n
+L:FLASH_WRITE_TIMEOUT S:Flash write timeout at line :%d\n
+L:FLASH_WRITE_BIG S:Flash write too big number: %d\n
+component:TIMING_COMPONENT
+L:TIMING_MAXIMUM_HANDLERS_REGISTERED S:The maximum number of timers are already registered %d callback 0x%x\n
+L:TIMING_NUMBER_HANDLERS_REGISTERED S:Timer registered,  %d of %d callback 0x%x\n
+L:SHOW_TIMERS1 S:Timer 0x%x has callback 0x%x, and is set for %d ms\n
+L:START_TIMER S:Starting timer 0x%x\n
+L:STOP_TIMER S:Stopping timer 0x%x\n
+L:CHANGE_TIMEOUT S:Changing timer 0x%x timeout to %d ms\n
+L:NULL_TIMER_ARG_LINE S:Called with a NULL timer arg, at line %d\n
+L:TIMING_INTERNAL_STATE S:Internal state: lastIteration = %d, tickCounter = %d\n
+L:SHOW_TIMERS3 S:         is enabled %d, is periodic %d, set to expire at tick %d\n
+L:UTIL_PROFILE_TIMING_TABLE_HEADER S:TimerNo | Shortest (usec) | Longest (usec)\n
+L:UTIL_PROFILE_TIMING_TABLE_ENTRY S:%7d | %15d | %d \n
+L:UTIL_PROFILE_TIMING_INVALID_TIMER_START S:Attempt to start invalid profile timer value: %d\n
+L:UTIL_PROFILE_TIMING_INVALID_TIMER_STOP S:Attempt to stop invalid profile timer value: %d\n
+L:UTIL_PROFILE_TIMING_TABLE_LAST_HDR S:Last %d entries: \n
+L:UTIL_PROFILE_TIMING_TABLE_LAST_LIST_ENTRY S:%d \n
+L:UTIL_PROFILE_WATCHDOG_TIMEOUT S: ** ** Watchdog Timeout! Time %d ms exceeded by %d us\n
+component:CALLBACK_COMPONENT
+L:CALLBACK_INVALID_TYPE S:Callback invalid type %d callback[index].type %d at line = %d\n
+L:CALLBACK_INVALID_HANDLE S:Callback invalid handle, tokens mismatched, at line = %d\n
+L:CALLBACK_INVALID_REMOVE S:Callback invalid remove at line = %d type %d index %d\n
+L:CALLBACK_FREE_LIST_EMPTY S:Callback free stack is empty\n
+L:CALLBACK_SINGLE_RUN_CANCELED S:New single run callback command canceled\n
+component:STATS_MON_COMPONENT
+L:STATS_MON_MAX_REGISTERED S:Max number of stat groups registered for monitoring\n
+L:STATS_MON_GROUP_REGISTERED S:Stat group registered %d of %d, number of stats %d\n
+L:STATS_MON_GROUP_STILL_PROCESSING S:Stat group %d still being processed when interval expired\n
+L:STATS_MON_GROUP_NOT_REGISTERED S:Stats group not registered %08x!?\n
+L:STATS_MON_GROUP_PRINT_STATS S:****Printing non-zero statistics: ****\n
+L:STATS_MON_PRINT_REG_VALUE S:Reg address %08x value %x\n
+L:STATS_MON_NO_PARAM S:Group has no parameters! \n
+L:STATS_MON_MULTIPLE_STAT S:Multiple Stats are running at the same time: %d \n
+component:EVENT_COMPONENT
+L:EVENT_INVALID_ACCESS S:Event invalid access at line = %d\n
+L:EVENT_NULL_HANDLER S:Event subscribe a null handler\n
+L:EVENT_HANDLER_MAX S:Exceed max number of handlers\n
+L:EVENT_NULL_CHECK_FUNCTION S:Event check event status function is null, event = %d\n
+L:EVENT_INVALID_DEQUEUE S:Event invalid dequeue\n
+L:EVENT_INVALID_POP S:Event invalid stack pop at line = %d\n
+L:EVENT_INVALID_PUSH S:Event invalid stack push at line = %d\n
+component:MAIN_LOOP_COMPONENT
+L:MAX_TIME S:Max task time: %d us\n
+L:MAX_TIME_DETAIL S:poll:%d, event and callback:%d\n
+L:RESET_STAT S:Reset Max task time\n
+component:ICMD_COMPONENT
+L:INVALID_HEADER S:Received 0x%x, when expecting an icmd header\n
+L:INVALID_COMPONENT S:Received %d, when expecting a component\n
+L:TOO_MANY_ARGS S:Too many args %d in icmd request\n
+L:CUROFFSET_CORRUPTED S:curOffset with value %d, is corrupt at line %d\n
+L:CALLING_HANDLER S:Calling function 0x%x, with 1st two args 0x%x, 0x%x\n
+L:RECVD_ICMD S:Received icmd for component %d, function %d, with %d arguments\n
+L:NO_ICMD_FCN_PTR_ARRAY S:No icmd function pointer array found for component %d\n
+L:ICMD_TIMEOUT S:icmd message timed out. Resetting receive buffer\n
+L:BASE_READ_MEM S:Read address 0x%x: value 0x%x\n
+L:BASE_WRITE_MEM S:Wrote address 0x%x: value 0x%x\n
+L:DEPRECATED_ICMD_TIMER_REGISTER_FAILURE S:Unable to register icmd timer\n
+L:ICMD_TIMER_NOT_REGISTERED S:ICmd timer is not register, did no one call ICMD_Init()?\n
+L:BASE_READ_MODIFY_WRITE S:Read-Modify-Write address 0x%x: Read value 0x%x, Write value 0x%x\n
+L:BASE_READ_MODIFY_WRITE_CONFLICT_MASKS S:Read-Modify-Write for address 0x%x has conflicting bits in set bitfields 0x%x and clear bitfields0x%x\n
+L:BASE_MODIFY_BITFIELD S:Modify bitfield for address 0x%x starting at position %i for width %i bits\n
+L:MODIFY_BITFIELD_RESULT S:Write value: 0x%x, Read value: 0x%x, New value 0x%x\n
+L:DUMP_MEMORY_ADDR_INVALID S:Address 0x%x is not a valid 32bit memory location\n
+L:DEPRECATED_ICMD S:This iCommand is no longer available\n
+L:BASE_READ_MEM16 S:Read address 0x%x: value 0x%x\n
+L:BASE_WRITE_MEM16 S:Wrote address 0x%x: value 0x%x\n
+L:BASE_READ_MODIFY_WRITE16 S:Read-Modify-Write address 0x%x: Read value 0x%x, Write value 0x%x\n
+L:BASE_READ_MODIFY_WRITE_CONFLICT_MASKS16 S:Read-Modify-Write for address 0x%x has conflicting bits in set bitfields 0x%x and clear bitfields0x%x\n
+L:JUNK_TIMER_EXPIRED_REENABLING_PROCESSING S:Junk timer expired.  Re-enabling processing of icmds\n
+component:TOP_COMPONENT
+L:BB_TOP_DRP_READ_INVALID_MASK S:Tried to read from more than one DRP bus at a time: drpEnMask = 0x%x\n
+L:BB_TOP_BAD_MUTEX_TOKEN S:Wrong IMutex token at line %d\n
+L:BB_TOP_DP_DRP_WRITE S:Wrote DRP address 0x%x with drpEnMask = 0x%x and write data = 0x%x\n
+L:BB_TOP_DP_DRP_READ S:Read DRP address 0x%x with drpEnMask = 0x%x: read data = 0x%x\n
+L:BB_TOP_DP_DRP_RMW1 S:RMWed DRP address 0x%x with drpEnMask = 0x%x, rmwMask = %d\n
+L:BB_TOP_DP_DRP_RMW2 S: and write data = 0x%x\n
+L:BB_TOP_DP_INVALID_DRP_READ S:Tried to read from more than one DRP bus at a time: drpEnMask = 0x%x\n
+L:BB_TOP_DP_INVALID_BANDWIDTH S:Invalid bandwidth setting %d at line %d\n
+L:BB_TOP_DP_INVALID_LANE_COUNT S:Invalid lane count setting %d at line %d\n
+L:BB_TOP_DP_TRANSCEIVER_CONFIG_VALUE_ERROR S:DP transceiver value error: bad value = 0x%x at line %d\n
+L:BB_TOP_DP_INVALID_MMCM_OUTPUT_FREQ S:Invalid MMCM output frequency: bw = %d\n
+L:BB_TOP_DP_INVALID_MMCM_OUTPUT_ENCODING S:Invalid MMCM output encoding: bw = %d, laneWidth = %d\n
+L:BB_TOP_DP_GTX_RESET_TOO_SLOW S:GTX took too long to come out of reset!\n
+L:BB_TOP_DP_GTP_RESET_TOO_SLOW S:GTP took too long to come out of reset! Waited for %d us\n
+L:BB_TOP_DP_SET_VOLTAGE_SWING S:Writing txDiffCtrl with 0x%x -> 0x%x\n
+L:BB_TOP_DP_SET_PREEMPHASIS S:Writing txPostCursor with 0x%x -> 0x%x\n
+L:BB_TOP_DP_PRECHARGE S:Pre-charging main link with txInhibit = %d, laneCount = %d\n
+L:BB_TOP_DP_INITIALIZING_DP_TRANSCEIVERS S:Initializing DP transceivers: bw = %d, lc = %d\n
+L:BB_TOP_DBGXX S:### DBG 0x%x, 0x%x\n
+L:BB_TOP_HOLD_GE_RESET S:Placing GE in reset mode\n
+L:BB_TOP_GE_RUN S:Placing GE in run mode\n
+L:BB_TOP_GE_BOOTLOADER S:Placing GE in bootloader mode\n
+L:BB_TOP_GE_NULL_RUN_WATCHDOG_CALLBACK S:GE Run Wathdog happen without Callback\n
+L:BB_TOP_GE_NULL_RESET_WATCHDOG_CALLBACK S:GE Reset Wathdog happen without Callback\n
+L:BB_TOP_GE_RUN_AGAIN S:Set GE Run mode again while it's alreay in Run mode\n
+L:BB_TOP_DRP_WRITE_WAIT_TIMEOUT S:DRP Write wait for busses idle timeout\n
+L:BB_TOP_LINK_LOCK_WAIT_TIMEOUT S:Link PLL lock wait timeout\n
+L:BB_TOP_GTP_OUT_OF_RESET S:GTP is out of reset\n
+L:BB_TOP_DP_FRQ S:DP Freq took %d us to measure count = %d\n
+L:BB_TOP_DP_MMCM_LOCK S:DP MMCM Lock done took %d us to lock\n
+L:BB_TOP_DP_FRQ_TIMEOUT S:DP Freq measure time out\n
+L:BB_TOP_SSC_DETECTION S:***** SSC Detection = %d *****\n
+L:BB_TOP_READ_ICAP S:Read Reg = %x Val = %x\n
+L:BB_TOP_WRITE_ICAP S:Write Reg = %x Val = %x\n
+L:BB_TOP_READ_USER_REG S:User Reg = %x\n
+L:BB_TOP_WRITE_USER_REG S:Write User Reg = %x\n
+L:BB_TOP_FRQ_RUNNING S: Frequency detection still running\n
+L:BB_TOP_DRP_WRITE_TIMER_OVER S:DRP Set Timerover. drp_en_mask = 0x%x\n
+L:BB_TOP_DRP_READ_TIME_OVER S:DRP Read Timerover. Line at: %d\n
+L:BB_TOP_DP_SOURCE_RST S:DP Source Reset :%d (1:Apply reset, 0: Clear reset)\n
+L:BB_TOP_DP_NO_SYMBOL_LOCK S:No symbol lock. align status: 0x%x\n
+L:BB_TOP_CORE_TYPE S:The core type is -%d\n
+component:UTIL_COMPONENT
+L:UTIL_IMUTEX_HELD_ACQUIRE S:Attempted to acquire a held iMutex\n
+L:UTIL_IMUTEX_UNHELD_RELEASE S:Attempted to release an unheld iMutex\n
+L:UTIL_IMUTEX_BAD_TOKEN S:Attempted to release a held iMutex with an invalid token\n
+L:UTIL_IMUTEX_BAD_PARAM S:Bad parameter passed to UTIL_IMutexWait; mutex = 0x%x, f = 0x%x\n
+L:UTIL_IMUTEX_NO_FREE_CALLBACK_SLOTS S:Ran out of callback slots! Mutex addr = 0x%x, function addr = 0x%x\n
+component:ILOG_COMPONENT
+L:INVALID_COMPONENT S:ILOG Received an invalid component %d from line %d\n
+L:INVALID_LEVEL S:ILOG Received an invalid logging level %d from line %d\n
+L:TOO_MANY_ARGS S:ILOG Received too many args, %d to be exact\n
+L:GET_LEVEL S:Component %d is at logging level %d\n
+L:COPROC_REG_DUMP S:Sparc reg dump:           TBR = 0x%x, PSR = 0x%x, WIM = 0x%x\n
+L:GLOBAL_REG_DUMP S:Sparc reg dump:           %%g5 = 0x%x, %%g6 = 0x%x, %%g7 = 0x%x\n
+L:MISC_REG_DUMP S:Sparc reg dump:           current window %d\n\n
+L:SEPERATOR_LOG S:\n\n---------- Active windows follow ----------\n\n
+L:GEN_REG_DUMP0 S:Sparc reg dump for win %2d:%%l0 = 0x%x, %%l1 = 0x%x\n
+L:GEN_REG_DUMP1 S:Sparc reg dump:           %%l2 = 0x%x, %%l3 = 0x%x, %%l4 = 0x%x\n
+L:GEN_REG_DUMP2 S:Sparc reg dump:           %%l5 = 0x%x, %%l6 = 0x%x, %%l7 = 0x%x\n
+L:GEN_REG_DUMP3 S:Sparc reg dump for win %2d:%%i0 = 0x%x, %%i1 = 0x%x\n
+L:GEN_REG_DUMP4 S:Sparc reg dump:           %%i2 = 0x%x, %%i3 = 0x%x, %%i4 = 0x%x\n
+L:GEN_REG_DUMP5 S:Sparc reg dump:           %%i5 = 0x%x, %%i6 = 0x%x, %%i7 = 0x%x\n
+L:SET_BLOCKING_MODE S:Setting ilog blocking mode\n
+L:CLEAR_BLOCKING_MODE S:Clearing ilog blocking mode\n
+L:ILOG_SET_TIMESTAMP S:Setting timestamp to value %d, offset needed %d\n
+L:TEST_ASSERT S:Icmd run for testing asserts.  Args are %d, %d, %d\n
+L:LOG_LEVEL_CHANGED S:Changing logging level for component %d to level %d\n
+L:INVALID_COMPONENT_ILOG_MAIN S:ILOG main logging function received an invalid component %d\n
+L:INVALID_LEVEL_ILOG_MAIN S:ILOG main logging function received an invalid logging level %d\n
+L:ILOG_MSG_DROPPED S:ILOG message dropped\n
+L:ASSERT_STATUS1 S:Assert status: preAssertHookFunction is 0x%x, postAssertHookFunction is 0x%x\n
+L:ASSERT_STATUS2 S:Assert status: no asserts have occured\n
+L:ASSERT_STATUS3 S:Assert status: %d asserts have occured, last assert message was:\n
+component:UART_COMPONENT
+L:PACKETIZE_MAX_RESPONSE_HANDLERS_REGISTERED S:The maximum number of response handlers are already registered\n
+L:PACKETIZE_MAX_CHANNEL_HANDLERS_REGISTERED S:The maximum number of channel rx handlers are already registered\n
+L:PACKETIZE_RESPONSE_NOT_FREED S:Could not free the given response ID %d\n
+L:PACKETIZE_RX_HANDLER_NOT_FOUND S:Receive packet handler not found clientId=%d, uartPort=%d, responseID=%d\n
+L:UART_ILLEGAL_PORT_GIVEN S:The port given was not Blackbird or GE\n
+L:PACKETIZE_RX_HANDLER_FOUND S:Receive packet handler is found uartPort=%d, clientId=%d, responseID=%d\n
+L:INVALID_CHANNEL_ID_GIVEN S:Got an invalid channel id 0x%x\n
+L:PACKETIZE_RX_MAX_HANDLERS S:maxHandlers=%d\n
+L:PACKETIZE_RX_FOUND S:Receive packet handler found at line = %d\n
+L:PACKETIZE_UART_FIFO_FULL S:UART FIFO full for port %d\n
+L:UART_HIGH_SPEED S:UART IsHighSpeed = %d\n
+L:PKT_TIMEOUT_BB S:#### Pkt Timeout BB port ^^^ RxPktState: %d, Offset: %d\n
+L:PKT_TIMEOUT_GE S:#### Pkt Timeout GE port ^^^ RxPktState: %d, Offset: %d, bytes Rx: %d\n
+L:PKT_IN_FIFO S:#### Fifo[0x%x]: 0x%x\n
+L:PKT_TIMEOUT_FINISH S:#### finished!!!\n
+L:BB_OVERRUN S:UART BB: HW overrun:%d, SW overrun:%d\n
+L:GE_OVERRUN S:UART GE: HW overrun:%d, SW overrun:%d\n
+L:PACKETIZE_NO_RX_HANDLER S:No RX Handler for PORT ID %d\n
+L:PACKETIZE_BUFFER_COPY_FAIL S:Buffer copy failed: Port %d Size %d\n
+L:MAX_UART_RX_TIME S:Max Rx Time %d\n
+L:AVG_UART_RX_TIME S:Average Rx Time %d\n
+component:CORE_COMPONENT
+L:BB_UART_VERSION S:BB UART Version: %d.%d.%d\n
+L:I2C_MASTER_VERSION S:I2C MASTER Version: %d.%d.%d\n
+L:I2C_SLAVE_VERSION S:I2C SLAVE Version: %d.%d.%d\n
+L:MDIO_MASTER_VERSION S:MDIO MASTER Version: %d.%d.%d\n
+L:SPI_FLASH_VERSION S:SPI FLASH Version: %d.%d.%d\n
+L:GPIO_VERSION S:GPIO Version: %d.%d.%d\n
+L:LINK_LAYER_TX_VERSION S:LINK LAYER TX Version: %d.%d.%d\n
+L:LINK_LAYER_RX_VERSION S:LINK LAYER RX Version: %d.%d.%d\n
+L:LAYER3_TX_VERSION S:LAYER3 TX Version: %d.%d.%d\n
+L:LAYER3_RX_VERSION S:LAYER3 RX Version: %d.%d.%d\n
+L:MCA_VERSION S:MCA Version: %d.%d.%d\n
+L:ULP_CORE_VERSION S:ULP CORE Version: %d.%d.%d\n
+L:ULP_PHY_VERSION S:ULP PHY Version: %d.%d.%d\n
+L:DP_SINK_MAIN_VERSION S:DP SINK MAIN Version: %d.%d.%d\n
+L:DP_SINK_HPD_VERSION S:DP SINK HPD Version: %d.%d.%d\n
+L:DP_SOURCE_MAIN_VERSION S:DP SOURCE MAIN Version: %d.%d.%d\n
+L:DP_SOURCE_HPD_VERSION S:DP SOURCE HPD Version: %d.%d.%d\n
+L:XMII_ADAPTER_VERSION S:XMII ADAPTER Version: %d.%d.%d\n
+L:GE_ADAPTER_VERSION S:GE ADAPTER Version: %d.%d.%d\n
+L:GE_UART_VERSION S:GE UART Version: %d.%d.%d\n
+L:RS232_EXTENDER_VERSION S:RS232 EXTENDER Version: %d.%d.%d\n
+L:TOP_VERSION S:TOP Version: %d.%d.%d\n
+L:CORE_VERSION S:CORE Version: %d.%d.%d\n

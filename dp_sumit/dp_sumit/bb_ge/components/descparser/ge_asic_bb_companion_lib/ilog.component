@@ -1,0 +1,25 @@
+component:DESCPARSER_COMPONENT
+L:INIT_PARSE_RESPONSE_PACKET S:ParsePktInit(%d, %d)\n
+L:PARSE_PACKET S:ParsePkt(%d, %d, %2x)\n
+L:PARSE_PACKET_IGNORED_BYTE S:ParsePkt(%d) Ignoring %2x at %d)\n
+L:PARSE_DEV_DESC S:ParsePktDescriptor\n
+L:PARSE_CFG_DESC S:ParsePktConfiguration\n
+L:PARSE_CFG_DESC_LENGTHS S:ParsePktConfiguration(%d, %d)\n
+L:PARSE_INTF_DESC S:ParsePktInterface\n
+L:PARSE_EP_DESC S:ParsePktEndpoint\n
+L:PARSE_EP_DESC_UPDATING S:ParsePktEndpoint: Updating Endpoint\n
+L:PARSE_UNKNOWN_DESC S:ParsePktUnknown\n
+L:PARSE_UNKOWN_DESC_TYPE S:ParsePktUnknown: type is %d\n
+L:PROCESS_PACKET_DONE_BYTES S:ProcPkt: end of function: now processed %d\n
+L:SHORT_PACKET S:ProcPkt: Short packet received\n
+L:ALL_DATA_SENT S:ProcPkt: Send back all requested data to end of frame\n
+L:EOF_MORE_DATA_EXPECTED S:ProcPkt: End of Frame: more data expected\n
+L:EXTRA_DATA S:ProcPkt: Device%d sent back more data(%d) than requested(%d)\n
+L:MASS_STORAGE_BULK_ONLY_INTF_FOUND S:Found a mass storage bulk only intf on usb logical address %d\n
+L:MSA_REJ_EP_SAME_DIR S:MSA rejected as the 2 endpoints are the same direction, logical %d ep1 %d, ep2 %d\n
+L:MSA_GOOD_TO_GO S:MSA Good to go, on logical %d, with endpoints %d IN and %d OUT\n
+L:MSA_PARSING_ENABLED S:MSA parsing enabled\n
+L:MSA_PARSING_DISABLED S:MSA parsing disabled\n
+L:ICMD_NO_WORK_ON_REX S:This icmd is only for a Lex, this is a Rex\n
+L:USB_VERSION S:USB Version is %d.%d.%d\n
+L:PACKET_INFO S:Sending packet to parser. Size of frame is %d. Data parsed so far is %d. Expected transfer size is %d\n

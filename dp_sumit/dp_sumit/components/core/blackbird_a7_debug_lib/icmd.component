@@ -1,0 +1,2 @@
+component:CORE_COMPONENT
+F:BBCORE_printHWModuleVersion H:"Show FPAGE modules' version" A:void

@@ -1,0 +1,36 @@
+component:CLM_COMPONENT
+L:REG_FAILURE S:Failure verifying registers\n
+L:CLM_INVALID_XUSB_CHIP_MINOR_REVISION_ERROR_LOG S:Invalid minor XUSB chip revision, expecting 0x%x, read 0x%x\n
+L:CLM_INVALID_XUSB_CHIP_MAJOR_REVISION_ERROR_LOG S:Invalid major XUSB chip revision, expecting 0x%x, read 0x%x\n
+L:INVALID_CFG S:Invalid configuration %d selected\n
+L:CFG_TBI S:Configuring CLM for TBI\n
+L:CFG_GMII S:Configuring CLM for GMII\n
+L:CFG_MII S:Configuring CLM for MII\n
+L:CFG_CLEI8 S:Configuring CLM for CLEI8\n
+L:CFG_CLEI1 S:Configuring CLM for CLEI1\n
+L:CFG_CLEI2 S:Configuring CLM for CLEI2\n
+L:CFG_CLEI4 S:Configuring CLM for CLEI4\n
+L:VPORT_ENABLE S:VPort Enable %d\n
+L:VPORT_DISABLE S:VPort Disable %d\n
+L:VPORT_POSTPONE_ENABLE S:VPort Enable %d is being postponed\n
+L:RX_STATS_REG S:RX Stats reg is 0x%x\n
+L:TX_STATS_REG S:TX Stats reg is 0x%x\n
+L:INVALID_VPORT_STATE_TRANSITION S:Invalid vport state transition for vport %d from state %d to state %d\n
+L:ENABLE_DEFAULT_INTERRUPTS S:Enabling default interrupts\n
+L:CLM_LEX_VPORT_DST S:Setting LEX vport %d destination MAC address: MSW=0x%x LSW=0x%x\n
+L:CLM_VPORT_ALREADY_ENABLED S:Trying to enable VPort %d, but it is already enabled\n
+L:ADJUST_TX_WAIT_4_RESP_THRES_OLD S:Adjust TX wait for response threshold FROM GMII=%d, MII=%d\n
+L:ADJUST_TX_WAIT_4_RESP_THRES_NEW S:Adjust TX wait for response threshold TO GMII=%d, MII=%d\n
+L:CLM_SPECTAREG_READ S:Read CLM Register: 0x%x, Value: 0x%x\n
+L:ADJUST_TX_WAIT_4_RESP_LIMIT_OLD S:Adjust TX wait for response limit FROM limit=%d, CntThresh=%d\n
+L:ADJUST_TX_WAIT_4_RESP_LIMIT_NEW S:Adjust TX wait for response limit TO limit=%d, CntThresh=%d\n
+L:INVALID_ICMD_SETTING S:Invalid icmd setting %d\n
+L:ADJUST_TX_QID_THRESH S:Adjust TX QID THRESH from %d to %d\n
+L:CLM_SETTING_SRC_MAC_ADDR S:Setting the source MAC address to MSW=0x%x, LSW=0x%x\n
+L:REDUCED_PIN_COUNT S:Setting reduced pin count mode\n
+L:CFG_LTBI S:Configuring CLM for LTBI\n
+L:PHY_SPEED S:Measured PHY speed is: %dMHz, Timeout value is: %dus, Register=%d\n
+L:ETHERTYPE_LOG S:Wrote CLM.EtherType with value 0x%x\n
+L:READ_UNINITIALIZED_LINK_TYPE S:Tried to use uninitialized link type %d\n
+L:CLM_UNEXPECTED_CTM_INPUT_CLK_FREQ S:CTM input clock frequency is unexpected, frequency in MHz = %d\n
+L:CTM_INPUT_CLK_FREQ S:The CTM input reference clock frequency is %d MHz\n

@@ -1,0 +1,11 @@
+component:FLASH_DATA_COMPONENT
+F:flashDataWriteByte H:"arg1 = address, arg2 = 1 byte value" A:uint32_t, uint8_t
+F:flashDataEraseFlashVars H:"Erases all the storage vars" A:void
+F:setMmuAddressOffsetIcmd H:"Set Read Address Offset" A:uint32_t
+F:flashDataEraseBlockIcmd H:"Erase block, arg0 = address" A:uint32_t
+F:flashProtectGoldenIcmd H:"Protect Golden Image Area" A:void
+F:FLASHRAW_Unprotect H:"Flash unprotected" A:void
+F:flashReadChipSectorProtectionIcmd H:"Display chip protection" A:void
+F:flashDeviceIcmd H:"Display chip ID" A:void
+F:flashEraseCurrentIcmd H:"Erase the Current Image" A:void
+F:flashFillCurrentIcmd H:"Fill the Current Image image area arg1 = val" A:uint8_t

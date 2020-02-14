@@ -1,0 +1,13 @@
+component:EEPROM_COMPONENT
+L:EEPROM_BUSY S:There is already an EEPROM access in progress.\n
+L:EEPROM_ADDRESS_EXCEEDS_CAPACITY S:An attempt was made to access EEPROM page %d which exceeds capacity %d.\n
+L:ICMD_EEPROM_READ_FAILED S:Failed reading external eeprom\n
+L:ICMD_EEPROM_WRITE_FAILED S:Failed writing to external eeprom\n
+L:ICMD_EEPROM_WRITE_SUCCESSFUL S:Write to EEPROM is complete\n
+L:ICMD_EEPROM_WRONG_READ_LENGTH S:Expected %d bytes, read %d bytes instead\n
+L:ICMD_PAGE_VALUES S:Byte %d: Value: 0x%x\n
+L:ICMD_WORD_VALUES S:Word %d: Value: 0x%x\n
+L:ICMD_INVALID_PAGE S:Page %d is outside the valid range of 0 to %d\n
+L:EEPROM_INITIALIZATION_STARTING S:Beginning EEPROM initialization\n
+L:EEPROM_READ_SUBMIT S:Submitting an EEPROM read of page %d with pageData pointing at 0x%x\n
+L:EEPROM_WRITE_SUBMIT S:Submitting an EEPROM write of page %d with pageData pointing at 0x%x\n

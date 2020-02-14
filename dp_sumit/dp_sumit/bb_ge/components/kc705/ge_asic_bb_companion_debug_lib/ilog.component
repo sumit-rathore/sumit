@@ -1,0 +1,6 @@
+component:KC705_COMPONENT
+L:DE_JITTER_WRITE_FAILED S:Setting De-jitter chip failed at line: %d\n
+L:DEJITTER_CHIP_CONFIGURED S:De-jitter chip was configured to 1 ppm\n
+L:I2C_WRITE_FAILED S:I2C Write failed\n
+L:I2C_READ_FAILED S:I2C Read failed\n
+L:I2C_RANDOM_READ_1BYTE_RESP S:I2C Random 1 Byte Read: Register: 0x%x; Value: 0x%x\n

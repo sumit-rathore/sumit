@@ -1,0 +1,7 @@
+This test has a very long string about novels stored in it.  When it begins it intializes the uart.  It then prints out the string, byte by byte, through the uart.  A user of this test should varify that the string received through the uart is :
+
+"A novel is a long narrative in literary prose. The genre has historical roots both in the fields of the medieval and early modern romance and in the tradition of the novella. The latter supplied the present generic term in the late 18th century.\r\n"
+"\r\n"
+"The further definition of the genre is historically difficult. Most of the criteria (such as artistic merit, fictionality, a design to create an epic totality of life, a focus on history and the individual) are arbitrary and designed to raise further debates over qualities that will supposedly separate great works of literature both from a wider and lower \"trivial\" production and from the field of true histories. To become part of the literary production novels have to address the discussion of art. The construction of the narrative, the plot, the way reality is created in the work of fiction, the fascination of the character study, and the use of language are usually discussed to show a novel's artistic merits. Most of these requirements were introduced in the 16th and 17th centuries, in order to give fiction a justification outside the field of factual history. The individualism of the presentation makes the personal memoir and the autobiography the two closest relatives among the genres of modern histories. \r\n"
+
+Which is the string that is sent.

@@ -1,0 +1,3 @@
+C:ATMEL_CRYPTO_COMPONENT
+R:sendAtmelCmd C:atmel_icmdSend L:READ_BYTE A:0
+R:sendAtmelCmdWithData C:atmel_icmdWithDataWordSend L:READ_BYTE A:0

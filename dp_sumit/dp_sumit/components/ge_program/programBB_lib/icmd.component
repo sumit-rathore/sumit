@@ -1,0 +1,3 @@
+component:GE_PROGRAM_COMPONENT
+F:GE_PROGRAM_geEnterReset H:"GE Enter Reset" A:void
+F:GE_PROGRAM_geEnterBootloaderMode H:"GE Enter Bootloader Mode" A:void

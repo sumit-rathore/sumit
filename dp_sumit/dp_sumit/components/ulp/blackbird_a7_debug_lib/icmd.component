@@ -1,0 +1,10 @@
+component:ULP_COMPONENT
+F:ULP_enableUsb2 H:"Enable  USB 2" A:void
+F:ULP_disableUsb2 H:"Disable USB 2" A:void
+F:ULP_enableUsb3 H:"Enable  USB 3" A:void
+F:ULP_disableUsb3 H:"Disable USB 3" A:void
+F:ULP_enableUsb3ResetOnDisconnect H:"Enable  USB 3 reset on disconnect" A:void
+F:ULP_disableUsb3ResetOnDisconnect H:"Disable USB 3 reset on disconnect" A:void
+F:ULP_LexHostUsb3RestartRequest H:"Restart USB3" A:void
+F:UlpLexUsb3LexOnlyResetStart H:"Restart USB3 Lex only" A:void
+F:ULP_LexHostCycleRequest H:"Disconnect/reconnect USB2&3" A:void

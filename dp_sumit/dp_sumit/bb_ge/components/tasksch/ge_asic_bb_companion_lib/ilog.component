@@ -1,0 +1,13 @@
+component:TASKSCH_COMPONENT
+L:INIT_TASK S:Initializing task 0x%x, with task function 0x%x and with arg 0x%x\n
+L:INIT_TASK2 S:Setting task 0x%x to allowInterrupts %d, and priority %d\n
+L:TOO_MANY_TASKS S:Too many tasks are being allocated\n
+L:INVALID_PRIORITY_INIT S:Invalid priority %d in initialization\n
+L:INVALID_PRIORITY_SETTING S:Invalid priority %d\n
+L:START S:Starting task 0x%x\n
+L:STOP S:Stopping task 0x%x\n
+L:CHANGE_TASK_ARG S:Changing task 0x%x arg to 0x%x\n
+L:CHANGE_TASK_PRIORITY S:Changing task 0x%x priority to 0x%x\n
+L:VIEW_TASK1 S:Task 0x%x: runs task function 0x%x, with arg 0x%x\n
+L:VIEW_TASK2 S:Task 0x%x: runs at priority %d, with allowInterrupts %d\n
+L:VIEW_TASK4 S:Task 0x%x: is at index %d, & has onRunQueue set to %d\n

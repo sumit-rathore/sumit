@@ -1,0 +1,32 @@
+component:TOPLEVEL_COMPONENT
+L:SW_VERSION S:----> ICRON Technologies Blackbird Project - Software version v%d.%d.%d <----\n
+L:CHIP_REV S:Chip ID is Major 0x%x, Minor 0x%x, Debug 0x%x\n
+L:UNIT_TYPE S:The unit type is %d\n
+L:PLATFORM_ID S:The platform ID is %d\n
+L:VARIANT_ID S:The variant ID is %d\n
+L:BUILD_DATE S:SW build was done on %04d/%02d/%02d\n
+L:BUILD_TIME S:SW build was done at %02d:%02d:%02d\n
+L:UNEXPECTED_TRAP S:Unexpected trap occurred, PC was 0x%x, nPC was 0x%x\n
+L:UNEXPECTED_TRAP_WITHOUT_WINDOWS S:Unexpected trap occurred without spare windows, last i7 is 0x%x, previous was 0x%x, previous to that was 0x%x\n
+L:AHB_FAILURE_TRAP S:AHB FAILURE TRAP Status: 0x%x, Failure Addr: 0x%x\n
+L:INST_FETCH_ERR_TRAP S:INSTRUCTION FETCH ERROR\n
+L:ILLEGAL_INST_ERR_TRAP S:ILLEGAL INSTRUCTION ERROR\n
+L:PRIV_INST_ERR_TRAP S:PRIVILEGED INSTRUCTION ERROR\n
+L:INST_ACC_ERR_TRAP S:INSTRUCTION ACCESS ERROR\n
+L:UNIMPL_FLUSH_TRAP S:UNIMPLEMENTED FLUSH\n
+L:DATA_ACC_ERR_TRAP S:DATA ACCESS ERROR\n
+L:DIV_BY_ZERO_ERR_TRAP S:DIVIDE BY ZERO ERROR\n
+L:TRAP_END_POINT S:Trap Handler End Point. Sparc TBR=0x%x\n
+L:DATA_ACC_EXC_TRAP S:DATA ACCESS EXCEPTION PC was 0x%x, nPC was 0x%x\n
+L:DATA_STORE_ERR_TRAP S:DATA STORE ERROR TRAP PC was 0x%x, nPC was 0x%x\n
+L:ATMEL_NOT_PROGRAM S:Atmel is not programmed (%d). All features will be disabled soon\n
+L:ATMEL_VALIDATION_FAIL S:Atmel ATSHA204 Vaildation Failed, ATMEL_processState = %d, ErrCnt = %d \n
+L:KILL_SYSTEM S:**** SYSTEM SHUTDOWN ****\n
+L:TIMER1_ERROR S:Timer1 does not work !!\n
+L:TEST_CPUCOM_LEX_RECV S:Received message count %d. Elapsed time since last tx=%d us.\n
+L:TEST_CPUCOM_REX_SEND S:Received and Sending message count %d\n
+L:HW_SW_VER_MISMATCH S:FPGA / FIRMWARE version doesn't match!\n
+L:TOPLEVEL_READ_INREVIUM_LMK_REG S:Readback from LMK reg %d: 0x%x\n
+L:TOPLEVEL_BOARD_INFO S:Current Core Board is A0%d\n
+L:DEBUG_ASSERT_BB S:CAUSE AN ASSERT IN BB FOR DEBUGGING\n
+L:PLUG_TEST_IMAGE S:  *** This is a PlugTest Image ***\n

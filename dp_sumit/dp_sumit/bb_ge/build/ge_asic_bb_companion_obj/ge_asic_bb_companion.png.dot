@@ -1,0 +1,162 @@
+digraph {
+flash_writer [label="flash_writer"]
+gebb_comm [label="gebb_comm"]
+xmodem [label="xmodem"]
+linkmgr [label="linkmgr"]
+pll_xusb [label="pll_xusb"]
+sys_ctrl_q [label="sys_ctrl_q"]
+devmgr [label="devmgr"]
+descparser [label="descparser"]
+lexulm [label="lexulm"]
+vhub [label="vhub"]
+rexulm [label="rexulm"]
+netcfg [label="netcfg"]
+net [label="net"]
+topology [label="topology"]
+rexsch [label="rexsch"]
+storage [label="storage"]
+flash_data [label="flash_data"]
+eeprom [label="eeprom"]
+atmel_crypto [label="atmel_crypto"]
+kc705 [label="kc705"]
+xcsr [label="xcsr"]
+xlr [label="xlr"]
+xrr [label="xrr"]
+clm [label="clm"]
+ulm [label="ulm"]
+grg [label="grg"]
+random [label="random"]
+spectareg [label="spectareg"]
+crc [label="crc"]
+sha2 [label="sha2"]
+flash_writer -> crc
+flash_writer -> grg
+flash_writer -> xmodem
+flash_writer -> flash_data
+gebb_comm -> crc
+gebb_comm -> linkmgr
+gebb_comm -> clm
+gebb_comm -> lexulm
+gebb_comm -> rexulm
+gebb_comm -> xcsr
+gebb_comm -> grg
+linkmgr -> net
+linkmgr -> vhub
+linkmgr -> rexulm
+linkmgr -> lexulm
+linkmgr -> pll_xusb
+linkmgr -> clm
+linkmgr -> xcsr
+linkmgr -> xlr
+linkmgr -> flash_data
+linkmgr -> storage
+linkmgr -> grg
+pll_xusb -> grg
+pll_xusb -> flash_data
+pll_xusb -> storage
+pll_xusb -> atmel_crypto
+sys_ctrl_q -> lexulm
+sys_ctrl_q -> descparser
+sys_ctrl_q -> devmgr
+sys_ctrl_q -> topology
+sys_ctrl_q -> xcsr
+sys_ctrl_q -> xlr
+sys_ctrl_q -> ulm
+sys_ctrl_q -> grg
+sys_ctrl_q -> random
+devmgr -> topology
+devmgr -> xcsr
+devmgr -> ulm
+descparser -> linkmgr
+descparser -> clm
+descparser -> flash_data
+descparser -> storage
+descparser -> topology
+descparser -> xcsr
+descparser -> grg
+lexulm -> gebb_comm
+lexulm -> devmgr
+lexulm -> topology
+lexulm -> xcsr
+lexulm -> grg
+lexulm -> ulm
+lexulm -> clm
+lexulm -> storage
+lexulm -> xlr
+lexulm -> flash_data
+vhub -> lexulm
+vhub -> devmgr
+vhub -> topology
+vhub -> flash_data
+vhub -> storage
+vhub -> xcsr
+vhub -> ulm
+vhub -> xlr
+rexulm -> rexsch
+rexulm -> ulm
+rexulm -> xcsr
+rexulm -> clm
+rexulm -> grg
+rexulm -> storage
+rexulm -> xrr
+rexulm -> flash_data
+netcfg -> net
+netcfg -> linkmgr
+netcfg -> clm
+netcfg -> topology
+netcfg -> xcsr
+netcfg -> flash_data
+netcfg -> storage
+netcfg -> grg
+net -> linkmgr
+net -> clm
+net -> xcsr
+net -> flash_data
+net -> storage
+net -> random
+net -> grg
+topology -> xcsr
+topology -> flash_data
+topology -> storage
+topology -> xlr
+topology -> grg
+topology -> spectareg
+rexsch -> flash_data
+rexsch -> storage
+rexsch -> xcsr
+rexsch -> xrr
+rexsch -> ulm
+storage -> atmel_crypto
+storage -> eeprom
+storage -> grg
+storage -> flash_data
+storage -> crc
+flash_data -> grg
+eeprom -> grg
+atmel_crypto -> grg
+atmel_crypto -> crc
+atmel_crypto -> sha2
+kc705 -> grg
+xcsr -> gebb_comm
+xcsr -> xlr
+xcsr -> grg
+xcsr -> flash_data
+xcsr -> storage
+xcsr -> spectareg
+xlr -> spectareg
+xrr -> spectareg
+clm -> flash_data
+clm -> storage
+clm -> grg
+clm -> xcsr
+clm -> spectareg
+clm -> random
+ulm -> grg
+ulm -> flash_data
+ulm -> storage
+ulm -> random
+ulm -> spectareg
+grg -> spectareg
+random -> flash_data
+random -> storage
+}

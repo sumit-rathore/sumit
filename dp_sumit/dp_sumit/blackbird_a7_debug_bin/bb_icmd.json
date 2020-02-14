@@ -1,0 +1,2360 @@
+{
+    "TOPLEVEL_COMPONENT": {
+        "PrintSwVersion": {
+            "function_index": 0,
+            "icmd_help_string": "Print out the current software version and build date/time",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "Badger_getDeviceInfo": {
+            "function_index": 1,
+            "icmd_help_string": "Print out the device info for Badger",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "bb_top_TriStateMdioMdc": {
+            "function_index": 2,
+            "icmd_help_string": "Tristate Mdio MDC - motherboard only",
+            "icmd_argument_type": [
+                "bool"
+            ]
+        },
+        "TOPLEVEL_DEBUG_ASSERT": {
+            "function_index": 3,
+            "icmd_help_string": "Test Assert",
+            "icmd_argument_type": [
+                "void"
+            ]
+        }
+    },
+    "ULP_COMPONENT": {
+        "ULP_enableUsb2": {
+            "function_index": 0,
+            "icmd_help_string": "Enable  USB 2",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "ULP_disableUsb2": {
+            "function_index": 1,
+            "icmd_help_string": "Disable USB 2",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "ULP_enableUsb3": {
+            "function_index": 2,
+            "icmd_help_string": "Enable  USB 3",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "ULP_disableUsb3": {
+            "function_index": 3,
+            "icmd_help_string": "Disable USB 3",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "ULP_enableUsb3ResetOnDisconnect": {
+            "function_index": 4,
+            "icmd_help_string": "Enable  USB 3 reset on disconnect",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "ULP_disableUsb3ResetOnDisconnect": {
+            "function_index": 5,
+            "icmd_help_string": "Disable USB 3 reset on disconnect",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "ULP_LexHostUsb3RestartRequest": {
+            "function_index": 6,
+            "icmd_help_string": "Restart USB3",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "UlpLexUsb3LexOnlyResetStart": {
+            "function_index": 7,
+            "icmd_help_string": "Restart USB3 Lex only",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "ULP_LexHostCycleRequest": {
+            "function_index": 8,
+            "icmd_help_string": "Disconnect/reconnect USB2&3",
+            "icmd_argument_type": [
+                "void"
+            ]
+        }
+    },
+    "RS232_COMPONENT": {
+        "RS232_enable": {
+            "function_index": 0,
+            "icmd_help_string": "Enable arg0 > 1",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        }
+    },
+    "COMMAND_COMPONENT": {
+        "CMD_programGE": {
+            "function_index": 0,
+            "icmd_help_string": "Program GE - for testing",
+            "icmd_argument_type": [
+                "void"
+            ]
+        }
+    },
+    "LAN_PORT_COMPONENT": {
+        "LANPORT_enable": {
+            "function_index": 0,
+            "icmd_help_string": "Enable  LAN Port",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "LANPORT_disable": {
+            "function_index": 1,
+            "icmd_help_string": "Disable LAN Port",
+            "icmd_argument_type": [
+                "void"
+            ]
+        }
+    },
+    "DP_COMPONENT": {
+        "DP_LEX_SetEdidTypeIcmd": {
+            "function_index": 0,
+            "icmd_help_string": "0 = Monitor, 1 = 640_480, 2 = 800_600, 3 = 1024_768, 4 = 1280_720, 5 = 1280_768,             6 = 1280_800, 7 = 1280_1024, 8 = 1360_768, 9 = 1440_900, 10 = 1600_900,             11 = 1680_1050, 12 = 1920_1080, 13 = 1920_200, 14 = 2560_1600, 15 = 3840_2160",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        },
+        "DP_LEX_SetBpcModeIcmd": {
+            "function_index": 1,
+            "icmd_help_string": "6 = 6bpc, 8 = 8bpc, 10 = 10bpc, 12 = 12bpc",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        },
+        "DP_LEX_ReadEdidValues": {
+            "function_index": 2,
+            "icmd_help_string": "Dumps the current EDID values used by LEX",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "DP_LEX_SscAdvertiseEnable": {
+            "function_index": 3,
+            "icmd_help_string": "Arg0 = 0: Disable SSC, 1: Enable SSC, 2: pass Monitor's value",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        },
+        "DP_LEX_YCbCrDisableIcmd": {
+            "function_index": 4,
+            "icmd_help_string": "Arg0 = 0: Disable YCbCr, 1: Pass through YCbCr",
+            "icmd_argument_type": [
+                "bool"
+            ]
+        },
+        "DP_LEX_ReLinkTrainIcmd": {
+            "function_index": 5,
+            "icmd_help_string": "This icmd will initiate re-linkTraining at LEX",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "DP_LEX_VS_PE_icmd": {
+            "function_index": 6,
+            "icmd_help_string": "Arg0 = Voltage Swing, Arg1 = Pre emphasis, write 0xff for regular link training",
+            "icmd_argument_type": [
+                "uint8_t",
+                "uint8_t"
+            ]
+        },
+        "DP_LEX_SetPowerDownWaitTime": {
+            "function_index": 7,
+            "icmd_help_string": "Arg0 = Time out value in sec",
+            "icmd_argument_type": [
+                "uint32_t"
+            ]
+        },
+        "DP_AUX_LexErrorRecovery": {
+            "function_index": 8,
+            "icmd_help_string": "Arg0 = 0: Restart Stream Extractor, 1: Program/Validate/Enable encoder",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        },
+        "DP_LEX_SetCompressionRatioIcmd": {
+            "function_index": 9,
+            "icmd_help_string": "Valid Arguments are 0 = default, 2 = 2.4, 4 = 4, 6 = 6. Default is 4",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        },
+        "DP_REX_NativeAuxReadIcmd": {
+            "function_index": 10,
+            "icmd_help_string": "Arg0 = DPCD address, Arg1 = Num Bytes to read (Max = 16)",
+            "icmd_argument_type": [
+                "uint32_t",
+                "uint8_t"
+            ]
+        },
+        "DP_REX_NativeAuxWriteIcmd": {
+            "function_index": 11,
+            "icmd_help_string": "Arg0 = DPCD address, Arg1 = Data to write(Max = 1 byte)",
+            "icmd_argument_type": [
+                "uint32_t",
+                "uint8_t"
+            ]
+        },
+        "DP_REX_I2cAuxReadIcmd": {
+            "function_index": 12,
+            "icmd_help_string": "Arg0 = I2C address, Arg1 = Num Bytes to read (Max = 16)",
+            "icmd_argument_type": [
+                "uint32_t",
+                "uint8_t"
+            ]
+        },
+        "DP_REX_I2cAuxWriteIcmd": {
+            "function_index": 13,
+            "icmd_help_string": "Arg0 = I2C address",
+            "icmd_argument_type": [
+                "uint32_t"
+            ]
+        },
+        "DP_REX_MccsRequest": {
+            "function_index": 14,
+            "icmd_help_string": "Sends MCCS capabilities request to monitor and reads reply",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "DP_REX_ReadMccs": {
+            "function_index": 15,
+            "icmd_help_string": "Read MCCS and VCP table",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "DP_REX_ChangeMvidIcmd": {
+            "function_index": 16,
+            "icmd_help_string": "Arg0 = Mvid value, it will send black and then after 15ms resume video again with new MVID)",
+            "icmd_argument_type": [
+                "uint32_t"
+            ]
+        },
+        "DP_REX_SetNewAluCalculation": {
+            "function_index": 17,
+            "icmd_help_string": "Use new ALU calculation, 0:disable(old ALU), 1:enable(New ALU, default) ",
+            "icmd_argument_type": [
+                "bool"
+            ]
+        },
+        "DP_REX_MccsEnable": {
+            "function_index": 18,
+            "icmd_help_string": "Read MCCS, 0: Don't read MCCS(Default), 1: Read MCCS ",
+            "icmd_argument_type": [
+                "bool"
+            ]
+        },
+        "DP_AUX_RexErrorRecovery": {
+            "function_index": 19,
+            "icmd_help_string": "Attempt Rex Error recovery",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "DP_REX_SscAdvertiseEnable": {
+            "function_index": 20,
+            "icmd_help_string": "Arg0 = 0: Disable SSC, 1: Enable SSC, 2: pass Monitor's value",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        },
+        "DP_REX_CheckNewControlValues": {
+            "function_index": 21,
+            "icmd_help_string": "Executes Syschronization flow as in page 126",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "DP_REX_TestSync": {
+            "function_index": 22,
+            "icmd_help_string": "Executes Syschronization flow as in page 126",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "DP_REX_ProgramAlu": {
+            "function_index": 23,
+            "icmd_help_string": "Programs the ALU values",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "DP_REX_MccsVcpRequestIcmd": {
+            "function_index": 24,
+            "icmd_help_string": "Arg0 = Opcode",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        },
+        "DP_REX_EdidReadIcmd": {
+            "function_index": 25,
+            "icmd_help_string": "Read Monitor Edid",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "DP_REX_ReadDpcdCap": {
+            "function_index": 26,
+            "icmd_help_string": "Prints first 16 bytes of the DPCD capabilities",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "DP_REX_ChangeLastTu": {
+            "function_index": 27,
+            "icmd_help_string": "Change last Tu size to 8 when less than 4",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "DP_SetBwLc": {
+            "function_index": 28,
+            "icmd_help_string": "Arg0 = Bandwidth (default : 0), Arg1 = Lane Count (default : 0)\\nBW : 0x06, 0x0A, 0x14, 0x1E\\nLC : 0x1, 0x2, 0x4",
+            "icmd_argument_type": [
+                "uint8_t",
+                "uint8_t"
+            ]
+        },
+        "DP_PmLogState": {
+            "function_index": 29,
+            "icmd_help_string": "Log the current AUX policy maker FSM state. For debugging.",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "DP_SetIsolateEnable": {
+            "function_index": 30,
+            "icmd_help_string": "Arg0 = 0: Disable isolate, Other: Enable isolate",
+            "icmd_argument_type": [
+                "bool"
+            ]
+        },
+        "DP_PmPostEvent": {
+            "function_index": 31,
+            "icmd_help_string": "Post an event to Policy maker state. EVENT number, Enter 17 for ERROR_EVENT only for REX",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        },
+        "DP_LtPostEvent": {
+            "function_index": 32,
+            "icmd_help_string": "Post an event to Link Training state. EVENT number",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        },
+        "DP_enableDp": {
+            "function_index": 33,
+            "icmd_help_string": "Enable  DP",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "DP_disableDp": {
+            "function_index": 34,
+            "icmd_help_string": "Disable DP",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "DP_DumpFlashVarsIcmd": {
+            "function_index": 35,
+            "icmd_help_string": "Dump the current status of DP flash vars",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "DP_MCAUpDnIcmd": {
+            "function_index": 36,
+            "icmd_help_string": "Arg0 = 0: MCA down, 1: MCA up",
+            "icmd_argument_type": [
+                "bool"
+            ]
+        },
+        "DP_SetAudioState": {
+            "function_index": 37,
+            "icmd_help_string": "Arg0 = 0: Enable SDP and send audio state to Rex, 1 : Disable SDP",
+            "icmd_argument_type": [
+                "bool"
+            ]
+        },
+        "DP_RestartDPStateMachine": {
+            "function_index": 38,
+            "icmd_help_string": "Restarts the DP state machine",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "DP_EnableAuxTraffic": {
+            "function_index": 39,
+            "icmd_help_string": "Printing of AUX traffic over UART 0: Disable, 1: Enable",
+            "icmd_argument_type": [
+                "bool"
+            ]
+        },
+        "DP_IcmdPrintAllStatusFlag": {
+            "function_index": 40,
+            "icmd_help_string": "Print all the status and state flags",
+            "icmd_argument_type": [
+                "void"
+            ]
+        }
+    },
+    "DP_STREAM_COMPONENT": {
+        "DP_STREAM_GetVideoInfoIcmd": {
+            "function_index": 0,
+            "icmd_help_string": "Prints out the video information",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "DP_STREAM_SdpStatsIcmd": {
+            "function_index": 1,
+            "icmd_help_string": "Prints out the DP SDP stats",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "DP_STREAM_freqMeasureIcmd": {
+            "function_index": 2,
+            "icmd_help_string": "Measure DP clock",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "DP_STREAM_RexEnableAudioIcmd": {
+            "function_index": 3,
+            "icmd_help_string": "Enables audio on REX",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "DP_STREAM_LexPrintErrCount": {
+            "function_index": 4,
+            "icmd_help_string": "Prints all the error count\\n",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "DP_STREAM_LexResetIdlePatternCnt": {
+            "function_index": 5,
+            "icmd_help_string": "Resets idle pattern counter",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "DP_STREAM_RexSetAdjustWidthOffset": {
+            "function_index": 6,
+            "icmd_help_string": "Set dp_width_total_minus/plus_offset0/1. arg0:-off1, 1:+off1, 2:-off0, 3:+off0)",
+            "icmd_argument_type": [
+                "uint8_t",
+                "uint8_t",
+                "uint8_t",
+                "uint8_t"
+            ]
+        }
+    },
+    "DP_AUX_COMPONENT": {},
+    "LINKMGR_COMPONENT": {
+        "LINKMGR_comLinkEnableIcmd": {
+            "function_index": 0,
+            "icmd_help_string": "COM Link Disable (0) or Enable (>0)",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        },
+        "LINKMGR_comLinkTxPacketIcmd": {
+            "function_index": 1,
+            "icmd_help_string": "COM Link test packet send",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "LINKMGR_phyEnableIcmd": {
+            "function_index": 2,
+            "icmd_help_string": "PHY link Disable (0) or Enable (>0)",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        },
+        "LINKMGR_phyToggleIcmd": {
+            "function_index": 3,
+            "icmd_help_string": "PHY link toggle",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "LinkMgrSetLinkTo5GIcmd": {
+            "function_index": 4,
+            "icmd_help_string": "Set link to 5G",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "LinkMgrSetLinkTo10GIcmd": {
+            "function_index": 5,
+            "icmd_help_string": "Set link to 10G",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "LINKMGR_phyLinkDownErrorDetected": {
+            "function_index": 6,
+            "icmd_help_string": "Disable MAC/MCA and Restart Aquantia/Fiber link",
+            "icmd_argument_type": [
+                "void"
+            ]
+        }
+    },
+    "XAUI_COMPONENT": {
+        "Xaui_ResetBuffers": {
+            "function_index": 0,
+            "icmd_help_string": "Reset RXAUI elasticity buffers",
+            "icmd_argument_type": [
+                "void"
+            ]
+        }
+    },
+    "IDT_CLK_COMPONENT": {
+        "I2CD_icmdIdtGeneralRead": {
+            "function_index": 0,
+            "icmd_help_string": "IDT read register. arg: read register address",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        },
+        "I2CD_icmdIdtGeneralWrite": {
+            "function_index": 1,
+            "icmd_help_string": "IDT write register. arg1: write register address, arg2: value to write",
+            "icmd_argument_type": [
+                "uint8_t",
+                "uint8_t"
+            ]
+        },
+        "IDT_CLK_icmdSscControl": {
+            "function_index": 2,
+            "icmd_help_string": "IDT write register. arg1: 1 enable, 0 disable",
+            "icmd_argument_type": [
+                "bool"
+            ]
+        },
+        "IDT_CLK_SetRexSscSupport": {
+            "function_index": 3,
+            "icmd_help_string": "Arg0 = 0: Disable SSC support on Rex, Other: Enable SSC support on Rex",
+            "icmd_argument_type": [
+                "bool"
+            ]
+        }
+    },
+    "FIBER5G_COMPONENT": {
+        "Link_SL_5G_RestartRx": {
+            "function_index": 0,
+            "icmd_help_string": "Restart Fiber receive",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "I2CD_icmdSfpFinisarStartStatsMonitor": {
+            "function_index": 1,
+            "icmd_help_string": "SFP Start Stats Monitoring",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "I2CD_icmdSftFinisarStopStatsMonitor": {
+            "function_index": 2,
+            "icmd_help_string": "SFP Stop Stats Monitoring",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "I2CD_icmdSfpFinisarSetRxPowerThresholds": {
+            "function_index": 3,
+            "icmd_help_string": "Set SFP RxPower Lower and Upper Thresholds",
+            "icmd_argument_type": [
+                "uint16_t",
+                "uint16_t"
+            ]
+        },
+        "I2CD_icmdSfpFinisarSetRxPowerPollingPeriod": {
+            "function_index": 4,
+            "icmd_help_string": "Set SFP RxPower Polling Period",
+            "icmd_argument_type": [
+                "uint32_t"
+            ]
+        }
+    },
+    "I2CD_COMPONENT": {
+        "I2CD_icmdsGpioExpClearPin": {
+            "function_index": 0,
+            "icmd_help_string": "I2C GPIO Expander clear pin",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        },
+        "I2CD_icmdsGpioExpSetPin": {
+            "function_index": 1,
+            "icmd_help_string": "I2C GPIO Expander set pin",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        },
+        "I2CD_icmdsGpioExpReadPin": {
+            "function_index": 2,
+            "icmd_help_string": "I2C GPIO Expander read pin",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        },
+        "I2CD_icmdsGpioExpTest": {
+            "function_index": 3,
+            "icmd_help_string": "Enable I2C GPIO LED pattern to run",
+            "icmd_argument_type": [
+                "uint32_t"
+            ]
+        },
+        "I2CD_dp130GeneralRead": {
+            "function_index": 4,
+            "icmd_help_string": "Read DP130 Register",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        }
+    },
+    "LED_COMPONENT": {
+        "ledOnOff": {
+            "function_index": 0,
+            "icmd_help_string": "id: SYS=0 LINK=2 USB2=4 USB3=5 VIDEO=6, On=1 Off=0 ",
+            "icmd_argument_type": [
+                "uint8_t",
+                "bool"
+            ]
+        },
+        "ledSetMode": {
+            "function_index": 1,
+            "icmd_help_string": "LS_USER=0, LS_TEMP_FAULT=1, LS_DOWNLOAD=2, LS_VERI_FAULT=3, LS_TEMP_WARN_FPGA=4, LS_TEMP_WARN_AQUANTIA=5, LS_BOOTING=6, LS_OPERATION=7",
+            "icmd_argument_type": [
+                "uint8_t",
+                "bool"
+            ]
+        }
+    },
+    "GPIO_COMPONENT": {},
+    "EEPROM_COMPONENT": {
+        "EEPROM_icmdReadPage": {
+            "function_index": 0,
+            "icmd_help_string": "Reads the specified page. Args: Page to read, display as words as boolean",
+            "icmd_argument_type": [
+                "uint8_t",
+                "uint8_t"
+            ]
+        },
+        "EEPROM_icmdWritePage": {
+            "function_index": 1,
+            "icmd_help_string": "Writes the specified page. Args: page to write, msw0, lsw0, msw1, lsw1",
+            "icmd_argument_type": [
+                "uint8_t",
+                "uint32_t",
+                "uint32_t",
+                "uint32_t",
+                "uint32_t"
+            ]
+        }
+    },
+    "ATMEL_CRYPTO_COMPONENT": {
+        "atmel_icmdSend": {
+            "function_index": 0,
+            "ICMDRESP": {
+                "icmdresp_name": "sendAtmelCmd",
+                "ilog_name": "READ_BYTE",
+                "icmdresp_argument_index_list": [
+                    0
+                ]
+            },
+            "icmd_help_string": "Do an I2C transaction to the Atmel Chip. Args: opcode, param1, param2, resultReadSize, operationExecutionTime",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8",
+                "uint16",
+                "uint8",
+                "uint32"
+            ]
+        },
+        "atmel_icmdWithDataWordSend": {
+            "function_index": 1,
+            "ICMDRESP": {
+                "icmdresp_name": "sendAtmelCmdWithData",
+                "ilog_name": "READ_BYTE",
+                "icmdresp_argument_index_list": [
+                    0
+                ]
+            },
+            "icmd_help_string": "Do an I2C transaction to the Atmel Chip. Args: opcode, param1, param2, data, resultReadSize, operationExecutionTime",
+            "icmd_argument_type": [
+                "uint8",
+                "uint8",
+                "uint16",
+                "uint32",
+                "uint8",
+                "uint32"
+            ]
+        },
+        "atmel_setICmdWriteDataBuffer": {
+            "function_index": 2,
+            "ICMDRESP": {
+                "icmdresp_name": "setICmdWriteDataBuffer",
+                "ilog_name": "ATMEL_WRITE_DATA_BUFFER_DONE",
+                "icmdresp_argument_index_list": [
+                    0
+                ]
+            },
+            "icmd_help_string": "Writes one word into the 8 word wide data slot or OTP block write buffer. Args: wordOffset, word",
+            "icmd_argument_type": [
+                "uint8",
+                "uint32"
+            ]
+        },
+        "atmel_writeDataSlotFromBuffer": {
+            "function_index": 3,
+            "ICMDRESP": {
+                "icmdresp_name": "writeDataSlotFromBuffer",
+                "ilog_name": "ATMEL_WRITE_DATA_SLOT_OTP_BLOCK_ICMD_COMPLETE",
+                "icmdresp_argument_index_list": [
+                    0
+                ]
+            },
+            "icmd_help_string": "Writes the incrementally constructed data slot buffer to the given slot. Args: slotNumber",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        },
+        "atmel_encryptedWriteDataSlotFromBuffer": {
+            "function_index": 4,
+            "icmd_help_string": "Encrypted writes the incrementally constructed data slot buffer to the given slot. Args: slotNumber",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        },
+        "atmel_writeOtpBlockFromBuffer": {
+            "function_index": 5,
+            "ICMDRESP": {
+                "icmdresp_name": "writeOtpBlockFromBuffer",
+                "ilog_name": "ATMEL_WRITE_DATA_SLOT_OTP_BLOCK_ICMD_COMPLETE",
+                "icmdresp_argument_index_list": [
+                    0
+                ]
+            },
+            "icmd_help_string": "Writes the incrementally constructed OTP block buffer to the given slot. Args: slotNumber",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        },
+        "atmel_readConfigWordIcmd": {
+            "function_index": 6,
+            "ICMDRESP": {
+                "icmdresp_name": "readConfigWord",
+                "ilog_name": "ATMEL_READ_CONFIG_WORD_ICMD_COMPLETE",
+                "icmdresp_argument_index_list": [
+                    0
+                ]
+            },
+            "icmd_help_string": "Reads a single 32bit word from the configuration settings. Args: byteOffset - must be divisible by 4",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        },
+        "atmel_writeConfigWordIcmd": {
+            "function_index": 7,
+            "ICMDRESP": {
+                "icmdresp_name": "writeConfigWord",
+                "ilog_name": "ATMEL_WRITE_CONFIG_WORD_ICMD_COMPLETE",
+                "icmdresp_argument_index_list": [
+                    0
+                ]
+            },
+            "icmd_help_string": "Writes a single 32bit word to the configuration settings. Args: byteOffset - must be divisible by 4, data",
+            "icmd_argument_type": [
+                "uint8",
+                "uint32"
+            ]
+        },
+        "atmel_isChipLockedIcmd": {
+            "function_index": 8,
+            "icmd_help_string": "Checks to see if the config and data+otp zones are locked. Args:",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "atmel_lockConfigZoneIcmd": {
+            "function_index": 9,
+            "ICMDRESP": {
+                "icmdresp_name": "lockConfigZone",
+                "ilog_name": "ATMEL_LOCK_ZONE_ICMD_COMPLETE",
+                "icmdresp_argument_index_list": [
+                    0
+                ]
+            },
+            "icmd_help_string": "Locks the config zone of the authentication chip. Args: configuration zone CRC",
+            "icmd_argument_type": [
+                "uint16"
+            ]
+        },
+        "atmel_lockDataAndOtpZonesIcmd": {
+            "function_index": 10,
+            "ICMDRESP": {
+                "icmdresp_name": "lockDataAndOtpZonesIcmd",
+                "ilog_name": "ATMEL_LOCK_ZONE_ICMD_COMPLETE",
+                "icmdresp_argument_index_list": [
+                    0
+                ]
+            },
+            "icmd_help_string": "Locks the data and OTP zones of the authentication chip. Args: data and OTP zone CRC",
+            "icmd_argument_type": [
+                "uint16"
+            ]
+        },
+        "atmel_encryptedReadDataSlotIcmd": {
+            "function_index": 11,
+            "icmd_help_string": "Encrypted Reads a single 32 byte slot fromt the data zone",
+            "icmd_argument_type": [
+                "uint8"
+            ]
+        }
+    },
+    "UPP_COMPONENT": {},
+    "I2C_COMPONENT": {
+        "i2cStatus": {
+            "function_index": 0,
+            "icmd_help_string": "Check the I2C state of where it is in processing ASync operations",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "i2cWakeIcmd": {
+            "function_index": 1,
+            "icmd_help_string": "Wake the i2c bus,    arg0(device Addr), arg1(speed - 0:Slow 100khz, 1:Fast 400kHz, 2:Fast plus 1Mhz),    arg2(port - 8:core, 9:Motherboard, 0~7:Ti Switch)",
+            "icmd_argument_type": [
+                "uint8_t",
+                "uint8_t",
+                "uint8_t"
+            ]
+        },
+        "i2cReadIcmd": {
+            "function_index": 2,
+            "icmd_help_string": "Read from i2c,    arg0(device Addr), arg1(speed 0:Slow 100khz, 1:Fast 400kHz, 2:Fast plus 1Mhz),    arg2(port - 8:core, 9:Motherboard, 0~7:Ti Switch), arg3(number of bytes to read)",
+            "icmd_argument_type": [
+                "uint8_t",
+                "uint8_t",
+                "uint8_t",
+                "uint8_t"
+            ]
+        },
+        "i2cWriteIcmd": {
+            "function_index": 3,
+            "icmd_help_string": "Write to i2c Max 8 bytes,    arg0(device Addr), arg1(speed 0:Slow 100khz, 1:Fast 400kHz, 2:Fast plus 1Mhz),    arg2(port - 8:core, 9:Motherboard, 0~7:Ti Switch), arg3(data to write 4bytes)    arg4(data to write 4bytes), arg5(number of bytes to write)",
+            "icmd_argument_type": [
+                "uint8_t",
+                "uint8_t",
+                "uint8_t",
+                "uint32_t",
+                "uint32_t",
+                "uint8_t"
+            ]
+        },
+        "i2cWriteReadIcmd": {
+            "function_index": 4,
+            "icmd_help_string": "Write then read i2c.  SMBus read,    arg0(device Addr), arg1(speed 0:Slow 100khz, 1:Fast 400kHz, 2:Fast plus 1Mhz),    arg2(port - 8:core, 9:Motherboard, 0~7:Ti Switch), arg3(data to write 4bytes),    arg4(number of bytes to write), arg5(number of bytes to read)",
+            "icmd_argument_type": [
+                "uint8_t",
+                "uint8_t",
+                "uint8_t",
+                "uint32_t",
+                "uint8_t",
+                "uint8_t"
+            ]
+        },
+        "i2cWriteReadBlockIcmd": {
+            "function_index": 5,
+            "icmd_help_string": "Write then read i2c. SMBus read block,    arg0(device Addr), arg1(speed 0:Slow 100khz, 1:Fast 400kHz, 2:Fast plus 1Mhz),    arg2(port - 8:core, 9:Motherboard, 0~7:Ti Switch), arg3(data to write 4bytes)    arg4(number of bytes to write)",
+            "icmd_argument_type": [
+                "uint8_t",
+                "uint8_t",
+                "uint8_t",
+                "uint32_t",
+                "uint8_t"
+            ]
+        }
+    },
+    "I2C_SLAVE_COMPONENT": {
+        "I2C_Slave_StartTest": {
+            "function_index": 0,
+            "icmd_help_string": "I2C Slave Start Test (mode)",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        }
+    },
+    "MDIOD_COMPONENT": {},
+    "AQUANTIA_COMPONENT": {
+        "MDIOD_aquantiaReadJunctionTempIcmd": {
+            "function_index": 0,
+            "icmd_help_string": "Read Aquantia junction temperature",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaDblRdTest": {
+            "function_index": 1,
+            "icmd_help_string": "Read two Aquantia registers: devType, reg1, reg2",
+            "icmd_argument_type": [
+                "uint8_t",
+                "uint16_t",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_AquantiaStopTestPackets": {
+            "function_index": 2,
+            "icmd_help_string": "Stop Generating Aquantia Packets",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaReadVersion": {
+            "function_index": 3,
+            "icmd_help_string": "Show aquantia firmware version",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaShortReachMode": {
+            "function_index": 4,
+            "icmd_help_string": "Aquantia Read/Write Short Reach Mode(1.83.0): write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaTestModeControl": {
+            "function_index": 5,
+            "icmd_help_string": "Aquantia Read/Write Test Control Mode(1.84.F:D): write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaTransmitterTestFrequencies": {
+            "function_index": 6,
+            "icmd_help_string": "Aquantia Read/Write Transmitter test frequencies (1.84.C:A) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaFastRetrainAbility": {
+            "function_index": 7,
+            "icmd_help_string": "Aquantia Fast Retrain Ability (1.93.4) write?, writeValue",
+            "icmd_argument_type": [
+                ""
+            ]
+        },
+        "MDIOD_aquantiaFastRetrainEnable": {
+            "function_index": 8,
+            "icmd_help_string": "Aquantia Fast Retrain Enable (1.93.0) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaTestModeRate": {
+            "function_index": 9,
+            "icmd_help_string": "Aquantia Test Mode rate[1:0] (1.C412.F:E) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaPmaDigitalSystemLoopback": {
+            "function_index": 10,
+            "icmd_help_string": "Aquantia Digital System Loopback (1.D800.F) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaExternalPhyLoopback": {
+            "function_index": 11,
+            "icmd_help_string": "Aquantia External Phy Loopback (1.E400.F) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaEnableFastRetrain": {
+            "function_index": 12,
+            "icmd_help_string": "Enable Aquantia Fast Retrain (1.E400.2) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaForceMdiConfiguration": {
+            "function_index": 13,
+            "icmd_help_string": "Aquantia Force Mdi Configuration (1.E400.1) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaMdiConfiguration": {
+            "function_index": 14,
+            "icmd_help_string": "Aquantia Mdi Configuration(1.E400.0) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaPcsLoopback": {
+            "function_index": 15,
+            "icmd_help_string": "Aquantia PCS loopback(3.0.E) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantia10GSpeedSelection": {
+            "function_index": 16,
+            "icmd_help_string": "Aquantia 10G Speed Selection(3.0.5:2) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaTxScramblerDisable": {
+            "function_index": 17,
+            "icmd_help_string": "Aquantia Tx Scrambler Disable(3.D800.F) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaTxInjectCrcError": {
+            "function_index": 18,
+            "icmd_help_string": "Aquantia Tx Inject CRC Error(3.D800.E) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaTxInjectFrameError": {
+            "function_index": 19,
+            "icmd_help_string": "Aquantia Tx Inject Frame Error(3.D800.D) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaRxErrorLdpcFrameEnable": {
+            "function_index": 20,
+            "icmd_help_string": "Aquantia Enable Rx LDPC Error Frame(3.E400.0) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaRxLdpcDecoderControl": {
+            "function_index": 21,
+            "icmd_help_string": "Aquantia Control Rx LDPC Decoder (3.E400.F) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaXsLoopback": {
+            "function_index": 22,
+            "icmd_help_string": "Aquantia XS Loopback (4.0.E) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaReceiveTestPatternEnable": {
+            "function_index": 23,
+            "icmd_help_string": "Enable Aquantia Receive Test Pattern (4.19.2) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaPhyOperatingMode": {
+            "function_index": 24,
+            "icmd_help_string": "Aquantia Operating Phy Mode (4.C441.8:6) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaTestPatternSelect": {
+            "function_index": 25,
+            "icmd_help_string": "Aquantia Select Test Pattern (4.19.1:0) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaLoopbackControl": {
+            "function_index": 26,
+            "icmd_help_string": "Aquantia XS Loopback Control (4.C444.F:B) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaMdiPacketGeneration": {
+            "function_index": 27,
+            "icmd_help_string": "Aquantia XS MDI Packet Generation (4.C444.5) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaXsSystemIFPacketGeneration": {
+            "function_index": 28,
+            "icmd_help_string": "Aquantia XS I/F Packet Generation (4.C444.2) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaRate": {
+            "function_index": 29,
+            "icmd_help_string": "Aquantia XS Rate (4.C444.1:0) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaTestPatternForceError": {
+            "function_index": 30,
+            "icmd_help_string": "Aquantia Select Test Pattern Force Error (4.D800.F) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaTestPatternMode7ForceError": {
+            "function_index": 31,
+            "icmd_help_string": "Aquantia XS Test Pattern Mode 7 Force Error (4.D800.E) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaXAUIRxLocalFaultInjection": {
+            "function_index": 32,
+            "icmd_help_string": "Aquantia XAUI Rx Local Fault Injection (4.D800.D) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaTestPatternExtendedSelect": {
+            "function_index": 33,
+            "icmd_help_string": "Aquantia Test-Pattern Extended Select [1:0] (4.D800.C:B) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaTestPatternCheckEnable": {
+            "function_index": 34,
+            "icmd_help_string": "Aquantia Test Pattern Check Enable (4.D800.A) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaTestPatternCheckPoint": {
+            "function_index": 35,
+            "icmd_help_string": "Aquantia Test Pattern Check Point (4.D800.7) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaTestPatternInsertExtraIdles": {
+            "function_index": 36,
+            "icmd_help_string": "Aquantia Test Pattern Insert Extra Idles [2:0] (4.D801.E:C) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaTestPatternCheckSelect": {
+            "function_index": 37,
+            "icmd_help_string": "Aquantia Test Pattern Check Select [3:0] (4.D801.B:8) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaTestPatternChannelSelect": {
+            "function_index": 38,
+            "icmd_help_string": "Aquantia Test Pattern Channel Select [3:0] (4.D801.3:0) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaChannel0TestPatternErrorCounter": {
+            "function_index": 39,
+            "icmd_help_string": "Aquantia Channel 0 Test Pattern Error Counter [F:0] (4.D810.F:0) ",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaChannel1TestPatternErrorCounter": {
+            "function_index": 40,
+            "icmd_help_string": "Aquantia Channel 1 Test Pattern Error Counter [F:0] (4.D811.F:0) ",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaChannel2TestPatternErrorCounter": {
+            "function_index": 41,
+            "icmd_help_string": "Aquantia Channel 2 Test Pattern Error Counter [F:0] (4.D812.F:0)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaChannel3TestPatternErrorCounter": {
+            "function_index": 42,
+            "icmd_help_string": "Aquantia Channel 3 Test Pattern Error Counter [F:0] (4.D813.F:0) ",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaTestPatternMode7ErrorCounter": {
+            "function_index": 43,
+            "icmd_help_string": "Aquantia Test Pattern Mode 7 Error Counter [F:0] (4.D814.F:0)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaXauiTxErrorInjectionLaneSelect": {
+            "function_index": 44,
+            "icmd_help_string": "Aquantia XAUI Tx Error Injection Lane Select [2:0] (4.F800.F:D) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaXauiTxInjectSynchronizationError": {
+            "function_index": 45,
+            "icmd_help_string": "Aquantia XAUI Tx Inject Synchronization Error (4.F800.C) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaXauiTxInjectAlignmentError": {
+            "function_index": 46,
+            "icmd_help_string": "Aquantia XAUI Tx Inject Alignment Error (4.F800.B) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaXauiTxInjectCodeViolation": {
+            "function_index": 47,
+            "icmd_help_string": "Aquantia XAUI Tx Inject Code Violation (4.F800.A) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaXauiTx10BViolationCodeword": {
+            "function_index": 48,
+            "icmd_help_string": "Aquantia XAUI Tx 10B Violation Codeword [9:0] (4.F800.9:0) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaPhyXsSystemLoopbackPassThrough": {
+            "function_index": 49,
+            "icmd_help_string": "Aquantia PHY XS System Loopback Pass Through (4.F802.F) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaPhyXsSystemLoopbackEnable": {
+            "function_index": 50,
+            "icmd_help_string": "Aquantia PHY XS System Loopback Enable (4.F802.E) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaXauiTxLocalFaultInjection": {
+            "function_index": 51,
+            "icmd_help_string": "Aquantia XAUI Tx Local Fault Injection (4.F802.D) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaRestartAutonegotiation": {
+            "function_index": 52,
+            "icmd_help_string": "Aquantia Restart Autonegotiation (7.0.9) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaSerdesStartUpMode": {
+            "function_index": 53,
+            "icmd_help_string": "Aquantia SERDES Start-Up Mode [2:0] (7.C410.F:D) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaAutonegotiationTimeout": {
+            "function_index": 54,
+            "icmd_help_string": "Aquantia Autonegotiation Timeout [3:0] (7.C411.F:C) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaAutonegotiationTimeoutMod": {
+            "function_index": 55,
+            "icmd_help_string": "Aquantia Autonegotiation Timeout Mod (7.C411.B) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaLinkPartner1000BaseTFullDuplexAbility": {
+            "function_index": 56,
+            "icmd_help_string": "Aquantia Link Partner 1000BASE-T Full Duplex Ability (7.E820.F)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaLinkPartner1000BaseTHalfDuplexAbility": {
+            "function_index": 57,
+            "icmd_help_string": "Aquantia Link Partner 1000BASE-T Half Duplex Ability (7.E820.E)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaLinkPartnerShortReach": {
+            "function_index": 58,
+            "icmd_help_string": "Aquantia Link Partner Short-Reach (7.E820.D)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantialLinkPartnerAqRateDownshiftCapability": {
+            "function_index": 59,
+            "icmd_help_string": "Aquantia Link Partner AQRate Downshift Capability (7.E820.C) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaLinkPartner5G": {
+            "function_index": 60,
+            "icmd_help_string": "Aquantia Link Partner 5G (7.E820.B) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaLinkPartner2G": {
+            "function_index": 61,
+            "icmd_help_string": "Aquantia Link Partner 2.5G (7.E820.A) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaLinkPartner": {
+            "function_index": 62,
+            "icmd_help_string": "Aquantia Link Partner (7.E820.2)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaAutonegotiationProtocolErrorState": {
+            "function_index": 63,
+            "icmd_help_string": "Aquantia Autonegotiation Protocol Error State (7.E831.D)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaFlpIdleErrorState": {
+            "function_index": 64,
+            "icmd_help_string": "Aquantia FLP Idle Error State (7.E831.C)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaEnableDiagnostics": {
+            "function_index": 65,
+            "icmd_help_string": "Aquantia Enable Diagnostics (1E.C400.F) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaHighTempFailureThreshold": {
+            "function_index": 66,
+            "icmd_help_string": "Aquantia High Temp Failure Threshold [F:0] (1E.C421) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaLowTempFailureThreshold": {
+            "function_index": 67,
+            "icmd_help_string": "Aquantia Low Temp Failure Threshold [F:0] [F:0] (1E.C422) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaHighTempWarningThreshold": {
+            "function_index": 68,
+            "icmd_help_string": "Aquantia High Temp Warning Threshold [F:0] [1:0] (1E.C423) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaLowTempWarningThreshold": {
+            "function_index": 69,
+            "icmd_help_string": "Aquantia Low Temp Warning Threshold [F:0] (1E.C424) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaDiagnosticsSelect": {
+            "function_index": 70,
+            "icmd_help_string": "Aquantia Diagnostics Select (1E.C470.F) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaExtendedMdiDiagnosticsSelect": {
+            "function_index": 71,
+            "icmd_help_string": "Aquantia Extended MDI Diagnostics Select [1:0] (1E.C470.E:D) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaInitiateCableDiagnostics": {
+            "function_index": 72,
+            "icmd_help_string": "Aquantia Initiate Cable Diagnostics (1E.C470.4) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaEnableVddPowerSupplyTuning": {
+            "function_index": 73,
+            "icmd_help_string": "Aquantia Enable VDD Power Supply Tuning (1E.C472.E) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaTunableExternalVddPowerSupplyPresent": {
+            "function_index": 74,
+            "icmd_help_string": "Aquantia Tunable External VDD Power Supply Present (1E.C472.6)",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaExternalVddChangeRequest": {
+            "function_index": 75,
+            "icmd_help_string": "Aquantia External VDD Change Request [3:0] (1E.C472.5:2) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaEnable5ChannelRfiCancellation": {
+            "function_index": 76,
+            "icmd_help_string": "Aquantia Enable 5th Channel RFI Cancellation (1E.C472.0) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaRateTransitionRequest": {
+            "function_index": 77,
+            "icmd_help_string": "Aquantia Rate Transition Request [2:0] (1E.C473.A:8) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaTrainingSnr": {
+            "function_index": 78,
+            "icmd_help_string": "Aquantia Training SNR [7:0] (1E.C473.7:0) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaGlbLoopbackControl": {
+            "function_index": 79,
+            "icmd_help_string": "Aquantia Loopback Control [4:0] (1E.C47A.F:B) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaGlbMdiPacketGeneration": {
+            "function_index": 80,
+            "icmd_help_string": "Aquantia MDI Packet Generation (1E.C47A.5) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaGlbSystemIFPacketGeneration": {
+            "function_index": 81,
+            "icmd_help_string": "Aquantia System I/F Packet Generation (1E.C47A.3) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaGlobalReservedProvisioningRate": {
+            "function_index": 82,
+            "icmd_help_string": "Aquantia Rate [2:0] (1E.C47A.2:0) write?, writeValue",
+            "icmd_argument_type": [
+                "bool",
+                "uint16_t"
+            ]
+        },
+        "MDIOD_aquantiaPairAStatus": {
+            "function_index": 83,
+            "icmd_help_string": "Aquantia Pair A Status [2:0] (1E.C800.E:C)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaPairBStatus": {
+            "function_index": 84,
+            "icmd_help_string": "Aquantia Pair B Status [2:0] (1E.C800.A:8)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaPairCStatus": {
+            "function_index": 85,
+            "icmd_help_string": "Aquantia Pair C Status [2:0] (1E.C800.6:4)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaPairDStatus": {
+            "function_index": 86,
+            "icmd_help_string": "Aquantia Pair D Status [2:0] (1E.C800.2:0)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaStatusPairAReflection1": {
+            "function_index": 87,
+            "icmd_help_string": "Aquantia Pair A Reflection #1 [7:0] (1E.C801.F:8)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaStatusPairAReflection2": {
+            "function_index": 88,
+            "icmd_help_string": "Aquantia Pair A Reflection #2 [7:0] (1E.C801.7:0)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaImpulseResponseMsw": {
+            "function_index": 89,
+            "icmd_help_string": "Aquantia Impulse Response MSW [F:0] (1E.C802.F:0)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaStatusPairBReflection1": {
+            "function_index": 90,
+            "icmd_help_string": "Aquantia Pair B Reflection #1 [7:0] (1E.C803.F:8)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaStatusPairBReflection2": {
+            "function_index": 91,
+            "icmd_help_string": "Aquantia Pair B Reflection #2 [7:0] (1E.C803.7:0)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaImpulseResponseLsw": {
+            "function_index": 92,
+            "icmd_help_string": "Aquantia Impulse Response LSW [F:0] (1E.C804.F:0)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaStatusPairCReflection1": {
+            "function_index": 93,
+            "icmd_help_string": "Aquantia Pair C Reflection #1 [7:0] (1E.C805.F:8)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaStatusPairCReflection2": {
+            "function_index": 94,
+            "icmd_help_string": "Aquantia Pair C Reflection #2 [7:0] (1E.C805.7:0)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaStatusPairDReflection1": {
+            "function_index": 95,
+            "icmd_help_string": "Aquantia Pair D Reflection #1 [7:0] (1E.C807.F:8)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaStatusPairDReflection2": {
+            "function_index": 96,
+            "icmd_help_string": "Aquantia Pair D Reflection #2 [7:0] (1E.C807.7:0)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaProcessorIntensiveOperationInProgress": {
+            "function_index": 97,
+            "icmd_help_string": "Aquantia Processor Intensive MDIO Operation InProgress (1E.C831.F)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaCableLength": {
+            "function_index": 98,
+            "icmd_help_string": "Aquantia Cable Length [7:0] (1E.C884.7:0)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaGlbLoopbackStatus": {
+            "function_index": 99,
+            "icmd_help_string": "Aquantia Loopback Status [4:0] (1E.C888.F:B)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaMdiPacketGenerationStatus": {
+            "function_index": 100,
+            "icmd_help_string": "Aquantia MDI Packet Generation Status (1E.C888.5)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaGlbSystemIFPacketGenerationStatus": {
+            "function_index": 101,
+            "icmd_help_string": "Aquantia System I/F Packet Generation Status (1E.C888.3)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MDIOD_aquantiaGlobalReservedStatusRate": {
+            "function_index": 102,
+            "icmd_help_string": "Aquantia Rate [2:0] (1E.C888.2:0)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "AquantiaInNomalOperationIcmd": {
+            "function_index": 103,
+            "icmd_help_string": "Check Aquantia operation status",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "AQUANTIA_GeneralRead": {
+            "function_index": 104,
+            "icmd_help_string": "Read Aquantia Register. First arg: Device Type, Second arg: Register Address",
+            "icmd_argument_type": [
+                "uint8_t",
+                "uint16_t"
+            ]
+        },
+        "AQUANTIA_GeneralWrite": {
+            "function_index": 105,
+            "icmd_help_string": "Write Aquantia Register. First arg: Device Type, Second arg: Register Address, Third arg: Value to be Written",
+            "icmd_argument_type": [
+                "uint8_t",
+                "uint16_t",
+                "uint16_t"
+            ]
+        },
+        "AQUANTIA_SetWarningTemperature": {
+            "function_index": 106,
+            "icmd_help_string": "Set Aquantia Warning temperature that firmware checks by reading Temperature value",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        },
+        "AQUANTIA_SetShutdownTemperature": {
+            "function_index": 107,
+            "icmd_help_string": "Set Aquantia Shutdown temperature that firmware checks  by reading Temperature value",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        }
+    },
+    "MDIO_COMPONENT": {
+        "icmdMdioWrite": {
+            "function_index": 0,
+            "icmd_help_string": "Write to MDIO: 1st arg device, 2nd arg address, 3rd arg data, 4th arg mux port",
+            "icmd_argument_type": [
+                "uint8_t",
+                "uint8_t",
+                "uint16_t",
+                "uint8_t"
+            ]
+        },
+        "icmdMdioRead": {
+            "function_index": 1,
+            "ICMDRESP": {
+                "icmdresp_name": "mdioRead",
+                "ilog_name": "MDIO_ICMD_READ_DONE",
+                "icmdresp_argument_index_list": [
+                    0
+                ]
+            },
+            "icmd_help_string": "Read from MDIO: 1st arg device, 2nd arg address, 3rd arg mux port",
+            "icmd_argument_type": [
+                "uint8_t",
+                "uint8_t",
+                "uint8_t"
+            ]
+        },
+        "mdioStatus": {
+            "function_index": 2,
+            "icmd_help_string": "Check the MDIO state of where it is in processing ASync operations",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "icmdMdioIndirectWrite": {
+            "function_index": 3,
+            "icmd_help_string": "Indirect write to MDIO: 1st arg device, 2nd arg devtype, 3rd arg address, 4th arg data, 5th arg mux port",
+            "icmd_argument_type": [
+                "uint8_t",
+                "uint8_t",
+                "uint16_t",
+                "uint16_t",
+                "uint8_t"
+            ]
+        },
+        "icmdMdioIndirectRead": {
+            "function_index": 4,
+            "ICMDRESP": {
+                "icmdresp_name": "mdioIndirectRead",
+                "ilog_name": "MDIO_ICMD_READ_DONE",
+                "icmdresp_argument_index_list": [
+                    0
+                ]
+            },
+            "icmd_help_string": "Indirect read from MDIO: 1st arg device, 2nd arg devtype, 3rd arg address, 4th arg mux port",
+            "icmd_argument_type": [
+                "uint8_t",
+                "uint8_t",
+                "uint16_t",
+                "uint8_t"
+            ]
+        }
+    },
+    "MCA_COMPONENT": {
+        "PrintLatencyValueIcmd": {
+            "function_index": 0,
+            "icmd_help_string": "Prints the Latency Value of MCA_CHANNEL[0] if it is not zero",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "MCA_ChannelLinkUp": {
+            "function_index": 1,
+            "icmd_help_string": "Channel Link up (Channel number)",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        },
+        "MCA_ChannelLinkDn": {
+            "function_index": 2,
+            "icmd_help_string": "Channel Link dn (Channel number)",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        },
+        "MCA_IcmdPrintFifoLevel": {
+            "function_index": 3,
+            "icmd_help_string": "Set the time interval and start printing pfifo and nfifo levels (Set in msec)\\n Setting the interval to Zero will stop the timer",
+            "icmd_argument_type": [
+                "uint32_t"
+            ]
+        }
+    },
+    "CPU_COMM_COMPONENT": {},
+    "TEST_COMPONENT": {
+        "TEST_SystemDiagnosticIcmd": {
+            "function_index": 0,
+            "icmd_help_string": "Sets system diagnostic flash variable and performs diagnostic",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "TEST_ProtectFlashIcmd": {
+            "function_index": 1,
+            "icmd_help_string": "Protects the production fpga and micro firmware",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "TEST_ReadFlashProtectIcmd": {
+            "function_index": 2,
+            "icmd_help_string": "Reads the protected and unprotected area of the flash",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "TEST_SetTestStatusFlashVariableIcmd": {
+            "function_index": 3,
+            "icmd_help_string": "Arg0 : 0 (Clear Test Status in Flash), 1 (Sets Test Status in Flash)",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        },
+        "TEST_GetTestStatusFlashVariableIcmd": {
+            "function_index": 4,
+            "icmd_help_string": "Reads Test Status bit from Flash",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "TEST_GetFpgaOCStatusIcmd": {
+            "function_index": 5,
+            "icmd_help_string": "Reads DP Over current status pin",
+            "icmd_argument_type": [
+                "void"
+            ]
+        }
+    },
+    "CONFIG_COMPONENT": {
+        "Configuration_ShowFeaturebits": {
+            "function_index": 0,
+            "icmd_help_string": "Show Feature status",
+            "icmd_argument_type": [
+                "void"
+            ]
+        }
+    },
+    "FLASH_DATA_COMPONENT": {
+        "flashDataWriteByte": {
+            "function_index": 0,
+            "icmd_help_string": "arg1 = address, arg2 = 1 byte value",
+            "icmd_argument_type": [
+                "uint32_t",
+                "uint8_t"
+            ]
+        },
+        "flashDataEraseFlashVars": {
+            "function_index": 1,
+            "icmd_help_string": "Erases all the storage vars",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "setMmuAddressOffsetIcmd": {
+            "function_index": 2,
+            "icmd_help_string": "Set Read Address Offset",
+            "icmd_argument_type": [
+                "uint32_t"
+            ]
+        },
+        "flashDataEraseBlockIcmd": {
+            "function_index": 3,
+            "icmd_help_string": "Erase block, arg0 = address",
+            "icmd_argument_type": [
+                "uint32_t"
+            ]
+        },
+        "flashProtectGoldenIcmd": {
+            "function_index": 4,
+            "icmd_help_string": "Protect Golden Image Area",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "FLASHRAW_Unprotect": {
+            "function_index": 5,
+            "icmd_help_string": "Flash unprotected",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "flashReadChipSectorProtectionIcmd": {
+            "function_index": 6,
+            "icmd_help_string": "Display chip protection",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "flashDeviceIcmd": {
+            "function_index": 7,
+            "icmd_help_string": "Display chip ID",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "flashEraseCurrentIcmd": {
+            "function_index": 8,
+            "icmd_help_string": "Erase the Current Image",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "flashFillCurrentIcmd": {
+            "function_index": 9,
+            "icmd_help_string": "Fill the Current Image image area arg1 = val",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        }
+    },
+    "RANDOM_COMPONENT": {},
+    "XADC_COMPONENT": {
+        "XADC_getVoltageIcmd": {
+            "function_index": 0,
+            "icmd_help_string": "Get XADC Voltages",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "XADC_getFpgaTempIcmd": {
+            "function_index": 1,
+            "icmd_help_string": "Get FPGA Temperature",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "XADC_setFpgaWarningTemperature_2": {
+            "function_index": 2,
+            "icmd_help_string": "Set FPGA Temperature Warning Threshold for -2 board",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        },
+        "XADC_setFpgaWarningTemperature_3": {
+            "function_index": 3,
+            "icmd_help_string": "Set FPGA Temperature Warning Threshold for -3 board",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        },
+        "XADC_setFpgaShutdownTemperature_2": {
+            "function_index": 4,
+            "icmd_help_string": "Set FPGA Temperature Shutdown Threshold for -2 board",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        },
+        "XADC_setFpgaShutdownTemperature_3": {
+            "function_index": 5,
+            "icmd_help_string": "Set FPGA Temperature Shutdown Threshold for -3 board",
+            "icmd_argument_type": [
+                "uint8_t"
+            ]
+        }
+    },
+    "STATS_MON_COMPONENT": {
+        "STATSMON_PrintStatsCmd": {
+            "function_index": 0,
+            "icmd_help_string": "Print all non zero stats",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "STATSMON_ClearAllStatsCmd": {
+            "function_index": 1,
+            "icmd_help_string": "Clear all stats",
+            "icmd_argument_type": [
+                "void"
+            ]
+        }
+    },
+    "TIMING_COMPONENT": {
+        "showTimers": {
+            "function_index": 0,
+            "icmd_help_string": "Show all timers",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "startTimer": {
+            "function_index": 1,
+            "icmd_help_string": "Start a timer",
+            "icmd_argument_type": [
+                "uint32_t"
+            ]
+        },
+        "stopTimer": {
+            "function_index": 2,
+            "icmd_help_string": "Stop a timer",
+            "icmd_argument_type": [
+                "uint32_t"
+            ]
+        },
+        "changeTimeout": {
+            "function_index": 3,
+            "icmd_help_string": "Change a timer timeout value.  Args: timer, newTimeoutValue",
+            "icmd_argument_type": [
+                "uint32_t",
+                "uint32_t"
+            ]
+        },
+        "UTIL_printTimingEntriesTable": {
+            "function_index": 4,
+            "icmd_help_string": "Print Timing Entries Table",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "UTIL_timingProfileWatchdogEnable": {
+            "function_index": 5,
+            "icmd_help_string": "Enable Watchdog, arg: timeout in ms",
+            "icmd_argument_type": [
+                "uint32_t"
+            ]
+        },
+        "UTIL_timingProfileWatchdogDisable": {
+            "function_index": 6,
+            "icmd_help_string": "Disable Watchdog",
+            "icmd_argument_type": [
+                "void"
+            ]
+        }
+    },
+    "MAIN_LOOP_COMPONENT": {
+        "ResetStats": {
+            "function_index": 0,
+            "icmd_help_string": "",
+            "icmd_argument_type": [
+                "void"
+            ]
+        }
+    },
+    "ICMD_COMPONENT": {
+        "readMemory": {
+            "function_index": 0,
+            "ICMDRESP": {
+                "icmdresp_name": "read32",
+                "ilog_name": "BASE_READ_MEM",
+                "icmdresp_argument_index_list": [
+                    1
+                ]
+            },
+            "icmd_help_string": "Read any memory address. Argument: full 32 bit address",
+            "icmd_argument_type": [
+                "uint32_t"
+            ]
+        },
+        "writeMemory": {
+            "function_index": 1,
+            "icmd_help_string": "Write any memory address. Arguments: full 32 bit address, 32 bit value to write",
+            "icmd_argument_type": [
+                "uint32_t",
+                "uint32_t"
+            ]
+        },
+        "readModifyWriteMemory": {
+            "function_index": 2,
+            "icmd_help_string": "Read-Modify-Write any memory address. Arguments: full 32 bit address, 32 bit set mask, 32 bit clear mask",
+            "icmd_argument_type": [
+                "uint32_t",
+                "uint32_t",
+                "uint32_t"
+            ]
+        },
+        "modifyBitfield": {
+            "function_index": 3,
+            "icmd_help_string": "Write data from a given position within any memory address. Arguments: full 32 bit address, 8 bit position to start modifying, 8 bit width to modify, 32 bit value to write",
+            "icmd_argument_type": [
+                "uint32_t",
+                "uint8_t",
+                "uint8_t",
+                "uint32_t"
+            ]
+        },
+        "dumpMemory32": {
+            "function_index": 4,
+            "icmd_help_string": "Dump data from any number of sequential memory locations. Arguments: full 32 bit address, number of 32bit words to read",
+            "icmd_argument_type": [
+                "uint32_t",
+                "uint8_t"
+            ]
+        },
+        "callFunction": {
+            "function_index": 5,
+            "icmd_help_string": "Call any function. Arguments: full 32 bit address, arguments for function(if not needed enter 0)",
+            "icmd_argument_type": [
+                "uint32_t",
+                "uint32_t",
+                "uint32_t",
+                "uint32_t",
+                "uint32_t",
+                "uint32_t"
+            ]
+        },
+        "readMemory16": {
+            "function_index": 6,
+            "icmd_help_string": "Read any memory address. Argument: full 16 bit address",
+            "icmd_argument_type": [
+                "uint32_t"
+            ]
+        },
+        "writeMemory16": {
+            "function_index": 7,
+            "icmd_help_string": "Write any memory address. Arguments: full 16 bit address, 16 bit value to write",
+            "icmd_argument_type": [
+                "uint32_t",
+                "uint16_t"
+            ]
+        },
+        "readModifyWriteMemory16": {
+            "function_index": 8,
+            "icmd_help_string": "Read-Modify-Write any memory address. Arguments: full 16 bit address, 16 bit set mask, 16 bit clear mask",
+            "icmd_argument_type": [
+                "uint32_t",
+                "uint16_t",
+                "uint16_t"
+            ]
+        },
+        "readMemory8": {
+            "function_index": 9,
+            "icmd_help_string": "Read any memory address. Argument: full 32 bit address",
+            "icmd_argument_type": [
+                "uint32_t"
+            ]
+        },
+        "writeMemory8": {
+            "function_index": 10,
+            "icmd_help_string": "Write any memory address. Arguments: full 32 bit address, 8 bit value to write",
+            "icmd_argument_type": [
+                "uint32_t",
+                "uint8_t"
+            ]
+        }
+    },
+    "TOP_COMPONENT": {
+        "bb_top_systemReset": {
+            "function_index": 0,
+            "icmd_help_string": "Perform system restart",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "bb_top_triggerFallbackFpgaIcmd": {
+            "function_index": 1,
+            "icmd_help_string": "Trigger the fallback",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "bb_top_ApplyGEReset": {
+            "function_index": 2,
+            "icmd_help_string": "Reset GE, 1 to put GE in reset and 0 to put GE in run",
+            "icmd_argument_type": [
+                "bool"
+            ]
+        },
+        "bb_top_GtpResetIcmd": {
+            "function_index": 3,
+            "icmd_help_string": "Resets the GTP tranceivers and take them out of reset after configuration",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "bb_top_ConfigureDpTransceiverLexIcmd": {
+            "function_index": 4,
+            "icmd_help_string": "Configure DP transreceivers on LEX",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "bb_top_IcmddpSetTxDiffCtrl": {
+            "function_index": 5,
+            "icmd_help_string": "Sets a value for txdiffctrl, Arg 2 = 1 to presist Arg 1, 0 to keep Arg 1 only for one link training",
+            "icmd_argument_type": [
+                "uint8_t",
+                "bool"
+            ]
+        },
+        "bb_top_IcmddpSetTxPostCursor": {
+            "function_index": 6,
+            "icmd_help_string": "Sets a value for txpostcursor, Arg 2 = 1 to presist Arg 1, 0 to keep Arg 1 only for one link training",
+            "icmd_argument_type": [
+                "uint8_t",
+                "bool"
+            ]
+        },
+        "bb_top_switchFpgaImage": {
+            "function_index": 7,
+            "icmd_help_string": "Change the running image. NOTE does not set the fallback bit",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "bb_top_CalcFpgaImageCrc": {
+            "function_index": 8,
+            "icmd_help_string": "Calculate the FPGA 64bit CRC",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "bb_top_CalcTargetImageCrc": {
+            "function_index": 9,
+            "icmd_help_string": "Calculate the Target image CRC",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "bb_top_writeUserReg": {
+            "function_index": 10,
+            "icmd_help_string": "Write the FPGA user register",
+            "icmd_argument_type": [
+                "uint32_t"
+            ]
+        },
+        "bb_top_readUserReg": {
+            "function_index": 11,
+            "icmd_help_string": "Read the FPGA user register",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "bb_top_coreTypeIcmd": {
+            "function_index": 12,
+            "icmd_help_string": "This icmd states if the core type is -2 or -3",
+            "icmd_argument_type": [
+                "void"
+            ]
+        }
+    },
+    "UTIL_COMPONENT": {},
+    "ILOG_COMPONENT": {
+        "ilog_SetLevel": {
+            "function_index": 0,
+            "icmd_help_string": "Set the ilog logging level of any component: 1st arg level, 2nd arg component",
+            "icmd_argument_type": [
+                "uint8_t",
+                "component_t"
+            ]
+        },
+        "ilog_icmdGetLevel": {
+            "function_index": 1,
+            "icmd_help_string": "Get the ilog logging level of any component",
+            "icmd_argument_type": [
+                "component_t"
+            ]
+        },
+        "ilog_setBlockingMode": {
+            "function_index": 2,
+            "icmd_help_string": "Put ilog into a blocking logging mode",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "ilog_clearBlockingMode": {
+            "function_index": 3,
+            "icmd_help_string": "Put ilog into normal logging mode",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "testStackOverFlow": {
+            "function_index": 4,
+            "icmd_help_string": "Test the assert function by creating a stack overflow (Creates a SPARC register window overflow)",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "assertStatus": {
+            "function_index": 5,
+            "icmd_help_string": "Check the status of the assert module",
+            "icmd_argument_type": [
+                "void"
+            ]
+        }
+    },
+    "UART_COMPONENT": {
+        "UART_ShowStats": {
+            "function_index": 0,
+            "icmd_help_string": "Show Uart stats",
+            "icmd_argument_type": [
+                "void"
+            ]
+        },
+        "UART_BBChangeBaudRate": {
+            "function_index": 1,
+            "icmd_help_string": "Change Baud Rate",
+            "icmd_argument_type": [
+                "uint32_t"
+            ]
+        }
+    },
+    "CORE_COMPONENT": {
+        "BBCORE_printHWModuleVersion": {
+            "function_index": 0,
+            "icmd_help_string": "Show FPAGE modules' version",
+            "icmd_argument_type": [
+                "void"
+            ]
+        }
+    }
+}

@@ -1,0 +1,5 @@
+component:TOPLEVEL_COMPONENT
+F:PrintSwVersion H:"Print out the current software version and build date/time" A:void
+F:Badger_getDeviceInfo H:"Print out the device info for Badger" A:void
+F:bb_top_TriStateMdioMdc H:"Tristate Mdio MDC - motherboard only" A:bool
+F:TOPLEVEL_DEBUG_ASSERT H:"Test Assert" A:void

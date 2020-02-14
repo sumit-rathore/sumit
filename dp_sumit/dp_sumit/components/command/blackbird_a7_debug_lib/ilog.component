@@ -1,0 +1,11 @@
+component:COMMAND_COMPONENT
+L:CMD_PROGRAM_ERASE_BLOCK S:Erasing block %d of %d\n
+L:CMD_PROGRAM_ERASE_BLOCK_FAILED S:ERROR: Erasing block %d of %d failed\n
+L:CMD_PROGRAM_WRITE_FAILED S:ERROR: Write failed!\n
+L:CMD_PROGRAM_WRITE_SUCCESS S:Write success!\n
+L:CMD_PROGRAM_ADDRESS S:>>>   Programming to address 0%x\n
+L:CMD_SYSTEM_INVALID S:CMD Rx invalid Cmd: 0x%x, SubCmd: 0x%x\n
+L:CMD_RUN_PROGRAMBB S:### Rx RunPgmBB ### Start Addr: %x, Size: %d\n
+L:VERIFY_ERASE_FAILED S:Verify Erase Failed: Erased addr %x has data %x\n
+L:INVALID_RX_CMD S:CMD_processCommandProgramSubcommand: CMD Rx invalid, Cmd %x, SubCmd %x\n
+L:CMD_PROGRAM_BB_CALL S:Load and run PROGRAM_BB After 300ms\n

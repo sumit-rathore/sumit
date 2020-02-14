@@ -1,0 +1,8 @@
+component:ILOG_COMPONENT
+F:ilog_SetLevel H:"Set the ilog logging level of any component: 1st arg level, 2nd arg component" A:uint8, component_t
+F:ilog_icmdGetLevel H:"Get the ilog logging level of any component" A:component_t
+F:ilog_setBlockingMode H:"Put ilog into a blocking logging mode" A:void
+F:ilog_clearBlockingMode H:"Put ilog into normal logging mode" A:void
+F:testAssert3 H:"Test the assert function with 3 args" A:uint32, uint32, uint32
+F:testStackOverFlow H:"Test the assert function by creating a stack overflow (Creates a SPARC register window overflow)" A:void
+F:assertStatus H:"Check the status of the assert module" A:void

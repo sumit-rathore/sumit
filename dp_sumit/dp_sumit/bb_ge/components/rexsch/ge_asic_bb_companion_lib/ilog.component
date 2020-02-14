@@ -1,0 +1,65 @@
+component:REXSCH_COMPONENT
+L:ENABLE S:REXSCH_Enable()\n
+L:DISABLE S:REXSCH_Disable()\n
+L:MSA_NOT_CBW_PKT_IN_IDLE S:Received a non-CBW packet in the Idle state, accel is %d, action is %d\n
+L:MSA_GOT_DNS_PKT_IN_CBW S:Received a Downstream packet in the CBW state, should not get any, accel is %d, action is %d\n
+L:MSA_RESP_IDLE S:Received a response in the Idle state\n
+L:MSA_RESP_CBW_INVALID S:Received an invalid response %d in the CBW state\n
+L:MSA_RESP_OUT_DATA_INVALID S:Addr %d: Received an invalid response %d in the Out Data state\n
+L:MSA_RESP_IN_DATA_INVALID S:Received an invalid response in the In Data state = %d\n
+L:MSA_RESP_STALL_SETUP_INVALID S:Received an invalid response in the Stall Setup state\n
+L:MSA_RESP_STALL_IN_INVALID S:Received an invalid response in the Stall In state\n
+L:MSA_ALLOCATE_NO_FREE_REF S:No Free Msa refs to allocate\n
+L:MSA_DISP_STAT S:     state %d save queue %d cnt %d\n
+L:MSA_DISP_STAT_HDR S:Msa Stat\n
+L:MSA_DISP_STAT_ADDR S:   addr %d, endp %d\n
+L:MSA_DISP_STAT_CNT S:     clr halt cnt %d cbw %d csw %d\n
+L:MSA_DISP_STAT_CNT2 S:     in stall cnt %d out stall cnt %d flc in cnt %d\n
+L:MSA_DISP_STAT_NAK_CNT S:     nak cnt %d\n
+L:MSA_RESP_CSW_INVALID S:Addr %d: Received an invalid response %d in the CSW state\n
+L:MSA_RESP_CSW_ERROR S:Received an errored response in the CSW state\n
+L:MSA_RESP_IN_ERROR S:Received an errored response in the In Data state: resp = %d\n
+L:MSA_RESP_IN_NAK_CNT S:USB addr %d, In Nak Cnt == %d\n
+L:MSA_CSW_RESP_IN_NAK_CNT S:USB addr %d, CSW In Nak Cnt == %d\n
+L:MSA_RESP_OUT_NAK_CNT S:USB addr %d, Out Ping Nak Cnt == %d\n
+L:REXSCH_DEVRESP_UNKNOWN_SCHTYPE S:RexSch DevResp Received an unknown schtype %d\n
+L:MSA_INIT S:Rex Mass Storage Initialization, allocate %d devices\n
+L:MSA_SOF_FLC S:MSA SOF Flow Control Count %d\n
+L:REXSCH_SPLIT_DROPPED S:Split packet dropped, frame %d current rx packet frame %d set frame %d\n
+L:REXSCH_SPLIT_FULL S:All endpoints full frame %d\n
+L:REXSCH_SPLIT_ENTRY S:Split entry %d:%d match\n
+L:REXSCH_BAD_PING_RESPONSE S:Bad ping response: 0x%x\n
+L:MSA_FLUSH_QUEUE_ERROR S:Error: Flush Queue is not empty %d\n
+L:MSA_OUT_SAVE_QUEUE_EMPTY S:Out Save Queue Empty\n
+L:MSA_DBG_OUT_TIMEOUT S:Msa got Out Timeout\n
+L:MSA_DBG_PING_ACK_CSW_IN S:Error: Ping Ack expected in for csw Addr:%d, sent len %d,expect len %d\n
+L:MSA_DISP_STAT_DATA S:     data len %d data cnt %d\n
+L:MSA_DBG_BAD_NYET_PKT_LEN S:  Error: Addr %d Out Nyet pkt len is %d\n
+L:MSA_DBG_CBW_OUT_DATA S:  Error: Got CBW: Out data phase\n
+L:MSA_DBG_CBW_IN_CSW S:  Error: Got CBW: In CSW phase\n
+L:MSA_DNS_BAD_STATE S:Illegal Dns State\n
+L:MSA_TOO_MANY_NAKS S:Got too many Naks, now terminating\n
+L:MSA_IN_TOO_MUCH_DATA S:Device returned more data than was specified in CBW\n
+L:MSA_OUT_TOO_MUCH_DATA S:Host sent more data than was specified in CBW\n
+L:SETUP_TRANSACTION_PENDING S:REX Scheduler is waiting to send Setup to the REX. LEX should not sent another packet downstream.\n
+L:TOO_MANY_SIMULTANEOUS_TRAN S:There are too many simultaneous MSA transactions\n
+L:DOWNSTREAM_CSW S:REXSCH got downstream CSW data\n
+L:MSA_DNS_IN_INCORRECT_ACCEL S:Got packet with incorrect Accel value: %d in In-phase\n
+L:MULTIPLE_IN_IN_PHASE S:Got multiple IN's in IN-phase\n
+L:INVALID_SEND_DOWNSTREAM_MODE S:Invalid mode for sending a packet downstream\n
+L:RECEIVED_INVALID_CLR_HLTEP_RESPONSE S:Received invalid response when clearing halted endpoint for USB Addr: %d, line: %d\n
+L:REXMSA_RESET_DEVICE S:REXMSA Reset device usb %d\n
+L:NUM_PACKETS_IN_QUEUE_NOT_ZERO S:numPacketsInQueue is not zero, and is %d\n
+L:MSA_IN_RECOVERY_FLUSHING_DATA_QID S:In MSA recovery usb %d, flushing and de-allocating data QID %d\n
+L:UNEXPECTED_MSA_RESPONSE S:Unexpected MSA response for usb addr %d\n
+L:RECEIVED_INVALID_CLR_HLTEP_SCHTYPE S:Received invalid schedule type when clearing halted endpoint for USB Addr: %d, schedule type: %d\n
+L:DUPLICATED_OUT_TOGGLE S:Received duplicated OUT packet toggle\n
+L:INVALID_STATE S:Invalid state at line %d, info is 0x%x\n
+L:DUPLICATED_IN_TOGGLE S:Received duplicated IN packet toggle\n
+L:INVALID_DNS_IN_INPHASE S:Received a downstream packet with invalid action %d in the IN data phase\n
+L:INVALID_SETUP_PACKET_SCHEDULING S:The Setup packet has an invalid scheduling type: %d.\n
+L:RECEIVED_SW_MESSAGE S:Received software message %d with data %d\n
+L:INVALID_MSA_USB_ADDRESS S:Requested to reset MSA status on invalid USB address %d\n
+L:RECEIVED_UNKNOWN_SW_MESSAGE S:Received unknown software message %d with data %d\n
+L:REXSCH_DEBUGX S:__#### DEBUG 0x%x ####__\n
+L:REXSCH_DEBUG_MSA_FLUSH_Q S:__#### DEBUG - MSA FLUSH QUEUE ####__\n

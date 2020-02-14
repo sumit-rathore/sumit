@@ -1,0 +1,6 @@
+component:TOPLEVEL_COMPONENT
+F:xmodem_new_image H:"Send a new image over xmodem and then run it" A:void
+F:PrintSwVersion H:"Print out the current software version and build date/time" A:void
+F:TOPLEVEL_printDeviceType H:"Prints whether this device is a LEX or a REX." A:void
+F:TOPLEVEL_getEcoStatus H:"Prints the status of ECO Flag, (1 = ECO detected)." A:void
+F:TOPLEVEL_DEBUG_ASSERT H:"CAUSE AN ASSERT IN GE FOR DEBUGGING" A:uint8

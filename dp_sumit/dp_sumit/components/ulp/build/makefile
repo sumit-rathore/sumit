@@ -1,0 +1,28 @@
+# define the source code
+# Just provide a list of source files for C code and assembly code
+# NOTE: all sources must be in the src directory of this component
+CSOURCES = $(notdir $(wildcard ../src/*.c))
+ASMSOURCES = $(notdir $(wildcard ../src/*.S))
+
+#Specify the name of the ilog file for this component with the path
+COMPONENT_ILOG_FILE = ../src/ulp_log.h
+
+#Specify the name of the icmd file for this component, it must be in the src directory
+COMPONENT_ICMD_FILE = ulp_cmd.h
+
+# COMPONENT_ICMDRESP_FILE = #ulp_cmdresp.h
+
+# Name of the target
+TARGET          = libulp.a
+
+# define the type of target to build (lib or elf)
+TARGET_TYPE     = lib
+
+# the names of the dependencies of this component
+COMPONENT_DEPS  = bbge_comm cpu_comm mca i2cd i2c stats_mon configuration event callback uart core led util top gpio icmd ilog timing leon register_definitions ibase
+
+# List all the test harnesses that can be built
+# The test harnesses should all be in the test directory and contain a build directory where $(MAKE) will be called
+TEST_HARNESSES =
+
+include $(IBUILD_RULES)

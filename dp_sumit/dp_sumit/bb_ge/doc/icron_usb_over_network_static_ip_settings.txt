@@ -1,0 +1,19 @@
+Setting static IP addresses for USB over Network project
+========================================================
+
+By default USB over network runs in DHCP mode.
+
+The Hobbes script flash_var.py, can be used to reprogram flash settings, but it
+requires variables to be entered as 32bit numbers, instead of 4 8bit numbers.
+
+For convience there is a script called network_settings.py that contains the
+function "configureNetwork(ip, subnetMask, defaultGateway)".  This can be
+called in the python window to set IP addresses in a human readable
+"xxx.xxx.xxx.xxx" format.
+
+Example:
+configureNetwork("192.168.2.100", "255.255.255.0", "192.168.2.1")
+
+To switch back to DHCP mode, rerun the Hobbes script flash_var.py, and change
+NETWORK_ACQUISTION_MODE to 0.
+

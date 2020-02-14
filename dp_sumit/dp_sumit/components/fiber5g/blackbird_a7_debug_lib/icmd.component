@@ -1,0 +1,6 @@
+component:FIBER5G_COMPONENT
+F:Link_SL_5G_RestartRx H:"Restart Fiber receive" A:void
+F:I2CD_icmdSfpFinisarStartStatsMonitor H:"SFP Start Stats Monitoring" A:void
+F:I2CD_icmdSftFinisarStopStatsMonitor H:"SFP Stop Stats Monitoring" A:void
+F:I2CD_icmdSfpFinisarSetRxPowerThresholds H:"Set SFP RxPower Lower and Upper Thresholds" A:uint16_t, uint16_t
+F:I2CD_icmdSfpFinisarSetRxPowerPollingPeriod H:"Set SFP RxPower Polling Period" A:uint32_t

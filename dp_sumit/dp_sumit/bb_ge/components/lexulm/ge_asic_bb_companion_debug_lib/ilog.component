@@ -1,0 +1,34 @@
+component:LEXULM_COMPONENT
+L:ULM_INTERRUPTS_LOG S:i=0x%x\n
+L:ULM_CONNECT_LOG S:iCONNECT\n
+L:ULM_DISCONNECT_LOG S:iDISCONNECT\n
+L:ULM_SUSPEND_LOG S:iSUSPENDDETECT\n
+L:ULM_HOST_RESUME_LOG S:iHOSTRESUMESTART\n
+L:ULM_BUS_RESET_LOG S:iBUSRESETDETECTED\n
+L:ULM_NEG_DONE_LOG S:iNEGDONE\n
+L:ULM_BUS_RESET_DONE_LOG S:iBUSRESETDONE\n
+L:ULM_RESPONSE_TIMEOUT_LOG S:iRESPONSETIMEOUT\n
+L:LEX_USB_PORT_CONNECT_LOG S:rootDev connected:%d\n
+L:LEX_DEVICE_DISCONNECT_LOG S:got a device disconnect event\n
+L:LEX_REMOTE_WAKEUP_LOG S:got remote wakeup\n
+L:LEX_UNKNOWN_EVENT_LOG S:unknown event:%d\n
+L:INVALID_SPEED S:Invalid speed %d detected\n
+L:FORCE_LINK_DOWN S:Bringing the USB link down\n
+L:REX_IRQ_ULM_SUSPEND_DONE S:Got a Rex only interrupt, ULM Suspend Done\n
+L:REX_IRQ_ULM_REMOTE_WAKEUP S:Got a Rex only interrupt, remote wakeup\n
+L:BIT_STUFF_ERR S:Got a ULM bitstuff error\n
+L:LONG_PACKET_ERR S:Got a ULM long packet error\n
+L:ULM_RESUME_DONE S:Resume done\n
+L:ULM_NEG_HS S:ULM negotiated high speed\n
+L:ULM_NEG_FS S:ULM negotiated full speed\n
+L:ULM_NEG_LS S:ULM negotiated low speed\n
+L:TIME_MARKER_IRQ S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing USB Interrupt\n
+L:TIME_MARKER_MSG S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing Rex Message\n
+L:TIME_MARKER_LINK_DOWN S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing CLM Link Down\n
+L:TIME_MARKER_FORCE_LINK_DOWN S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing Force Link Down\n
+L:RESUME_AND_SUSPEND S:Resume and suspend interrupts received together.  Host did not accept the device resume request.\n
+L:TIME_MARKER_LINK_UP S:*** TIME MARK *** %d microseconds since last time mark.  Currently processing CLM Link Up\n
+L:USB3_NO_SS_CONNECT S:USB3 No SuperSpeed connect\n
+L:USB3_SS_CONNECT S:USB3 SuperSpeed connect\n
+L:CLM_LINK_UP S:CLM link up\n
+L:CLM_LINK_DOWN S:CLM link down\n

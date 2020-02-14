@@ -1,0 +1,7 @@
+component:XADC_COMPONENT
+F:XADC_getVoltageIcmd H:"Get XADC Voltages" A:void
+F:XADC_getFpgaTempIcmd H:"Get FPGA Temperature" A:void
+F:XADC_setFpgaWarningTemperature_2 H:"Set FPGA Temperature Warning Threshold for -2 board" A:uint8_t
+F:XADC_setFpgaWarningTemperature_3 H:"Set FPGA Temperature Warning Threshold for -3 board" A:uint8_t
+F:XADC_setFpgaShutdownTemperature_2 H:"Set FPGA Temperature Shutdown Threshold for -2 board" A:uint8_t
+F:XADC_setFpgaShutdownTemperature_3 H:"Set FPGA Temperature Shutdown Threshold for -3 board" A:uint8_t

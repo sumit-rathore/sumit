@@ -1,0 +1,26 @@
+component:FIBER5G_COMPONENT
+L:LINK_5G_INIT S:5G fiber Link Init\n
+L:LINK_5G_FIBER_LOS_INACTIVE S:5G fiber Link signal detected\n
+L:LINK_5G_FIBER_LOS_IRQ_ACTIVE S:5G fiber LOS IRQ - signal absent\n
+L:LINK_5G_FIBER_LOS_IRQ_INACTIVE S:5G fiber LOS IRQ - signal present\n
+L:LINK_5G_FIBER_SIGNAL_VALID S:5G fiber Link signal valid\n
+L:LINK_5G_FIBER_SIGNAL_INVALID S:5G fiber Link signal too weak\n
+L:LINK_5G_FIBER_TX_FSM_RESET_START S:5G fiber Link Tx FSM reset start\n
+L:LINK_5G_FIBER_TX_FSM_RESET_DONE S:5G fiber Link Tx FSM reset done IRQ\n
+L:LINK_5G_FIBER_RX_FSM_RESET_START S:5G fiber Link Rx FSM reset start\n
+L:LINK_5G_FIBER_RX_FSM_RESET_DONE S:5G fiber Link Rx FSM reset done IRQ: Train time %d microseconds\n
+L:LINK_5G_FIBER_RX_BUF_UNDERFLOW S:5G fiber Link Rx elastic buffer underflow IRQ\n
+L:LINK_5G_FIBER_RX_BUF_OVERFLOW S:5G fiber Link Rx elastic buffer overflow IRQ\n
+L:LINK_5G_FIBER_RX_STABILITY S:5G fiber Link Rx stability check, dispErr %d notInTable %d realign %d\n
+L:LINK_5G_FIBER_ENABLED S:5G fiber Link Enabled\n
+L:LINK_5G_FIBER_DISABLED S:5G fiber Link Disabled\n
+L:LINK_5G_SYSTEM_UP S:5G fiber Link System up detected\n
+L:LINK_5G_FIBER_SIGNAL_DEBOUNCE S:5G fiber Link debounce, state:%d losState:%d current state:%d\n
+L:LINK_5G_FIBER_STATS_RX_DISPARITY S:STATS:LINKMGR bb_chip->bb_top->sl_5g->gt_disp_err %d\n
+L:LINK_5G_FIBER_STATS_RX_SYMBOL_NOT_IN_TABLE S:STATS:LINKMGR bb_chip->bb_top->sl_5g->gt_not_in_table %d\n
+L:LINK_5G_FIBER_STATS_RX_REALIGN_COUNT S:STATS:LINKMGR bb_chip->bb_top->sl_5g->gt_realign %d\n
+L:SFP_FINISAR_STATS_MEAS_TEMP S:*** SFP STATS Temperature %x\n
+L:SFP_FINISAR_STATS_MEAS_VCC S:*** SFP STATS Vcc %x\n
+L:SFP_FINISAR_STATS_MEAS_TX_BIAS S:*** SFP STATS TX Bias %x\n
+L:SFP_FINISAR_STATS_MEAS_TX_POWER S:*** SFP STATS TX Power %x\n
+L:SFP_FINISAR_STATS_MEAS_RX_POWER S:*** SFP STATS RX Power %x\n

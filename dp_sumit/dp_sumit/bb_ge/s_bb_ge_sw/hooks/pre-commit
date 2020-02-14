@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# Ensure that we are on a branch
+# By checking for the status string that we aren't on a branch
+git status | grep 'HEAD detached at' > /dev/null &&
+{
+    echo -e '
+Please commit on a branch, by doing 1 of the following:
+1) Use gitk to find out what branch corresponds to this commit, and checkout that branch.  Useful if this checkout originated from a "git submodule" command
+2) Use "git stash" to save your changes, and then checkout the target branch and apply your changes there before committing
+3) Start a new branch based on a currently checked out remote branch "git checkout -t origin/BRANCH_NAME"
+4) Start a new branch with "git checkout -b <new_branch_name>"
+' >&2
+    exit 1;
+}
+
+# No issues :)
+exit 0
+

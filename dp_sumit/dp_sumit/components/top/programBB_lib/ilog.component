@@ -1,0 +1,43 @@
+component:TOP_COMPONENT
+L:BB_TOP_DRP_READ_INVALID_MASK S:Tried to read from more than one DRP bus at a time: drpEnMask = 0x%x\n
+L:BB_TOP_BAD_MUTEX_TOKEN S:Wrong IMutex token at line %d\n
+L:BB_TOP_DP_DRP_WRITE S:Wrote DRP address 0x%x with drpEnMask = 0x%x and write data = 0x%x\n
+L:BB_TOP_DP_DRP_READ S:Read DRP address 0x%x with drpEnMask = 0x%x: read data = 0x%x\n
+L:BB_TOP_DP_DRP_RMW1 S:RMWed DRP address 0x%x with drpEnMask = 0x%x, rmwMask = %d\n
+L:BB_TOP_DP_DRP_RMW2 S: and write data = 0x%x\n
+L:BB_TOP_DP_INVALID_DRP_READ S:Tried to read from more than one DRP bus at a time: drpEnMask = 0x%x\n
+L:BB_TOP_DP_INVALID_BANDWIDTH S:Invalid bandwidth setting %d at line %d\n
+L:BB_TOP_DP_INVALID_LANE_COUNT S:Invalid lane count setting %d at line %d\n
+L:BB_TOP_DP_TRANSCEIVER_CONFIG_VALUE_ERROR S:DP transceiver value error: bad value = 0x%x at line %d\n
+L:BB_TOP_DP_INVALID_MMCM_OUTPUT_FREQ S:Invalid MMCM output frequency: bw = %d\n
+L:BB_TOP_DP_INVALID_MMCM_OUTPUT_ENCODING S:Invalid MMCM output encoding: bw = %d, laneWidth = %d\n
+L:BB_TOP_DP_GTX_RESET_TOO_SLOW S:GTX took too long to come out of reset!\n
+L:BB_TOP_DP_GTP_RESET_TOO_SLOW S:GTP took too long to come out of reset! Waited for %d us\n
+L:BB_TOP_DP_SET_VOLTAGE_SWING S:Writing txDiffCtrl with 0x%x -> 0x%x\n
+L:BB_TOP_DP_SET_PREEMPHASIS S:Writing txPostCursor with 0x%x -> 0x%x\n
+L:BB_TOP_DP_PRECHARGE S:Pre-charging main link with txInhibit = %d, laneCount = %d\n
+L:BB_TOP_DP_INITIALIZING_DP_TRANSCEIVERS S:Initializing DP transceivers: bw = %d, lc = %d\n
+L:BB_TOP_DBGXX S:### DBG 0x%x, 0x%x\n
+L:BB_TOP_HOLD_GE_RESET S:Placing GE in reset mode\n
+L:BB_TOP_GE_RUN S:Placing GE in run mode\n
+L:BB_TOP_GE_BOOTLOADER S:Placing GE in bootloader mode\n
+L:BB_TOP_GE_NULL_RUN_WATCHDOG_CALLBACK S:GE Run Wathdog happen without Callback\n
+L:BB_TOP_GE_NULL_RESET_WATCHDOG_CALLBACK S:GE Reset Wathdog happen without Callback\n
+L:BB_TOP_GE_RUN_AGAIN S:Set GE Run mode again while it's alreay in Run mode\n
+L:BB_TOP_DRP_WRITE_WAIT_TIMEOUT S:DRP Write wait for busses idle timeout\n
+L:BB_TOP_LINK_LOCK_WAIT_TIMEOUT S:Link PLL lock wait timeout\n
+L:BB_TOP_GTP_OUT_OF_RESET S:GTP is out of reset\n
+L:BB_TOP_DP_FRQ S:DP Freq took %d us to measure count = %d\n
+L:BB_TOP_DP_MMCM_LOCK S:DP MMCM Lock done took %d us to lock\n
+L:BB_TOP_DP_FRQ_TIMEOUT S:DP Freq measure time out\n
+L:BB_TOP_SSC_DETECTION S:***** SSC Detection = %d *****\n
+L:BB_TOP_READ_ICAP S:Read Reg = %x Val = %x\n
+L:BB_TOP_WRITE_ICAP S:Write Reg = %x Val = %x\n
+L:BB_TOP_READ_USER_REG S:User Reg = %x\n
+L:BB_TOP_WRITE_USER_REG S:Write User Reg = %x\n
+L:BB_TOP_FRQ_RUNNING S: Frequency detection still running\n
+L:BB_TOP_DRP_WRITE_TIMER_OVER S:DRP Set Timerover. drp_en_mask = 0x%x\n
+L:BB_TOP_DRP_READ_TIME_OVER S:DRP Read Timerover. Line at: %d\n
+L:BB_TOP_DP_SOURCE_RST S:DP Source Reset :%d (1:Apply reset, 0: Clear reset)\n
+L:BB_TOP_DP_NO_SYMBOL_LOCK S:No symbol lock. align status: 0x%x\n
+L:BB_TOP_CORE_TYPE S:The core type is -%d\n

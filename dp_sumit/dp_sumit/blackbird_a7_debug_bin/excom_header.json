@@ -1,0 +1,19 @@
+{
+    "raven": {
+        "version": "0",
+        "device_name": "raven",
+        "ichannel_id": "excom_channel_id.json",
+        "flash_writer": "bb_flash_writer.bin",
+        "main_firmware": "target.bin",
+        "lex_fpga_image": "current_lex_fpga.bin",
+        "rex_fpga_image": "current_rex_fpga.bin",
+        "raven_lex_fpga_image": "current_raven_lex_fpga.bin",
+        "raven_rex_fpga_image": "current_raven_rex_fpga.bin",
+        "istatus": "bb_istatus.json",
+        "golden_current": "current",
+        "lex_fpga_build_time": "20170420123740",
+        "rex_fpga_build_time": "20170420123740",
+        "sw_version": "255.255.255",
+        "sw_date": "2020/02/11"
+    }
+}

@@ -1,0 +1,12 @@
+component:ULM_COMPONENT
+L:ULM_SPEED_INVALID_ERROR_LOG S:Speed is invalid\n
+L:ULM_INVALID_REV S:Invalid ULM revision\n
+L:ULM_INVALID_CVS_REV S:Invalid ULM CVS revision\n
+L:ULM_INIT_LEX S:LEX - ULM Init\n
+L:ULM_INIT_REX S:REX - ULM Init\n
+L:ULM_INTERRUPT S:ULM interrupt triggered by 0x%x\n
+L:CTRL_BITS_LEFT_SET S:Ctrl bits were left set. ctrlReg is 0x%x\n
+L:WRITING_CTRL_REG S:Writing control reg as 0x%x\n
+L:ULM_SPECTAREG_READ S:Read ULM Register: 0x%x, Value: 0x%x\n
+L:ULM_DISCON_USBPORT_DC S:ULM_DISCON - ULM OFF\n
+L:ULM_DISCON_USBPORT_CON S:ULM_DISCON - ULM ON\n
