@@ -1,9 +1,0 @@
-COM5: BB: REX: 28 13:25:03: 0012709700: ISTATUS ICRON Technologies Software Version v255.255.255
-COM5: BB: REX: 28 13:25:03: 0012709723: ISTATUS SW build was done on 2019/11/12
-COM5: BB: REX: 28 13:25:03: 0012709737: ISTATUS SW build was done at 14:00:41
-COM5: BB: REX: 28 13:25:03: 0012709747: ISTATUS This device is a Rex
-COM5: BB: REX: 28 13:25:03: 0012709756: ISTATUS Chip ID is Major 0x17, Minor 0x1, Debug 0x1
-COM5: BB: REX: 28 13:25:03: 0012709766: ISTATUS Chip build date 2019/09/09
-COM5: BB: REX: 28 13:25:03: 0012709777: ISTATUS Chip build time 12:13:16
-COM5: BB: REX:  13:26:22.849: Software Info message: FPGA Chip ID Major 17 Minor 1 Debug 1 HW build was done on 2019/09/09 at 12:13:16 FallbackStatus 0x0
-Bootrom ID Major 0 Minor 12 Software revision Major 255 Minor 255 Debug 255 SW build was done on 2019/11/12 at 14:00:42 this is REX

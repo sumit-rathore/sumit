@@ -1,0 +1,12 @@
+pip install pyusb
+pip install libusb
+pip install pyserial
+
+
+Download the latest Windows binary:
+https://sourceforge.net/projects/libusb/files/libusb-1.0/libusb-1.0.21/libusb-1.0.21.7z/download
+Unzip using 7zip into a temp dir
+If on 64-bit Windows, copy MS64\dll\libusb-1.0.dll into C:\windows\system32
+If on 32-bit windows, copy MS32\dll\libusb-1.0.dll into C:\windows\SysWOW64
+
+

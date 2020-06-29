@@ -1,9 +1,0 @@
-COM5: BB: REX: 29 12:43:23: 0004332864: iMinEvt: CONFIG_COMPONENT      : Config_ArbitrateSetVar Source = 4, variable = 26, data = 0x101
-COM5: BB: REX: 29 12:43:23: 0004332891: iMinEvt: CONFIG_COMPONENT      : Configuration Event [26] Generated.
-COM5: BB: REX: 29 12:43:23: iLog decode error: <type 'exceptions.TypeError'>: not enough arguments for format string: ilog: is_big_endian=True, prev_ilog_printed=False, num_args=1, component_index=7, message_index=181, severity_index=9, device_timestamp=4332909, arguments=(1,)
-COM5: BB: REX: 29 12:43:25: 0006474663: iMinEvt: CONFIG_COMPONENT      : Config_ArbitrateSetVar Source = 4, variable = 26, data = 0x10101
-COM5: BB: REX: 29 12:43:25: 0006474690: iMinEvt: CONFIG_COMPONENT      : Configuration Event [26] Generated.
-COM5: BB: REX: 29 12:43:25: 0006474708: iMjrEvt: DP_COMPONENT          : DP YCBCR Disable = 1      * (1 = disable, 0 = Pass through)
-COM5: BB: REX: 29 12:43:26: 0007180236: iMinEvt: CONFIG_COMPONENT      : Config_ArbitrateSetVar Source = 4, variable = 26, data = 0x101
-COM5: BB: REX: 29 12:43:26: 0007180263: iMinEvt: CONFIG_COMPONENT      : Configuration Event [26] Generated.
-COM5: BB: REX: 29 12:43:26: 0007180281: iMjrEvt: DP_COMPONENT          : DP YCBCR Disable = 0      * (1 = disable, 0 = Pass through)

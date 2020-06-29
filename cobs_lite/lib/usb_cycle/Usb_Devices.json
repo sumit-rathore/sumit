@@ -1,0 +1,72 @@
+{
+	"Sandisk Ultra Flash Drive":
+	{
+		"pid" 			: "0x5581",
+		"vid" 			: "0x0781",
+		"speed" 		: 4,
+		"device_type"	: "MSC"
+	},
+	"Logitech G500 Mouse":
+	{
+		"pid"			: "0xc068",
+		"vid"			: "0x046d",
+		"speed"			: 2,
+		"device_type"	: "HID"
+	},
+	"Logitech G710 Keyboard":
+	{
+		"pid"			: "0xc24d",
+		"vid"			: "0x046d",
+		"speed"			: 2,
+		"device_type"	: "HID"
+	},
+	"Lexar S75 Flash Drive":
+	{
+		"pid"			: "0x0cd1",
+		"vid"			: "0x21C4",
+		"speed"			: 4,
+		"device_type"	: "MSC"
+	},
+	"FlashBlu":
+	{
+		"pid"			: "0x1106",
+		"vid"			: "0x1e1d",
+		"speed"			: 4,
+		"device_type"	: "MSC"
+	},
+	"FlashBlu 30":
+	{
+		"pid"			: "0x1104",
+		"vid"			: "0x1e1d",
+		"speed"			: 4,
+		"device_type"	: "MSC"
+	},
+	"USB Flash Driver":
+	{
+		"pid"			: "0x1000",
+		"vid"			: "0x090c",
+		"speed"			: 3,
+		"device_type"	: "MSC"
+	},
+	"DataTraveler 3.0":
+	{
+		"pid"			: "0x1666",
+		"vid"			: "0x0951",
+		"speed"			: 4,
+		"device_type"	: "MSC"
+	},
+	"DataTraveler 2.0":
+	{
+		"pid"			: "0x1d00",
+		"vid"			: "0x13fe",
+		"speed"			: 3,
+		"device_type"	: "MSC"
+	},
+	"Storage Media":
+	{
+		"pid"			: "0x09c2",
+		"vid"			: "0x054c",
+		"speed"			: 4,
+		"device_type"	: "MSC"
+	}
+}
